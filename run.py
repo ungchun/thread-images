@@ -37,12 +37,17 @@ def creds(account):
     return env["THREADS_TOKEN"], env["THREADS_USER_ID"]
 
 
-def publish(account, text, image):
+def publish(account, text, image, reply=None):
     token, user = creds(account)
     kind = {"media_type": "IMAGE", "image_url": RAW + image} if image else {"media_type": "TEXT"}
     container = api(f"{user}/threads", token, text=text, **kind)["id"]
     time.sleep(30)  # 문서 권장: 발행 전 대기
-    return api(f"{user}/threads_publish", token, creation_id=container)["id"]
+    post_id = api(f"{user}/threads_publish", token, creation_id=container)["id"]
+    if reply:
+        c = api(f"{user}/threads", token, media_type="TEXT", text=reply, reply_to_id=post_id)["id"]
+        time.sleep(30)
+        api(f"{user}/threads_publish", token, creation_id=c)
+    return post_id
 
 
 def main():
@@ -61,7 +66,8 @@ def main():
             continue
         image = None if image == "-" else image
         try:
-            post_id = publish(account, (ROOT / textfile).read_text(encoding="utf-8").strip(), image)
+            body, _, reply = (ROOT / textfile).read_text(encoding="utf-8").partition("\n---\n")
+            post_id = publish(account, body.strip(), image, reply.strip() or None)
         except Exception as e:  # 실패하면 줄을 남겨 다음 회차에 재시도
             print(f"FAIL {account} {textfile}: {e}", flush=True)
             kept.append(line)
