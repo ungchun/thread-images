@@ -1,0 +1,26 @@
+name: threads
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 run.py
+        env:
+          THREADS_DAILY03DEW_TOKEN: ${{ secrets.THREADS_DAILY03DEW_TOKEN }}
+          THREADS_DAILY03DEW_USER_ID: ${{ secrets.THREADS_DAILY03DEW_USER_ID }}
+      - name: commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          git diff --staged --quiet || git commit -m "posted"
+          git push

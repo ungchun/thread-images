@@ -29,6 +29,10 @@ def api(path, token, **params):
 
 
 def creds(account):
+    """계정별 토큰. GitHub Actions는 환경변수(THREADS_<계정>_TOKEN), 로컬은 env.sh."""
+    key = account.upper().replace("-", "_")
+    if f"THREADS_{key}_TOKEN" in os.environ:
+        return os.environ[f"THREADS_{key}_TOKEN"], os.environ[f"THREADS_{key}_USER_ID"]
     env = {}
     for line in (ROOT / "accounts" / account / "env.sh").read_text().splitlines():
         if line.startswith("export "):
@@ -51,7 +55,8 @@ def publish(account, text, image, reply=None):
 
 
 def main():
-    subprocess.run(["git", "-C", str(ROOT), "pull", "--quiet", "--rebase"], check=False)
+    if not os.environ.get("GITHUB_ACTIONS"):
+        subprocess.run(["git", "-C", str(ROOT), "pull", "--quiet", "--rebase"], check=False)
     if not SCHEDULE.exists():
         return
     now = datetime.now(timezone.utc)
@@ -83,7 +88,9 @@ def main():
 
 
 def sync():
-    """게시 결과를 리포에 반영해 다른 기기와 맞춘다."""
+    """게시 결과를 리포에 반영해 다른 기기와 맞춘다. Actions에선 워크플로가 한다."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        return
     git = ["git", "-C", str(ROOT)]
     subprocess.run(git + ["add", "-A"], check=False)
     subprocess.run(git + ["commit", "--quiet", "-m", "posted"], check=False)
