@@ -29,10 +29,11 @@ def api(path, token, **params):
 
 
 def creds(account):
-    """계정별 토큰. GitHub Actions는 환경변수(THREADS_<계정>_TOKEN), 로컬은 env.sh."""
-    key = account.upper().replace("-", "_")
-    if f"THREADS_{key}_TOKEN" in os.environ:
-        return os.environ[f"THREADS_{key}_TOKEN"], os.environ[f"THREADS_{key}_USER_ID"]
+    """계정별 토큰. THREADS_ACCOUNTS(JSON) 우선, 없으면 로컬 env.sh."""
+    blob = os.environ.get("THREADS_ACCOUNTS")
+    if blob:
+        a = json.loads(blob)[account]
+        return a["token"], a["user_id"]
     env = {}
     for line in (ROOT / "accounts" / account / "env.sh").read_text().splitlines():
         if line.startswith("export "):
