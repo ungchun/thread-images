@@ -46,6 +46,12 @@ def creds(account):
     return env["THREADS_TOKEN"], env["THREADS_USER_ID"]
 
 
+def fixed_reply(account):
+    """계정 고정 답글. 본문에 ---로 직접 쓰면 그쪽이 우선한다."""
+    f = ROOT / "accounts" / account / "reply.txt"
+    return f.read_text(encoding="utf-8").strip() if f.exists() else None
+
+
 def publish(account, text, image, reply=None):
     token, user = creds(account)
     kind = {"media_type": "IMAGE", "image_url": RAW + image} if image else {"media_type": "TEXT"}
@@ -77,7 +83,7 @@ def main():
         image = None if image == "-" else image
         try:
             body, _, reply = (ROOT / textfile).read_text(encoding="utf-8").partition("\n---\n")
-            post_id = publish(account, body.strip(), image, reply.strip() or None)
+            post_id = publish(account, body.strip(), image, reply.strip() or fixed_reply(account))
         except Exception as e:  # 실패하면 줄을 남겨 다음 회차에 재시도
             print(f"FAIL {account} {textfile}: {e}", flush=True)
             kept.append(line)
