@@ -9,6 +9,7 @@ import os
 import shutil
 import subprocess
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -18,14 +19,17 @@ BASE = "https://graph.threads.net/v1.0"
 ROOT = Path(__file__).parent
 SCHEDULE = ROOT / "schedule.txt"
 IMAGES = ROOT / "images"
-RAW = "https://raw.githubusercontent.com/ungchun/thread-images/main/"
+RAW = "https://raw.githubusercontent.com/ungchun/thread-images/main/images/"
 
 
 def api(path, token, **params):
     params["access_token"] = token
     data = urllib.parse.urlencode(params).encode()
-    with urllib.request.urlopen(f"{BASE}/{path}", data) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(f"{BASE}/{path}", data) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:  # Threads는 실패 이유를 본문에 담는다
+        raise RuntimeError(f"{e.code} {e.read().decode()[:300]}") from None
 
 
 def creds(account):
