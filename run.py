@@ -52,9 +52,16 @@ def fixed_reply(account):
     return f.read_text(encoding="utf-8").strip() if f.exists() else None
 
 
-def publish(account, text, image, reply=None):
+def publish(account, text, images, reply=None):
     token, user = creds(account)
-    kind = {"media_type": "IMAGE", "image_url": RAW + image} if image else {"media_type": "TEXT"}
+    if len(images) > 1:  # 캐러셀: 장마다 컨테이너를 만들고 묶는다
+        items = [api(f"{user}/threads", token, media_type="IMAGE",
+                     image_url=RAW + i, is_carousel_item="true")["id"] for i in images]
+        kind = {"media_type": "CAROUSEL", "children": ",".join(items)}
+    elif images:
+        kind = {"media_type": "IMAGE", "image_url": RAW + images[0]}
+    else:
+        kind = {"media_type": "TEXT"}
     container = api(f"{user}/threads", token, text=text, **kind)["id"]
     time.sleep(30)  # 문서 권장: 발행 전 대기
     post_id = api(f"{user}/threads_publish", token, creation_id=container)["id"]
@@ -80,18 +87,18 @@ def main():
         if datetime.fromisoformat(when) > now:
             kept.append(line)
             continue
-        image = None if image == "-" else image
+        images = [] if image == "-" else image.split(",")
         try:
             body, _, reply = (ROOT / textfile).read_text(encoding="utf-8").partition("\n---\n")
-            post_id = publish(account, body.strip(), image, reply.strip() or fixed_reply(account))
+            post_id = publish(account, body.strip(), images, reply.strip() or fixed_reply(account))
         except Exception as e:  # 실패하면 줄을 남겨 다음 회차에 재시도
             print(f"FAIL {account} {textfile}: {e}", flush=True)
             kept.append(line)
             continue
         print(f"posted {post_id} {account} {textfile}", flush=True)
         shutil.move(ROOT / textfile, ROOT / "done" / Path(textfile).name)
-        if image:
-            shutil.move(IMAGES / image, ROOT / "done" / Path(image).name)
+        for i in images:
+            shutil.move(IMAGES / i, ROOT / "done" / i)
         changed = True
     if changed:
         SCHEDULE.write_text("\n".join(kept) + "\n", encoding="utf-8")
