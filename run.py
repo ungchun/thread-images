@@ -23,13 +23,13 @@ RAW = "https://raw.githubusercontent.com/ungchun/thread-images/main/images/"
 
 
 def api(path, token, get=False, **params):
-    """Threads API 호출. 토큰은 본문으로 보내 URL(=로그)에 남지 않게 한다."""
+    """Threads API 호출. GET은 본문을 못 읽고 190을 내주므로 쿼리로 보낸다."""
     params["access_token"] = token
-    data = urllib.parse.urlencode(params).encode()
-    req = urllib.request.Request(f"{BASE}/{path}", data=data)
-    if get:  # GET에도 본문을 실으려면 메서드를 명시해야 한다
-        req.get_method = lambda: "GET"
-        req.add_header("Content-Type", "application/x-www-form-urlencoded")
+    query = urllib.parse.urlencode(params)
+    if get:
+        req = urllib.request.Request(f"{BASE}/{path}?{query}")
+    else:
+        req = urllib.request.Request(f"{BASE}/{path}", data=query.encode())
     try:
         with urllib.request.urlopen(req) as r:
             return json.load(r)

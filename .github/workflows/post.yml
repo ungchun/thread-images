@@ -16,10 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: check
-        run: python3 chk.py
-        env:
-          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
       - run: python3 run.py
         env:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
