@@ -1,11 +1,12 @@
-import json, os
-b = os.environ.get("THREADS_ACCOUNTS")
-print("secret 존재:", bool(b), "길이:", len(b or ""))
-try:
-    d = json.loads(b)
-except Exception as e:
-    print("JSON 파싱 실패:", e); raise SystemExit
-print("계정 키:", list(d))
+import json, os, urllib.request, urllib.parse, urllib.error
+d = json.loads(os.environ["THREADS_ACCOUNTS"])
 for k, v in d.items():
-    t = str(v.get("token", "")); u = str(v.get("user_id", ""))
-    print(f"[{k!r}] 필드={list(v)} token: 길이={len(t)} 앞4={t[:4]!r} 끝2={t[-2:]!r} 공백포함={any(c.isspace() for c in t)} / user_id={u!r} 숫자만={u.isdigit()}")
+    t, u = v["token"], str(v["user_id"])
+    q = urllib.parse.urlencode({"fields": "id,username", "access_token": t})
+    try:
+        with urllib.request.urlopen(f"https://graph.threads.net/v1.0/me?{q}") as r:
+            me = json.load(r)
+        ok = "일치" if me.get("id") == u else f"!!! 불일치 (토큰 주인={me.get('id')})"
+        print(f"[{k}] 토큰 주인={me.get('username')!r} / 설정 user_id={u} → {ok}")
+    except urllib.error.HTTPError as e:
+        print(f"[{k}] 토큰 조회 실패: {e.code} {e.read().decode()[:200]}")
