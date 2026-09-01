@@ -9,7 +9,6 @@ on:
     - cron: "15 6 * * *"   # 독일 (UTC 06:10)
     - cron: "25 6 * * *"   # 스페인 (UTC 06:20)
     - cron: "5 7 * * *"    # 포르투갈 (UTC 07:00)
-    - cron: "35 23 * * *"  # 일본 (UTC 23:30)
   workflow_dispatch:
 
 permissions:
