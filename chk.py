@@ -1,12 +1,20 @@
 import json, os, urllib.request, urllib.parse, urllib.error
+RAW = "https://raw.githubusercontent.com/ungchun/thread-images/main/images/"
 d = json.loads(os.environ["THREADS_ACCOUNTS"])
-for k, v in d.items():
-    t, u = v["token"], str(v["user_id"])
-    q = urllib.parse.urlencode({"fields": "id,username", "access_token": t})
+t, u = d["daily03dew"]["token"], d["daily03dew"]["user_id"]
+
+def call(label, params, get=False):
+    body = urllib.parse.urlencode({**params, "access_token": t}).encode()
+    req = urllib.request.Request(f"https://graph.threads.net/v1.0/{u}/threads", data=body)
     try:
-        with urllib.request.urlopen(f"https://graph.threads.net/v1.0/me?{q}") as r:
-            me = json.load(r)
-        ok = "일치" if me.get("id") == u else f"!!! 불일치 (토큰 주인={me.get('id')})"
-        print(f"[{k}] 토큰 주인={me.get('username')!r} / 설정 user_id={u} → {ok}")
+        with urllib.request.urlopen(req) as r:
+            print(f"{label}: OK {json.load(r)}")
     except urllib.error.HTTPError as e:
-        print(f"[{k}] 토큰 조회 실패: {e.code} {e.read().decode()[:200]}")
+        print(f"{label}: {e.code} {e.read().decode()[:400]}")
+
+# 1) 이미지 없는 텍스트 컨테이너 — 토큰/권한만 검증
+call("텍스트", {"media_type": "TEXT", "text": "권한 확인용, 발행 안 함"})
+# 2) 단일 이미지 — 일본이 성공했던 형태
+call("단일이미지", {"media_type": "IMAGE", "image_url": RAW + "tw-a.jpg"})
+# 3) 캐러셀 아이템 — 대만이 쓰는 형태
+call("캐러셀아이템", {"media_type": "IMAGE", "image_url": RAW + "tw-a.jpg", "is_carousel_item": "true"})
