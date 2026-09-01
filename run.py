@@ -22,14 +22,31 @@ IMAGES = ROOT / "images"
 RAW = "https://raw.githubusercontent.com/ungchun/thread-images/main/images/"
 
 
-def api(path, token, **params):
+def api(path, token, get=False, **params):
+    """Threads API 호출. 토큰은 본문으로 보내 URL(=로그)에 남지 않게 한다."""
     params["access_token"] = token
     data = urllib.parse.urlencode(params).encode()
+    req = urllib.request.Request(f"{BASE}/{path}", data=data)
+    if get:  # GET에도 본문을 실으려면 메서드를 명시해야 한다
+        req.get_method = lambda: "GET"
+        req.add_header("Content-Type", "application/x-www-form-urlencoded")
     try:
-        with urllib.request.urlopen(f"{BASE}/{path}", data) as r:
+        with urllib.request.urlopen(req) as r:
             return json.load(r)
     except urllib.error.HTTPError as e:  # Threads는 실패 이유를 본문에 담는다
-        raise RuntimeError(f"{e.code} {e.read().decode()[:300]}") from None
+        raise RuntimeError(f"{e.code} {e.read().decode()[:800]}") from None
+
+
+def wait_ready(container, token, tries=20):
+    """컨테이너가 FINISHED 될 때까지 기다린다. 캐러셀은 묶기 전에 반드시 확인해야 한다."""
+    for _ in range(tries):
+        st = api(container, token, get=True, fields="status,error_message")
+        if st.get("status") == "FINISHED":
+            return
+        if st.get("status") in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"container {container}: {st}")
+        time.sleep(5)
+    raise RuntimeError(f"container {container}: 준비 안 됨")
 
 
 def creds(account):
@@ -57,17 +74,19 @@ def publish(account, text, images, reply=None):
     if len(images) > 1:  # 캐러셀: 장마다 컨테이너를 만들고 묶는다
         items = [api(f"{user}/threads", token, media_type="IMAGE",
                      image_url=RAW + i, is_carousel_item="true")["id"] for i in images]
+        for i in items:
+            wait_ready(i, token)
         kind = {"media_type": "CAROUSEL", "children": ",".join(items)}
     elif images:
         kind = {"media_type": "IMAGE", "image_url": RAW + images[0]}
     else:
         kind = {"media_type": "TEXT"}
     container = api(f"{user}/threads", token, text=text, **kind)["id"]
-    time.sleep(30)  # 문서 권장: 발행 전 대기
+    wait_ready(container, token)
     post_id = api(f"{user}/threads_publish", token, creation_id=container)["id"]
     if reply:
         c = api(f"{user}/threads", token, media_type="TEXT", text=reply, reply_to_id=post_id)["id"]
-        time.sleep(30)
+        wait_ready(c, token)
         api(f"{user}/threads_publish", token, creation_id=c)
     return post_id
 
