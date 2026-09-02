@@ -121,14 +121,35 @@ def delta(row, prev):
     return None if old is None else row.get("views", 0) - old.get("views", 0)
 
 
-def line(r, prev, show_delta=True):
-    d = delta(r, prev) if show_delta else None
-    grew = f" (+{d:,})" if d else ""
-    return (f"{flag(r['country'])} `{r['account']}` {r['when']:%m-%d %H:%M %Z} (현지)\n"
-            f"  <{r['link']}|{r['text']}>\n"
-            f"  조회 {r.get('views', 0):,}{grew} · 하트 {r.get('likes', 0):,} · "
-            f"댓글 {r.get('replies', 0):,} · 리포스트 {r.get('reposts', 0):,} · "
-            f"인용 {r.get('quotes', 0):,} · 공유 {r.get('shares', 0):,}")
+GAP = "   "
+HEAD = "_나라 · 조회 · 하트 · 댓글 · 리포스트 · 공유_"
+
+
+def table(rows, prev):
+    """코드블록 표. 슬랙 코드블록에서 한글은 비례폭이라 열이 안 맞는다.
+    그래서 표 안에는 ASCII(나라코드·숫자)만 두고 열 이름은 표 위에 따로 쓴다.
+    """
+    cells = []
+    for r in rows:
+        views = f"{r.get('views', 0):,}"
+        d = delta(r, prev)
+        if d:
+            views += f" (+{d:,})"
+        cells.append([r["country"], views] +
+                     [f"{r.get(m, 0):,}" for m in
+                      ("likes", "replies", "reposts", "shares")])
+    cols = [max(len(c[i]) for c in cells) for i in range(len(cells[0]))]
+    out = []
+    for c in cells:
+        head = c[0] + " " * (cols[0] - len(c[0]))
+        body = GAP.join(" " * (cols[j] - len(c[j])) + c[j]
+                        for j in range(1, len(c)))
+        out += [(head + GAP + body).rstrip(), ""]
+    return "```\n" + "\n".join(out).rstrip() + "\n```"
+
+
+def links(rows):
+    return "\n".join(f"{flag(r['country'])} <{r['link']}|{r['text']}>" for r in rows)
 
 
 def render(rows, prev, window):
@@ -136,37 +157,25 @@ def render(rows, prev, window):
     yesterday = today - timedelta(days=1)
     out = [f"*홍보 브리핑 | {datetime.now(KST):%Y-%m-%d}*"]
 
-    fresh = [r for r in rows if yesterday <= r["when"].astimezone(KST) < today]
+    fresh = sorted((r for r in rows
+                    if yesterday <= r["when"].astimezone(KST) < today),
+                   key=lambda r: -r.get("views", 0))
     out.append("\n*어제 올린 글*")
-    if fresh:
-        out += [line(r, prev, show_delta=False) for r in
-                sorted(fresh, key=lambda x: x["at"])]
-    else:
-        out.append("없음")
+    out.append(HEAD)
+    out += [table(fresh, prev), links(fresh)] if fresh else ["없음"]
 
-    # 20건을 한 줄로 쏟으면 안 읽힌다. 나라별로 묶어 상위 몇 건만 본다.
-    # 계정 간 성과 차이가 이 브리핑의 핵심 정보인데, 섞어놓으면 그게 안 보인다.
-    rest = [r for r in rows if r not in fresh and r.get("views", 0)]
-    out.append(f"\n*그 전 게시물* (최근 {window}일 · 나라별 조회 상위 {PER_COUNTRY}건)")
-    if not rest:
-        out.append("없음")
-        return "\n".join(out)
-
-    by_country = {}
-    for r in rest:
-        by_country.setdefault(r["country"], []).append(r)
-    # 잘 되는 나라부터. 그 나라 최고 조회수가 기준.
-    for code, group in sorted(by_country.items(),
-                              key=lambda kv: -max(r.get("views", 0) for r in kv[1])):
-        group.sort(key=lambda r: -r.get("views", 0))
-        total = sum(r.get("views", 0) for r in group)
-        out.append(f"\n{flag(code)} *{code}* — {len(group)}건 · 조회 합계 {total:,}")
-        out += [f"  <{r['link']}|{r['text']}> {r['when']:%m-%d}\n"
-                f"    조회 {r.get('views', 0):,}{f' (+{delta(r, prev):,})' if delta(r, prev) else ''} · "
-                f"하트 {r.get('likes', 0):,} · 댓글 {r.get('replies', 0):,} · "
-                f"리포스트 {r.get('reposts', 0):,} · 인용 {r.get('quotes', 0):,} · "
-                f"공유 {r.get('shares', 0):,}"
-                for r in group[:PER_COUNTRY]]
+    # 나라별 최고 기록 한 건씩. 계정이 여럿인 나라는 더 잘 나온 쪽이 대표가 된다.
+    best = {}
+    for r in rows:
+        if r in fresh or not r.get("views", 0):
+            continue
+        cur = best.get(r["country"])
+        if cur is None or r.get("views", 0) > cur.get("views", 0):
+            best[r["country"]] = r
+    tops = sorted(best.values(), key=lambda r: -r.get("views", 0))
+    out.append(f"\n*최근 {window}일 최고 기록*")
+    out.append(HEAD)
+    out += [table(tops, prev), links(tops)] if tops else ["없음"]
 
     return "\n".join(out)
 
