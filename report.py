@@ -34,6 +34,7 @@ KST = timezone(timedelta(hours=9))
 GRAPH = "https://graph.threads.net/v1.0"
 METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
 SLACK_WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL", "")
+PER_COUNTRY = 3     # 나라별로 보여줄 상위 게시물 수
 
 
 def api(path, token, **params):
@@ -143,12 +144,29 @@ def render(rows, prev, window):
     else:
         out.append("없음")
 
-    # 게시물이 계정당 하루 1건이라 "자란 글"과 "누적 상위"로 쪼개면 같은 글이
-    # 양쪽에 겹친다. 하나로 합치고 증가분을 옆에 붙여 그 자리에서 성장을 본다.
+    # 20건을 한 줄로 쏟으면 안 읽힌다. 나라별로 묶어 상위 몇 건만 본다.
+    # 계정 간 성과 차이가 이 브리핑의 핵심 정보인데, 섞어놓으면 그게 안 보인다.
     rest = [r for r in rows if r not in fresh and r.get("views", 0)]
-    out.append(f"\n*그 전 게시물* (최근 {window}일 · 조회순)")
-    out += [line(r, prev) for r in
-            sorted(rest, key=lambda r: -r.get("views", 0))] or ["없음"]
+    out.append(f"\n*그 전 게시물* (최근 {window}일 · 나라별 조회 상위 {PER_COUNTRY}건)")
+    if not rest:
+        out.append("없음")
+        return "\n".join(out)
+
+    by_country = {}
+    for r in rest:
+        by_country.setdefault(r["country"], []).append(r)
+    # 잘 되는 나라부터. 그 나라 최고 조회수가 기준.
+    for code, group in sorted(by_country.items(),
+                              key=lambda kv: -max(r.get("views", 0) for r in kv[1])):
+        group.sort(key=lambda r: -r.get("views", 0))
+        total = sum(r.get("views", 0) for r in group)
+        out.append(f"\n{flag(code)} *{code}* — {len(group)}건 · 조회 합계 {total:,}")
+        out += [f"  <{r['link']}|{r['text']}> {r['when']:%m-%d}\n"
+                f"    조회 {r.get('views', 0):,}{f' (+{delta(r, prev)})' if delta(r, prev) else ''} · "
+                f"하트 {r.get('likes', 0)} · 댓글 {r.get('replies', 0)} · "
+                f"리포스트 {r.get('reposts', 0)} · 인용 {r.get('quotes', 0)} · "
+                f"공유 {r.get('shares', 0)}"
+                for r in group[:PER_COUNTRY]]
 
     return "\n".join(out)
 
