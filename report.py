@@ -121,59 +121,85 @@ def delta(row, prev):
     return None if old is None else row.get("views", 0) - old.get("views", 0)
 
 
-def block(r, prev):
-    """게시물 하나 = section 하나. 슬랙이 2열로 배치하니 폰트 폭과 무관하게
-    데스크탑·모바일 양쪽에서 안 깨진다. 코드블록 표는 모바일에서 줄바꿈으로 무너진다.
+TOP_N = 5   # 최고 기록 섹션에 보여줄 개수
+
+
+def line(r, prev):
+    """게시물 한 건 = 지표 줄 + 링크 줄. 0인 지표는 아예 쓰지 않아 소음을 줄인다.
+    댓글은 우리가 매번 다는 고정 답글 1건을 빼고 실제 반응만 센다.
     """
-    views = f"{r.get('views', 0):,}"
+    extra = []
+    for label, key, base in (("하트", "likes", 0), ("댓글", "replies", 1),
+                             ("리포스트", "reposts", 0), ("공유", "shares", 0)):
+        v = r.get(key, 0) - base
+        if v > 0:
+            extra.append(f"{label} {v:,}")
+    tail = (" · " + " · ".join(extra)) if extra else ""
     d = delta(r, prev)
-    if d:
-        views += f" (+{d:,})"
-    return {"type": "section", "fields": [
-        {"type": "mrkdwn",
-         "text": f"{flag(r['country'])} *{r['country']}*\n조회 *{views}*"},
-        {"type": "mrkdwn",
-         "text": (f"하트 {r.get('likes', 0):,} · 댓글 {r.get('replies', 0):,}\n"
-                  f"리포스트 {r.get('reposts', 0):,} · 공유 {r.get('shares', 0):,}")},
-    ]}
+    grew = f"  `+{d:,}`" if d else ""
+    return (f"{flag(r['country'])} *{r['country']}*  조회 *{r.get('views', 0):,}*"
+            f"{grew}{tail}\n<{r['link']}|{r['text']}>")
 
 
-def links(rows):
-    return {"type": "context", "elements": [{"type": "mrkdwn", "text": t} for t in
-            ["\n".join(f"{flag(r['country'])} <{r['link']}|{r['text']}>" for r in rows)]]}
+def summarize(fresh, tops, window):
+    """숫자에서 바로 읽히는 사실 세 줄. 해석은 붙이지 않는다."""
+    out = []
+    if fresh:
+        total = sum(r.get("views", 0) for r in fresh)
+        best = fresh[0]
+        out.append(f"• 어제 {len(fresh)}건 · 총 조회 {total:,} — "
+                   f"{flag(best['country'])} {best['country']}가 {best.get('views', 0):,}로 최고")
+        dead = [r for r in fresh if r.get("views", 0) < 100]
+        if dead:
+            names = " ".join(f"{flag(r['country'])}{r['country']}" for r in dead)
+            out.append(f"• 조회 100 미만 {len(dead)}건: {names}")
+    if tops:
+        t = tops[0]
+        out.append(f"• 최근 {window}일 최고는 {flag(t['country'])} {t['country']} "
+                   f"{t.get('views', 0):,} — 어제 최고의 "
+                   f"{t.get('views', 0) / max(fresh[0].get('views', 1), 1):.1f}배"
+                   if fresh else
+                   f"• 최근 {window}일 최고는 {flag(t['country'])} {t['country']} {t.get('views', 0):,}")
+    return "\n".join(out)
 
 
 def render(rows, prev, window):
     today = datetime.now(KST).replace(hour=0, minute=0, second=0, microsecond=0)
     yesterday = today - timedelta(days=1)
-    out = [{"type": "header",
-            "text": {"type": "plain_text",
-                     "text": f"홍보 브리핑 | {datetime.now(KST):%Y-%m-%d}"}}]
-
-    def section(title, group):
-        head = [{"type": "section",
-                 "text": {"type": "mrkdwn", "text": f"*{title}*"}}]
-        if not group:
-            return head + [{"type": "section",
-                            "text": {"type": "mrkdwn", "text": "없음"}}]
-        return head + [block(r, prev) for r in group] + [links(group)]
 
     fresh = sorted((r for r in rows
                     if yesterday <= r["when"].astimezone(KST) < today),
                    key=lambda r: -r.get("views", 0))
-    out += section("어제 올린 글", fresh)
+    # 나라별 최고가 아니라 전체 조회순. 잘 터진 글이 어느 나라든 위로 온다.
+    rest = sorted((r for r in rows if r not in fresh and r.get("views", 0)),
+                  key=lambda r: -r.get("views", 0))
+    tops = rest[:TOP_N]
 
-    # 나라별 최고 기록 한 건씩. 계정이 여럿인 나라는 더 잘 나온 쪽이 대표가 된다.
-    best = {}
-    for r in rows:
-        if r in fresh or not r.get("views", 0):
-            continue
-        cur = best.get(r["country"])
-        if cur is None or r.get("views", 0) > cur.get("views", 0):
-            best[r["country"]] = r
+    out = [{"type": "header",
+            "text": {"type": "plain_text",
+                     "text": f"홍보 브리핑 | {datetime.now(KST):%Y-%m-%d}"}}]
+    summary = summarize(fresh, tops, window)
+    if summary:
+        out.append({"type": "section", "text": {"type": "mrkdwn", "text": summary}})
     out.append({"type": "divider"})
-    out += section(f"최근 {window}일 최고 기록",
-                   sorted(best.values(), key=lambda r: -r.get("views", 0)))
+
+    def section(title, group, note=None):
+        blocks = [{"type": "section", "text": {"type": "mrkdwn", "text": f"*{title}*"}}]
+        if not group:
+            return blocks + [{"type": "section",
+                              "text": {"type": "mrkdwn", "text": "없음"}}]
+        blocks.append({"type": "section", "text": {"type": "mrkdwn",
+                       "text": "\n\n".join(line(r, prev) for r in group)}})
+        if note:
+            blocks.append({"type": "context",
+                           "elements": [{"type": "mrkdwn", "text": note}]})
+        return blocks
+
+    out += section("어제 올린 글", fresh)
+    out.append({"type": "divider"})
+    more = len(rest) - len(tops)
+    out += section(f"최근 {window}일 최고 기록", tops,
+                   f"이 밖에 {more}건 더 있음" if more > 0 else None)
     return out
 
 
