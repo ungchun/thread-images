@@ -123,12 +123,12 @@ def delta(row, prev):
 
 def line(r, prev, show_delta=True):
     d = delta(r, prev) if show_delta else None
-    grew = f" (+{d})" if d else ""
+    grew = f" (+{d:,})" if d else ""
     return (f"{flag(r['country'])} `{r['account']}` {r['when']:%m-%d %H:%M %Z} (현지)\n"
             f"  <{r['link']}|{r['text']}>\n"
-            f"  조회 {r.get('views', 0)}{grew} · 하트 {r.get('likes', 0)} · "
-            f"댓글 {r.get('replies', 0)} · 리포스트 {r.get('reposts', 0)} · "
-            f"인용 {r.get('quotes', 0)} · 공유 {r.get('shares', 0)}")
+            f"  조회 {r.get('views', 0):,}{grew} · 하트 {r.get('likes', 0):,} · "
+            f"댓글 {r.get('replies', 0):,} · 리포스트 {r.get('reposts', 0):,} · "
+            f"인용 {r.get('quotes', 0):,} · 공유 {r.get('shares', 0):,}")
 
 
 def render(rows, prev, window):
@@ -162,10 +162,10 @@ def render(rows, prev, window):
         total = sum(r.get("views", 0) for r in group)
         out.append(f"\n{flag(code)} *{code}* — {len(group)}건 · 조회 합계 {total:,}")
         out += [f"  <{r['link']}|{r['text']}> {r['when']:%m-%d}\n"
-                f"    조회 {r.get('views', 0):,}{f' (+{delta(r, prev)})' if delta(r, prev) else ''} · "
-                f"하트 {r.get('likes', 0)} · 댓글 {r.get('replies', 0)} · "
-                f"리포스트 {r.get('reposts', 0)} · 인용 {r.get('quotes', 0)} · "
-                f"공유 {r.get('shares', 0)}"
+                f"    조회 {r.get('views', 0):,}{f' (+{delta(r, prev):,})' if delta(r, prev) else ''} · "
+                f"하트 {r.get('likes', 0):,} · 댓글 {r.get('replies', 0):,} · "
+                f"리포스트 {r.get('reposts', 0):,} · 인용 {r.get('quotes', 0):,} · "
+                f"공유 {r.get('shares', 0):,}"
                 for r in group[:PER_COUNTRY]]
 
     return "\n".join(out)
