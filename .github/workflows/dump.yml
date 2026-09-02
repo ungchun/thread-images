@@ -1,0 +1,20 @@
+name: dump
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '조회 기간(일)'
+        required: false
+        default: '60'
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+        run: python3 dump_top.py "${{ inputs.days || 60 }}"
