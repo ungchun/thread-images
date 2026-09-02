@@ -151,19 +151,17 @@ def render(rows, prev, window):
                      "text": f"홍보 브리핑 | {datetime.now(KST):%Y-%m-%d}"}}]
 
     def section(title, group):
-        out.append({"type": "section",
-                    "text": {"type": "mrkdwn", "text": f"*{title}*"}})
+        head = [{"type": "section",
+                 "text": {"type": "mrkdwn", "text": f"*{title}*"}}]
         if not group:
-            out.append({"type": "section",
-                        "text": {"type": "mrkdwn", "text": "없음"}})
-            return
-        out += [block(r, prev) for r in group]
-        out.append(links(group))
+            return head + [{"type": "section",
+                            "text": {"type": "mrkdwn", "text": "없음"}}]
+        return head + [block(r, prev) for r in group] + [links(group)]
 
     fresh = sorted((r for r in rows
                     if yesterday <= r["when"].astimezone(KST) < today),
                    key=lambda r: -r.get("views", 0))
-    section("어제 올린 글", fresh)
+    out += section("어제 올린 글", fresh)
 
     # 나라별 최고 기록 한 건씩. 계정이 여럿인 나라는 더 잘 나온 쪽이 대표가 된다.
     best = {}
@@ -174,8 +172,8 @@ def render(rows, prev, window):
         if cur is None or r.get("views", 0) > cur.get("views", 0):
             best[r["country"]] = r
     out.append({"type": "divider"})
-    section(f"최근 {window}일 최고 기록",
-            sorted(best.values(), key=lambda r: -r.get("views", 0)))
+    out += section(f"최근 {window}일 최고 기록",
+                   sorted(best.values(), key=lambda r: -r.get("views", 0)))
     return out
 
 
