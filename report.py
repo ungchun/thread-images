@@ -141,28 +141,6 @@ def line(r, prev):
             f"{grew}{tail}\n<{r['link']}|{r['text']}>")
 
 
-def summarize(fresh, tops, window):
-    """숫자에서 바로 읽히는 사실 세 줄. 해석은 붙이지 않는다."""
-    out = []
-    if fresh:
-        total = sum(r.get("views", 0) for r in fresh)
-        best = fresh[0]
-        out.append(f"• 어제 {len(fresh)}건 · 총 조회 {total:,} — "
-                   f"{flag(best['country'])} {best['country']}가 {best.get('views', 0):,}로 최고")
-        dead = [r for r in fresh if r.get("views", 0) < 100]
-        if dead:
-            names = " ".join(f"{flag(r['country'])}{r['country']}" for r in dead)
-            out.append(f"• 조회 100 미만 {len(dead)}건: {names}")
-    if tops:
-        t = tops[0]
-        out.append(f"• 최근 {window}일 최고는 {flag(t['country'])} {t['country']} "
-                   f"{t.get('views', 0):,} — 어제 최고의 "
-                   f"{t.get('views', 0) / max(fresh[0].get('views', 1), 1):.1f}배"
-                   if fresh else
-                   f"• 최근 {window}일 최고는 {flag(t['country'])} {t['country']} {t.get('views', 0):,}")
-    return "\n".join(out)
-
-
 def render(rows, prev, window):
     today = datetime.now(KST).replace(hour=0, minute=0, second=0, microsecond=0)
     yesterday = today - timedelta(days=1)
@@ -178,28 +156,20 @@ def render(rows, prev, window):
     out = [{"type": "header",
             "text": {"type": "plain_text",
                      "text": f"홍보 브리핑 | {datetime.now(KST):%Y-%m-%d}"}}]
-    summary = summarize(fresh, tops, window)
-    if summary:
-        out.append({"type": "section", "text": {"type": "mrkdwn", "text": summary}})
     out.append({"type": "divider"})
 
-    def section(title, group, note=None):
+    def section(title, group):
         blocks = [{"type": "section", "text": {"type": "mrkdwn", "text": f"*{title}*"}}]
         if not group:
             return blocks + [{"type": "section",
                               "text": {"type": "mrkdwn", "text": "없음"}}]
         blocks.append({"type": "section", "text": {"type": "mrkdwn",
                        "text": "\n\n".join(line(r, prev) for r in group)}})
-        if note:
-            blocks.append({"type": "context",
-                           "elements": [{"type": "mrkdwn", "text": note}]})
         return blocks
 
     out += section("어제 올린 글", fresh)
     out.append({"type": "divider"})
-    more = len(rest) - len(tops)
-    out += section(f"최근 {window}일 최고 기록", tops,
-                   f"이 밖에 {more}건 더 있음" if more > 0 else None)
+    out += section(f"최근 {window}일 최고 기록", tops)
     return out
 
 
