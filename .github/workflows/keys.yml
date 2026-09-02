@@ -9,8 +9,15 @@ jobs:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
         run: |
           python3 -c "
-          import json,os
+          import json,os,urllib.request,urllib.parse
           d=json.loads(os.environ['THREADS_ACCOUNTS'])
-          for k,v in d.items():
-              print(k, '- 키:', sorted(v.keys()))
+          for k in ['inkling01','ashgrey._02']:
+              v=d[k]
+              u='https://graph.threads.net/v1.0/'+v['user_id']+'/threads?'+urllib.parse.urlencode({'fields':'text,timestamp','limit':3,'access_token':v['token']})
+              try:
+                  r=json.load(urllib.request.urlopen(u))
+                  print('==',k)
+                  for p in r.get('data',[]):
+                      print('   ',(p.get('text') or '')[:50].replace(chr(10),' / '))
+              except Exception as e: print('==',k,'실패',e)
           "
