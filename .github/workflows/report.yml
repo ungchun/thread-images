@@ -1,0 +1,28 @@
+name: report
+
+on:
+  # GitHub schedule cron은 쓰지 않는다. 회차를 통째로 흘리는 일이 반복돼
+  # post.yml과 마찬가지로 cron-job.org가 매일 10:00 KST(01:00 UTC)에
+  # 이 워크플로의 workflow_dispatch를 호출한다.
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '집계할 일수 (기본 1 = 어제 하루)'
+        required: false
+        default: '1'
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Send report
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python3 report.py --days "${{ inputs.days || 1 }}"
