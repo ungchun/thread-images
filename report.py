@@ -148,10 +148,16 @@ def render(rows, prev, window):
     fresh = sorted((r for r in rows
                     if yesterday <= r["when"].astimezone(KST) < today),
                    key=lambda r: -r.get("views", 0))
-    # 나라별 최고가 아니라 전체 조회순. 잘 터진 글이 어느 나라든 위로 온다.
+    # 전체 조회순이되 나라당 한 건. 같은 나라 글이 목록을 다 차지하면
+    # 다른 나라 상황이 안 보인다. 중복되면 더 최근 글을 남긴다.
     rest = sorted((r for r in rows if r not in fresh and r.get("views", 0)),
-                  key=lambda r: -r.get("views", 0))
-    tops = rest[:TOP_N]
+                  key=lambda r: (-r.get("views", 0), r["at"]))
+    best = {}
+    for r in rest:
+        c = r["country"]
+        if c not in best or r["at"] > best[c]["at"]:
+            best[c] = r
+    tops = sorted(best.values(), key=lambda r: -r.get("views", 0))[:TOP_N]
 
     out = [{"type": "header",
             "text": {"type": "plain_text",
