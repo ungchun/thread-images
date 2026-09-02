@@ -1,0 +1,16 @@
+name: keys
+on:
+  workflow_dispatch:
+jobs:
+  keys:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+        run: |
+          python3 -c "
+          import json,os
+          d=json.loads(os.environ['THREADS_ACCOUNTS'])
+          for k,v in d.items():
+              print(k, '- 키:', sorted(v.keys()))
+          "
