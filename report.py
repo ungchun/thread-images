@@ -121,48 +121,49 @@ def delta(row, prev):
     return None if old is None else row.get("views", 0) - old.get("views", 0)
 
 
-GAP = "   "
-HEAD = "_나라 · 조회 · 하트 · 댓글 · 리포스트 · 공유_"
-
-
-def table(rows, prev):
-    """코드블록 표. 슬랙 코드블록에서 한글은 비례폭이라 열이 안 맞는다.
-    그래서 표 안에는 ASCII(나라코드·숫자)만 두고 열 이름은 표 위에 따로 쓴다.
+def block(r, prev):
+    """게시물 하나 = section 하나. 슬랙이 2열로 배치하니 폰트 폭과 무관하게
+    데스크탑·모바일 양쪽에서 안 깨진다. 코드블록 표는 모바일에서 줄바꿈으로 무너진다.
     """
-    cells = []
-    for r in rows:
-        views = f"{r.get('views', 0):,}"
-        d = delta(r, prev)
-        if d:
-            views += f" (+{d:,})"
-        cells.append([r["country"], views] +
-                     [f"{r.get(m, 0):,}" for m in
-                      ("likes", "replies", "reposts", "shares")])
-    cols = [max(len(c[i]) for c in cells) for i in range(len(cells[0]))]
-    out = []
-    for c in cells:
-        head = c[0] + " " * (cols[0] - len(c[0]))
-        body = GAP.join(" " * (cols[j] - len(c[j])) + c[j]
-                        for j in range(1, len(c)))
-        out += [(head + GAP + body).rstrip(), ""]
-    return "```\n" + "\n".join(out).rstrip() + "\n```"
+    views = f"{r.get('views', 0):,}"
+    d = delta(r, prev)
+    if d:
+        views += f" (+{d:,})"
+    return {"type": "section", "fields": [
+        {"type": "mrkdwn",
+         "text": f"{flag(r['country'])} *{r['country']}*\n조회 *{views}*"},
+        {"type": "mrkdwn",
+         "text": (f"하트 {r.get('likes', 0):,} · 댓글 {r.get('replies', 0):,}\n"
+                  f"리포스트 {r.get('reposts', 0):,} · 공유 {r.get('shares', 0):,}")},
+    ]}
 
 
 def links(rows):
-    return "\n".join(f"{flag(r['country'])} <{r['link']}|{r['text']}>" for r in rows)
+    return {"type": "context", "elements": [{"type": "mrkdwn", "text": t} for t in
+            ["\n".join(f"{flag(r['country'])} <{r['link']}|{r['text']}>" for r in rows)]]}
 
 
 def render(rows, prev, window):
     today = datetime.now(KST).replace(hour=0, minute=0, second=0, microsecond=0)
     yesterday = today - timedelta(days=1)
-    out = [f"*홍보 브리핑 | {datetime.now(KST):%Y-%m-%d}*"]
+    out = [{"type": "header",
+            "text": {"type": "plain_text",
+                     "text": f"홍보 브리핑 | {datetime.now(KST):%Y-%m-%d}"}}]
+
+    def section(title, group):
+        out.append({"type": "section",
+                    "text": {"type": "mrkdwn", "text": f"*{title}*"}})
+        if not group:
+            out.append({"type": "section",
+                        "text": {"type": "mrkdwn", "text": "없음"}})
+            return
+        out += [block(r, prev) for r in group]
+        out.append(links(group))
 
     fresh = sorted((r for r in rows
                     if yesterday <= r["when"].astimezone(KST) < today),
                    key=lambda r: -r.get("views", 0))
-    out.append("\n*어제 올린 글*")
-    out.append(HEAD)
-    out += [table(fresh, prev), links(fresh)] if fresh else ["없음"]
+    section("어제 올린 글", fresh)
 
     # 나라별 최고 기록 한 건씩. 계정이 여럿인 나라는 더 잘 나온 쪽이 대표가 된다.
     best = {}
@@ -172,12 +173,10 @@ def render(rows, prev, window):
         cur = best.get(r["country"])
         if cur is None or r.get("views", 0) > cur.get("views", 0):
             best[r["country"]] = r
-    tops = sorted(best.values(), key=lambda r: -r.get("views", 0))
-    out.append(f"\n*최근 {window}일 최고 기록*")
-    out.append(HEAD)
-    out += [table(tops, prev), links(tops)] if tops else ["없음"]
-
-    return "\n".join(out)
+    out.append({"type": "divider"})
+    section(f"최근 {window}일 최고 기록",
+            sorted(best.values(), key=lambda r: -r.get("views", 0)))
+    return out
 
 
 def main():
@@ -197,8 +196,8 @@ def main():
             print(f"[{d.name}] 수집 실패: {e}", file=sys.stderr)
 
     prev = load_prev()
-    msg = render(rows, prev, window)
-    print(msg)
+    blocks = render(rows, prev, window)
+    print(json.dumps(blocks, ensure_ascii=False, indent=1))
 
     if dry:
         return
@@ -206,7 +205,7 @@ def main():
 
     if SLACK_WEBHOOK:
         req = urllib.request.Request(
-            SLACK_WEBHOOK, data=json.dumps({"text": msg}).encode(),
+            SLACK_WEBHOOK, data=json.dumps({"blocks": blocks}).encode(),
             headers={"Content-Type": "application/json"})
         with urllib.request.urlopen(req, timeout=15) as r:
             print(f"\n슬랙 발송: {r.status}", file=sys.stderr)
