@@ -34,7 +34,7 @@ KST = timezone(timedelta(hours=9))
 GRAPH = "https://graph.threads.net/v1.0"
 METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
 SLACK_WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL", "")
-PER_COUNTRY = 3     # 나라별로 보여줄 상위 게시물 수
+PER_COUNTRY = 2     # 나라별로 보여줄 상위 게시물 수
 
 
 def api(path, token, **params):
