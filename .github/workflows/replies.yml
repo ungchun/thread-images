@@ -1,0 +1,36 @@
+name: replies
+
+# threads-reply 스킬이 답글을 읽고 발행할 때 쓴다. 토큰이 Secrets에만 있어서
+# 로컬에서 못 돌리는 계정은 이 워크플로를 거친다.
+on:
+  workflow_dispatch:
+    inputs:
+      cmd:
+        description: 'posts | list | tone'
+        required: true
+        default: 'posts'
+      account:
+        description: '계정명'
+        required: true
+      arg:
+        description: 'list면 게시물 id, posts면 --days 값, tone이면 --limit 값'
+        required: false
+        default: ''
+
+jobs:
+  replies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+        run: |
+          case "${{ inputs.cmd }}" in
+            posts) python3 replies.py posts "${{ inputs.account }}" --days "${{ inputs.arg || 30 }}" ;;
+            list)  python3 replies.py list  "${{ inputs.account }}" "${{ inputs.arg }}" ;;
+            tone)  python3 replies.py tone  "${{ inputs.account }}" --limit "${{ inputs.arg || 20 }}" ;;
+            *) echo "알 수 없는 cmd"; exit 1 ;;
+          esac
