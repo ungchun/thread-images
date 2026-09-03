@@ -1,0 +1,22 @@
+name: vn-report
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '조회 기간(일)'
+        required: false
+        default: '60'
+
+jobs:
+  vn-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python3 vn_report.py --days "${{ inputs.days || 60 }}"
