@@ -163,7 +163,7 @@ def main():
     if not SCHEDULE.exists():
         return
     now = datetime.now(timezone.utc)
-    kept, changed = [], False
+    kept, finished, changed = [], [], False
 
     for line in SCHEDULE.read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
@@ -199,25 +199,47 @@ def main():
             done.add(name)
             changed = True
 
-        # 예약한 플랫폼이 전부 끝났을 때만 줄을 지우고 파일을 치운다
+        # 예약한 플랫폼이 전부 끝났을 때만 줄을 지운다. 파일 정리는 루프 뒤에서 한다 —
+        # 여러 줄이 같은 파일(공통 인트로 영상 등)을 쓰면 여기서 옮기는 순간
+        # 뒤 줄이 "이미지 없음"으로 죽는다.
         need = {n for n, imgs in (("threads", tw_imgs), ("ig", ig_imgs)) if imgs}
         if need and need <= done:
-            shutil.move(ROOT / textfile, DONE / Path(textfile).name)
-            # 두 폴더에 같은 파일명이 있을 수 있어 done 아래에서도 폴더를 나눈다
-            for folder, imgs in ((THREADS["images"], tw_imgs), (INSTAGRAM["images"], ig_imgs)):
-                dest = DONE / folder
-                dest.mkdir(parents=True, exist_ok=True)
-                for i in imgs:
-                    src = ROOT / folder / i
-                    if src.exists():
-                        shutil.move(src, dest / i)
+            finished.append((textfile, tw_imgs, ig_imgs))
             changed = True
         else:
             kept.append(render(when, account, textfile, tw_imgs, ig_imgs, done))
 
+    archive(finished, kept)
+
     if changed:
         SCHEDULE.write_text("\n".join(kept) + "\n", encoding="utf-8")
         sync()
+
+
+def archive(finished, kept):
+    """끝난 예약의 파일을 done/으로 옮긴다. 남은 예약이 아직 쓰는 파일은 놔둔다."""
+    live_text, live = set(), {THREADS["images"]: set(), INSTAGRAM["images"]: set()}
+    for line in kept:
+        if not line.strip() or line.startswith("#"):
+            continue
+        _, _, textfile, tw, ig, _ = parse(line)
+        live_text.add(textfile)
+        live[THREADS["images"]] |= set(tw)
+        live[INSTAGRAM["images"]] |= set(ig)
+
+    for textfile, tw_imgs, ig_imgs in finished:
+        if textfile not in live_text:
+            src = ROOT / textfile
+            if src.exists():
+                shutil.move(src, DONE / Path(textfile).name)
+        # 두 폴더에 같은 파일명이 있을 수 있어 done 아래에서도 폴더를 나눈다
+        for folder, imgs in ((THREADS["images"], tw_imgs), (INSTAGRAM["images"], ig_imgs)):
+            dest = DONE / folder
+            for i in imgs:
+                src = ROOT / folder / i
+                if i not in live[folder] and src.exists():
+                    dest.mkdir(parents=True, exist_ok=True)
+                    shutil.move(src, dest / i)
 
 
 def sync():
@@ -240,4 +262,33 @@ def _selfcheck():
     assert media_kind("a.png", "U", ig=True) == {"image_url": "U"}
     assert media_kind("a.MP4", "U") == {"media_type": "VIDEO", "video_url": "U"}
     assert media_kind("a.mov", "U", ig=True) == {"media_type": "REELS", "video_url": "U"}
+    _check_archive()
     print("ok")
+
+
+def _check_archive():
+    """여러 줄이 같은 영상을 쓸 때 첫 발행이 그 파일을 뺏어가지 않는지 본다."""
+    import tempfile
+    global ROOT, DONE
+    keep_root, keep_done = ROOT, DONE
+    try:
+        ROOT = Path(tempfile.mkdtemp())
+        DONE = ROOT / "done"
+        DONE.mkdir()
+        (ROOT / "images").mkdir()
+        for n in ("shared.mov", "a.png", "b.png"):
+            (ROOT / "images" / n).write_text("x")
+        (ROOT / "texts").mkdir()
+        for n in ("one.txt", "two.txt"):
+            (ROOT / "texts" / n).write_text("x")
+
+        kept = ["2030-01-01T00:00:00+00:00\tacc\ttexts/two.txt\tshared.mov,b.png\t-"]
+        archive([("texts/one.txt", ["shared.mov", "a.png"], [])], kept)
+
+        assert (ROOT / "images/shared.mov").exists(), "공유 영상이 사라졌다"
+        assert (ROOT / "images/b.png").exists()
+        assert (DONE / "images/a.png").exists(), "다 쓴 이미지는 치워야 한다"
+        assert (DONE / "one.txt").exists()
+        assert (ROOT / "texts/two.txt").exists()
+    finally:
+        ROOT, DONE = keep_root, keep_done
