@@ -2,7 +2,10 @@
 """schedule.txt 에서 시각이 지난 예약을 Threads·Instagram에 올린다. cron이 30분마다 부른다.
 
 schedule.txt 한 줄 (탭 구분):
-    <ISO시각(UTC)>  <계정명>  <본문파일>  <threads이미지|->  <ig이미지|->  [완료표시]
+    <ISO시각(UTC)>  <계정명>  <본문파일>  <threads미디어|->  <ig미디어|->  [완료표시]
+
+미디어는 쉼표로 여러 개. 확장자로 이미지/영상을 가르므로 영상(.mp4/.mov)을
+그냥 섞어 쓰면 된다. 예: intro.mp4,a.png,b.png (캐러셀 최대 20개).
 
 완료표시는 이미 올라간 플랫폼을 기록한다(done:threads / done:ig). 한쪽만 성공하면
 그 표시를 남기고 줄을 유지해, 다음 회차가 실패한 쪽만 다시 시도한다. 같은 글이
@@ -89,6 +92,20 @@ def creds(account, ig=False):
     return env["THREADS_TOKEN"], env["THREADS_USER_ID"]
 
 
+VIDEO_EXT = {".mp4", ".mov"}
+
+
+def media_kind(name, url, ig=False):
+    """파일 확장자로 이미지/영상을 가른다. 필드 이름부터 다르다.
+
+    인스타는 이미지에 media_type을 안 받지만 영상에는 REELS가 필요하다.
+    영상 컨테이너는 준비에 30초쯤 걸리는데 wait_ready(5초x20)가 이미 감당한다.
+    """
+    if Path(name).suffix.lower() in VIDEO_EXT:
+        return {"media_type": "REELS" if ig else "VIDEO", "video_url": url}
+    return {"image_url": url} if ig else {"media_type": "IMAGE", "image_url": url}
+
+
 def fixed_reply(account, plat):
     """계정 고정 답글. 본문에 ---로 직접 쓰면 그쪽이 우선한다."""
     f = ROOT / "accounts" / account / plat["reply"]
@@ -100,16 +117,13 @@ def publish(plat, account, text, images, reply=None, ig=False):
     base = f"{RAW}/{plat['images']}"
     create = f"{user}/{plat['create']}"
     if len(images) > 1:  # 캐러셀: 장마다 컨테이너를 만들고 전부 준비된 뒤 묶는다
-        items = [api(plat, create, token, image_url=f"{base}/{i}",
-                     is_carousel_item="true",
-                     **({} if ig else {"media_type": "IMAGE"}))["id"] for i in images]
+        items = [api(plat, create, token, is_carousel_item="true",
+                     **media_kind(i, f"{base}/{i}", ig))["id"] for i in images]
         for i in items:
             wait_ready(plat, i, token)
         kind = {"media_type": "CAROUSEL", "children": ",".join(items)}
     elif images:
-        kind = {"image_url": f"{base}/{images[0]}"}
-        if not ig:
-            kind["media_type"] = "IMAGE"
+        kind = media_kind(images[0], f"{base}/{images[0]}", ig)
     else:
         kind = {"media_type": "TEXT"}
     key = "caption" if ig else "text"
@@ -218,3 +232,12 @@ def sync():
 
 if __name__ == "__main__":
     main()
+
+
+def _selfcheck():
+    """확장자 분기만 검사. 영상은 필드 이름부터 달라서 조용히 틀리면 발행이 통째로 깨진다."""
+    assert media_kind("a.png", "U") == {"media_type": "IMAGE", "image_url": "U"}
+    assert media_kind("a.png", "U", ig=True) == {"image_url": "U"}
+    assert media_kind("a.MP4", "U") == {"media_type": "VIDEO", "video_url": "U"}
+    assert media_kind("a.mov", "U", ig=True) == {"media_type": "REELS", "video_url": "U"}
+    print("ok")
