@@ -216,6 +216,9 @@ def main():
         sync()
 
 
+KEEP = ("intro.",)   # 매 라운드 재사용하는 공통 미디어. done/으로 치우지 않는다.
+
+
 def archive(finished, kept):
     """끝난 예약의 파일을 done/으로 옮긴다. 남은 예약이 아직 쓰는 파일은 놔둔다."""
     live_text, live = set(), {THREADS["images"]: set(), INSTAGRAM["images"]: set()}
@@ -237,9 +240,10 @@ def archive(finished, kept):
             dest = DONE / folder
             for i in imgs:
                 src = ROOT / folder / i
-                if i not in live[folder] and src.exists():
-                    dest.mkdir(parents=True, exist_ok=True)
-                    shutil.move(src, dest / i)
+                if i.startswith(KEEP) or i in live[folder] or not src.exists():
+                    continue
+                dest.mkdir(parents=True, exist_ok=True)
+                shutil.move(src, dest / i)
 
 
 def sync():
@@ -276,18 +280,19 @@ def _check_archive():
         DONE = ROOT / "done"
         DONE.mkdir()
         (ROOT / "images").mkdir()
-        for n in ("shared.mov", "a.png", "b.png"):
+        for n in ("shared.mov", "a.png", "b.png", "intro.mov"):
             (ROOT / "images" / n).write_text("x")
         (ROOT / "texts").mkdir()
         for n in ("one.txt", "two.txt"):
             (ROOT / "texts" / n).write_text("x")
 
         kept = ["2030-01-01T00:00:00+00:00\tacc\ttexts/two.txt\tshared.mov,b.png\t-"]
-        archive([("texts/one.txt", ["shared.mov", "a.png"], [])], kept)
+        archive([("texts/one.txt", ["shared.mov", "a.png", "intro.mov"], [])], kept)
 
         assert (ROOT / "images/shared.mov").exists(), "공유 영상이 사라졌다"
         assert (ROOT / "images/b.png").exists()
         assert (DONE / "images/a.png").exists(), "다 쓴 이미지는 치워야 한다"
+        assert (ROOT / "images/intro.mov").exists(), "공통 인트로는 늘 남아야 한다"
         assert (DONE / "one.txt").exists()
         assert (ROOT / "texts/two.txt").exists()
     finally:
