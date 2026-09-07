@@ -109,6 +109,64 @@ def compare(posts, rs):
     return out
 
 
+def insights(posts):
+    """올린 글에서 바로 읽히는 것들. 계정 체력이 100배씩 차이나므로 절대 조회수가
+    아니라 "그 계정 평소 대비 몇 배"(배수)로 잰다. 1.0이 평소 수준.
+
+    표본이 적은 구간이 많아 숫자를 단정으로 읽으면 안 된다. n을 같이 내보내
+    화면에서 판단 강도를 구분한다.
+    """
+    import statistics
+    from collections import defaultdict
+    from datetime import date
+
+    live = [p for p in posts if p.get("views")]
+    if not live:
+        return {}
+
+    base = {}
+    per = defaultdict(list)
+    for p in live:
+        per[p["account"]].append(p["views"])
+    for a, v in per.items():
+        base[a] = statistics.mean(v) or 1
+
+    def ratio(p):
+        return p["views"] / base[p["account"]]
+
+    def group(keyfn, rows=None):
+        g = defaultdict(list)
+        for p in (rows or live):
+            g[keyfn(p)].append(p)
+        return {k: {"n": len(v),
+                    "score": round(statistics.median(ratio(x) for x in v), 2),
+                    "median": int(statistics.median(x["views"] for x in v))}
+                for k, v in g.items()}
+
+    hour = lambda p: int(p["local"].split()[1].split(":")[0])
+    wday = lambda p: "월화수목금토일"[date.fromisoformat(p["date"]).weekday()]
+
+    # 계정별 최적 시간대 — 표본 1건짜리는 근거가 못 되니 건수를 같이 넘긴다
+    by_acc = {}
+    for a in sorted(per, key=lambda a: -base[a]):
+        rows = [p for p in live if p["account"] == a]
+        g = group(hour, rows)
+        best = max(g.items(), key=lambda kv: (kv[1]["median"], kv[1]["n"]))
+        by_acc[a] = {
+            "flag": rows[0]["country"], "posts": len(rows),
+            "avg": int(base[a]), "max": max(p["views"] for p in rows),
+            "hours": dict(sorted(g.items())),
+            "best_hour": best[0], "best_n": best[1]["n"],
+        }
+
+    return {
+        "hour": dict(sorted(group(hour).items())),
+        "wday": {k: group(wday)[k] for k in "월화수목금토일" if k in group(wday)},
+        "media": group(lambda p: p.get("kind") or "?"),
+        "accounts": by_acc,
+    }
+
+
 def skiplist(account):
     """답하지 않기로 한 답글 id. accounts/<계정>/skip.txt 한 줄에 "id  # 이유"."""
     f = ROOT / "accounts" / account / "skip.txt"
@@ -222,6 +280,7 @@ def main():
     data = {
         "generated": datetime.now(timezone.utc).isoformat(),
         "rounds": compare(all_posts, rs),
+        "insights": insights(all_posts),
         "plan": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("plan", []),
         "window_days": days,
         "scheduled": scheduled(),

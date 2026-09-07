@@ -73,6 +73,20 @@ tr.top td{background:#151d19}
 @media(max-width:760px){.vs{grid-template-columns:1fr}}
 .tag{display:inline-block;border:1px solid var(--line);border-radius:20px;
  padding:2px 10px;font-size:11px;color:var(--dim);margin-right:6px}
+.ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-bottom:12px}
+.ins h4{margin:0 0 10px;font-size:13px;color:var(--dim);font-weight:500}
+.row{display:flex;align-items:center;gap:8px;padding:3px 0;font-size:12px}
+.row .k{width:38px;text-align:right;color:var(--dim);flex:none}
+.row .b{flex:1;height:14px;background:#1b1f27;border-radius:3px;overflow:hidden}
+.row .b i{display:block;height:100%;background:var(--hot);opacity:.85}
+.row .v{width:74px;text-align:right;font-variant-numeric:tabular-nums;flex:none}
+.row.thin{opacity:.35}
+.row.thin .v::after{content:" ?";color:var(--dim)}
+.note2{color:var(--dim);font-size:11px;margin-top:8px;line-height:1.5}
+.acct-ins{font-size:12px;border-collapse:collapse;width:100%}
+.acct-ins td,.acct-ins th{padding:5px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.acct-ins th{color:var(--dim);font-weight:500;text-align:left}
+.dead{color:#c46;font-size:11px}
 .accs{font-size:12px;color:var(--dim);line-height:1.8}
 .pill{display:inline-block;background:var(--line);border-radius:6px;padding:1px 7px;
  font-size:11px;color:var(--dim);margin-left:6px}
@@ -245,8 +259,46 @@ function renderPending(rows, skipped){
   return out;
 }
 
-function renderInsight(rounds, plan){
-  let out = "";
+function bars(obj, label, minN){
+  const ks = Object.keys(obj);
+  if(!ks.length) return "";
+  const max = Math.max(...ks.map(k => obj[k].score), 0.01);
+  return ks.map(k => {
+    const o = obj[k], thin = o.n < (minN || 3);
+    return `<div class="row ${thin?"thin":""}">
+      <span class="k">${esc(label(k))}</span>
+      <span class="b"><i style="width:${Math.min(100, o.score/max*100)}%"></i></span>
+      <span class="v">${o.score.toFixed(2)}<span class="meta"> n${o.n}</span></span>
+    </div>`;
+  }).join("");
+}
+
+function renderIns(ins){
+  if(!ins || !ins.hour) return "";
+  const acc = ins.accounts || {};
+  const dead = Object.entries(acc).filter(([a,o]) => o.posts >= 4 && o.avg < 100);
+  return `<div class="ins">
+    <div class="card"><h4>시간대 (현지)</h4>${bars(ins.hour, k => k+"시")}
+      <div class="note2">흐린 줄은 표본 3건 미만이라 근거가 약하다.</div></div>
+    <div class="card"><h4>요일</h4>${bars(ins.wday, k => k)}
+      <div class="note2">일요일이 눈에 띄게 낮다.</div></div>
+  </div>
+  <div class="card"><h4>계정별 (평균 조회 순)</h4>
+    <table class="acct-ins"><tr><th>계정</th><th>글</th><th style="text-align:right">평균</th>
+      <th style="text-align:right">최고</th><th>잘 된 시각</th></tr>` +
+    Object.entries(acc).map(([a,o]) => `<tr>
+      <td>${esc(a)}${o.posts>=4&&o.avg<100?' <span class="dead">사실상 도달 없음</span>':''}</td>
+      <td class="meta">${o.posts}</td>
+      <td style="text-align:right">${n(o.avg)}</td>
+      <td style="text-align:right" class="meta">${n(o.max)}</td>
+      <td class="meta">${o.best_hour}시${o.best_n<2?" (1건)":""}</td>
+    </tr>`).join("") + `</table>
+    <div class="note2">배수는 그 계정 평소 대비다. 계정 규모가 100배씩 차이나서
+      절대 조회수로는 나라끼리 비교가 안 된다.</div></div>`;
+}
+
+function renderInsight(rounds, plan, ins){
+  let out = renderIns(ins);
   const done = (rounds||[]).filter(r => r.posts);
   const best = Math.max(...done.map(r => r.score || 0), 1);
 
@@ -261,8 +313,12 @@ function renderInsight(rounds, plan){
       (pl.variants||[]).map(v => `<div>
         <b>${esc(v.key)}. ${esc(v.label)}</b>
         <div class="copy">${esc(v.kr)}</div>
-        <div class="accs">${((pl.accounts||{})[v.key]||[]).map(esc).join("<br>") || "미배정"}</div>
+        <div class="accs">${((pl.accounts||{})[v.key]||[]).map(esc).join("<br>") || ""}</div>
       </div>`).join("") + `</div>` +
+      (pl.schedule ? `<h4 style="margin:16px 0 8px;font-size:13px;color:var(--dim);font-weight:500">계정별 발행 시각 (현지)</h4>
+        <table class="acct-ins">` + pl.schedule.map(x => `<tr>
+          <td>${esc(x.account)}</td><td><b>${x.hour}시</b></td>
+          <td class="meta" style="white-space:normal">${esc(x.why)}</td></tr>`).join("") + `</table>` : "") +
       (pl.note ? `<div class="meta" style="margin-top:12px">${esc(pl.note)}</div>` : "") +
       `</div>`;
   });
@@ -299,7 +355,7 @@ fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
   $("#p-acct").onchange = e => { P.acct = e.target.value; paintPosts(); };
   paintPosts();
   $("#pending").innerHTML = renderPending(d.pending, d.skipped);
-  $("#insight").innerHTML = renderInsight(d.rounds, d.plan);
+  $("#insight").innerHTML = renderInsight(d.rounds, d.plan, d.insights);
   $("#n-insight").textContent = (d.plan||[]).length;
   if(d.errors && d.errors.length)
     $("#errors").innerHTML = `<div class="err">수집 실패 ${d.errors.length}건: ${esc(d.errors.join(" / "))}</div>`;
