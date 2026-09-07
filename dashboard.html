@@ -368,7 +368,10 @@ function renderInsight(rounds, plan, ins, tour){
   return out;
 }
 
-fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
+// GitHub raw에서 직접 읽는다. 로컬 파일을 보면 git pull 전까지 옛 데이터가 남는다.
+const SRC = "https://raw.githubusercontent.com/ungchun/thread-images/main/dashboard.json";
+fetch(SRC + "?" + Date.now())
+  .catch(() => fetch("dashboard.json?" + Date.now())).then(r => r.json()).then(d => {
   $("#stamp").textContent = "갱신 " + d.generated.slice(0,16).replace("T"," ") + " UTC · 최근 " + d.window_days + "일";
   $("#n-sched").textContent = d.scheduled.length;
   $("#n-posts").textContent = d.posts.length;
@@ -394,6 +397,6 @@ fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
     tip.style.top = (r.bottom + 8) + "px";
   });
 }).catch(e => {
-  $("#errors").innerHTML = `<div class="err">dashboard.json을 못 읽었다. 워크플로를 한 번 돌려야 한다.<br>${esc(e.message)}</div>`;
+  $("#errors").innerHTML = `<div class="err">데이터를 못 읽었다. 워크플로를 한 번 돌려야 한다.<br>${esc(e.message)}</div>`;
 });
 </script>
