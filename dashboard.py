@@ -109,7 +109,7 @@ def compare(posts, rs):
     return out
 
 
-def insights(posts):
+def read_signals(posts):
     """올린 글에서 바로 읽히는 것들. 계정 체력이 100배씩 차이나므로 절대 조회수가
     아니라 "그 계정 평소 대비 몇 배"(배수)로 잰다. 1.0이 평소 수준.
 
@@ -280,7 +280,7 @@ def main():
     data = {
         "generated": datetime.now(timezone.utc).isoformat(),
         "rounds": compare(all_posts, rs),
-        "insights": insights(all_posts),
+        "insights": read_signals(all_posts),
         "plan": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("plan", []),
         "tournament": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("tournament", {}),
         "window_days": days,
@@ -299,3 +299,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def _selfcheck():
+    """import한 이름을 덮어쓰지 않았는지 본다. report.insights(post_id, token)를
+    같은 이름 함수로 가린 적이 있어 전 계정 수집이 통째로 죽었다."""
+    import inspect
+    assert list(inspect.signature(insights).parameters) == ["post_id", "token"], \
+        "report.insights가 가려졌다"
+    assert list(inspect.signature(read_signals).parameters) == ["posts"]
+    print("ok")

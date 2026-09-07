@@ -379,8 +379,9 @@ fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
   $("#n-pending").textContent = d.pending.length;
   $("#sched").innerHTML = renderSched(d.scheduled);
   $("#posts").innerHTML = renderPosts(d.posts);
-  $("#p-view").onchange = e => { P.view = e.target.value; paintPosts(); };
-  $("#p-acct").onchange = e => { P.acct = e.target.value; paintPosts(); };
+  const pv = $("#p-view"), pa = $("#p-acct");
+  if(pv) pv.onchange = e => { P.view = e.target.value; paintPosts(); };
+  if(pa) pa.onchange = e => { P.acct = e.target.value; paintPosts(); };
   paintPosts();
   $("#pending").innerHTML = renderPending(d.pending, d.skipped);
   $("#insight").innerHTML = renderInsight(d.rounds, d.plan, d.insights, d.tournament);
