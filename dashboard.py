@@ -282,6 +282,7 @@ def main():
         "rounds": compare(all_posts, rs),
         "insights": insights(all_posts),
         "plan": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("plan", []),
+        "tournament": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("tournament", {}),
         "window_days": days,
         "scheduled": scheduled(),
         "posts": sorted(all_posts, key=lambda r: r["utc"], reverse=True),

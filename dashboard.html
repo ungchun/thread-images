@@ -85,6 +85,14 @@ tr.top td{background:#151d19}
 .note2{color:var(--dim);font-size:11px;margin-top:8px;line-height:1.5}
 .acct-ins{font-size:12px;border-collapse:collapse;width:100%}
 .acct-ins td,.acct-ins th{padding:5px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tour{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+@media(max-width:760px){.tour{grid-template-columns:1fr}}
+.champ{border-color:#2f6b47}
+.champ .copy{border-left:2px solid var(--hot)}
+.q{padding:8px 0;border-bottom:1px solid var(--line)}
+.q:last-child{border:0}
+.q b{font-size:12px}
+.q .copy{margin:6px 0 4px;font-size:12px}
 .acct-ins th{color:var(--dim);font-weight:500;text-align:left}
 .dead{color:#c46;font-size:11px}
 .accs{font-size:12px;color:var(--dim);line-height:1.8}
@@ -297,8 +305,28 @@ function renderIns(ins){
       절대 조회수로는 나라끼리 비교가 안 된다.</div></div>`;
 }
 
-function renderInsight(rounds, plan, ins){
-  let out = renderIns(ins);
+function renderTour(t){
+  if(!t || !t.champion) return "";
+  const c = t.champion;
+  return `<div class="tour">
+    <div class="card champ"><h4>현재 챔피언</h4>
+      <div><b>${esc(c.key)}</b> <span class="score" style="font-size:18px">${c.score}</span></div>
+      <div class="copy">${esc(c.kr)}</div>
+      <div class="meta">${esc(c.note||"")}</div>
+      ${(t.retired||[]).length ? `<div class="note2">탈락: ` +
+        t.retired.map(r => `${esc(r.key)} (${r.score})`).join(", ") + `</div>` : ""}
+    </div>
+    <div class="card"><h4>도전 대기열 ${(t.queue||[]).length}개</h4>` +
+      (t.queue||[]).map((q,i) => `<div class="q">
+        <b>${i+1}. ${esc(q.key)}</b>
+        <div class="copy">${esc(q.kr)}</div>
+        <div class="meta">${esc(q.why||"")}</div>
+      </div>`).join("") + `</div>
+  </div>` + (t.rule ? `<div class="note2" style="margin-bottom:16px">${esc(t.rule)}</div>` : "");
+}
+
+function renderInsight(rounds, plan, ins, tour){
+  let out = renderTour(tour) + renderIns(ins);
   const done = (rounds||[]).filter(r => r.posts);
   const best = Math.max(...done.map(r => r.score || 0), 1);
 
@@ -355,7 +383,7 @@ fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
   $("#p-acct").onchange = e => { P.acct = e.target.value; paintPosts(); };
   paintPosts();
   $("#pending").innerHTML = renderPending(d.pending, d.skipped);
-  $("#insight").innerHTML = renderInsight(d.rounds, d.plan, d.insights);
+  $("#insight").innerHTML = renderInsight(d.rounds, d.plan, d.insights, d.tournament);
   $("#n-insight").textContent = (d.plan||[]).length;
   if(d.errors && d.errors.length)
     $("#errors").innerHTML = `<div class="err">수집 실패 ${d.errors.length}건: ${esc(d.errors.join(" / "))}</div>`;
