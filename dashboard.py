@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""대시보드가 읽을 dashboard.json 하나를 만든다.
+
+세 가지만 담는다.
+  scheduled  아직 안 나간 예약 (schedule.txt 그대로)
+  posts      계정별 게시물 + 지표
+  pending    미답변 답글
+
+수집은 계정별로 독립이라 하나가 죽어도 나머지는 담는다.
+번역은 하지 않는다 - Actions 안에서 LLM을 못 부른다. 원문만 넘기고
+번역이 필요하면 사람이 threads-reply 스킬로 처리한다.
+
+  python3 dashboard.py [--days 30] [--replies-days 14]
+"""
+import json
+import sys
+import traceback
+from datetime import datetime, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+from replies import unanswered
+from report import flag, insights, meta
+from run import creds, parse
+from replies import api, paged, FIELDS
+
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / "dashboard.json"
+METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
+
+
+def accounts():
+    return sorted(d.name for d in (ROOT / "accounts").iterdir() if d.is_dir())
+
+
+def scheduled():
+    """아직 안 나간 예약. 시각은 계정 현지로도 같이 준다."""
+    f = ROOT / "schedule.txt"
+    if not f.exists():
+        return []
+    out = []
+    for line in f.read_text(encoding="utf-8").splitlines():
+        if not line.strip() or line.startswith("#"):
+            continue
+        when, acc, textfile, tw, ig, done = parse(line)
+        code, tz = meta(acc)
+        utc = datetime.fromisoformat(when)
+        body = ""
+        p = ROOT / textfile
+        if p.exists():
+            body = p.read_text(encoding="utf-8").strip()
+        out.append({
+            "account": acc, "country": code, "flag": flag(code),
+            "utc": utc.isoformat(),
+            "local": utc.astimezone(tz).strftime("%Y-%m-%d %H:%M"),
+            "text": body, "media": tw, "done": sorted(done),
+        })
+    return sorted(out, key=lambda r: r["utc"])
+
+
+def posts_of(account, days):
+    """계정의 최근 게시물 + 지표."""
+    token, uid = creds(account)
+    code, tz = meta(account)
+    since = datetime.now(timezone.utc).timestamp() - days * 86400
+    data = api(f"{uid}/threads", token,
+               fields="id,text,timestamp,permalink,media_type", limit=100)
+    out = []
+    for p in data.get("data", []):
+        utc = datetime.fromisoformat(p["timestamp"].replace("+0000", "+00:00"))
+        if utc.timestamp() < since:
+            continue
+        m = insights(p["id"], token)
+        out.append({
+            "id": p["id"], "account": account, "country": code, "flag": flag(code),
+            "utc": utc.isoformat(),
+            "date": utc.astimezone(tz).strftime("%Y-%m-%d"),
+            "local": utc.astimezone(tz).strftime("%m/%d %H:%M"),
+            "text": (p.get("text") or "").strip(),
+            "kind": p.get("media_type", ""),
+            "link": p.get("permalink", ""),
+            **{k: m.get(k, 0) for k in METRICS},
+        })
+    return out
+
+
+def pending_of(account, posts, days):
+    """최근 게시물들의 미답변 답글. 오래된 글은 안 본다 - 답글이 수백 건이라 느리다."""
+    cut = datetime.now(timezone.utc).timestamp() - days * 86400
+    out = []
+    for p in posts:
+        if datetime.fromisoformat(p["utc"]).timestamp() < cut:
+            continue
+        for r in unanswered(account, p["id"]):
+            out.append({**r, "account": account, "country": p["country"],
+                        "flag": p["flag"], "post": p["id"],
+                        "post_text": p["text"].splitlines()[0][:40] if p["text"] else "",
+                        "post_link": p["link"]})
+    return out
+
+
+def main():
+    days = int(sys.argv[sys.argv.index("--days") + 1]) if "--days" in sys.argv else 30
+    rdays = (int(sys.argv[sys.argv.index("--replies-days") + 1])
+             if "--replies-days" in sys.argv else 14)
+
+    all_posts, all_pending, errors = [], [], []
+    for a in accounts():
+        try:
+            ps = posts_of(a, days)
+            all_posts += ps
+        except Exception as e:
+            errors.append(f"{a} 게시물: {e}")
+            continue
+        try:
+            all_pending += pending_of(a, ps, rdays)
+        except Exception as e:
+            errors.append(f"{a} 답글: {e}")
+
+    data = {
+        "generated": datetime.now(timezone.utc).isoformat(),
+        "window_days": days,
+        "scheduled": scheduled(),
+        "posts": sorted(all_posts, key=lambda r: r["utc"], reverse=True),
+        "pending": sorted(all_pending, key=lambda r: r["when"]),
+        "errors": errors,
+    }
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"예약 {len(data['scheduled'])} · 게시물 {len(data['posts'])} · "
+          f"미답변 {len(data['pending'])} · 오류 {len(errors)}")
+    for e in errors:
+        print(" ", e)
+
+
+if __name__ == "__main__":
+    main()

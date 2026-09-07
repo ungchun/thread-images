@@ -1,0 +1,35 @@
+name: dashboard
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '게시물 집계 일수 (기본 30)'
+        required: false
+        default: '30'
+      replies_days:
+        description: '답글을 훑을 일수 (기본 14). 오래된 글은 답글이 수백 건이라 느리다'
+        required: false
+        default: '14'
+
+jobs:
+  dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Collect
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+        run: python3 dashboard.py --days "${{ inputs.days || 30 }}" --replies-days "${{ inputs.replies_days || 14 }}"
+
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add dashboard.json
+          git diff --staged --quiet || git commit -m "dashboard"
+          git push

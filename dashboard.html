@@ -1,0 +1,167 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Threads 대시보드</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--line:#252a34;--dim:#8b93a1;--fg:#e8eaed;--hot:#4ade80}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+ font:14px/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}
+header{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;
+ align-items:baseline;gap:16px;flex-wrap:wrap}
+h1{font-size:17px;margin:0;font-weight:600}
+.stamp{color:var(--dim);font-size:12px}
+nav{display:flex;gap:4px;padding:0 24px;border-bottom:1px solid var(--line)}
+nav button{background:none;border:0;color:var(--dim);padding:12px 16px;cursor:pointer;
+ font-size:14px;border-bottom:2px solid transparent}
+nav button.on{color:var(--fg);border-bottom-color:var(--hot)}
+nav button b{background:var(--line);border-radius:9px;padding:1px 7px;margin-left:6px;font-size:12px}
+main{padding:24px;max-width:1400px}
+section{display:none}section.on{display:block}
+.empty{color:var(--dim);padding:48px 0;text-align:center}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-weight:500;color:var(--dim);font-size:12px;
+ padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:#1c2028}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.dim{color:var(--dim)}
+.txt{white-space:pre-wrap;font-size:13px;line-height:1.5}
+a{color:inherit}
+.grid{overflow-x:auto;padding-bottom:8px}
+.grid table{width:auto;border-collapse:separate;border-spacing:3px}
+.grid th{padding:4px 6px;font-size:11px}
+.grid td{padding:0;border:0}
+.cell{width:34px;height:30px;border-radius:5px;background:#1b1f27;display:block;
+ position:relative;cursor:pointer;border:1px solid transparent}
+.cell:hover{border-color:var(--hot)}
+.cell span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+ font-size:10px;color:#0f1115;font-weight:600}
+.tip{position:fixed;background:#000;border:1px solid var(--line);border-radius:8px;
+ padding:10px 12px;font-size:12px;max-width:340px;pointer-events:none;z-index:9;
+ display:none;white-space:pre-wrap;line-height:1.55}
+.legend{color:var(--dim);font-size:11px;margin-top:12px}
+.acct{font-weight:500}
+.reply{border-left:2px solid var(--line);padding-left:12px;margin:2px 0 14px}
+h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
+.err{background:#2a1618;border:1px solid #4a2226;border-radius:8px;padding:10px 14px;
+ margin-bottom:16px;font-size:13px}
+</style>
+
+<header>
+  <h1>Threads 대시보드</h1>
+  <span class="stamp" id="stamp"></span>
+</header>
+<nav>
+  <button data-t="sched" class="on">예약<b id="n-sched">0</b></button>
+  <button data-t="posts">게시물<b id="n-posts">0</b></button>
+  <button data-t="pending">미답변<b id="n-pending">0</b></button>
+</nav>
+<main>
+  <div id="errors"></div>
+  <section id="sched" class="on"></section>
+  <section id="posts"></section>
+  <section id="pending"></section>
+</main>
+<div class="tip" id="tip"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s||"").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const n = v => (v||0).toLocaleString();
+
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.classList.remove("on"));
+  document.querySelectorAll("section").forEach(x => x.classList.remove("on"));
+  b.classList.add("on"); $("#" + b.dataset.t).classList.add("on");
+});
+
+function renderSched(rows){
+  if(!rows.length) return `<div class="empty">예약된 글이 없다</div>`;
+  return `<table><thead><tr>
+    <th>현지 시각</th><th>계정</th><th>본문</th><th>미디어</th><th>UTC</th>
+  </tr></thead><tbody>` + rows.map(r => `<tr>
+    <td class="acct">${r.flag} ${esc(r.local)}</td>
+    <td>${esc(r.account)}</td>
+    <td class="txt">${esc(r.text)}</td>
+    <td class="dim">${r.media.length}개<br><span style="font-size:11px">${esc(r.media.join(", "))}</span></td>
+    <td class="dim">${esc(r.utc.slice(0,16).replace("T"," "))}</td>
+  </tr>`).join("") + `</tbody></table>`;
+}
+
+function renderPosts(rows){
+  if(!rows.length) return `<div class="empty">게시물이 없다</div>`;
+  // 날짜 x 나라 격자
+  const dates = [...new Set(rows.map(r => r.date))].sort();
+  const accs = [...new Set(rows.map(r => r.account))].sort();
+  const by = {}; rows.forEach(r => by[r.account + "|" + r.date] = r);
+  const max = Math.max(...rows.map(r => r.views || 0), 1);
+  const heat = v => {
+    if(!v) return "#1b1f27";
+    const t = Math.log10(v + 1) / Math.log10(max + 1);
+    return `hsl(${140 - t * 30} ${45 + t * 40}% ${18 + t * 42}%)`;
+  };
+  let g = `<div class="grid"><table><thead><tr><th></th>` +
+    dates.map(d => `<th>${d.slice(5)}</th>`).join("") + `</tr></thead><tbody>`;
+  accs.forEach(a => {
+    const f = rows.find(r => r.account === a);
+    g += `<tr><th style="text-align:right">${f.flag} ${esc(a)}</th>` + dates.map(d => {
+      const r = by[a + "|" + d];
+      if(!r) return `<td><i class="cell"></i></td>`;
+      const tip = `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n리포스트 ${n(r.reposts)} · 공유 ${n(r.shares)}\n\n${r.text}`;
+      return `<td><a class="cell" style="background:${heat(r.views)}" href="${r.link}"
+        target="_blank" data-tip="${esc(tip)}"><span>${r.views > 999 ? Math.round(r.views/1000)+"k" : (r.views||"")}</span></a></td>`;
+    }).join("") + `</tr>`;
+  });
+  g += `</tbody></table></div><div class="legend">칸 = 게시물 하나. 색이 진할수록 조회수 높음. 마우스를 올리면 지표, 누르면 원글로 이동.</div>`;
+
+  g += `<h3>전체 목록</h3><table><thead><tr>
+    <th>날짜</th><th>계정</th><th class="num">조회</th><th class="num">하트</th>
+    <th class="num">댓글</th><th class="num">리포스트</th><th class="num">공유</th><th>본문</th>
+  </tr></thead><tbody>` + rows.map(r => `<tr>
+    <td class="dim">${esc(r.local)}</td>
+    <td class="acct">${r.flag} ${esc(r.account)}</td>
+    <td class="num">${n(r.views)}</td><td class="num">${n(r.likes)}</td>
+    <td class="num">${n(r.replies)}</td><td class="num">${n(r.reposts)}</td>
+    <td class="num">${n(r.shares)}</td>
+    <td class="txt"><a href="${r.link}" target="_blank">${esc(r.text)}</a></td>
+  </tr>`).join("") + `</tbody></table>`;
+  return g;
+}
+
+function renderPending(rows){
+  if(!rows.length) return `<div class="empty">미답변 답글이 없다</div>`;
+  const by = {};
+  rows.forEach(r => (by[r.account] = by[r.account] || []).push(r));
+  return Object.entries(by).sort((a,b) => b[1].length - a[1].length).map(([acc, list]) => `
+    <h3>${list[0].flag} ${esc(acc)} — ${list.length}건</h3>` +
+    list.map(r => `<div class="reply">
+      <div class="dim" style="font-size:12px">${esc(r.when)} · @${esc(r.user)} ·
+        <a href="${r.post_link}" target="_blank">${esc(r.post_text)}</a></div>
+      <div class="txt">${esc(r.text)}</div>
+    </div>`).join("")).join("");
+}
+
+fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
+  $("#stamp").textContent = "갱신 " + d.generated.slice(0,16).replace("T"," ") + " UTC · 최근 " + d.window_days + "일";
+  $("#n-sched").textContent = d.scheduled.length;
+  $("#n-posts").textContent = d.posts.length;
+  $("#n-pending").textContent = d.pending.length;
+  $("#sched").innerHTML = renderSched(d.scheduled);
+  $("#posts").innerHTML = renderPosts(d.posts);
+  $("#pending").innerHTML = renderPending(d.pending);
+  if(d.errors && d.errors.length)
+    $("#errors").innerHTML = `<div class="err">수집 실패 ${d.errors.length}건: ${esc(d.errors.join(" / "))}</div>`;
+
+  const tip = $("#tip");
+  document.addEventListener("mouseover", e => {
+    const t = e.target.closest("[data-tip]");
+    if(!t) return tip.style.display = "none";
+    tip.textContent = t.dataset.tip; tip.style.display = "block";
+    const r = t.getBoundingClientRect();
+    tip.style.left = Math.min(r.left, innerWidth - 360) + "px";
+    tip.style.top = (r.bottom + 8) + "px";
+  });
+}).catch(e => {
+  $("#errors").innerHTML = `<div class="err">dashboard.json을 못 읽었다. 워크플로를 한 번 돌려야 한다.<br>${esc(e.message)}</div>`;
+});
+</script>
