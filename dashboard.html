@@ -160,10 +160,6 @@ function renderPosts(rows){
   if(!rows.length) return `<div class="empty">게시물이 없다</div>`;
   const accs = [...new Set(rows.map(r => r.account))].sort();
   return `<div class="tools">
-    <select id="p-view">
-      <option value="list">목록</option>
-      <option value="grid">달력 격자</option>
-    </select>
     <select id="p-acct"><option value="">전체 계정</option>` +
       accs.map(a => {
         const f = rows.find(r => r.account === a);
@@ -178,8 +174,8 @@ function paintPosts(){
   const box = $("#p-body"); if(!box) return;
   let rows = P.rows.filter(r => !P.acct || r.account === P.acct);
   $("#p-count").textContent = rows.length + "건";
-  box.innerHTML = P.view === "grid" ? postsGrid(rows) : postsList(rows);
-  if(P.view === "list") wireSort();
+  box.innerHTML = postsGrid(rows) + `<h3>전체 목록</h3>` + postsList(rows);
+  wireSort();
 }
 
 function postsList(rows){
@@ -379,8 +375,7 @@ fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
   $("#n-pending").textContent = d.pending.length;
   $("#sched").innerHTML = renderSched(d.scheduled);
   $("#posts").innerHTML = renderPosts(d.posts);
-  const pv = $("#p-view"), pa = $("#p-acct");
-  if(pv) pv.onchange = e => { P.view = e.target.value; paintPosts(); };
+  const pa = $("#p-acct");
   if(pa) pa.onchange = e => { P.acct = e.target.value; paintPosts(); };
   paintPosts();
   $("#pending").innerHTML = renderPending(d.pending, d.skipped);
