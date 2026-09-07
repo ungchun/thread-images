@@ -2,6 +2,11 @@ name: check
 
 on:
   workflow_dispatch:
+    inputs:
+      args:
+        description: '추가 인자 (예: --posted 2026-09-05)'
+        required: false
+        default: ''
 
 jobs:
   check:
@@ -14,4 +19,4 @@ jobs:
       - name: Check tokens
         env:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
-        run: python3 check.py
+        run: python3 check.py ${{ inputs.args }}

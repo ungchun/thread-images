@@ -38,7 +38,35 @@ def check(account):
     return "정상", d["id"]
 
 
+def posted(account, since):
+    """since 이후 이 계정이 올린 글. 예약이 진짜 나갔는지 보는 용도."""
+    token, uid = creds(account)
+    url = ("https://graph.threads.net/v1.0/" + uid + "/threads?" +
+           urllib.parse.urlencode({"fields": "id,timestamp,media_type",
+                                   "limit": 15, "access_token": token}))
+    with urllib.request.urlopen(url, timeout=25) as r:
+        data = json.load(r).get("data", [])
+    return [p for p in data if p["timestamp"] >= since]
+
+
 def main():
+    if "--posted" in sys.argv:
+        since = sys.argv[sys.argv.index("--posted") + 1]
+        total = 0
+        for d in sorted((ROOT / "accounts").iterdir()):
+            if not d.is_dir():
+                continue
+            try:
+                rows = posted(d.name, since)
+            except Exception as e:
+                print(f"{d.name:15} 조회실패 {str(e)[:50]}")
+                continue
+            days = sorted({r["timestamp"][5:10] for r in rows})
+            kinds = ",".join(sorted({r.get("media_type", "?") for r in rows}))
+            print(f"{d.name:15} {len(rows)}건  {days}  {kinds}")
+            total += len(rows)
+        print(f"\n총 {total}건")
+        return
     bad = 0
     for d in sorted((ROOT / "accounts").iterdir()):
         if not d.is_dir():
