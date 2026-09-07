@@ -29,6 +29,21 @@ OUT = ROOT / "dashboard.json"
 METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
 
 
+def skiplist(account):
+    """답하지 않기로 한 답글 id. accounts/<계정>/skip.txt 한 줄에 "id  # 이유"."""
+    f = ROOT / "accounts" / account / "skip.txt"
+    out = {}
+    if not f.exists():
+        return out
+    for line in f.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        rid, _, why = line.partition("#")
+        out[rid.strip()] = why.strip()
+    return out
+
+
 def accounts():
     return sorted(d.name for d in (ROOT / "accounts").iterdir() if d.is_dir())
 
@@ -104,7 +119,7 @@ def main():
     rdays = (int(sys.argv[sys.argv.index("--replies-days") + 1])
              if "--replies-days" in sys.argv else 14)
 
-    all_posts, all_pending, errors = [], [], []
+    all_posts, all_pending, all_skipped, errors = [], [], [], []
     for a in accounts():
         try:
             ps = posts_of(a, days)
@@ -113,7 +128,12 @@ def main():
             errors.append(f"{a} 게시물: {e}")
             continue
         try:
-            all_pending += pending_of(a, ps, rdays)
+            skip = skiplist(a)
+            for r in pending_of(a, ps, rdays):
+                if r["id"] in skip:
+                    all_skipped.append({**r, "why": skip[r["id"]]})
+                else:
+                    all_pending.append(r)
         except Exception as e:
             errors.append(f"{a} 답글: {e}")
 
@@ -123,11 +143,12 @@ def main():
         "scheduled": scheduled(),
         "posts": sorted(all_posts, key=lambda r: r["utc"], reverse=True),
         "pending": sorted(all_pending, key=lambda r: r["when"]),
+        "skipped": sorted(all_skipped, key=lambda r: r["when"]),
         "errors": errors,
     }
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"예약 {len(data['scheduled'])} · 게시물 {len(data['posts'])} · "
-          f"미답변 {len(data['pending'])} · 오류 {len(errors)}")
+          f"미답변 {len(data['pending'])} · 답안함 {len(data['skipped'])} · 오류 {len(errors)}")
     for e in errors:
         print(" ", e)
 

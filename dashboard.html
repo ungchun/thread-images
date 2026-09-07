@@ -55,6 +55,10 @@ th.s.on{color:var(--hot)}
 .rank{color:var(--dim);font-size:12px;width:26px;text-align:right}
 .sub{color:var(--dim);font-size:11px}
 tr.top td{background:#151d19}
+.skip{opacity:.5}
+.skip .txt{text-decoration:line-through;text-decoration-color:var(--line)}
+.why{color:var(--dim);font-size:11px;font-style:italic}
+.divider{border-top:1px solid var(--line);margin:28px 0 4px}
 .pill{display:inline-block;background:var(--line);border-radius:6px;padding:1px 7px;
  font-size:11px;color:var(--dim);margin-left:6px}
 .reply{border-left:2px solid var(--line);padding-left:12px;margin:2px 0 14px}
@@ -198,17 +202,30 @@ function wireSort(){
   });
 }
 
-function renderPending(rows){
-  if(!rows.length) return `<div class="empty">미답변 답글이 없다</div>`;
-  const by = {};
-  rows.forEach(r => (by[r.account] = by[r.account] || []).push(r));
-  return Object.entries(by).sort((a,b) => b[1].length - a[1].length).map(([acc, list]) => `
-    <h3>${list[0].flag} ${esc(acc)} — ${list.length}건</h3>` +
-    list.map(r => `<div class="reply">
-      <div class="dim" style="font-size:12px">${esc(r.when)} · @${esc(r.user)} ·
-        <a href="${r.post_link}" target="_blank">${esc(r.post_text)}</a></div>
-      <div class="txt">${esc(r.text)}</div>
-    </div>`).join("")).join("");
+function renderPending(rows, skipped){
+  let out = "";
+  if(!rows.length) out = `<div class="empty">미답변 답글이 없다</div>`;
+  else {
+    const by = {};
+    rows.forEach(r => (by[r.account] = by[r.account] || []).push(r));
+    out = Object.entries(by).sort((a,b) => b[1].length - a[1].length).map(([acc, list]) => `
+      <h3>${list[0].flag} ${esc(acc)} — ${list.length}건</h3>` +
+      list.map(r => `<div class="reply">
+        <div class="dim" style="font-size:12px">${esc(r.when)} · @${esc(r.user)} ·
+          <a href="${r.post_link}" target="_blank">${esc(r.post_text)}</a></div>
+        <div class="txt">${esc(r.text)}</div>
+      </div>`).join("")).join("");
+  }
+  if(skipped && skipped.length){
+    out += `<div class="divider"></div>
+      <h3>답하지 않기로 한 것 — ${skipped.length}건</h3>` +
+      skipped.map(r => `<div class="reply skip">
+        <div class="dim" style="font-size:12px">${r.flag} ${esc(r.when)} · @${esc(r.user)}</div>
+        <div class="txt">${esc(r.text)}</div>
+        <div class="why">${esc(r.why || "")}</div>
+      </div>`).join("");
+  }
+  return out;
 }
 
 fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
@@ -221,7 +238,7 @@ fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
   $("#p-view").onchange = e => { P.view = e.target.value; paintPosts(); };
   $("#p-acct").onchange = e => { P.acct = e.target.value; paintPosts(); };
   paintPosts();
-  $("#pending").innerHTML = renderPending(d.pending);
+  $("#pending").innerHTML = renderPending(d.pending, d.skipped);
   if(d.errors && d.errors.length)
     $("#errors").innerHTML = `<div class="err">수집 실패 ${d.errors.length}건: ${esc(d.errors.join(" / "))}</div>`;
 
