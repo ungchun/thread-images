@@ -61,9 +61,8 @@ def main():
             except Exception as e:
                 print(f"{d.name:15} 조회실패 {str(e)[:50]}")
                 continue
-            days = sorted({r["timestamp"][5:10] for r in rows})
-            kinds = ",".join(sorted({r.get("media_type", "?") for r in rows}))
-            print(f"{d.name:15} {len(rows)}건  {days}  {kinds}")
+            for r in rows:
+                print(f"{d.name:15} {r['timestamp']}  {r.get('media_type','?'):15} {r['id']}")
             total += len(rows)
         print(f"\n총 {total}건")
         return
