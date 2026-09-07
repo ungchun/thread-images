@@ -12,6 +12,9 @@ on:
         required: false
         default: '14'
 
+permissions:
+  contents: write
+
 jobs:
   dashboard:
     runs-on: ubuntu-latest
