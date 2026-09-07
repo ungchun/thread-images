@@ -1,5 +1,113 @@
 {
- "generated": "2026-09-07T03:02:51.539659+00:00",
+ "generated": "2026-09-07T08:06:17.461658+00:00",
+ "rounds": [
+  {
+   "id": "01",
+   "date": "2026-08-25",
+   "type": "권유형",
+   "kr": "아이폰 쓰면 이거 꼭 써봐. 할 일이 항상 한눈에 보여서 진짜 편해",
+   "note": "첫 라운드. 편의성 소구.",
+   "posts": 4,
+   "views": 2713,
+   "likes": 6,
+   "median": 513,
+   "score": 0.25,
+   "sample": 4
+  },
+  {
+   "id": "02",
+   "date": "2026-08-26",
+   "type": "권유형",
+   "kr": "아이폰 유저면 이거 진짜 써봐. 일정도 할 일도 절대 안 까먹게 돼",
+   "note": "베트남 118만 조회. 다만 계정 체력 요인이 커서 문구 효과와 분리 안 됨.",
+   "posts": 7,
+   "views": 10295,
+   "likes": 37,
+   "median": 658,
+   "score": 1.13,
+   "sample": 7
+  },
+  {
+   "id": "03",
+   "date": "2026-09-02",
+   "type": "호명형",
+   "kr": "야 아이폰 쓰는 사람들아, 이거 진짜 써봐 한 번만. 쓰기 시작하면 까먹는 게 없어진다 진짜로",
+   "note": "반말 구어체로 전환.",
+   "posts": 10,
+   "views": 42478,
+   "likes": 84,
+   "median": 380,
+   "score": 1.83,
+   "sample": 10
+  },
+  {
+   "id": "04",
+   "date": "2026-09-05",
+   "type": "발견담",
+   "kr": "아이폰에 이런 앱이 있었는데 나만 여태 모르고 있었네… 잠금화면에 그림도 그리고 스티커도 붙여서 내 맘대로 꾸며놨어",
+   "note": "1인칭 발견담 + 꾸미기 소구. 영상+이미지2 캐러셀 첫 도입.",
+   "posts": 14,
+   "views": 11183,
+   "likes": 40,
+   "median": 276,
+   "score": 0.84,
+   "sample": 13
+  },
+  {
+   "id": "05",
+   "date": "2026-09-06",
+   "type": "호명형",
+   "kr": "야 아이폰 쓰는 사람들아, 이거 진짜 써봐 한 번만. 쓰기 시작하면 까먹는 게 없어진다 진짜로",
+   "note": "03 재사용. 04(발견담)와 같은 계정 비교용.",
+   "posts": 13,
+   "views": 1834,
+   "likes": 4,
+   "median": 28,
+   "score": 0.14,
+   "sample": 13
+  }
+ ],
+ "plan": [
+  {
+   "id": "06",
+   "date": "2026-09-07",
+   "status": "예정",
+   "hypothesis": "광고처럼 읽히는 권유형보다, 팁처럼 읽히는 쪽이 더 멀리 간다",
+   "design": "두 번째 줄만 다르게 한 A/B. 나머지 세 줄은 동일하게 두어 그 한 줄 차이만 잰다. 계정 체력이 100배씩 차이나므로 큰 계정(베트남·대만)을 양쪽에 갈라 넣고 신규 계정을 균등 배분한다.",
+   "variants": [
+    {
+     "key": "A",
+     "label": "팁형",
+     "kr": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨"
+    },
+    {
+     "key": "B",
+     "label": "권유형",
+     "kr": "야 아이폰 쓰는 사람들,\n이 앱 진짜 한 번만 써봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨"
+    }
+   ],
+   "accounts": {
+    "A": [
+     "ashgrey._02",
+     "o2ndot",
+     "dot2day_",
+     "rara.2k_",
+     "elle__jm",
+     "lune__v34",
+     "nia._055"
+    ],
+    "B": [
+     "inkling01",
+     "aoi.02_",
+     "ac_dd91",
+     "03ines.mar_",
+     "kai_.03b",
+     "beatriz03._a"
+    ]
+   },
+   "note": "대만은 inkling01로 교체(daily03dew 4연속 0). 시간·이미지 미정."
+  }
+ ],
  "window_days": 30,
  "scheduled": [],
  "posts": [
@@ -19,7 +127,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18117860869940958",
@@ -37,7 +146,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18474033880113198",
@@ -55,7 +165,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "17946608499295216",
@@ -73,7 +184,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18093347147388567",
@@ -86,12 +198,13 @@
    "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto empiezas a usarlo\nya no se te olvida nada, de verdad ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/Dc72CJLD7zO",
-   "views": 86,
+   "views": 87,
    "likes": 2,
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18032395367893462",
@@ -109,7 +222,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18001719167794971",
@@ -127,7 +241,8 @@
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "17988442338044716",
@@ -140,12 +255,13 @@
    "text": "Woy, yang pakai iPhone,\ncoba ini sekali aja deh.\nBegitu mulai pakai\nbeneran nggak ada yang kelupaan lagi ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dc7TtC-D_3h",
-   "views": 334,
+   "views": 336,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18094938458537155",
@@ -163,7 +279,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18112784806805261",
@@ -181,7 +298,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18092732774134893",
@@ -199,7 +317,8 @@
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18091228544156673",
@@ -217,7 +336,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18129783151669317",
@@ -235,7 +355,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "05"
   },
   {
    "id": "18016156724931391",
@@ -253,7 +374,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 1
+   "shares": 1,
+   "round": "04"
   },
   {
    "id": "17874385008632849",
@@ -271,7 +393,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18145970971564947",
@@ -289,7 +412,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18152097949514004",
@@ -307,7 +431,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18115219925063184",
@@ -325,7 +450,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18101856227345370",
@@ -343,7 +469,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18075255734465229",
@@ -361,7 +488,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18130111030676115",
@@ -374,12 +502,13 @@
    "text": "Hoá ra iPhone có app như thế này\nmà tới giờ mình mới biết…\nVẽ lên màn hình khoá, dán thêm sticker,\ntrang trí đúng theo ý mình luôn 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dc4u6vYAqHj",
-   "views": 7583,
+   "views": 7599,
    "likes": 28,
    "replies": 1,
    "reposts": 2,
    "quotes": 0,
-   "shares": 1
+   "shares": 1,
+   "round": "04"
   },
   {
    "id": "18578671330067848",
@@ -397,7 +526,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 2
+   "shares": 2,
+   "round": "04"
   },
   {
    "id": "18227793979325490",
@@ -415,7 +545,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18088730732669454",
@@ -428,12 +559,13 @@
    "text": "iPhoneにこんなアプリがあったのに\n私だけ今まで知らなかった…\nロック画面に絵を描いてステッカーも貼って\n自分の好きなようにしてみた 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi.02_/post/Dc4kl_WD-_4",
-   "views": 665,
+   "views": 666,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18176976085428967",
@@ -451,7 +583,8 @@
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "17950326561257546",
@@ -469,7 +602,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18064843985771752",
@@ -487,7 +621,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "04"
   },
   {
    "id": "18116222873315994",
@@ -500,12 +635,13 @@
    "text": "欸，用 iPhone 的朋友們，\n這個真的試一次就好。\n只要開始用了\n真的什麼都不會忘記了 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@daily03dew/post/DczvjomDa5v",
-   "views": 4,
+   "views": 5,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18092608046414847",
@@ -523,7 +659,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "18091390163145757",
@@ -541,7 +678,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "17905781223514842",
@@ -559,7 +697,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "18421203343146463",
@@ -577,7 +716,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "18116899721291140",
@@ -590,12 +730,13 @@
    "text": "Hé, vous qui avez un iPhone,\nessayez ça, ne serait-ce qu'une fois.\nUne fois que vous commencez\nvous n'oubliez plus rien, vraiment ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DcyuWQEIFVg",
-   "views": 5508,
+   "views": 5509,
    "likes": 10,
    "replies": 4,
    "reposts": 0,
    "quotes": 0,
-   "shares": 1
+   "shares": 1,
+   "round": "03"
   },
   {
    "id": "17982308289116758",
@@ -613,7 +754,8 @@
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
-   "shares": 1
+   "shares": 1,
+   "round": "02"
   },
   {
    "id": "17900085627579013",
@@ -631,7 +773,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "02"
   },
   {
    "id": "18115584850947761",
@@ -649,7 +792,8 @@
    "replies": 3,
    "reposts": 1,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "02"
   },
   {
    "id": "18424333927146698",
@@ -667,7 +811,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "02"
   },
   {
    "id": "17960843877195248",
@@ -685,7 +830,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 1,
-   "shares": 0
+   "shares": 0,
+   "round": "02"
   },
   {
    "id": "17953565667227660",
@@ -703,7 +849,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "02"
   },
   {
    "id": "18107154242130819",
@@ -721,7 +868,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "01"
   },
   {
    "id": "18128979922783484",
@@ -739,7 +887,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "01"
   },
   {
    "id": "17985346206105161",
@@ -757,7 +906,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "01"
   },
   {
    "id": "18223531177331200",
@@ -770,12 +920,13 @@
    "text": "如果你是 iPhone 用戶，\n一定要試試看這個。\n待辦事項一直都能直接看到，真的很方便 👀",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@daily03dew/post/DcumQtiG6-o",
-   "views": 11,
+   "views": 0,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "02"
   },
   {
    "id": "18134998399537882",
@@ -788,12 +939,13 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 424428,
-   "likes": 4193,
+   "views": 424549,
+   "likes": 4195,
    "replies": 88,
    "reposts": 692,
    "quotes": 17,
-   "shares": 1191
+   "shares": 1191,
+   "round": null
   },
   {
    "id": "18072734897460314",
@@ -811,7 +963,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "01"
   },
   {
    "id": "18033615047841696",
@@ -829,7 +982,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17893905072669916",
@@ -847,7 +1001,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17869048224601685",
@@ -865,7 +1020,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "18098016197040084",
@@ -883,7 +1039,8 @@
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18471116089114000",
@@ -901,7 +1058,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18046657841805346",
@@ -919,7 +1077,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18103194680600872",
@@ -937,7 +1096,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "18169134649452953",
@@ -955,7 +1115,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 14
+   "shares": 14,
+   "round": "03"
   },
   {
    "id": "17906295819539349",
@@ -973,7 +1134,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18103858468943452",
@@ -991,7 +1153,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18060709250788026",
@@ -1009,7 +1172,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18426240928182891",
@@ -1027,7 +1191,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18056980889786525",
@@ -1040,12 +1205,13 @@
    "text": "Hé, les utilisateurs d’iPhone,\nil faut vraiment utiliser ça ! 👀\nVous n’oublierez vraiment plus vos tâches ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DcjfSqhAMkk",
-   "views": 1577,
+   "views": 1578,
    "likes": 10,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18108784283129236",
@@ -1063,7 +1229,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "18071070104536309",
@@ -1076,12 +1243,13 @@
    "text": "欸，iPhone 用戶，\n真的一定要試試這個！\n行程、待辦事項絕對不會忘記 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@inkling01/post/DcivMUaCRfH",
-   "views": 7811,
+   "views": 7813,
    "likes": 46,
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
-   "shares": 18
+   "shares": 18,
+   "round": null
   },
   {
    "id": "18094561385641856",
@@ -1099,7 +1267,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18213202102348675",
@@ -1112,12 +1281,13 @@
    "text": "Nhờ mọi người mà app đã đạt hạng 11 mục Hiệu quả trên App Store! 🎉\nCảm ơn mọi người nhiều lắm luôn 💕\n\nMình đọc được nhiều tin nhắn và comment nói là phần cài đặt hơi khó\nMình biết hết rồi nha, và đang cải thiện để làm cho dễ hơn!\n\nComment mình đều đọc hết đó!\nCó trả lời chậm thì mọi người thông cảm nha.. xin lỗi nè 🥲\n\nTrước mắt mình sẽ viết từng bước cài đặt trong thread này nha 👇",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DcimhdrE8HN",
-   "views": 3241,
+   "views": 3261,
    "likes": 37,
    "replies": 9,
    "reposts": 10,
    "quotes": 0,
-   "shares": 15
+   "shares": 15,
+   "round": null
   },
   {
    "id": "18126505090827000",
@@ -1135,7 +1305,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18118038304920557",
@@ -1153,7 +1324,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": "03"
   },
   {
    "id": "18076180892343677",
@@ -1171,7 +1343,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18364135351213876",
@@ -1184,12 +1357,13 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1186874,
-   "likes": 20229,
+   "views": 1187073,
+   "likes": 20231,
    "replies": 300,
    "reposts": 4305,
    "quotes": 60,
-   "shares": 5945
+   "shares": 5945,
+   "round": null
   },
   {
    "id": "18622451806047379",
@@ -1202,12 +1376,13 @@
    "text": "欸，iPhone 用戶，\n真的一定要試試這個！\n行程、待辦事項再也不怕忘記 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@inkling01/post/Dce6WNeAk72",
-   "views": 51099,
+   "views": 51104,
    "likes": 97,
    "replies": 4,
    "reposts": 2,
    "quotes": 0,
-   "shares": 48
+   "shares": 48,
+   "round": null
   },
   {
    "id": "18102206570203735",
@@ -1225,7 +1400,8 @@
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18210994621355647",
@@ -1243,7 +1419,8 @@
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17977230825093333",
@@ -1261,7 +1438,8 @@
    "replies": 5,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17996661885006720",
@@ -1274,12 +1452,13 @@
    "text": "이거 알고 있었어?\n잠금화면에 할일 다 적을 수 있어!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DcayvYGAYqF",
-   "views": 1468,
+   "views": 1469,
    "likes": 10,
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
-   "shares": 2
+   "shares": 2,
+   "round": null
   },
   {
    "id": "17877664473689057",
@@ -1297,7 +1476,8 @@
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18617369029025052",
@@ -1315,7 +1495,8 @@
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17905353474533284",
@@ -1333,7 +1514,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18092164400542255",
@@ -1351,7 +1533,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17920542891200654",
@@ -1369,7 +1552,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18134078380652601",
@@ -1387,7 +1571,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "18072494489428357",
@@ -1405,7 +1590,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17943924663273676",
@@ -1423,7 +1609,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   },
   {
    "id": "17863029825660216",
@@ -1441,7 +1628,8 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 0
+   "shares": 0,
+   "round": null
   }
  ],
  "pending": [],
