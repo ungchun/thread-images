@@ -29,6 +29,86 @@ OUT = ROOT / "dashboard.json"
 METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
 
 
+def rounds():
+    """라운드 정의 + 그 라운드에 나간 문구 본문. done/<코드><id>.txt 로 찾는다."""
+    f = ROOT / "rounds.json"
+    if not f.exists():
+        return []
+    out = []
+    for r in json.loads(f.read_text(encoding="utf-8"))["rounds"]:
+        bodies = []
+        for d in (ROOT / "done", ROOT / "texts"):
+            bodies += [t.read_text(encoding="utf-8").strip()
+                       for t in d.glob(f"*{r['id']}.txt")] if d.is_dir() else []
+        out.append({**r, "bodies": bodies})
+    return out
+
+
+def tag_rounds(posts, rs):
+    """게시물에 라운드를 붙인다. 본문 첫 줄 + 발행일로 고른다.
+
+    같은 문구를 재사용한 라운드(03과 05)가 있어 본문만으로는 못 가른다.
+    후보가 여럿이면 rounds.json의 날짜에 가장 가까운 것을 쓴다.
+    """
+    from datetime import date
+    cand = {}
+    for r in rs:
+        for b in r["bodies"]:
+            first = b.splitlines()[0].strip() if b else ""
+            if first:
+                cand.setdefault(first, []).append(r)
+    for p in posts:
+        first = (p["text"].splitlines()[0].strip() if p["text"] else "")
+        rs_hit = cand.get(first, [])
+        if not rs_hit:
+            p["round"] = None
+        elif len(rs_hit) == 1:
+            p["round"] = rs_hit[0]["id"]
+        else:
+            d = date.fromisoformat(p["date"])
+            p["round"] = min(rs_hit,
+                             key=lambda r: abs((date.fromisoformat(r["date"]) - d).days))["id"]
+    return posts
+
+
+def compare(posts, rs):
+    """라운드별 성과. 계정 체력이 100배씩 차이나므로 단순 평균은 못 쓴다.
+
+    같은 계정 안에서 그 계정의 라운드 평균 대비 몇 배였는지(배수)를 내고,
+    그 배수들의 중앙값을 라운드 점수로 삼는다. 계정 규모가 상쇄된다.
+    """
+    import statistics
+    tagged = [p for p in posts if p.get("round")]
+    by_acc = {}
+    for p in tagged:
+        by_acc.setdefault(p["account"], []).append(p)
+
+    ratios = {}
+    for acc, ps in by_acc.items():
+        seen = {p["round"] for p in ps}
+        if len(seen) < 2:          # 한 라운드만 있는 계정은 비교 불가
+            continue
+        base = statistics.mean(p.get("views", 0) for p in ps) or 1
+        for p in ps:
+            ratios.setdefault(p["round"], []).append(p.get("views", 0) / base)
+
+    out = []
+    for r in rs:
+        got = [p for p in tagged if p["round"] == r["id"]]
+        rr = ratios.get(r["id"], [])
+        out.append({
+            "id": r["id"], "date": r["date"], "type": r["type"],
+            "kr": r["kr"], "note": r.get("note", ""),
+            "posts": len(got),
+            "views": sum(p.get("views", 0) for p in got),
+            "likes": sum(p.get("likes", 0) for p in got),
+            "median": int(statistics.median([p.get("views", 0) for p in got])) if got else 0,
+            "score": round(statistics.median(rr), 2) if rr else None,
+            "sample": len(rr),
+        })
+    return out
+
+
 def skiplist(account):
     """답하지 않기로 한 답글 id. accounts/<계정>/skip.txt 한 줄에 "id  # 이유"."""
     f = ROOT / "accounts" / account / "skip.txt"
@@ -137,8 +217,12 @@ def main():
         except Exception as e:
             errors.append(f"{a} 답글: {e}")
 
+    rs = rounds()
+    all_posts = tag_rounds(all_posts, rs)
     data = {
         "generated": datetime.now(timezone.utc).isoformat(),
+        "rounds": compare(all_posts, rs),
+        "plan": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("plan", []),
         "window_days": days,
         "scheduled": scheduled(),
         "posts": sorted(all_posts, key=lambda r: r["utc"], reverse=True),

@@ -59,6 +59,21 @@ tr.top td{background:#151d19}
 .skip .txt{text-decoration:line-through;text-decoration-color:var(--line)}
 .why{color:var(--dim);font-size:11px;font-style:italic}
 .divider{border-top:1px solid var(--line);margin:28px 0 4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+ padding:16px 18px;margin-bottom:12px}
+.card.next{border-color:#2f6b47}
+.score{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.scorebar{height:6px;border-radius:3px;background:#1b1f27;margin:8px 0 2px;overflow:hidden}
+.scorebar i{display:block;height:100%;background:var(--hot)}
+.copy{white-space:pre-wrap;font-size:13px;line-height:1.6;color:var(--fg);
+ background:#12151b;border-radius:8px;padding:10px 12px;margin:8px 0}
+.meta{color:var(--dim);font-size:12px}
+.verdict{font-size:13px;margin-top:8px;color:#cbd3c9}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.vs{grid-template-columns:1fr}}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:20px;
+ padding:2px 10px;font-size:11px;color:var(--dim);margin-right:6px}
+.accs{font-size:12px;color:var(--dim);line-height:1.8}
 .pill{display:inline-block;background:var(--line);border-radius:6px;padding:1px 7px;
  font-size:11px;color:var(--dim);margin-left:6px}
 .reply{border-left:2px solid var(--line);padding-left:12px;margin:2px 0 14px}
@@ -75,12 +90,14 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
   <button data-t="sched" class="on">예약<b id="n-sched">0</b></button>
   <button data-t="posts">게시물<b id="n-posts">0</b></button>
   <button data-t="pending">미답변<b id="n-pending">0</b></button>
+  <button data-t="insight">실험<b id="n-insight">0</b></button>
 </nav>
 <main>
   <div id="errors"></div>
   <section id="sched" class="on"></section>
   <section id="posts"></section>
   <section id="pending"></section>
+  <section id="insight"></section>
 </main>
 <div class="tip" id="tip"></div>
 
@@ -228,6 +245,49 @@ function renderPending(rows, skipped){
   return out;
 }
 
+function renderInsight(rounds, plan){
+  let out = "";
+  const done = (rounds||[]).filter(r => r.posts);
+  const best = Math.max(...done.map(r => r.score || 0), 1);
+
+  (plan||[]).forEach(pl => {
+    out += `<div class="card next">
+      <div><span class="tag">다음 라운드 ${esc(pl.id)}</span>
+        <span class="tag">${esc(pl.date)}</span>
+        <span class="tag">${esc(pl.status)}</span></div>
+      <div style="margin:10px 0 4px;font-size:15px">${esc(pl.hypothesis)}</div>
+      <div class="meta">${esc(pl.design)}</div>
+      <div class="vs" style="margin-top:14px">` +
+      (pl.variants||[]).map(v => `<div>
+        <b>${esc(v.key)}. ${esc(v.label)}</b>
+        <div class="copy">${esc(v.kr)}</div>
+        <div class="accs">${((pl.accounts||{})[v.key]||[]).map(esc).join("<br>") || "미배정"}</div>
+      </div>`).join("") + `</div>` +
+      (pl.note ? `<div class="meta" style="margin-top:12px">${esc(pl.note)}</div>` : "") +
+      `</div>`;
+  });
+
+  out += `<h3>지난 라운드</h3>`;
+  out += done.slice().reverse().map(r => `<div class="card">
+    <div><span class="tag">${esc(r.id)}</span><span class="tag">${esc(r.date)}</span>
+      <span class="tag">${esc(r.type)}</span>
+      <span class="meta">${r.posts}건 · 조회 ${n(r.views)} · 중앙값 ${n(r.median)}</span></div>
+    <div class="copy">${esc(r.kr)}</div>
+    <div style="display:flex;align-items:baseline;gap:10px;margin-top:6px">
+      <span class="score">${r.score != null ? r.score.toFixed(2) : "–"}</span>
+      <span class="meta">계정별 평균 대비 배수의 중앙값${r.sample ? " · 표본 " + r.sample : ""}</span>
+    </div>
+    <div class="scorebar"><i style="width:${Math.min(100, (r.score||0)/best*100)}%"></i></div>
+    ${r.verdict ? `<div class="verdict">${esc(r.verdict)}</div>` : ""}
+    ${r.note ? `<div class="meta" style="margin-top:6px">${esc(r.note)}</div>` : ""}
+  </div>`).join("");
+
+  out += `<div class="legend">점수 1.0이 그 계정의 평소 수준. 계정 규모가 100배씩 차이나서
+    단순 조회수로는 비교가 안 되므로, 같은 계정 안에서 평소 대비 몇 배였는지를 재고 그 중앙값을 쓴다.
+    한 라운드만 올린 계정은 비교에서 빠진다.</div>`;
+  return out;
+}
+
 fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
   $("#stamp").textContent = "갱신 " + d.generated.slice(0,16).replace("T"," ") + " UTC · 최근 " + d.window_days + "일";
   $("#n-sched").textContent = d.scheduled.length;
@@ -239,6 +299,8 @@ fetch("dashboard.json?" + Date.now()).then(r => r.json()).then(d => {
   $("#p-acct").onchange = e => { P.acct = e.target.value; paintPosts(); };
   paintPosts();
   $("#pending").innerHTML = renderPending(d.pending, d.skipped);
+  $("#insight").innerHTML = renderInsight(d.rounds, d.plan);
+  $("#n-insight").textContent = (d.plan||[]).length;
   if(d.errors && d.errors.length)
     $("#errors").innerHTML = `<div class="err">수집 실패 ${d.errors.length}건: ${esc(d.errors.join(" / "))}</div>`;
 
