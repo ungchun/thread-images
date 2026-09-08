@@ -5,6 +5,7 @@
 토큰 값 자체는 절대 출력하지 않는다.
 """
 import json
+import os
 import sys
 import urllib.error
 import urllib.parse
