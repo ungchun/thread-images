@@ -49,7 +49,42 @@ def posted(account, since):
     return [p for p in data if p["timestamp"] >= since]
 
 
+def check_ig(account):
+    """인스타 토큰 점검. ig_token이 없으면 '미설정'으로 넘긴다 — 아직 안 붙인 계정이 많다."""
+    blob = os.environ.get("THREADS_ACCOUNTS")
+    if not blob:
+        return "설정없음", "THREADS_ACCOUNTS 없음"
+    a = json.loads(blob).get(account, {})
+    if not a.get("ig_token"):
+        return "미설정", ""
+    url = ("https://graph.instagram.com/v23.0/me?" +
+           urllib.parse.urlencode({"fields": "id,username", "access_token": a["ig_token"]}))
+    try:
+        with urllib.request.urlopen(url, timeout=20) as r:
+            d = json.load(r)
+    except urllib.error.HTTPError as e:
+        return "실패", json.load(e).get("error", {}).get("message", "")[:60]
+    except Exception as e:
+        return "실패", str(e)[:60]
+    if d.get("username") != account:
+        return "불일치", f"토큰 주인은 {d.get('username')}"
+    if str(d.get("id")) != str(a.get("ig_user_id")):
+        return "id다름", f"실제 {d.get('id')} / 설정 {a.get('ig_user_id')}"
+    return "정상", d["id"]
+
+
 def main():
+    if "--ig" in sys.argv:
+        bad = 0
+        for d in sorted((ROOT / "accounts").iterdir()):
+            if not d.is_dir():
+                continue
+            state, detail = check_ig(d.name)
+            if state not in ("정상", "미설정"):
+                bad += 1
+            print(f"{state:6} {d.name:16} {detail}")
+        print(f"\n문제 {bad}건")
+        sys.exit(1 if bad else 0)
     if "--posted" in sys.argv:
         since = sys.argv[sys.argv.index("--posted") + 1]
         total = 0
