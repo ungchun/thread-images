@@ -107,9 +107,27 @@ def media_kind(name, url, ig=False):
 
 
 def fixed_reply(account, plat):
-    """계정 고정 답글. 본문에 ---로 직접 쓰면 그쪽이 우선한다."""
-    f = ROOT / "accounts" / account / plat["reply"]
-    return f.read_text(encoding="utf-8").strip() if f.exists() else None
+    """계정 고정 답글. 본문에 ---로 직접 쓰면 그쪽이 우선한다.
+
+    reply_full.txt(링크+튜토리얼)가 있으면 그쪽을 먼저 쓴다. 없으면 링크만.
+    """
+    d = ROOT / "accounts" / account
+    # Threads만 링크+튜토리얼 합본을 쓴다. 인스타는 본문 링크가 안 눌려서
+    # "링크는 프로필에" 문구(reply_ig.txt)를 그대로 써야 한다.
+    names = (plat["reply"],) if plat["reply"] == "reply_ig.txt" else ("reply_full.txt", plat["reply"])
+    for name in names:
+        f = d / name
+        if f.exists():
+            return f.read_text(encoding="utf-8").strip()
+    return None
+
+
+def reply_media(account):
+    """고정 답글에 붙일 미디어. accounts/<계정>/reply_media.txt 한 줄, 쉼표 구분."""
+    f = ROOT / "accounts" / account / "reply_media.txt"
+    if not f.exists():
+        return []
+    return [x.strip() for x in f.read_text(encoding="utf-8").strip().split(",") if x.strip()]
 
 
 def publish(plat, account, text, images, reply=None, ig=False):
@@ -134,7 +152,18 @@ def publish(plat, account, text, images, reply=None, ig=False):
         if ig:  # 인스타는 댓글 엔드포인트 하나로 끝난다
             api(plat, f"{post_id}/comments", token, message=reply)
         else:   # Threads는 본문과 똑같이 컨테이너→발행 2단계
-            c = api(plat, create, token, media_type="TEXT", text=reply, reply_to_id=post_id)["id"]
+            rm = reply_media(account)
+            if len(rm) > 1:      # 캐러셀: 장마다 컨테이너를 만들고 전부 준비된 뒤 묶는다
+                kids = [api(plat, create, token, is_carousel_item="true",
+                            **media_kind(m, f"{base}/{m}"))["id"] for m in rm]
+                for k in kids:
+                    wait_ready(plat, k, token)
+                rkind = {"media_type": "CAROUSEL", "children": ",".join(kids)}
+            elif rm:
+                rkind = media_kind(rm[0], f"{base}/{rm[0]}")
+            else:
+                rkind = {"media_type": "TEXT"}
+            c = api(plat, create, token, text=reply, reply_to_id=post_id, **rkind)["id"]
             wait_ready(plat, c, token)
             api(plat, f"{user}/{plat['publish']}", token, creation_id=c)
     return post_id
