@@ -370,9 +370,13 @@ function renderInsight(rounds, plan, ins, tour){
 
 // GitHub raw에서 직접 읽는다. 로컬 파일을 보면 git pull 전까지 옛 데이터가 남는다.
 const SRC = "https://raw.githubusercontent.com/ungchun/thread-images/main/dashboard.json";
-fetch(SRC + "?" + Date.now())
-  .catch(() => fetch("dashboard.json?" + Date.now())).then(r => r.json()).then(d => {
-  $("#stamp").textContent = "갱신 " + d.generated.slice(0,16).replace("T"," ") + " UTC · 최근 " + d.window_days + "일";
+let SOURCE = "github";
+fetch(SRC + "?" + Date.now(), {cache: "no-store"})
+  .then(r => r.ok ? r : Promise.reject(r.status))
+  .catch(() => { SOURCE = "로컬"; return fetch("dashboard.json?" + Date.now(), {cache: "no-store"}); })
+  .then(r => r.json()).then(d => {
+  $("#stamp").textContent = "갱신 " + d.generated.slice(0,16).replace("T"," ") + " UTC · 최근 "
+    + d.window_days + "일 · " + SOURCE;
   $("#n-sched").textContent = d.scheduled.length;
   $("#n-posts").textContent = d.posts.length;
   $("#n-pending").textContent = d.pending.length;
