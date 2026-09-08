@@ -94,6 +94,13 @@ tr.top td{background:#151d19}
 .q b{font-size:12px}
 .q .copy{margin:6px 0 4px;font-size:12px}
 .acct-ins th{color:var(--dim);font-weight:500;text-align:left}
+.badge{display:inline-block;border-radius:5px;padding:1px 7px;font-size:11px;font-weight:500}
+.badge.active{background:#12301f;color:#5fd08a}
+.badge.paused{background:#2e2a14;color:#d6bd57}
+.badge.dead{background:#2e1519;color:#e06c78}
+tr.off td{opacity:.45}
+.sum{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px;font-size:12px;color:var(--dim)}
+.sum b{color:var(--fg);font-weight:600}
 .dead{color:#c46;font-size:11px}
 .accs{font-size:12px;color:var(--dim);line-height:1.8}
 .pill{display:inline-block;background:var(--line);border-radius:6px;padding:1px 7px;
@@ -281,24 +288,41 @@ function renderIns(ins){
   if(!ins || !ins.hour) return "";
   const acc = ins.accounts || {};
   const dead = Object.entries(acc).filter(([a,o]) => o.posts >= 4 && o.avg < 100);
+  const LABEL = {active:"운영", paused:"중단", dead:"도달 없음"};
+  const cnt = {active:0, paused:0, dead:0};
+  Object.values(acc).forEach(o => cnt[o.state || "active"]++);
+  const ordered = Object.entries(acc).sort((x,y) => {
+    const w = s => s === "active" ? 0 : s === "paused" ? 1 : 2;
+    return w(x[1].state) - w(y[1].state) || y[1].avg - x[1].avg;
+  });
   return `<div class="ins">
     <div class="card"><h4>시간대 (현지)</h4>${bars(ins.hour, k => k+"시")}
       <div class="note2">흐린 줄은 표본 3건 미만이라 근거가 약하다.</div></div>
     <div class="card"><h4>요일</h4>${bars(ins.wday, k => k)}
       <div class="note2">일요일이 눈에 띄게 낮다.</div></div>
   </div>
-  <div class="card"><h4>계정별 (평균 조회 순)</h4>
-    <table class="acct-ins"><tr><th>계정</th><th>글</th><th style="text-align:right">평균</th>
-      <th style="text-align:right">최고</th><th>잘 된 시각</th></tr>` +
-    Object.entries(acc).map(([a,o]) => `<tr>
-      <td>${esc(a)}${o.posts>=4&&o.avg<100?' <span class="dead">사실상 도달 없음</span>':''}</td>
+  <div class="card"><h4>계정 상태</h4>
+    <div class="sum">
+      <span><b>${cnt.active}</b>개 운영</span>
+      ${cnt.paused ? `<span><b>${cnt.paused}</b>개 중단</span>` : ""}
+      ${cnt.dead ? `<span><b>${cnt.dead}</b>개 도달 없음</span>` : ""}
+    </div>
+    <table class="acct-ins"><tr><th>계정</th><th>상태</th><th>글</th>
+      <th style="text-align:right">평균</th><th style="text-align:right">최고</th>
+      <th>잘 된 시각</th><th>메모</th></tr>` +
+    ordered.map(([a,o]) => {
+      const st = o.state || "active";
+      return `<tr class="${st!=="active"?"off":""}">
+      <td>${esc(a)}</td>
+      <td><span class="badge ${st}">${LABEL[st]||st}</span></td>
       <td class="meta">${o.posts}</td>
       <td style="text-align:right">${n(o.avg)}</td>
       <td style="text-align:right" class="meta">${n(o.max)}</td>
-      <td class="meta">${o.best_hour}시${o.best_n<2?" (1건)":""}</td>
-    </tr>`).join("") + `</table>
-    <div class="note2">배수는 그 계정 평소 대비다. 계정 규모가 100배씩 차이나서
-      절대 조회수로는 나라끼리 비교가 안 된다.</div></div>`;
+      <td class="meta">${o.best_hour!=null ? o.best_hour+"시"+(o.best_n<2?" (1건)":"") : "–"}</td>
+      <td class="meta" style="white-space:normal">${esc(o.note||"")}</td>
+    </tr>`;}).join("") + `</table>
+    <div class="note2">상태는 accounts/status.json이 단일 출처다.
+      배수·평균은 그 계정 평소 대비라 계정 규모가 100배씩 차이나도 비교가 된다.</div></div>`;
 }
 
 function renderTour(t){

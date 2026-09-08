@@ -109,6 +109,14 @@ def compare(posts, rs):
     return out
 
 
+def account_status():
+    """계정 운영 상태. accounts/status.json이 단일 출처다."""
+    f = ROOT / "accounts" / "status.json"
+    if not f.exists():
+        return {}
+    return json.loads(f.read_text(encoding="utf-8")).get("accounts", {})
+
+
 def read_signals(posts):
     """올린 글에서 바로 읽히는 것들. 계정 체력이 100배씩 차이나므로 절대 조회수가
     아니라 "그 계정 평소 대비 몇 배"(배수)로 잰다. 1.0이 평소 수준.
@@ -147,17 +155,27 @@ def read_signals(posts):
     wday = lambda p: "월화수목금토일"[date.fromisoformat(p["date"]).weekday()]
 
     # 계정별 최적 시간대 — 표본 1건짜리는 근거가 못 되니 건수를 같이 넘긴다
+    st = account_status()
     by_acc = {}
     for a in sorted(per, key=lambda a: -base[a]):
         rows = [p for p in live if p["account"] == a]
         g = group(hour, rows)
         best = max(g.items(), key=lambda kv: (kv[1]["median"], kv[1]["n"]))
+        info = st.get(a, {})
         by_acc[a] = {
             "flag": rows[0]["country"], "posts": len(rows),
             "avg": int(base[a]), "max": max(p["views"] for p in rows),
             "hours": dict(sorted(g.items())),
             "best_hour": best[0], "best_n": best[1]["n"],
+            "state": info.get("state", "active"), "note": info.get("note", ""),
         }
+    # 최근 글이 없어 위 루프에 안 잡힌 계정도 상태는 보여준다
+    for a, info in st.items():
+        if a not in by_acc:
+            by_acc[a] = {"flag": meta(a)[0] if (ROOT/"accounts"/a).is_dir() else "??",
+                         "posts": 0, "avg": 0, "max": 0, "hours": {},
+                         "best_hour": None, "best_n": 0,
+                         "state": info.get("state", "active"), "note": info.get("note", "")}
 
     return {
         "hour": dict(sorted(group(hour).items())),

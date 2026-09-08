@@ -1,0 +1,19 @@
+{
+ "_설명": "계정 운영 상태. 대시보드가 읽어 계정별 표에 표시한다. state는 active(운영) / paused(중단) / dead(도달 없음).",
+ "accounts": {
+  "ashgrey._02":  {"state": "active", "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"},
+  "inkling01":    {"state": "active", "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음"},
+  "aoi.02_":      {"state": "active", "note": "일본. 9/3에 32,241"},
+  "o2ndot":       {"state": "active", "note": "프랑스. 저녁 19시가 오전 8시보다 10배"},
+  "ac_dd91":      {"state": "active", "note": "한국. 저녁 18시가 오전보다 나음"},
+  "03ines.mar_":  {"state": "active", "note": "포르투갈"},
+  "dot2day_":     {"state": "active", "note": "독일. 오전 8시 성과가 특히 나빴다"},
+  "elle__jm":     {"state": "active", "note": "호주. 9/7 합류, 표본 부족"},
+  "rara.2k_":     {"state": "active", "note": "인도네시아. 9/7 합류. 앱 현지화 미완"},
+  "kai_.03b":     {"state": "active", "note": "필리핀. 9/7 합류, 표본 부족"},
+  "nia._055":     {"state": "active", "note": "인도. 9/7 합류, 표본 부족"},
+  "lune__v34":    {"state": "active", "note": "이탈리아. 9/7 합류, 표본 부족"},
+  "beatriz03._a": {"state": "active", "note": "스페인. 앞 계정 영구정지 후 재개설"},
+  "daily03dew":   {"state": "dead",   "note": "7건 평균 16·최고 40. 같은 문구 쓴 inkling01이 평균 7,885라 계정 문제. 예약에서 제외, 새 대만 계정 개설 예정"}
+ }
+}
