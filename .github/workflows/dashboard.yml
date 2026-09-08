@@ -33,12 +33,18 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email actions@github.com
-          git add dashboard.json
-          git diff --staged --quiet && exit 0
-          git commit -m "dashboard"
-          # 수집이 도는 동안 발행 워크플로가 먼저 밀어넣는 일이 잦다. 리베이스 후 재시도.
+          # dashboard.json은 매번 통째로 다시 만드는 생성물이라 병합할 게 없다.
+          # 수집 중 발행 워크플로가 먼저 밀어넣는 일이 잦은데, 리베이스하면 충돌만 난다.
+          # 원격을 받아 그 위에 방금 만든 파일을 얹는다.
+          cp dashboard.json /tmp/dashboard.json
           for i in 1 2 3; do
-            git pull --rebase --quiet && git push && exit 0
+            git fetch origin main --quiet
+            git reset --hard origin/main --quiet
+            cp /tmp/dashboard.json dashboard.json
+            git add dashboard.json
+            git diff --staged --quiet && exit 0
+            git commit -m "dashboard" --quiet
+            git push && exit 0
             sleep 5
           done
           echo "푸시 실패"; exit 1
