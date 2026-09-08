@@ -21,7 +21,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from report import meta, insights
-from run import creds
+from run import RAW, creds, media_kind
 
 ROOT = Path(__file__).resolve().parent
 GRAPH = "https://graph.threads.net/v1.0"
@@ -120,13 +120,47 @@ def tone(account, limit):
     return out
 
 
-def send(account, reply_to_id, body):
-    """컨테이너 생성 → 발행. 글 올릴 때와 같은 경로에 reply_to_id만 더한다."""
+def send(account, reply_to_id, body, media=None):
+    """컨테이너 생성 → 발행. 글 올릴 때와 같은 경로에 reply_to_id만 더한다.
+
+    media는 images/ 안의 파일명 목록. 여러 개면 캐러셀로 묶는다.
+    본문 발행과 같은 규칙이라 확장자로 이미지/영상이 갈린다(run.media_kind).
+    """
     token, uid = creds(account)
+    base = f"{RAW}/images"
+    if not media:
+        kind = {"media_type": "TEXT"}
+    elif len(media) == 1:
+        kind = media_kind(media[0], f"{base}/{media[0]}")
+    else:
+        items = []
+        for m in media:
+            it = api(f"{uid}/threads", token, post=True, is_carousel_item="true",
+                     **media_kind(m, f"{base}/{m}"))["id"]
+            items.append(it)
+        for it in items:
+            wait_ready(it, token)
+        kind = {"media_type": "CAROUSEL", "children": ",".join(items)}
+
     c = api(f"{uid}/threads", token, post=True,
-            media_type="TEXT", text=body, reply_to_id=reply_to_id)
-    time.sleep(3)   # 컨테이너가 준비될 시간. 바로 발행하면 간헐적으로 실패한다.
+            text=body, reply_to_id=reply_to_id, **kind)
+    if media:
+        wait_ready(c["id"], token)      # 영상은 준비에 30초쯤 걸린다
+    else:
+        time.sleep(3)   # 컨테이너가 준비될 시간. 바로 발행하면 간헐적으로 실패한다.
     return api(f"{uid}/threads_publish", token, post=True, creation_id=c["id"])
+
+
+def wait_ready(container, token, tries=20):
+    """컨테이너가 FINISHED 될 때까지. 캐러셀은 묶기 전에 반드시 확인해야 한다."""
+    for _ in range(tries):
+        st = api(container, token, fields="status")
+        if st.get("status") == "FINISHED":
+            return
+        if st.get("status") in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"container {container}: {st}")
+        time.sleep(5)
+    raise RuntimeError(f"container {container}: 준비 안 됨")
 
 
 def main():
