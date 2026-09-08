@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08T02:41:18.264542+00:00",
+ "generated": "2026-09-08T02:47:34.498701+00:00",
  "rounds": [
   {
    "id": "01",
@@ -47,7 +47,7 @@
    "kr": "아이폰에 이런 앱이 있었는데 나만 여태 모르고 있었네… 잠금화면에 그림도 그리고 스티커도 붙여서 내 맘대로 꾸며놨어",
    "note": "1인칭 발견담 + 꾸미기 소구. 영상+이미지2 캐러셀 첫 도입.",
    "posts": 14,
-   "views": 11234,
+   "views": 11236,
    "likes": 40,
    "median": 277,
    "score": 0.65,
@@ -61,7 +61,7 @@
    "note": "03 재사용. 04(발견담)와 같은 계정 비교용.",
    "posts": 20,
    "views": 6548,
-   "likes": 43,
+   "likes": 44,
    "median": 85,
    "score": 0.2,
    "sample": 20
@@ -149,7 +149,7 @@
    "화": {
     "n": 10,
     "score": 0.37,
-    "median": 466
+    "median": 494
    },
    "수": {
     "n": 14,
@@ -193,13 +193,13 @@
    "ashgrey._02": {
     "flag": "VN",
     "posts": 5,
-    "avg": 324805,
-    "max": 1187637,
+    "avg": 324818,
+    "max": 1187641,
     "hours": {
      "8": {
       "n": 4,
       "score": 0.67,
-      "median": 216291
+      "median": 216292
      },
      "17": {
       "n": 1,
@@ -208,7 +208,9 @@
      }
     },
     "best_hour": 8,
-    "best_n": 4
+    "best_n": 4,
+    "state": "active",
+    "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"
    },
    "inkling01": {
     "flag": "TW",
@@ -248,7 +250,9 @@
      }
     },
     "best_hour": 8,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음"
    },
    "aoi.02_": {
     "flag": "JP",
@@ -283,7 +287,9 @@
      }
     },
     "best_hour": 9,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "일본. 9/3에 32,241"
    },
    "o2ndot": {
     "flag": "FR",
@@ -323,7 +329,9 @@
      }
     },
     "best_hour": 21,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
    },
    "rara.2k_": {
     "flag": "ID",
@@ -343,7 +351,9 @@
      }
     },
     "best_hour": 19,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
    },
    "dot2day_": {
     "flag": "DE",
@@ -383,7 +393,9 @@
      }
     },
     "best_hour": 4,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "독일. 오전 8시 성과가 특히 나빴다"
    },
    "ac_dd91": {
     "flag": "KR",
@@ -418,12 +430,14 @@
      }
     },
     "best_hour": 18,
-    "best_n": 4
+    "best_n": 4,
+    "state": "active",
+    "note": "한국. 저녁 18시가 오전보다 나음"
    },
    "03ines.mar_": {
     "flag": "PT",
     "posts": 8,
-    "avg": 467,
+    "avg": 468,
     "max": 736,
     "hours": {
      "3": {
@@ -444,11 +458,13 @@
      "19": {
       "n": 2,
       "score": 1.09,
-      "median": 509
+      "median": 510
      }
     },
     "best_hour": 3,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "포르투갈"
    },
    "elle__jm": {
     "flag": "AU",
@@ -468,7 +484,9 @@
      }
     },
     "best_hour": 20,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "호주. 9/7 합류, 표본 부족"
    },
    "lune__v34": {
     "flag": "IT",
@@ -488,7 +506,9 @@
      }
     },
     "best_hour": 19,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "이탈리아. 9/7 합류, 표본 부족"
    },
    "beatriz03._a": {
     "flag": "ES",
@@ -508,7 +528,9 @@
      }
     },
     "best_hour": 19,
-    "best_n": 1
+    "best_n": 1,
+    "state": "active",
+    "note": "스페인. 앞 계정 영구정지 후 재개설"
    },
    "kai_.03b": {
     "flag": "PH",
@@ -528,7 +550,9 @@
      }
     },
     "best_hour": 8,
-    "best_n": 2
+    "best_n": 2,
+    "state": "active",
+    "note": "필리핀. 9/7 합류, 표본 부족"
    },
    "nia._055": {
     "flag": "IN",
@@ -548,7 +572,9 @@
      }
     },
     "best_hour": 8,
-    "best_n": 2
+    "best_n": 2,
+    "state": "active",
+    "note": "인도. 9/7 합류, 표본 부족"
    },
    "daily03dew": {
     "flag": "TW",
@@ -583,7 +609,9 @@
      }
     },
     "best_hour": 19,
-    "best_n": 1
+    "best_n": 1,
+    "state": "dead",
+    "note": "7건 평균 16·최고 40. 같은 문구 쓴 inkling01이 평균 7,885라 계정 문제. 예약에서 제외, 새 대만 계정 개설 예정"
    }
   }
  },
@@ -747,7 +775,7 @@
    "text": "Này, những ai dùng iPhone,\nthử cái này một lần thôi.\nBắt đầu dùng rồi\nlà thật sự không quên gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdAgrY6oKKC",
-   "views": 498,
+   "views": 555,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -766,7 +794,7 @@
    "text": "Ei, malta com iPhone,\nconfigurem assim o ecrã de bloqueio.\nVeem os planos do dia sempre que pegam no telemóvel,\nnão há hipótese de esquecer ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/Dc_tNPIIPa1",
-   "views": 282,
+   "views": 284,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -881,7 +909,7 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dc_EE6NFlEU",
    "views": 3043,
-   "likes": 36,
+   "likes": 37,
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
@@ -1374,7 +1402,7 @@
    "text": "Hoá ra iPhone có app như thế này\nmà tới giờ mình mới biết…\nVẽ lên màn hình khoá, dán thêm sticker,\ntrang trí đúng theo ý mình luôn 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dc4u6vYAqHj",
-   "views": 7639,
+   "views": 7641,
    "likes": 28,
    "replies": 1,
    "reposts": 2,
@@ -2229,7 +2257,7 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1187637,
+   "views": 1187641,
    "likes": 20229,
    "replies": 300,
    "reposts": 4305,
