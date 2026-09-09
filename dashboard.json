@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T05:14:01.936803+00:00",
+ "generated": "2026-09-09T06:38:18.798570+00:00",
  "rounds": [
   {
    "id": "01",
@@ -53,7 +53,7 @@
    "views": 11309,
    "likes": 40,
    "median": 277,
-   "score": 0.41,
+   "score": 0.4,
    "sample": 14,
    "variants": {}
   },
@@ -78,15 +78,15 @@
    "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
    "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
    "posts": 22,
-   "views": 42586,
-   "likes": 507,
-   "median": 341,
-   "score": 0.75,
+   "views": 43627,
+   "likes": 508,
+   "median": 343,
+   "score": 0.79,
    "sample": 22,
    "variants": {
     "A": {
      "posts": 11,
-     "median": 357,
+     "median": 361,
      "score": 0.98,
      "sample": 11
     },
@@ -149,7 +149,7 @@
    "17": {
     "n": 2,
     "score": 0.01,
-    "median": 1717
+    "median": 1718
    },
    "18": {
     "n": 7,
@@ -159,7 +159,7 @@
    "19": {
     "n": 23,
     "score": 0.78,
-    "median": 571
+    "median": 631
    },
    "20": {
     "n": 4,
@@ -176,11 +176,11 @@
    "월": {
     "n": 12,
     "score": 0.93,
-    "median": 698
+    "median": 699
    },
    "화": {
     "n": 17,
-    "score": 0.59,
+    "score": 0.65,
     "median": 414
    },
    "수": {
@@ -218,15 +218,15 @@
    "IMAGE": {
     "n": 1,
     "score": 0.01,
-    "median": 3386
+    "median": 3389
    }
   },
   "accounts": {
    "ashgrey._02": {
     "flag": "VN",
     "posts": 6,
-    "avg": 271640,
-    "max": 1188557,
+    "avg": 271786,
+    "max": 1188612,
     "hours": {
      "8": {
       "n": 5,
@@ -236,7 +236,7 @@
      "17": {
       "n": 1,
       "score": 0.01,
-      "median": 3386
+      "median": 3389
      }
     },
     "best_hour": 8,
@@ -247,8 +247,8 @@
    "rara.2k_": {
     "flag": "ID",
     "posts": 3,
-    "avg": 9786,
-    "max": 28742,
+    "avg": 9789,
+    "max": 28751,
     "hours": {
      "8": {
       "n": 2,
@@ -258,7 +258,7 @@
      "19": {
       "n": 1,
       "score": 2.94,
-      "median": 28742
+      "median": 28751
      }
     },
     "best_hour": 19,
@@ -270,12 +270,12 @@
     "flag": "TW",
     "posts": 8,
     "avg": 7888,
-    "max": 51116,
+    "max": 51117,
     "hours": {
      "8": {
       "n": 1,
       "score": 6.48,
-      "median": 51116
+      "median": 51117
      },
      "9": {
       "n": 1,
@@ -390,8 +390,8 @@
    "lune__v34": {
     "flag": "IT",
     "posts": 4,
-    "avg": 1023,
-    "max": 3301,
+    "avg": 1068,
+    "max": 3307,
     "hours": {
      "8": {
       "n": 2,
@@ -401,7 +401,7 @@
      "19": {
       "n": 2,
       "score": 1.91,
-      "median": 1952
+      "median": 2043
      }
     },
     "best_hour": 19,
@@ -438,7 +438,7 @@
      "19": {
       "n": 1,
       "score": 1.08,
-      "median": 692
+      "median": 693
      }
     },
     "best_hour": 18,
@@ -512,7 +512,7 @@
      "19": {
       "n": 3,
       "score": 0.78,
-      "median": 357
+      "median": 361
      }
     },
     "best_hour": 3,
@@ -523,18 +523,18 @@
    "beatriz03._a": {
     "flag": "ES",
     "posts": 4,
-    "avg": 408,
-    "max": 705,
+    "avg": 423,
+    "max": 706,
     "hours": {
      "8": {
       "n": 2,
-      "score": 0.44,
+      "score": 0.42,
       "median": 179
      },
      "19": {
       "n": 2,
-      "score": 1.56,
-      "median": 638
+      "score": 1.58,
+      "median": 668
      }
     },
     "best_hour": 19,
@@ -567,7 +567,7 @@
    "kai_.03b": {
     "flag": "PH",
     "posts": 4,
-    "avg": 236,
+    "avg": 237,
     "max": 435,
     "hours": {
      "8": {
@@ -578,7 +578,7 @@
      "19": {
       "n": 2,
       "score": 0.85,
-      "median": 200
+      "median": 203
      }
     },
     "best_hour": 8,
@@ -692,6 +692,45 @@
     }
    ],
    "note": "미검증 교란 변수: 6라운드에 이미지가 2장→3장으로 늘었다. 7라운드도 3장이라 이 축은 여전히 고정돼 있어 문구 비교에는 영향 없다."
+  },
+  {
+   "id": "08",
+   "date": "2026-09-11",
+   "status": "예정 (목요일). 7라운드 판정 후 확정",
+   "hypothesis": "① 문구를 한국어 직역이 아니라 나라별 Threads 문법으로 바꾸면 반응(좋아요·댓글)이 오른다 ② 고백형('10년 썼는데 이제 알았다')이 호명형을 이긴다",
+   "design": "texts/*08a = 호명형을 research/format_by_country.txt 규칙대로 현지화(일본은 대상특정형, 대만은 도발질문, 스페인은 ¿Sabías…?, 브라질은 질문+Eu começo, 인도는 힝글리시 로마자). texts/*08b = 고백형. 이모지 전부 제거. 배정은 7라운드를 뒤집어 순서 효과 상쇄. 시각은 저녁 유지, 발행 요일은 화·수·목만.",
+   "variants": [
+    {
+     "key": "A",
+     "label": "호명형 현지화판 (챔피언)",
+     "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로"
+    },
+    {
+     "key": "B",
+     "label": "고백형 (도전자)",
+     "kr": "아이폰 3년 쓰면서\n잠금화면에 일정 뜨는 거 몰랐음.\n이거 켜고 나서\n까먹은 적이 없다"
+    }
+   ],
+   "accounts": {
+    "A": [
+     "nia._055",
+     "dot2day_",
+     "lune__v34",
+     "o2ndot",
+     "ashgrey._02",
+     "elle__jm"
+    ],
+    "B": [
+     "kai_.03b",
+     "inkling01",
+     "beatriz03._a",
+     "03ines.mar_",
+     "ac_dd91",
+     "aoi.02_"
+    ]
+   },
+   "media": "7라운드와 동일(스레드 3장·인스타 2장)",
+   "note": "조사 근거: research/format_by_country.txt. 요일 점수가 수 1.44 / 일 0.15로 문구보다 큰 변수라, 이 라운드부터 주말 발행 금지·같은 계정 2일 간격·verdict는 발행 3일 후 값으로 적는다. 7라운드에서 팁형이 이기면 B 자리는 팁형 재대결로 바꾼다."
   }
  ],
  "tournament": {
@@ -709,6 +748,11 @@
    }
   ],
   "queue": [
+   {
+    "key": "고백형",
+    "kr": "아이폰 3년 쓰면서\n잠금화면에 일정 뜨는 거 몰랐음.\n이거 켜고 나서\n까먹은 적이 없다",
+    "why": "나라별 조사에서 최대 자연 바이럴(영어 6.8K, 한국 127)이 전부 이 유형. 번역 손실이 가장 적다. research/format_by_country.txt"
+   },
    {
     "key": "팁형",
     "kr": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨",
@@ -730,8 +774,8 @@
     "why": "결과부터 던진다. 가장 짧아 스크롤 중에 다 읽힌다."
    }
   ],
-  "rule": "한 라운드에 챔피언 대 도전자 2개. 계정 13개를 반씩 갈라 같은 날 올리고, 이틀 뒤 서로 바꿔 한 번 더 올린다(순서 효과 상쇄). 이긴 쪽이 다음 챔피언. 연속 발행은 두 번째가 묻히므로 하루 걸러 간다.",
-  "note": "7라운드에서 호명형(챔피언) 대 팁형(도전자)을 같은 계정·같은 시각에서 교차 검증 중. 6라운드는 시각 이동이 겹쳐 판정 불가였다."
+  "rule": "한 라운드에 챔피언 대 도전자 2개. 계정 13개를 반씩 갈라 같은 날 올리고, 이틀 뒤 서로 바꿔 한 번 더 올린다(순서 효과 상쇄). 이긴 쪽이 다음 챔피언. 연속 발행은 두 번째가 묻히므로 하루 걸러 간다. 발행 요일은 화·수·목만(토 0.24·일 0.15). 문구는 나라별 훅 구조로 변환한다.",
+  "note": "7라운드에서 호명형(챔피언) 대 팁형(도전자)을 같은 계정·같은 시각에서 교차 검증 중. 6라운드는 시각 이동이 겹쳐 판정 불가였다. 2026-09-09 나라별 포맷 조사 반영: 호명형은 한국·일본에서 반응이 죽고(노출만), 대만은 도발질문·브라질은 질문+교환형·일본은 대상특정형이 문법. 문구는 직역 대신 research/format_by_country.txt 규칙으로 현지화한다. 이모지 제거."
  },
  "window_days": 30,
  "scheduled": [
@@ -790,8 +834,8 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdDCEziDdRN",
-   "views": 1584,
-   "likes": 10,
+   "views": 1795,
+   "likes": 11,
    "replies": 1,
    "reposts": 2,
    "quotes": 0,
@@ -810,7 +854,7 @@
    "text": "Ei, malta que usa iPhone,\nexperimentem isto nem que seja uma vez.\nAssim que começam a usar\ndeixam mesmo de se esquecer de tudo ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DdCSA_cILp-",
-   "views": 357,
+   "views": 361,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -850,7 +894,7 @@
    "text": "Ehi, voi con l'iPhone,\nprovate a impostare così la schermata di blocco.\nVedete gli impegni di oggi ogni volta che accendete il telefono,\nnon c'è modo di dimenticare ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdCLV-0nK2a",
-   "views": 604,
+   "views": 779,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -870,7 +914,7 @@
    "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto empiezas a usarlo\nya no se te olvida nada, de verdad ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdCLJqIHMbL",
-   "views": 571,
+   "views": 631,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -950,7 +994,7 @@
    "text": "Uy, kayong mga naka-iPhone,\nsubukan niyo lang 'to kahit minsan.\nPag nagsimula ka nang gamitin\nwala ka na talagang makakalimutan ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdBh8lYG9eD",
-   "views": 278,
+   "views": 283,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -970,7 +1014,7 @@
    "text": "Này, những ai dùng iPhone,\nthử cái này một lần thôi.\nBắt đầu dùng rồi\nlà thật sự không quên gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdAgrY6oKKC",
-   "views": 2999,
+   "views": 3567,
    "likes": 20,
    "replies": 1,
    "reposts": 2,
@@ -1030,7 +1074,7 @@
    "text": "Ehi, voi che avete un iPhone,\nprovatelo anche solo una volta.\nUna volta che iniziate a usarlo\nnon vi dimenticate più niente, davvero ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/Dc_mZntlRN5",
-   "views": 3301,
+   "views": 3307,
    "likes": 3,
    "replies": 3,
    "reposts": 1,
@@ -1050,7 +1094,7 @@
    "text": "Ey, los que tenéis iPhone,\nconfigurad así la pantalla de bloqueo.\nVeis los planes del día cada vez que miráis el móvil,\nasí no hay manera de olvidarse ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/Dc_mVO7lekF",
-   "views": 705,
+   "views": 706,
    "likes": 5,
    "replies": 1,
    "reposts": 0,
@@ -1110,7 +1154,7 @@
    "text": "Woy, yang pakai iPhone,\ncoba ini sekali aja deh.\nBegitu mulai pakai\nbeneran nggak ada yang kelupaan lagi ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dc_EE6NFlEU",
-   "views": 28742,
+   "views": 28751,
    "likes": 455,
    "replies": 23,
    "reposts": 49,
@@ -1190,7 +1234,7 @@
    "text": "ねえ、iPhone使ってる人、\nロック画面こうしてみて。\nスマホ見るたびに今日の予定が目に入るから\n忘れる隙がないよ ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi.02_/post/Dc-2V8WoFLo",
-   "views": 1318,
+   "views": 1319,
    "likes": 5,
    "replies": 1,
    "reposts": 0,
@@ -1210,7 +1254,7 @@
    "text": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/Dc-2RinIO5B",
-   "views": 692,
+   "views": 693,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -2090,7 +2134,7 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 425620,
+   "views": 425659,
    "likes": 4204,
    "replies": 88,
    "reposts": 694,
@@ -2450,7 +2494,7 @@
    "text": "Nhờ mọi người mà app đã đạt hạng 11 mục Hiệu quả trên App Store! 🎉\nCảm ơn mọi người nhiều lắm luôn 💕\n\nMình đọc được nhiều tin nhắn và comment nói là phần cài đặt hơi khó\nMình biết hết rồi nha, và đang cải thiện để làm cho dễ hơn!\n\nComment mình đều đọc hết đó!\nCó trả lời chậm thì mọi người thông cảm nha.. xin lỗi nè 🥲\n\nTrước mắt mình sẽ viết từng bước cài đặt trong thread này nha 👇",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DcimhdrE8HN",
-   "views": 3386,
+   "views": 3389,
    "likes": 38,
    "replies": 9,
    "reposts": 10,
@@ -2530,7 +2574,7 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1188557,
+   "views": 1188612,
    "likes": 20233,
    "replies": 300,
    "reposts": 4306,
@@ -2550,7 +2594,7 @@
    "text": "欸，iPhone 用戶，\n真的一定要試試這個！\n行程、待辦事項再也不怕忘記 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@inkling01/post/Dce6WNeAk72",
-   "views": 51116,
+   "views": 51117,
    "likes": 97,
    "replies": 4,
    "reposts": 2,
