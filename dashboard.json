@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T06:38:18.798570+00:00",
+ "generated": "2026-09-09T07:05:51.609072+00:00",
  "rounds": [
   {
    "id": "01",
@@ -50,10 +50,10 @@
    "kr": "아이폰에 이런 앱이 있었는데 나만 여태 모르고 있었네… 잠금화면에 그림도 그리고 스티커도 붙여서 내 맘대로 꾸며놨어",
    "note": "1인칭 발견담 + 꾸미기 소구. 영상+이미지2 캐러셀 첫 도입.",
    "posts": 14,
-   "views": 11309,
+   "views": 11310,
    "likes": 40,
    "median": 277,
-   "score": 0.4,
+   "score": 0.39,
    "sample": 14,
    "variants": {}
   },
@@ -78,15 +78,15 @@
    "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
    "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
    "posts": 22,
-   "views": 43627,
+   "views": 43942,
    "likes": 508,
    "median": 343,
-   "score": 0.79,
+   "score": 0.81,
    "sample": 22,
    "variants": {
     "A": {
      "posts": 11,
-     "median": 361,
+     "median": 362,
      "score": 0.98,
      "sample": 11
     },
@@ -159,7 +159,7 @@
    "19": {
     "n": 23,
     "score": 0.78,
-    "median": 631
+    "median": 666
    },
    "20": {
     "n": 4,
@@ -175,8 +175,8 @@
   "wday": {
    "월": {
     "n": 12,
-    "score": 0.93,
-    "median": 699
+    "score": 0.94,
+    "median": 700
    },
    "화": {
     "n": 17,
@@ -200,7 +200,7 @@
    },
    "토": {
     "n": 18,
-    "score": 0.24,
+    "score": 0.23,
     "median": 277
    },
    "일": {
@@ -225,13 +225,13 @@
    "ashgrey._02": {
     "flag": "VN",
     "posts": 6,
-    "avg": 271786,
-    "max": 1188612,
+    "avg": 271828,
+    "max": 1188633,
     "hours": {
      "8": {
       "n": 5,
       "score": 0.03,
-      "median": 7698
+      "median": 7699
      },
      "17": {
       "n": 1,
@@ -247,8 +247,8 @@
    "rara.2k_": {
     "flag": "ID",
     "posts": 3,
-    "avg": 9789,
-    "max": 28751,
+    "avg": 9790,
+    "max": 28753,
     "hours": {
      "8": {
       "n": 2,
@@ -258,7 +258,7 @@
      "19": {
       "n": 1,
       "score": 2.94,
-      "median": 28751
+      "median": 28753
      }
     },
     "best_hour": 19,
@@ -390,7 +390,7 @@
    "lune__v34": {
     "flag": "IT",
     "posts": 4,
-    "avg": 1068,
+    "avg": 1086,
     "max": 3307,
     "hours": {
      "8": {
@@ -401,7 +401,7 @@
      "19": {
       "n": 2,
       "score": 1.91,
-      "median": 2043
+      "median": 2077
      }
     },
     "best_hour": 19,
@@ -438,7 +438,7 @@
      "19": {
       "n": 1,
       "score": 1.08,
-      "median": 693
+      "median": 694
      }
     },
     "best_hour": 18,
@@ -491,7 +491,7 @@
    "03ines.mar_": {
     "flag": "PT",
     "posts": 9,
-    "avg": 460,
+    "avg": 461,
     "max": 736,
     "hours": {
      "3": {
@@ -511,8 +511,8 @@
      },
      "19": {
       "n": 3,
-      "score": 0.78,
-      "median": 361
+      "score": 0.79,
+      "median": 362
      }
     },
     "best_hour": 3,
@@ -523,18 +523,18 @@
    "beatriz03._a": {
     "flag": "ES",
     "posts": 4,
-    "avg": 423,
+    "avg": 432,
     "max": 706,
     "hours": {
      "8": {
       "n": 2,
-      "score": 0.42,
+      "score": 0.41,
       "median": 179
      },
      "19": {
       "n": 2,
-      "score": 1.58,
-      "median": 668
+      "score": 1.59,
+      "median": 686
      }
     },
     "best_hour": 19,
@@ -567,17 +567,17 @@
    "kai_.03b": {
     "flag": "PH",
     "posts": 4,
-    "avg": 237,
+    "avg": 238,
     "max": 435,
     "hours": {
      "8": {
       "n": 2,
-      "score": 1.15,
+      "score": 1.14,
       "median": 272
      },
      "19": {
       "n": 2,
-      "score": 0.85,
+      "score": 0.86,
       "median": 203
      }
     },
@@ -820,6 +820,188 @@
     "jp07-3.png"
    ],
    "done": []
+  },
+  {
+   "account": "kai_.03b",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-09T11:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
+   "media": [
+    "ph08-1.png",
+    "ph08-2.png",
+    "ph08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "rara.2k_",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-09T12:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "10 tahun pakai iPhone\nbaru tau lockscreen bisa nampilin ini.\njadwal seminggu nongol terus di situ\nsejak itu gak pernah lupa apa-apa",
+   "media": [
+    "id08-1.png",
+    "id08-2.png",
+    "id08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "pim.pm_02",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-09T12:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
+   "media": [
+    "th08-1.png",
+    "th08-2.png",
+    "th08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "inkling01",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-09T12:00:00+00:00",
+   "local": "2026-09-09 20:00",
+   "text": "用了十年 iPhone\n才發現鎖定畫面可以顯示這個\n整週的行程就一直放在那\n從此沒再漏掉任何一件事",
+   "media": [
+    "tw08-1.png",
+    "tw08-2.png",
+    "tw08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "nia._055",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-09T13:30:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "iPhone users, calendar app kholna band karo.\nlock screen pe hi poora din dikh jata hai.\nek baar set kar lo\nphir kuch bhi bhoolna nahi padta",
+   "media": [
+    "hi08-1.png",
+    "hi08-2.png",
+    "hi08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "dot2day_",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-09T17:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "Ich hab meinen Sperrbildschirm zum Wochenplaner gemacht\nund vergesse seitdem nichts mehr.\nMacht das sonst niemand?\nProbiert es einmal aus",
+   "media": [
+    "de08-1.png",
+    "de08-2.png",
+    "de08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "lune__v34",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-09T17:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "Chi ha un iPhone:\nprovate a mettere la settimana intera sulla schermata di blocco.\nDa quando l'ho fatto\nnon dimentico più niente, davvero",
+   "media": [
+    "it08-1.png",
+    "it08-2.png",
+    "it08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "o2ndot",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-09T17:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "Ceux qui ont un iPhone :\nvous saviez que l'écran verrouillé pouvait afficher toute la semaine ?\nDepuis que je l'ai configuré\nje n'oublie plus rien, vraiment",
+   "media": [
+    "fr08-1.png",
+    "fr08-2.png",
+    "fr08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "beatriz03._a",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-09T17:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "Llevo años con iPhone\ny nadie me dijo que la pantalla de bloqueo hacía esto.\nAhora toda la semana está ahí.\nNo se me ha olvidado nada desde entonces",
+   "media": [
+    "es08-1.png",
+    "es08-2.png",
+    "es08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "03ines.mar_",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-09T18:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "10 anos de iPhone\ne só agora descubro que o ecrã bloqueado faz isto.\nA semana inteira fica ali.\nDesde então não me esqueci de nada",
+   "media": [
+    "pt08-1.png",
+    "pt08-2.png",
+    "pt08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "lari.s_07",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-09T22:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "Quem usa iPhone: qual widget de tela de bloqueio salvou sua rotina? Eu começo:\na semana inteira na tela de bloqueio.\nDepois que configurei\nnunca mais esqueci nada",
+   "media": [
+    "br08-1.png",
+    "br08-2.png",
+    "br08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "mae.dw_04",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-09T23:00:00+00:00",
+   "local": "2026-09-09 19:00",
+   "text": "10 years on iPhone\nand nobody told me the lock screen could do this.\nmy whole week just sits there now.\nhaven't forgotten a thing since",
+   "media": [
+    "us08-1.png",
+    "us08-2.png",
+    "us08-3.png"
+   ],
+   "done": []
+  },
+  {
+   "account": "ashgrey._02",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-10T01:00:00+00:00",
+   "local": "2026-09-10 08:00",
+   "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
+   "media": [
+    "vn08-1.png",
+    "vn08-2.png",
+    "vn08-3.png"
+   ],
+   "done": []
   }
  ],
  "posts": [
@@ -834,7 +1016,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdDCEziDdRN",
-   "views": 1795,
+   "views": 1854,
    "likes": 11,
    "replies": 1,
    "reposts": 2,
@@ -854,7 +1036,7 @@
    "text": "Ei, malta que usa iPhone,\nexperimentem isto nem que seja uma vez.\nAssim que começam a usar\ndeixam mesmo de se esquecer de tudo ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DdCSA_cILp-",
-   "views": 361,
+   "views": 362,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -894,7 +1076,7 @@
    "text": "Ehi, voi con l'iPhone,\nprovate a impostare così la schermata di blocco.\nVedete gli impegni di oggi ogni volta che accendete il telefono,\nnon c'è modo di dimenticare ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdCLV-0nK2a",
-   "views": 779,
+   "views": 848,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -914,7 +1096,7 @@
    "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto empiezas a usarlo\nya no se te olvida nada, de verdad ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdCLJqIHMbL",
-   "views": 631,
+   "views": 666,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -994,7 +1176,7 @@
    "text": "Uy, kayong mga naka-iPhone,\nsubukan niyo lang 'to kahit minsan.\nPag nagsimula ka nang gamitin\nwala ka na talagang makakalimutan ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdBh8lYG9eD",
-   "views": 283,
+   "views": 284,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -1014,7 +1196,7 @@
    "text": "Này, những ai dùng iPhone,\nthử cái này một lần thôi.\nBắt đầu dùng rồi\nlà thật sự không quên gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdAgrY6oKKC",
-   "views": 3567,
+   "views": 3714,
    "likes": 20,
    "replies": 1,
    "reposts": 2,
@@ -1154,7 +1336,7 @@
    "text": "Woy, yang pakai iPhone,\ncoba ini sekali aja deh.\nBegitu mulai pakai\nbeneran nggak ada yang kelupaan lagi ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dc_EE6NFlEU",
-   "views": 28751,
+   "views": 28753,
    "likes": 455,
    "replies": 23,
    "reposts": 49,
@@ -1254,7 +1436,7 @@
    "text": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/Dc-2RinIO5B",
-   "views": 693,
+   "views": 694,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -1674,7 +1856,7 @@
    "text": "Hoá ra iPhone có app như thế này\nmà tới giờ mình mới biết…\nVẽ lên màn hình khoá, dán thêm sticker,\ntrang trí đúng theo ý mình luôn 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dc4u6vYAqHj",
-   "views": 7698,
+   "views": 7699,
    "likes": 28,
    "replies": 1,
    "reposts": 2,
@@ -2134,7 +2316,7 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 425659,
+   "views": 425683,
    "likes": 4204,
    "replies": 88,
    "reposts": 694,
@@ -2574,7 +2756,7 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1188612,
+   "views": 1188633,
    "likes": 20233,
    "replies": 300,
    "reposts": 4306,
