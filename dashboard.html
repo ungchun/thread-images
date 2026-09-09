@@ -124,6 +124,7 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
 <nav>
   <button data-t="sched" class="on">예약<b id="n-sched">0</b></button>
   <button data-t="posts">게시물<b id="n-posts">0</b></button>
+  <button data-t="ig">인스타<b id="n-ig">0</b></button>
   <button data-t="pending">미답변<b id="n-pending">0</b></button>
   <button data-t="insight">실험<b id="n-insight">0</b></button>
 </nav>
@@ -131,6 +132,7 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
   <div id="errors"></div>
   <section id="sched" class="on"></section>
   <section id="posts"></section>
+  <section id="ig"></section>
   <section id="pending"></section>
   <section id="insight"></section>
 </main>
@@ -160,7 +162,9 @@ function renderSched(rows){
   </tr>`).join("") + `</tbody></table>`;
 }
 
-let P = {rows: [], sort: "views", desc: true, acct: "", view: "list"};
+const mkState = (id, cols, third) => ({rows: [], sort: "views", desc: true, acct: "", id, cols, third});
+let P = mkState("p", [["views","조회"],["likes","하트"],["replies","댓글"],["reposts","리포스트"],["shares","공유"]], "reposts");
+let G = mkState("g", [["views","조회"],["likes","하트"],["replies","댓글"],["saved","저장"],["shares","공유"]], "saved");
 
 function heatOf(v, max){
   if(!v) return "#1b1f27";
@@ -168,57 +172,56 @@ function heatOf(v, max){
   return `hsl(${140 - t * 30} ${45 + t * 40}% ${18 + t * 42}%)`;
 }
 
-function renderPosts(rows){
-  P.rows = rows;
+function renderPosts(S, rows){
+  S.rows = rows;
   if(!rows.length) return `<div class="empty">게시물이 없다</div>`;
   const accs = [...new Set(rows.map(r => r.account))].sort();
   return `<div class="tools">
-    <select id="p-acct"><option value="">전체 계정</option>` +
+    <select id="${S.id}-acct"><option value="">전체 계정</option>` +
       accs.map(a => {
         const f = rows.find(r => r.account === a);
         return `<option value="${a}">${f.flag} ${a}</option>`;
       }).join("") + `</select>
     <span class="sp"></span>
-    <span class="dim" id="p-count"></span>
-  </div><div id="p-body"></div>`;
+    <span class="dim" id="${S.id}-count"></span>
+  </div><div id="${S.id}-body"></div>`;
 }
 
-function paintPosts(){
-  const box = $("#p-body"); if(!box) return;
-  let rows = P.rows.filter(r => !P.acct || r.account === P.acct);
-  $("#p-count").textContent = rows.length + "건";
-  box.innerHTML = postsGrid(rows) + `<h3>전체 목록</h3>` + postsList(rows);
-  wireSort();
+function paintPosts(S){
+  const box = $("#" + S.id + "-body"); if(!box) return;
+  let rows = S.rows.filter(r => !S.acct || r.account === S.acct);
+  $("#" + S.id + "-count").textContent = rows.length + "건";
+  box.innerHTML = postsGrid(S, rows) + `<h3>전체 목록</h3>` + postsList(S, rows);
+  wireSort(S);
 }
 
-function postsList(rows){
-  const k = P.sort;
+function postsList(S, rows){
+  const k = S.sort;
   rows = [...rows].sort((a,b) => {
     const d = k === "date" ? (a.utc < b.utc ? -1 : 1) : (a[k]||0) - (b[k]||0);
-    return P.desc ? -d : d;
+    return S.desc ? -d : d;
   });
   const max = Math.max(...rows.map(r => r.views||0), 1);
-  const cols = [["views","조회"],["likes","하트"],["replies","댓글"],
-                ["reposts","리포스트"],["shares","공유"]];
+  const cols = S.cols;
   const head = `<th class="rank"></th><th class="s ${k==="date"?"on":""}" data-k="date">날짜</th>
     <th>계정</th>` + cols.map(([c,l]) =>
-      `<th class="s num ${k===c?"on":""}" data-k="${c}">${l}${k===c?(P.desc?" ↓":" ↑"):""}</th>`).join("") +
+      `<th class="s num ${k===c?"on":""}" data-k="${c}">${l}${k===c?(S.desc?" ↓":" ↑"):""}</th>`).join("") +
     `<th>본문</th>`;
   return `<table><thead><tr>${head}</tr></thead><tbody>` + rows.map((r,i) => {
     const w = Math.max(2, Math.round((r.views||0) / max * 100));
-    return `<tr class="${i<3&&k==="views"&&P.desc?"top":""}">
+    return `<tr class="${i<3&&k==="views"&&S.desc?"top":""}">
       <td class="rank">${i+1}</td>
       <td class="dim">${esc(r.local)}<div class="sub">${esc(r.date)}</div></td>
       <td class="acct">${r.flag} ${esc(r.account)}</td>
       <td class="num bar"><i style="width:${w}%"></i><b class="${r.views>10000?"big":""}">${n(r.views)}</b></td>
       <td class="num">${n(r.likes)}</td><td class="num">${n(r.replies)}</td>
-      <td class="num">${n(r.reposts)}</td><td class="num">${n(r.shares)}</td>
+      <td class="num">${n(r[S.third])}</td><td class="num">${n(r.shares)}</td>
       <td class="txt"><a href="${r.link}" target="_blank">${esc(r.text)}</a></td>
     </tr>`;
   }).join("") + `</tbody></table>`;
 }
 
-function postsGrid(rows){
+function postsGrid(S, rows){
   const dates = [...new Set(rows.map(r => r.date))].sort();
   const accs = [...new Set(rows.map(r => r.account))].sort();
   const by = {}; rows.forEach(r => by[r.account + "|" + r.date] = r);
@@ -233,7 +236,7 @@ function postsGrid(rows){
     g += `<tr><th style="text-align:right">${f.flag} ${esc(a)}</th>` + dates.map(d => {
       const r = by[a + "|" + d];
       if(!r) return `<td><i class="cell"></i></td>`;
-      const tip = `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n리포스트 ${n(r.reposts)} · 공유 ${n(r.shares)}\n\n${r.text}`;
+      const tip = `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n${S.cols[3][1]} ${n(r[S.third])} · 공유 ${n(r.shares)}\n\n${r.text}`;
       return `<td><a class="cell" style="background:${heatOf(r.views,max)}" href="${r.link}"
         target="_blank" data-tip="${esc(tip)}"><span>${r.views>999?Math.round(r.views/1000)+"k":(r.views||"")}</span></a></td>`;
     }).join("") + `<td class="num dim" style="padding-left:12px">${n(tot[a])}</td></tr>`;
@@ -242,11 +245,11 @@ function postsGrid(rows){
   return g;
 }
 
-function wireSort(){
-  document.querySelectorAll("th.s").forEach(th => th.onclick = () => {
+function wireSort(S){
+  document.querySelectorAll("#" + S.id + "-body th.s").forEach(th => th.onclick = () => {
     const k = th.dataset.k;
-    if(P.sort === k) P.desc = !P.desc; else { P.sort = k; P.desc = true; }
-    paintPosts();
+    if(S.sort === k) S.desc = !S.desc; else { S.sort = k; S.desc = true; }
+    paintPosts(S);
   });
 }
 
@@ -388,6 +391,11 @@ function renderInsight(rounds, plan, ins, tour){
       <span class="meta">계정별 평균 대비 배수의 중앙값${r.sample ? " · 표본 " + r.sample : ""}</span>
     </div>
     <div class="scorebar"><i style="width:${Math.min(100, (r.score||0)/best*100)}%"></i></div>
+    ${Object.keys(r.variants||{}).length ? `<div class="vs" style="margin-top:10px">` +
+      Object.entries(r.variants).map(([k,v]) => `<div><b>${esc(k)}</b>
+        <span class="score" style="font-size:18px;margin-left:8px">${v.score != null ? v.score.toFixed(2) : "–"}</span>
+        <div class="meta">${v.posts}건 · 중앙값 ${n(v.median)}${v.sample ? " · 표본 " + v.sample : ""}</div></div>`).join("") +
+      `</div>` : ""}
     ${r.verdict ? `<div class="verdict">${esc(r.verdict)}</div>` : ""}
     ${r.note ? `<div class="meta" style="margin-top:6px">${esc(r.note)}</div>` : ""}
   </div>`).join("");
@@ -446,12 +454,16 @@ fetch(SRC + "?" + Date.now(), {cache: "no-store"})
     + d.window_days + "일 · " + SOURCE;
   $("#n-sched").textContent = d.scheduled.length;
   $("#n-posts").textContent = d.posts.length;
+  $("#n-ig").textContent = (d.ig_posts||[]).length;
   $("#n-pending").textContent = d.pending.length;
   $("#sched").innerHTML = renderSched(d.scheduled);
-  $("#posts").innerHTML = renderPosts(d.posts);
-  const pa = $("#p-acct");
-  if(pa) pa.onchange = e => { P.acct = e.target.value; paintPosts(); };
-  paintPosts();
+  $("#posts").innerHTML = renderPosts(P, d.posts);
+  $("#ig").innerHTML = renderPosts(G, d.ig_posts||[]);
+  [P, G].forEach(S => {
+    const sel = $("#" + S.id + "-acct");
+    if(sel) sel.onchange = e => { S.acct = e.target.value; paintPosts(S); };
+    paintPosts(S);
+  });
   $("#pending").innerHTML = renderPending(d.pending, d.skipped);
   $("#insight").innerHTML = renderInsight(d.rounds, d.plan, d.insights, d.tournament);
   $("#n-insight").textContent = (d.plan||[]).length;
