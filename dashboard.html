@@ -157,7 +157,8 @@ function renderSched(rows){
     <td class="acct">${r.flag} ${esc(r.local)}</td>
     <td>${esc(r.account)}</td>
     <td class="txt">${esc(r.text)}</td>
-    <td class="dim">${r.media.length}개<br><span style="font-size:11px">${esc(r.media.join(", "))}</span></td>
+    <td class="dim">스레드 ${r.media.length}개<br><span style="font-size:11px">${esc(r.media.join(", "))}</span>
+      <br>${(r.ig||[]).length ? `인스타 ${r.ig.length}개<br><span style="font-size:11px">${esc(r.ig.join(", "))}</span>` : `<span style="font-size:11px">인스타 없음</span>`}</td>
     <td class="dim">${esc(r.utc.slice(0,16).replace("T"," "))}</td>
   </tr>`).join("") + `</tbody></table>`;
 }

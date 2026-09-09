@@ -260,7 +260,7 @@ def scheduled():
             "account": acc, "country": code, "flag": flag(code),
             "utc": utc.isoformat(),
             "local": utc.astimezone(tz).strftime("%Y-%m-%d %H:%M"),
-            "text": body, "media": tw, "done": sorted(done),
+            "text": body, "media": tw, "ig": [x for x in ig if x != "-"], "done": sorted(done),
         })
     return sorted(out, key=lambda r: r["utc"])
 
