@@ -18,6 +18,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 PORT = 8899
 REPO = "ungchun/thread-images"
+ROOT = __import__("pathlib").Path(__file__).resolve().parent
 DROP = {"last-modified", "etag"}
 COOLDOWN = 60          # 연타로 API를 태우지 않게
 
@@ -42,6 +43,9 @@ def _run():
                 capture_output=True, text=True, timeout=30).stdout.strip()
             if out.startswith("completed"):
                 _state["error"] = "" if "success" in out else out
+                if "success" in out:   # 새 dashboard.json을 로컬에도 받아둔다 (raw 캐시 우회)
+                    subprocess.run(["git", "pull", "--ff-only", "--quiet"], cwd=ROOT,
+                                   capture_output=True, timeout=60)
                 break
             time.sleep(10)
         else:

@@ -446,10 +446,14 @@ fetch("/refresh").then(r => r.json()).then(s => {
   if (s.running) { btn.disabled = true; btn.textContent = "갱신 중…"; watch(); }
 }).catch(() => {});
 
-let SOURCE = "github";
-fetch(SRC + "?" + Date.now(), {cache: "no-store"})
+// serve.py로 띄운 로컬(localhost)은 로컬 파일이 항상 최신이다 (갱신 후 pull). raw는 5분 캐시가 있어 뒤로 민다.
+const LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+let SOURCE = LOCAL ? "로컬" : "github";
+const first = LOCAL ? "dashboard.json?" + Date.now() : SRC + "?" + Date.now();
+const second = LOCAL ? SRC + "?" + Date.now() : "dashboard.json?" + Date.now();
+fetch(first, {cache: "no-store"})
   .then(r => r.ok ? r : Promise.reject(r.status))
-  .catch(() => { SOURCE = "로컬"; return fetch("dashboard.json?" + Date.now(), {cache: "no-store"}); })
+  .catch(() => { SOURCE = LOCAL ? "github" : "로컬"; return fetch(second, {cache: "no-store"}); })
   .then(r => r.json()).then(d => {
   $("#stamp").textContent = "갱신 " + d.generated.slice(0,16).replace("T"," ") + " UTC · 최근 "
     + d.window_days + "일 · " + SOURCE;
