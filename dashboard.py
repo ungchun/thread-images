@@ -84,31 +84,71 @@ def tag_rounds(posts, rs):
     return posts
 
 
+def baselines(by_acc):
+    """계정별 기준값. 도달(조회수)과 반응(하트율) 둘 다 중앙값으로 잡는다.
+
+    평균을 쓰면 그 계정의 폭발 한 건이 기준을 끌어올려 자기 배수를 깎고
+    같은 계정의 다른 라운드 배수까지 전부 눌러버린다. 실측: 일본 aoi.02_의
+    32,245건이 평균 기준 6.39배, 중앙값 기준 25.6배로 4배 차이가 났다.
+    중앙값은 폭발에 흔들리지 않는다.
+    """
+    import statistics
+    out = {}
+    for acc, ps in by_acc.items():
+        views = [p.get("views", 0) for p in ps]
+        # 하트율은 조회가 0이면 정의되지 않는다
+        ers = [p.get("likes", 0) / p["views"] for p in ps if p.get("views", 0) > 0]
+        out[acc] = {
+            "views": statistics.median(views) or 1,
+            "er": statistics.median(ers) if ers else None,
+        }
+    return out
+
+
+def ratios_of(p, base):
+    """한 게시물의 (도달배수, 반응배수). 나라·계정마다 기준선이 달라 배수로 환산한다.
+
+    반응배수를 따로 두는 이유: 조회수는 알고리즘이 얼마나 밀어줬는가이고
+    하트율은 본 사람이 얼마나 반응했는가다. 8라운드에서 둘이 정반대를
+    가리켰다(조회는 A 우세, 하트율은 B가 두 배). 나라별 하트율 기준선은
+    인도네시아 1.58%와 이탈리아 0.09%로 열 배 넘게 벌어진다.
+    """
+    reach = p.get("views", 0) / base["views"]
+    er_base = base["er"]
+    if not er_base or not p.get("views"):
+        return reach, None
+    return reach, (p.get("likes", 0) / p["views"]) / er_base
+
+
 def compare(posts, rs):
     """라운드별 성과. 계정 체력이 100배씩 차이나므로 단순 평균은 못 쓴다.
 
-    같은 계정 안에서 그 계정의 라운드 평균 대비 몇 배였는지(배수)를 내고,
+    같은 계정 안에서 그 계정 평소(중앙값) 대비 몇 배였는지를 내고,
     그 배수들의 중앙값을 라운드 점수로 삼는다. 계정 규모가 상쇄된다.
+    도달(조회수)과 반응(하트율)을 따로 낸다 — rounds.json의 판정 규칙 참조.
     """
     import statistics
     tagged = [p for p in posts if p.get("round")]
     by_acc = {}
     for p in tagged:
         by_acc.setdefault(p["account"], []).append(p)
+    base = baselines(by_acc)
 
-    ratios = {}
+    reach, resp = {}, {}
     for acc, ps in by_acc.items():
-        seen = {p["round"] for p in ps}
-        if len(seen) < 2:          # 한 라운드만 있는 계정은 비교 불가
+        if len({p["round"] for p in ps}) < 2:   # 한 라운드만 있는 계정은 비교 불가
             continue
-        base = statistics.mean(p.get("views", 0) for p in ps) or 1
         for p in ps:
-            ratios.setdefault(p["round"], []).append(p.get("views", 0) / base)
+            a, b = ratios_of(p, base[acc])
+            reach.setdefault(p["round"], []).append(a)
+            if b is not None:
+                resp.setdefault(p["round"], []).append(b)
 
     out = []
     for r in rs:
         got = [p for p in tagged if p["round"] == r["id"]]
-        rr = ratios.get(r["id"], [])
+        rr = reach.get(r["id"], [])
+        er = resp.get(r["id"], [])
         out.append({
             "id": r["id"], "date": r["date"], "type": r["type"],
             "kr": r["kr"], "note": r.get("note", ""),
@@ -118,13 +158,18 @@ def compare(posts, rs):
             "median": int(statistics.median([p.get("views", 0) for p in got])) if got else 0,
             "score": round(statistics.median(rr), 2) if rr else None,
             "sample": len(rr),
-            "variants": variant_scores(got, by_acc),
+            "er_score": round(statistics.median(er), 2) if er else None,
+            "er_sample": len(er),
+            "variants": variant_scores(got, by_acc, base),
         })
     return out
 
 
-def variant_scores(got, by_acc):
-    """라운드 안 A/B 변종별 점수. 배수 기준은 compare()와 같은 그 계정 전 라운드 평균."""
+def variant_scores(got, by_acc, base):
+    """라운드 안 A/B 변종별 점수. 기준은 compare()와 같은 그 계정 평소 중앙값.
+
+    판정은 도달·반응 두 지표가 같은 쪽을 가리킬 때만 낸다(rounds.json 규칙).
+    """
     import statistics
     vs = {}
     for p in got:
@@ -132,16 +177,21 @@ def variant_scores(got, by_acc):
             vs.setdefault(p["variant"], []).append(p)
     out = {}
     for k, ps in sorted(vs.items()):
-        rr = []
+        rr, er = [], []
         for p in ps:
             mine = by_acc.get(p["account"], [])
             if len({x["round"] for x in mine}) < 2:
                 continue
-            rr.append(p.get("views", 0) / (statistics.mean(x.get("views", 0) for x in mine) or 1))
+            a, b = ratios_of(p, base[p["account"]])
+            rr.append(a)
+            if b is not None:
+                er.append(b)
         out[k] = {"posts": len(ps),
                   "median": int(statistics.median([p.get("views", 0) for p in ps])),
                   "score": round(statistics.median(rr), 2) if rr else None,
-                  "sample": len(rr)}
+                  "sample": len(rr),
+                  "er_score": round(statistics.median(er), 2) if er else None,
+                  "er_sample": len(er)}
     return out
 
 
