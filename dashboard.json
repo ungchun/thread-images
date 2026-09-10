@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10T01:53:53.480170+00:00",
+ "generated": "2026-09-10T02:04:02.673366+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -97,7 +97,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
      "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
      "posts": 25,
-     "views": 54145,
+     "views": 54181,
      "likes": 538,
      "median": 415,
      "score": 0.78,
@@ -112,7 +112,7 @@
       "B": {
        "posts": 12,
        "median": 332,
-       "score": 0.73,
+       "score": 0.72,
        "sample": 12
       }
      }
@@ -137,10 +137,10 @@
      "type": "호명형 현지화 A / 고백형 B",
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
-     "posts": 17,
-     "views": 39195,
-     "likes": 519,
-     "median": 268,
+     "posts": 18,
+     "views": 40550,
+     "likes": 536,
+     "median": 209,
      "score": 1.0,
      "sample": 11,
      "variants": {
@@ -151,8 +151,8 @@
        "sample": 5
       },
       "B": {
-       "posts": 7,
-       "median": 305,
+       "posts": 8,
+       "median": 230,
        "score": 0.87,
        "sample": 6
       }
@@ -177,9 +177,9 @@
       "median": 515
      },
      "8": {
-      "n": 39,
-      "score": 0.25,
-      "median": 299
+      "n": 40,
+      "score": 0.23,
+      "median": 293
      },
      "9": {
       "n": 5,
@@ -240,7 +240,7 @@
      },
      "화": {
       "n": 17,
-      "score": 0.58,
+      "score": 0.56,
       "median": 415
      },
      "수": {
@@ -249,9 +249,9 @@
       "median": 698
      },
      "목": {
-      "n": 10,
-      "score": 0.9,
-      "median": 340
+      "n": 11,
+      "score": 0.79,
+      "median": 117
      },
      "금": {
       "n": 4,
@@ -271,9 +271,9 @@
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 110,
-      "score": 0.62,
-      "median": 403
+      "n": 111,
+      "score": 0.58,
+      "median": 393
      },
      "IMAGE": {
       "n": 1,
@@ -284,14 +284,14 @@
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
-      "posts": 6,
-      "avg": 272926,
-      "max": 1189322,
+      "posts": 7,
+      "avg": 233941,
+      "max": 1189335,
       "hours": {
        "8": {
-        "n": 5,
+        "n": 6,
         "score": 0.03,
-        "median": 7721
+        "median": 7455
        },
        "17": {
         "n": 1,
@@ -300,20 +300,20 @@
        }
       },
       "best_hour": 8,
-      "best_n": 5,
+      "best_n": 6,
       "state": "active",
       "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"
      },
      "pim.pm_02": {
       "flag": "TH",
       "posts": 1,
-      "avg": 27453,
-      "max": 27453,
+      "avg": 28647,
+      "max": 28647,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 27453
+        "median": 28647
        }
       },
       "best_hour": 19,
@@ -324,8 +324,8 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 4,
-      "avg": 7551,
-      "max": 28826,
+      "avg": 7553,
+      "max": 28827,
       "hours": {
        "8": {
         "n": 2,
@@ -335,7 +335,7 @@
        "19": {
         "n": 2,
         "score": 1.96,
-        "median": 14791
+        "median": 14796
        }
       },
       "best_hour": 19,
@@ -425,8 +425,8 @@
      "lune__v34": {
       "flag": "IT",
       "posts": 5,
-      "avg": 1773,
-      "max": 4137,
+      "avg": 1775,
+      "max": 4150,
       "hours": {
        "8": {
         "n": 2,
@@ -447,7 +447,7 @@
      "o2ndot": {
       "flag": "FR",
       "posts": 13,
-      "avg": 1238,
+      "avg": 1240,
       "max": 5510,
       "hours": {
        "5": {
@@ -472,7 +472,7 @@
        },
        "19": {
         "n": 5,
-        "score": 0.73,
+        "score": 0.72,
         "median": 899
        },
        "21": {
@@ -489,7 +489,7 @@
      "beatriz03._a": {
       "flag": "ES",
       "posts": 5,
-      "avg": 933,
+      "avg": 937,
       "max": 2118,
       "hours": {
        "8": {
@@ -499,8 +499,8 @@
        },
        "19": {
         "n": 3,
-        "score": 1.58,
-        "median": 1473
+        "score": 1.59,
+        "median": 1493
        }
       },
       "best_hour": 19,
@@ -511,7 +511,7 @@
      "ac_dd91": {
       "flag": "KR",
       "posts": 10,
-      "avg": 713,
+      "avg": 715,
       "max": 1471,
       "hours": {
        "8": {
@@ -536,7 +536,7 @@
        },
        "19": {
         "n": 1,
-        "score": 0.98,
+        "score": 0.97,
         "median": 697
        }
       },
@@ -590,17 +590,17 @@
      "kai_.03b": {
       "flag": "PH",
       "posts": 5,
-      "avg": 513,
-      "max": 1598,
+      "avg": 531,
+      "max": 1688,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.53,
+        "score": 0.52,
         "median": 274
        },
        "19": {
         "n": 3,
-        "score": 0.58,
+        "score": 0.56,
         "median": 297
        }
       },
@@ -612,7 +612,7 @@
      "03ines.mar_": {
       "flag": "PT",
       "posts": 10,
-      "avg": 450,
+      "avg": 451,
       "max": 736,
       "hours": {
        "3": {
@@ -688,13 +688,13 @@
      "mae.dw_04": {
       "flag": "US",
       "posts": 1,
-      "avg": 149,
-      "max": 149,
+      "avg": 151,
+      "max": 151,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 149
+        "median": 151
        }
       },
       "best_hour": 19,
@@ -1498,6 +1498,27 @@
  ],
  "posts": [
   {
+   "id": "17948664840050015",
+   "account": "ivy_.k09",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-10T02:01:10+00:00",
+   "date": "2026-09-09",
+   "local": "09/09 19:01",
+   "text": "10 years on iPhone\nand nobody told me the lock screen could do this.\nmy whole week just sits there now.\nhaven't forgotten a thing since",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@ivy_.k09/post/DdFtvdFFMPR",
+   "views": 0,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "08",
+   "variant": "B"
+  },
+  {
    "id": "18101966525252384",
    "account": "ashgrey._02",
    "project": "trace",
@@ -1509,8 +1530,8 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 0,
-   "likes": 5,
+   "views": 1,
+   "likes": 6,
    "replies": 1,
    "reposts": 2,
    "quotes": 0,
@@ -1551,7 +1572,7 @@
    "text": "10 years on iPhone\nand nobody told me the lock screen could do this.\nmy whole week just sits there now.\nhaven't forgotten a thing since",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mae.dw_04/post/DdFZIT6DvNl",
-   "views": 149,
+   "views": 151,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -1614,7 +1635,7 @@
    "text": "10 anos de iPhone\ne só agora descubro que o ecrã bloqueado faz isto.\nA semana inteira fica ali.\nDesde então não me esqueci de nada",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DdE20a8GiAc",
-   "views": 305,
+   "views": 309,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1635,7 +1656,7 @@
    "text": "Llevo años con iPhone\ny nadie me dijo que la pantalla de bloqueo hacía esto.\nAhora toda la semana está ahí.\nNo se me ha olvidado nada desde entonces",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdEwfWGkatg",
-   "views": 1473,
+   "views": 1493,
    "likes": 6,
    "replies": 2,
    "reposts": 1,
@@ -1656,7 +1677,7 @@
    "text": "Ceux qui ont un iPhone :\nvous saviez que l'écran verrouillé pouvait afficher toute la semaine ?\nDepuis que je l'ai configuré\nje n'oublie plus rien, vraiment",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DdEwVuJEQTB",
-   "views": 2337,
+   "views": 2358,
    "likes": 4,
    "replies": 1,
    "reposts": 0,
@@ -1677,7 +1698,7 @@
    "text": "Chi ha un iPhone:\nprovate a mettere la settimana intera sulla schermata di blocco.\nDa quando l'ho fatto\nnon dimentico più niente, davvero",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdEwJyNEfH_",
-   "views": 4137,
+   "views": 4150,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -1803,12 +1824,12 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 27453,
-   "likes": 475,
+   "views": 28647,
+   "likes": 491,
    "replies": 6,
-   "reposts": 279,
+   "reposts": 289,
    "quotes": 16,
-   "shares": 114,
+   "shares": 117,
    "round": "08",
    "variant": "A"
   },
@@ -1824,7 +1845,7 @@
    "text": "10 tahun pakai iPhone\nbaru tau lockscreen bisa nampilin ini.\njadwal seminggu nongol terus di situ\nsejak itu gak pernah lupa apa-apa",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
-   "views": 756,
+   "views": 766,
    "likes": 8,
    "replies": 1,
    "reposts": 0,
@@ -1845,12 +1866,12 @@
    "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
-   "views": 1598,
+   "views": 1688,
    "likes": 14,
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
-   "shares": 2,
+   "shares": 3,
    "round": "08",
    "variant": "B"
   },
@@ -1908,7 +1929,7 @@
    "text": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DdD5Amqm_kE",
-   "views": 1368,
+   "views": 1385,
    "likes": 3,
    "replies": 3,
    "reposts": 0,
@@ -1929,7 +1950,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdDCEziDdRN",
-   "views": 3851,
+   "views": 3857,
    "likes": 21,
    "replies": 4,
    "reposts": 2,
@@ -1971,7 +1992,7 @@
    "text": "Hé, vous qui avez un iPhone,\nconfigurez votre écran de verrouillage comme ça.\nVous voyez le programme du jour dès que vous allumez le téléphone,\ndonc impossible d'oublier ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DdCLiGjHG1t",
-   "views": 122,
+   "views": 123,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2118,7 +2139,7 @@
    "text": "Này, những ai dùng iPhone,\nthử cái này một lần thôi.\nBắt đầu dùng rồi\nlà thật sự không quên gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdAgrY6oKKC",
-   "views": 7180,
+   "views": 7190,
    "likes": 23,
    "replies": 1,
    "reposts": 3,
@@ -2160,7 +2181,7 @@
    "text": "Hé, vous qui avez un iPhone,\nessayez ça, ne serait-ce qu'une fois.\nUne fois que vous commencez\nvous n'oubliez plus rien, vraiment ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/Dc_mdXYFQDK",
-   "views": 155,
+   "views": 156,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2265,7 +2286,7 @@
    "text": "Woy, yang pakai iPhone,\ncoba ini sekali aja deh.\nBegitu mulai pakai\nbeneran nggak ada yang kelupaan lagi ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dc_EE6NFlEU",
-   "views": 28826,
+   "views": 28827,
    "likes": 457,
    "replies": 23,
    "reposts": 49,
@@ -3677,7 +3698,7 @@
    "replies": 9,
    "reposts": 10,
    "quotes": 0,
-   "shares": 15,
+   "shares": 16,
    "round": null,
    "variant": null
   },
@@ -3756,7 +3777,7 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1189322,
+   "views": 1189335,
    "likes": 20235,
    "replies": 300,
    "reposts": 4306,
