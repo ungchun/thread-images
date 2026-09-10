@@ -17,10 +17,21 @@ jobs:
       - run: python3 run.py
         env:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+      # 발행 기록(schedule.txt에서 줄 삭제)을 반드시 남긴다.
+      # 푸시가 거부되면 그 줄이 살아남아 30분 뒤 회차가 같은 글을 다시 올린다.
+      # 2026-09-10에 실제로 발생: 대시보드 커밋과 충돌 → 스페인·독일·이탈리아·프랑스 4건 중복 발행.
       - name: commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A
-          git diff --staged --quiet || git commit -m "posted"
-          git push
+          git diff --staged --quiet && exit 0
+          git commit -m "posted"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            echo "push 거부됨, rebase 후 재시도 ($i/5)"
+            git pull --rebase --autostash || exit 1
+            sleep $((i * 3))
+          done
+          echo "::error::5회 시도 후에도 푸시 실패. schedule.txt가 갱신되지 않아 중복 발행 위험."
+          exit 1
