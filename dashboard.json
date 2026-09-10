@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10T04:50:50.644317+00:00",
+ "generated": "2026-09-10T05:06:05.572621+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -13,34 +13,34 @@
      "11": {
       "n": 4,
       "score": 1.0,
-      "median": 61
+      "median": 93
      }
     },
     "wday": {
      "목": {
       "n": 4,
       "score": 1.0,
-      "median": 61
+      "median": 93
      }
     },
     "media": {
      "IMAGE": {
       "n": 4,
       "score": 1.0,
-      "median": 61
+      "median": 93
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
       "posts": 1,
-      "avg": 547,
-      "max": 547,
+      "avg": 1039,
+      "max": 1039,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.0,
-        "median": 547
+        "median": 1039
        }
       },
       "best_hour": 11,
@@ -48,33 +48,16 @@
       "state": "active",
       "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"
      },
-     "kai_.03b": {
-      "flag": "PH",
-      "posts": 1,
-      "avg": 61,
-      "max": 61,
-      "hours": {
-       "11": {
-        "n": 1,
-        "score": 1.0,
-        "median": 61
-       }
-      },
-      "best_hour": 11,
-      "best_n": 1,
-      "state": "active",
-      "note": "필리핀. 9/7 합류, 표본 부족"
-     },
      "rara.2k_": {
       "flag": "ID",
       "posts": 1,
-      "avg": 61,
-      "max": 61,
+      "avg": 117,
+      "max": 117,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.0,
-        "median": 61
+        "median": 117
        }
       },
       "best_hour": 11,
@@ -82,16 +65,33 @@
       "state": "active",
       "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
      },
-     "pim.pm_02": {
-      "flag": "TH",
+     "kai_.03b": {
+      "flag": "PH",
       "posts": 1,
-      "avg": 29,
-      "max": 29,
+      "avg": 70,
+      "max": 70,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.0,
-        "median": 29
+        "median": 70
+       }
+      },
+      "best_hour": 11,
+      "best_n": 1,
+      "state": "active",
+      "note": "필리핀. 9/7 합류, 표본 부족"
+     },
+     "pim.pm_02": {
+      "flag": "TH",
+      "posts": 1,
+      "avg": 43,
+      "max": 43,
+      "hours": {
+       "11": {
+        "n": 1,
+        "score": 1.0,
+        "median": 43
        }
       },
       "best_hour": 11,
@@ -232,39 +232,39 @@
      "9": {
       "n": 1,
       "score": 1.0,
-      "median": 1
+      "median": 2
      },
      "10": {
       "n": 4,
       "score": 1.0,
-      "median": 27
+      "median": 32
      }
     },
     "wday": {
      "목": {
       "n": 5,
       "score": 1.0,
-      "median": 7
+      "median": 11
      }
     },
     "media": {
      "VIDEO": {
       "n": 5,
       "score": 1.0,
-      "median": 7
+      "median": 11
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
       "posts": 1,
-      "avg": 273,
-      "max": 273,
+      "avg": 324,
+      "max": 324,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.0,
-        "median": 273
+        "median": 324
        }
       },
       "best_hour": 10,
@@ -275,13 +275,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 1,
-      "avg": 47,
-      "max": 47,
+      "avg": 54,
+      "max": 54,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.0,
-        "median": 47
+        "median": 54
        }
       },
       "best_hour": 10,
@@ -292,13 +292,13 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 1,
-      "avg": 7,
-      "max": 7,
+      "avg": 11,
+      "max": 11,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.0,
-        "median": 7
+        "median": 11
        }
       },
       "best_hour": 10,
@@ -326,13 +326,13 @@
      "nia._055": {
       "flag": "IN",
       "posts": 1,
-      "avg": 1,
-      "max": 1,
+      "avg": 2,
+      "max": 2,
       "hours": {
        "9": {
         "n": 1,
         "score": 1.0,
-        "median": 1
+        "median": 2
        }
       },
       "best_hour": 9,
@@ -506,7 +506,7 @@
      "kr": "아이폰에 이런 앱이 있었는데 나만 여태 모르고 있었네… 잠금화면에 그림도 그리고 스티커도 붙여서 내 맘대로 꾸며놨어",
      "note": "1인칭 발견담 + 꾸미기 소구. 영상+이미지2 캐러셀 첫 도입.",
      "posts": 14,
-     "views": 11354,
+     "views": 11357,
      "likes": 40,
      "median": 279,
      "score": 0.2,
@@ -534,10 +534,10 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
      "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
      "posts": 25,
-     "views": 54586,
+     "views": 54623,
      "likes": 540,
      "median": 415,
-     "score": 0.73,
+     "score": 0.72,
      "sample": 25,
      "variants": {
       "A": {
@@ -549,7 +549,7 @@
       "B": {
        "posts": 12,
        "median": 332,
-       "score": 0.69,
+       "score": 0.68,
        "sample": 12
       }
      }
@@ -575,21 +575,21 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
      "posts": 18,
-     "views": 58377,
-     "likes": 749,
+     "views": 60385,
+     "likes": 769,
      "median": 367,
      "score": 1.0,
      "sample": 11,
      "variants": {
       "A": {
        "posts": 10,
-       "median": 450,
+       "median": 458,
        "score": 1.0,
        "sample": 5
       },
       "B": {
        "posts": 8,
-       "median": 285,
+       "median": 296,
        "score": 0.89,
        "sample": 6
       }
@@ -610,7 +610,7 @@
      },
      "5": {
       "n": 1,
-      "score": 0.41,
+      "score": 0.4,
       "median": 515
      },
      "8": {
@@ -650,7 +650,7 @@
      },
      "18": {
       "n": 8,
-      "score": 0.67,
+      "score": 0.66,
       "median": 594
      },
      "19": {
@@ -709,31 +709,31 @@
     "media": {
      "CAROUSEL_ALBUM": {
       "n": 112,
-      "score": 0.55,
+      "score": 0.56,
       "median": 415
      },
      "IMAGE": {
       "n": 1,
       "score": 0.01,
-      "median": 3430
+      "median": 3431
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
       "posts": 7,
-      "avg": 234335,
-      "max": 1189448,
+      "avg": 234395,
+      "max": 1189465,
       "hours": {
        "8": {
         "n": 6,
         "score": 0.03,
-        "median": 7493
+        "median": 7496
        },
        "17": {
         "n": 1,
         "score": 0.01,
-        "median": 3430
+        "median": 3431
        }
       },
       "best_hour": 8,
@@ -744,13 +744,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 1,
-      "avg": 40294,
-      "max": 40294,
+      "avg": 41352,
+      "max": 41352,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 40294
+        "median": 41352
        }
       },
       "best_hour": 19,
@@ -825,7 +825,7 @@
      "aoi.02_": {
       "flag": "JP",
       "posts": 11,
-      "avg": 4021,
+      "avg": 4022,
       "max": 32245,
       "hours": {
        "8": {
@@ -862,8 +862,8 @@
      "lune__v34": {
       "flag": "IT",
       "posts": 5,
-      "avg": 1852,
-      "max": 4532,
+      "avg": 1876,
+      "max": 4650,
       "hours": {
        "8": {
         "n": 2,
@@ -872,7 +872,7 @@
        },
        "19": {
         "n": 3,
-        "score": 1.79,
+        "score": 1.77,
         "median": 3319
        }
       },
@@ -884,12 +884,12 @@
      "o2ndot": {
       "flag": "FR",
       "posts": 13,
-      "avg": 1269,
+      "avg": 1275,
       "max": 5511,
       "hours": {
        "5": {
         "n": 1,
-        "score": 0.41,
+        "score": 0.4,
         "median": 515
        },
        "8": {
@@ -904,12 +904,12 @@
        },
        "18": {
         "n": 1,
-        "score": 0.5,
+        "score": 0.49,
         "median": 631
        },
        "19": {
         "n": 5,
-        "score": 0.71,
+        "score": 0.7,
         "median": 899
        },
        "21": {
@@ -926,7 +926,7 @@
      "beatriz03._a": {
       "flag": "ES",
       "posts": 5,
-      "avg": 994,
+      "avg": 999,
       "max": 2123,
       "hours": {
        "8": {
@@ -936,8 +936,8 @@
        },
        "19": {
         "n": 3,
-        "score": 1.78,
-        "median": 1770
+        "score": 1.8,
+        "median": 1797
        }
       },
       "best_hour": 19,
@@ -948,17 +948,17 @@
      "kai_.03b": {
       "flag": "PH",
       "posts": 5,
-      "avg": 880,
-      "max": 3433,
+      "avg": 938,
+      "max": 3720,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.31,
+        "score": 0.29,
         "median": 274
        },
        "19": {
         "n": 3,
-        "score": 0.34,
+        "score": 0.32,
         "median": 297
        }
       },
@@ -970,8 +970,8 @@
      "ac_dd91": {
       "flag": "KR",
       "posts": 10,
-      "avg": 731,
-      "max": 1521,
+      "avg": 732,
+      "max": 1536,
       "hours": {
        "8": {
         "n": 2,
@@ -1007,7 +1007,7 @@
      "dot2day_": {
       "flag": "DE",
       "posts": 11,
-      "avg": 580,
+      "avg": 581,
       "max": 4348,
       "hours": {
        "4": {
@@ -1032,8 +1032,8 @@
        },
        "19": {
         "n": 2,
-        "score": 0.27,
-        "median": 156
+        "score": 0.28,
+        "median": 161
        },
        "20": {
         "n": 1,
@@ -1049,13 +1049,13 @@
      "mint.le_06": {
       "flag": "VN",
       "posts": 1,
-      "avg": 493,
-      "max": 493,
+      "avg": 509,
+      "max": 509,
       "hours": {
        "8": {
         "n": 1,
         "score": 1.0,
-        "median": 493
+        "median": 509
        }
       },
       "best_hour": 8,
@@ -1066,7 +1066,7 @@
      "03ines.mar_": {
       "flag": "PT",
       "posts": 10,
-      "avg": 452,
+      "avg": 453,
       "max": 736,
       "hours": {
        "3": {
@@ -1142,13 +1142,13 @@
      "ivy_.k09": {
       "flag": "US",
       "posts": 1,
-      "avg": 243,
-      "max": 243,
+      "avg": 265,
+      "max": 265,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 243
+        "median": 265
        }
       },
       "best_hour": 19,
@@ -1159,13 +1159,13 @@
      "mae.dw_04": {
       "flag": "US",
       "posts": 1,
-      "avg": 156,
-      "max": 156,
+      "avg": 157,
+      "max": 157,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 156
+        "median": 157
        }
       },
       "best_hour": 19,
@@ -1363,20 +1363,6 @@
  },
  "window_days": 30,
  "scheduled": [
-  {
-   "account": "nia._055",
-   "project": "moonlight",
-   "country": "IN",
-   "flag": "🇮🇳",
-   "utc": "2026-09-10T05:00:00+00:00",
-   "local": "2026-09-10 10:30",
-   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\n||PDF kholo aur original layout ke saath wahin translate ho jata hai;\ncomplicated figure pe click karo, turant samjha deta hai;\npaper ka novelty, method aur conclusion bhi apne aap mark kar deta hai.||\ntab professor bole the, \"paper toh khud padhna chahiye……\"\n---\nmedia: -\nab professor khud use kar rahe hain.\n\nye site ek grad student ne banayi jo paper padh padh ke itna tang aa gaya ki khud bana di.\nabhi free mein use kar sakte ho\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
   {
    "account": "beatriz03._a",
    "project": "cortex",
@@ -1800,6 +1786,27 @@
  ],
  "posts": [
   {
+   "id": "17966472225190957",
+   "account": "nia._055",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-10T05:00:58+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 10:30",
+   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\nPDF kholo aur original layout ke saath wahin translate ho jata hai;\ncomplicated figure pe click karo, turant samjha deta hai;\npaper ka novelty, method aur conclusion bhi apne aap mark kar deta hai.\ntab professor bole the, \"paper toh khud padhna chahiye……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@nia._055/post/DdGCURjG71g",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18099872465378823",
    "account": "rara.2k_",
    "project": "moonlight",
@@ -1811,7 +1818,7 @@
    "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\nbuka PDF, langsung diterjemahin di tempat dengan layout aslinya;\nklik figure yang ribet, langsung dijelasin saat itu juga;\nbahkan poin baru, metode, sama kesimpulan papernya ditandain otomatis.\nwaktu itu profesor bilang: \"paper itu ya dibaca sendiri……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdF7sAPETHj",
-   "views": 61,
+   "views": 117,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -1832,7 +1839,7 @@
    "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเปิด PDF ก็แปลให้ทันทีโดยคงเลย์เอาต์เดิมไว้\nกด Figure ที่ซับซ้อนก็อธิบายให้ตรงนั้นเลย\nแถมยังไฮไลต์จุดใหม่ วิธีวิจัย และข้อสรุปของเปเปอร์ให้อัตโนมัติ\nตอนนั้นอาจารย์ยังบอกว่า \"เปเปอร์ต้องอ่านเองสิ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@pim.pm_02/post/DdF7oPjEcif",
-   "views": 29,
+   "views": 43,
    "likes": 0,
    "replies": 1,
    "reposts": 1,
@@ -1853,7 +1860,7 @@
    "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\nLaTeX likho aur compile result almost turant dikh jata hai;\nOverleaf se kaafi zyada fast compile hota hai;\nbaar baar edit karo, har baar wait karke pareshan hone ki zaroorat nahi.\ntab professor bole the, \"paper ke liye Overleaf hi use kar lo na……\"\n\nab professor khud use kar rahe hain.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@nia._055/post/DdF7i8PjOkx",
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -1874,12 +1881,12 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF7dtfiG_B",
-   "views": 547,
-   "likes": 32,
+   "views": 1039,
+   "likes": 47,
    "replies": 2,
-   "reposts": 8,
+   "reposts": 15,
    "quotes": 0,
-   "shares": 6,
+   "shares": 12,
    "round": null,
    "variant": null
   },
@@ -1895,7 +1902,7 @@
    "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\nnulis LaTeX, hasil compile-nya langsung kelihatan hampir seketika;\ncompile-nya jauh lebih cepat dari Overleaf;\nmau diedit berkali-kali juga gak perlu nunggu sampai kesel.\nwaktu itu profesor bilang: \"nulis paper ya pakai Overleaf aja lah……\"\n\nsekarang malah profesornya sendiri yang pakai.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@rara.2k_/post/DdF00TUgR14",
-   "views": 7,
+   "views": 11,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -1916,7 +1923,7 @@
    "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเขียน LaTeX เสร็จก็เห็นผล compile แทบจะทันที\ncompile เร็วกว่า Overleaf มาก\nแก้กี่รอบก็ไม่ต้องนั่งรอจนหงุดหงิด\nตอนนั้นอาจารย์ยังบอกว่า \"เขียนเปเปอร์ก็ใช้ Overleaf ไปสิ……\"\n\nตอนนี้อาจารย์เองก็ใช้อยู่ครับ",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@pim.pm_02/post/DdF0vbdAURu",
-   "views": 47,
+   "views": 54,
    "likes": 3,
    "replies": 1,
    "reposts": 2,
@@ -1937,7 +1944,7 @@
    "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nBuksan mo lang yung PDF, translated agad na buo pa yung original layout;\nclick mo yung komplikadong figure, ipapaliwanag agad;\nauto pa niyang minamarkahan yung novelty, methods, at conclusion ng paper.\nSabi pa ng prof noon, \"dapat ikaw mismo nagbabasa ng paper……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@kai_.03b/post/DdF0sHKDXmf",
-   "views": 61,
+   "views": 70,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1958,9 +1965,9 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF0lnfDBKv",
-   "views": 273,
-   "likes": 1,
-   "replies": 2,
+   "views": 324,
+   "likes": 2,
+   "replies": 3,
    "reposts": 0,
    "quotes": 0,
    "shares": 4,
@@ -2000,7 +2007,7 @@
    "text": "10 years on iPhone\nand nobody told me the lock screen could do this.\nmy whole week just sits there now.\nhaven't forgotten a thing since",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ivy_.k09/post/DdFtvdFFMPR",
-   "views": 243,
+   "views": 265,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -2021,9 +2028,9 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 2413,
-   "likes": 20,
-   "replies": 2,
+   "views": 2800,
+   "likes": 22,
+   "replies": 3,
    "reposts": 3,
    "quotes": 0,
    "shares": 9,
@@ -2042,7 +2049,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mint.le_06/post/DdFm8TzkaEC",
-   "views": 493,
+   "views": 509,
    "likes": 6,
    "replies": 2,
    "reposts": 0,
@@ -2063,7 +2070,7 @@
    "text": "10 years on iPhone\nand nobody told me the lock screen could do this.\nmy whole week just sits there now.\nhaven't forgotten a thing since",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mae.dw_04/post/DdFZIT6DvNl",
-   "views": 156,
+   "views": 157,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2126,7 +2133,7 @@
    "text": "10 anos de iPhone\ne só agora descubro que o ecrã bloqueado faz isto.\nA semana inteira fica ali.\nDesde então não me esqueci de nada",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DdE20a8GiAc",
-   "views": 327,
+   "views": 328,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2147,7 +2154,7 @@
    "text": "Llevo años con iPhone\ny nadie me dijo que la pantalla de bloqueo hacía esto.\nAhora toda la semana está ahí.\nNo se me ha olvidado nada desde entonces",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdEwfWGkatg",
-   "views": 1770,
+   "views": 1797,
    "likes": 7,
    "replies": 2,
    "reposts": 1,
@@ -2168,7 +2175,7 @@
    "text": "Ceux qui ont un iPhone :\nvous saviez que l'écran verrouillé pouvait afficher toute la semaine ?\nDepuis que je l'ai configuré\nje n'oublie plus rien, vraiment",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DdEwVuJEQTB",
-   "views": 2723,
+   "views": 2803,
    "likes": 4,
    "replies": 1,
    "reposts": 0,
@@ -2189,7 +2196,7 @@
    "text": "Chi ha un iPhone:\nprovate a mettere la settimana intera sulla schermata di blocco.\nDa quando l'ho fatto\nnon dimentico più niente, davvero",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdEwJyNEfH_",
-   "views": 4532,
+   "views": 4650,
    "likes": 4,
    "replies": 1,
    "reposts": 0,
@@ -2210,7 +2217,7 @@
    "text": "Ich hab meinen Sperrbildschirm zum Wochenplaner gemacht\nund vergesse seitdem nichts mehr.\nMacht das sonst niemand?\nProbiert es einmal aus",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@dot2day_/post/DdEv9DPEf6T",
-   "views": 306,
+   "views": 317,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2315,12 +2322,12 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 40294,
-   "likes": 666,
-   "replies": 6,
-   "reposts": 410,
-   "quotes": 21,
-   "shares": 175,
+   "views": 41352,
+   "likes": 683,
+   "replies": 7,
+   "reposts": 427,
+   "quotes": 22,
+   "shares": 179,
    "round": "08",
    "variant": "A"
   },
@@ -2337,11 +2344,11 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
    "views": 1069,
-   "likes": 14,
+   "likes": 15,
    "replies": 1,
    "reposts": 1,
-   "quotes": 0,
-   "shares": 4,
+   "quotes": 1,
+   "shares": 5,
    "round": "08",
    "variant": "B"
   },
@@ -2357,7 +2364,7 @@
    "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
-   "views": 3433,
+   "views": 3720,
    "likes": 22,
    "replies": 2,
    "reposts": 3,
@@ -2378,7 +2385,7 @@
    "text": "ねえ、iPhone使ってるみんな、\nこれ一回だけでも使ってみて。\n使い始めたら\n本当に忘れることがなくなるよ ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi.02_/post/DdD_4F_lq-o",
-   "views": 1120,
+   "views": 1131,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -2420,7 +2427,7 @@
    "text": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DdD5Amqm_kE",
-   "views": 1521,
+   "views": 1536,
    "likes": 5,
    "replies": 3,
    "reposts": 0,
@@ -2441,7 +2448,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdDCEziDdRN",
-   "views": 3916,
+   "views": 3921,
    "likes": 21,
    "replies": 4,
    "reposts": 2,
@@ -2483,7 +2490,7 @@
    "text": "Hé, vous qui avez un iPhone,\nconfigurez votre écran de verrouillage comme ça.\nVous voyez le programme du jour dès que vous allumez le téléphone,\ndonc impossible d'oublier ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DdCLiGjHG1t",
-   "views": 124,
+   "views": 125,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2504,7 +2511,7 @@
    "text": "Ehi, voi con l'iPhone,\nprovate a impostare così la schermata di blocco.\nVedete gli impegni di oggi ogni volta che accendete il telefono,\nnon c'è modo di dimenticare ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdCLV-0nK2a",
-   "views": 1221,
+   "views": 1223,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2630,7 +2637,7 @@
    "text": "Này, những ai dùng iPhone,\nthử cái này một lần thôi.\nBắt đầu dùng rồi\nlà thật sự không quên gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdAgrY6oKKC",
-   "views": 7258,
+   "views": 7261,
    "likes": 23,
    "replies": 1,
    "reposts": 3,
@@ -3323,7 +3330,7 @@
    "text": "Hoá ra iPhone có app như thế này\nmà tới giờ mình mới biết…\nVẽ lên màn hình khoá, dán thêm sticker,\ntrang trí đúng theo ý mình luôn 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dc4u6vYAqHj",
-   "views": 7729,
+   "views": 7732,
    "likes": 28,
    "replies": 1,
    "reposts": 2,
@@ -3806,7 +3813,7 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 426157,
+   "views": 426161,
    "likes": 4210,
    "replies": 88,
    "reposts": 694,
@@ -4184,7 +4191,7 @@
    "text": "Nhờ mọi người mà app đã đạt hạng 11 mục Hiệu quả trên App Store! 🎉\nCảm ơn mọi người nhiều lắm luôn 💕\n\nMình đọc được nhiều tin nhắn và comment nói là phần cài đặt hơi khó\nMình biết hết rồi nha, và đang cải thiện để làm cho dễ hơn!\n\nComment mình đều đọc hết đó!\nCó trả lời chậm thì mọi người thông cảm nha.. xin lỗi nè 🥲\n\nTrước mắt mình sẽ viết từng bước cài đặt trong thread này nha 👇",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DcimhdrE8HN",
-   "views": 3430,
+   "views": 3431,
    "likes": 38,
    "replies": 9,
    "reposts": 10,
@@ -4268,7 +4275,7 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1189448,
+   "views": 1189465,
    "likes": 20235,
    "replies": 300,
    "reposts": 4306,
@@ -4953,48 +4960,6 @@
   }
  ],
  "pending": [
-  {
-   "id": "18102449402337329",
-   "user": "ilada.ch",
-   "when": "09/10 08:51",
-   "text": "อยากได้วอลเปเปอร์ ขอพิกัดหน่อยค่า",
-   "link": "https://www.threads.com/@ilada.ch/post/DdFsqRdkjBQ",
-   "account": "pim.pm_02",
-   "project": "trace",
-   "country": "TH",
-   "flag": "🇹🇭",
-   "post": "18653405233057869",
-   "post_text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้",
-   "post_link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV"
-  },
-  {
-   "id": "18094497680190474",
-   "user": "komiii_2901",
-   "when": "09/10 10:38",
-   "text": "cái này nó có bị giới hạn biên dịch không bạn. Bên Overleaf mình dùng bản miễn phí toàn dị giới hạn không hơi khó chịu",
-   "link": "https://www.threads.com/@komiii_2901/post/DdF48KRD9j5",
-   "account": "ashgrey._02",
-   "project": "cortex",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "post": "18154341283505740",
-   "post_text": "Mình từng bị giáo sư mắng vì dùng trang ",
-   "post_link": "https://www.threads.com/@ashgrey._02/post/DdF0lnfDBKv"
-  },
-  {
-   "id": "18058491878788319",
-   "user": "cope.20s",
-   "when": "09/10 10:55",
-   "text": "phí nhiu zị shop",
-   "link": "https://www.threads.com/@cope.20s/post/DdF60FJk-7b",
-   "account": "ashgrey._02",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "post": "18101966525252384",
-   "post_text": "mn ơi, ai dùng iPhone thử cái này chưa?",
-   "post_link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46"
-  },
   {
    "id": "17908037556498846",
    "user": "fragmera_",
