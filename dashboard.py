@@ -486,7 +486,9 @@ def main():
         tag_rounds(mine, rs)
         rj = json.loads(rounds_file(proj).read_text(encoding="utf-8")) if rounds_file(proj).exists() else {}
         experiments[proj] = {"rounds": compare(mine, rs), "insights": read_signals(mine),
-                             "plan": rj.get("plan", []), "tournament": rj.get("tournament", {})}
+                             "plan": rj.get("plan", []), "tournament": rj.get("tournament", {}),
+                             # 확정/관측은 rounds.json이 단일 출처다. 화면은 이 둘을 맨 위에 보여준다.
+                             "settled": rj.get("확정", {}), "watching": rj.get("관측", {})}
     data = {
         "generated": datetime.now(timezone.utc).isoformat(),
         "projects": PROJECTS,
