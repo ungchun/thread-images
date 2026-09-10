@@ -26,7 +26,7 @@ from run import RAW, creds, media_kind
 
 ROOT = Path(__file__).resolve().parent
 GRAPH = "https://graph.threads.net/v1.0"
-FIELDS = "id,text,username,timestamp,permalink,replied_to,root_post,is_reply"
+FIELDS = "id,text,username,timestamp,permalink,replied_to,root_post,is_reply,hide_status"
 
 
 def api(path, token, post=False, **params):
@@ -90,6 +90,8 @@ def unanswered(account, post_id):
     rows = []
     for r in paged(f"{post_id}/replies", token, fields=FIELDS):
         if r.get("username") == account or r["id"] in answered:
+            continue
+        if r.get("hide_status") in ("HIDDEN", "COVERED"):   # 숨긴 답글은 답할 대상이 아니다
             continue
         utc = datetime.fromisoformat(r["timestamp"].replace("+0000", "+00:00"))
         rows.append({
