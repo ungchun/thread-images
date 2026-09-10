@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Threads 대시보드</title>
+<title>대시보드</title>
 <style>
 :root{--bg:#0f1115;--card:#171a21;--line:#252a34;--dim:#8b93a1;--fg:#e8eaed;--hot:#4ade80}
 *{box-sizing:border-box}
@@ -14,6 +14,9 @@ h1{font-size:17px;margin:0;font-weight:600}
  border-radius:7px;padding:5px 12px;font-size:12px;cursor:pointer;font-family:inherit}
 #refresh:hover:not(:disabled){border-color:var(--hot)}
 #refresh:disabled{opacity:.5;cursor:default}
+.proj{display:flex;gap:8px;padding:14px 24px 0}
+.proj button{background:var(--line);border:0;color:var(--dim);padding:7px 16px;border-radius:999px;cursor:pointer;font-size:14px}
+.proj button.on{background:var(--hot);color:#fff}
 nav{display:flex;gap:4px;padding:0 24px;border-bottom:1px solid var(--line)}
 nav button{background:none;border:0;color:var(--dim);padding:12px 16px;cursor:pointer;
  font-size:14px;border-bottom:2px solid transparent}
@@ -116,14 +119,15 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
 </style>
 
 <header>
-  <h1>Threads 대시보드</h1>
+  <h1>대시보드</h1>
   <span class="stamp" id="stamp"></span>
   <button id="refresh">갱신</button>
   <span class="stamp" id="rmsg"></span>
 </header>
+<div class="proj" id="proj"></div>
 <nav>
   <button data-t="sched" class="on">예약<b id="n-sched">0</b></button>
-  <button data-t="posts">게시물<b id="n-posts">0</b></button>
+  <button data-t="posts">스레드<b id="n-posts">0</b></button>
   <button data-t="ig">인스타<b id="n-ig">0</b></button>
   <button data-t="pending">미답변<b id="n-pending">0</b></button>
   <button data-t="insight">실험<b id="n-insight">0</b></button>
@@ -457,21 +461,37 @@ fetch(first, {cache: "no-store"})
   .then(r => r.json()).then(d => {
   $("#stamp").textContent = "갱신 " + d.generated.slice(0,16).replace("T"," ") + " UTC · 최근 "
     + d.window_days + "일 · " + SOURCE;
-  $("#n-sched").textContent = d.scheduled.length;
-  $("#n-posts").textContent = d.posts.length;
-  $("#n-ig").textContent = (d.ig_posts||[]).length;
-  $("#n-pending").textContent = d.pending.length;
-  $("#sched").innerHTML = renderSched(d.scheduled);
-  $("#posts").innerHTML = renderPosts(P, d.posts);
-  $("#ig").innerHTML = renderPosts(G, d.ig_posts||[]);
-  [P, G].forEach(S => {
-    const sel = $("#" + S.id + "-acct");
-    if(sel) sel.onchange = e => { S.acct = e.target.value; paintPosts(S); };
-    paintPosts(S);
-  });
-  $("#pending").innerHTML = renderPending(d.pending, d.skipped);
-  $("#insight").innerHTML = renderInsight(d.rounds, d.plan, d.insights, d.tournament);
-  $("#n-insight").textContent = (d.plan||[]).length;
+  // 프로젝트별로 따로 본다. 계정의 project(meta.txt 3번째 토큰)로 거른다.
+  const projects = d.projects || {trace: "트레이스"};
+  let cur = localStorage.getItem("proj");
+  if(!projects[cur]) cur = "trace" in projects ? "trace" : Object.keys(projects)[0];
+  const ofProj = rows => (rows||[]).filter(r => (r.project||"trace") === cur);
+  function paintProject(){
+    localStorage.setItem("proj", cur);
+    $("#proj").innerHTML = Object.entries(projects).map(([k,l]) =>
+      `<button data-p="${k}" class="${k===cur?"on":""}">${esc(l)}</button>`).join("");
+    document.querySelectorAll("#proj button").forEach(b => b.onclick = () => { cur = b.dataset.p; paintProject(); });
+    const sched = ofProj(d.scheduled), posts = ofProj(d.posts), ig = ofProj(d.ig_posts),
+          pending = ofProj(d.pending), skipped = ofProj(d.skipped);
+    const ex = (d.experiments||{})[cur] || {rounds: d.rounds, plan: d.plan, insights: d.insights, tournament: d.tournament};
+    $("#n-sched").textContent = sched.length;
+    $("#n-posts").textContent = posts.length;
+    $("#n-ig").textContent = ig.length;
+    $("#n-pending").textContent = pending.length;
+    $("#sched").innerHTML = renderSched(sched);
+    $("#posts").innerHTML = renderPosts(P, posts);
+    $("#ig").innerHTML = renderPosts(G, ig);
+    [P, G].forEach(S => {
+      S.acct = "";
+      const sel = $("#" + S.id + "-acct");
+      if(sel) sel.onchange = e => { S.acct = e.target.value; paintPosts(S); };
+      paintPosts(S);
+    });
+    $("#pending").innerHTML = renderPending(pending, skipped);
+    $("#insight").innerHTML = renderInsight(ex.rounds||[], ex.plan||[], ex.insights||{}, ex.tournament||{});
+    $("#n-insight").textContent = (ex.plan||[]).length;
+  }
+  paintProject();
   if(d.errors && d.errors.length)
     $("#errors").innerHTML = `<div class="err">수집 실패 ${d.errors.length}건: ${esc(d.errors.join(" / "))}</div>`;
 

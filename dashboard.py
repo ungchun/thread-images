@@ -32,9 +32,9 @@ OUT = ROOT / "dashboard.json"
 METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
 
 
-def rounds():
+def rounds(proj="trace"):
     """라운드 정의 + 그 라운드에 나간 문구 본문. done/<코드><id>.txt 로 찾는다."""
-    f = ROOT / "rounds.json"
+    f = rounds_file(proj)
     if not f.exists():
         return []
     out = []
@@ -236,6 +236,21 @@ def skiplist(account):
     return out
 
 
+PROJECTS = {"moonlight": "문라이트", "cortex": "코르텍스", "trace": "트레이스"}
+
+
+def project(account):
+    """accounts/<계정>/meta.txt 세 번째 토큰. 없으면 trace (기존 계정 전부)."""
+    f = ROOT / "accounts" / account / "meta.txt"
+    parts = f.read_text(encoding="utf-8").split() if f.exists() else []
+    return parts[2] if len(parts) > 2 and parts[2] in PROJECTS else "trace"
+
+
+def rounds_file(proj):
+    """프로젝트별 실험 파일. trace는 rounds.json, 나머지는 rounds_<proj>.json."""
+    return ROOT / ("rounds.json" if proj == "trace" else f"rounds_{proj}.json")
+
+
 def accounts():
     return sorted(d.name for d in (ROOT / "accounts").iterdir() if d.is_dir())
 
@@ -257,7 +272,7 @@ def scheduled():
         if p.exists():
             body = p.read_text(encoding="utf-8").strip()
         out.append({
-            "account": acc, "country": code, "flag": flag(code),
+            "account": acc, "project": project(acc), "country": code, "flag": flag(code),
             "utc": utc.isoformat(),
             "local": utc.astimezone(tz).strftime("%Y-%m-%d %H:%M"),
             "text": body, "media": tw, "ig": [x for x in ig if x != "-"], "done": sorted(done),
@@ -279,7 +294,7 @@ def posts_of(account, days):
             continue
         m = insights(p["id"], token)
         out.append({
-            "id": p["id"], "account": account, "country": code, "flag": flag(code),
+            "id": p["id"], "account": account, "project": project(account), "country": code, "flag": flag(code),
             "utc": utc.isoformat(),
             "date": utc.astimezone(tz).strftime("%Y-%m-%d"),
             "local": utc.astimezone(tz).strftime("%m/%d %H:%M"),
@@ -331,7 +346,7 @@ def ig_posts_of(account, days):
         except (urllib.error.HTTPError, urllib.error.URLError, KeyError):
             m = {}
         out.append({
-            "id": p["id"], "account": account, "country": code, "flag": flag(code),
+            "id": p["id"], "account": account, "project": project(account), "country": code, "flag": flag(code),
             "utc": utc.isoformat(),
             "date": utc.astimezone(tz).strftime("%Y-%m-%d"),
             "local": utc.astimezone(tz).strftime("%m/%d %H:%M"),
@@ -353,7 +368,7 @@ def pending_of(account, posts, days):
         if datetime.fromisoformat(p["utc"]).timestamp() < cut:
             continue
         for r in unanswered(account, p["id"]):
-            out.append({**r, "account": account, "country": p["country"],
+            out.append({**r, "account": account, "project": project(account), "country": p["country"],
                         "flag": p["flag"], "post": p["id"],
                         "post_text": p["text"].splitlines()[0][:40] if p["text"] else "",
                         "post_link": p["link"]})
@@ -387,14 +402,18 @@ def main():
         except Exception as e:
             errors.append(f"{a} 답글: {e}")
 
-    rs = rounds()
-    all_posts = tag_rounds(all_posts, rs)
+    experiments = {}
+    for proj in PROJECTS:
+        rs = rounds(proj)
+        mine = [p for p in all_posts if p["project"] == proj]
+        tag_rounds(mine, rs)
+        rj = json.loads(rounds_file(proj).read_text(encoding="utf-8")) if rounds_file(proj).exists() else {}
+        experiments[proj] = {"rounds": compare(mine, rs), "insights": read_signals(mine),
+                             "plan": rj.get("plan", []), "tournament": rj.get("tournament", {})}
     data = {
         "generated": datetime.now(timezone.utc).isoformat(),
-        "rounds": compare(all_posts, rs),
-        "insights": read_signals(all_posts),
-        "plan": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("plan", []),
-        "tournament": json.loads((ROOT / "rounds.json").read_text(encoding="utf-8")).get("tournament", {}),
+        "projects": PROJECTS,
+        "experiments": experiments,
         "window_days": days,
         "scheduled": scheduled(),
         "posts": sorted(all_posts, key=lambda r: r["utc"], reverse=True),
