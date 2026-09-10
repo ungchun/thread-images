@@ -163,6 +163,8 @@ def reply_block(inline, account):
     lines = inline.splitlines()
     if lines and lines[0].lower().startswith("media:"):
         spec = lines[0].split(":", 1)[1].strip()
+        if spec == "-":                      # 답글에 미디어 없음 (계정 기본 tut 영상도 안 붙인다)
+            return "\n".join(lines[1:]).strip(), [], False
         spoil = spec.startswith("!")
         media = [x.strip() for x in spec.lstrip("!").split(",") if x.strip()]
         return "\n".join(lines[1:]).strip(), media, spoil
@@ -364,6 +366,7 @@ def _selfcheck():
     assert spoilers("no spoiler") == ("no spoiler", [])
     assert reply_block("media: !shared.x.mp4\n링크 https://a", "acc") == ("링크 https://a", ["shared.x.mp4"], True)
     assert reply_block("그냥 답글", "acc")[0] == "그냥 답글" and reply_block("그냥 답글", "acc")[2] is False
+    assert reply_block("media: -\n답글만", "acc") == ("답글만", [], False)
     w, a, tf, tw, ig, d = parse("2026-01-01T00:00:00+00:00\tacc\ttexts/x.txt\t!a.png,b.png\t-")
     assert tw == ["a.png", "b.png"] and "!" in d, (tw, d)
     assert render(w, a, tf, tw, ig, d).split("\t")[3] == "!a.png,b.png"
