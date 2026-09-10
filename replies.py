@@ -10,6 +10,7 @@
   python3 replies.py list <계정> <게시물id>        미답변 답글 (시간순)
   python3 replies.py tone <계정> [--limit 20]     우리가 지금까지 쓴 답장 (톤 참고용)
   python3 replies.py send <계정> <답글id> <파일>   답장 발행 (본문은 파일에서 읽는다)
+  python3 replies.py hide <계정> <답글id> [off]  남의 답글 숨김/해제 (삭제는 API 불가)
 """
 import json
 import sys
@@ -120,6 +121,12 @@ def tone(account, limit):
     return out
 
 
+def hide(account, reply_id, on=True):
+    """남의 답글을 숨긴다(삭제는 API로 안 된다). 최상위 답글만 대상이고 하위 답글도 같이 숨는다."""
+    token, _ = creds(account)
+    return api(f"{reply_id}/manage_reply", token, post=True, hide="true" if on else "false")
+
+
 def send(account, reply_to_id, body, media=None):
     """컨테이너 생성 → 발행. 글 올릴 때와 같은 경로에 reply_to_id만 더한다.
 
@@ -184,6 +191,8 @@ def main():
     elif cmd == "tone":
         for t in tone(account, opt("--limit", 20)):
             print(f"- {t}")
+    elif cmd == "hide":
+        print(hide(account, sys.argv[3], sys.argv[4] != "off" if len(sys.argv) > 4 else True))
     elif cmd == "send":
         body = Path(sys.argv[4]).read_text(encoding="utf-8").strip()
         print(send(account, sys.argv[3], body))
