@@ -40,7 +40,7 @@ def rounds(proj="trace"):
     out = []
     for r in json.loads(f.read_text(encoding="utf-8"))["rounds"]:
         bodies = []          # [(본문, 변종)] — 변종은 파일명 접미 a/b → A/B. 짝(a·b 둘 다)이 있을 때만.
-        files = [t for d in (ROOT / "done", ROOT / "texts") if d.is_dir()
+        files = [t for d in text_dirs(proj) if d.is_dir()
                  for t in list(d.glob(f"*{r['id']}.txt")) + list(d.glob(f"*{r['id']}[ab].txt"))]
         stems = {t.stem for t in files}
         for t in files:
@@ -52,7 +52,7 @@ def rounds(proj="trace"):
 
 
 def _norm(s):
-    return " ".join((s or "").split())
+    return " ".join((s or "").replace("||", "").split())   # ||스포일러|| 표시는 발행 시 제거되므로 대조에서도 뺀다
 
 
 def tag_rounds(posts, rs):
@@ -239,11 +239,36 @@ def skiplist(account):
 PROJECTS = {"moonlight": "문라이트", "cortex": "코르텍스", "trace": "트레이스"}
 
 
-def project(account):
-    """accounts/<계정>/meta.txt 세 번째 토큰. 없으면 trace (기존 계정 전부)."""
-    f = ROOT / "accounts" / account / "meta.txt"
-    parts = f.read_text(encoding="utf-8").split() if f.exists() else []
-    return parts[2] if len(parts) > 2 and parts[2] in PROJECTS else "trace"
+def project_of_file(name):
+    """texts/cortex/kr01.txt → cortex. 프로젝트는 폴더로 가른다. 루트(폴더 없음)는 trace."""
+    parts = str(name).replace("\\", "/").split("/")
+    for seg in parts[:-1]:
+        if seg in PROJECTS:
+            return seg
+    return "trace"
+
+
+def text_dirs(proj):
+    """프로젝트의 본문 폴더. trace는 루트, 나머지는 하위 폴더."""
+    if proj == "trace":
+        return [ROOT / "done", ROOT / "texts"]
+    return [ROOT / "done" / proj, ROOT / "texts" / proj]
+
+
+_body_proj = None
+
+
+def project_of_text(text):
+    """게시물 본문을 texts/·done/ 파일과 대조해 프로젝트를 찾는다. 못 찾으면 trace."""
+    global _body_proj
+    if _body_proj is None:
+        _body_proj = {}
+        for d in (ROOT / "done", ROOT / "texts"):
+            if d.is_dir():
+                for t in d.rglob("*.txt"):
+                    body = t.read_text(encoding="utf-8").partition("\n---\n")[0]
+                    _body_proj[_norm(body)] = project_of_file(t.relative_to(ROOT))
+    return _body_proj.get(_norm(text or ""), "trace")
 
 
 def rounds_file(proj):
@@ -272,7 +297,7 @@ def scheduled():
         if p.exists():
             body = p.read_text(encoding="utf-8").strip()
         out.append({
-            "account": acc, "project": project(acc), "country": code, "flag": flag(code),
+            "account": acc, "project": project_of_file(textfile), "country": code, "flag": flag(code),
             "utc": utc.isoformat(),
             "local": utc.astimezone(tz).strftime("%Y-%m-%d %H:%M"),
             "text": body, "media": tw, "ig": [x for x in ig if x != "-"], "done": sorted(done),
@@ -294,7 +319,7 @@ def posts_of(account, days):
             continue
         m = insights(p["id"], token)
         out.append({
-            "id": p["id"], "account": account, "project": project(account), "country": code, "flag": flag(code),
+            "id": p["id"], "account": account, "project": None, "country": code, "flag": flag(code),
             "utc": utc.isoformat(),
             "date": utc.astimezone(tz).strftime("%Y-%m-%d"),
             "local": utc.astimezone(tz).strftime("%m/%d %H:%M"),
@@ -303,6 +328,7 @@ def posts_of(account, days):
             "link": p.get("permalink", ""),
             **{k: m.get(k, 0) for k in METRICS},
         })
+        out[-1]["project"] = project_of_text(out[-1]["text"])
     return out
 
 
@@ -346,7 +372,7 @@ def ig_posts_of(account, days):
         except (urllib.error.HTTPError, urllib.error.URLError, KeyError):
             m = {}
         out.append({
-            "id": p["id"], "account": account, "project": project(account), "country": code, "flag": flag(code),
+            "id": p["id"], "account": account, "project": None, "country": code, "flag": flag(code),
             "utc": utc.isoformat(),
             "date": utc.astimezone(tz).strftime("%Y-%m-%d"),
             "local": utc.astimezone(tz).strftime("%m/%d %H:%M"),
@@ -357,6 +383,7 @@ def ig_posts_of(account, days):
             "replies": m.get("comments", 0), "saved": m.get("saved", 0),
             "shares": m.get("shares", 0),
         })
+        out[-1]["project"] = project_of_text(out[-1]["text"])
     return out
 
 
@@ -368,7 +395,7 @@ def pending_of(account, posts, days):
         if datetime.fromisoformat(p["utc"]).timestamp() < cut:
             continue
         for r in unanswered(account, p["id"]):
-            out.append({**r, "account": account, "project": project(account), "country": p["country"],
+            out.append({**r, "account": account, "project": p.get("project") or "trace", "country": p["country"],
                         "flag": p["flag"], "post": p["id"],
                         "post_text": p["text"].splitlines()[0][:40] if p["text"] else "",
                         "post_link": p["link"]})
