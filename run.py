@@ -124,7 +124,7 @@ def spoilers(text):
     return "".join(out), ents
 
 
-SPOILER_UTF16 = False   # True면 offset/length를 UTF-16 코드 유닛으로 센다
+SPOILER_UTF16 = True    # 실측(2026-09-10 daily03dew): 이모지 뒤 구간이 한 글자 밀렸다 → UTF-16. True면 offset/length를 UTF-16 코드 유닛으로 센다
 
 
 def _slen(s):
@@ -360,6 +360,7 @@ def _selfcheck():
     t, e = spoilers("a||bc||d ||éf||")
     assert t == "abcd éf" and e == [{"entity_type": "SPOILER", "offset": 1, "length": 2},
                                     {"entity_type": "SPOILER", "offset": 5, "length": 2}], (t, e)
+    assert spoilers("🐰||x||")[1] == [{"entity_type": "SPOILER", "offset": 2, "length": 1}]  # 이모지 = UTF-16 2유닛
     assert spoilers("no spoiler") == ("no spoiler", [])
     assert reply_block("media: !shared.x.mp4\n링크 https://a", "acc") == ("링크 https://a", ["shared.x.mp4"], True)
     assert reply_block("그냥 답글", "acc")[0] == "그냥 답글" and reply_block("그냥 답글", "acc")[2] is False
