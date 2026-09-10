@@ -176,7 +176,9 @@ details.fold>summary:hover{color:var(--fg)}
 
 <script>
 const $ = s => document.querySelector(s);
-const esc = s => (s||"").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+// 값이 배열·숫자로 들어오는 필드가 있어(rounds.json은 손으로 쓴다) 문자열로 먼저 눕힌다.
+const esc = s => (s == null ? "" : Array.isArray(s) ? s.join(", ") : String(s))
+  .replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const n = v => (v||0).toLocaleString();
 
 document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
@@ -391,6 +393,18 @@ function renderTour(t){
   </div>` + (t.rule ? `<div class="note2" style="margin-bottom:16px">${esc(t.rule)}</div>` : "");
 }
 
+// 설계·판정 필드는 라운드마다 dict일 수도 문자열일 수도 있다. 문자열을 Object.entries로
+// 돌리면 글자 하나가 한 행이 되어 표가 폭발한다. 둘 다 받아 안전하게 그린다.
+function kv(o, mt){
+  if(!o) return "";
+  if(typeof o === "string") return `<div class="meta" style="white-space:normal;margin-top:${mt||8}px">${esc(o)}</div>`;
+  const ks = Object.keys(o);
+  if(!ks.length) return "";
+  return `<table class="acct-ins" style="margin-top:${mt||8}px">` + ks.map(k =>
+    `<tr><td style="width:120px">${esc(k)}</td><td class="meta" style="white-space:normal">${esc(o[k])}</td></tr>`
+  ).join("") + `</table>`;
+}
+
 function renderInsight(rounds, plan, ins, tour, settled, watching){
   const done = (rounds||[]).filter(r => r.posts);
   const best = Math.max(...done.map(r => r.score || 0), 1);
@@ -403,7 +417,7 @@ function renderInsight(rounds, plan, ins, tour, settled, watching){
     out += `<div class="now">
       <div class="now-h">다음 라운드 ${esc(pl.id)} · ${esc(pl.date)} <span class="tag">${esc(pl.status||"")}</span></div>
       <div class="now-q">${esc(pl["가설"] || pl.hypothesis || pl["목적"] || "")}</div>
-      ${(pl["설계"]&&pl["설계"]["움직이는 변수"]) ? `<div class="now-v">움직이는 변수 · ${esc(pl["설계"]["움직이는 변수"])}</div>` : ""}
+      ${(pl["설계"] && typeof pl["설계"] === "object" && pl["설계"]["움직이는 변수"]) ? `<div class="now-v">움직이는 변수 · ${esc(pl["설계"]["움직이는 변수"])}</div>` : ""}
     </div>`;
   }
 
@@ -461,17 +475,15 @@ function renderInsight(rounds, plan, ins, tour, settled, watching){
   // 4) 세부는 전부 접어둔다
   out += `<details class="fold"><summary>다음 라운드 상세 (배정·시각)</summary>` +
     (plan||[]).map(p2 => {
-      const d = p2["설계"]||{}, jd = p2["판정"]||{};
+      const d = p2["설계"], jd = p2["판정"];
       const accs = p2["배정"]||p2.accounts||{};
       return `<div class="card">
         <div><span class="tag">${esc(p2.id)}</span><span class="tag">${esc(p2.date)}</span><span class="tag">${esc(p2.status||"")}</span></div>
         ${p2["목적"]?`<div style="margin:8px 0">${esc(p2["목적"])}</div>`:""}
-        ${Object.keys(d).length?`<table class="acct-ins">`+Object.entries(d).map(([k,v])=>
-          `<tr><td style="width:120px">${esc(k)}</td><td class="meta" style="white-space:normal">${esc(v)}</td></tr>`).join("")+`</table>`:""}
+        ${kv(d)}
         ${Object.keys(accs).length?`<div class="vs" style="margin-top:12px">`+Object.entries(accs).filter(([k])=>k!=="note").map(([k,v])=>
           `<div><b>${esc(k)}</b><div class="accs">${(Array.isArray(v)?v:[]).map(esc).join("<br>")}</div></div>`).join("")+`</div>`:""}
-        ${Object.keys(jd).length?`<table class="acct-ins" style="margin-top:12px">`+Object.entries(jd).map(([k,v])=>
-          `<tr><td style="width:120px">${esc(k)}</td><td class="meta" style="white-space:normal">${esc(v)}</td></tr>`).join("")+`</table>`:""}
+        ${kv(jd)}
         ${p2.note?`<div class="meta" style="margin-top:10px">${esc(p2.note)}</div>`:""}
       </div>`;
     }).join("") + `</details>`;
