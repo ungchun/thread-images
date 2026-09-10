@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10T07:05:24.770921+00:00",
+ "generated": "2026-09-10T07:13:12.068959+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -18,34 +18,34 @@
      "11": {
       "n": 4,
       "score": 1.0,
-      "median": 285
+      "median": 313
      }
     },
     "wday": {
      "목": {
       "n": 5,
       "score": 1.0,
-      "median": 141
+      "median": 148
      }
     },
     "media": {
      "IMAGE": {
       "n": 5,
       "score": 1.0,
-      "median": 141
+      "median": 148
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
       "posts": 1,
-      "avg": 9044,
-      "max": 9044,
+      "avg": 10012,
+      "max": 10012,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.0,
-        "median": 9044
+        "median": 10012
        }
       },
       "best_hour": 11,
@@ -56,13 +56,13 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 1,
-      "avg": 430,
-      "max": 430,
+      "avg": 478,
+      "max": 478,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.0,
-        "median": 430
+        "median": 478
        }
       },
       "best_hour": 11,
@@ -73,13 +73,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 1,
-      "avg": 141,
-      "max": 141,
+      "avg": 148,
+      "max": 148,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.0,
-        "median": 141
+        "median": 148
        }
       },
       "best_hour": 11,
@@ -90,13 +90,13 @@
      "kai_.03b": {
       "flag": "PH",
       "posts": 1,
-      "avg": 103,
-      "max": 103,
+      "avg": 104,
+      "max": 104,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.0,
-        "median": 103
+        "median": 104
        }
       },
       "best_hour": 11,
@@ -248,7 +248,7 @@
      "10": {
       "n": 4,
       "score": 1.0,
-      "median": 82
+      "median": 86
      }
     },
     "wday": {
@@ -286,13 +286,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 1,
-      "avg": 146,
-      "max": 146,
+      "avg": 154,
+      "max": 154,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.0,
-        "median": 146
+        "median": 154
        }
       },
       "best_hour": 10,
@@ -555,7 +555,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
      "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
      "posts": 25,
-     "views": 54920,
+     "views": 54929,
      "likes": 540,
      "median": 415,
      "score": 1.0,
@@ -604,28 +604,28 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
      "posts": 18,
-     "views": 76099,
-     "likes": 971,
+     "views": 77533,
+     "likes": 986,
      "median": 415,
-     "score": 1.65,
+     "score": 1.68,
      "sample": 11,
-     "er_score": 1.0,
+     "er_score": 1.01,
      "er_sample": 8,
      "variants": {
       "A": {
        "posts": 10,
        "median": 536,
-       "score": 4.69,
+       "score": 4.75,
        "sample": 5,
-       "er_score": 1.28,
+       "er_score": 1.27,
        "er_sample": 4
       },
       "B": {
        "posts": 8,
-       "median": 329,
-       "score": 1.33,
+       "median": 331,
+       "score": 1.34,
        "sample": 6,
-       "er_score": 0.86,
+       "er_score": 0.95,
        "er_sample": 4
       }
      }
@@ -757,7 +757,7 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 7,
-      "avg": 234592,
+      "avg": 234610,
       "max": 1189566,
       "hours": {
        "8": {
@@ -779,13 +779,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 1,
-      "avg": 50089,
-      "max": 50089,
+      "avg": 51080,
+      "max": 51080,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 50089
+        "median": 51080
        }
       },
       "best_hour": 19,
@@ -796,8 +796,8 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 4,
-      "avg": 7801,
-      "max": 28849,
+      "avg": 7844,
+      "max": 28854,
       "hours": {
        "8": {
         "n": 2,
@@ -807,7 +807,7 @@
        "19": {
         "n": 2,
         "score": 1.96,
-        "median": 15289
+        "median": 15375
        }
       },
       "best_hour": 19,
@@ -897,17 +897,17 @@
      "lune__v34": {
       "flag": "IT",
       "posts": 5,
-      "avg": 2093,
-      "max": 5733,
+      "avg": 2107,
+      "max": 5805,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.05,
+        "score": 0.04,
         "median": 94
        },
        "19": {
         "n": 3,
-        "score": 1.59,
+        "score": 1.58,
         "median": 3322
        }
       },
@@ -941,7 +941,7 @@
      "o2ndot": {
       "flag": "FR",
       "posts": 13,
-      "avg": 1347,
+      "avg": 1353,
       "max": 5511,
       "hours": {
        "5": {
@@ -951,7 +951,7 @@
        },
        "8": {
         "n": 4,
-        "score": 0.22,
+        "score": 0.21,
         "median": 290
        },
        "9": {
@@ -966,7 +966,7 @@
        },
        "19": {
         "n": 5,
-        "score": 0.67,
+        "score": 0.66,
         "median": 899
        },
        "21": {
@@ -994,7 +994,7 @@
        "19": {
         "n": 3,
         "score": 1.96,
-        "median": 2125
+        "median": 2126
        }
       },
       "best_hour": 19,
@@ -1177,13 +1177,13 @@
      "ivy_.k09": {
       "flag": "US",
       "posts": 1,
-      "avg": 320,
-      "max": 320,
+      "avg": 322,
+      "max": 322,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 320
+        "median": 322
        }
       },
       "best_hour": 19,
@@ -1307,78 +1307,32 @@
     {
      "id": "09",
      "date": "2026-09-16",
-     "요일": "수요일 — 고정",
      "status": "예정",
-     "목적": "문구 판정을 처음으로 제대로 내는 라운드. 요일·시각·미디어를 전부 고정하고 문구만 가른다.",
-     "가설": "고백형(B)이 호명형(A)을 이긴다. 나라별 조사에서 최대 자연 바이럴이 전부 고백형이었고 번역 손실이 가장 적다.",
+     "목적": "문구 판정을 처음으로 제대로 내는 라운드.",
+     "가설": "고백형(B)이 호명형(A)을 이긴다. 나라별 조사에서 최대 자연 바이럴이 전부 고백형이었다.",
      "설계": {
-      "요일": "수요일 하나. A와 B를 같은 날 올린다.",
-      "시각": "현지 19시. 전 계정 동일.",
+      "요일": "수요일. A와 B가 같은 날이면 되고, 수요일을 고른 건 8라운드와 요일을 맞춰 합산하기 위해서다.",
+      "시각": "계정을 반으로 갈라 절반은 현지 08시, 절반은 현지 19시. A/B는 각 시간대 안에서 균등하게 나눈다.",
+      "시각을 가르는 이유": "오전과 저녁 중 뭐가 나은지 아직 확정이 아니다(관측 섹션). 한쪽으로 몰면 표본이 안 쌓인다. 같은 시간대 안에서 A와 B를 비교하면 문구 판정은 그대로 성립하면서 시각 데이터도 함께 쌓인다.",
       "미디어": "8라운드와 동일 구성 고정. 이미지 세트만 신규.",
-      "움직이는 변수": "문구 하나뿐"
-     },
-     "표본": {
-      "포함": [
-       "o2ndot",
-       "dot2day_",
-       "aoi.02_",
-       "ac_dd91",
-       "03ines.mar_",
-       "ashgrey._02",
-       "nia._055",
-       "beatriz03._a",
-       "lune__v34",
-       "kai_.03b",
-       "rara.2k_",
-       "elle__jm"
-      ],
-      "제외": {
-       "daily03dew": "사망 확정",
-       "inkling01": "최근 3건 0·1·1 — 같은 증상, 점검 전까지 제외",
-       "pim.pm_02": "기준값 없음(1건). 기준값 먼저 쌓는다",
-       "ivy_.k09": "기준값 없음(1건)",
-       "mae.dw_04": "기준값 없음(1건)",
-       "lari.s_07": "기준값 없음(1건)",
-       "bia__rp03": "기준값 없음(1건)",
-       "riya._m08": "기준값 없음(1건)",
-       "mint.le_06": "기준값 없음(1건)"
-      },
-      "note": "실험 표본 12개. 기준값 없는 7개 계정은 판정에서 빼되 발행은 한다 — 그 발행이 기준값이 된다."
-     },
-     "배정": {
-      "A_호명형현지화": [
-       "o2ndot",
-       "aoi.02_",
-       "03ines.mar_",
-       "nia._055",
-       "lune__v34",
-       "rara.2k_"
-      ],
-      "B_고백형": [
-       "dot2day_",
-       "ac_dd91",
-       "ashgrey._02",
-       "beatriz03._a",
-       "kai_.03b",
-       "elle__jm"
-      ],
-      "note": "같은 나라 두 계정은 같은 배정. 2차(9/23)에 반전한다."
+      "움직이는 변수": "문구 하나뿐 (시각은 A·B 양쪽에 동일하게 걸쳐 상쇄)"
      },
      "판정": {
-      "주지표": "도달배수 = 이번 조회수 ÷ 그 계정 평소 조회수 중앙값. 배수들의 중앙값으로 비교.",
-      "부지표": "반응배수 = 이번 하트율 ÷ 그 계정 평소 하트율 중앙값. 하트율은 하트÷조회수.",
-      "기준": "두 지표가 같은 쪽을 가리키고 주지표 차이 1.3배 이상 + 양쪽 각 5건 이상일 때만 승부. 엇갈리거나 미달이면 재실행.",
-      "시점": "2026-09-19 이후 (3일 숙성)",
-      "note": "8라운드는 조회수 A 우세·하트율 B 우세로 엇갈려 판정 불가였다. 이 경우를 규칙으로 못박았다."
-     }
+      "주지표": "도달배수 = 이번 조회수 ÷ 그 계정 평소 조회수 중앙값",
+      "부지표": "반응배수 = 이번 하트율 ÷ 그 계정 평소 하트율 중앙값",
+      "기준": "두 지표가 같은 쪽 + 주지표 차이 1.3배 이상 + 양쪽 각 5건 이상. 엇갈리거나 미달이면 재실행.",
+      "부가": "같은 라운드 안에서 08시군과 19시군의 도달배수도 함께 비교해 시각 관측에 적립한다.",
+      "시점": "2026-09-19 이후 (3일 숙성)"
+     },
+     "note": "신규 7개 계정도 발행하되 판정 표본에서는 뺀다. 이 발행이 그들의 기준값이 된다."
     },
     {
      "id": "기준값확보",
      "date": "2026-09-10~15",
      "status": "진행",
-     "목적": "신규 7개 계정(태국·미국2·브라질2·인도2호·베트남2호)의 평소값을 만든다. 이게 없으면 9라운드에서도 표본이 모자란다.",
-     "설계": "문구는 8라운드 A로 고정(변수 없음). 현지 19시. 수·목·월에만. 계정당 3건을 목표로 한다.",
-     "note": "이 발행은 실험이 아니라 계측이다. 판정에 쓰지 않는다."
+     "목적": "신규 7개 계정(태국·미국2·브라질2·인도2호·베트남2호)의 평소값을 만든다.",
+     "설계": "문구는 고정(변수 없음). 계정당 3건 목표. 요일과 시각은 일부러 흩뿌린다 — 같은 조건만 쌓으면 그 계정 평소값이 한 조건에만 맞춰져 나중에 배수가 왜곡된다.",
+     "note": "이 발행은 실험이 아니라 계측이다. 문구 판정에 쓰지 않는다."
     }
    ],
    "tournament": {
@@ -1422,7 +1376,7 @@
       "why": "결과부터 던진다. 가장 짧아 스크롤 중에 다 읽힌다."
      }
     ],
-    "rule": "판정은 같은 날·같은 시각에 올린 A와 B 사이에서만 낸다. 라운드 간 비교는 요일이 달라지므로 판정 근거로 쓰지 않는다.\n요일은 수요일로 고정한다(확정 섹션 참조). 시각은 현지 19~20시로 고정한다.\n미디어·이미지 장수는 고정. 한 라운드에서 움직이는 변수는 문구 하나뿐이다.\n표본 자격: 그 계정에 기준값(과거 발행 3건 이상)이 있어야 실험에 넣는다. 신규 계정은 기준값을 먼저 쌓는다.\n\n판정 지표는 둘을 함께 본다. 모든 값은 그 계정 평소 대비 배수로 환산한다(나라·계정마다 기준선이 다르다).\n  주지표 도달배수 = 이번 조회수 ÷ 그 계정 평소 조회수 중앙값\n  부지표 반응배수 = 이번 하트율 ÷ 그 계정 평소 하트율 중앙값   (하트율 = 하트 ÷ 조회수)\n각각 배수의 중앙값으로 A와 B를 비교한다. 합계·평균은 쓰지 않는다(한 건이 합계를 지배한다).\n\n승부 판정:\n  두 지표가 같은 쪽을 가리키고 주지표 차이가 1.3배 이상 + 양쪽 각 5건 이상 → 그 쪽이 승리\n  두 지표가 엇갈리면 → 판정하지 않고 같은 대진을 한 번 더 돌린다(8라운드가 이 경우였다)\n  표본 미달이면 → 판정하지 않는다\n\n다음 주 수요일에 배정을 반전해 2차를 돌리고, 1차와 2차를 합산해 최종 판정한다.\n라운드마다 문구 파일명을 분리한다(같은 문구 재사용 금지 — 대시보드가 라운드를 구분 못 한다).",
+    "rule": "문구 판정은 같은 날·같은 시각에 올린 A와 B 사이에서만 낸다.\n라운드 간 비교(어제 대 오늘)는 요일이 달라지므로 판정 근거로 쓰지 않는다.\n\n요일·시각은 라운드 안에서만 고정한다(A와 B가 같은 조건이면 된다).\n라운드끼리는 오히려 요일·시각을 바꿔가며 돌려 관측 표본을 쌓는다.\n한쪽으로 몰면 그 조건만 표본이 늘고 나머지는 영원히 확정 불가가 된다.\n미디어·이미지 장수는 고정. 한 라운드에서 움직이는 변수는 문구 하나뿐이다.\n\n판정 표본 자격: 그 계정에 기준값(과거 발행 3건 이상)이 있어야 한다.\n기준값이 없는 신규 계정도 발행은 하되 판정에서만 뺀다 — 그 발행이 기준값이 된다.\n오래된 계정도 빼지 않는다(계정 14개 중 11개가 후반 발행에서 최고를 냈다).\n\n판정 지표는 둘을 함께 본다. 모든 값은 그 계정 평소 중앙값 대비 배수로 환산한다.\n  주지표 도달배수 = 이번 조회수 ÷ 그 계정 평소 조회수 중앙값\n  부지표 반응배수 = 이번 하트율 ÷ 그 계정 평소 하트율 중앙값   (하트율 = 하트 ÷ 조회수)\n각각 배수의 중앙값으로 A와 B를 비교한다. 합계·평균은 쓰지 않는다.\n\n승부 판정:\n  두 지표가 같은 쪽을 가리키고 주지표 차이 1.3배 이상 + 양쪽 각 5건 이상 → 승리\n  두 지표가 엇갈리면 → 판정하지 않고 같은 대진을 한 번 더 돌린다\n  표본 미달이면 → 판정하지 않는다\n\n1차와 배정 반전한 2차를 합산해 최종 판정한다.\n라운드마다 문구 파일명을 분리한다(같은 문구 재사용 금지).",
     "note": "2026-09-10 실험 설계 재정비. 8라운드까지 문구 판정을 한 번도 내지 못한 원인은 매 라운드 요일이 함께 바뀐 것이다. 요일·시각·계정 신선도는 확정 섹션으로 옮겨 더 이상 실험하지 않는다. 앞으로 라운드는 문구만 검증한다."
    }
   }
@@ -1968,7 +1922,7 @@
    "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\nbuka PDF, langsung diterjemahin di tempat dengan layout aslinya;\nklik figure yang ribet, langsung dijelasin saat itu juga;\nbahkan poin baru, metode, sama kesimpulan papernya ditandain otomatis.\nwaktu itu profesor bilang: \"paper itu ya dibaca sendiri……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdF7sAPETHj",
-   "views": 430,
+   "views": 478,
    "likes": 6,
    "replies": 1,
    "reposts": 2,
@@ -1989,7 +1943,7 @@
    "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเปิด PDF ก็แปลให้ทันทีโดยคงเลย์เอาต์เดิมไว้\nกด Figure ที่ซับซ้อนก็อธิบายให้ตรงนั้นเลย\nแถมยังไฮไลต์จุดใหม่ วิธีวิจัย และข้อสรุปของเปเปอร์ให้อัตโนมัติ\nตอนนั้นอาจารย์ยังบอกว่า \"เปเปอร์ต้องอ่านเองสิ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@pim.pm_02/post/DdF7oPjEcif",
-   "views": 141,
+   "views": 148,
    "likes": 1,
    "replies": 1,
    "reposts": 1,
@@ -2031,12 +1985,12 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF7dtfiG_B",
-   "views": 9044,
-   "likes": 232,
-   "replies": 2,
-   "reposts": 62,
+   "views": 10012,
+   "likes": 250,
+   "replies": 3,
+   "reposts": 64,
    "quotes": 3,
-   "shares": 98,
+   "shares": 104,
    "round": null,
    "variant": null
   },
@@ -2073,7 +2027,7 @@
    "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเขียน LaTeX เสร็จก็เห็นผล compile แทบจะทันที\ncompile เร็วกว่า Overleaf มาก\nแก้กี่รอบก็ไม่ต้องนั่งรอจนหงุดหงิด\nตอนนั้นอาจารย์ยังบอกว่า \"เขียนเปเปอร์ก็ใช้ Overleaf ไปสิ……\"\n\nตอนนี้อาจารย์เองก็ใช้อยู่ครับ",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@pim.pm_02/post/DdF0vbdAURu",
-   "views": 146,
+   "views": 154,
    "likes": 4,
    "replies": 1,
    "reposts": 2,
@@ -2094,7 +2048,7 @@
    "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nBuksan mo lang yung PDF, translated agad na buo pa yung original layout;\nclick mo yung komplikadong figure, ipapaliwanag agad;\nauto pa niyang minamarkahan yung novelty, methods, at conclusion ng paper.\nSabi pa ng prof noon, \"dapat ikaw mismo nagbabasa ng paper……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@kai_.03b/post/DdF0sHKDXmf",
-   "views": 103,
+   "views": 104,
    "likes": 1,
    "replies": 2,
    "reposts": 0,
@@ -2157,7 +2111,7 @@
    "text": "10 years on iPhone\nand nobody told me the lock screen could do this.\nmy whole week just sits there now.\nhaven't forgotten a thing since",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ivy_.k09/post/DdFtvdFFMPR",
-   "views": 320,
+   "views": 322,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -2178,7 +2132,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 3915,
+   "views": 4034,
    "likes": 32,
    "replies": 3,
    "reposts": 4,
@@ -2283,7 +2237,7 @@
    "text": "10 anos de iPhone\ne só agora descubro que o ecrã bloqueado faz isto.\nA semana inteira fica ali.\nDesde então não me esqueci de nada",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DdE20a8GiAc",
-   "views": 339,
+   "views": 340,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2305,7 +2259,7 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdEwfWGkatg",
    "views": 2216,
-   "likes": 9,
+   "likes": 11,
    "replies": 2,
    "reposts": 1,
    "quotes": 0,
@@ -2325,7 +2279,7 @@
    "text": "Ceux qui ont un iPhone :\nvous saviez que l'écran verrouillé pouvait afficher toute la semaine ?\nDepuis que je l'ai configuré\nje n'oublie plus rien, vraiment",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DdEwVuJEQTB",
-   "views": 3736,
+   "views": 3818,
    "likes": 5,
    "replies": 2,
    "reposts": 0,
@@ -2346,7 +2300,7 @@
    "text": "Chi ha un iPhone:\nprovate a mettere la settimana intera sulla schermata di blocco.\nDa quando l'ho fatto\nnon dimentico più niente, davvero",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdEwJyNEfH_",
-   "views": 5733,
+   "views": 5805,
    "likes": 5,
    "replies": 1,
    "reposts": 0,
@@ -2472,12 +2426,12 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 50089,
-   "likes": 838,
+   "views": 51080,
+   "likes": 847,
    "replies": 8,
-   "reposts": 527,
+   "reposts": 537,
    "quotes": 28,
-   "shares": 239,
+   "shares": 244,
    "round": "08",
    "variant": "A"
   },
@@ -2493,8 +2447,8 @@
    "text": "10 tahun pakai iPhone\nbaru tau lockscreen bisa nampilin ini.\njadwal seminggu nongol terus di situ\nsejak itu gak pernah lupa apa-apa",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
-   "views": 1730,
-   "likes": 38,
+   "views": 1897,
+   "likes": 41,
    "replies": 1,
    "reposts": 2,
    "quotes": 1,
@@ -2515,7 +2469,7 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
    "views": 6166,
-   "likes": 29,
+   "likes": 30,
    "replies": 4,
    "reposts": 4,
    "quotes": 0,
@@ -2598,7 +2552,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdDCEziDdRN",
-   "views": 3953,
+   "views": 3956,
    "likes": 21,
    "replies": 4,
    "reposts": 2,
@@ -2682,7 +2636,7 @@
    "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto empiezas a usarlo\nya no se te olvida nada, de verdad ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdCLJqIHMbL",
-   "views": 2125,
+   "views": 2126,
    "likes": 11,
    "replies": 1,
    "reposts": 0,
@@ -2934,7 +2888,7 @@
    "text": "Woy, yang pakai iPhone,\ncoba ini sekali aja deh.\nBegitu mulai pakai\nbeneran nggak ada yang kelupaan lagi ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dc_EE6NFlEU",
-   "views": 28849,
+   "views": 28854,
    "likes": 457,
    "replies": 23,
    "reposts": 49,
@@ -5151,6 +5105,20 @@
    "post": "18023439938705706",
    "post_text": "Napagalitan ako ng prof ko dati kasi 'to",
    "post_link": "https://www.threads.com/@kai_.03b/post/DdF0sHKDXmf"
+  },
+  {
+   "id": "18100059158302834",
+   "user": "thichvarcham",
+   "when": "09/10 14:08",
+   "text": "Đọc là quá trình tư duy của con người kết nối với nhau để hình thành tri thức. Trừ khi nào mà gấp quá, cần gấp \"kiến thức ăn liền\" thì mình mới dùng AI tóm gọn. Còn có thời gian thì sách nghìn trang mình vẫn miệt mài đọc",
+   "link": "https://www.threads.com/@thichvarcham/post/DdGQ--cDwuk",
+   "account": "ashgrey._02",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "post": "18105083483612012",
+   "post_text": "Mình từng bị giáo sư mắng vì dùng trang ",
+   "post_link": "https://www.threads.com/@ashgrey._02/post/DdF7dtfiG_B"
   },
   {
    "id": "18175723510440317",
