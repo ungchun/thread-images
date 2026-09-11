@@ -141,6 +141,9 @@ def line(r, prev):
             f"{grew}{tail}\n<{r['link']}|{r['text']}>")
 
 
+SLACK_TEXT_MAX = 2900          # 슬랙 한도 3000. 여유 100자를 둔다
+
+
 def render(rows, prev, window):
     today = datetime.now(KST).replace(hour=0, minute=0, second=0, microsecond=0)
     yesterday = today - timedelta(days=1)
@@ -165,12 +168,27 @@ def render(rows, prev, window):
     out.append({"type": "divider"})
 
     def section(title, group):
+        """슬랙 section 블록은 text가 3000자를 넘으면 400을 뱉는다.
+
+        3개 프로젝트를 동시에 돌리면서 하루 발행이 48건까지 늘어 한 덩어리로는
+        한도를 넘었다(2026-09-11 실패). 한도에 맞춰 여러 블록으로 쪼갠다.
+        """
         blocks = [{"type": "section", "text": {"type": "mrkdwn", "text": f"*{title}*"}}]
         if not group:
             return blocks + [{"type": "section",
                               "text": {"type": "mrkdwn", "text": "없음"}}]
-        blocks.append({"type": "section", "text": {"type": "mrkdwn",
-                       "text": "\n\n".join(line(r, prev) for r in group)}})
+        buf, size = [], 0
+        for r in group:
+            t = line(r, prev)
+            if buf and size + len(t) + 2 > SLACK_TEXT_MAX:
+                blocks.append({"type": "section",
+                               "text": {"type": "mrkdwn", "text": "\n\n".join(buf)}})
+                buf, size = [], 0
+            buf.append(t)
+            size += len(t) + 2
+        if buf:
+            blocks.append({"type": "section",
+                           "text": {"type": "mrkdwn", "text": "\n\n".join(buf)}})
         return blocks
 
     out += section("어제 올린 글", fresh)
