@@ -197,29 +197,40 @@ def publish(plat, account, text, images, reply=None, ig=False, spoiler_media=Fal
     container = api(plat, create, token, **{key: text}, **kind, **extra)["id"]
     wait_ready(plat, container, token)
     post_id = api(plat, f"{user}/{plat['publish']}", token, creation_id=container)["id"]
+    # 본문은 이미 올라갔다. 여기서부터 실패해도 예외를 위로 던지면 안 된다 —
+    # 던지면 FAIL로 잡혀 줄이 남고, 30분 뒤 회차가 본문을 또 올린다.
+    # 2026-09-11 실제 발생: 말레이시아·터키 계정 reply_full.txt가 500자를 넘어
+    # 답글만 거부됐는데 본문이 12회 중복 발행됐다.
     if reply:
-        if ig:  # 인스타는 댓글 엔드포인트 하나로 끝난다 (스포일러·미디어 없음)
-            api(plat, f"{post_id}/comments", token, message=spoilers(reply)[0])
-        else:   # Threads는 본문과 똑같이 컨테이너→발행 2단계
-            rm = reply_media(account) if rmedia is None else rmedia
-            rextra = {"is_spoiler_media": "true"} if (rspoiler and rm) else {}
-            if len(rm) > 1:      # 캐러셀: 장마다 컨테이너를 만들고 전부 준비된 뒤 묶는다
-                kids = [api(plat, create, token, is_carousel_item="true",
-                            **media_kind(m, f"{base}/{m}"))["id"] for m in rm]
-                for k in kids:
-                    wait_ready(plat, k, token)
-                rkind = {"media_type": "CAROUSEL", "children": ",".join(kids)}
-            elif rm:
-                rkind = media_kind(rm[0], f"{base}/{rm[0]}")
-            else:
-                rkind = {"media_type": "TEXT"}
-            reply, rents = spoilers(reply)
-            if rents:
-                rextra["text_entities"] = json.dumps(rents)
-            c = api(plat, create, token, text=reply, reply_to_id=post_id, **rkind, **rextra)["id"]
-            wait_ready(plat, c, token)
-            api(plat, f"{user}/{plat['publish']}", token, creation_id=c)
+        try:
+            _reply(plat, account, token, user, base, create, post_id, reply, ig, rmedia, rspoiler)
+        except Exception as e:
+            print(f"REPLY-FAIL {account} {post_id}: {e}", flush=True)
     return post_id
+
+
+def _reply(plat, account, token, user, base, create, post_id, reply, ig, rmedia, rspoiler):
+    if ig:  # 인스타는 댓글 엔드포인트 하나로 끝난다 (스포일러·미디어 없음)
+        api(plat, f"{post_id}/comments", token, message=spoilers(reply)[0])
+    else:   # Threads는 본문과 똑같이 컨테이너→발행 2단계
+        rm = reply_media(account) if rmedia is None else rmedia
+        rextra = {"is_spoiler_media": "true"} if (rspoiler and rm) else {}
+        if len(rm) > 1:      # 캐러셀: 장마다 컨테이너를 만들고 전부 준비된 뒤 묶는다
+            kids = [api(plat, create, token, is_carousel_item="true",
+                        **media_kind(m, f"{base}/{m}"))["id"] for m in rm]
+            for k in kids:
+                wait_ready(plat, k, token)
+            rkind = {"media_type": "CAROUSEL", "children": ",".join(kids)}
+        elif rm:
+            rkind = media_kind(rm[0], f"{base}/{rm[0]}")
+        else:
+            rkind = {"media_type": "TEXT"}
+        reply, rents = spoilers(reply)
+        if rents:
+            rextra["text_entities"] = json.dumps(rents)
+        c = api(plat, create, token, text=reply, reply_to_id=post_id, **rkind, **rextra)["id"]
+        wait_ready(plat, c, token)
+        api(plat, f"{user}/{plat['publish']}", token, creation_id=c)
 
 
 def parse(line):
