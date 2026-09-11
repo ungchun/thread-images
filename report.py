@@ -72,6 +72,34 @@ def insights(post_id, token):
     return {d["name"]: (d.get("values") or [{}])[0].get("value", 0) for d in data}
 
 
+PROJECT = "trace"               # 이 브리핑이 다루는 프로젝트. 코르텍스·문라이트는 제외한다
+_body_proj = None
+
+
+def _norm(s):
+    return " ".join((s or "").replace("||", "").split())   # ||스포일러|| 표시는 발행 시 지워지므로 대조에서도 뺀다
+
+
+def project_of(text):
+    """본문을 texts/·done/ 파일과 대조해 프로젝트를 찾는다. 못 찾으면 trace.
+
+    파일 경로가 texts/cortex/... 면 cortex, texts/moonlight/... 면 moonlight,
+    폴더 없이 texts/kr09a.txt 면 trace다(dashboard.py와 같은 규칙).
+    """
+    global _body_proj
+    if _body_proj is None:
+        _body_proj = {}
+        for d in (ROOT / "done", ROOT / "texts"):
+            if not d.is_dir():
+                continue
+            for t in d.rglob("*.txt"):
+                body = t.read_text(encoding="utf-8").partition("\n---\n")[0]
+                parts = t.relative_to(ROOT).parts
+                proj = parts[1] if len(parts) > 2 and parts[1] in ("cortex", "moonlight") else "trace"
+                _body_proj[_norm(body)] = proj
+    return _body_proj.get(_norm(text or ""), "trace")
+
+
 def collect(account, since):
     """since(UTC) 이후 게시물 전량의 현재 지표."""
     token, user = creds(account)
@@ -83,7 +111,10 @@ def collect(account, since):
         utc = datetime.fromisoformat(p["timestamp"].replace("+0000", "+00:00"))
         if utc < since:
             continue
-        text = (p.get("text") or "").strip().splitlines()
+        full = (p.get("text") or "").strip()
+        if project_of(full) != PROJECT:      # 코르텍스·문라이트는 이 브리핑에 넣지 않는다
+            continue
+        text = full.splitlines()
         rows.append({
             "id": p["id"],
             "account": account,
