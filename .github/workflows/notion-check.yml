@@ -1,0 +1,96 @@
+name: notion-check
+
+# 노션 인티그레이션이 대상 DB에 실제로 접근되는지 확인한다.
+# 토큰은 Secrets에만 있어 로컬에서 값을 볼 수 없으므로 여기서 대신 찌른다.
+# 토큰 값 자체는 절대 출력하지 않는다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      page_id:
+        description: '확인할 페이지/DB id (하이픈 없어도 됨)'
+        required: false
+        default: '3dbdd8f2aea2809c9be0cf1ce8afa374'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          PAGE_ID: ${{ inputs.page_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+
+          TOKEN = os.environ["NOTION_TOKEN"]
+          RAW = os.environ["PAGE_ID"].replace("-", "")
+          PAGE = f"{RAW[:8]}-{RAW[8:12]}-{RAW[12:16]}-{RAW[16:20]}-{RAW[20:]}"
+          H = {"Authorization": f"Bearer {TOKEN}",
+               "Notion-Version": "2022-06-28",
+               "Content-Type": "application/json"}
+
+          def call(method, path, body=None):
+              req = urllib.request.Request(
+                  "https://api.notion.com/v1/" + path, method=method, headers=H,
+                  data=json.dumps(body).encode() if body else None)
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      return r.status, json.load(r)
+              except urllib.error.HTTPError as e:
+                  return e.code, json.load(e)
+
+          print("1) 토큰 유효성")
+          code, d = call("GET", "users/me")
+          if code != 200:
+              print(f"   실패 {code}: {d.get('message','')[:120]}")
+              raise SystemExit(1)
+          print(f"   OK — 인티그레이션 '{d.get('name')}'")
+
+          print("\n2) 페이지 접근")
+          code, page = call("GET", f"pages/{PAGE}")
+          if code == 200:
+              t = page.get("properties", {}).get("title") or page.get("properties", {}).get("Name")
+              title = "".join(x["plain_text"] for x in t["title"]) if t and t.get("title") else "(제목 없음)"
+              print(f"   OK — '{title}'")
+          else:
+              print(f"   실패 {code}: {d.get('message','')[:120]}")
+              print("   → 페이지에 인티그레이션이 연결되지 않았다")
+
+          print("\n3) 하위 데이터베이스 찾기")
+          code, kids = call("GET", f"blocks/{PAGE}/children?page_size=100")
+          if code != 200:
+              print(f"   실패 {code}: {kids.get('message','')[:150]}")
+              print("   → 연결이 페이지에 안 걸렸다. 페이지 우측 점 세 개 → 연결 → threads-report")
+              raise SystemExit(1)
+          dbs = [b for b in kids.get("results", [])
+                 if b["type"] in ("child_database", "database", "link_to_page")]
+          if not dbs:
+              types = sorted({b["type"] for b in kids.get("results", [])})
+              print(f"   하위 DB 없음. 블록 종류: {types}")
+          for b in dbs:
+              bid = b["id"]
+              name = b.get("child_database", {}).get("title", "(이름 없음)")
+              print(f"   DB '{name}'  id={bid}")
+              c2, meta = call("GET", f"databases/{bid}")
+              if c2 != 200:
+                  print(f"      접근 실패 {c2}: {meta.get('message','')[:120]}")
+                  print("      → 이 DB에 직접 연결해야 한다 (DB 우측 점 세 개 → 연결)")
+                  continue
+              props = meta.get("properties", {})
+              print(f"      접근 OK — 컬럼 {len(props)}개")
+              for k, v in props.items():
+                  extra = ""
+                  if v["type"] == "select":
+                      extra = " [" + ", ".join(o["name"] for o in v["select"]["options"][:8]) + "]"
+                  elif v["type"] == "formula":
+                      extra = " (수식)"
+                  print(f"        {k} : {v['type']}{extra}")
+              c3, rows = call("POST", f"databases/{bid}/query", {"page_size": 3})
+              n = len(rows.get("results", [])) if c3 == 200 else "?"
+              print(f"      기존 행 {n}개")
+          PY
