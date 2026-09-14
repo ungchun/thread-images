@@ -408,7 +408,9 @@ function kv(o, mt){
 function renderInsight(rounds, plan, ins, tour, settled, watching){
   const done = (rounds||[]).filter(r => r.posts);
   const best = Math.max(...done.map(r => r.score || 0), 1);
-  const pl = (plan||[])[0];
+  // 실험 종료(2026-09-14) 후에는 plan이 전부 발행 완료다. 끝난 걸 "다음 라운드"로
+  // 띄우면 아직 진행 중인 것처럼 보인다. 미발행 항목이 있을 때만 보여준다.
+  const pl = (plan||[]).find(x => !/완료/.test(x.status||""));
   const S = settled||{}, W = watching||{};
   let out = "";
 
@@ -432,6 +434,12 @@ function renderInsight(rounds, plan, ins, tour, settled, watching){
           <b>${esc(k)}</b>
           <div class="meta">${esc(S[k]["결론"] || S[k]["적용"] || "")}</div>
         </div>`).join("") + `</div>`;
+    }
+    if(!watchKeys.length){
+      out += `<div class="card cw"><h4>관측 중</h4><div class="ci">
+        <div class="meta">없음 — 2026-09-14에 실험을 전부 닫았다.
+        문구 A/B는 판정 불가로 종료했고 시각·요일은 확정으로 옮겼다.
+        근거는 rounds.json의 확정 섹션에 있다.</div></div></div>`;
     }
     if(watchKeys.length){
       out += `<div class="card cw"><h4>관측 중 · 표본 쌓는 중</h4>` +
