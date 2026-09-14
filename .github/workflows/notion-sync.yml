@@ -1,0 +1,52 @@
+name: notion-sync
+
+# 문라이트·코르텍스 게시물 지표를 노션 DB에 넣는다. 게시물 1건 = 1행, 링크로 upsert.
+# 매일 아침 8시 KST(23:00 UTC)에 cron-job.org가 workflow_dispatch로 깨운다 —
+# 이 레포는 GitHub schedule cron을 쓰지 않는다 (post.yml 주석 참조).
+#
+# 먼저 dashboard.py로 지표를 새로 긁는다. 커밋된 dashboard.json은 마지막 갱신 시점
+# 값이라 아침에 그대로 쓰면 하루 늦은 숫자가 들어간다. 여기서 만든 dashboard.json은
+# 커밋하지 않는다 — dashboard.yml과 푸시가 겹치면 충돌만 난다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'true면 노션에 쓰지 않고 계획만 출력'
+        required: false
+        default: 'false'
+      days:
+        description: '최근 N일만 (0이면 전체)'
+        required: false
+        default: '0'
+      refresh:
+        description: 'true면 dashboard.py로 지표를 새로 긁는다 (약 6분)'
+        required: false
+        default: 'true'
+
+concurrency:
+  group: notion-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Refresh metrics
+        if: ${{ inputs.refresh != 'false' }}
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+        run: python3 dashboard.py --days 30 --replies-days 1
+
+      - name: Sync to Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          ARGS="--days ${{ inputs.days || 0 }}"
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python3 notion_sync.py $ARGS
