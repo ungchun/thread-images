@@ -96,6 +96,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="쓰지 않고 계획만 출력")
     ap.add_argument("--days", type=int, default=0, help="최근 N일만 (0이면 dashboard.json 전체)")
+    ap.add_argument("--limit", type=int, default=0, help="최신 N건만 (테스트용)")
     a = ap.parse_args()
 
     d = json.load(open(ROOT / "dashboard.json", encoding="utf-8"))
@@ -105,6 +106,8 @@ def main():
         cut = (datetime.now(timezone.utc) - timedelta(days=a.days)).isoformat()
         posts = [p for p in posts if p["utc"] >= cut]
     posts.sort(key=lambda p: p["utc"])
+    if a.limit:
+        posts = posts[-a.limit:]
     print(f"대상 {len(posts)}건 (dashboard.json 생성 {d['generated'][:16]})", flush=True)
 
     created = updated = failed = 0

@@ -19,6 +19,10 @@ on:
         description: '최근 N일만 (0이면 전체)'
         required: false
         default: '0'
+      limit:
+        description: '최신 N건만 (테스트용, 0이면 전체)'
+        required: false
+        default: '0'
       refresh:
         description: 'true면 dashboard.py로 지표를 새로 긁는다 (약 6분)'
         required: false
@@ -47,6 +51,6 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: |
-          ARGS="--days ${{ inputs.days || 0 }}"
+          ARGS="--days ${{ inputs.days || 0 }} --limit ${{ inputs.limit || 0 }}"
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python3 notion_sync.py $ARGS
