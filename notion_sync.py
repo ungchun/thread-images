@@ -17,7 +17,9 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent
 DB_ID = "52bd8a99-4774-4680-8976-8a21132dc3b0"   # 문라이트&코르텍스 스레드 성과 정리 > 스레드 게시물 성과
@@ -64,6 +66,21 @@ def find_by_link(link):
     return res[0]["id"] if res else None
 
 
+_TZ = {}
+
+
+def local_time(p):
+    """발행 시각을 그 계정의 현지 시각으로. 시간대 표시는 뺀다 — 넣으면 노션이 보는 사람
+    시간대로 바꿔 보여줘서 LA 09/13 11:01이 한국에서 09/14 03:01로 보인다."""
+    if not _TZ:
+        for d in (ROOT / "accounts").iterdir():
+            m = d / "meta.txt"
+            if m.exists():
+                _TZ[d.name] = m.read_text().split()[1]
+    tz = ZoneInfo(_TZ.get(p["account"], "UTC"))
+    return datetime.fromisoformat(p["utc"]).astimezone(tz).strftime("%Y-%m-%dT%H:%M:%S")
+
+
 def props(p):
     """dashboard.json 게시물 한 건 → 노션 속성."""
     text = (p.get("text") or "").strip()
@@ -72,7 +89,7 @@ def props(p):
         "게시물": {"title": [{"text": {"content": first[:200]}}]},
         "게시물 링크": {"url": p["link"]},
         "본문": {"rich_text": [{"text": {"content": text[:2000]}}]},
-        "날짜": {"date": {"start": p["utc"]}},
+        "날짜": {"date": {"start": local_time(p)}},   # 현지 시각, 시간대 없음
         "계정": {"select": {"name": p["account"]}},
         "국가": {"select": {"name": COUNTRY.get(p["country"], p["country"])}},
         "게시물 언어": {"select": {"name": LANG.get(p["country"], "미확인")}},
@@ -86,10 +103,10 @@ def props(p):
 
 
 def metrics_only(p):
-    """갱신 시엔 숫자만 덮어쓴다. 제목·본문·선택지는 처음 넣은 그대로 둔다 —
-    담당자가 노션에서 손으로 고쳤을 수 있다."""
+    """갱신 시엔 숫자와 날짜만 덮어쓴다. 제목·본문·선택지는 처음 넣은 그대로 둔다 —
+    담당자가 노션에서 손으로 고쳤을 수 있다. 날짜는 UTC로 넣었던 옛 행을 바로잡기 위해 포함한다."""
     full = props(p)
-    return {k: full[k] for k in ("조회", "하트", "댓글", "리포스트", "공유")}
+    return {k: full[k] for k in ("조회", "하트", "댓글", "리포스트", "공유", "날짜")}
 
 
 def main():
