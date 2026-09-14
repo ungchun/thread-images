@@ -11,7 +11,8 @@ schedule.txt 한 줄 (탭 구분):
 그 표시를 남기고 줄을 유지해, 다음 회차가 실패한 쪽만 다시 시도한다. 같은 글이
 두 번 올라가는 일은 이 표시로 막는다.
 
-양쪽 다 끝나면 줄을 지우고 본문·이미지를 done/ 으로 옮긴다.
+답글이 실패하면 done:reply-threads:<게시물id> 를 남겨 다음 회차가 답글만 다시 민다.
+답글까지 끝나야 줄을 지우고 본문·이미지를 done/ 으로 옮긴다.
 """
 import json
 import os
@@ -201,12 +202,33 @@ def publish(plat, account, text, images, reply=None, ig=False, spoiler_media=Fal
     # 던지면 FAIL로 잡혀 줄이 남고, 30분 뒤 회차가 본문을 또 올린다.
     # 2026-09-11 실제 발생: 말레이시아·터키 계정 reply_full.txt가 500자를 넘어
     # 답글만 거부됐는데 본문이 12회 중복 발행됐다.
-    if reply:
+    if reply:   # 실패하면 ReplyFailed — 본문은 올라갔으니 호출자가 답글만 예약에 남긴다
+        reply_with_retry(plat, account, token, user, base, create, post_id, reply, ig, rmedia, rspoiler)
+    return post_id
+
+
+class ReplyFailed(Exception):
+    """본문은 올라갔는데 답글이 REPLY_TRIES번 다 실패했다. post_id를 실어 올린다."""
+    def __init__(self, post_id, err):
+        super().__init__(err)
+        self.post_id = post_id
+
+
+REPLY_TRIES = 3
+
+
+def reply_with_retry(plat, account, token, user, base, create, post_id, reply, ig, rmedia, rspoiler):
+    """Threads가 방금 만든 답글 컨테이너를 못 찾는 일시 오류(4279009)가 잦다.
+    2026-09-13 주말 8건이 이걸로 링크 없이 나갔다. 몇 번 더 밀고, 그래도 안 되면 예약에 남긴다."""
+    for i in range(1, REPLY_TRIES + 1):
         try:
             _reply(plat, account, token, user, base, create, post_id, reply, ig, rmedia, rspoiler)
+            return
         except Exception as e:
-            print(f"REPLY-FAIL {account} {post_id}: {e}", flush=True)
-    return post_id
+            print(f"REPLY-RETRY {account} {post_id} ({i}/{REPLY_TRIES}): {e}", flush=True)
+            if i < REPLY_TRIES:
+                time.sleep(10 * i)
+    raise ReplyFailed(post_id, f"답글 {REPLY_TRIES}회 실패")
 
 
 def _reply(plat, account, token, user, base, create, post_id, reply, ig, rmedia, rspoiler):
@@ -275,6 +297,22 @@ def main():
         body, inline = body.strip(), inline.strip()
         inline, rmedia, rspoiler = reply_block(inline, account)
 
+        # 지난 회차에 본문만 올라가고 답글이 빠진 행. 답글만 다시 민다.
+        for mark in [d for d in done if d.startswith("reply-")]:
+            name, post_id = mark[len("reply-"):].split(":", 1)
+            plat, is_ig = (INSTAGRAM, True) if name == "ig" else (THREADS, False)
+            token, user = creds(account, is_ig)
+            try:
+                reply_with_retry(plat, account, token, user, f"{RAW}/{plat['images']}",
+                                 f"{user}/{plat['create']}", post_id,
+                                 inline or fixed_reply(account, plat), is_ig, rmedia, rspoiler)
+            except ReplyFailed as e:
+                print(f"REPLY-FAIL {account} {post_id}: {e} — 다음 회차 재시도", flush=True)
+                continue
+            print(f"reply-ok {name} {post_id} {account} {textfile}", flush=True)
+            done.discard(mark)
+            changed = True
+
         # 이미지가 준비 안 된 플랫폼은 건너뛴다. 예약은 남아 다음 회차에 다시 본다.
         targets = []
         if "threads" not in done and tw_imgs:
@@ -293,6 +331,13 @@ def main():
                 post_id = publish(plat, account, body, imgs,
                                   inline or fixed_reply(account, plat), is_ig,
                                   spoiler_media="!" in done, rmedia=rmedia, rspoiler=rspoiler)
+            except ReplyFailed as e:  # 본문은 올라갔다. 답글만 표시해 두고 다음 회차에 재시도
+                print(f"posted {name} {e.post_id} {account} {textfile}", flush=True)
+                print(f"REPLY-FAIL {account} {e.post_id}: {e} — 예약에 남김", flush=True)
+                done.add(name)
+                done.add(f"reply-{name}:{e.post_id}")
+                changed = True
+                continue
             except Exception as e:  # 실패한 플랫폼만 다음 회차에 재시도
                 print(f"FAIL {account} {name} {textfile}: {e}", flush=True)
                 continue
@@ -304,7 +349,8 @@ def main():
         # 여러 줄이 같은 파일(공통 인트로 영상 등)을 쓰면 여기서 옮기는 순간
         # 뒤 줄이 "이미지 없음"으로 죽는다.
         need = {n for n, imgs in (("threads", tw_imgs), ("ig", ig_imgs)) if imgs}
-        if need and need <= (done - {"!"}):
+        reply_pending = any(d.startswith("reply-") for d in done)
+        if need and need <= (done - {"!"}) and not reply_pending:
             finished.append((textfile, tw_imgs, ig_imgs))
             changed = True
         else:
@@ -381,6 +427,8 @@ def _selfcheck():
     w, a, tf, tw, ig, d = parse("2026-01-01T00:00:00+00:00\tacc\ttexts/x.txt\t!a.png,b.png\t-")
     assert tw == ["a.png", "b.png"] and "!" in d, (tw, d)
     assert render(w, a, tf, tw, ig, d).split("\t")[3] == "!a.png,b.png"
+    w, a, tf, tw, ig, d = parse("2026-01-01T00:00:00+00:00\tacc\ttexts/x.txt\ta.png\t-\tdone:threads,reply-threads:123")
+    assert "reply-threads:123" in d and render(w, a, tf, tw, ig, d).endswith("done:reply-threads:123,threads"), d
     print("ok")
 
 
