@@ -426,6 +426,13 @@ function renderInsight(rounds, plan, ins, tour, settled, watching){
   // 2) 결론 — 확정과 관측을 나란히
   const settledKeys = Object.keys(S).filter(k => k[0] !== "_");
   const watchKeys = Object.keys(W).filter(k => k[0] !== "_");
+  // rounds.json은 트레이스 전용이다. 문라이트·코르텍스 탭은 확정·관측이 비는 게 정상 —
+  // 빈 화면만 나오면 고장난 것처럼 보이므로 왜 비었는지 적어준다.
+  if(!settledKeys.length && !watchKeys.length && !done.length){
+    out += `<div class="card"><h4>실험 기록 없음</h4><div class="ci"><div class="meta">
+      실험은 트레이스에서만 돌렸고 2026-09-14에 전부 닫혔다.
+      이 제품은 라운드 기록이 없다 — 성과는 게시물 탭에서 본다.</div></div></div>`;
+  }
   if(settledKeys.length || watchKeys.length){
     out += `<div class="concl">`;
     if(settledKeys.length){
