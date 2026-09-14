@@ -5,9 +5,17 @@ description: Threads 홍보 게시물을 예약 발행한다. 프로젝트(트�
 
 # Threads 예약 발행
 
-작업 폴더는 이 레포 루트다. `ungchun/thread-images` 리포 자체이고,
-예약·본문·미디어가 전부 커밋되므로 기기가 달라도 같은 상태를 본다.
-토큰은 GitHub Secrets에만 있고 실제 발행은 Actions가 30분마다 한다.
+작업 폴더는 `thread-images` 리포 루트다. 예약·본문·미디어가 전부 커밋되므로
+기기가 달라도 같은 상태를 본다. 토큰은 GitHub Secrets에만 있고 실제 발행은
+Actions가 30분마다 한다.
+
+**모든 명령은 리포 루트에서 실행한다.** 다른 폴더에서 이 스킬을 호출했을 수 있으므로
+첫 명령에서 루트를 찾아 고정한다. 아래 문서의 상대 경로는 전부 이 루트 기준이다.
+
+```bash
+ROOT=$(ls -d ~/Desktop/threads-bot 2>/dev/null || git rev-parse --show-toplevel)
+cd "$ROOT" && git pull --quiet --rebase
+```
 
 ```
 items.json            프로젝트 > 아이템 > 라운드 정의. 이 스킬의 단일 출처

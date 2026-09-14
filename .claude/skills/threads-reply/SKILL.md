@@ -5,7 +5,14 @@ description: Threads 게시물에 달린 유저 답글에 하나씩 답장한다
 
 # Threads 답글 대응
 
-작업 폴더는 이 레포 루트다. 도구는 `replies.py`.
+작업 폴더는 `thread-images` 리포 루트다. 도구는 `replies.py`.
+
+**모든 명령은 리포 루트에서 실행한다.** 다른 폴더에서 호출했을 수 있으므로 먼저 루트를 찾아 고정한다.
+
+```bash
+ROOT=$(ls -d ~/Desktop/threads-bot 2>/dev/null || git rev-parse --show-toplevel)
+cd "$ROOT" && git pull --quiet --rebase
+```
 
 토큰은 대부분 GitHub Secrets에만 있다. 로컬 `accounts/<계정>/env.sh`가 있는
 계정만 직접 실행되고, 나머지는 `replies.yml` 워크플로를 거친다.
