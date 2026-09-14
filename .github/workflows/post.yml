@@ -9,6 +9,16 @@ on:
 permissions:
   contents: write
 
+# 앞 회차가 아직 도는 중에 cron-job.org가 다음 회차를 부르면, 두 실행이 같은
+# schedule.txt를 각자 읽어 같은 행을 동시에 발행한다. done 표시는 자기 메모리
+# 안에만 있어 상대를 못 막고, 푸시 재시도는 이미 발행이 끝난 뒤라 늦다.
+# 영상 회차는 컨테이너 대기가 계정마다 붙어 10분을 넘기므로 실제로 겹칠 수 있다.
+# cancel-in-progress: false — 도는 회차를 죽이면 발행 직후 schedule.txt 갱신이
+# 날아가 오히려 중복이 난다. 새 호출을 대기시킨다.
+concurrency:
+  group: threads-post
+  cancel-in-progress: false
+
 jobs:
   post:
     runs-on: ubuntu-latest
