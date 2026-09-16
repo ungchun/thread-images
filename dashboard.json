@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T01:10:13.072704+00:00",
+ "generated": "2026-09-16T01:18:04.539790+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -112,7 +112,7 @@
        "19": {
         "n": 1,
         "score": 0.04,
-        "median": 719
+        "median": 721
        }
       },
       "best_hour": 11,
@@ -156,7 +156,7 @@
        "19": {
         "n": 1,
         "score": 0.02,
-        "median": 235
+        "median": 236
        }
       },
       "best_hour": 11,
@@ -732,12 +732,12 @@
       "flag": "ID",
       "posts": 3,
       "avg": 4001,
-      "max": 11394,
+      "max": 11395,
       "hours": {
        "10": {
         "n": 2,
         "score": 1.43,
-        "median": 5729
+        "median": 5730
        },
        "18": {
         "n": 1,
@@ -780,7 +780,7 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 3,
-      "avg": 1298,
+      "avg": 1299,
       "max": 1753,
       "hours": {
        "10": {
@@ -791,7 +791,7 @@
        "18": {
         "n": 1,
         "score": 1.24,
-        "median": 1610
+        "median": 1611
        }
       },
       "best_hour": 18,
@@ -868,23 +868,23 @@
      "ac_dd91": {
       "flag": "KR",
       "posts": 3,
-      "avg": 370,
-      "max": 979,
+      "avg": 379,
+      "max": 1008,
       "hours": {
        "10": {
         "n": 1,
-        "score": 0.25,
+        "score": 0.24,
         "median": 92
        },
        "17": {
         "n": 1,
-        "score": 0.11,
+        "score": 0.1,
         "median": 39
        },
        "18": {
         "n": 1,
         "score": 2.65,
-        "median": 979
+        "median": 1008
        }
       },
       "best_hour": 18,
@@ -1464,7 +1464,7 @@
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
      "posts": 34,
      "views": 167395,
-     "likes": 1848,
+     "likes": 1849,
      "median": 174,
      "score": 1.44,
      "sample": 20,
@@ -1572,7 +1572,7 @@
      "화": {
       "n": 40,
       "score": 0.26,
-      "median": 255
+      "median": 256
      },
      "수": {
       "n": 34,
@@ -1923,7 +1923,7 @@
      "nur.aina_04": {
       "flag": "MY",
       "posts": 3,
-      "avg": 935,
+      "avg": 936,
       "max": 2184,
       "hours": {
        "19": {
@@ -3397,7 +3397,7 @@
    "text": "Laboratuvarda bu siteyi kullandığım için hocamdan bir kez azar işitmiştim.\n\nPDF'i açıyorsun, orijinal düzeni koruyarak olduğu yerde çeviriyor;\nkarmaşık bir figüre tıklıyorsun, anında açıklıyor;\nmakalenin yeniliğini, yöntemini ve sonuçlarını kendiliğinden işaretliyor.\nO zaman şöyle demişti: \"makale dediğin kendin okunur……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@elif.dm_05/post/DdUJPTCIMih",
-   "views": 235,
+   "views": 236,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -3670,7 +3670,7 @@
    "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\nbuka PDF, langsung diterjemahin di tempat dengan layout aslinya;\nklik figure yang ribet, langsung dijelasin saat itu juga;\nbahkan poin baru, metode, sama kesimpulan papernya ditandain otomatis.\nwaktu itu profesor bilang: \"paper itu ya dibaca sendiri……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdTuNk3m1qo",
-   "views": 719,
+   "views": 721,
    "likes": 15,
    "replies": 1,
    "reposts": 1,
@@ -3839,9 +3839,9 @@
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdTqXRBkS0h",
    "views": 1770,
-   "likes": 30,
+   "likes": 31,
    "replies": 1,
-   "reposts": 6,
+   "reposts": 7,
    "quotes": 0,
    "shares": 12,
    "round": null,
@@ -4027,7 +4027,7 @@
    "text": "Aplikasi kalendar yang sync semua iPhone, iPad, MacBook dan Watch?\nGuna yang ini je",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nur.aina_04/post/DdTjvC0kZGu",
-   "views": 283,
+   "views": 285,
    "likes": 3,
    "replies": 1,
    "reposts": 2,
@@ -4090,8 +4090,8 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdTjgq7lTuL",
-   "views": 1610,
-   "likes": 19,
+   "views": 1611,
+   "likes": 20,
    "replies": 1,
    "reposts": 2,
    "quotes": 0,
@@ -4405,7 +4405,7 @@
    "text": "연구실에서 이 사이트 쓰다가 교수님한테 한 소리 들은 적 있음.\n\nLaTeX 쓰면 거의 바로 컴파일 결과가 보이고\nOverleaf보다 컴파일이 훨씬 빠르고\n계속 고쳐도 매번 기다리다 지칠 일이 없음.\n교수님이 그때 그랬음. \"논문은 그냥 Overleaf로 쓰면 되지 않냐……\"\n\n근데 지금은 교수님이 직접 쓰고 계심.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ac_dd91/post/DdTVx7xiJPm",
-   "views": 979,
+   "views": 1008,
    "likes": 6,
    "replies": 2,
    "reposts": 2,
@@ -6169,7 +6169,7 @@
    "text": "Alat yang wajib punya buat siapa pun\nyang kesal sama lambatnya Overleaf",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@rara.2k_/post/DdK-f8YAHMO",
-   "views": 11394,
+   "views": 11395,
    "likes": 212,
    "replies": 27,
    "reposts": 21,
@@ -8522,7 +8522,7 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
    "views": 13722,
-   "likes": 192,
+   "likes": 193,
    "replies": 12,
    "reposts": 15,
    "quotes": 1,
@@ -9991,7 +9991,7 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 429318,
+   "views": 429319,
    "likes": 4240,
    "replies": 88,
    "reposts": 697,
