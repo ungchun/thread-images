@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T09:59:58.588227+00:00",
+ "generated": "2026-09-16T01:10:13.072704+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -12,75 +12,85 @@
     "hour": {
      "10": {
       "n": 9,
-      "score": 0.19,
+      "score": 0.24,
       "median": 9
      },
      "11": {
       "n": 46,
-      "score": 0.78,
+      "score": 0.74,
       "median": 176
      },
      "12": {
       "n": 2,
-      "score": 1.0,
-      "median": 719
+      "score": 1.49,
+      "median": 738
      },
      "18": {
-      "n": 3,
-      "score": 0.04,
-      "median": 3
+      "n": 4,
+      "score": 0.06,
+      "median": 4
      },
      "19": {
-      "n": 2,
-      "score": 0.97,
-      "median": 1965
+      "n": 21,
+      "score": 0.08,
+      "median": 103
      },
      "20": {
       "n": 2,
-      "score": 0.4,
+      "score": 0.34,
       "median": 99
      }
     },
     "wday": {
+     "화": {
+      "n": 20,
+      "score": 0.07,
+      "median": 73
+     },
      "목": {
       "n": 20,
-      "score": 0.13,
+      "score": 0.17,
       "median": 12
      },
      "토": {
       "n": 23,
-      "score": 0.19,
+      "score": 0.26,
       "median": 36
      },
      "일": {
       "n": 21,
-      "score": 1.99,
-      "median": 1155
+      "score": 2.79,
+      "median": 1163
      }
     },
     "media": {
+     "IMAGE": {
+      "n": 63,
+      "score": 0.17,
+      "median": 36
+     },
      "VIDEO": {
       "n": 21,
-      "score": 1.99,
-      "median": 1155
-     },
-     "IMAGE": {
-      "n": 43,
-      "score": 0.17,
-      "median": 22
+      "score": 2.79,
+      "median": 1163
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
-      "posts": 2,
-      "avg": 34075,
-      "max": 64210,
+      "posts": 3,
+      "avg": 23347,
+      "max": 64275,
       "hours": {
        "11": {
         "n": 2,
-        "score": 1.0,
-        "median": 34075
+        "score": 1.46,
+        "median": 34136
+       },
+       "19": {
+        "n": 1,
+        "score": 0.08,
+        "median": 1770
        }
       },
       "best_hour": 11,
@@ -90,14 +100,19 @@
      },
      "rara.2k_": {
       "flag": "ID",
-      "posts": 3,
-      "avg": 21904,
-      "max": 57616,
+      "posts": 4,
+      "avg": 16648,
+      "max": 57765,
       "hours": {
        "11": {
         "n": 3,
-        "score": 0.19,
-        "median": 4266
+        "score": 0.26,
+        "median": 4275
+       },
+       "19": {
+        "n": 1,
+        "score": 0.04,
+        "median": 719
        }
       },
       "best_hour": 11,
@@ -107,14 +122,19 @@
      },
      "kai_.03b": {
       "flag": "PH",
-      "posts": 3,
-      "avg": 19815,
-      "max": 58852,
+      "posts": 4,
+      "avg": 14918,
+      "max": 58948,
       "hours": {
        "11": {
         "n": 3,
-        "score": 0.02,
+        "score": 0.03,
         "median": 377
+       },
+       "19": {
+        "n": 1,
+        "score": 0.01,
+        "median": 131
        }
       },
       "best_hour": 11,
@@ -124,14 +144,19 @@
      },
      "elif.dm_05": {
       "flag": "TR",
-      "posts": 2,
-      "avg": 15267,
-      "max": 30461,
+      "posts": 3,
+      "avg": 10264,
+      "max": 30481,
       "hours": {
        "11": {
         "n": 2,
-        "score": 1.0,
-        "median": 15267
+        "score": 1.49,
+        "median": 15278
+       },
+       "19": {
+        "n": 1,
+        "score": 0.02,
+        "median": 235
        }
       },
       "best_hour": 11,
@@ -141,14 +166,19 @@
      },
      "pim.pm_02": {
       "flag": "TH",
-      "posts": 3,
-      "avg": 11966,
-      "max": 34643,
+      "posts": 4,
+      "avg": 9042,
+      "max": 34728,
       "hours": {
        "11": {
         "n": 3,
-        "score": 0.07,
-        "median": 837
+        "score": 0.09,
+        "median": 845
+       },
+       "19": {
+        "n": 1,
+        "score": 0.02,
+        "median": 177
        }
       },
       "best_hour": 11,
@@ -158,14 +188,19 @@
      },
      "nur.aina_04": {
       "flag": "MY",
-      "posts": 2,
-      "avg": 7769,
-      "max": 15445,
+      "posts": 3,
+      "avg": 5244,
+      "max": 15530,
       "hours": {
        "11": {
         "n": 2,
-        "score": 1.0,
-        "median": 7769
+        "score": 1.49,
+        "median": 7812
+       },
+       "19": {
+        "n": 1,
+        "score": 0.02,
+        "median": 109
        }
       },
       "best_hour": 11,
@@ -175,9 +210,9 @@
      },
      "03ines.mar_": {
       "flag": "PT",
-      "posts": 3,
-      "avg": 3936,
-      "max": 11789,
+      "posts": 4,
+      "avg": 2959,
+      "max": 11808,
       "hours": {
        "10": {
         "n": 1,
@@ -186,8 +221,13 @@
        },
        "11": {
         "n": 2,
-        "score": 1.5,
-        "median": 5900
+        "score": 2.0,
+        "median": 5910
+       },
+       "19": {
+        "n": 1,
+        "score": 0.0,
+        "median": 7
        }
       },
       "best_hour": 11,
@@ -197,9 +237,9 @@
      },
      "lune__v34": {
       "flag": "IT",
-      "posts": 3,
-      "avg": 3004,
-      "max": 8985,
+      "posts": 4,
+      "avg": 2264,
+      "max": 8989,
       "hours": {
        "10": {
         "n": 1,
@@ -208,8 +248,13 @@
        },
        "11": {
         "n": 2,
-        "score": 1.5,
-        "median": 4501
+        "score": 1.99,
+        "median": 4503
+       },
+       "19": {
+        "n": 1,
+        "score": 0.02,
+        "median": 40
        }
       },
       "best_hour": 11,
@@ -219,40 +264,45 @@
      },
      "ac_dd91": {
       "flag": "KR",
-      "posts": 3,
-      "avg": 2083,
-      "max": 3925,
+      "posts": 4,
+      "avg": 1881,
+      "max": 3932,
       "hours": {
        "11": {
         "n": 2,
-        "score": 0.56,
-        "median": 1163
+        "score": 0.62,
+        "median": 1169
        },
        "19": {
-        "n": 1,
-        "score": 1.88,
-        "median": 3925
+        "n": 2,
+        "score": 1.38,
+        "median": 2594
        }
       },
       "best_hour": 19,
-      "best_n": 1,
+      "best_n": 2,
       "state": "active",
       "note": "한국. 저녁 18시가 오전보다 나음"
      },
      "elle__jm": {
       "flag": "AU",
-      "posts": 3,
-      "avg": 955,
-      "max": 2817,
+      "posts": 4,
+      "avg": 723,
+      "max": 2820,
       "hours": {
        "11": {
         "n": 2,
-        "score": 1.49,
-        "median": 1426
+        "score": 1.97,
+        "median": 1428
+       },
+       "19": {
+        "n": 1,
+        "score": 0.03,
+        "median": 25
        },
        "20": {
         "n": 1,
-        "score": 0.01,
+        "score": 0.02,
         "median": 13
        }
       },
@@ -263,14 +313,19 @@
      },
      "shu.lin_03": {
       "flag": "TW",
-      "posts": 2,
-      "avg": 719,
-      "max": 1434,
+      "posts": 3,
+      "avg": 494,
+      "max": 1472,
       "hours": {
        "12": {
         "n": 2,
-        "score": 1.0,
-        "median": 719
+        "score": 1.49,
+        "median": 738
+       },
+       "19": {
+        "n": 1,
+        "score": 0.01,
+        "median": 5
        }
       },
       "best_hour": 12,
@@ -280,19 +335,24 @@
      },
      "o2ndot": {
       "flag": "FR",
-      "posts": 3,
-      "avg": 426,
-      "max": 1150,
+      "posts": 4,
+      "avg": 325,
+      "max": 1153,
       "hours": {
        "10": {
         "n": 1,
-        "score": 0.19,
+        "score": 0.24,
         "median": 79
        },
        "11": {
         "n": 2,
-        "score": 1.41,
-        "median": 599
+        "score": 1.84,
+        "median": 601
+       },
+       "18": {
+        "n": 1,
+        "score": 0.07,
+        "median": 22
        }
       },
       "best_hour": 11,
@@ -302,41 +362,51 @@
      },
      "aoi.02_": {
       "flag": "JP",
-      "posts": 2,
-      "avg": 239,
-      "max": 293,
+      "posts": 3,
+      "avg": 278,
+      "max": 355,
       "hours": {
        "11": {
         "n": 1,
-        "score": 1.22,
+        "score": 1.05,
         "median": 293
+       },
+       "19": {
+        "n": 1,
+        "score": 1.28,
+        "median": 355
        },
        "20": {
         "n": 1,
-        "score": 0.78,
+        "score": 0.67,
         "median": 186
        }
       },
-      "best_hour": 11,
+      "best_hour": 19,
       "best_n": 1,
       "state": "active",
       "note": "일본. 9/3에 32,241"
      },
      "beatriz03._a": {
       "flag": "ES",
-      "posts": 3,
-      "avg": 236,
+      "posts": 4,
+      "avg": 185,
       "max": 685,
       "hours": {
        "10": {
         "n": 1,
-        "score": 0.09,
+        "score": 0.12,
         "median": 22
        },
        "11": {
         "n": 2,
-        "score": 1.45,
+        "score": 1.85,
         "median": 343
+       },
+       "19": {
+        "n": 1,
+        "score": 0.17,
+        "median": 32
        }
       },
       "best_hour": 11,
@@ -347,8 +417,8 @@
      "ivy_.k09": {
       "flag": "US",
       "posts": 3,
-      "avg": 143,
-      "max": 401,
+      "avg": 144,
+      "max": 404,
       "hours": {
        "10": {
         "n": 1,
@@ -358,7 +428,7 @@
        "11": {
         "n": 2,
         "score": 1.48,
-        "median": 213
+        "median": 214
        }
       },
       "best_hour": 11,
@@ -368,14 +438,14 @@
      },
      "mint.le_06": {
       "flag": "VN",
-      "posts": 4,
-      "avg": 120,
-      "max": 465,
+      "posts": 5,
+      "avg": 117,
+      "max": 466,
       "hours": {
        "11": {
         "n": 2,
-        "score": 1.97,
-        "median": 236
+        "score": 2.03,
+        "median": 237
        },
        "18": {
         "n": 1,
@@ -383,15 +453,42 @@
         "median": 1
        },
        "19": {
-        "n": 1,
-        "score": 0.05,
-        "median": 6
+        "n": 2,
+        "score": 0.47,
+        "median": 55
        }
       },
       "best_hour": 11,
       "best_n": 2,
       "state": "active",
       "note": ""
+     },
+     "dot2day_": {
+      "flag": "DE",
+      "posts": 4,
+      "avg": 74,
+      "max": 156,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 1.02,
+        "median": 76
+       },
+       "11": {
+        "n": 2,
+        "score": 0.44,
+        "median": 33
+       },
+       "19": {
+        "n": 1,
+        "score": 2.09,
+        "median": 156
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "active",
+      "note": "독일. 오전 8시 성과가 특히 나빴다"
      },
      "bia__rp03": {
       "flag": "BR",
@@ -415,27 +512,22 @@
       "state": "active",
       "note": ""
      },
-     "dot2day_": {
-      "flag": "DE",
-      "posts": 3,
-      "avg": 47,
-      "max": 76,
+     "haru._81a": {
+      "flag": "JP",
+      "posts": 1,
+      "avg": 43,
+      "max": 43,
       "hours": {
-       "10": {
+       "19": {
         "n": 1,
-        "score": 1.61,
-        "median": 76
-       },
-       "11": {
-        "n": 2,
-        "score": 0.7,
-        "median": 33
+        "score": 1.0,
+        "median": 43
        }
       },
-      "best_hour": 10,
+      "best_hour": 19,
       "best_n": 1,
       "state": "active",
-      "note": "독일. 오전 8시 성과가 특히 나빴다"
+      "note": ""
      },
      "mae.dw_04": {
       "flag": "US",
@@ -461,19 +553,24 @@
      },
      "nia._055": {
       "flag": "IN",
-      "posts": 3,
-      "avg": 4,
+      "posts": 4,
+      "avg": 3,
       "max": 7,
       "hours": {
        "10": {
         "n": 1,
-        "score": 0.75,
+        "score": 0.86,
         "median": 3
        },
        "11": {
         "n": 2,
-        "score": 1.12,
+        "score": 1.29,
         "median": 4
+       },
+       "19": {
+        "n": 1,
+        "score": 0.57,
+        "median": 2
        }
       },
       "best_hour": 11,
@@ -483,19 +580,24 @@
      },
      "riya._m08": {
       "flag": "IN",
-      "posts": 2,
-      "avg": 3,
+      "posts": 3,
+      "avg": 2,
       "max": 5,
       "hours": {
        "11": {
         "n": 1,
-        "score": 0.33,
+        "score": 0.43,
         "median": 1
        },
        "18": {
         "n": 1,
-        "score": 1.67,
+        "score": 2.14,
         "median": 5
+       },
+       "19": {
+        "n": 1,
+        "score": 0.43,
+        "median": 1
        }
       },
       "best_hour": 18,
@@ -505,18 +607,23 @@
      },
      "lari.s_07": {
       "flag": "BR",
-      "posts": 3,
+      "posts": 4,
       "avg": 2,
       "max": 3,
       "hours": {
        "10": {
         "n": 1,
-        "score": 1.29,
+        "score": 1.33,
         "median": 3
        },
        "11": {
         "n": 2,
-        "score": 0.86,
+        "score": 0.89,
+        "median": 2
+       },
+       "19": {
+        "n": 1,
+        "score": 0.89,
         "median": 2
        }
       },
@@ -572,65 +679,70 @@
     "hour": {
      "9": {
       "n": 7,
-      "score": 0.84,
+      "score": 0.36,
       "median": 9
      },
      "10": {
       "n": 29,
-      "score": 1.0,
+      "score": 0.94,
       "median": 16
      },
      "11": {
       "n": 1,
-      "score": 1.0,
+      "score": 0.06,
       "median": 6
      },
      "17": {
-      "n": 5,
-      "score": 0.67,
-      "median": 13
+      "n": 6,
+      "score": 0.49,
+      "median": 14
      },
      "18": {
-      "n": 2,
-      "score": 0.71,
-      "median": 69
+      "n": 20,
+      "score": 1.12,
+      "median": 40
      }
     },
     "wday": {
      "화": {
-      "n": 2,
-      "score": 0.71,
-      "median": 69
+      "n": 21,
+      "score": 1.12,
+      "median": 41
      },
      "목": {
       "n": 17,
-      "score": 0.84,
+      "score": 0.47,
       "median": 15
      },
      "토": {
       "n": 25,
-      "score": 1.0,
+      "score": 0.89,
       "median": 9
      }
     },
     "media": {
      "VIDEO": {
-      "n": 44,
-      "score": 1.0,
-      "median": 14
+      "n": 63,
+      "score": 0.94,
+      "median": 16
      }
     },
     "accounts": {
      "rara.2k_": {
       "flag": "ID",
-      "posts": 2,
-      "avg": 5725,
-      "max": 11386,
+      "posts": 3,
+      "avg": 4001,
+      "max": 11394,
       "hours": {
        "10": {
         "n": 2,
-        "score": 1.0,
-        "median": 5725
+        "score": 1.43,
+        "median": 5729
+       },
+       "18": {
+        "n": 1,
+        "score": 0.14,
+        "median": 544
        }
       },
       "best_hour": 10,
@@ -641,13 +753,13 @@
      "elle__jm": {
       "flag": "AU",
       "posts": 3,
-      "avg": 2822,
-      "max": 8427,
+      "avg": 2829,
+      "max": 8437,
       "hours": {
        "10": {
         "n": 1,
-        "score": 2.99,
-        "median": 8427
+        "score": 2.98,
+        "median": 8437
        },
        "17": {
         "n": 1,
@@ -657,7 +769,7 @@
        "18": {
         "n": 1,
         "score": 0.01,
-        "median": 27
+        "median": 39
        }
       },
       "best_hour": 10,
@@ -667,43 +779,75 @@
      },
      "ashgrey._02": {
       "flag": "VN",
-      "posts": 2,
-      "avg": 1121,
-      "max": 1717,
+      "posts": 3,
+      "avg": 1298,
+      "max": 1753,
       "hours": {
        "10": {
         "n": 2,
-        "score": 1.0,
-        "median": 1121
+        "score": 0.88,
+        "median": 1143
+       },
+       "18": {
+        "n": 1,
+        "score": 1.24,
+        "median": 1610
        }
       },
-      "best_hour": 10,
-      "best_n": 2,
+      "best_hour": 18,
+      "best_n": 1,
       "state": "active",
       "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"
      },
      "pim.pm_02": {
       "flag": "TH",
-      "posts": 2,
-      "avg": 1006,
-      "max": 1127,
+      "posts": 3,
+      "avg": 1071,
+      "max": 1197,
       "hours": {
        "10": {
         "n": 2,
-        "score": 1.0,
-        "median": 1006
+        "score": 0.94,
+        "median": 1008
+       },
+       "18": {
+        "n": 1,
+        "score": 1.12,
+        "median": 1197
        }
       },
-      "best_hour": 10,
-      "best_n": 2,
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "elif.dm_05": {
+      "flag": "TR",
+      "posts": 2,
+      "avg": 698,
+      "max": 772,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 0.89,
+        "median": 624
+       },
+       "18": {
+        "n": 1,
+        "score": 1.11,
+        "median": 772
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
       "state": "active",
       "note": ""
      },
      "ivy_.k09": {
       "flag": "US",
       "posts": 2,
-      "avg": 660,
-      "max": 1302,
+      "avg": 661,
+      "max": 1303,
       "hours": {
        "9": {
         "n": 1,
@@ -713,46 +857,7 @@
        "10": {
         "n": 1,
         "score": 1.97,
-        "median": 1302
-       }
-      },
-      "best_hour": 10,
-      "best_n": 1,
-      "state": "active",
-      "note": ""
-     },
-     "elif.dm_05": {
-      "flag": "TR",
-      "posts": 1,
-      "avg": 622,
-      "max": 622,
-      "hours": {
-       "10": {
-        "n": 1,
-        "score": 1.0,
-        "median": 622
-       }
-      },
-      "best_hour": 10,
-      "best_n": 1,
-      "state": "active",
-      "note": ""
-     },
-     "mae.dw_04": {
-      "flag": "US",
-      "posts": 2,
-      "avg": 163,
-      "max": 311,
-      "hours": {
-       "9": {
-        "n": 1,
-        "score": 0.09,
-        "median": 15
-       },
-       "10": {
-        "n": 1,
-        "score": 1.91,
-        "median": 311
+        "median": 1303
        }
       },
       "best_hour": 10,
@@ -763,23 +868,23 @@
      "ac_dd91": {
       "flag": "KR",
       "posts": 3,
-      "avg": 79,
-      "max": 112,
+      "avg": 370,
+      "max": 979,
       "hours": {
        "10": {
         "n": 1,
-        "score": 1.13,
-        "median": 89
+        "score": 0.25,
+        "median": 92
        },
        "17": {
         "n": 1,
-        "score": 0.46,
-        "median": 36
+        "score": 0.11,
+        "median": 39
        },
        "18": {
         "n": 1,
-        "score": 1.42,
-        "median": 112
+        "score": 2.65,
+        "median": 979
        }
       },
       "best_hour": 18,
@@ -787,38 +892,124 @@
       "state": "active",
       "note": "한국. 저녁 18시가 오전보다 나음"
      },
-     "nur.aina_04": {
-      "flag": "MY",
-      "posts": 1,
-      "avg": 54,
-      "max": 54,
+     "mae.dw_04": {
+      "flag": "US",
+      "posts": 3,
+      "avg": 109,
+      "max": 311,
       "hours": {
+       "9": {
+        "n": 1,
+        "score": 0.14,
+        "median": 15
+       },
        "10": {
         "n": 1,
-        "score": 1.0,
-        "median": 54
+        "score": 2.85,
+        "median": 311
+       },
+       "18": {
+        "n": 1,
+        "score": 0.01,
+        "median": 1
        }
       },
       "best_hour": 10,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "shu.lin_03": {
+      "flag": "TW",
+      "posts": 2,
+      "avg": 95,
+      "max": 185,
+      "hours": {
+       "11": {
+        "n": 1,
+        "score": 0.06,
+        "median": 6
+       },
+       "18": {
+        "n": 1,
+        "score": 1.94,
+        "median": 185
+       }
+      },
+      "best_hour": 18,
       "best_n": 1,
       "state": "active",
       "note": ""
      },
      "mint.le_06": {
       "flag": "VN",
-      "posts": 2,
-      "avg": 22,
-      "max": 30,
+      "posts": 3,
+      "avg": 76,
+      "max": 184,
       "hours": {
        "10": {
         "n": 1,
-        "score": 1.33,
+        "score": 0.39,
         "median": 30
        },
        "17": {
         "n": 1,
-        "score": 0.67,
-        "median": 15
+        "score": 0.21,
+        "median": 16
+       },
+       "18": {
+        "n": 1,
+        "score": 2.4,
+        "median": 184
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "dot2day_": {
+      "flag": "DE",
+      "posts": 3,
+      "avg": 53,
+      "max": 145,
+      "hours": {
+       "9": {
+        "n": 1,
+        "score": 0.17,
+        "median": 9
+       },
+       "10": {
+        "n": 1,
+        "score": 0.09,
+        "median": 5
+       },
+       "18": {
+        "n": 1,
+        "score": 2.74,
+        "median": 145
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "독일. 오전 8시 성과가 특히 나빴다"
+     },
+     "nur.aina_04": {
+      "flag": "MY",
+      "posts": 2,
+      "avg": 52,
+      "max": 54,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 1.04,
+        "median": 54
+       },
+       "18": {
+        "n": 1,
+        "score": 0.96,
+        "median": 50
        }
       },
       "best_hour": 10,
@@ -826,22 +1017,103 @@
       "state": "active",
       "note": ""
      },
+     "o2ndot": {
+      "flag": "FR",
+      "posts": 3,
+      "avg": 35,
+      "max": 81,
+      "hours": {
+       "9": {
+        "n": 1,
+        "score": 0.56,
+        "median": 20
+       },
+       "10": {
+        "n": 1,
+        "score": 0.17,
+        "median": 6
+       },
+       "17": {
+        "n": 1,
+        "score": 2.27,
+        "median": 81
+       }
+      },
+      "best_hour": 17,
+      "best_n": 1,
+      "state": "active",
+      "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
+     },
      "kai_.03b": {
       "flag": "PH",
-      "posts": 2,
-      "avg": 15,
-      "max": 22,
+      "posts": 3,
+      "avg": 21,
+      "max": 35,
       "hours": {
        "10": {
         "n": 2,
-        "score": 1.0,
+        "score": 0.69,
         "median": 15
+       },
+       "18": {
+        "n": 1,
+        "score": 1.62,
+        "median": 35
        }
       },
-      "best_hour": 10,
-      "best_n": 2,
+      "best_hour": 18,
+      "best_n": 1,
       "state": "active",
       "note": "필리핀. 9/7 합류, 표본 부족"
+     },
+     "beatriz03._a": {
+      "flag": "ES",
+      "posts": 3,
+      "avg": 19,
+      "max": 41,
+      "hours": {
+       "10": {
+        "n": 2,
+        "score": 0.42,
+        "median": 8
+       },
+       "18": {
+        "n": 1,
+        "score": 2.16,
+        "median": 41
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "스페인. 앞 계정 영구정지 후 재개설"
+     },
+     "03ines.mar_": {
+      "flag": "PT",
+      "posts": 3,
+      "avg": 16,
+      "max": 35,
+      "hours": {
+       "9": {
+        "n": 1,
+        "score": 0.36,
+        "median": 6
+       },
+       "10": {
+        "n": 1,
+        "score": 0.54,
+        "median": 9
+       },
+       "18": {
+        "n": 1,
+        "score": 2.1,
+        "median": 35
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "포르투갈"
      },
      "aoi.02_": {
       "flag": "JP",
@@ -865,155 +1137,70 @@
       "state": "active",
       "note": "일본. 9/3에 32,241"
      },
-     "o2ndot": {
-      "flag": "FR",
-      "posts": 2,
-      "avg": 13,
-      "max": 20,
-      "hours": {
-       "9": {
-        "n": 1,
-        "score": 1.54,
-        "median": 20
-       },
-       "10": {
-        "n": 1,
-        "score": 0.46,
-        "median": 6
-       }
-      },
-      "best_hour": 9,
-      "best_n": 1,
-      "state": "active",
-      "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
-     },
      "lune__v34": {
       "flag": "IT",
-      "posts": 2,
-      "avg": 9,
-      "max": 11,
+      "posts": 3,
+      "avg": 11,
+      "max": 16,
       "hours": {
        "9": {
         "n": 1,
-        "score": 0.84,
+        "score": 0.69,
         "median": 8
        },
        "10": {
         "n": 1,
-        "score": 1.16,
+        "score": 0.94,
         "median": 11
+       },
+       "18": {
+        "n": 1,
+        "score": 1.37,
+        "median": 16
        }
       },
-      "best_hour": 10,
+      "best_hour": 18,
       "best_n": 1,
       "state": "active",
       "note": "이탈리아. 9/7 합류, 표본 부족"
      },
-     "beatriz03._a": {
-      "flag": "ES",
-      "posts": 2,
-      "avg": 8,
-      "max": 9,
-      "hours": {
-       "10": {
-        "n": 2,
-        "score": 1.0,
-        "median": 8
-       }
-      },
-      "best_hour": 10,
-      "best_n": 2,
-      "state": "active",
-      "note": "스페인. 앞 계정 영구정지 후 재개설"
-     },
-     "03ines.mar_": {
-      "flag": "PT",
-      "posts": 2,
-      "avg": 7,
-      "max": 9,
-      "hours": {
-       "9": {
-        "n": 1,
-        "score": 0.8,
-        "median": 6
-       },
-       "10": {
-        "n": 1,
-        "score": 1.2,
-        "median": 9
-       }
-      },
-      "best_hour": 10,
-      "best_n": 1,
-      "state": "active",
-      "note": "포르투갈"
-     },
-     "dot2day_": {
-      "flag": "DE",
-      "posts": 2,
-      "avg": 7,
-      "max": 9,
-      "hours": {
-       "9": {
-        "n": 1,
-        "score": 1.29,
-        "median": 9
-       },
-       "10": {
-        "n": 1,
-        "score": 0.71,
-        "median": 5
-       }
-      },
-      "best_hour": 9,
-      "best_n": 1,
-      "state": "active",
-      "note": "독일. 오전 8시 성과가 특히 나빴다"
-     },
      "lari.s_07": {
       "flag": "BR",
-      "posts": 1,
-      "avg": 7,
+      "posts": 2,
+      "avg": 6,
       "max": 7,
       "hours": {
        "10": {
         "n": 1,
-        "score": 1.0,
+        "score": 1.08,
         "median": 7
-       }
-      },
-      "best_hour": 10,
-      "best_n": 1,
-      "state": "active",
-      "note": ""
-     },
-     "shu.lin_03": {
-      "flag": "TW",
-      "posts": 1,
-      "avg": 6,
-      "max": 6,
-      "hours": {
-       "11": {
+       },
+       "18": {
         "n": 1,
-        "score": 1.0,
+        "score": 0.92,
         "median": 6
        }
       },
-      "best_hour": 11,
+      "best_hour": 10,
       "best_n": 1,
       "state": "active",
       "note": ""
      },
      "bia__rp03": {
       "flag": "BR",
-      "posts": 1,
-      "avg": 5,
+      "posts": 2,
+      "avg": 4,
       "max": 5,
       "hours": {
        "10": {
         "n": 1,
-        "score": 1.0,
+        "score": 1.11,
         "median": 5
+       },
+       "18": {
+        "n": 1,
+        "score": 0.89,
+        "median": 4
        }
       },
       "best_hour": 10,
@@ -1023,19 +1210,24 @@
      },
      "riya._m08": {
       "flag": "IN",
-      "posts": 2,
-      "avg": 4,
+      "posts": 3,
+      "avg": 3,
       "max": 7,
       "hours": {
        "10": {
         "n": 1,
-        "score": 0.25,
+        "score": 0.27,
         "median": 1
        },
        "17": {
         "n": 1,
-        "score": 1.75,
+        "score": 1.91,
         "median": 7
+       },
+       "18": {
+        "n": 1,
+        "score": 0.82,
+        "median": 3
        }
       },
       "best_hour": 17,
@@ -1045,19 +1237,24 @@
      },
      "nia._055": {
       "flag": "IN",
-      "posts": 2,
+      "posts": 3,
       "avg": 2,
       "max": 4,
       "hours": {
        "9": {
         "n": 1,
-        "score": 1.6,
+        "score": 1.5,
         "median": 4
        },
        "10": {
         "n": 1,
-        "score": 0.4,
+        "score": 0.38,
         "median": 1
+       },
+       "18": {
+        "n": 1,
+        "score": 1.12,
+        "median": 3
        }
       },
       "best_hour": 9,
@@ -1084,7 +1281,7 @@
      },
      "haru._81a": {
       "flag": "JP",
-      "posts": 1,
+      "posts": 2,
       "avg": 1,
       "max": 1,
       "hours": {
@@ -1092,9 +1289,14 @@
         "n": 1,
         "score": 1.0,
         "median": 1
+       },
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 1
        }
       },
-      "best_hour": 10,
+      "best_hour": 18,
       "best_n": 1,
       "state": "active",
       "note": ""
@@ -1164,10 +1366,10 @@
      "kr": "야 아이폰 쓰는 사람들아, 이거 진짜 써봐 한 번만. 쓰기 시작하면 까먹는 게 없어진다 진짜로",
      "note": "반말 구어체로 전환.",
      "posts": 7,
-     "views": 40053,
+     "views": 40055,
      "likes": 65,
      "median": 739,
-     "score": 6.5,
+     "score": 6.75,
      "sample": 7,
      "er_score": 1.65,
      "er_sample": 5,
@@ -1180,7 +1382,7 @@
      "kr": "아이폰에 이런 앱이 있었는데 나만 여태 모르고 있었네… 잠금화면에 그림도 그리고 스티커도 붙여서 내 맘대로 꾸며놨어",
      "note": "1인칭 발견담 + 꾸미기 소구. 영상+이미지2 캐러셀 첫 도입.",
      "posts": 14,
-     "views": 11543,
+     "views": 11556,
      "likes": 40,
      "median": 284,
      "score": 0.63,
@@ -1196,7 +1398,7 @@
      "kr": "야 아이폰 쓰는 사람들아, 이거 진짜 써봐 한 번만. 쓰기 시작하면 까먹는 게 없어진다 진짜로",
      "note": "03 재사용. 04(발견담)와 같은 계정 비교용.",
      "posts": 13,
-     "views": 1935,
+     "views": 1937,
      "likes": 4,
      "median": 31,
      "score": 0.15,
@@ -1212,7 +1414,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
      "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
      "posts": 26,
-     "views": 56358,
+     "views": 56399,
      "likes": 542,
      "median": 383,
      "score": 1.0,
@@ -1261,8 +1463,8 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
      "posts": 34,
-     "views": 166575,
-     "likes": 1843,
+     "views": 167395,
+     "likes": 1848,
      "median": 174,
      "score": 1.44,
      "sample": 20,
@@ -1292,17 +1494,17 @@
     "hour": {
      "3": {
       "n": 1,
-      "score": 1.56,
+      "score": 1.66,
       "median": 646
      },
      "4": {
       "n": 1,
-      "score": 2.74,
+      "score": 2.88,
       "median": 1513
      },
      "5": {
       "n": 1,
-      "score": 0.38,
+      "score": 0.4,
       "median": 517
      },
      "8": {
@@ -1317,13 +1519,13 @@
      },
      "10": {
       "n": 3,
-      "score": 1.66,
-      "median": 26
+      "score": 1.64,
+      "median": 27
      },
      "11": {
       "n": 6,
       "score": 0.3,
-      "median": 83
+      "median": 86
      },
      "12": {
       "n": 1,
@@ -1332,49 +1534,49 @@
      },
      "16": {
       "n": 1,
-      "score": 1.27,
+      "score": 1.35,
       "median": 526
      },
      "17": {
       "n": 2,
       "score": 0.02,
-      "median": 1847
+      "median": 1854
      },
      "18": {
       "n": 11,
-      "score": 0.46,
-      "median": 417
+      "score": 0.48,
+      "median": 418
      },
      "19": {
-      "n": 81,
-      "score": 0.59,
-      "median": 346
+      "n": 93,
+      "score": 0.48,
+      "median": 304
      },
      "20": {
-      "n": 20,
-      "score": 0.15,
-      "median": 5
+      "n": 27,
+      "score": 0.2,
+      "median": 76
      },
      "21": {
-      "n": 4,
-      "score": 0.7,
-      "median": 1029
+      "n": 7,
+      "score": 0.34,
+      "median": 315
      }
     },
     "wday": {
      "월": {
       "n": 14,
-      "score": 0.72,
-      "median": 661
+      "score": 0.77,
+      "median": 662
      },
      "화": {
-      "n": 18,
-      "score": 0.39,
-      "median": 418
+      "n": 40,
+      "score": 0.26,
+      "median": 255
      },
      "수": {
       "n": 34,
-      "score": 1.8,
+      "score": 2.0,
       "median": 865
      },
      "목": {
@@ -1384,58 +1586,58 @@
      },
      "금": {
       "n": 34,
-      "score": 0.2,
+      "score": 0.23,
       "median": 219
      },
      "토": {
       "n": 43,
-      "score": 0.19,
-      "median": 260
+      "score": 0.22,
+      "median": 263
      },
      "일": {
       "n": 21,
-      "score": 0.14,
-      "median": 112
+      "score": 0.16,
+      "median": 113
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 182,
+      "n": 204,
       "score": 0.33,
-      "median": 269
+      "median": 260
      },
      "IMAGE": {
       "n": 1,
       "score": 0.02,
-      "median": 3646
+      "median": 3660
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
-      "posts": 10,
-      "avg": 166895,
-      "max": 1193414,
+      "posts": 11,
+      "avg": 151851,
+      "max": 1193909,
       "hours": {
        "8": {
         "n": 6,
-        "score": 0.08,
-        "median": 13153
+        "score": 0.09,
+        "median": 13250
        },
        "11": {
         "n": 1,
         "score": 0.0,
-        "median": 116
+        "median": 122
        },
        "17": {
         "n": 1,
         "score": 0.02,
-        "median": 3646
+        "median": 3660
        },
        "19": {
-        "n": 2,
+        "n": 3,
         "score": 0.01,
-        "median": 2197
+        "median": 1575
        }
       },
       "best_hour": 8,
@@ -1445,14 +1647,19 @@
      },
      "pim.pm_02": {
       "flag": "TH",
-      "posts": 3,
-      "avg": 39245,
-      "max": 90140,
+      "posts": 4,
+      "avg": 29739,
+      "max": 90352,
       "hours": {
        "19": {
         "n": 3,
-        "score": 0.46,
-        "median": 18225
+        "score": 0.61,
+        "median": 18233
+       },
+       "20": {
+        "n": 1,
+        "score": 0.03,
+        "median": 984
        }
       },
       "best_hour": 19,
@@ -1462,30 +1669,30 @@
      },
      "rara.2k_": {
       "flag": "ID",
-      "posts": 6,
-      "avg": 7375,
-      "max": 28998,
+      "posts": 7,
+      "avg": 6509,
+      "max": 29002,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.04,
+        "score": 0.05,
         "median": 329
        },
        "19": {
-        "n": 4,
-        "score": 0.97,
-        "median": 7158
+        "n": 5,
+        "score": 0.15,
+        "median": 974
        }
       },
       "best_hour": 19,
-      "best_n": 4,
+      "best_n": 5,
       "state": "active",
       "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
      },
      "inkling01": {
       "flag": "TW",
       "posts": 14,
-      "avg": 4513,
+      "avg": 4514,
       "max": 51164,
       "hours": {
        "8": {
@@ -1526,23 +1733,23 @@
      },
      "aoi.02_": {
       "flag": "JP",
-      "posts": 14,
-      "avg": 4026,
+      "posts": 15,
+      "avg": 3765,
       "max": 32251,
       "hours": {
        "8": {
         "n": 5,
-        "score": 0.25,
+        "score": 0.27,
         "median": 1006
        },
        "9": {
         "n": 2,
-        "score": 4.03,
+        "score": 4.31,
         "median": 16239
        },
        "11": {
         "n": 1,
-        "score": 0.67,
+        "score": 0.71,
         "median": 2689
        },
        "12": {
@@ -1551,9 +1758,9 @@
         "median": 30
        },
        "19": {
-        "n": 5,
-        "score": 0.33,
-        "median": 1310
+        "n": 6,
+        "score": 0.34,
+        "median": 1279
        }
       },
       "best_hour": 9,
@@ -1563,19 +1770,24 @@
      },
      "lune__v34": {
       "flag": "IT",
-      "posts": 8,
-      "avg": 2927,
+      "posts": 9,
+      "avg": 2641,
       "max": 9912,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.03,
+        "score": 0.04,
         "median": 100
        },
        "19": {
         "n": 6,
-        "score": 0.97,
+        "score": 1.08,
         "median": 2854
+       },
+       "20": {
+        "n": 1,
+        "score": 0.13,
+        "median": 350
        }
       },
       "best_hour": 19,
@@ -1585,19 +1797,24 @@
      },
      "kai_.03b": {
       "flag": "PH",
-      "posts": 7,
-      "avg": 2264,
-      "max": 14363,
+      "posts": 8,
+      "avg": 2015,
+      "max": 14403,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.12,
+        "score": 0.14,
         "median": 277
        },
        "19": {
         "n": 5,
+        "score": 0.13,
+        "median": 258
+       },
+       "20": {
+        "n": 1,
         "score": 0.11,
-        "median": 257
+        "median": 227
        }
       },
       "best_hour": 8,
@@ -1607,72 +1824,72 @@
      },
      "shu.lin_03": {
       "flag": "TW",
-      "posts": 2,
-      "avg": 1926,
-      "max": 3375,
+      "posts": 3,
+      "avg": 1398,
+      "max": 3402,
       "hours": {
        "21": {
-        "n": 2,
-        "score": 1.0,
-        "median": 1926
+        "n": 3,
+        "score": 0.34,
+        "median": 478
        }
       },
       "best_hour": 21,
-      "best_n": 2,
+      "best_n": 3,
       "state": "active",
       "note": ""
      },
      "haru._81a": {
       "flag": "JP",
-      "posts": 1,
-      "avg": 1835,
-      "max": 1835,
+      "posts": 2,
+      "avg": 1329,
+      "max": 1839,
       "hours": {
        "20": {
-        "n": 1,
+        "n": 2,
         "score": 1.0,
-        "median": 1835
+        "median": 1329
        }
       },
       "best_hour": 20,
-      "best_n": 1,
+      "best_n": 2,
       "state": "active",
       "note": ""
      },
      "o2ndot": {
       "flag": "FR",
-      "posts": 16,
-      "avg": 1378,
+      "posts": 17,
+      "avg": 1307,
       "max": 6621,
       "hours": {
        "5": {
         "n": 1,
-        "score": 0.38,
+        "score": 0.4,
         "median": 517
        },
        "8": {
         "n": 4,
-        "score": 0.21,
+        "score": 0.22,
         "median": 292
        },
        "9": {
         "n": 1,
-        "score": 0.32,
+        "score": 0.33,
         "median": 436
        },
        "18": {
         "n": 1,
-        "score": 0.46,
+        "score": 0.48,
         "median": 632
        },
        "19": {
-        "n": 8,
-        "score": 0.59,
-        "median": 808
+        "n": 9,
+        "score": 0.61,
+        "median": 803
        },
        "21": {
         "n": 1,
-        "score": 1.15,
+        "score": 1.21,
         "median": 1581
        }
       },
@@ -1683,101 +1900,101 @@
      },
      "beatriz03._a": {
       "flag": "ES",
-      "posts": 8,
-      "avg": 1264,
-      "max": 6163,
+      "posts": 9,
+      "avg": 1143,
+      "max": 6166,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.14,
+        "score": 0.16,
         "median": 183
        },
        "19": {
-        "n": 6,
-        "score": 0.47,
-        "median": 591
+        "n": 7,
+        "score": 0.4,
+        "median": 458
        }
       },
       "best_hour": 19,
-      "best_n": 6,
+      "best_n": 7,
       "state": "active",
       "note": "스페인. 앞 계정 영구정지 후 재개설"
      },
      "nur.aina_04": {
       "flag": "MY",
-      "posts": 2,
-      "avg": 1261,
-      "max": 2182,
+      "posts": 3,
+      "avg": 935,
+      "max": 2184,
       "hours": {
        "19": {
-        "n": 2,
-        "score": 1.0,
-        "median": 1261
+        "n": 3,
+        "score": 0.36,
+        "median": 340
        }
       },
       "best_hour": 19,
-      "best_n": 2,
+      "best_n": 3,
       "state": "active",
       "note": ""
      },
      "ac_dd91": {
       "flag": "KR",
-      "posts": 12,
-      "avg": 649,
-      "max": 1893,
+      "posts": 13,
+      "avg": 606,
+      "max": 1896,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.54,
-        "median": 353
+        "score": 0.58,
+        "median": 354
        },
        "10": {
         "n": 1,
-        "score": 0.17,
-        "median": 112
+        "score": 0.19,
+        "median": 113
        },
        "18": {
         "n": 7,
-        "score": 0.87,
-        "median": 563
+        "score": 0.93,
+        "median": 564
        },
        "19": {
-        "n": 2,
-        "score": 0.99,
-        "median": 643
+        "n": 3,
+        "score": 0.95,
+        "median": 579
        }
       },
       "best_hour": 19,
-      "best_n": 2,
+      "best_n": 3,
       "state": "active",
       "note": "한국. 저녁 18시가 오전보다 나음"
      },
      "elif.dm_05": {
       "flag": "TR",
-      "posts": 2,
-      "avg": 635,
-      "max": 1010,
+      "posts": 3,
+      "avg": 547,
+      "max": 1017,
       "hours": {
        "19": {
-        "n": 2,
-        "score": 1.0,
-        "median": 635
+        "n": 3,
+        "score": 0.66,
+        "median": 361
        }
       },
       "best_hour": 19,
-      "best_n": 2,
+      "best_n": 3,
       "state": "active",
       "note": ""
      },
      "dot2day_": {
       "flag": "DE",
-      "posts": 15,
-      "avg": 552,
+      "posts": 16,
+      "avg": 525,
       "max": 4357,
       "hours": {
        "4": {
         "n": 1,
-        "score": 2.74,
+        "score": 2.88,
         "median": 1513
        },
        "8": {
@@ -1796,9 +2013,9 @@
         "median": 3
        },
        "19": {
-        "n": 4,
-        "score": 0.9,
-        "median": 499
+        "n": 5,
+        "score": 0.22,
+        "median": 115
        },
        "20": {
         "n": 1,
@@ -1811,53 +2028,31 @@
       "state": "active",
       "note": "독일. 오전 8시 성과가 특히 나빴다"
      },
-     "mint.le_06": {
-      "flag": "VN",
-      "posts": 4,
-      "avg": 453,
-      "max": 1699,
-      "hours": {
-       "8": {
-        "n": 2,
-        "score": 1.89,
-        "median": 857
-       },
-       "20": {
-        "n": 2,
-        "score": 0.11,
-        "median": 50
-       }
-      },
-      "best_hour": 8,
-      "best_n": 2,
-      "state": "active",
-      "note": ""
-     },
      "03ines.mar_": {
       "flag": "PT",
-      "posts": 13,
-      "avg": 415,
+      "posts": 14,
+      "avg": 389,
       "max": 1064,
       "hours": {
        "3": {
         "n": 1,
-        "score": 1.56,
+        "score": 1.66,
         "median": 646
        },
        "8": {
         "n": 4,
-        "score": 1.08,
+        "score": 1.15,
         "median": 448
        },
        "16": {
         "n": 1,
-        "score": 1.27,
+        "score": 1.35,
         "median": 526
        },
        "19": {
-        "n": 7,
-        "score": 0.79,
-        "median": 328
+        "n": 8,
+        "score": 0.52,
+        "median": 203
        }
       },
       "best_hour": 3,
@@ -1865,26 +2060,48 @@
       "state": "active",
       "note": "포르투갈"
      },
+     "mint.le_06": {
+      "flag": "VN",
+      "posts": 5,
+      "avg": 388,
+      "max": 1699,
+      "hours": {
+       "8": {
+        "n": 2,
+        "score": 2.21,
+        "median": 857
+       },
+       "20": {
+        "n": 3,
+        "score": 0.2,
+        "median": 76
+       }
+      },
+      "best_hour": 8,
+      "best_n": 2,
+      "state": "active",
+      "note": ""
+     },
      "elle__jm": {
       "flag": "AU",
-      "posts": 7,
-      "avg": 293,
+      "posts": 8,
+      "avg": 299,
       "max": 611,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.96,
+        "score": 0.94,
         "median": 282
        },
        "19": {
         "n": 1,
-        "score": 1.18,
-        "median": 346
+        "score": 1.16,
+        "median": 347
        },
        "20": {
-        "n": 3,
-        "score": 1.04,
-        "median": 304
+        "n": 4,
+        "score": 1.08,
+        "median": 322
        },
        "21": {
         "n": 1,
@@ -1916,14 +2133,19 @@
      },
      "lari.s_07": {
       "flag": "BR",
-      "posts": 4,
-      "avg": 191,
+      "posts": 5,
+      "avg": 156,
       "max": 455,
       "hours": {
        "19": {
         "n": 4,
-        "score": 0.8,
+        "score": 0.97,
         "median": 152
+       },
+       "21": {
+        "n": 1,
+        "score": 0.12,
+        "median": 19
        }
       },
       "best_hour": 19,
@@ -1933,14 +2155,19 @@
      },
      "mae.dw_04": {
       "flag": "US",
-      "posts": 4,
-      "avg": 103,
+      "posts": 5,
+      "avg": 101,
       "max": 183,
       "hours": {
        "19": {
         "n": 4,
-        "score": 1.1,
+        "score": 1.12,
         "median": 113
+       },
+       "20": {
+        "n": 1,
+        "score": 0.93,
+        "median": 94
        }
       },
       "best_hour": 19,
@@ -1950,30 +2177,30 @@
      },
      "bia__rp03": {
       "flag": "BR",
-      "posts": 3,
-      "avg": 72,
+      "posts": 4,
+      "avg": 60,
       "max": 137,
       "hours": {
        "19": {
-        "n": 1,
-        "score": 1.05,
-        "median": 76
+        "n": 2,
+        "score": 0.82,
+        "median": 49
        },
        "20": {
         "n": 2,
-        "score": 0.98,
+        "score": 1.18,
         "median": 71
        }
       },
-      "best_hour": 19,
-      "best_n": 1,
+      "best_hour": 20,
+      "best_n": 2,
       "state": "active",
       "note": ""
      },
      "nia._055": {
       "flag": "IN",
-      "posts": 8,
-      "avg": 58,
+      "posts": 9,
+      "avg": 57,
       "max": 201,
       "hours": {
        "8": {
@@ -1982,31 +2209,36 @@
         "median": 10
        },
        "19": {
-        "n": 5,
-        "score": 1.14,
-        "median": 67
+        "n": 6,
+        "score": 1.01,
+        "median": 58
        }
       },
       "best_hour": 19,
-      "best_n": 5,
+      "best_n": 6,
       "state": "active",
       "note": "인도. 9/7 합류, 표본 부족"
      },
      "riya._m08": {
       "flag": "IN",
-      "posts": 3,
-      "avg": 25,
+      "posts": 4,
+      "avg": 21,
       "max": 72,
       "hours": {
        "19": {
         "n": 1,
-        "score": 2.88,
+        "score": 3.39,
         "median": 72
        },
        "20": {
         "n": 2,
-        "score": 0.06,
+        "score": 0.07,
         "median": 1
+       },
+       "21": {
+        "n": 1,
+        "score": 0.47,
+        "median": 10
        }
       },
       "best_hour": 19,
@@ -2027,17 +2259,17 @@
        },
        "10": {
         "n": 2,
-        "score": 1.69,
-        "median": 25
+        "score": 1.71,
+        "median": 26
        },
        "11": {
         "n": 2,
-        "score": 0.93,
+        "score": 0.92,
         "median": 14
        },
        "19": {
         "n": 1,
-        "score": 3.58,
+        "score": 3.55,
         "median": 54
        },
        "20": {
@@ -2623,1032 +2855,6 @@
  "window_days": 30,
  "scheduled": [
   {
-   "account": "ac_dd91",
-   "project": "moonlight",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "utc": "2026-09-15T10:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "연구실에서 이 사이트 쓰다가 교수님한테 한 소리 들은 적 있음.\n\n||PDF 열면 원본 레이아웃 그대로 바로 번역되고\n복잡한 Figure는 클릭 한 번이면 바로 해석해주고\n논문의 창의점·연구 방법·결론까지 자동으로 표시해줌.||\n교수님이 그때 그랬음. \"논문은 직접 읽어야지……\"\n---\nmedia: -\n근데 지금은 교수님이 직접 쓰고 계심.\n\n논문 읽다 열받은 대학원생이 그냥 직접 만들어버린 사이트임.\n지금 무료로 쓸 수 있음\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_kr.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "aoi.02_",
-   "project": "moonlight",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-09-15T10:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "研究室でこのサイトを使ってたら、教授に一度叱られたことがある。\n\n||PDFを開くと、元のレイアウトのままその場で翻訳されて\n複雑なFigureはクリック一つですぐ解説してくれて\n論文の新規性・手法・結論まで自動でマークしてくれる。||\n教授はその時「論文は自分で読むものだろ……」と言ってた。\n---\nmedia: -\nで、今はその教授本人が使ってる。\n\n論文を読みすぎてキレた院生が、自分で作ってしまったサイト。\n今は無料で使えるよ\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_jp.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "daily03dew",
-   "project": "cortex",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T10:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n||寫完 LaTeX，幾乎馬上就能看到編譯結果；\n編譯速度比 Overleaf 快很多；\n就算一直修改，也不用每次都等到不耐煩。||\n教授當時還說：「寫論文用 Overleaf 不就好了嗎……」\n\n結果現在，教授自己也在用。\n---\nmedia: -\n這是一個有人被 Overleaf 慢到生氣，乾脆自己做出來的網站。\n現在可以免費使用喔!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "elle__jm",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-09-15T10:00:00+00:00",
-   "local": "2026-09-15 20:00",
-   "text": "A calendar app that syncs across iPhone, iPad, MacBook and Watch?\nJust use this one",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "kai_.03b",
-   "project": "cortex",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-09-15T10:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\n||Sulat ka ng LaTeX, halos instant lumalabas yung compiled result;\nmas mabilis mag-compile kaysa Overleaf;\nkahit paulit-ulit kang mag-edit, hindi ka na maghihintay hanggang mainis.||\nSabi pa ng prof noon, \"Overleaf na lang gamitin mo sa thesis……\"\n\nNgayon, siya na mismo yung gumagamit.\n---\nmedia: -\nGinawa 'to ng taong nainis sa bagal ng Overleaf kaya gumawa na lang ng sarili niya.\nLibre pa gamitin ngayon!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "ac_dd91",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "utc": "2026-09-15T10:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "아이폰, 아이패드, 맥북, 워치 전부 다 연동되는 일정관리 앱?\n그냥 이거 써",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "aoi.02_",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-09-15T10:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "iPhone、iPad、MacBook、Watch 全部連携できるスケジュールアプリ？\nもうこれ使っとけ",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "haru._81a",
-   "project": "moonlight",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-09-15T10:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "研究室でこのサイトを使ってたら、教授に一度叱られたことがある。\n\n||PDFを開くと、元のレイアウトのままその場で翻訳されて\n複雑なFigureはクリック一つですぐ解説してくれて\n論文の新規性・手法・結論まで自動でマークしてくれる。||\n教授はその時「論文は自分で読むものだろ……」と言ってた。\n---\nmedia: -\nで、今はその教授本人が使ってる。\n\n論文を読みすぎてキレた院生が、自分で作ってしまったサイト。\n今は無料で使えるよ\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_jp.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "inkling01",
-   "project": "cortex",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T10:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n||寫完 LaTeX，幾乎馬上就能看到編譯結果；\n編譯速度比 Overleaf 快很多；\n就算一直修改，也不用每次都等到不耐煩。||\n教授當時還說：「寫論文用 Overleaf 不就好了嗎……」\n\n結果現在，教授自己也在用。\n---\nmedia: -\n這是一個有人被 Overleaf 慢到生氣，乾脆自己做出來的網站。\n現在可以免費使用喔!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "nur.aina_04",
-   "project": "cortex",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-09-15T10:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "Saya pernah kena tegur profesor sebab guna laman ini di makmal.\n\n||Tulis LaTeX, hasil kompilasinya nampak hampir serta-merta;\nkompilasinya jauh lebih laju daripada Overleaf;\nnak edit berkali-kali pun tak payah tunggu sampai menyampah.||\nMasa tu profesor cakap: \"tulis kertas guna Overleaf je lah……\"\n\nSekarang profesor tu sendiri yang guna.\n---\nmedia: -\nLaman ini dibuat oleh orang yang dah terlalu menyampah dengan Overleaf yang lambat.\nSekarang boleh guna percuma!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "shu.lin_03",
-   "project": "cortex",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T10:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n||寫完 LaTeX，幾乎馬上就能看到編譯結果；\n編譯速度比 Overleaf 快很多；\n就算一直修改，也不用每次都等到不耐煩。||\n教授當時還說：「寫論文用 Overleaf 不就好了嗎……」\n\n結果現在，教授自己也在用。\n---\nmedia: -\n這是一個有人被 Overleaf 慢到生氣，乾脆自己做出來的網站。\n現在可以免費使用喔!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "ashgrey._02",
-   "project": "cortex",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-09-15T11:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\n||Viết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.||\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.\n---\nmedia: -\nTrang này do một người bực vì Overleaf chậm quá nên tự làm luôn.\nHiện tại dùng miễn phí nhé!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "daily03dew",
-   "project": "moonlight",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T11:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n||打開 PDF，就能保留原始版面直接翻譯；\n點一下複雜的 Figure，就會馬上幫你解讀；\n還會自動標示論文的創新點、研究方法和結論。||\n教授當時還說：「論文就是要自己讀啊……」\n---\nmedia: -\n結果現在，教授自己也在用。\n\n這是一個研究生讀論文讀到生氣，乾脆自己做出來的網站。\n現在可以免費使用喔～\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "kai_.03b",
-   "project": "moonlight",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-09-15T11:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\n||Buksan mo lang yung PDF, translated agad na buo pa yung original layout;\nclick mo yung komplikadong figure, ipapaliwanag agad;\nauto pa niyang minamarkahan yung novelty, methods, at conclusion ng paper.||\nSabi pa ng prof noon, \"dapat ikaw mismo nagbabasa ng paper……\"\n---\nmedia: -\nNgayon, siya na mismo yung gumagamit.\n\nGinawa 'to ng grad student na nainis sa kakabasa ng papers kaya gumawa na lang ng sarili niya.\nLibre pa gamitin ngayon\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "nur.aina_04",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-09-15T11:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Aplikasi kalendar yang sync semua iPhone, iPad, MacBook dan Watch?\nGuna yang ini je",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "pim.pm_02",
-   "project": "cortex",
-   "country": "TH",
-   "flag": "🇹🇭",
-   "utc": "2026-09-15T11:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\n||เขียน LaTeX เสร็จก็เห็นผล compile แทบจะทันที\ncompile เร็วกว่า Overleaf มาก\nแก้กี่รอบก็ไม่ต้องนั่งรอจนหงุดหงิด||\nตอนนั้นอาจารย์ยังบอกว่า \"เขียนเปเปอร์ก็ใช้ Overleaf ไปสิ……\"\n\nตอนนี้อาจารย์เองก็ใช้อยู่ครับ\n---\nmedia: -\nเว็บนี้คนทำเขาหงุดหงิดที่ Overleaf ช้า เลยทำขึ้นมาเองครับ\nตอนนี้ใช้ฟรีได้เลย!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "daily03dew",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T11:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "iPhone、iPad、MacBook、Watch 全部都能同步的行事曆 App？\n用這個就對了",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "haru._81a",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-09-15T11:30:00+00:00",
-   "local": "2026-09-15 20:30",
-   "text": "iPhone、iPad、MacBook、Watch 全部連携できるスケジュールアプリ？\nもうこれ使っとけ",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "inkling01",
-   "project": "moonlight",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T11:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n||打開 PDF，就能保留原始版面直接翻譯；\n點一下複雜的 Figure，就會馬上幫你解讀；\n還會自動標示論文的創新點、研究方法和結論。||\n教授當時還說：「論文就是要自己讀啊……」\n---\nmedia: -\n結果現在，教授自己也在用。\n\n這是一個研究生讀論文讀到生氣，乾脆自己做出來的網站。\n現在可以免費使用喔～\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "mint.le_06",
-   "project": "cortex",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-09-15T11:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\n||Viết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.||\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.\n---\nmedia: -\nTrang này do một người bực vì Overleaf chậm quá nên tự làm luôn.\nHiện tại dùng miễn phí nhé!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "nur.aina_04",
-   "project": "moonlight",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-09-15T11:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "Saya pernah kena tegur profesor sebab guna laman ini di makmal.\n\n||Buka PDF, terus diterjemah di tempatnya dengan susun atur asal;\nklik figure yang rumit, terus dijelaskan saat itu juga;\nmalah kebaharuan, kaedah dan kesimpulan kertas itu ditanda sendiri.||\nMasa tu profesor cakap: \"kertas kajian ni kena baca sendirilah……\"\n---\nmedia: -\nSekarang profesor tu sendiri yang guna.\n\nLaman ini dibuat oleh pelajar sarjana yang dah terlalu bosan membaca kertas kajian.\nSekarang boleh guna percuma\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "rara.2k_",
-   "project": "cortex",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-09-15T11:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\n||nulis LaTeX, hasil compile-nya langsung kelihatan hampir seketika;\ncompile-nya jauh lebih cepat dari Overleaf;\nmau diedit berkali-kali juga gak perlu nunggu sampai kesel.||\nwaktu itu profesor bilang: \"nulis paper ya pakai Overleaf aja lah……\"\n\nsekarang malah profesornya sendiri yang pakai.\n---\nmedia: -\nsitus ini dibikin sama orang yang saking keselnya Overleaf lambat, akhirnya bikin sendiri.\nsekarang bisa dipakai gratis!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "shu.lin_03",
-   "project": "moonlight",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T11:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n||打開 PDF，就能保留原始版面直接翻譯；\n點一下複雜的 Figure，就會馬上幫你解讀；\n還會自動標示論文的創新點、研究方法和結論。||\n教授當時還說：「論文就是要自己讀啊……」\n---\nmedia: -\n結果現在，教授自己也在用。\n\n這是一個研究生讀論文讀到生氣，乾脆自己做出來的網站。\n現在可以免費使用喔～\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "ashgrey._02",
-   "project": "moonlight",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-09-15T12:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\n||Mở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.||\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"\n---\nmedia: -\nGiờ thì chính giáo sư cũng đang dùng.\n\nTrang này do một bạn nghiên cứu sinh đọc paper đến phát bực nên tự làm luôn.\nHiện tại dùng miễn phí nhé\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "kai_.03b",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-09-15T12:00:00+00:00",
-   "local": "2026-09-15 20:00",
-   "text": "Calendar app na naka-sync sa iPhone, iPad, MacBook at Watch?\nIto na lang gamitin mo",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "pim.pm_02",
-   "project": "moonlight",
-   "country": "TH",
-   "flag": "🇹🇭",
-   "utc": "2026-09-15T12:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\n||เปิด PDF ก็แปลให้ทันทีโดยคงเลย์เอาต์เดิมไว้\nกด Figure ที่ซับซ้อนก็อธิบายให้ตรงนั้นเลย\nแถมยังไฮไลต์จุดใหม่ วิธีวิจัย และข้อสรุปของเปเปอร์ให้อัตโนมัติ||\nตอนนั้นอาจารย์ยังบอกว่า \"เปเปอร์ต้องอ่านเองสิ……\"\n---\nmedia: -\nตอนนี้อาจารย์เองก็ใช้อยู่ครับ\n\nเว็บนี้นักศึกษาป.โทที่อ่านเปเปอร์จนหงุดหงิด เลยทำขึ้นมาเองครับ\nตอนนี้ใช้ฟรีได้เลย\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "rara.2k_",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-09-15T12:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Aplikasi kalender yang nyambung ke iPhone, iPad, MacBook, sama Watch?\nPakai ini aja",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "ashgrey._02",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-09-15T12:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "App lịch đồng bộ hết iPhone, iPad, MacBook với Watch?\nCứ dùng cái này đi",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "inkling01",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T12:30:00+00:00",
-   "local": "2026-09-15 20:30",
-   "text": "iPhone、iPad、MacBook、Watch 全部都能同步的行事曆 App？\n用這個就對了",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "mint.le_06",
-   "project": "moonlight",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-09-15T12:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\n||Mở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.||\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"\n---\nmedia: -\nGiờ thì chính giáo sư cũng đang dùng.\n\nTrang này do một bạn nghiên cứu sinh đọc paper đến phát bực nên tự làm luôn.\nHiện tại dùng miễn phí nhé\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "nia._055",
-   "project": "cortex",
-   "country": "IN",
-   "flag": "🇮🇳",
-   "utc": "2026-09-15T12:30:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\n||LaTeX likho aur compile result almost turant dikh jata hai;\nOverleaf se kaafi zyada fast compile hota hai;\nbaar baar edit karo, har baar wait karke pareshan hone ki zaroorat nahi.||\ntab professor bole the, \"paper ke liye Overleaf hi use kar lo na……\"\n\nab professor khud use kar rahe hain.\n---\nmedia: -\nye site ek aise bande ne banayi jo Overleaf ki slowness se itna tang aa gaya ki khud bana di.\nabhi free mein use kar sakte ho!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "rara.2k_",
-   "project": "moonlight",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-09-15T12:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\n||buka PDF, langsung diterjemahin di tempat dengan layout aslinya;\nklik figure yang ribet, langsung dijelasin saat itu juga;\nbahkan poin baru, metode, sama kesimpulan papernya ditandain otomatis.||\nwaktu itu profesor bilang: \"paper itu ya dibaca sendiri……\"\n---\nmedia: -\nsekarang malah profesornya sendiri yang pakai.\n\nsitus ini dibikin sama mahasiswa S2 yang saking keselnya baca paper, akhirnya bikin sendiri.\nsekarang bisa dipakai gratis\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "pim.pm_02",
-   "project": "trace",
-   "country": "TH",
-   "flag": "🇹🇭",
-   "utc": "2026-09-15T13:00:00+00:00",
-   "local": "2026-09-15 20:00",
-   "text": "แอปจัดการตารางที่ซิงก์ครบทั้ง iPhone, iPad, MacBook และ Watch?\nใช้ตัวนี้เลยครับ",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "riya._m08",
-   "project": "cortex",
-   "country": "IN",
-   "flag": "🇮🇳",
-   "utc": "2026-09-15T13:00:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\n||LaTeX likho aur compile result almost turant dikh jata hai;\nOverleaf se kaafi zyada fast compile hota hai;\nbaar baar edit karo, har baar wait karke pareshan hone ki zaroorat nahi.||\ntab professor bole the, \"paper ke liye Overleaf hi use kar lo na……\"\n\nab professor khud use kar rahe hain.\n---\nmedia: -\nye site ek aise bande ne banayi jo Overleaf ki slowness se itna tang aa gaya ki khud bana di.\nabhi free mein use kar sakte ho!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "mint.le_06",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-09-15T13:30:00+00:00",
-   "local": "2026-09-15 20:30",
-   "text": "App lịch đồng bộ hết iPhone, iPad, MacBook với Watch?\nCứ dùng cái này đi",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "nia._055",
-   "project": "moonlight",
-   "country": "IN",
-   "flag": "🇮🇳",
-   "utc": "2026-09-15T13:30:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\n||PDF kholo aur original layout ke saath wahin translate ho jata hai;\ncomplicated figure pe click karo, turant samjha deta hai;\npaper ka novelty, method aur conclusion bhi apne aap mark kar deta hai.||\ntab professor bole the, \"paper toh khud padhna chahiye……\"\n---\nmedia: -\nab professor khud use kar rahe hain.\n\nye site ek grad student ne banayi jo paper padh padh ke itna tang aa gaya ki khud bana di.\nabhi free mein use kar sakte ho\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "shu.lin_03",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-09-15T13:30:00+00:00",
-   "local": "2026-09-15 21:30",
-   "text": "iPhone、iPad、MacBook、Watch 全部都能同步的行事曆 App？\n用這個就對了",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "nia._055",
-   "project": "trace",
-   "country": "IN",
-   "flag": "🇮🇳",
-   "utc": "2026-09-15T14:00:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "iPhone, iPad, MacBook और Watch सब पर sync होने वाला कैलेंडर ऐप?\nबस यही यूज़ करो",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "riya._m08",
-   "project": "moonlight",
-   "country": "IN",
-   "flag": "🇮🇳",
-   "utc": "2026-09-15T14:00:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\n||PDF kholo aur original layout ke saath wahin translate ho jata hai;\ncomplicated figure pe click karo, turant samjha deta hai;\npaper ka novelty, method aur conclusion bhi apne aap mark kar deta hai.||\ntab professor bole the, \"paper toh khud padhna chahiye……\"\n---\nmedia: -\nab professor khud use kar rahe hain.\n\nye site ek grad student ne banayi jo paper padh padh ke itna tang aa gaya ki khud bana di.\nabhi free mein use kar sakte ho\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "elif.dm_05",
-   "project": "cortex",
-   "country": "TR",
-   "flag": "🇹🇷",
-   "utc": "2026-09-15T15:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "Laboratuvarda bu siteyi kullandığım için hocamdan bir kez azar işitmiştim.\n\n||LaTeX yazıyorsun, derlenmiş sonuç neredeyse anında görünüyor;\nOverleaf'ten çok daha hızlı derliyor;\nistediğin kadar düzelt, her seferinde sinir olana kadar beklemiyorsun.||\nO zaman şöyle demişti: \"herkes gibi Overleaf kullansana……\"\n\nŞimdi kendisi kullanıyor.\n---\nmedia: -\nOverleaf'in yavaşlığından bıkan biri sonunda bu siteyi kendi yapmış.\nŞu anda ücretsiz kullanılabiliyor!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "riya._m08",
-   "project": "trace",
-   "country": "IN",
-   "flag": "🇮🇳",
-   "utc": "2026-09-15T15:00:00+00:00",
-   "local": "2026-09-15 20:30",
-   "text": "iPhone, iPad, MacBook और Watch सब पर sync होने वाला कैलेंडर ऐप?\nबस यही यूज़ करो",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "o2ndot",
-   "project": "cortex",
-   "country": "FR",
-   "flag": "🇫🇷",
-   "utc": "2026-09-15T15:30:00+00:00",
-   "local": "2026-09-15 17:30",
-   "text": "Je me suis déjà fait engueuler par mon directeur de thèse pour avoir utilisé ce site au labo.\n\n||On écrit le LaTeX et le résultat compilé apparaît presque instantanément ;\nça compile bien plus vite qu'Overleaf ;\non peut modifier autant qu'on veut sans attendre à chaque fois jusqu'à s'énerver.||\nÀ l'époque il m'a dit : « pourquoi tu n'utilises pas Overleaf comme tout le monde…… »\n\nMaintenant, c'est lui qui l'utilise.\n---\nmedia: -\nQuelqu'un en a eu tellement marre de la lenteur d'Overleaf qu'il a fait ce site lui-même.\nC'est gratuit pour le moment !\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "beatriz03._a",
-   "project": "cortex",
-   "country": "ES",
-   "flag": "🇪🇸",
-   "utc": "2026-09-15T16:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\n||Escribes el LaTeX y el resultado compilado aparece casi al instante;\ncompila muchísimo más rápido que Overleaf;\npuedes editar todo lo que quieras sin esperar cada vez hasta desesperarte.||\nEntonces me dijo: \"¿por qué no usas Overleaf como todo el mundo……?\"\n\nAhora la usa él mismo.\n---\nmedia: -\nAlguien se hartó tanto de lo lento que es Overleaf que hizo esta web por su cuenta.\n¡Ahora se puede usar gratis!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "dot2day_",
-   "project": "cortex",
-   "country": "DE",
-   "flag": "🇩🇪",
-   "utc": "2026-09-15T16:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "Ich hab mal Ärger von meinem Professor bekommen, weil ich im Labor diese Seite benutzt habe.\n\n||LaTeX schreiben und das kompilierte Ergebnis ist fast sofort da;\nkompiliert deutlich schneller als Overleaf;\nbeliebig oft ändern, ohne jedes Mal zu warten, bis man genervt ist.||\nDamals meinte er: „Nimm doch einfach Overleaf wie alle anderen……\"\n\nInzwischen benutzt er es selbst.\n---\nmedia: -\nJemand war so genervt davon, wie langsam Overleaf ist, dass er diese Seite einfach selbst gebaut hat.\nIst gerade kostenlos nutzbar!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "elif.dm_05",
-   "project": "moonlight",
-   "country": "TR",
-   "flag": "🇹🇷",
-   "utc": "2026-09-15T16:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Laboratuvarda bu siteyi kullandığım için hocamdan bir kez azar işitmiştim.\n\n||PDF'i açıyorsun, orijinal düzeni koruyarak olduğu yerde çeviriyor;\nkarmaşık bir figüre tıklıyorsun, anında açıklıyor;\nmakalenin yeniliğini, yöntemini ve sonuçlarını kendiliğinden işaretliyor.||\nO zaman şöyle demişti: \"makale dediğin kendin okunur……\"\n---\nmedia: -\nŞimdi kendisi kullanıyor.\n\nMakale okumaktan bıkan bir yüksek lisans öğrencisi sonunda bu siteyi kendi yapmış.\nŞu anda ücretsiz kullanılabiliyor\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "elif.dm_05",
-   "project": "trace",
-   "country": "TR",
-   "flag": "🇹🇷",
-   "utc": "2026-09-15T16:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "iPhone, iPad, MacBook ve Watch hepsiyle senkron olan bir takvim uygulaması?\nDirekt bunu kullan",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "lune__v34",
-   "project": "cortex",
-   "country": "IT",
-   "flag": "🇮🇹",
-   "utc": "2026-09-15T16:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\n||Scrivi il LaTeX e il risultato compilato compare quasi subito;\ncompila molto più veloce di Overleaf;\npuoi modificare quante volte vuoi senza aspettare ogni volta fino a innervosirti.||\nAll'epoca mi disse: \"perché non usi Overleaf come tutti……\"\n\nAdesso lo usa lui stesso.\n---\nmedia: -\nQualcuno si è stufato talmente della lentezza di Overleaf che si è fatto questo sito da solo.\nOra si può usare gratis!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "o2ndot",
-   "project": "moonlight",
-   "country": "FR",
-   "flag": "🇫🇷",
-   "utc": "2026-09-15T16:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "Je me suis déjà fait engueuler par mon directeur de thèse pour avoir utilisé ce site au labo.\n\n||On ouvre le PDF et il traduit sur place en gardant la mise en page d'origine ;\non clique sur une figure compliquée et il l'explique tout de suite ;\net il marque tout seul la nouveauté, la méthode et les conclusions de l'article.||\nÀ l'époque il m'a dit : « un article, ça se lit soi-même…… »\n---\nmedia: -\nMaintenant, c'est lui qui l'utilise.\n\nUn doctorant en a eu tellement marre de lire des articles qu'il a fait ce site lui-même.\nC'est gratuit pour le moment\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_fr.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "03ines.mar_",
-   "project": "cortex",
-   "country": "PT",
-   "flag": "🇵🇹",
-   "utc": "2026-09-15T17:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "Uma vez levei um raspanete do meu orientador por usar este site no laboratório.\n\n||Escreves o LaTeX e o resultado compilado aparece quase de imediato;\ncompila muito mais depressa que o Overleaf;\npodes editar as vezes que quiseres sem ficar à espera até perder a paciência.||\nNa altura ele disse: \"porque não usas o Overleaf como toda a gente……\"\n\nAgora é ele próprio que o usa.\n---\nmedia: -\nAlguém ficou tão farto da lentidão do Overleaf que fez este site sozinho.\nAgora dá para usar de graça!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "beatriz03._a",
-   "project": "moonlight",
-   "country": "ES",
-   "flag": "🇪🇸",
-   "utc": "2026-09-15T17:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\n||Abres el PDF y lo traduce ahí mismo manteniendo el diseño original;\nhaces clic en una figura complicada y te la explica al momento;\ny además marca sola la novedad, el método y las conclusiones del paper.||\nEntonces me dijo: \"los papers hay que leerlos uno mismo……\"\n---\nmedia: -\nAhora la usa él mismo.\n\nUn estudiante de posgrado se hartó tanto de leer papers que hizo esta web por su cuenta.\nAhora se puede usar gratis\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "dot2day_",
-   "project": "moonlight",
-   "country": "DE",
-   "flag": "🇩🇪",
-   "utc": "2026-09-15T17:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Ich hab mal Ärger von meinem Professor bekommen, weil ich im Labor diese Seite benutzt habe.\n\n||PDF öffnen und es wird direkt übersetzt, Original-Layout bleibt erhalten;\nauf eine komplizierte Figure klicken und sie wird sofort erklärt;\nund Neuheit, Methode und Fazit des Papers werden automatisch markiert.||\nDamals meinte er: „Paper liest man selbst……\"\n---\nmedia: -\nInzwischen benutzt er es selbst.\n\nEin Doktorand war vom Paperlesen so genervt, dass er diese Seite einfach selbst gebaut hat.\nIst gerade kostenlos nutzbar\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_de.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "o2ndot",
-   "project": "trace",
-   "country": "FR",
-   "flag": "🇫🇷",
-   "utc": "2026-09-15T17:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Une app agenda qui se synchronise sur iPhone, iPad, MacBook et Watch ?\nPrends juste celle-là",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "beatriz03._a",
-   "project": "trace",
-   "country": "ES",
-   "flag": "🇪🇸",
-   "utc": "2026-09-15T17:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "¿Una app de calendario que se sincroniza en iPhone, iPad, MacBook y Watch?\nUsa esta y ya",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "dot2day_",
-   "project": "trace",
-   "country": "DE",
-   "flag": "🇩🇪",
-   "utc": "2026-09-15T17:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "Eine Kalender-App, die sich mit iPhone, iPad, MacBook und Watch synchronisiert?\nNimm einfach die hier",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "lune__v34",
-   "project": "moonlight",
-   "country": "IT",
-   "flag": "🇮🇹",
-   "utc": "2026-09-15T17:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\n||Apri il PDF e lo traduce lì, tenendo il layout originale;\nclicchi su una figura complicata e te la spiega subito;\ne segna da solo la novità, il metodo e le conclusioni del paper.||\nAll'epoca mi disse: \"i paper si leggono da soli……\"\n---\nmedia: -\nAdesso lo usa lui stesso.\n\nUno studente di dottorato si è stufato talmente di leggere paper che si è fatto questo sito da solo.\nOra si può usare gratis\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "03ines.mar_",
-   "project": "moonlight",
-   "country": "PT",
-   "flag": "🇵🇹",
-   "utc": "2026-09-15T18:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Uma vez levei um raspanete do meu orientador por usar este site no laboratório.\n\n||Abres o PDF e ele traduz ali mesmo, mantendo o layout original;\nclicas numa figura complicada e explica-a logo;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.||\nNa altura ele disse: \"os artigos são para ler por ti próprio……\"\n---\nmedia: -\nAgora é ele próprio que o usa.\n\nUm aluno de pós-graduação ficou tão farto de ler artigos que fez este site sozinho.\nAgora dá para usar de graça\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "lune__v34",
-   "project": "trace",
-   "country": "IT",
-   "flag": "🇮🇹",
-   "utc": "2026-09-15T18:00:00+00:00",
-   "local": "2026-09-15 20:00",
-   "text": "Un'app calendario che si sincronizza su iPhone, iPad, MacBook e Watch?\nUsa questa e basta",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "03ines.mar_",
-   "project": "trace",
-   "country": "PT",
-   "flag": "🇵🇹",
-   "utc": "2026-09-15T18:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "Uma app de calendário que sincroniza no iPhone, iPad, MacBook e Watch?\nUsa esta e pronto",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "bia__rp03",
-   "project": "cortex",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-09-15T21:00:00+00:00",
-   "local": "2026-09-15 18:00",
-   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\n||Escreve o LaTeX e o resultado compilado aparece quase na hora;\ncompila muito mais rápido que o Overleaf;\npode editar quantas vezes quiser sem ficar esperando até perder a paciência.||\nNa época ele disse: \"por que não usa o Overleaf como todo mundo……\"\n\nAgora ele mesmo está usando.\n---\nmedia: -\nAlguém ficou tão irritado com a lentidão do Overleaf que fez esse site sozinho.\nDá pra usar de graça agora!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "lari.s_07",
-   "project": "cortex",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-09-15T21:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\n||Escreve o LaTeX e o resultado compilado aparece quase na hora;\ncompila muito mais rápido que o Overleaf;\npode editar quantas vezes quiser sem ficar esperando até perder a paciência.||\nNa época ele disse: \"por que não usa o Overleaf como todo mundo……\"\n\nAgora ele mesmo está usando.\n---\nmedia: -\nAlguém ficou tão irritado com a lentidão do Overleaf que fez esse site sozinho.\nDá pra usar de graça agora!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "bia__rp03",
-   "project": "moonlight",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-09-15T22:00:00+00:00",
-   "local": "2026-09-15 19:00",
-   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\n||Abre o PDF e ele traduz ali mesmo, mantendo o layout original;\nclica numa figura complicada e ele explica na hora;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.||\nNa época ele disse: \"artigo é pra ler por conta própria……\"\n---\nmedia: -\nAgora ele mesmo está usando.\n\nUm pós-graduando ficou tão irritado lendo artigo que fez esse site sozinho.\nDá pra usar de graça agora\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "bia__rp03",
-   "project": "trace",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-09-15T22:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "Um app de calendário que sincroniza no iPhone, iPad, MacBook e Watch?\nUsa esse aí",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "lari.s_07",
-   "project": "moonlight",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-09-15T22:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\n||Abre o PDF e ele traduz ali mesmo, mantendo o layout original;\nclica numa figura complicada e ele explica na hora;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.||\nNa época ele disse: \"artigo é pra ler por conta própria……\"\n---\nmedia: -\nAgora ele mesmo está usando.\n\nUm pós-graduando ficou tão irritado lendo artigo que fez esse site sozinho.\nDá pra usar de graça agora\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "mae.dw_04",
-   "project": "cortex",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-09-15T22:30:00+00:00",
-   "local": "2026-09-15 18:30",
-   "text": "I once got scolded by my professor for using this site in the lab.\n\n||Write LaTeX and the compiled result shows up almost instantly.\nCompiles way faster than Overleaf.\nEdit as much as you want, no waiting around every time.||\nBack then he said, \"why not just use Overleaf like everyone else...\"\n\nNow he uses it himself.\n---\nmedia: -\nSomeone got so fed up with Overleaf being slow that they built this.\nIt's free to use right now!\nhttps://cortex.corca.ai/",
-   "media": [
-    "cortex/shared.cortex.mp4"
-   ],
-   "ig": [],
-   "done": [
-    "!"
-   ]
-  },
-  {
-   "account": "lari.s_07",
-   "project": "trace",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-09-15T23:30:00+00:00",
-   "local": "2026-09-15 20:30",
-   "text": "Um app de calendário que sincroniza no iPhone, iPad, MacBook e Watch?\nUsa esse aí",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "mae.dw_04",
-   "project": "moonlight",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-09-15T23:30:00+00:00",
-   "local": "2026-09-15 19:30",
-   "text": "I once got scolded by my professor for using this site in the lab.\n\n||Open a PDF and it translates in place, original layout intact.\nClick a complicated figure and it explains it right away.\nIt even flags the paper's novelty, methods and conclusions for you.||\nBack then he said, \"you're supposed to read papers yourself...\"\n---\nmedia: -\nNow he uses it himself.\n\nA grad student got so fed up reading papers that they built this.\nIt's free to use right now\nhttps://themoonlight.io/",
-   "media": [
-    "moonlight/shared.ml_es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "mae.dw_04",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-09-16T00:30:00+00:00",
-   "local": "2026-09-15 20:30",
-   "text": "A calendar app that syncs across iPhone, iPad, MacBook and Watch?\nJust use this one",
-   "media": [
-    "trace/os12_1_iphone.png",
-    "trace/os12_2_mac.png",
-    "trace/os12_3_watch.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
    "account": "ivy_.k09",
    "project": "cortex",
    "country": "US",
@@ -3697,6 +2903,1434 @@
  ],
  "posts": [
   {
+   "id": "17980557408120771",
+   "account": "ivy_.k09",
+   "project": "cortex",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-16T01:01:14+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "I once got scolded by my professor for using this site in the lab.\n\nWrite LaTeX and the compiled result shows up almost instantly.\nCompiles way faster than Overleaf.\nEdit as much as you want, no waiting around every time.\nBack then he said, \"why not just use Overleaf like everyone else...\"\n\nNow he uses it himself.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@ivy_.k09/post/DdVDnZOEbgt",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17945109675343937",
+   "account": "mae.dw_04",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-16T00:31:03+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:31",
+   "text": "A calendar app that syncs across iPhone, iPad, MacBook and Watch?\nJust use this one",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@mae.dw_04/post/DdVAM1vgL1o",
+   "views": 94,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18018547073927033",
+   "account": "lari.s_07",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-16T00:01:24+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 21:01",
+   "text": "Um app de calendário que sincroniza no iPhone, iPad, MacBook e Watch?\nUsa esse aí",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lari.s_07/post/DdU8z7DiJD-",
+   "views": 19,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17973807743935340",
+   "account": "mae.dw_04",
+   "project": "moonlight",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-15T23:30:53+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:30",
+   "text": "I once got scolded by my professor for using this site in the lab.\n\nOpen a PDF and it translates in place, original layout intact.\nClick a complicated figure and it explains it right away.\nIt even flags the paper's novelty, methods and conclusions for you.\nBack then he said, \"you're supposed to read papers yourself...\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@mae.dw_04/post/DdU5UDOjHob",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18012909233949500",
+   "account": "mae.dw_04",
+   "project": "cortex",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-15T22:32:28+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:32",
+   "text": "I once got scolded by my professor for using this site in the lab.\n\nWrite LaTeX and the compiled result shows up almost instantly.\nCompiles way faster than Overleaf.\nEdit as much as you want, no waiting around every time.\nBack then he said, \"why not just use Overleaf like everyone else...\"\n\nNow he uses it himself.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@mae.dw_04/post/DdUyltbCLH6",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17946166401311728",
+   "account": "lari.s_07",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T22:31:42+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nAbre o PDF e ele traduz ali mesmo, mantendo o layout original;\nclica numa figura complicada e ele explica na hora;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.\nNa época ele disse: \"artigo é pra ler por conta própria……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lari.s_07/post/DdUyjATGIoQ",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18043619894673338",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T22:31:16+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "Um app de calendário que sincroniza no iPhone, iPad, MacBook e Watch?\nUsa esse aí",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdUyfUnGL1h",
+   "views": 22,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18037226273646268",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T22:00:55+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:00",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nAbre o PDF e ele traduz ali mesmo, mantendo o layout original;\nclica numa figura complicada e ele explica na hora;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.\nNa época ele disse: \"artigo é pra ler por conta própria……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdUvBDloIbf",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18115205336325593",
+   "account": "lari.s_07",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T21:31:13+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:31",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nEscreve o LaTeX e o resultado compilado aparece quase na hora;\ncompila muito mais rápido que o Overleaf;\npode editar quantas vezes quiser sem ficar esperando até perder a paciência.\nNa época ele disse: \"por que não usa o Overleaf como todo mundo……\"\n\nAgora ele mesmo está usando.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@lari.s_07/post/DdUrlSGjUHw",
+   "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17920155516429386",
+   "account": "bia__rp03",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T21:01:14+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nEscreve o LaTeX e o resultado compilado aparece quase na hora;\ncompila muito mais rápido que o Overleaf;\npode editar quantas vezes quiser sem ficar esperando até perder a paciência.\nNa época ele disse: \"por que não usa o Overleaf como todo mundo……\"\n\nAgora ele mesmo está usando.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@bia__rp03/post/DdUoJ_kDXZI",
+   "views": 4,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18082849457705661",
+   "account": "03ines.mar_",
+   "project": "trace",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-15T18:31:00+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "Uma app de calendário que sincroniza no iPhone, iPad, MacBook e Watch?\nUsa esta e pronto",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@03ines.mar_/post/DdUW_tJFWJc",
+   "views": 54,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18108061385182519",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-15T18:02:09+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:02",
+   "text": "Un'app calendario che si sincronizza su iPhone, iPad, MacBook e Watch?\nUsa questa e basta",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdUTsg6iOKd",
+   "views": 350,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18034068866895240",
+   "account": "03ines.mar_",
+   "project": "moonlight",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-15T18:01:03+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:01",
+   "text": "Uma vez levei um raspanete do meu orientador por usar este site no laboratório.\n\nAbres o PDF e ele traduz ali mesmo, mantendo o layout original;\nclicas numa figura complicada e explica-a logo;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.\nNa altura ele disse: \"os artigos são para ler por ti próprio……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@03ines.mar_/post/DdUTj8tiCPv",
+   "views": 7,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18485949874106227",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-15T17:32:47+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:32",
+   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\nApri il PDF e lo traduce lì, tenendo il layout originale;\nclicchi su una figura complicata e te la spiega subito;\ne segna da solo la novità, il metodo e le conclusioni del paper.\nAll'epoca mi disse: \"i paper si leggono da soli……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lune__v34/post/DdUQVEiHfR5",
+   "views": 40,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18109868048109256",
+   "account": "dot2day_",
+   "project": "trace",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-15T17:32:20+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:32",
+   "text": "Eine Kalender-App, die sich mit iPhone, iPad, MacBook und Watch synchronisiert?\nNimm einfach die hier",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@dot2day_/post/DdUQSuHnWqr",
+   "views": 115,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18482130667111284",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-15T17:31:43+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "¿Una app de calendario que se sincroniza en iPhone, iPad, MacBook y Watch?\nUsa esta y ya",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdUQNeNnd9z",
+   "views": 170,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18094893137382109",
+   "account": "o2ndot",
+   "project": "trace",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-15T17:31:08+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "Une app agenda qui se synchronise sur iPhone, iPad, MacBook et Watch ?\nPrends juste celle-là",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@o2ndot/post/DdUQJIWnWY1",
+   "views": 171,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18127255816771523",
+   "account": "dot2day_",
+   "project": "moonlight",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-15T17:02:15+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:02",
+   "text": "Ich hab mal Ärger von meinem Professor bekommen, weil ich im Labor diese Seite benutzt habe.\n\nPDF öffnen und es wird direkt übersetzt, Original-Layout bleibt erhalten;\nauf eine komplizierte Figure klicken und sie wird sofort erklärt;\nund Neuheit, Methode und Fazit des Papers werden automatisch markiert.\nDamals meinte er: „Paper liest man selbst……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@dot2day_/post/DdUM1ZaGhgS",
+   "views": 156,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17952426138258149",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-15T17:01:44+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:01",
+   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\nAbres el PDF y lo traduce ahí mismo manteniendo el diseño original;\nhaces clic en una figura complicada y te la explica al momento;\ny además marca sola la novedad, el método y las conclusiones del paper.\nEntonces me dijo: \"los papers hay que leerlos uno mismo……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdUMyYFms2V",
+   "views": 32,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18341114602252923",
+   "account": "03ines.mar_",
+   "project": "cortex",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-15T17:01:19+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "Uma vez levei um raspanete do meu orientador por usar este site no laboratório.\n\nEscreves o LaTeX e o resultado compilado aparece quase de imediato;\ncompila muito mais depressa que o Overleaf;\npodes editar as vezes que quiseres sem ficar à espera até perder a paciência.\nNa altura ele disse: \"porque não usas o Overleaf como toda a gente……\"\n\nAgora é ele próprio que o usa.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@03ines.mar_/post/DdUMsc_CLIo",
+   "views": 35,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18127083988701506",
+   "account": "o2ndot",
+   "project": "moonlight",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-15T16:32:38+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:32",
+   "text": "Je me suis déjà fait engueuler par mon directeur de thèse pour avoir utilisé ce site au labo.\n\nOn ouvre le PDF et il traduit sur place en gardant la mise en page d'origine ;\non clique sur une figure compliquée et il l'explique tout de suite ;\net il marque tout seul la nouveauté, la méthode et les conclusions de l'article.\nÀ l'époque il m'a dit : « un article, ça se lit soi-même…… »",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@o2ndot/post/DdUJcoqoHe8",
+   "views": 22,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18114409187079730",
+   "account": "lune__v34",
+   "project": "cortex",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-15T16:32:13+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:32",
+   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\nScrivi il LaTeX e il risultato compilato compare quasi subito;\ncompila molto più veloce di Overleaf;\npuoi modificare quante volte vuoi senza aspettare ogni volta fino a innervosirti.\nAll'epoca mi disse: \"perché non usi Overleaf come tutti……\"\n\nAdesso lo usa lui stesso.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@lune__v34/post/DdUJXu0mlDe",
+   "views": 16,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17884807191488132",
+   "account": "elif.dm_05",
+   "project": "trace",
+   "country": "TR",
+   "flag": "🇹🇷",
+   "utc": "2026-09-15T16:31:29+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "iPhone, iPad, MacBook ve Watch hepsiyle senkron olan bir takvim uygulaması?\nDirekt bunu kullan",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@elif.dm_05/post/DdUJUUbIAE8",
+   "views": 361,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18114088228828219",
+   "account": "elif.dm_05",
+   "project": "moonlight",
+   "country": "TR",
+   "flag": "🇹🇷",
+   "utc": "2026-09-15T16:30:48+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:30",
+   "text": "Laboratuvarda bu siteyi kullandığım için hocamdan bir kez azar işitmiştim.\n\nPDF'i açıyorsun, orijinal düzeni koruyarak olduğu yerde çeviriyor;\nkarmaşık bir figüre tıklıyorsun, anında açıklıyor;\nmakalenin yeniliğini, yöntemini ve sonuçlarını kendiliğinden işaretliyor.\nO zaman şöyle demişti: \"makale dediğin kendin okunur……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@elif.dm_05/post/DdUJPTCIMih",
+   "views": 235,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18031221386671507",
+   "account": "dot2day_",
+   "project": "cortex",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-15T16:02:12+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:02",
+   "text": "Ich hab mal Ärger von meinem Professor bekommen, weil ich im Labor diese Seite benutzt habe.\n\nLaTeX schreiben und das kompilierte Ergebnis ist fast sofort da;\nkompiliert deutlich schneller als Overleaf;\nbeliebig oft ändern, ohne jedes Mal zu warten, bis man genervt ist.\nDamals meinte er: „Nimm doch einfach Overleaf wie alle anderen……\"\n\nInzwischen benutzt er es selbst.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@dot2day_/post/DdUF7t1gIoZ",
+   "views": 145,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18170134804457096",
+   "account": "beatriz03._a",
+   "project": "cortex",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-15T16:01:25+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\nEscribes el LaTeX y el resultado compilado aparece casi al instante;\ncompila muchísimo más rápido que Overleaf;\npuedes editar todo lo que quieras sin esperar cada vez hasta desesperarte.\nEntonces me dijo: \"¿por qué no usas Overleaf como todo el mundo……?\"\n\nAhora la usa él mismo.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdUF2NMEnD8",
+   "views": 41,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17949110832050423",
+   "account": "o2ndot",
+   "project": "cortex",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-15T15:32:12+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 17:32",
+   "text": "Je me suis déjà fait engueuler par mon directeur de thèse pour avoir utilisé ce site au labo.\n\nOn écrit le LaTeX et le résultat compilé apparaît presque instantanément ;\nça compile bien plus vite qu'Overleaf ;\non peut modifier autant qu'on veut sans attendre à chaque fois jusqu'à s'énerver.\nÀ l'époque il m'a dit : « pourquoi tu n'utilises pas Overleaf comme tout le monde…… »\n\nMaintenant, c'est lui qui l'utilise.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@o2ndot/post/DdUCgGak6iR",
+   "views": 81,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18100521728526023",
+   "account": "riya._m08",
+   "project": "trace",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-15T15:31:22+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 21:01",
+   "text": "iPhone, iPad, MacBook और Watch सब पर sync होने वाला कैलेंडर ऐप?\nबस यही यूज़ करो",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@riya._m08/post/DdUCcl4kdvy",
+   "views": 10,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18004519629002845",
+   "account": "elif.dm_05",
+   "project": "cortex",
+   "country": "TR",
+   "flag": "🇹🇷",
+   "utc": "2026-09-15T15:01:26+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "Laboratuvarda bu siteyi kullandığım için hocamdan bir kez azar işitmiştim.\n\nLaTeX yazıyorsun, derlenmiş sonuç neredeyse anında görünüyor;\nOverleaf'ten çok daha hızlı derliyor;\nistediğin kadar düzelt, her seferinde sinir olana kadar beklemiyorsun.\nO zaman şöyle demişti: \"herkes gibi Overleaf kullansana……\"\n\nŞimdi kendisi kullanıyor.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@elif.dm_05/post/DdT--pHiaCO",
+   "views": 772,
+   "likes": 4,
+   "replies": 3,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 2,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18105159551182088",
+   "account": "riya._m08",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-15T14:01:57+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\nPDF kholo aur original layout ke saath wahin translate ho jata hai;\ncomplicated figure pe click karo, turant samjha deta hai;\npaper ka novelty, method aur conclusion bhi apne aap mark kar deta hai.\ntab professor bole the, \"paper toh khud padhna chahiye……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@riya._m08/post/DdT4NWCjq7H",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18110687441520303",
+   "account": "nia._055",
+   "project": "trace",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-15T14:01:36+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "iPhone, iPad, MacBook और Watch सब पर sync होने वाला कैलेंडर ऐप?\nबस यही यूज़ करो",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@nia._055/post/DdT4KcWjvQu",
+   "views": 49,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18124987943484048",
+   "account": "nia._055",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-15T14:00:58+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:30",
+   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\nPDF kholo aur original layout ke saath wahin translate ho jata hai;\ncomplicated figure pe click karo, turant samjha deta hai;\npaper ka novelty, method aur conclusion bhi apne aap mark kar deta hai.\ntab professor bole the, \"paper toh khud padhna chahiye……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@nia._055/post/DdT4GaOjvrl",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17906661363518002",
+   "account": "shu.lin_03",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T13:32:01+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 21:32",
+   "text": "iPhone、iPad、MacBook、Watch 全部都能同步的行事曆 App？\n用這個就對了",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@shu.lin_03/post/DdT0xzZFXsX",
+   "views": 315,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18097719581377804",
+   "account": "mint.le_06",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-15T13:31:07+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:31",
+   "text": "App lịch đồng bộ hết iPhone, iPad, MacBook với Watch?\nCứ dùng cái này đi",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@mint.le_06/post/DdT0rUQFcLw",
+   "views": 124,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17928625041165450",
+   "account": "riya._m08",
+   "project": "cortex",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-15T13:02:04+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:32",
+   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\nLaTeX likho aur compile result almost turant dikh jata hai;\nOverleaf se kaafi zyada fast compile hota hai;\nbaar baar edit karo, har baar wait karke pareshan hone ki zaroorat nahi.\ntab professor bole the, \"paper ke liye Overleaf hi use kar lo na……\"\n\nab professor khud use kar rahe hain.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@riya._m08/post/DdTxT-0gvYf",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18015009281927244",
+   "account": "pim.pm_02",
+   "project": "trace",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-15T13:01:15+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:01",
+   "text": "แอปจัดการตารางที่ซิงก์ครบทั้ง iPhone, iPad, MacBook และ Watch?\nใช้ตัวนี้เลยครับ",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@pim.pm_02/post/DdTxQfMFbrg",
+   "views": 984,
+   "likes": 15,
+   "replies": 1,
+   "reposts": 4,
+   "quotes": 1,
+   "shares": 3,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18020124131921647",
+   "account": "rara.2k_",
+   "project": "moonlight",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-15T12:34:40+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:34",
+   "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\nbuka PDF, langsung diterjemahin di tempat dengan layout aslinya;\nklik figure yang ribet, langsung dijelasin saat itu juga;\nbahkan poin baru, metode, sama kesimpulan papernya ditandain otomatis.\nwaktu itu profesor bilang: \"paper itu ya dibaca sendiri……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@rara.2k_/post/DdTuNk3m1qo",
+   "views": 719,
+   "likes": 15,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 2,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18117095389940883",
+   "account": "nia._055",
+   "project": "cortex",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-15T12:34:10+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:04",
+   "text": "lab mein ye site use karne pe mere professor ne ek baar daant diya tha.\n\nLaTeX likho aur compile result almost turant dikh jata hai;\nOverleaf se kaafi zyada fast compile hota hai;\nbaar baar edit karo, har baar wait karke pareshan hone ki zaroorat nahi.\ntab professor bole the, \"paper ke liye Overleaf hi use kar lo na……\"\n\nab professor khud use kar rahe hain.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@nia._055/post/DdTuIAaj5GH",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18622231183041342",
+   "account": "mint.le_06",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-15T12:33:23+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:33",
+   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@mint.le_06/post/DdTuEOtm6Ie",
+   "views": 103,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18378472015239163",
+   "account": "inkling01",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T12:32:56+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:32",
+   "text": "iPhone、iPad、MacBook、Watch 全部都能同步的行事曆 App？\n用這個就對了",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@inkling01/post/DdTuBmbm5tK",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18107571851591521",
+   "account": "ashgrey._02",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-15T12:32:22+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:32",
+   "text": "App lịch đồng bộ hết iPhone, iPad, MacBook với Watch?\nCứ dùng cái này đi",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@ashgrey._02/post/DdTt87Qmyyf",
+   "views": 431,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17897829639599716",
+   "account": "rara.2k_",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-15T12:31:42+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "Aplikasi kalender yang nyambung ke iPhone, iPad, MacBook, sama Watch?\nPakai ini aja",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@rara.2k_/post/DdTt4BNG2al",
+   "views": 924,
+   "likes": 13,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18432209068183553",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-15T12:31:08+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:31",
+   "text": "Calendar app na naka-sync sa iPhone, iPad, MacBook at Watch?\nIto na lang gamitin mo",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdTtz49m--6",
+   "views": 227,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18128333425766141",
+   "account": "pim.pm_02",
+   "project": "moonlight",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-15T12:01:43+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:01",
+   "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเปิด PDF ก็แปลให้ทันทีโดยคงเลย์เอาต์เดิมไว้\nกด Figure ที่ซับซ้อนก็อธิบายให้ตรงนั้นเลย\nแถมยังไฮไลต์จุดใหม่ วิธีวิจัย และข้อสรุปของเปเปอร์ให้อัตโนมัติ\nตอนนั้นอาจารย์ยังบอกว่า \"เปเปอร์ต้องอ่านเองสิ……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@pim.pm_02/post/DdTqc3lEY9-",
+   "views": 177,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18111128195136368",
+   "account": "ashgrey._02",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-15T12:01:01+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:01",
+   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@ashgrey._02/post/DdTqXRBkS0h",
+   "views": 1770,
+   "likes": 30,
+   "replies": 1,
+   "reposts": 6,
+   "quotes": 0,
+   "shares": 12,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18103630742344487",
+   "account": "shu.lin_03",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T11:34:59+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:34",
+   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n打開 PDF，就能保留原始版面直接翻譯；\n點一下複雜的 Figure，就會馬上幫你解讀；\n還會自動標示論文的創新點、研究方法和結論。\n教授當時還說：「論文就是要自己讀啊……」",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@shu.lin_03/post/DdTnYYYkQz5",
+   "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17919987396433442",
+   "account": "rara.2k_",
+   "project": "cortex",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-15T11:34:23+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:34",
+   "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\nnulis LaTeX, hasil compile-nya langsung kelihatan hampir seketika;\ncompile-nya jauh lebih cepat dari Overleaf;\nmau diedit berkali-kali juga gak perlu nunggu sampai kesel.\nwaktu itu profesor bilang: \"nulis paper ya pakai Overleaf aja lah……\"\n\nsekarang malah profesornya sendiri yang pakai.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@rara.2k_/post/DdTnR31lVtF",
+   "views": 544,
+   "likes": 7,
+   "replies": 1,
+   "reposts": 2,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17871886572638168",
+   "account": "nur.aina_04",
+   "project": "moonlight",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-09-15T11:33:36+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:33",
+   "text": "Saya pernah kena tegur profesor sebab guna laman ini di makmal.\n\nBuka PDF, terus diterjemah di tempatnya dengan susun atur asal;\nklik figure yang rumit, terus dijelaskan saat itu juga;\nmalah kebaharuan, kaedah dan kesimpulan kertas itu ditanda sendiri.\nMasa tu profesor cakap: \"kertas kajian ni kena baca sendirilah……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@nur.aina_04/post/DdTnOK2ES5w",
+   "views": 109,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18098872031527515",
+   "account": "mint.le_06",
+   "project": "cortex",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-15T11:33:08+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:33",
+   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@mint.le_06/post/DdTnJWRlMxd",
+   "views": 184,
+   "likes": 0,
+   "replies": 2,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17999252792800405",
+   "account": "inkling01",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T11:32:26+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:32",
+   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n打開 PDF，就能保留原始版面直接翻譯；\n點一下複雜的 Figure，就會馬上幫你解讀；\n還會自動標示論文的創新點、研究方法和結論。\n教授當時還說：「論文就是要自己讀啊……」",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@inkling01/post/DdTnGYckeUo",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18371958658210511",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-15T11:31:53+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:31",
+   "text": "iPhone、iPad、MacBook、Watch 全部連携できるスケジュールアプリ？\nもうこれ使っとけ",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/DdTnBw0kX4Q",
+   "views": 819,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18127882042790121",
+   "account": "daily03dew",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T11:31:13+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "iPhone、iPad、MacBook、Watch 全部都能同步的行事曆 App？\n用這個就對了",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@daily03dew/post/DdTm89hkdq8",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18106829504188568",
+   "account": "pim.pm_02",
+   "project": "cortex",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-15T11:03:41+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:03",
+   "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเขียน LaTeX เสร็จก็เห็นผล compile แทบจะทันที\ncompile เร็วกว่า Overleaf มาก\nแก้กี่รอบก็ไม่ต้องนั่งรอจนหงุดหงิด\nตอนนั้นอาจารย์ยังบอกว่า \"เขียนเปเปอร์ก็ใช้ Overleaf ไปสิ……\"\n\nตอนนี้อาจารย์เองก็ใช้อยู่ครับ",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@pim.pm_02/post/DdTjxOziQAJ",
+   "views": 1197,
+   "likes": 8,
+   "replies": 1,
+   "reposts": 7,
+   "quotes": 1,
+   "shares": 5,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18140500531590348",
+   "account": "nur.aina_04",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-09-15T11:03:00+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:03",
+   "text": "Aplikasi kalendar yang sync semua iPhone, iPad, MacBook dan Watch?\nGuna yang ini je",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@nur.aina_04/post/DdTjvC0kZGu",
+   "views": 283,
+   "likes": 3,
+   "replies": 1,
+   "reposts": 2,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18105531821213054",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-15T11:02:30+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:02",
+   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nBuksan mo lang yung PDF, translated agad na buo pa yung original layout;\nclick mo yung komplikadong figure, ipapaliwanag agad;\nauto pa niyang minamarkahan yung novelty, methods, at conclusion ng paper.\nSabi pa ng prof noon, \"dapat ikaw mismo nagbabasa ng paper……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@kai_.03b/post/DdTjqo8keHi",
+   "views": 131,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18093230000533006",
+   "account": "daily03dew",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T11:02:00+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:02",
+   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n打開 PDF，就能保留原始版面直接翻譯；\n點一下複雜的 Figure，就會馬上幫你解讀；\n還會自動標示論文的創新點、研究方法和結論。\n教授當時還說：「論文就是要自己讀啊……」",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@daily03dew/post/DdTjm0bkTs_",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18082603277783889",
+   "account": "ashgrey._02",
+   "project": "cortex",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-15T11:01:26+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@ashgrey._02/post/DdTjgq7lTuL",
+   "views": 1610,
+   "likes": 19,
+   "replies": 1,
+   "reposts": 2,
+   "quotes": 0,
+   "shares": 8,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18070911554727473",
+   "account": "shu.lin_03",
+   "project": "cortex",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T10:34:21+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:34",
+   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n寫完 LaTeX，幾乎馬上就能看到編譯結果；\n編譯速度比 Overleaf 快很多；\n就算一直修改，也不用每次都等到不耐煩。\n教授當時還說：「寫論文用 Overleaf 不就好了嗎……」\n\n結果現在，教授自己也在用。",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@shu.lin_03/post/DdTgajKFL58",
+   "views": 185,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18066746255768387",
+   "account": "nur.aina_04",
+   "project": "cortex",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-09-15T10:33:32+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:33",
+   "text": "Saya pernah kena tegur profesor sebab guna laman ini di makmal.\n\nTulis LaTeX, hasil kompilasinya nampak hampir serta-merta;\nkompilasinya jauh lebih laju daripada Overleaf;\nnak edit berkali-kali pun tak payah tunggu sampai menyampah.\nMasa tu profesor cakap: \"tulis kertas guna Overleaf je lah……\"\n\nSekarang profesor tu sendiri yang guna.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@nur.aina_04/post/DdTgUlalVCD",
+   "views": 50,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18143489383565956",
+   "account": "inkling01",
+   "project": "cortex",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T10:32:48+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:32",
+   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n寫完 LaTeX，幾乎馬上就能看到編譯結果；\n編譯速度比 Overleaf 快很多；\n就算一直修改，也不用每次都等到不耐煩。\n教授當時還說：「寫論文用 Overleaf 不就好了嗎……」\n\n結果現在，教授自己也在用。",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@inkling01/post/DdTgPMnjGDP",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18012821903959703",
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-15T10:32:00+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:32",
+   "text": "研究室でこのサイトを使ってたら、教授に一度叱られたことがある。\n\nPDFを開くと、元のレイアウトのままその場で翻訳されて\n複雑なFigureはクリック一つですぐ解説してくれて\n論文の新規性・手法・結論まで自動でマークしてくれる。\n教授はその時「論文は自分で読むものだろ……」と言ってた。",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@haru._81a/post/DdTgL0fIFLp",
+   "views": 43,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18121242721912251",
+   "account": "aoi.02_",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-15T10:31:41+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "iPhone、iPad、MacBook、Watch 全部連携できるスケジュールアプリ？\nもうこれ使っとけ",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@aoi.02_/post/DdTgI6voDNo",
+   "views": 94,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18099232454036518",
+   "account": "ac_dd91",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-09-15T10:31:05+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "아이폰, 아이패드, 맥북, 워치 전부 다 연동되는 일정관리 앱?\n그냥 이거 써",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@ac_dd91/post/DdTgEu_oJPZ",
+   "views": 64,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18101671493216505",
+   "account": "kai_.03b",
+   "project": "cortex",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-15T10:04:03+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:04",
+   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nSulat ka ng LaTeX, halos instant lumalabas yung compiled result;\nmas mabilis mag-compile kaysa Overleaf;\nkahit paulit-ulit kang mag-edit, hindi ka na maghihintay hanggang mainis.\nSabi pa ng prof noon, \"Overleaf na lang gamitin mo sa thesis……\"\n\nNgayon, siya na mismo yung gumagamit.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@kai_.03b/post/DdTc8EDjqJi",
+   "views": 35,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18107778770136528",
+   "account": "elle__jm",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-09-15T10:03:13+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:03",
+   "text": "A calendar app that syncs across iPhone, iPad, MacBook and Watch?\nJust use this one",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@elle__jm/post/DdTc4k9G1fk",
+   "views": 339,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18152069221539385",
+   "account": "daily03dew",
+   "project": "cortex",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-15T10:02:25+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:02",
+   "text": "我曾經因為在實驗室用這個網站，被教授念了一頓。\n\n寫完 LaTeX，幾乎馬上就能看到編譯結果；\n編譯速度比 Overleaf 快很多；\n就算一直修改，也不用每次都等到不耐煩。\n教授當時還說：「寫論文用 Overleaf 不就好了嗎……」\n\n結果現在，教授自己也在用。",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@daily03dew/post/DdTcwxCATRu",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18095401742550954",
+   "account": "aoi.02_",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-15T10:01:43+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:01",
+   "text": "研究室でこのサイトを使ってたら、教授に一度叱られたことがある。\n\nPDFを開くと、元のレイアウトのままその場で翻訳されて\n複雑なFigureはクリック一つですぐ解説してくれて\n論文の新規性・手法・結論まで自動でマークしてくれる。\n教授はその時「論文は自分で読むものだろ……」と言ってた。",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@aoi.02_/post/DdTctT1m8W6",
+   "views": 355,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18079030274404107",
+   "account": "ac_dd91",
+   "project": "moonlight",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-09-15T10:01:02+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:01",
+   "text": "연구실에서 이 사이트 쓰다가 교수님한테 한 소리 들은 적 있음.\n\nPDF 열면 원본 레이아웃 그대로 바로 번역되고\n복잡한 Figure는 클릭 한 번이면 바로 해석해주고\n논문의 창의점·연구 방법·결론까지 자동으로 표시해줌.\n교수님이 그때 그랬음. \"논문은 직접 읽어야지……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@ac_dd91/post/DdTcog0mzMn",
+   "views": 1257,
+   "likes": 10,
+   "replies": 1,
+   "reposts": 2,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18622903750010484",
    "account": "haru._81a",
    "project": "cortex",
@@ -3708,7 +4342,7 @@
    "text": "研究室でこのサイトを使ってたら、教授に一度叱られたことがある。\n\nLaTeXを書いたらほぼ即コンパイル結果が見えて\nOverleafよりコンパイルがずっと速くて\n何度直しても、毎回待たされてイライラすることがない。\n教授はその時「論文はOverleafでいいじゃないか……」と言ってた。\n\nで、今はその教授本人が使ってる。",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@haru._81a/post/DdTZL6wiVRi",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3729,7 +4363,7 @@
    "text": "I once got scolded by my professor for using this site in the lab.\n\nOpen a PDF and it translates in place, original layout intact.\nClick a complicated figure and it explains it right away.\nIt even flags the paper's novelty, methods and conclusions for you.\nBack then he said, \"you're supposed to read papers yourself...\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@elle__jm/post/DdTV9F2luSW",
-   "views": 0,
+   "views": 25,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -3771,10 +4405,10 @@
    "text": "연구실에서 이 사이트 쓰다가 교수님한테 한 소리 들은 적 있음.\n\nLaTeX 쓰면 거의 바로 컴파일 결과가 보이고\nOverleaf보다 컴파일이 훨씬 빠르고\n계속 고쳐도 매번 기다리다 지칠 일이 없음.\n교수님이 그때 그랬음. \"논문은 그냥 Overleaf로 쓰면 되지 않냐……\"\n\n근데 지금은 교수님이 직접 쓰고 계심.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ac_dd91/post/DdTVx7xiJPm",
-   "views": 112,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
+   "views": 979,
+   "likes": 6,
+   "replies": 2,
+   "reposts": 2,
    "quotes": 0,
    "shares": 0,
    "round": null,
@@ -3792,7 +4426,7 @@
    "text": "I once got scolded by my professor for using this site in the lab.\n\nWrite LaTeX and the compiled result shows up almost instantly.\nCompiles way faster than Overleaf.\nEdit as much as you want, no waiting around every time.\nBack then he said, \"why not just use Overleaf like everyone else...\"\n\nNow he uses it himself.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elle__jm/post/DdTO51alccj",
-   "views": 27,
+   "views": 39,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3813,7 +4447,7 @@
    "text": "How did I only just discover this?! How does it translate an entire paper while keeping the original layout intact? Even the images, tables, and equations in the PDF are preserved almost perfectly… I'm saved 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ivy_.k09/post/DdPJ_EmjVJR",
-   "views": 401,
+   "views": 404,
    "likes": 6,
    "replies": 2,
    "reposts": 1,
@@ -3834,7 +4468,7 @@
    "text": "Bütün haftamı kilit ekranına koydum\nve o gün bugündür hiçbir şey unutmuyorum.\nEskiden takvim uygulamasını günde üç kez açıyordum, artık hiç açmıyorum.\nBaşka kimse yapmıyor mu bunu?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elif.dm_05/post/DdO8S5hFN5M",
-   "views": 1010,
+   "views": 1017,
    "likes": 3,
    "replies": 3,
    "reposts": 0,
@@ -3918,7 +4552,7 @@
    "text": "korang pakai iPhone, jangan lupa cuba ni\njadual seminggu terus naik kat lockscreen\ntak payah buka app dah\nset sekali je terus jalan",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nur.aina_04/post/DdOZ8BznAkw",
-   "views": 2182,
+   "views": 2184,
    "likes": 20,
    "replies": 4,
    "reposts": 5,
@@ -3939,7 +4573,7 @@
    "text": "Porque é que só descubro isto agora?! Como é que consegue traduzir o artigo e manter o layout original? Até as imagens, as tabelas e as fórmulas do PDF ficam quase intactas… estou salvo 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@03ines.mar_/post/DdOTDe2DJk0",
-   "views": 11789,
+   "views": 11808,
    "likes": 138,
    "replies": 10,
    "reposts": 14,
@@ -3960,7 +4594,7 @@
    "text": "Pourquoi je découvre ça seulement maintenant ?! Comment est-ce possible de traduire un article tout en conservant sa mise en page d'origine ? Même les images, les tableaux et les formules du PDF restent quasiment intacts… ça va me sauver la vie 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@o2ndot/post/DdOMmluDFL6",
-   "views": 1150,
+   "views": 1153,
    "likes": 4,
    "replies": 6,
    "reposts": 1,
@@ -3981,7 +4615,7 @@
    "text": "Ma perché lo scopro solo adesso?! Com'è possibile tradurre un paper mantenendo il layout originale? Anche le immagini, le tabelle e le formule del PDF restano quasi intatte… sono salvo 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@lune__v34/post/DdOMhkeDClK",
-   "views": 8985,
+   "views": 8989,
    "likes": 21,
    "replies": 1,
    "reposts": 1,
@@ -4044,7 +4678,7 @@
    "text": "Bunu nasıl şimdiye kadar bilmiyordum?! Makaleyi çeviriyor ama orijinal düzeni nasıl aynen koruyor? PDF'teki görseller, tablolar ve formüller bile neredeyse olduğu gibi duruyor… kurtuldum 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elif.dm_05/post/DdOFUjoAg-g",
-   "views": 30461,
+   "views": 30481,
    "likes": 207,
    "replies": 9,
    "reposts": 16,
@@ -4107,7 +4741,7 @@
    "text": "Sao giờ mình mới biết cái này?! Dịch cả bài mà vẫn giữ nguyên layout gốc là sao vậy trời? Hình ảnh, bảng biểu, công thức trong PDF cũng gần như nguyên vẹn… mình được cứu rồi 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@mint.le_06/post/DdNtRV2k6Rv",
-   "views": 8,
+   "views": 9,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4128,8 +4762,8 @@
    "text": "我怎麼現在才知道這個！到底是怎麼做到翻譯後還能保留論文原本排版的？PDF 裡的圖片、表格和公式幾乎都原封不動地保留下來了⋯⋯我有救了😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@shu.lin_03/post/DdNqHQ_lOVI",
-   "views": 1434,
-   "likes": 6,
+   "views": 1472,
+   "likes": 7,
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
@@ -4149,10 +4783,10 @@
    "text": "Kenapa aku baru tahu ini sekarang?! Gimana caranya nerjemahin satu paper tapi layout aslinya tetap utuh? Gambar, tabel, sama rumus di PDF juga hampir nggak berubah… aku selamat 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@rara.2k_/post/DdNqB2vmQAp",
-   "views": 57616,
-   "likes": 2161,
+   "views": 57765,
+   "likes": 2162,
    "replies": 35,
-   "reposts": 333,
+   "reposts": 334,
    "quotes": 3,
    "shares": 315,
    "round": null,
@@ -4170,7 +4804,7 @@
    "text": "ทำไมเพิ่งมารู้จักตอนนี้เนี่ย! แปลทั้งเปเปอร์แต่ยังคง layout เดิมไว้ได้ยังไงกัน รูป ตาราง สมการใน PDF ก็เก็บไว้เกือบครบ… รอดแล้วเรา 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@pim.pm_02/post/DdNp752FJpY",
-   "views": 34643,
+   "views": 34728,
    "likes": 482,
    "replies": 9,
    "reposts": 248,
@@ -4191,10 +4825,10 @@
    "text": "Sao giờ mình mới biết cái này?! Dịch cả bài mà vẫn giữ nguyên layout gốc là sao vậy trời? Hình ảnh, bảng biểu, công thức trong PDF cũng gần như nguyên vẹn… mình được cứu rồi 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdNp1_Nk_i_",
-   "views": 3940,
-   "likes": 82,
+   "views": 3998,
+   "likes": 86,
    "replies": 4,
-   "reposts": 26,
+   "reposts": 28,
    "quotes": 0,
    "shares": 32,
    "round": null,
@@ -4254,8 +4888,8 @@
    "text": "Kenapa aku baru tahu benda ni sekarang?! Macam mana boleh terjemah satu paper tapi layout asal masih kekal? Gambar, jadual dan formula dalam PDF pun hampir tak berubah… selamat aku 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@nur.aina_04/post/DdNjE6NivSw",
-   "views": 15445,
-   "likes": 827,
+   "views": 15530,
+   "likes": 828,
    "replies": 39,
    "reposts": 178,
    "quotes": 3,
@@ -4275,7 +4909,7 @@
    "text": "Bakit ngayon ko lang 'to nadiscover?! Paano niya nate-translate ang buong paper pero buo pa rin ang original layout? Kahit yung images, tables, at equations sa PDF, halos intact lahat… saved na ako 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@kai_.03b/post/DdNi_ukEusa",
-   "views": 58852,
+   "views": 58948,
    "likes": 1602,
    "replies": 8,
    "reposts": 254,
@@ -4317,7 +4951,7 @@
    "text": "나 왜 이제야 이걸 알았지! 대체 어떻게 번역하고도 원래 레이아웃을 유지하는 거야? PDF 속 이미지, 표, 수식도 거의 그대로 보존됐어… 나 이제 살았다😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ac_dd91/post/DdNcNqTiHkP",
-   "views": 1155,
+   "views": 1163,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -4359,7 +4993,7 @@
    "text": "How did I only just discover this?! How does it translate an entire paper while keeping the original layout intact? Even the images, tables, and equations in the PDF are preserved almost perfectly… I'm saved 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elle__jm/post/DdNVPrTkUPb",
-   "views": 2817,
+   "views": 2820,
    "likes": 39,
    "replies": 4,
    "reposts": 5,
@@ -4485,7 +5119,7 @@
    "text": "A must-have tool for anyone\nfrustrated by how slow Overleaf is",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ivy_.k09/post/DdMenJzFWcs",
-   "views": 1302,
+   "views": 1303,
    "likes": 15,
    "replies": 3,
    "reposts": 1,
@@ -4506,7 +5140,7 @@
    "text": "Chi ha un iPhone: provate a tenere la settimana\nsulla schermata di blocco.\nLa vedete ogni volta, senza aprire niente",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdMej_pFizh",
-   "views": 2361,
+   "views": 2362,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -4527,7 +5161,7 @@
    "text": "Ey, los que tenéis iPhone\n¿habéis probado a poner la agenda en la pantalla de bloqueo?\nLo pones una vez\ny lo ves cada vez que coges el móvil",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdMefY-lh9c",
-   "views": 456,
+   "views": 458,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -4548,7 +5182,7 @@
    "text": "Ceux qui ont un iPhone :\nvous saviez qu'on peut mettre son agenda sur l'écran verrouillé ?\nUne fois réglé, tout est là sans rien ouvrir",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DdMeasQltP1",
-   "views": 813,
+   "views": 815,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -4590,7 +5224,7 @@
    "text": "Haftalık programımı kilit ekranına koydum\nve artık takvim uygulamasını hiç açmıyorum.\nTelefonu her elime aldığımda hepsi orada duruyor.\nKimse böyle yapmıyor mu?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elif.dm_05/post/DdMXfIKlpZq",
-   "views": 260,
+   "views": 263,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -4779,7 +5413,7 @@
    "text": "mn ơi, có ai để lịch lên màn hình khoá không?\nMình để cả tuần, mở máy là thấy hết\nkhông cần mở app nữa nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mint.le_06/post/DdMC87nkTXQ",
-   "views": 27,
+   "views": 28,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4842,7 +5476,7 @@
    "text": "yang pakai iPhone, coba deh ini\njadwal seminggu langsung nongol di lockscreen\nbuka hp doang udah keliatan semua",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdL8LZ0IN7B",
-   "views": 282,
+   "views": 287,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4863,7 +5497,7 @@
    "text": "คนใช้ iPhone เคยลองเอาตารางขึ้นหน้าจอล็อกไหมครับ\nตั้งแค่ครั้งเดียว\nเปิดเครื่องทีไรก็เห็นเลยครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdL8GKzoAXs",
-   "views": 9372,
+   "views": 9390,
    "likes": 133,
    "replies": 3,
    "reposts": 51,
@@ -4884,7 +5518,7 @@
    "text": "mn ơi, có ai để lịch lên màn hình khoá không?\nMình để cả tuần, mở máy là thấy hết\nkhông cần mở app nữa nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdL8As1oJU7",
-   "views": 2831,
+   "views": 2838,
    "likes": 23,
    "replies": 1,
    "reposts": 1,
@@ -4926,7 +5560,7 @@
    "text": "Uy, mga naka-iPhone\nnailagay niyo na ba 'yung schedule niyo sa lock screen?\nIsang set lang\ntapos makikita niyo agad tuwing bubuksan ang phone",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdL1PJFltJQ",
-   "views": 257,
+   "views": 258,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -5136,7 +5770,7 @@
    "text": "야 아이폰 쓰는 사람들아\n잠금화면에 일정 띄워봤어?\n한 번 해두면\n폰 켤 때마다 바로 보인다",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DdLnanAG_ZN",
-   "views": 55,
+   "views": 61,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -5241,7 +5875,7 @@
    "text": "İngilizce makale okumakta zorlanan\nherkes için vazgeçilmez bir araç",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@elif.dm_05/post/DdLghpvG6ON",
-   "views": 73,
+   "views": 76,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -5262,7 +5896,7 @@
    "text": "Overleaf'in yavaşlığından bıkmış\nherkes için vazgeçilmez bir araç",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elif.dm_05/post/DdLZpk6DQwO",
-   "views": 622,
+   "views": 624,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -5367,7 +6001,7 @@
    "text": "Công cụ không thể thiếu cho những ai\nchật vật khi đọc paper tiếng Anh",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@mint.le_06/post/DdLIeiBlUUD",
-   "views": 465,
+   "views": 466,
    "likes": 10,
    "replies": 1,
    "reposts": 2,
@@ -5409,7 +6043,7 @@
    "text": "Alat yang wajib punya buat siapa pun\nyang kesulitan baca paper berbahasa Inggris",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdLFFqzlSqP",
-   "views": 4266,
+   "views": 4275,
    "likes": 131,
    "replies": 4,
    "reposts": 20,
@@ -5430,7 +6064,7 @@
    "text": "เครื่องมือที่ขาดไม่ได้สำหรับคน\nที่อ่านเปเปอร์ภาษาอังกฤษไม่ไหว",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@pim.pm_02/post/DdLFC57FQkB",
-   "views": 837,
+   "views": 845,
    "likes": 18,
    "replies": 1,
    "reposts": 10,
@@ -5535,7 +6169,7 @@
    "text": "Alat yang wajib punya buat siapa pun\nyang kesal sama lambatnya Overleaf",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@rara.2k_/post/DdK-f8YAHMO",
-   "views": 11386,
+   "views": 11394,
    "likes": 212,
    "replies": 27,
    "reposts": 21,
@@ -5556,7 +6190,7 @@
    "text": "เครื่องมือที่ขาดไม่ได้สำหรับคน\nที่หงุดหงิดกับความช้าของ Overleaf",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@pim.pm_02/post/DdK-Ziogrvo",
-   "views": 886,
+   "views": 888,
    "likes": 10,
    "replies": 1,
    "reposts": 2,
@@ -5577,7 +6211,7 @@
    "text": "Công cụ không thể thiếu cho những ai\nphát bực vì Overleaf quá chậm",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdK-ThTjvT0",
-   "views": 525,
+   "views": 533,
    "likes": 6,
    "replies": 1,
    "reposts": 0,
@@ -5766,7 +6400,7 @@
    "text": "영어 원문 때문에\n논문 못 읽는 사람에게 필수인 툴",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ac_dd91/post/DdK3WWPDQix",
-   "views": 1171,
+   "views": 1175,
    "likes": 2,
    "replies": 3,
    "reposts": 1,
@@ -5829,7 +6463,7 @@
    "text": "Overleaf 속도 때문에\n논문 쓰는 게 답답했던 사람에게 필수인 툴",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ac_dd91/post/DdKwgLilRNw",
-   "views": 89,
+   "views": 92,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5871,7 +6505,7 @@
    "text": "A must-have tool for anyone\nfrustrated by how slow Overleaf is",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elle__jm/post/DdKpmCWjvzN",
-   "views": 8427,
+   "views": 8437,
    "likes": 88,
    "replies": 14,
    "reposts": 8,
@@ -5976,7 +6610,7 @@
    "text": "Seit ich meine Termine auf dem Sperrbildschirm habe\nmuss ich die Kalender-App gar nicht mehr aufmachen.\nFrüher hab ich dreimal am Tag nachgeschaut, ob ich was vergessen hab.\nGeht das nur mir so?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@dot2day_/post/DdJ57QPm_TW",
-   "views": 1190,
+   "views": 1191,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5997,7 +6631,7 @@
    "text": "Chi ha un iPhone: mettete i vostri impegni\nsulla schermata di blocco.\nLi vedete ogni volta che accendete il telefono",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DdJ5yyMm0xP",
-   "views": 6316,
+   "views": 6317,
    "likes": 7,
    "replies": 4,
    "reposts": 0,
@@ -6102,7 +6736,7 @@
    "text": "mn ơi, ai để lịch lên màn hình khoá chưa?\nMình để cả tuần luôn, mở máy là thấy\nkhỏi phải nhớ gì nữa nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mint.le_06/post/DdJeR03FLpf",
-   "views": 73,
+   "views": 76,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -6123,7 +6757,7 @@
    "text": "還有人每天開行事曆 App 嗎\n鎖定畫面就能看整週了欸\n設定一次\n之後真的都不用再點開",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@shu.lin_03/post/DdJeEhNFLLg",
-   "views": 3375,
+   "views": 3402,
    "likes": 6,
    "replies": 1,
    "reposts": 0,
@@ -6165,7 +6799,7 @@
    "text": "mn ơi, ai để lịch lên màn hình khoá chưa?\nMình để cả tuần luôn, mở máy là thấy\nkhỏi phải nhớ gì nữa nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdJXkCIG4TT",
-   "views": 1564,
+   "views": 1575,
    "likes": 8,
    "replies": 1,
    "reposts": 1,
@@ -6186,7 +6820,7 @@
    "text": "yang pakai iPhone, jangan lupa coba ini\nlockscreen bisa nampilin jadwal seminggu\ngak perlu buka app lagi\nsekali setting langsung jalan",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdJXVUZGzGA",
-   "views": 971,
+   "views": 974,
    "likes": 7,
    "replies": 1,
    "reposts": 2,
@@ -6207,7 +6841,7 @@
    "text": "คนใช้ iPhone ลองอันนี้ดูครับ\nเอาตารางทั้งอาทิตย์ขึ้นหน้าจอล็อก\nตั้งครั้งเดียว ไม่ต้องเปิดแอปอีกเลยครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdJXNi1G_Q9",
-   "views": 18225,
+   "views": 18233,
    "likes": 121,
    "replies": 6,
    "reposts": 77,
@@ -6270,7 +6904,7 @@
    "text": "スケジュール管理が苦手な人へ\nロック画面に今週の予定を出す方法、まとめたよ\n①アプリを入れる ②表示する内容を選ぶ ③壁紙に設定\n一度やれば毎日勝手に変わるよ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/DdJQV2REfEB",
-   "views": 1835,
+   "views": 1839,
    "likes": 8,
    "replies": 1,
    "reposts": 0,
@@ -6312,7 +6946,7 @@
    "text": "야 아이폰 쓰는 사람들아\n이거 한 번만 설정해봐.\n이번 주 일정이 잠금화면에 그냥 떠 있음\n앱 열 일이 없어진다",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DdJJr6kG-bR",
-   "views": 575,
+   "views": 579,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -6333,7 +6967,7 @@
    "text": "been on iPhone for years\nand only just found out the lock screen can hold my whole week.\nno more opening the calendar app\nwish someone told me sooner",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elle__jm/post/DdJJinvm4cQ",
-   "views": 304,
+   "views": 305,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -6354,7 +6988,7 @@
    "text": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DdJComwE-NN",
-   "views": 12,
+   "views": 15,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -6396,7 +7030,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch cả tuần hiện thẳng lên màn hình khoá\nkhỏi mở app luôn nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdIgTpMDTT8",
-   "views": 116,
+   "views": 122,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -6921,7 +7555,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@mint.le_06/post/DdGyZPQG2jy",
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -7005,7 +7639,7 @@
    "text": "연구실에서 이 사이트 쓰다가 교수님한테 한 소리 들은 적 있음.\n\nPDF 열면 원본 레이아웃 그대로 바로 번역되고\n복잡한 Figure는 클릭 한 번이면 바로 해석해주고\n논문의 창의점·연구 방법·결론까지 자동으로 표시해줌.\n교수님이 그때 그랬음. \"논문은 직접 읽어야지……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ac_dd91/post/DdGoKYgIKbY",
-   "views": 3925,
+   "views": 3932,
    "likes": 21,
    "replies": 3,
    "reposts": 3,
@@ -7026,7 +7660,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@mint.le_06/post/DdGoEw6Gvo9",
-   "views": 15,
+   "views": 16,
    "likes": 0,
    "replies": 2,
    "reposts": 0,
@@ -7194,7 +7828,7 @@
    "text": "연구실에서 이 사이트 쓰다가 교수님한테 한 소리 들은 적 있음.\n\nLaTeX 쓰면 거의 바로 컴파일 결과가 보이고\nOverleaf보다 컴파일이 훨씬 빠르고\n계속 고쳐도 매번 기다리다 지칠 일이 없음.\n교수님이 그때 그랬음. \"논문은 그냥 Overleaf로 쓰면 되지 않냐……\"\n\n근데 지금은 교수님이 직접 쓰고 계심.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ac_dd91/post/DdGXFJsgIz4",
-   "views": 36,
+   "views": 39,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -7362,7 +7996,7 @@
    "text": "gue pernah ditegur profesor gara-gara pakai situs ini di lab.\n\nbuka PDF, langsung diterjemahin di tempat dengan layout aslinya;\nklik figure yang ribet, langsung dijelasin saat itu juga;\nbahkan poin baru, metode, sama kesimpulan papernya ditandain otomatis.\nwaktu itu profesor bilang: \"paper itu ya dibaca sendiri……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdF7sAPETHj",
-   "views": 3830,
+   "views": 3834,
    "likes": 47,
    "replies": 3,
    "reposts": 9,
@@ -7383,7 +8017,7 @@
    "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเปิด PDF ก็แปลให้ทันทีโดยคงเลย์เอาต์เดิมไว้\nกด Figure ที่ซับซ้อนก็อธิบายให้ตรงนั้นเลย\nแถมยังไฮไลต์จุดใหม่ วิธีวิจัย และข้อสรุปของเปเปอร์ให้อัตโนมัติ\nตอนนั้นอาจารย์ยังบอกว่า \"เปเปอร์ต้องอ่านเองสิ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@pim.pm_02/post/DdF7oPjEcif",
-   "views": 418,
+   "views": 419,
    "likes": 3,
    "replies": 1,
    "reposts": 1,
@@ -7425,7 +8059,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF7dtfiG_B",
-   "views": 64210,
+   "views": 64275,
    "likes": 1164,
    "replies": 32,
    "reposts": 263,
@@ -7467,7 +8101,7 @@
    "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเขียน LaTeX เสร็จก็เห็นผล compile แทบจะทันที\ncompile เร็วกว่า Overleaf มาก\nแก้กี่รอบก็ไม่ต้องนั่งรอจนหงุดหงิด\nตอนนั้นอาจารย์ยังบอกว่า \"เขียนเปเปอร์ก็ใช้ Overleaf ไปสิ……\"\n\nตอนนี้อาจารย์เองก็ใช้อยู่ครับ",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@pim.pm_02/post/DdF0vbdAURu",
-   "views": 1127,
+   "views": 1129,
    "likes": 25,
    "replies": 1,
    "reposts": 10,
@@ -7509,7 +8143,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF0lnfDBKv",
-   "views": 1717,
+   "views": 1753,
    "likes": 17,
    "replies": 7,
    "reposts": 1,
@@ -7572,7 +8206,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 18374,
+   "views": 18551,
    "likes": 129,
    "replies": 5,
    "reposts": 17,
@@ -7698,7 +8332,7 @@
    "text": "Llevo años con iPhone\ny nadie me dijo que la pantalla de bloqueo hacía esto.\nAhora toda la semana está ahí.\nNo se me ha olvidado nada desde entonces",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdEwfWGkatg",
-   "views": 6163,
+   "views": 6166,
    "likes": 19,
    "replies": 8,
    "reposts": 1,
@@ -7866,10 +8500,10 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 90140,
+   "views": 90352,
    "likes": 1393,
    "replies": 13,
-   "reposts": 909,
+   "reposts": 910,
    "quotes": 61,
    "shares": 423,
    "round": "08",
@@ -7887,8 +8521,8 @@
    "text": "10 tahun pakai iPhone\nbaru tau lockscreen bisa nampilin ini.\njadwal seminggu nongol terus di situ\nsejak itu gak pernah lupa apa-apa",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
-   "views": 13345,
-   "likes": 187,
+   "views": 13722,
+   "likes": 192,
    "replies": 12,
    "reposts": 15,
    "quotes": 1,
@@ -7908,7 +8542,7 @@
    "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
-   "views": 14363,
+   "views": 14403,
    "likes": 66,
    "replies": 8,
    "reposts": 10,
@@ -7929,7 +8563,7 @@
    "text": "ねえ、iPhone使ってるみんな、\nこれ一回だけでも使ってみて。\n使い始めたら\n本当に忘れることがなくなるよ ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi.02_/post/DdD_4F_lq-o",
-   "views": 1310,
+   "views": 1319,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -7950,7 +8584,7 @@
    "text": "Hey, iPhone people,\nset your lock screen up like this.\nYou see today's plans every time you check your phone,\nso there's no chance to forget ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elle__jm/post/DdD5IxoGwzO",
-   "views": 346,
+   "views": 347,
    "likes": 0,
    "replies": 1,
    "reposts": 1,
@@ -7971,7 +8605,7 @@
    "text": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DdD5Amqm_kE",
-   "views": 1893,
+   "views": 1896,
    "likes": 6,
    "replies": 3,
    "reposts": 2,
@@ -7992,7 +8626,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdDCEziDdRN",
-   "views": 4128,
+   "views": 4132,
    "likes": 21,
    "replies": 4,
    "reposts": 2,
@@ -8181,7 +8815,7 @@
    "text": "Này, những ai dùng iPhone,\nthử cái này một lần thôi.\nBắt đầu dùng rồi\nlà thật sự không quên gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdAgrY6oKKC",
-   "views": 7932,
+   "views": 7950,
    "likes": 24,
    "replies": 1,
    "reposts": 4,
@@ -8328,7 +8962,7 @@
    "text": "Woy, yang pakai iPhone,\ncoba ini sekali aja deh.\nBegitu mulai pakai\nbeneran nggak ada yang kelupaan lagi ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dc_EE6NFlEU",
-   "views": 28998,
+   "views": 29002,
    "likes": 457,
    "replies": 23,
    "reposts": 49,
@@ -8433,7 +9067,7 @@
    "text": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/Dc-2RinIO5B",
-   "views": 712,
+   "views": 714,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -8685,7 +9319,7 @@
    "text": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/Dc7GAHSjjAb",
-   "views": 93,
+   "views": 95,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -8874,7 +9508,7 @@
    "text": "Hoá ra iPhone có app như thế này\nmà tới giờ mình mới biết…\nVẽ lên màn hình khoá, dán thêm sticker,\ntrang trí đúng theo ý mình luôn 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dc4u6vYAqHj",
-   "views": 7869,
+   "views": 7881,
    "likes": 28,
    "replies": 1,
    "reposts": 2,
@@ -8979,7 +9613,7 @@
    "text": "아이폰에 이런 앱이 있었는데\n나만 여태 모르고 있었네…\n잠금화면에 그림도 그리고 스티커도 붙여서\n내 맘대로 꾸며놨어 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/Dc4hLSBoBUP",
-   "views": 613,
+   "views": 614,
    "likes": 4,
    "replies": 1,
    "reposts": 0,
@@ -9021,7 +9655,7 @@
    "text": "欸，用 iPhone 的朋友們，\n這個真的試一次就好。\n只要開始用了\n真的什麼都不會忘記了 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@daily03dew/post/DczvjomDa5v",
-   "views": 26,
+   "views": 27,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -9126,7 +9760,7 @@
    "text": "Hé, vous qui avez un iPhone,\nessayez ça, ne serait-ce qu'une fois.\nUne fois que vous commencez\nvous n'oubliez plus rien, vraiment ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DcyuWQEIFVg",
-   "views": 5515,
+   "views": 5516,
    "likes": 10,
    "replies": 4,
    "reposts": 0,
@@ -9357,8 +9991,8 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 429077,
-   "likes": 4238,
+   "views": 429318,
+   "likes": 4240,
    "replies": 88,
    "reposts": 697,
    "quotes": 18,
@@ -9693,7 +10327,7 @@
    "text": "欸，iPhone 用戶，\n真的一定要試試這個！\n行程、待辦事項絕對不會忘記 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@inkling01/post/DcivMUaCRfH",
-   "views": 7843,
+   "views": 7845,
    "likes": 46,
    "replies": 1,
    "reposts": 1,
@@ -9735,7 +10369,7 @@
    "text": "Nhờ mọi người mà app đã đạt hạng 11 mục Hiệu quả trên App Store! 🎉\nCảm ơn mọi người nhiều lắm luôn 💕\n\nMình đọc được nhiều tin nhắn và comment nói là phần cài đặt hơi khó\nMình biết hết rồi nha, và đang cải thiện để làm cho dễ hơn!\n\nComment mình đều đọc hết đó!\nCó trả lời chậm thì mọi người thông cảm nha.. xin lỗi nè 🥲\n\nTrước mắt mình sẽ viết từng bước cài đặt trong thread này nha 👇",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DcimhdrE8HN",
-   "views": 3646,
+   "views": 3660,
    "likes": 38,
    "replies": 9,
    "reposts": 10,
@@ -9756,7 +10390,7 @@
    "text": "用 iPhone 的你，\n還在每次打開行事曆確認行程嗎？\n像這樣設定好之後，\n只要看鎖定畫面，就能馬上知道今天要做什麼 ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@daily03dew/post/DcgKdESk8eG",
-   "views": 41,
+   "views": 42,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -9819,8 +10453,8 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1193414,
-   "likes": 20228,
+   "views": 1193909,
+   "likes": 20230,
    "replies": 300,
    "reposts": 4309,
    "quotes": 60,
@@ -9924,7 +10558,7 @@
    "text": "이거 알고 있었어?\n잠금화면에 할일 다 적을 수 있어!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DcayvYGAYqF",
-   "views": 1481,
+   "views": 1482,
    "likes": 10,
    "replies": 1,
    "reposts": 1,
@@ -10008,7 +10642,7 @@
    "text": "아이폰 쓰는 사람들\n이거 쓰면\n할 일 진짜 안 까먹음",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DcXRdscAR0A",
-   "views": 112,
+   "views": 113,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -10029,7 +10663,7 @@
    "text": "아이폰 투두는\n이거 쓰면 된다\n까먹을 일이 없음￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DcVpXh8ASes",
-   "views": 1269,
+   "views": 1270,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -10071,7 +10705,7 @@
    "text": "아이폰 쓰는 사람들\n캘린더는 이거 쓰면 된다\n이제 캘린더 앱 안 열게 됨￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DcN4OS7AYH4",
-   "views": 563,
+   "views": 564,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -10092,7 +10726,7 @@
    "text": "아이폰 쓰는 사람들\n이거 쓰면\n진짜로 까먹는 일이 없어져",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DcLVBVBAUlO",
-   "views": 417,
+   "views": 418,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -10295,7 +10929,7 @@
    "text": "ねえ、iPhone使ってるみんな、\nこれ一回だけでも使ってみて。\n使い始めたら\n本当に忘れることがなくなるよ ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.instagram.com/p/DdD__A2luzG/",
-   "views": 31,
+   "views": 36,
    "likes": 0,
    "replies": 1,
    "saved": 1,
@@ -10482,7 +11116,50 @@
    "shares": 0
   }
  ],
- "pending": [],
+ "pending": [
+  {
+   "id": "18114410111081121",
+   "user": "_ht.tan_",
+   "when": "09/15 18:38",
+   "text": "phế",
+   "link": "https://www.threads.com/@_ht.tan_/post/DdTnyQYlA0K",
+   "account": "mint.le_06",
+   "project": "cortex",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "post": "18098872031527515",
+   "post_text": "Mình từng bị giáo sư mắng vì dùng trang ",
+   "post_link": "https://www.threads.com/@mint.le_06/post/DdTnJWRlMxd"
+  },
+  {
+   "id": "18105612095077525",
+   "user": "ekremunal00",
+   "when": "09/15 20:47",
+   "text": "ben openai prism kullanmıştım bitirme projem için. içinde gpt vardı düzenlemeleri çok kolay yapabiliyordu",
+   "link": "https://www.threads.com/@ekremunal00/post/DdUSBBqDjy0",
+   "account": "elif.dm_05",
+   "project": "cortex",
+   "country": "TR",
+   "flag": "🇹🇷",
+   "post": "18004519629002845",
+   "post_text": "Laboratuvarda bu siteyi kullandığım için",
+   "post_link": "https://www.threads.com/@elif.dm_05/post/DdT--pHiaCO"
+  },
+  {
+   "id": "18106425833265934",
+   "user": "immersive_researcher",
+   "when": "09/16 05:29",
+   "text": "Overleaf가 latex 편집기 아닌가요…",
+   "link": "https://www.threads.com/@immersive_researcher/post/DdUkkGHErh3",
+   "account": "ac_dd91",
+   "project": "cortex",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "post": "17982255888120076",
+   "post_text": "연구실에서 이 사이트 쓰다가 교수님한테 한 소리 들은 적 있음.",
+   "post_link": "https://www.threads.com/@ac_dd91/post/DdTVx7xiJPm"
+  }
+ ],
  "skipped": [
   {
    "id": "18090561782661741",
