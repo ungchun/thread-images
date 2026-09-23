@@ -95,6 +95,11 @@ def tag_rounds(posts, rs):
         if len(hits) > 1:
             hits = [min(hits, key=lambda h: abs((date.fromisoformat(h[0]["date"]) - d).days))]
         r = hits[0][0]
+        # 문구를 과거 라운드에서 재사용하면 옛 게시물이 새 라운드로 잡힌다(본문이 같으므로).
+        # arms 를 쓰는 경로 실험 라운드는 그 라운드 날짜 이후 글만 센다.
+        if r.get("arms") and d < date.fromisoformat(r["date"]):
+            p["round"] = p["variant"] = None
+            continue
         p["round"], p["variant"] = r["id"], hits[0][1]
         arms = r.get("arms") or {}
         if arms:   # 갈래 실험: 변종은 문구가 아니라 계정이 속한 그룹
