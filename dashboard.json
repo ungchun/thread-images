@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T01:00:43.705542+00:00",
+ "generated": "2026-09-23T01:53:30.471731+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -28,7 +28,7 @@
      "12": {
       "n": 2,
       "score": 2.38,
-      "median": 980
+      "median": 981
      },
      "13": {
       "n": 5,
@@ -46,13 +46,13 @@
       "median": 8
      },
      "18": {
-      "n": 17,
-      "score": 0.07,
-      "median": 16
+      "n": 18,
+      "score": 0.08,
+      "median": 15
      },
      "19": {
       "n": 24,
-      "score": 0.18,
+      "score": 0.19,
       "median": 48
      },
      "20": {
@@ -68,9 +68,9 @@
     },
     "wday": {
      "화": {
-      "n": 37,
-      "score": 0.09,
-      "median": 22
+      "n": 38,
+      "score": 0.1,
+      "median": 21
      },
      "목": {
       "n": 39,
@@ -90,9 +90,9 @@
     },
     "media": {
      "IMAGE": {
-      "n": 117,
-      "score": 0.12,
-      "median": 25
+      "n": 118,
+      "score": 0.13,
+      "median": 23
      },
      "VIDEO": {
       "n": 20,
@@ -104,8 +104,8 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 6,
-      "avg": 18454,
-      "max": 64768,
+      "avg": 18455,
+      "max": 64770,
       "hours": {
        "10": {
         "n": 1,
@@ -115,7 +115,7 @@
        "11": {
         "n": 3,
         "score": 1.92,
-        "median": 35523
+        "median": 35524
        },
        "19": {
         "n": 2,
@@ -131,13 +131,13 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 7,
-      "avg": 13919,
+      "avg": 13920,
       "max": 58597,
       "hours": {
        "10": {
         "n": 1,
         "score": 2.13,
-        "median": 29597
+        "median": 29603
        },
        "11": {
         "n": 4,
@@ -163,7 +163,7 @@
      "kai_.03b": {
       "flag": "PH",
       "posts": 7,
-      "avg": 9074,
+      "avg": 9075,
       "max": 59410,
       "hours": {
        "10": {
@@ -174,7 +174,7 @@
        "11": {
         "n": 4,
         "score": 0.21,
-        "median": 1865
+        "median": 1866
        },
        "18": {
         "n": 1,
@@ -286,8 +286,8 @@
      "03ines.mar_": {
       "flag": "PT",
       "posts": 7,
-      "avg": 1990,
-      "max": 11885,
+      "avg": 1991,
+      "max": 11886,
       "hours": {
        "10": {
         "n": 2,
@@ -393,12 +393,12 @@
       "flag": "TW",
       "posts": 5,
       "avg": 411,
-      "max": 1954,
+      "max": 1956,
       "hours": {
        "12": {
         "n": 2,
         "score": 2.38,
-        "median": 980
+        "median": 981
        },
        "15": {
         "n": 1,
@@ -524,19 +524,24 @@
      },
      "ivy_.k09": {
       "flag": "US",
-      "posts": 5,
-      "avg": 92,
+      "posts": 6,
+      "avg": 79,
       "max": 408,
       "hours": {
        "10": {
         "n": 2,
-        "score": 0.07,
+        "score": 0.08,
         "median": 6
        },
        "11": {
         "n": 3,
-        "score": 0.27,
+        "score": 0.31,
         "median": 25
+       },
+       "18": {
+        "n": 1,
+        "score": 0.19,
+        "median": 15
        }
       },
       "best_hour": 11,
@@ -621,17 +626,17 @@
        },
        "13": {
         "n": 1,
-        "score": 2.18,
+        "score": 2.17,
         "median": 69
        },
        "19": {
         "n": 1,
-        "score": 0.19,
-        "median": 6
+        "score": 0.22,
+        "median": 7
        },
        "20": {
         "n": 1,
-        "score": 2.75,
+        "score": 2.73,
         "median": 87
        }
       },
@@ -680,7 +685,7 @@
       "hours": {
        "10": {
         "n": 1,
-        "score": 0.38,
+        "score": 0.37,
         "median": 3
        },
        "11": {
@@ -690,17 +695,17 @@
        },
        "13": {
         "n": 1,
-        "score": 0.75,
+        "score": 0.74,
         "median": 6
        },
        "19": {
         "n": 2,
-        "score": 0.5,
+        "score": 0.55,
         "median": 4
        },
        "20": {
         "n": 1,
-        "score": 4.38,
+        "score": 4.3,
         "median": 35
        }
       },
@@ -1608,7 +1613,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
      "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
      "posts": 24,
-     "views": 54104,
+     "views": 54105,
      "likes": 534,
      "median": 338,
      "score": 1.0,
@@ -1657,7 +1662,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
      "posts": 34,
-     "views": 176249,
+     "views": 176266,
      "likes": 1927,
      "median": 180,
      "score": 1.44,
@@ -1738,7 +1743,7 @@
      },
      "19": {
       "n": 125,
-      "score": 0.34,
+      "score": 0.35,
       "median": 188
      },
      "20": {
@@ -1805,13 +1810,13 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 14,
-      "avg": 120098,
-      "max": 1197989,
+      "avg": 120100,
+      "max": 1197998,
       "hours": {
        "8": {
         "n": 6,
         "score": 0.12,
-        "median": 14131
+        "median": 14132
        },
        "11": {
         "n": 1,
@@ -1838,7 +1843,7 @@
       "flag": "TH",
       "posts": 7,
       "avg": 23422,
-      "max": 91821,
+      "max": 91824,
       "hours": {
        "19": {
         "n": 6,
@@ -1859,7 +1864,7 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 10,
-      "avg": 5166,
+      "avg": 5167,
       "max": 29077,
       "hours": {
        "8": {
@@ -1875,7 +1880,7 @@
        "19": {
         "n": 6,
         "score": 0.29,
-        "median": 1521
+        "median": 1522
        }
       },
       "best_hour": 19,
@@ -1955,8 +1960,8 @@
      "kai_.03b": {
       "flag": "PH",
       "posts": 11,
-      "avg": 1720,
-      "max": 16281,
+      "avg": 1721,
+      "max": 16289,
       "hours": {
        "8": {
         "n": 2,
@@ -3031,21 +3036,1339 @@
  "window_days": 30,
  "scheduled": [
   {
+   "account": "elle__jm",
+   "project": "moonlight",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-09-24T01:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "The night before lab meeting I was cramming 3 papers,\nand a senior in my lab said \"you won't remember any of it reading like that.\"\n\nDrop in a PDF and it translates while keeping the original layout,\none click on a figure and it explains it,\nand it auto-marks the novelty, methods and conclusions.\n\nNow that same senior is asking me for the link.\n---\nmedia: -\nIt's an AI-powered research paper reader called Moonlight!\nThe features shown above are available on a paid plan.\nBut you can still read three papers for free every week, which is a nice bonus👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_en.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-24T02:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "ラボミーティングの前日に論文3本まとめて読んでたら、\n先輩に「そんな読み方じゃ何も残らないよ」って言われた。\n\nPDFを入れると元のレイアウトのまま翻訳されて\nFigureはクリック一つで解説してくれて\n新規性・手法・結論まで自動でマークしてくれる。\n\nでも今は、その先輩が私にリンク教えてって言ってくる。\n---\nmedia: -\n論文を読むためのAIツール「Moonlight」というウェブサービスです！\nただし、上で紹介した機能は有料です。\nでも、毎週3本まで論文を無料で読めるのはうれしいポイントです👇\nhttps://www.themoonlight.io/ja",
+   "media": [
+    "w39/ml05_jp.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ac_dd91",
+   "project": "moonlight",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-09-24T02:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "랩미팅 전날 논문 3편 몰아 읽는 거 보고\n선배가 \"그렇게 읽으면 하나도 안 남아\" 했었음.\n\nPDF 넣으면 원문 레이아웃 그대로 번역되고\nfigure는 클릭 한 번에 해석되고\n독창성·방법·결론까지 알아서 표시됨.\n\n근데 지금은 그 선배가 나한테 링크 달라고 함.\n---\nmedia: -\n논문 읽기 AI 문라이트라는 웹입니다!\n다만 위에서 소개한 기능은 유료로 이용해야 해요.\n그렇지만, 매주 논문 3편을 무료로 읽을 수 있는 건 장점이에요\n👇 https://www.themoonlight.io/ko",
+   "media": [
+    "w39/ml05_kr.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nur.aina_04",
+   "project": "moonlight",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-09-24T03:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "Malam sebelum lab meeting aku baca 3 kertas kajian sekali gus,\nsenior aku cakap: \"baca macam tu, satu apa pun tak masuk kepala\".\n\nMasukkan PDF, terus diterjemah dengan susun atur asal;\nklik figure, terus dijelaskan;\nkebaharuan, kaedah dan kesimpulan pun ditanda sendiri.\n\nSekarang senior tu pula yang minta link dari aku.\n---\nmedia: -\nNamanya Moonlight, web AI untuk baca paper!\nTapi fungsi di atas kena bayar.\nMasih boleh baca 3 paper percuma setiap minggu 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-24T03:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "Gabi bago ang lab meeting, binasa ko nang sunod-sunod yung 3 papers,\nsabi ng senior ko: \"Wala kang maaalala kung ganyan ka magbasa.\"\n\nI-upload mo lang yung PDF, translated agad na buo pa yung original layout;\nclick mo yung figure, ipapaliwanag agad;\nauto pa niyang minamarkahan yung novelty, methods, at conclusion.\n\nNgayon, siya na yung humihingi sa akin ng link.\n---\nmedia: -\nMoonlight ang pangalan, AI website para magbasa ng papers!\nPero bayad yung mga feature sa taas.\nLibre pa rin naman ang 3 papers kada linggo 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "daily03dew",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-24T03:30:00+00:00",
+   "local": "2026-09-24 11:30",
+   "text": "組會前一天一次狂讀三篇論文，\n學長看到還說：「這樣讀根本記不住啦」。\n\nPDF 丟進去就能保留原始版面直接翻譯，\n複雜的 Figure 點一下就幫你解讀，\n創新點、研究方法、結論還會自動標出來。\n\n結果現在，換學長跑來跟我要連結。\n---\nmedia: -\n這是一個叫 Moonlight 的 AI 論文閱讀網站！\n不過，上面介紹的功能需要付費使用。\n但每週可以免費閱讀 3 篇論文，這點還是很不錯的👇\nhttps://www.themoonlight.io/tw",
+   "media": [
+    "w39/ml05_tw.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "rara.2k_",
+   "project": "moonlight",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-24T04:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "malam sebelum lab meeting gue baca 3 paper sekaligus,\nterus senior gue bilang: \"baca kayak gitu nggak bakal ada yang nyangkut\".\n\nmasukin PDF, langsung diterjemahin dengan layout aslinya;\nklik figure, langsung dijelasin;\npoin baru, metode, sama kesimpulannya juga ditandain otomatis.\n\nsekarang malah senior itu yang minta link-nya ke gue.\n---\nmedia: -\nnamanya Moonlight, web AI buat baca paper!\ntapi fitur di atas berbayar ya.\ntetap bisa baca 3 paper gratis tiap minggu kok 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "pim.pm_02",
+   "project": "moonlight",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-24T04:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "คืนก่อนประชุมแล็บ ผมนั่งอ่านเปเปอร์รวดเดียว 3 เรื่อง\nรุ่นพี่เห็นเลยบอกว่า \"อ่านแบบนี้ไม่เหลืออะไรในหัวหรอก\"\n\nใส่ PDF ก็แปลให้โดยคงเลย์เอาต์เดิมไว้\nกด Figure ครั้งเดียวก็อธิบายให้ทันที\nแถมไฮไลต์จุดใหม่ วิธีวิจัย และข้อสรุปให้อัตโนมัติ\n\nตอนนี้รุ่นพี่คนนั้นมาขอลิงก์จากผมแทน\n---\nmedia: -\nชื่อ Moonlight เป็นเว็บ AI สำหรับอ่านเปเปอร์ครับ\nแต่ฟีเจอร์ด้านบนต้องใช้แบบเสียเงินนะครับ\nยังไงก็อ่านฟรีได้สัปดาห์ละ 3 เรื่อง 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "inkling01",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-24T04:30:00+00:00",
+   "local": "2026-09-24 12:30",
+   "text": "組會前一天一次狂讀三篇論文，\n學長看到還說：「這樣讀根本記不住啦」。\n\nPDF 丟進去就能保留原始版面直接翻譯，\n複雜的 Figure 點一下就幫你解讀，\n創新點、研究方法、結論還會自動標出來。\n\n結果現在，換學長跑來跟我要連結。\n---\nmedia: -\n這是一個叫 Moonlight 的 AI 論文閱讀網站！\n不過，上面介紹的功能需要付費使用。\n但每週可以免費閱讀 3 篇論文，這點還是很不錯的👇\nhttps://www.themoonlight.io/tw",
+   "media": [
+    "w39/ml05_tw.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ashgrey._02",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-24T04:30:00+00:00",
+   "local": "2026-09-24 11:30",
+   "text": "Tối trước buổi họp lab mình đọc một lèo 3 paper,\nanh khóa trên thấy liền bảo: \"Đọc kiểu này thì chẳng đọng lại gì đâu\".\n\nBỏ PDF vào là dịch ngay, giữ nguyên bố cục gốc;\nbấm vào Figure là giải thích liền;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận.\n\nGiờ thì chính anh ấy lại đi xin link của mình.\n---\nmedia: -\nLà Moonlight, trang web AI đọc paper nha!\nNhưng các tính năng ở trên là trả phí nhé.\nDù vậy mỗi tuần vẫn đọc miễn phí được 3 bài 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "shu.lin_03",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-24T05:00:00+00:00",
+   "local": "2026-09-24 13:00",
+   "text": "組會前一天一次狂讀三篇論文，\n學長看到還說：「這樣讀根本記不住啦」。\n\nPDF 丟進去就能保留原始版面直接翻譯，\n複雜的 Figure 點一下就幫你解讀，\n創新點、研究方法、結論還會自動標出來。\n\n結果現在，換學長跑來跟我要連結。\n---\nmedia: -\n這是一個叫 Moonlight 的 AI 論文閱讀網站！\n不過，上面介紹的功能需要付費使用。\n但每週可以免費閱讀 3 篇論文，這點還是很不錯的👇\nhttps://www.themoonlight.io/tw",
+   "media": [
+    "w39/ml05_tw.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mint.le_06",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-24T05:00:00+00:00",
+   "local": "2026-09-24 12:00",
+   "text": "Tối trước buổi họp lab mình đọc một lèo 3 paper,\nanh khóa trên thấy liền bảo: \"Đọc kiểu này thì chẳng đọng lại gì đâu\".\n\nBỏ PDF vào là dịch ngay, giữ nguyên bố cục gốc;\nbấm vào Figure là giải thích liền;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận.\n\nGiờ thì chính anh ấy lại đi xin link của mình.\n---\nmedia: -\nLà Moonlight, trang web AI đọc paper nha!\nNhưng các tính năng ở trên là trả phí nhé.\nDù vậy mỗi tuần vẫn đọc miễn phí được 3 bài 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nia._055",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-24T05:30:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "लैब मीटिंग से एक रात पहले मैं एक साथ 3 पेपर पढ़ रही थी,\nएक सीनियर ने कहा: \"ऐसे पढ़ोगी तो कुछ याद नहीं रहेगा।\"\n\nPDF डालो तो ओरिजिनल लेआउट वैसा ही रखकर ट्रांसलेट हो जाता है,\nकिसी भी Figure पर क्लिक करो तो तुरंत समझा देता है,\nऔर पेपर की नई बात, तरीका और निष्कर्ष अपने-आप मार्क कर देता है।\n\nअब वही सीनियर मुझसे लिंक माँगते हैं।\n---\nmedia: -\nइसका नाम Moonlight है, पेपर पढ़ने की AI वेबसाइट!\nऊपर दिखाए गए फ़ीचर पेड हैं।\nफिर भी हर हफ़्ते 3 पेपर फ्री में पढ़ सकते हो 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "riya._m08",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-24T06:30:00+00:00",
+   "local": "2026-09-24 12:00",
+   "text": "लैब मीटिंग से एक रात पहले मैं एक साथ 3 पेपर पढ़ रही थी,\nएक सीनियर ने कहा: \"ऐसे पढ़ोगी तो कुछ याद नहीं रहेगा।\"\n\nPDF डालो तो ओरिजिनल लेआउट वैसा ही रखकर ट्रांसलेट हो जाता है,\nकिसी भी Figure पर क्लिक करो तो तुरंत समझा देता है,\nऔर पेपर की नई बात, तरीका और निष्कर्ष अपने-आप मार्क कर देता है।\n\nअब वही सीनियर मुझसे लिंक माँगते हैं।\n---\nmedia: -\nइसका नाम Moonlight है, पेपर पढ़ने की AI वेबसाइट!\nऊपर दिखाए गए फ़ीचर पेड हैं।\nफिर भी हर हफ़्ते 3 पेपर फ्री में पढ़ सकते हो 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "dot2day_",
+   "project": "moonlight",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-24T09:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "Am Abend vor dem Lab-Meeting hab ich 3 Paper am Stück gelesen\nund ein älterer Doktorand meinte: „So bleibt dir doch nichts hängen.\"\n\nPDF rein und es wird übersetzt, Original-Layout bleibt erhalten,\nein Klick auf eine Figure und sie wird erklärt,\nund Neuheit, Methode und Fazit werden automatisch markiert.\n\nJetzt fragt genau er mich nach dem Link.\n---\nmedia: -\nDas ist Moonlight, ein KI-gestütztes Webtool zum Lesen wissenschaftlicher Arbeiten!\nDie oben gezeigten Funktionen sind allerdings kostenpflichtig.\nDafür kann man jede Woche drei Arbeiten kostenlos lesen – ein echter Pluspunkt👇\nhttps://www.themoonlight.io/de",
+   "media": [
+    "w39/ml05_de.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-24T09:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "La noche antes de la reunión del laboratorio estaba leyendo 3 papers seguidos\ny un compañero mayor del lab me dijo: \"leyendo así no te va a quedar nada\".\n\nMetes el PDF y lo traduce manteniendo el diseño original,\nun clic en una figura y te la explica,\ny marca solo la novedad, el método y las conclusiones.\n\nAhora es él quien me pide el enlace.\n---\nmedia: -\n¡Es una herramienta web de IA para leer artículos científicos llamada Moonlight!\nEso sí, las funciones que aparecen arriba son de pago.\nPero puedes leer tres artículos gratis cada semana, lo cual es una gran ventaja👇\nhttps://www.themoonlight.io/es",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "o2ndot",
+   "project": "moonlight",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-24T09:30:00+00:00",
+   "local": "2026-09-24 11:30",
+   "text": "La veille de la réunion de labo, je lisais 3 articles d'affilée\net un doctorant plus avancé m'a dit : « lire comme ça, il ne t'en restera rien ».\n\nOn met le PDF et c'est traduit en gardant la mise en page d'origine,\nun clic sur une figure et elle est expliquée,\net la nouveauté, la méthode et les conclusions sont marquées automatiquement.\n\nMaintenant, c'est lui qui me demande le lien.\n---\nmedia: -\nIl s'agit de Moonlight, un outil web basé sur l'IA pour lire des articles scientifiques !\nLes fonctionnalités présentées ci-dessus sont toutefois payantes.\nMais il est possible de lire gratuitement trois articles par semaine, ce qui est un vrai plus👇\nhttps://www.themoonlight.io/fr",
+   "media": [
+    "w39/ml05_fr.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-24T09:30:00+00:00",
+   "local": "2026-09-24 11:30",
+   "text": "La sera prima del lab meeting stavo leggendo 3 paper di fila\ne un dottorando più grande mi ha detto: \"leggendo così non ti resta niente\".\n\nCarichi il PDF e lo traduce mantenendo il layout originale,\nun clic su una figura e te la spiega,\ne segna da solo novità, metodo e conclusioni.\n\nAdesso è lui che mi chiede il link.\n---\nmedia: -\nÈ Moonlight, uno strumento web di IA per leggere paper!\nLe funzioni mostrate sopra sono a pagamento.\nPerò ogni settimana puoi leggere 3 paper gratis 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "03ines.mar_",
+   "project": "moonlight",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-24T10:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "Na véspera da reunião do laboratório estava a ler 3 artigos de seguida\ne um colega mais velho do lab disse-me: \"a ler assim não te fica nada\".\n\nMetes o PDF e traduz mantendo o layout original,\num clique numa figura e explica-a logo,\ne ainda marca sozinho a novidade, o método e as conclusões.\n\nAgora é ele que me pede o link.\n---\nmedia: -\nÉ o Moonlight, uma ferramenta web de IA para ler artigos!\nAs funcionalidades mostradas acima são pagas.\nMas dá para ler 3 artigos grátis por semana 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-24T14:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "Na véspera da reunião do laboratório eu tava lendo 3 artigos seguidos\ne um veterano do lab falou: \"lendo assim não vai ficar nada na cabeça\".\n\nJoga o PDF e ele traduz mantendo o layout original,\num clique numa figura e ele já explica,\ne ainda marca sozinho a novidade, o método e as conclusões.\n\nAgora é ele que vive me pedindo o link.\n---\nmedia: -\nÉ o Moonlight, uma ferramenta de IA pra ler artigos!\nAs funções mostradas acima são pagas.\nMas dá pra ler 3 artigos de graça toda semana 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lari.s_07",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-24T15:00:00+00:00",
+   "local": "2026-09-24 12:00",
+   "text": "Na véspera da reunião do laboratório eu tava lendo 3 artigos seguidos\ne um veterano do lab falou: \"lendo assim não vai ficar nada na cabeça\".\n\nJoga o PDF e ele traduz mantendo o layout original,\num clique numa figura e ele já explica,\ne ainda marca sozinho a novidade, o método e as conclusões.\n\nAgora é ele que vive me pedindo o link.\n---\nmedia: -\nÉ o Moonlight, uma ferramenta de IA pra ler artigos!\nAs funções mostradas acima são pagas.\nMas dá pra ler 3 artigos de graça toda semana 👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_es.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mae.dw_04",
+   "project": "moonlight",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-24T15:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "The night before lab meeting I was cramming 3 papers,\nand a senior in my lab said \"you won't remember any of it reading like that.\"\n\nDrop in a PDF and it translates while keeping the original layout,\none click on a figure and it explains it,\nand it auto-marks the novelty, methods and conclusions.\n\nNow that same senior is asking me for the link.\n---\nmedia: -\nIt's an AI-powered research paper reader called Moonlight!\nThe features shown above are available on a paid plan.\nBut you can still read three papers for free every week, which is a nice bonus👇\nhttps://www.themoonlight.io/en",
+   "media": [
+    "w39/ml05_en.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
    "account": "ivy_.k09",
    "project": "moonlight",
    "country": "US",
    "flag": "🇺🇸",
-   "utc": "2026-09-23T01:00:00+00:00",
-   "local": "2026-09-22 18:00",
-   "text": "The ultimate setup for leaving the lab on time\n\nLeft: Google Scholar\nMiddle: Moonlight (iPad version!)\nRight: CorTex\n\nWith this setup, I can literally stay in one spot and\nfind papers → read them → start writing right away 🤤\n---\nmedia: -\n👀 Sharing the links to these lifesavers!\n1. Find papers - Google Scholar\nhttps://scholar.google.com/schhp?hl=en\n2. Read papers - Moonlight (works on both web & iPad)\nWeb: https://www.themoonlight.io/en\niOS: https://apps.apple.com/us/app/moonlight-ai-pdf-reader/id6738034562?l=en\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight&hl=en\n3. Write papers - CorTex\n(Love that it compiles faster than Overleaf)\nhttps://cortex.corca.ai/",
+   "utc": "2026-09-24T18:00:00+00:00",
+   "local": "2026-09-24 11:00",
+   "text": "The night before lab meeting I was cramming 3 papers,\nand a senior in my lab said \"you won't remember any of it reading like that.\"\n\nDrop in a PDF and it translates while keeping the original layout,\none click on a figure and it explains it,\nand it auto-marks the novelty, methods and conclusions.\n\nNow that same senior is asking me for the link.\n---\nmedia: -\nIt's an AI-powered research paper reader called Moonlight!\nThe features shown above are available on a paid plan.\nBut you can still read three papers for free every week, which is a nice bonus👇\nhttps://www.themoonlight.io/en",
    "media": [
-    "moonlight/ml04_es.png"
+    "w39/ml05_en.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "elle__jm",
+   "project": "cortex",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-09-25T00:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "How did I only just find this?!\nWrite LaTeX and the compiled result shows up almost instantly,\nno more hitting compile and zoning out every time I fix something…\nfeels like I got back all the hours I spent waiting on Overleaf 😭\n---\nmedia: -\nIt's a LaTeX editor called CorTex! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "haru._81a",
+   "project": "cortex",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-25T01:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "なんで今までこれを知らなかったんだろう？！\nLaTeXを書いたらほぼすぐにコンパイル結果が見えて\n直すたびにコンパイルボタン押してぼーっと待つこともない…\nOverleafを待ってた時間を全部取り戻した気分😭\n---\nmedia: -\nLaTeXエディタのCorTexです！👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ac_dd91",
+   "project": "cortex",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-09-25T01:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "나 왜 이제야 이걸 알았지?!\nLaTeX 쓰자마자 컴파일 결과가 거의 바로 보이고\n고칠 때마다 컴파일 버튼 누르고 멍 때릴 일이 없음…\nOverleaf 기다리던 시간 다 돌려받는 기분 😭\n---\nmedia: -\nLaTeX 에디터 Cortex예요! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nur.aina_04",
+   "project": "cortex",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-09-25T02:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "Kenapa aku baru tahu benda ni sekarang?!\nTulis LaTeX, hasil compile terus nampak hampir serta-merta;\ntak perlu lagi tekan compile dan termenung menunggu setiap kali edit…\nrasa macam semua masa tunggu Overleaf dah dipulangkan 😭\n---\nmedia: -\nNamanya CorTex, editor LaTeX! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "kai_.03b",
+   "project": "cortex",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-25T02:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "Bakit ngayon ko lang 'to nadiscover?!\nPagkasulat mo ng LaTeX, halos agad-agad lalabas yung compiled result;\nwala nang pindot ng compile tapos tulala habang naghihintay tuwing may inaayos…\nparang naibalik sa akin lahat ng oras na naubos kakahintay sa Overleaf 😭\n---\nmedia: -\nCorTex ang pangalan, LaTeX editor siya! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "daily03dew",
+   "project": "cortex",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-25T02:30:00+00:00",
+   "local": "2026-09-25 10:30",
+   "text": "我怎麼現在才知道這個？！\nLaTeX 一寫完，幾乎馬上就看到編譯結果，\n改一次就要按編譯、放空等待的日子結束了⋯⋯\n等 Overleaf 的時間好像全部還給我了😭\n---\nmedia: -\n是一款叫 CorTex 的 LaTeX 編輯器！👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "rara.2k_",
+   "project": "cortex",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-25T03:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "kenapa aku baru tahu ini sekarang?!\nnulis LaTeX, hasil compile-nya langsung kelihatan hampir seketika;\nnggak ada lagi pencet compile terus bengong nunggu tiap kali ngedit…\nrasanya semua waktu nunggu Overleaf dibalikin 😭\n---\nmedia: -\nnamanya CorTex, editor LaTeX! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "pim.pm_02",
+   "project": "cortex",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-25T03:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "ทำไมเพิ่งมารู้จักตอนนี้เนี่ย!\nเขียน LaTeX เสร็จก็เห็นผล compile แทบจะทันที\nไม่ต้องกด compile แล้วนั่งเหม่อรอทุกครั้งที่แก้อีกแล้ว…\nเหมือนได้เวลาที่เสียไปกับการรอ Overleaf คืนมาทั้งหมด 😭\n---\nmedia: -\nชื่อ CorTex เป็น LaTeX editor ครับ 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "inkling01",
+   "project": "cortex",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-25T03:30:00+00:00",
+   "local": "2026-09-25 11:30",
+   "text": "我怎麼現在才知道這個？！\nLaTeX 一寫完，幾乎馬上就看到編譯結果，\n改一次就要按編譯、放空等待的日子結束了⋯⋯\n等 Overleaf 的時間好像全部還給我了😭\n---\nmedia: -\n是一款叫 CorTex 的 LaTeX 編輯器！👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ashgrey._02",
+   "project": "cortex",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-25T03:30:00+00:00",
+   "local": "2026-09-25 10:30",
+   "text": "Sao giờ mình mới biết cái này?!\nViết LaTeX xong là thấy kết quả biên dịch gần như ngay lập tức;\nkhông còn cảnh bấm compile rồi ngồi ngẩn ra chờ mỗi lần sửa nữa…\ncảm giác như được trả lại hết thời gian ngồi chờ Overleaf 😭\n---\nmedia: -\nLà CorTex, trình soạn LaTeX nha! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "shu.lin_03",
+   "project": "cortex",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-25T04:00:00+00:00",
+   "local": "2026-09-25 12:00",
+   "text": "我怎麼現在才知道這個？！\nLaTeX 一寫完，幾乎馬上就看到編譯結果，\n改一次就要按編譯、放空等待的日子結束了⋯⋯\n等 Overleaf 的時間好像全部還給我了😭\n---\nmedia: -\n是一款叫 CorTex 的 LaTeX 編輯器！👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mint.le_06",
+   "project": "cortex",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-25T04:00:00+00:00",
+   "local": "2026-09-25 11:00",
+   "text": "Sao giờ mình mới biết cái này?!\nViết LaTeX xong là thấy kết quả biên dịch gần như ngay lập tức;\nkhông còn cảnh bấm compile rồi ngồi ngẩn ra chờ mỗi lần sửa nữa…\ncảm giác như được trả lại hết thời gian ngồi chờ Overleaf 😭\n---\nmedia: -\nLà CorTex, trình soạn LaTeX nha! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nia._055",
+   "project": "cortex",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-25T04:30:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "ये मुझे अब तक पता क्यों नहीं था?!\nLaTeX लिखते ही कंपाइल का रिज़ल्ट लगभग तुरंत दिख जाता है,\nहर बदलाव पर compile दबाकर खाली बैठे इंतज़ार करने का झंझट ख़त्म…\nऐसा लग रहा है जैसे Overleaf के इंतज़ार में गया सारा वक़्त वापस मिल गया 😭\n---\nmedia: -\nइसका नाम CorTex है, एक LaTeX एडिटर! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "riya._m08",
+   "project": "cortex",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-25T05:30:00+00:00",
+   "local": "2026-09-25 11:00",
+   "text": "ये मुझे अब तक पता क्यों नहीं था?!\nLaTeX लिखते ही कंपाइल का रिज़ल्ट लगभग तुरंत दिख जाता है,\nहर बदलाव पर compile दबाकर खाली बैठे इंतज़ार करने का झंझट ख़त्म…\nऐसा लग रहा है जैसे Overleaf के इंतज़ार में गया सारा वक़्त वापस मिल गया 😭\n---\nmedia: -\nइसका नाम CorTex है, एक LaTeX एडिटर! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "dot2day_",
+   "project": "cortex",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-25T08:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "Warum finde ich das erst jetzt?!\nLaTeX schreiben und das kompilierte Ergebnis ist fast sofort da,\nkein Kompilieren-Klicken und Ins-Leere-Starren mehr bei jeder Änderung…\nfühlt sich an, als hätte ich die ganze Overleaf-Wartezeit zurückbekommen 😭\n---\nmedia: -\nDas ist CorTex, ein LaTeX-Editor! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "beatriz03._a",
+   "project": "cortex",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-25T08:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "¡¿Cómo es que recién descubro esto?!\nEscribes LaTeX y el resultado compilado aparece casi al instante,\nse acabó darle a compilar y quedarte mirando la nada cada vez que corriges algo…\nsiento que me devolvieron todo el tiempo que perdí esperando a Overleaf 😭\n---\nmedia: -\n¡Es CorTex, un editor de LaTeX! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "o2ndot",
+   "project": "cortex",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-25T08:30:00+00:00",
+   "local": "2026-09-25 10:30",
+   "text": "Pourquoi je découvre ça seulement maintenant ?!\nOn écrit le LaTeX et le résultat compilé s'affiche presque instantanément,\nplus besoin de cliquer sur compiler et d'attendre dans le vide à chaque correction…\nj'ai l'impression de récupérer tout le temps perdu à attendre Overleaf 😭\n---\nmedia: -\nC'est CorTex, un éditeur LaTeX ! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lune__v34",
+   "project": "cortex",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-25T08:30:00+00:00",
+   "local": "2026-09-25 10:30",
+   "text": "Ma perché lo scopro solo adesso?!\nScrivi in LaTeX e il risultato compilato appare quasi subito,\nniente più clic su compila e sguardo nel vuoto a ogni modifica…\nmi sembra di aver recuperato tutto il tempo passato ad aspettare Overleaf 😭\n---\nmedia: -\nÈ CorTex, un editor LaTeX! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "03ines.mar_",
+   "project": "cortex",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-25T09:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "Porque é que só descubro isto agora?!\nEscreves LaTeX e o resultado compilado aparece quase na hora,\nacabou carregar em compilar e ficar a olhar para o vazio a cada correção…\nparece que me devolveram todo o tempo que passei à espera do Overleaf 😭\n---\nmedia: -\nÉ o CorTex, um editor de LaTeX! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "bia__rp03",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-25T13:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "Como que eu só descobri isso agora?!\nVocê escreve LaTeX e o resultado compilado aparece quase na hora,\nacabou ficar clicando em compilar e olhando pro nada a cada correção…\nparece que me devolveram todo o tempo que eu perdi esperando o Overleaf 😭\n---\nmedia: -\nÉ o CorTex, um editor de LaTeX! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lari.s_07",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-25T14:00:00+00:00",
+   "local": "2026-09-25 11:00",
+   "text": "Como que eu só descobri isso agora?!\nVocê escreve LaTeX e o resultado compilado aparece quase na hora,\nacabou ficar clicando em compilar e olhando pro nada a cada correção…\nparece que me devolveram todo o tempo que eu perdi esperando o Overleaf 😭\n---\nmedia: -\nÉ o CorTex, um editor de LaTeX! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mae.dw_04",
+   "project": "cortex",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-25T14:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "How did I only just find this?!\nWrite LaTeX and the compiled result shows up almost instantly,\nno more hitting compile and zoning out every time I fix something…\nfeels like I got back all the hours I spent waiting on Overleaf 😭\n---\nmedia: -\nIt's a LaTeX editor called CorTex! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ivy_.k09",
+   "project": "cortex",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-25T17:00:00+00:00",
+   "local": "2026-09-25 10:00",
+   "text": "How did I only just find this?!\nWrite LaTeX and the compiled result shows up almost instantly,\nno more hitting compile and zoning out every time I fix something…\nfeels like I got back all the hours I spent waiting on Overleaf 😭\n---\nmedia: -\nIt's a LaTeX editor called CorTex! 👇\nhttps://cortex.corca.ai/",
+   "media": [
+    "w39/cx03.mp4"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "elle__jm",
+   "project": "moonlight",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-09-26T01:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Why I bought an iPad: to read papers\nWhat I actually used it for: YouTube\n\n…until I installed this. Now it's genuinely a paper-reading machine\n---\nmedia: -\nOn iPad, just use the Moonlight app 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_en.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-26T02:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "iPadを買った理由：論文を読むため\niPadで実際にやったこと：YouTube\n\n…だったのに、これ入れてから本当に論文を読むマシンになった\n---\nmedia: -\niPadではMoonlightアプリで使えます👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/ja",
+   "media": [
+    "w39/ml06_jp.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ac_dd91",
+   "project": "moonlight",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-09-26T02:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "아이패드 산 이유: 논문 읽으려고\n아이패드로 실제로 한 것: 유튜브\n\n…였는데 이거 깔고 나서 진짜 논문 읽는 기계 됨\n---\nmedia: -\n아이패드에서는 문라이트 앱으로 쓰면 돼요 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/ko",
+   "media": [
+    "w39/ml06_kr.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nur.aina_04",
+   "project": "moonlight",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-09-26T03:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Sebab beli iPad: nak baca kertas kajian\nApa yang betul-betul buat dengan iPad: tengok YouTube\n\n…sampailah install benda ni. Sekarang betul-betul jadi mesin baca paper\n---\nmedia: -\nKat iPad guna aplikasi Moonlight je 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-26T03:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Dahilan kung bakit ako bumili ng iPad: para magbasa ng papers\nAng talagang ginawa ko sa iPad: mag-YouTube\n\n…hanggang na-install ko 'to. Ngayon, paper-reading machine na talaga siya\n---\nmedia: -\nSa iPad, gamitin mo lang yung Moonlight app 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "daily03dew",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-26T03:30:00+00:00",
+   "local": "2026-09-26 11:30",
+   "text": "買 iPad 的理由：為了讀論文\n實際用 iPad 做的事：看 YouTube\n\n……結果裝了這個之後，真的變成讀論文專用機了\n---\nmedia: -\niPad 上用 Moonlight App 就可以了👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/tw",
+   "media": [
+    "w39/ml06_tw.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "rara.2k_",
+   "project": "moonlight",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-26T04:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "alasan beli iPad: buat baca paper\nyang beneran dilakuin pakai iPad: nonton YouTube\n\n…sampai akhirnya install ini. sekarang beneran jadi mesin baca paper\n---\nmedia: -\ndi iPad tinggal pakai aplikasi Moonlight 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "pim.pm_02",
+   "project": "moonlight",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-26T04:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "เหตุผลที่ซื้อ iPad: เอาไว้อ่านเปเปอร์\nสิ่งที่ใช้ iPad ทำจริงๆ: ดู YouTube\n\n…จนกระทั่งลงตัวนี้ ตอนนี้กลายเป็นเครื่องอ่านเปเปอร์จริงๆ แล้ว\n---\nmedia: -\nบน iPad ใช้แอป Moonlight ได้เลยครับ 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "inkling01",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-26T04:30:00+00:00",
+   "local": "2026-09-26 12:30",
+   "text": "買 iPad 的理由：為了讀論文\n實際用 iPad 做的事：看 YouTube\n\n……結果裝了這個之後，真的變成讀論文專用機了\n---\nmedia: -\niPad 上用 Moonlight App 就可以了👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/tw",
+   "media": [
+    "w39/ml06_tw.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ashgrey._02",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-26T04:30:00+00:00",
+   "local": "2026-09-26 11:30",
+   "text": "Lý do mua iPad: để đọc paper\nThứ thật sự làm bằng iPad: xem YouTube\n\n…cho đến khi cài cái này. Giờ thì thành máy đọc paper thật sự luôn\n---\nmedia: -\nTrên iPad thì dùng app Moonlight là được nha 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "shu.lin_03",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-26T05:00:00+00:00",
+   "local": "2026-09-26 13:00",
+   "text": "買 iPad 的理由：為了讀論文\n實際用 iPad 做的事：看 YouTube\n\n……結果裝了這個之後，真的變成讀論文專用機了\n---\nmedia: -\niPad 上用 Moonlight App 就可以了👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/tw",
+   "media": [
+    "w39/ml06_tw.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mint.le_06",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-26T05:00:00+00:00",
+   "local": "2026-09-26 12:00",
+   "text": "Lý do mua iPad: để đọc paper\nThứ thật sự làm bằng iPad: xem YouTube\n\n…cho đến khi cài cái này. Giờ thì thành máy đọc paper thật sự luôn\n---\nmedia: -\nTrên iPad thì dùng app Moonlight là được nha 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nia._055",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-26T05:30:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "iPad खरीदने की वजह: पेपर पढ़ने के लिए\niPad पर असल में किया क्या: YouTube\n\n…फिर ये इंस्टॉल किया। अब सच में पेपर पढ़ने की मशीन बन गया है\n---\nmedia: -\niPad पर बस Moonlight ऐप इस्तेमाल करो 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "riya._m08",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-26T06:30:00+00:00",
+   "local": "2026-09-26 12:00",
+   "text": "iPad खरीदने की वजह: पेपर पढ़ने के लिए\niPad पर असल में किया क्या: YouTube\n\n…फिर ये इंस्टॉल किया। अब सच में पेपर पढ़ने की मशीन बन गया है\n---\nmedia: -\niPad पर बस Moonlight ऐप इस्तेमाल करो 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "dot2day_",
+   "project": "moonlight",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-26T09:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Warum ich ein iPad gekauft habe: um Paper zu lesen\nWofür ich es wirklich benutzt habe: YouTube\n\n…bis ich das hier installiert hab. Jetzt ist es echt eine Paper-Lesemaschine\n---\nmedia: -\nAuf dem iPad einfach die Moonlight-App nutzen 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/de",
+   "media": [
+    "w39/ml06_de.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-26T09:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Por qué me compré un iPad: para leer papers\nPara qué lo usé de verdad: YouTube\n\n…hasta que instalé esto. Ahora sí es una máquina de leer papers\n---\nmedia: -\nEn iPad, solo usa la app de Moonlight 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/es",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "o2ndot",
+   "project": "moonlight",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-26T09:30:00+00:00",
+   "local": "2026-09-26 11:30",
+   "text": "Pourquoi j'ai acheté un iPad : pour lire des articles\nCe que j'en ai vraiment fait : YouTube\n\n…jusqu'à ce que j'installe ça. Maintenant c'est vraiment une machine à lire des articles\n---\nmedia: -\nSur iPad, il suffit d'utiliser l'app Moonlight 👇\niOS : https://apps.apple.com/app/id6738034562\nAndroid : https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb : https://www.themoonlight.io/fr",
+   "media": [
+    "w39/ml06_fr.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-26T09:30:00+00:00",
+   "local": "2026-09-26 11:30",
+   "text": "Perché ho comprato un iPad: per leggere paper\nPer cosa l'ho usato davvero: YouTube\n\n…finché non ho installato questa. Ora è davvero una macchina per leggere paper\n---\nmedia: -\nSu iPad basta usare l'app Moonlight 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "03ines.mar_",
+   "project": "moonlight",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-26T10:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Porque comprei um iPad: para ler artigos\nPara que o usei de facto: YouTube\n\n…até instalar isto. Agora é mesmo uma máquina de ler artigos\n---\nmedia: -\nNo iPad, é só usar a app Moonlight 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-26T14:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Por que comprei um iPad: pra ler artigos\nPra que eu usei de verdade: YouTube\n\n…até instalar isso. Agora virou uma máquina de ler artigo de verdade\n---\nmedia: -\nNo iPad é só usar o app do Moonlight 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lari.s_07",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-26T15:00:00+00:00",
+   "local": "2026-09-26 12:00",
+   "text": "Por que comprei um iPad: pra ler artigos\nPra que eu usei de verdade: YouTube\n\n…até instalar isso. Agora virou uma máquina de ler artigo de verdade\n---\nmedia: -\nNo iPad é só usar o app do Moonlight 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_es.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mae.dw_04",
+   "project": "moonlight",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-26T15:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Why I bought an iPad: to read papers\nWhat I actually used it for: YouTube\n\n…until I installed this. Now it's genuinely a paper-reading machine\n---\nmedia: -\nOn iPad, just use the Moonlight app 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_en.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ivy_.k09",
+   "project": "moonlight",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-26T18:00:00+00:00",
+   "local": "2026-09-26 11:00",
+   "text": "Why I bought an iPad: to read papers\nWhat I actually used it for: YouTube\n\n…until I installed this. Now it's genuinely a paper-reading machine\n---\nmedia: -\nOn iPad, just use the Moonlight app 👇\niOS: https://apps.apple.com/app/id6738034562\nAndroid: https://play.google.com/store/apps/details?id=com.corca.moonlight\nWeb: https://www.themoonlight.io/en",
+   "media": [
+    "w39/ml06_en.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "elle__jm",
+   "project": "moonlight",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-09-27T01:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "I used to be too lazy to open even a single paper\nnow I read one every day just so my paper-reading streak doesn't break 😭\n---\nmedia: -\nEverything on screen works as soon as you install the Chrome extension of Moonlight, the paper-reading tool 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_en_01.png",
+    "w39/ml07_en_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-27T02:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "論文1本開くのすら面倒だった人間が\n今は論文の読書記録を途切れさせないために毎日論文読んでる 😭\n---\nmedia: -\n画面で使ってる機能は、論文リーダー「Moonlight」のChrome拡張機能を入れるだけですぐ使えるよ👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_jp_01.png",
+    "w39/ml07_jp_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ac_dd91",
+   "project": "moonlight",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-09-27T02:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "논문 한 편 여는 것도 귀찮아하던 사람인데\n이제 논문 읽기 기록 안 끊기게 하려고 매일 논문 읽음 😭\n---\nmedia: -\n화면에서 사용 중인 기능은 논문 읽기 도구 문라이트의 크롬 익스텐션만 설치해도 바로 사용 가능 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_kr_01.png",
+    "w39/ml07_kr_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nur.aina_04",
+   "project": "moonlight",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-09-27T03:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "Dulu nak buka satu paper pun malas\nsekarang hari-hari baca paper sebab tak nak streak membaca aku putus 😭\n---\nmedia: -\nFungsi yang nampak kat skrin boleh terus guna, cuma perlu install extension Chrome Moonlight, alat baca paper 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-27T03:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "Dati, tamad akong magbukas kahit isang paper lang\nngayon araw-araw na akong nagbabasa para lang hindi maputol yung reading streak ko 😭\n---\nmedia: -\nYung feature na nasa screen, magagamit mo agad basta i-install mo lang yung Chrome extension ng Moonlight, tool para magbasa ng papers 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "daily03dew",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-27T03:30:00+00:00",
+   "local": "2026-09-27 11:30",
+   "text": "原本一篇論文都懶得打開的人\n現在為了不讓讀論文的紀錄斷掉，每天乖乖讀論文 😭\n---\nmedia: -\n畫面裡用的功能，只要安裝論文閱讀工具 Moonlight 的 Chrome 擴充功能就能馬上用👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_tw_01.jpg",
+    "w39/ml07_tw_02.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "rara.2k_",
+   "project": "moonlight",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-09-27T04:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "dulu buka satu paper aja males banget\nsekarang tiap hari baca paper biar streak baca paper-ku nggak putus 😭\n---\nmedia: -\nfitur yang ada di layar bisa langsung dipakai cukup dengan install extension Chrome Moonlight, tools buat baca paper 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "pim.pm_02",
+   "project": "moonlight",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-09-27T04:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "เมื่อก่อนขี้เกียจแม้แต่จะเปิดเปเปอร์สักเรื่อง\nตอนนี้อ่านทุกวันเพราะไม่อยากให้สถิติการอ่านเปเปอร์ขาด 😭\n---\nmedia: -\nฟีเจอร์ที่เห็นในหน้าจอ แค่ติดตั้งส่วนขยาย Chrome ของ Moonlight เครื่องมืออ่านเปเปอร์ ก็ใช้ได้ทันทีครับ 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "inkling01",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-27T04:30:00+00:00",
+   "local": "2026-09-27 12:30",
+   "text": "原本一篇論文都懶得打開的人\n現在為了不讓讀論文的紀錄斷掉，每天乖乖讀論文 😭\n---\nmedia: -\n畫面裡用的功能，只要安裝論文閱讀工具 Moonlight 的 Chrome 擴充功能就能馬上用👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_tw_01.jpg",
+    "w39/ml07_tw_02.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ashgrey._02",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-27T04:30:00+00:00",
+   "local": "2026-09-27 11:30",
+   "text": "Từng là người lười đến mức mở một bài paper cũng ngại\ngiờ ngày nào cũng đọc paper chỉ để chuỗi ngày đọc paper không bị đứt 😭\n---\nmedia: -\nTính năng trong ảnh chỉ cần cài tiện ích Chrome của Moonlight, công cụ đọc paper, là dùng được ngay nha 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "shu.lin_03",
+   "project": "moonlight",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-09-27T05:00:00+00:00",
+   "local": "2026-09-27 13:00",
+   "text": "原本一篇論文都懶得打開的人\n現在為了不讓讀論文的紀錄斷掉，每天乖乖讀論文 😭\n---\nmedia: -\n畫面裡用的功能，只要安裝論文閱讀工具 Moonlight 的 Chrome 擴充功能就能馬上用👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_tw_01.jpg",
+    "w39/ml07_tw_02.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mint.le_06",
+   "project": "moonlight",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-09-27T05:00:00+00:00",
+   "local": "2026-09-27 12:00",
+   "text": "Từng là người lười đến mức mở một bài paper cũng ngại\ngiờ ngày nào cũng đọc paper chỉ để chuỗi ngày đọc paper không bị đứt 😭\n---\nmedia: -\nTính năng trong ảnh chỉ cần cài tiện ích Chrome của Moonlight, công cụ đọc paper, là dùng được ngay nha 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nia._055",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-27T05:30:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "पहले एक पेपर खोलने में भी आलस आता था\nअब रोज़ पेपर पढ़ती हूँ, बस ताकि पेपर पढ़ने की स्ट्रीक न टूटे 😭\n---\nmedia: -\nस्क्रीन पर दिख रहा फ़ीचर, पेपर पढ़ने के टूल Moonlight का Chrome एक्सटेंशन इंस्टॉल करते ही तुरंत इस्तेमाल कर सकते हो 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "riya._m08",
+   "project": "moonlight",
+   "country": "IN",
+   "flag": "🇮🇳",
+   "utc": "2026-09-27T06:30:00+00:00",
+   "local": "2026-09-27 12:00",
+   "text": "पहले एक पेपर खोलने में भी आलस आता था\nअब रोज़ पेपर पढ़ती हूँ, बस ताकि पेपर पढ़ने की स्ट्रीक न टूटे 😭\n---\nmedia: -\nस्क्रीन पर दिख रहा फ़ीचर, पेपर पढ़ने के टूल Moonlight का Chrome एक्सटेंशन इंस्टॉल करते ही तुरंत इस्तेमाल कर सकते हो 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "dot2day_",
+   "project": "moonlight",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-09-27T09:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "Ich war zu faul, auch nur ein einziges Paper aufzumachen\njetzt lese ich jeden Tag eins, nur damit meine Lese-Streak nicht reißt 😭\n---\nmedia: -\nAlles, was du auf dem Screen siehst, funktioniert sofort, sobald du die Chrome-Erweiterung von Moonlight installierst – dem Tool zum Paper-Lesen 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_de_01.png",
+    "w39/ml07_de_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-27T09:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "Antes me daba pereza hasta abrir un solo paper\nahora leo uno cada día solo para no romper mi racha de lectura 😭\n---\nmedia: -\nTodo lo que ves en pantalla funciona en cuanto instalas la extensión de Chrome de Moonlight, la herramienta para leer papers 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "o2ndot",
+   "project": "moonlight",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-09-27T09:30:00+00:00",
+   "local": "2026-09-27 11:30",
+   "text": "J'avais la flemme d'ouvrir ne serait-ce qu'un seul article\nmaintenant j'en lis un chaque jour juste pour ne pas casser ma série de lecture 😭\n---\nmedia: -\nTout ce qu'on voit à l'écran marche dès qu'on installe l'extension Chrome de Moonlight, l'outil pour lire des articles 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_fr_01.png",
+    "w39/ml07_fr_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-27T09:30:00+00:00",
+   "local": "2026-09-27 11:30",
+   "text": "Prima non avevo voglia neanche di aprire un paper\nora ne leggo uno ogni giorno solo per non interrompere la mia serie di letture 😭\n---\nmedia: -\nTutto quello che vedi sullo schermo funziona subito installando l'estensione Chrome di Moonlight, lo strumento per leggere paper 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "03ines.mar_",
+   "project": "moonlight",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-09-27T10:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "Eu tinha preguiça até de abrir um único artigo\nagora leio um todos os dias só para não quebrar a minha sequência de leitura 😭\n---\nmedia: -\nTudo o que se vê no ecrã funciona logo que instalas a extensão do Chrome do Moonlight, a ferramenta para ler artigos 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-27T14:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "Eu tinha preguiça até de abrir um artigo\nagora leio um todo dia só pra não quebrar minha sequência de leitura 😭\n---\nmedia: -\nTudo que aparece na tela funciona na hora, é só instalar a extensão do Chrome do Moonlight, a ferramenta pra ler artigo 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "lari.s_07",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-27T15:00:00+00:00",
+   "local": "2026-09-27 12:00",
+   "text": "Eu tinha preguiça até de abrir um artigo\nagora leio um todo dia só pra não quebrar minha sequência de leitura 😭\n---\nmedia: -\nTudo que aparece na tela funciona na hora, é só instalar a extensão do Chrome do Moonlight, a ferramenta pra ler artigo 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_es_01.png",
+    "w39/ml07_es_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mae.dw_04",
+   "project": "moonlight",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-27T15:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "I used to be too lazy to open even a single paper\nnow I read one every day just so my paper-reading streak doesn't break 😭\n---\nmedia: -\nEverything on screen works as soon as you install the Chrome extension of Moonlight, the paper-reading tool 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_en_01.png",
+    "w39/ml07_en_02.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "ivy_.k09",
+   "project": "moonlight",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-27T18:00:00+00:00",
+   "local": "2026-09-27 11:00",
+   "text": "I used to be too lazy to open even a single paper\nnow I read one every day just so my paper-reading streak doesn't break 😭\n---\nmedia: -\nEverything on screen works as soon as you install the Chrome extension of Moonlight, the paper-reading tool 👇\nhttps://chromewebstore.google.com/detail/moonlight-ai-colleague-fo/lhipdkibljepmfojllcfflfflhflcbgi",
+   "media": [
+    "w39/ml07_en_01.png",
+    "w39/ml07_en_02.png"
    ],
    "ig": [],
    "done": []
   }
  ],
  "posts": [
+  {
+   "id": "17990457306025354",
+   "account": "ivy_.k09",
+   "project": "moonlight",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-09-23T01:00:59+00:00",
+   "date": "2026-09-22",
+   "local": "09/22 18:00",
+   "text": "The ultimate setup for leaving the lab on time\n\nLeft: Google Scholar\nMiddle: Moonlight (iPad version!)\nRight: CorTex\n\nWith this setup, I can literally stay in one spot and\nfind papers → read them → start writing right away 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@ivy_.k09/post/DdnFMCCACJM",
+   "views": 15,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18061315628526129",
    "account": "mae.dw_04",
@@ -3058,7 +4381,7 @@
    "text": "The ultimate setup for leaving the lab on time\n\nLeft: Google Scholar\nMiddle: Moonlight (iPad version!)\nRight: CorTex\n\nWith this setup, I can literally stay in one spot and\nfind papers → read them → start writing right away 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@mae.dw_04/post/Ddm3dLAoJt3",
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3079,7 +4402,7 @@
    "text": "O combo definitivo pra sair do laboratório no horário\n\nEsquerda: Google Scholar\nMeio: Moonlight (versão iPad!)\nDireita: CorTex\n\nCom esse combo dá pra fazer tudo sem sair do lugar:\nachar os artigos → ler → já começar a escrever 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@lari.s_07/post/Ddmwm2oAYOz",
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3310,7 +4633,7 @@
    "text": "Combo mạnh nhất để về đúng giờ khỏi phòng lab\n\nTrái: Google Scholar\nGiữa: Moonlight (bản iPad!)\nPhải: CorTex\n\nVới combo này, ngồi yên một chỗ là\ntìm paper → đọc → viết luôn được hết 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/Ddlr7yeG_J2",
-   "views": 156,
+   "views": 157,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5788,7 +7111,7 @@
    "text": "Combo mạnh nhất để về đúng giờ khỏi phòng lab\n\nTrái: Google Scholar\nGiữa: Moonlight (bản iPad!)\nPhải: CorTex\n\nVới combo này, ngồi yên một chỗ là\ntìm paper → đọc → viết luôn được hết 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdX9BoZmpI1",
-   "views": 35523,
+   "views": 35524,
    "likes": 1017,
    "replies": 13,
    "reposts": 190,
@@ -5809,7 +7132,7 @@
    "text": "Kombo paling ampuh biar bisa pulang tepat waktu dari lab\n\nKiri: Google Scholar\nTengah: Moonlight (versi iPad!)\nKanan: CorTex\n\nDengan kombo ini, duduk di tempat aja udah bisa\ncari paper → baca → langsung mulai nulis 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdX5n-sHCHc",
-   "views": 29597,
+   "views": 29603,
    "likes": 1174,
    "replies": 44,
    "reposts": 159,
@@ -5830,7 +7153,7 @@
    "text": "Ang pinakamalupit na combo para makauwi on time galing lab\n\nKaliwa: Google Scholar\nGitna: Moonlight (iPad version!)\nKanan: CorTex\n\nSa combo na 'to, nakaupo ka lang sa isang lugar tapos\nmaghanap ng papers → basahin → diretso na sa pagsusulat 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@kai_.03b/post/DdX5krfnEIR",
-   "views": 3352,
+   "views": 3355,
    "likes": 52,
    "replies": 7,
    "reposts": 7,
@@ -6187,7 +7510,7 @@
    "text": "eh, yang pakai iPhone\nini beneran harus dicoba!\nsetelah pakai, beneran nggak pernah lupa apa-apa lagi💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdWSlxfkU-B",
-   "views": 1782,
+   "views": 1783,
    "likes": 13,
    "replies": 1,
    "reposts": 2,
@@ -7888,7 +9211,7 @@
    "text": "Porque é que só descubro isto agora?! Como é que consegue traduzir o artigo e manter o layout original? Até as imagens, as tabelas e as fórmulas do PDF ficam quase intactas… estou salvo 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@03ines.mar_/post/DdOTDe2DJk0",
-   "views": 11885,
+   "views": 11886,
    "likes": 139,
    "replies": 10,
    "reposts": 14,
@@ -8056,7 +9379,7 @@
    "text": "我怎麼現在才知道這個！到底是怎麼做到翻譯後還能保留論文原本排版的？PDF 裡的圖片、表格和公式幾乎都原封不動地保留下來了⋯⋯我有救了😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@shu.lin_03/post/DdNqHQ_lOVI",
-   "views": 1954,
+   "views": 1956,
    "likes": 7,
    "replies": 1,
    "reposts": 1,
@@ -11122,7 +12445,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF7dtfiG_B",
-   "views": 64768,
+   "views": 64770,
    "likes": 1164,
    "replies": 32,
    "reposts": 263,
@@ -11269,7 +12592,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 20131,
+   "views": 20133,
    "likes": 141,
    "replies": 5,
    "reposts": 17,
@@ -11563,7 +12886,7 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 91821,
+   "views": 91824,
    "likes": 1399,
    "replies": 13,
    "reposts": 915,
@@ -11584,7 +12907,7 @@
    "text": "10 tahun pakai iPhone\nbaru tau lockscreen bisa nampilin ini.\njadwal seminggu nongol terus di situ\nsejak itu gak pernah lupa apa-apa",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
-   "views": 17518,
+   "views": 17522,
    "likes": 250,
    "replies": 12,
    "reposts": 19,
@@ -11605,7 +12928,7 @@
    "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
-   "views": 16281,
+   "views": 16289,
    "likes": 68,
    "replies": 8,
    "reposts": 10,
@@ -11752,7 +13075,7 @@
    "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto empiezas a usarlo\nya no se te olvida nada, de verdad ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DdCLJqIHMbL",
-   "views": 2183,
+   "views": 2184,
    "likes": 11,
    "replies": 1,
    "reposts": 0,
@@ -12907,8 +14230,8 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 432649,
-   "likes": 4279,
+   "views": 432656,
+   "likes": 4280,
    "replies": 88,
    "reposts": 699,
    "quotes": 18,
@@ -13285,7 +14608,7 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1197989,
+   "views": 1197998,
    "likes": 20239,
    "replies": 300,
    "reposts": 4311,
@@ -13871,7 +15194,7 @@
   }
  ],
  "errors": [
-  "aoi.02_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A6TmEzZXL0gcqrxIfKGMAlO\"}}",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AEWK5QrOXAcD63FUEr9V2AZ\"}}"
+  "aoi.02_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AEwPeXPl6gzhzYJTeG6ldm9\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AyQuH4bqfyiyxx5T9PusquN\"}}"
  ]
 }
