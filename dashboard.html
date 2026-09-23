@@ -430,7 +430,6 @@ function renderInsight(rounds, plan, ins, tour, settled, watching){
   // 빈 화면만 나오면 고장난 것처럼 보이므로 왜 비었는지 적어준다.
   if(!settledKeys.length && !watchKeys.length && !done.length){
     out += `<div class="card"><h4>실험 기록 없음</h4><div class="ci"><div class="meta">
-      실험은 트레이스에서만 돌렸고 2026-09-14에 전부 닫혔다.
       이 제품은 라운드 기록이 없다 — 성과는 게시물 탭에서 본다.</div></div></div>`;
   }
   if(settledKeys.length || watchKeys.length){
@@ -444,22 +443,27 @@ function renderInsight(rounds, plan, ins, tour, settled, watching){
     }
     if(!watchKeys.length){
       out += `<div class="card cw"><h4>관측 중</h4><div class="ci">
-        <div class="meta">없음 — 2026-09-14에 실험을 전부 닫았다.
-        문구 A/B는 판정 불가로 종료했고 시각·요일은 확정으로 옮겼다.
-        근거는 rounds.json의 확정 섹션에 있다.</div></div></div>`;
+        <div class="meta">없음 — 진행 중인 관측 항목이 없다.</div></div></div>`;
     }
     if(watchKeys.length){
       out += `<div class="card cw"><h4>관측 중 · 표본 쌓는 중</h4>` +
         watchKeys.map(k => {
           const o = W[k];
           const cur = o["현재값"];
-          const bar = cur ? `<div class="mini">` + Object.entries(cur).map(([kk,vv]) =>
-            `<span><i style="height:${Math.max(3, Math.min(100, vv*55))}%"></i><u>${esc(kk)}</u></span>`).join("") + `</div>` : "";
+          const smp = o["표본"] || {};
+          const bar = cur && Object.keys(cur).length ? `<div class="mini">` + Object.entries(cur).map(([kk,vv]) =>
+            `<span title="${esc(kk)} ${vv}배 · n=${smp[kk]||0}"><i style="height:${Math.max(3, Math.min(100, vv*55))}%"></i><u>${esc(kk)}<br>${Number(vv).toFixed(2)}${smp[kk]?"<small> n"+smp[kk]+"</small>":""}</u></span>`).join("") + `</div>` : "";
+          const accs = o["계정별"] || {};
+          const accTbl = Object.keys(accs).length ? `<details class="fold" style="margin-top:8px"><summary>계정별 배수</summary>` +
+            Object.entries(accs).map(([arm, m]) => `<div style="margin:6px 0"><b>${esc(arm)}</b> <span class="meta">` +
+              Object.entries(m).map(([a, rs]) => `${esc(a)} ${rs.join("·")}`).join("  /  ") + `</span></div>`).join("") + `</details>` : "";
           return `<div class="ci">
             <b>${esc(k)}</b> <span class="meta">${esc(o["상태"]||"")}</span>
             ${bar}
-            <div class="meta">${esc(o["방침"] || o["현재해석"] || "")}</div>
+            ${o["현재해석"] ? `<div class="meta"><b>지금</b> ${esc(o["현재해석"])}</div>` : ""}
+            ${o["방침"] ? `<div class="meta"><b>판정</b> ${esc(o["방침"])}</div>` : ""}
             ${o["반증"] ? `<div class="warn">${esc(o["반증"])}</div>` : ""}
+            ${accTbl}
           </div>`;
         }).join("") + `</div>`;
     }
@@ -470,7 +474,7 @@ function renderInsight(rounds, plan, ins, tour, settled, watching){
   out += `<div class="card"><h4>라운드 성적</h4>
     <div class="note2">도달 = 조회수가 그 계정 평소의 몇 배. 반응 = 하트율이 평소의 몇 배. 1.0이 평소 수준.</div>
     <table class="rt"><tr><th>R</th><th>날짜</th><th>문구</th>
-      <th style="text-align:right">도달</th><th style="text-align:right">반응</th><th>A / B</th><th></th></tr>` +
+      <th style="text-align:right">도달</th><th style="text-align:right">반응</th><th>변형</th><th></th></tr>` +
     done.slice().reverse().map(r => {
       const vs = Object.entries(r.variants||{});
       const vtxt = vs.length ? vs.map(([k,v]) =>

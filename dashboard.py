@@ -33,21 +33,30 @@ METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
 
 
 def rounds(proj="trace"):
-    """라운드 정의 + 그 라운드에 나간 문구 본문. done/<코드><id>.txt 로 찾는다."""
+    """라운드 정의 + 그 라운드에 나간 문구 본문. <코드><id>.txt 또는 <id>_<언어>.txt 로 찾는다.
+
+    변종은 두 방식. (1) 파일명 접미 a/b → A/B: 문구 A/B. (2) 파일 최상위 또는 라운드의
+    arms {라벨: [계정]}: 같은 문구를 계정 그룹별로 다른 경로·조건에 올릴 때. tag_rounds가 계정으로 붙인다.
+    본문은 --- 앞까지만 잰다 — 문라이트·코르텍스 파일은 뒤에 답글 블록이 붙어 있어 전체를 대조하면 안 맞는다.
+    """
     f = rounds_file(proj)
     if not f.exists():
         return []
+    rj = json.loads(f.read_text(encoding="utf-8"))
+    top_arms = rj.get("arms") or {}
     out = []
-    for r in json.loads(f.read_text(encoding="utf-8"))["rounds"]:
+    for r in rj["rounds"]:
         bodies = []          # [(본문, 변종)] — 변종은 파일명 접미 a/b → A/B. 짝(a·b 둘 다)이 있을 때만.
         files = [t for d in text_dirs(proj) if d.is_dir()
-                 for t in list(d.glob(f"*{r['id']}.txt")) + list(d.glob(f"*{r['id']}[ab].txt"))]
+                 for t in list(d.glob(f"*{r['id']}.txt")) + list(d.glob(f"*{r['id']}[ab].txt"))
+                 + list(d.glob(f"{r['id']}_*.txt"))]
         stems = {t.stem for t in files}
         for t in files:
             pair = t.stem[:-1] + ("b" if t.stem[-1] == "a" else "a")
             var = t.stem[-1].upper() if t.stem[-1] in "ab" and pair in stems else None
-            bodies.append((t.read_text(encoding="utf-8").strip(), var))
-        out.append({**r, "bodies": bodies})
+            body = t.read_text(encoding="utf-8").partition("\n---\n")[0].strip()
+            bodies.append((body, var))
+        out.append({**r, "bodies": bodies, "arms": r.get("arms") or top_arms})
     return out
 
 
@@ -80,7 +89,11 @@ def tag_rounds(posts, rs):
             continue
         if len(hits) > 1:
             hits = [min(hits, key=lambda h: abs((date.fromisoformat(h[0]["date"]) - d).days))]
-        p["round"], p["variant"] = hits[0][0]["id"], hits[0][1]
+        r = hits[0][0]
+        p["round"], p["variant"] = r["id"], hits[0][1]
+        arms = r.get("arms") or {}
+        if arms:   # 갈래 실험: 변종은 문구가 아니라 계정이 속한 그룹
+            p["variant"] = next((k for k, accs in arms.items() if p["account"] in accs), p["variant"])
     return posts
 
 
@@ -132,11 +145,16 @@ def compare(posts, rs):
     by_acc = {}
     for p in tagged:
         by_acc.setdefault(p["account"], []).append(p)
-    base = baselines(by_acc)
+    # 기준선은 태깅 여부와 무관하게 그 계정의 전체 이력이다. 태깅된 글만 쓰면 라운드
+    # 하나짜리 계정은 자기 자신이 기준이 되어 배수가 1.0 근처에 붙고, "평소 대비"가 안 된다.
+    hist = {}
+    for p in posts:
+        hist.setdefault(p["account"], []).append(p)
+    base = baselines(hist)
 
     reach, resp = {}, {}
     for acc, ps in by_acc.items():
-        if len({p["round"] for p in ps}) < 2:   # 한 라운드만 있는 계정은 비교 불가
+        if len(hist.get(acc, [])) < 3:   # 이력 3건 미만이면 중앙값이 불안정
             continue
         for p in ps:
             a, b = ratios_of(p, base[acc])
@@ -160,7 +178,7 @@ def compare(posts, rs):
             "sample": len(rr),
             "er_score": round(statistics.median(er), 2) if er else None,
             "er_sample": len(er),
-            "variants": variant_scores(got, by_acc, base),
+            "variants": variant_scores(got, hist, base),
         })
     return out
 
@@ -179,8 +197,7 @@ def variant_scores(got, by_acc, base):
     for k, ps in sorted(vs.items()):
         rr, er = [], []
         for p in ps:
-            mine = by_acc.get(p["account"], [])
-            if len({x["round"] for x in mine}) < 2:
+            if len(by_acc.get(p["account"], [])) < 3:   # by_acc 는 전체 이력(hist)
                 continue
             a, b = ratios_of(p, base[p["account"]])
             rr.append(a)
@@ -193,6 +210,30 @@ def variant_scores(got, by_acc, base):
                   "er_score": round(statistics.median(er), 2) if er else None,
                   "er_sample": len(er)}
     return out
+
+
+def arm_scores(posts, rs):
+    """arms 가 있는 라운드들의 갈래별 점수. 관측 카드의 현재값으로 쓴다.
+
+    갈래는 계정 그룹(=발행 경로)이라 라운드를 넘나들어 합친다. 점수는 compare()와 같은
+    "그 계정 평소(전체 이력 중앙값) 대비 몇 배"의 중앙값. 1.0 이 평소, 0.05 면 도달이 꺼진 것.
+    """
+    import statistics
+    armed = {r["id"] for r in rs if r.get("arms")}
+    if not armed:
+        return {}
+    hist = {}
+    for p in posts:
+        hist.setdefault(p["account"], []).append(p)
+    base = baselines(hist)
+    by_arm, accs = {}, {}
+    for p in posts:
+        if p.get("round") in armed and p.get("variant") and len(hist.get(p["account"], [])) >= 3:
+            r = ratios_of(p, base[p["account"]])[0]
+            by_arm.setdefault(p["variant"], []).append(r)
+            accs.setdefault(p["variant"], {}).setdefault(p["account"], []).append(round(r, 2))
+    return {k: {"score": round(statistics.median(v), 2), "n": len(v), "accounts": accs[k]}
+            for k, v in by_arm.items()}
 
 
 def account_status():
@@ -485,10 +526,19 @@ def main():
         mine = [p for p in all_posts if p["project"] == proj]
         tag_rounds(mine, rs)
         rj = json.loads(rounds_file(proj).read_text(encoding="utf-8")) if rounds_file(proj).exists() else {}
+        watching = rj.get("관측", {})
+        arms = arm_scores(mine, rs)
+        for w in watching.values():   # 갈래점수 표시가 있는 관측 항목은 현재값을 매 갱신마다 계산해 채운다
+            if isinstance(w, dict) and w.get("갈래점수"):
+                w["현재값"] = {k: v["score"] for k, v in arms.items()}
+                w["표본"] = {k: v["n"] for k, v in arms.items()}
+                w["계정별"] = {k: v["accounts"] for k, v in arms.items()}
+                w["현재해석"] = ("  ·  ".join(f"{k} {v['score']} (n={v['n']})" for k, v in arms.items())
+                              if arms else "아직 발행 전")
         experiments[proj] = {"rounds": compare(mine, rs), "insights": read_signals(mine),
                              "plan": rj.get("plan", []), "tournament": rj.get("tournament", {}),
                              # 확정/관측은 rounds.json이 단일 출처다. 화면은 이 둘을 맨 위에 보여준다.
-                             "settled": rj.get("확정", {}), "watching": rj.get("관측", {})}
+                             "settled": rj.get("확정", {}), "watching": watching}
     data = {
         "generated": datetime.now(timezone.utc).isoformat(),
         "projects": PROJECTS,
