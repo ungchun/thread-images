@@ -49,14 +49,19 @@ def rounds(proj="trace"):
         bodies = []          # [(본문, 변종)] — 변종은 파일명 접미 a/b → A/B. 짝(a·b 둘 다)이 있을 때만.
         files = [t for d in text_dirs(proj) if d.is_dir()
                  for t in list(d.glob(f"*{r['id']}.txt")) + list(d.glob(f"*{r['id']}[ab].txt"))
-                 + list(d.glob(f"{r['id']}_*.txt"))]
+                 + list(d.glob(f"{r['id']}_*.txt"))
+                 # 라운드 전용 폴더(texts/trace15/t15a_kr.txt)도 찾는다. glob은 하위를 안 본다.
+                 + [t for t in d.rglob(f"{r['id']}_*.txt") if t.parent != d]]
         stems = {t.stem for t in files}
         for t in files:
             pair = t.stem[:-1] + ("b" if t.stem[-1] == "a" else "a")
             var = t.stem[-1].upper() if t.stem[-1] in "ab" and pair in stems else None
             body = t.read_text(encoding="utf-8").partition("\n---\n")[0].strip()
             bodies.append((body, var))
-        out.append({**r, "bodies": bodies, "arms": r.get("arms") or top_arms})
+        # 최상위 arms 는 '이번 실험' 라운드에만 상속한다. 옛 라운드까지 갈래로 집계되면
+        # A/B 변형과 섞여 점수가 오염된다. 라운드가 arms 를 직접 갖거나, arms_from 이후 날짜일 때만.
+        inherit = top_arms if (rj.get("arms_from") and r["date"] >= rj["arms_from"]) else {}
+        out.append({**r, "bodies": bodies, "arms": r.get("arms") or inherit})
     return out
 
 
