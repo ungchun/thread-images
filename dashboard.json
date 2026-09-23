@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T06:17:30.268035+00:00",
+ "generated": "2026-09-23T06:28:58.021203+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -119,7 +119,7 @@
      "화": {
       "n": 39,
       "score": 0.1,
-      "median": 24
+      "median": 25
      },
      "목": {
       "n": 40,
@@ -140,7 +140,7 @@
     "media": {
      "IMAGE": {
       "n": 121,
-      "score": 0.12,
+      "score": 0.13,
       "median": 27
      },
      "VIDEO": {
@@ -154,7 +154,7 @@
       "flag": "VN",
       "posts": 6,
       "avg": 18463,
-      "max": 64782,
+      "max": 64784,
       "hours": {
        "10": {
         "n": 1,
@@ -163,7 +163,7 @@
        },
        "11": {
         "n": 3,
-        "score": 1.93,
+        "score": 1.92,
         "median": 35542
        },
        "19": {
@@ -245,7 +245,7 @@
       "flag": "TR",
       "posts": 4,
       "avg": 8470,
-      "max": 30511,
+      "max": 30512,
       "hours": {
        "11": {
         "n": 3,
@@ -267,7 +267,7 @@
       "flag": "TH",
       "posts": 7,
       "avg": 5275,
-      "max": 34961,
+      "max": 34962,
       "hours": {
        "11": {
         "n": 5,
@@ -1132,8 +1132,8 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 4,
-      "avg": 1091,
-      "max": 1855,
+      "avg": 1092,
+      "max": 1856,
       "hours": {
        "10": {
         "n": 3,
@@ -1143,7 +1143,7 @@
        "18": {
         "n": 1,
         "score": 1.7,
-        "median": 1855
+        "median": 1856
        }
       },
       "best_hour": 18,
@@ -1882,7 +1882,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
      "posts": 34,
-     "views": 176455,
+     "views": 176459,
      "likes": 1927,
      "median": 181,
      "score": 1.72,
@@ -1914,32 +1914,15 @@
      "type": "W39 수 · 호명형(역대 최고 구조) / 경로 2갈래",
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
-     "posts": 12,
-     "views": 49044,
-     "likes": 508,
-     "median": 630,
-     "score": 2.79,
-     "sample": 12,
-     "er_score": 1.26,
-     "er_sample": 4,
-     "variants": {
-      "기존API": {
-       "posts": 8,
-       "median": 417,
-       "score": 2.79,
-       "sample": 8,
-       "er_score": 1.91,
-       "er_sample": 1
-      },
-      "새API": {
-       "posts": 2,
-       "median": 21521,
-       "score": 3.85,
-       "sample": 2,
-       "er_score": 1.0,
-       "er_sample": 1
-      }
-     }
+     "posts": 0,
+     "views": 0,
+     "likes": 0,
+     "median": 0,
+     "score": null,
+     "sample": 0,
+     "er_score": null,
+     "er_sample": 0,
+     "variants": {}
     },
     {
      "id": "t15b",
@@ -1963,32 +1946,15 @@
      "type": "W39 금 · 설정형 / 경로 2갈래",
      "kr": "야 아이폰 쓰는 사람들아\n이거 한 번만 설정해봐.\n이번 주 일정이 잠금화면에 그냥 떠 있음\n앱 열 일이 없어진다",
      "note": "미피파랑 2장. 09/11 원문(대만 3,529·태국 18,345) 재사용.",
-     "posts": 6,
-     "views": 22145,
-     "likes": 151,
-     "median": 792,
-     "score": 1.72,
-     "sample": 6,
-     "er_score": 0.91,
-     "er_sample": 4,
-     "variants": {
-      "기존API": {
-       "posts": 1,
-       "median": 2207,
-       "score": 7.31,
-       "sample": 1,
-       "er_score": null,
-       "er_sample": 0
-      },
-      "새API": {
-       "posts": 4,
-       "median": 296,
-       "score": 1.72,
-       "sample": 4,
-       "er_score": 0.59,
-       "er_sample": 3
-      }
-     }
+     "posts": 0,
+     "views": 0,
+     "likes": 0,
+     "median": 0,
+     "score": null,
+     "sample": 0,
+     "er_score": null,
+     "er_sample": 0,
+     "variants": {}
     },
     {
      "id": "t15d",
@@ -2137,15 +2103,15 @@
      "IMAGE": {
       "n": 1,
       "score": 0.03,
-      "median": 3912
+      "median": 3913
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
       "posts": 14,
-      "avg": 120116,
-      "max": 1198098,
+      "avg": 120119,
+      "max": 1198112,
       "hours": {
        "8": {
         "n": 6,
@@ -2160,7 +2126,7 @@
        "17": {
         "n": 1,
         "score": 0.03,
-        "median": 3912
+        "median": 3913
        },
        "19": {
         "n": 6,
@@ -2176,8 +2142,8 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 7,
-      "avg": 23431,
-      "max": 91877,
+      "avg": 23432,
+      "max": 91878,
       "hours": {
        "19": {
         "n": 6,
@@ -2295,7 +2261,7 @@
       "flag": "PH",
       "posts": 11,
       "avg": 1726,
-      "max": 16344,
+      "max": 16346,
       "hours": {
        "8": {
         "n": 2,
@@ -3386,64 +3352,10 @@
      "상태": "진행 중 09/23(수)~27(일). 20계정 x 5일 = 100건. 같은 날 새API 7계정과 기존API 13계정이 같은 문구·같은 캐릭터 세트로 나간다. 현재값은 갈래별 도달배수(그 계정 전체 이력 중앙값 대비) 중앙값, 갱신마다 재계산.",
      "방침": "새API 가 1.0 이상이고 기존API 가 0.1 이하 → 앱 단위 스로틀 확정, 전 계정 새 앱으로 이관. 둘 다 1.0 이상 → 일시 제한이 풀린 것(새 앱 무관). 둘 다 0.1 이하 → 계정 단위 리뷰, 상위 6계정 2~4주 휴식. 앱 직접 발행 4계정 결과는 사용자가 따로 확인한다.",
      "반증": "새API 7계정 중 daily03dew·inkling01 은 09/19 이전부터 죽어 있어 안 살아나도 결론에 못 쓴다. 판정력 있는 건 pim·kai·ac_dd91·lune·03ines 다섯. 기존API 13계정도 대부분 도달이 작아 '안 죽었다'가 '살아 있다'를 뜻하지 않는다. 갈래당 표본 8건 미만이면 판정 보류.",
-     "현재값": {
-      "새API": 2.59,
-      "기존API": 2.96
-     },
-     "표본": {
-      "새API": 6,
-      "기존API": 9
-     },
-     "계정별": {
-      "새API": {
-       "ac_dd91": [
-        5.39
-       ],
-       "daily03dew": [
-        1.5
-       ],
-       "inkling01": [
-        1.14
-       ],
-       "kai_.03b": [
-        3.25
-       ],
-       "pim.pm_02": [
-        4.46,
-        1.94
-       ]
-      },
-      "기존API": {
-       "beatriz03._a": [
-        2.61
-       ],
-       "bia__rp03": [
-        12.74
-       ],
-       "dot2day_": [
-        65.78
-       ],
-       "elle__jm": [
-        2.96
-       ],
-       "ivy_.k09": [
-        1.04
-       ],
-       "lari.s_07": [
-        1.08
-       ],
-       "mae.dw_04": [
-        4.95
-       ],
-       "mint.le_06": [
-        0.94
-       ],
-       "nur.aina_04": [
-        7.31
-       ]
-      }
-     },
-     "현재해석": "새API 2.59 (n=6)  ·  기존API 2.96 (n=9)"
+     "현재값": {},
+     "표본": {},
+     "계정별": {},
+     "현재해석": "아직 발행 전"
     },
     "문구 5종": {
      "상태": "같은 실험 안에서 날짜별로 문구가 다르다(호명형·팁형·설정형·10년형·캘린더형). 경로는 같은 날 갈래끼리, 문구는 날짜끼리 비교한다.",
@@ -5836,7 +5748,7 @@
    "text": "Le combo ultime pour quitter le labo à l'heure\n\nÀ gauche : Google Scholar\nAu centre : Moonlight (version iPad !)\nÀ droite : CorTex\n\nAvec ce combo, je peux tout faire sans bouger de ma chaise :\nchercher des articles → les lire → commencer directement à rédiger 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@o2ndot/post/DdmK0Z2mhJN",
-   "views": 24,
+   "views": 25,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -8572,8 +8484,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "17899218747666673",
@@ -8656,8 +8568,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18112324565018773",
@@ -8677,8 +8589,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18137124838617758",
@@ -8698,8 +8610,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18096412919560646",
@@ -8761,8 +8673,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18103169759579958",
@@ -8782,8 +8694,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18175122967432859",
@@ -8887,8 +8799,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18114443620944140",
@@ -8908,7 +8820,7 @@
    "reposts": 2,
    "quotes": 1,
    "shares": 0,
-   "round": "t15a",
+   "round": null,
    "variant": null
   },
   {
@@ -8923,14 +8835,14 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdWPVLVm6D7",
-   "views": 42196,
+   "views": 42198,
    "likes": 474,
    "replies": 3,
    "reposts": 197,
    "quotes": 8,
    "shares": 76,
-   "round": "t15a",
-   "variant": "새API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18110302358110493",
@@ -8950,7 +8862,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
+   "round": null,
    "variant": null
   },
   {
@@ -8992,8 +8904,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15a",
-   "variant": "새API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18093064715657433",
@@ -9055,8 +8967,8 @@
    "reposts": 1,
    "quotes": 0,
    "shares": 4,
-   "round": "t15a",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18115932233066178",
@@ -10267,7 +10179,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdTjgq7lTuL",
-   "views": 1855,
+   "views": 1856,
    "likes": 23,
    "replies": 1,
    "reposts": 2,
@@ -10672,8 +10584,8 @@
    "reposts": 5,
    "quotes": 0,
    "shares": 4,
-   "round": "t15c",
-   "variant": "기존API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18096231695554145",
@@ -10792,7 +10704,7 @@
    "text": "Bunu nasıl şimdiye kadar bilmiyordum?! Makaleyi çeviriyor ama orijinal düzeni nasıl aynen koruyor? PDF'teki görseller, tablolar ve formüller bile neredeyse olduğu gibi duruyor… kurtuldum 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elif.dm_05/post/DdOFUjoAg-g",
-   "views": 30511,
+   "views": 30512,
    "likes": 207,
    "replies": 9,
    "reposts": 16,
@@ -10918,7 +10830,7 @@
    "text": "ทำไมเพิ่งมารู้จักตอนนี้เนี่ย! แปลทั้งเปเปอร์แต่ยังคง layout เดิมไว้ได้ยังไงกัน รูป ตาราง สมการใน PDF ก็เก็บไว้เกือบครบ… รอดแล้วเรา 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@pim.pm_02/post/DdNp752FJpY",
-   "views": 34961,
+   "views": 34962,
    "likes": 482,
    "replies": 9,
    "reposts": 248,
@@ -12814,8 +12726,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15c",
-   "variant": "새API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "17955678072231279",
@@ -12856,7 +12768,7 @@
    "reposts": 2,
    "quotes": 0,
    "shares": 1,
-   "round": "t15c",
+   "round": null,
    "variant": null
   },
   {
@@ -12877,8 +12789,8 @@
    "reposts": 77,
    "quotes": 3,
    "shares": 42,
-   "round": "t15c",
-   "variant": "새API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18024238535699339",
@@ -12898,8 +12810,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15c",
-   "variant": "새API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18146684875506420",
@@ -12961,8 +12873,8 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "round": "t15c",
-   "variant": "새API"
+   "round": null,
+   "variant": null
   },
   {
    "id": "18098119523151719",
@@ -14005,7 +13917,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF7dtfiG_B",
-   "views": 64782,
+   "views": 64784,
    "likes": 1164,
    "replies": 32,
    "reposts": 263,
@@ -14089,7 +14001,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF0lnfDBKv",
-   "views": 1828,
+   "views": 1829,
    "likes": 18,
    "replies": 7,
    "reposts": 1,
@@ -14152,7 +14064,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 20169,
+   "views": 20170,
    "likes": 141,
    "replies": 5,
    "reposts": 17,
@@ -14446,7 +14358,7 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 91877,
+   "views": 91878,
    "likes": 1399,
    "replies": 13,
    "reposts": 915,
@@ -14488,7 +14400,7 @@
    "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
-   "views": 16344,
+   "views": 16346,
    "likes": 68,
    "replies": 8,
    "reposts": 10,
@@ -15790,7 +15702,7 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 432734,
+   "views": 432749,
    "likes": 4282,
    "replies": 88,
    "reposts": 700,
@@ -16084,7 +15996,7 @@
    "text": "Nhờ mọi người mà app đã đạt hạng 11 mục Hiệu quả trên App Store! 🎉\nCảm ơn mọi người nhiều lắm luôn 💕\n\nMình đọc được nhiều tin nhắn và comment nói là phần cài đặt hơi khó\nMình biết hết rồi nha, và đang cải thiện để làm cho dễ hơn!\n\nComment mình đều đọc hết đó!\nCó trả lời chậm thì mọi người thông cảm nha.. xin lỗi nè 🥲\n\nTrước mắt mình sẽ viết từng bước cài đặt trong thread này nha 👇",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DcimhdrE8HN",
-   "views": 3912,
+   "views": 3913,
    "likes": 38,
    "replies": 9,
    "reposts": 10,
@@ -16168,7 +16080,7 @@
    "text": "Này, những ai dùng iPhone,\nnhất định phải thử cái này!\nMột khi đã dùng rồi,\nbạn sẽ thực sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DcfCYJVEedT",
-   "views": 1198098,
+   "views": 1198112,
    "likes": 20239,
    "replies": 300,
    "reposts": 4311,
