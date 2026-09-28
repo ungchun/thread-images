@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T01:04:29.793683+00:00",
+ "generated": "2026-09-28T01:29:51.812448+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -185,23 +185,23 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 6,
-      "avg": 18590,
-      "max": 65008,
+      "avg": 18594,
+      "max": 65014,
       "hours": {
        "10": {
         "n": 1,
         "score": 0.01,
-        "median": 104
+        "median": 105
        },
        "11": {
         "n": 3,
         "score": 1.93,
-        "median": 35821
+        "median": 35825
        },
        "19": {
         "n": 2,
         "score": 0.17,
-        "median": 3139
+        "median": 3141
        }
       },
       "best_hour": 11,
@@ -218,7 +218,7 @@
        "10": {
         "n": 1,
         "score": 2.13,
-        "median": 29766
+        "median": 29767
        },
        "11": {
         "n": 4,
@@ -245,7 +245,7 @@
       "flag": "PH",
       "posts": 7,
       "avg": 9104,
-      "max": 59601,
+      "max": 59603,
       "hours": {
        "10": {
         "n": 1,
@@ -390,7 +390,7 @@
       "flag": "MY",
       "posts": 9,
       "avg": 1799,
-      "max": 15787,
+      "max": 15789,
       "hours": {
        "11": {
         "n": 6,
@@ -1136,7 +1136,7 @@
      },
      "18": {
       "n": 21,
-      "score": 1.69,
+      "score": 1.68,
       "median": 44
      },
      "21": {
@@ -1237,18 +1237,18 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 4,
-      "avg": 1118,
-      "max": 1887,
+      "avg": 1120,
+      "max": 1888,
       "hours": {
        "10": {
         "n": 3,
         "score": 0.54,
-        "median": 602
+        "median": 606
        },
        "18": {
         "n": 1,
-        "score": 1.69,
-        "median": 1887
+        "score": 1.68,
+        "median": 1888
        }
       },
       "best_hour": 18,
@@ -1983,7 +1983,7 @@
      "kr": "아이폰에 이런 앱이 있었는데 나만 여태 모르고 있었네… 잠금화면에 그림도 그리고 스티커도 붙여서 내 맘대로 꾸며놨어",
      "note": "1인칭 발견담 + 꾸미기 소구. 영상+이미지2 캐러셀 첫 도입.",
      "posts": 12,
-     "views": 10794,
+     "views": 10797,
      "likes": 39,
      "median": 280,
      "score": 2.5,
@@ -2015,7 +2015,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
      "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
      "posts": 22,
-     "views": 54209,
+     "views": 54212,
      "likes": 534,
      "median": 386,
      "score": 4.18,
@@ -2064,7 +2064,7 @@
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
      "posts": 32,
-     "views": 179836,
+     "views": 179847,
      "likes": 1947,
      "median": 200,
      "score": 5.29,
@@ -2097,7 +2097,7 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 23,
-     "views": 41913,
+     "views": 41915,
      "likes": 350,
      "median": 77,
      "score": 1.44,
@@ -2130,7 +2130,7 @@
      "kr": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨",
      "note": "미피밤 2장. 09/07 원문(한국 721·스페인 730) 재사용.",
      "posts": 23,
-     "views": 15276,
+     "views": 15280,
      "likes": 29,
      "median": 27,
      "score": 0.53,
@@ -2163,12 +2163,12 @@
      "kr": "야 아이폰 쓰는 사람들아\n이거 한 번만 설정해봐.\n이번 주 일정이 잠금화면에 그냥 떠 있음\n앱 열 일이 없어진다",
      "note": "미피파랑 2장. 09/11 원문(대만 3,529·태국 18,345) 재사용.",
      "posts": 23,
-     "views": 749,
+     "views": 753,
      "likes": 4,
      "median": 20,
      "score": 0.39,
      "sample": 23,
-     "er_score": 1.74,
+     "er_score": 1.72,
      "er_sample": 6,
      "variants": {
       "기존API": {
@@ -2196,7 +2196,7 @@
      "kr": "아이폰 10년 썼는데\n잠금화면이 이게 된다는 걸 이제 알았네.\n이번 주가 통째로 떠 있으니까\n그 뒤로 뭘 까먹은 적이 없어",
      "note": "초록캐릭터 2장. 09/09 원문(필리핀 16,302·스페인 6,181) 재사용. 4개국 동시 성공한 유일 포맷.",
      "posts": 23,
-     "views": 402,
+     "views": 404,
      "likes": 5,
      "median": 8,
      "score": 0.12,
@@ -2296,7 +2296,7 @@
      "17": {
       "n": 6,
       "score": 0.01,
-      "median": 57
+      "median": 58
      },
      "18": {
       "n": 21,
@@ -2367,33 +2367,33 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 16,
-      "avg": 31213,
-      "max": 434676,
+      "avg": 31216,
+      "max": 434680,
       "hours": {
        "8": {
         "n": 5,
         "score": 0.26,
-        "median": 8179
+        "median": 8180
        },
        "11": {
         "n": 1,
         "score": 0.01,
-        "median": 183
+        "median": 186
        },
        "17": {
         "n": 2,
         "score": 0.0,
-        "median": 96
+        "median": 99
        },
        "18": {
         "n": 2,
         "score": 0.27,
-        "median": 8372
+        "median": 8374
        },
        "19": {
         "n": 6,
         "score": 0.03,
-        "median": 782
+        "median": 784
        }
       },
       "best_hour": 18,
@@ -2405,12 +2405,12 @@
       "flag": "TH",
       "posts": 12,
       "avg": 15713,
-      "max": 92712,
+      "max": 92714,
       "hours": {
        "19": {
         "n": 11,
         "score": 0.05,
-        "median": 763
+        "median": 764
        },
        "20": {
         "n": 1,
@@ -2447,7 +2447,7 @@
        "19": {
         "n": 6,
         "score": 0.35,
-        "median": 1541
+        "median": 1542
        }
       },
       "best_hour": 19,
@@ -2486,7 +2486,7 @@
       "flag": "PH",
       "posts": 16,
       "avg": 1292,
-      "max": 17133,
+      "max": 17135,
       "hours": {
        "8": {
         "n": 2,
@@ -2840,7 +2840,7 @@
        "19": {
         "n": 12,
         "score": 0.37,
-        "median": 50
+        "median": 51
        }
       },
       "best_hour": 19,
@@ -2862,7 +2862,7 @@
        "20": {
         "n": 9,
         "score": 0.7,
-        "median": 77
+        "median": 78
        }
       },
       "best_hour": 19,
@@ -2878,7 +2878,7 @@
       "hours": {
        "19": {
         "n": 4,
-        "score": 1.83,
+        "score": 1.82,
         "median": 152
        },
        "20": {
@@ -3605,7 +3605,7 @@
      "반증": "새API 7계정 중 daily03dew·inkling01 은 09/19 이전부터 죽어 있어 안 살아나도 결론에 못 쓴다. 판정력 있는 건 pim·kai·ac_dd91·lune·03ines 다섯. 기존API 13계정도 대부분 도달이 작아 '안 죽었다'가 '살아 있다'를 뜻하지 않는다. 갈래당 표본 8건 미만이면 판정 보류.",
      "현재값": {
       "새API": 0.16,
-      "기존API": 0.38
+      "기존API": 0.37
      },
      "표본": {
       "새API": 30,
@@ -3693,24 +3693,24 @@
         5.5
        ],
        "ivy_.k09": [
-        0.5,
+        0.49,
         0.55,
         0.53,
-        0.46
+        0.45
        ],
        "lari.s_07": [
         0.29,
         0.17,
         0.83,
-        3.46,
+        3.5,
         1.0
        ],
        "mae.dw_04": [
         0.1,
         0.27,
         1.0,
-        0.38,
-        1.17
+        0.37,
+        1.15
        ],
        "mint.le_06": [
         0.38,
@@ -3749,7 +3749,7 @@
        ]
       }
      },
-     "현재해석": "새API 0.16 (n=30)  ·  기존API 0.38 (n=64)"
+     "현재해석": "새API 0.16 (n=30)  ·  기존API 0.37 (n=64)"
     },
     "문구 5종": {
      "상태": "같은 실험 안에서 날짜별로 문구가 다르다(호명형·팁형·설정형·10년형·캘린더형). 경로는 같은 날 갈래끼리, 문구는 날짜끼리 비교한다.",
@@ -5005,9 +5005,9 @@
    "text": "Dùng iPhone 10 năm rồi\nmà giờ mới biết màn hình khoá làm được thế này.\nCả tuần cứ nằm sẵn ở đó\ntừ đó tới giờ chưa quên việc gì",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdvzgSqH7ru",
-   "views": 73,
+   "views": 75,
    "likes": 1,
-   "replies": 2,
+   "replies": 3,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
@@ -5278,7 +5278,7 @@
    "text": "hey, everyone on iPhone\njust set this up once.\nYour whole week's plans sit right on the lock screen\nand you stop opening the app altogether",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mae.dw_04/post/DduswV3gPL3",
-   "views": 77,
+   "views": 78,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5406,7 +5406,7 @@
    "link": "https://www.threads.com/@dot2day_/post/Ddt8zm4if6A",
    "views": 14,
    "likes": 0,
-   "replies": 3,
+   "replies": 5,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
@@ -5761,7 +5761,7 @@
    "text": "mn ơi, ai dùng iPhone thì cài thử cái này\nlịch cả tuần hiện thẳng lên màn hình khoá\ncài một lần thôi\nlà khỏi phải mở app nữa",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdtR9BcH7mv",
-   "views": 120,
+   "views": 123,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -6055,7 +6055,7 @@
    "text": "ei, quem usa iPhone,\nconfigura a tela de bloqueio assim.\nToda vez que você pega o celular vê os compromissos do dia,\nnão tem como esquecer ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lari.s_07/post/DdsBHJOj-dc",
-   "views": 83,
+   "views": 84,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -6370,7 +6370,7 @@
    "text": "คนใช้ iPhone ลองตั้งหน้าจอล็อกแบบนี้ดูครับ\nเปิดเครื่องทีไรก็เห็นตารางวันนี้เลย\nเลยไม่มีโอกาสได้ลืม ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Ddq13OZFizJ",
-   "views": 763,
+   "views": 764,
    "likes": 5,
    "replies": 1,
    "reposts": 1,
@@ -6454,7 +6454,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdqzbTQn9V2",
-   "views": 13225,
+   "views": 13227,
    "likes": 18,
    "replies": 1,
    "reposts": 1,
@@ -7044,7 +7044,7 @@
    "link": "https://www.threads.com/@pim.pm_02/post/DdoQw6clsnv",
    "views": 22698,
    "likes": 261,
-   "replies": 2,
+   "replies": 3,
    "reposts": 91,
    "quotes": 2,
    "shares": 35,
@@ -7147,9 +7147,9 @@
    "text": "này, mấy người dùng iPhone ơi\nphải thử cái này thật đấy!\ndùng rồi thì thật sự chẳng còn quên việc gì nữa💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdoKqxNn0vo",
-   "views": 3520,
+   "views": 3522,
    "likes": 12,
-   "replies": 2,
+   "replies": 3,
    "reposts": 3,
    "quotes": 0,
    "shares": 1,
@@ -7525,7 +7525,7 @@
    "text": "Combo mạnh nhất để về đúng giờ khỏi phòng lab\n\nTrái: Google Scholar\nGiữa: Moonlight (bản iPad!)\nPhải: CorTex\n\nVới combo này, ngồi yên một chỗ là\ntìm paper → đọc → viết luôn được hết 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/Ddlr7yeG_J2",
-   "views": 214,
+   "views": 216,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -7987,7 +7987,7 @@
    "text": "Cuối tuần rồi, bạn có nhớ tuần sau có gì không?\nĐể trên màn hình khoá là khỏi phải đi tìm.\nChỉ cần bật màn hình là thấy nguyên cả tuần💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdgiXUxm7fn",
-   "views": 96,
+   "views": 97,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -8155,7 +8155,7 @@
    "text": "do you open the calendar app every time just to check your schedule?\nput it on your lock screen and you won't have to.\nthis week's plans and everything you've put off, all in one look💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ivy_.k09/post/DdfdrOrDX9n",
-   "views": 61,
+   "views": 62,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -8680,7 +8680,7 @@
    "text": "Mỗi lần xem lịch là phải mở app hả?\nĐể trên màn hình khoá là khỏi cần luôn.\nLịch tuần này với việc còn tồn đọng thấy hết một lượt💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Ddd9jUZmwQ5",
-   "views": 165,
+   "views": 166,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -9205,7 +9205,7 @@
    "text": "Công cụ không thể thiếu cho những ai\nphát bực vì Overleaf quá chậm",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DddDNa3CKDR",
-   "views": 119,
+   "views": 120,
    "likes": 2,
    "replies": 1,
    "reposts": 1,
@@ -9226,7 +9226,7 @@
    "text": "Công cụ không thể thiếu cho những ai\nchật vật khi đọc paper tiếng Anh",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DddDKC8Dh7u",
-   "views": 104,
+   "views": 105,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -9877,7 +9877,7 @@
    "text": "Combo mạnh nhất để về đúng giờ khỏi phòng lab\n\nTrái: Google Scholar\nGiữa: Moonlight (bản iPad!)\nPhải: CorTex\n\nVới combo này, ngồi yên một chỗ là\ntìm paper → đọc → viết luôn được hết 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdX9BoZmpI1",
-   "views": 35821,
+   "views": 35825,
    "likes": 1016,
    "replies": 13,
    "reposts": 191,
@@ -9898,7 +9898,7 @@
    "text": "Kombo paling ampuh biar bisa pulang tepat waktu dari lab\n\nKiri: Google Scholar\nTengah: Moonlight (versi iPad!)\nKanan: CorTex\n\nDengan kombo ini, duduk di tempat aja udah bisa\ncari paper → baca → langsung mulai nulis 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdX5n-sHCHc",
-   "views": 29766,
+   "views": 29767,
    "likes": 1175,
    "replies": 44,
    "reposts": 159,
@@ -10339,7 +10339,7 @@
    "text": "này, mấy người dùng iPhone ơi\nphải thử cái này thật đấy!\ndùng rồi thì thật sự chẳng còn quên việc gì nữa💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdWPL_hG3Da",
-   "views": 928,
+   "views": 929,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -11326,7 +11326,7 @@
    "text": "App lịch đồng bộ hết iPhone, iPad, MacBook với Watch?\nCứ dùng cái này đi",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdTt87Qmyyf",
-   "views": 636,
+   "views": 639,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -11347,7 +11347,7 @@
    "text": "Aplikasi kalender yang nyambung ke iPhone, iPad, MacBook, sama Watch?\nPakai ini aja",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdTt4BNG2al",
-   "views": 1283,
+   "views": 1285,
    "likes": 16,
    "replies": 1,
    "reposts": 1,
@@ -11410,7 +11410,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdTqXRBkS0h",
-   "views": 6064,
+   "views": 6067,
    "likes": 83,
    "replies": 1,
    "reposts": 19,
@@ -11620,7 +11620,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdTjgq7lTuL",
-   "views": 1887,
+   "views": 1888,
    "likes": 23,
    "replies": 1,
    "reposts": 2,
@@ -12271,7 +12271,7 @@
    "text": "Sao giờ mình mới biết cái này?! Dịch cả bài mà vẫn giữ nguyên layout gốc là sao vậy trời? Hình ảnh, bảng biểu, công thức trong PDF cũng gần như nguyên vẹn… mình được cứu rồi 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdNp1_Nk_i_",
-   "views": 4333,
+   "views": 4337,
    "likes": 89,
    "replies": 6,
    "reposts": 30,
@@ -12313,7 +12313,7 @@
    "text": "Kenapa aku baru tahu benda ni sekarang?! Macam mana boleh terjemah satu paper tapi layout asal masih kekal? Gambar, jadual dan formula dalam PDF pun hampir tak berubah… selamat aku 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@nur.aina_04/post/DdNjE6NivSw",
-   "views": 15787,
+   "views": 15789,
    "likes": 828,
    "replies": 39,
    "reposts": 178,
@@ -12334,7 +12334,7 @@
    "text": "Bakit ngayon ko lang 'to nadiscover?! Paano niya nate-translate ang buong paper pero buo pa rin ang original layout? Kahit yung images, tables, at equations sa PDF, halos intact lahat… saved na ako 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@kai_.03b/post/DdNi_ukEusa",
-   "views": 59601,
+   "views": 59603,
    "likes": 1602,
    "replies": 8,
    "reposts": 255,
@@ -12922,7 +12922,7 @@
    "text": "mn ơi, có ai để lịch lên màn hình khoá không?\nMình để cả tuần, mở máy là thấy hết\nkhông cần mở app nữa nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdL8As1oJU7",
-   "views": 2915,
+   "views": 2920,
    "likes": 23,
    "replies": 1,
    "reposts": 1,
@@ -13552,7 +13552,7 @@
    "text": "Công cụ không thể thiếu cho những ai\nphát bực vì Overleaf quá chậm",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdK-ThTjvT0",
-   "views": 602,
+   "views": 606,
    "likes": 7,
    "replies": 1,
    "reposts": 0,
@@ -14077,7 +14077,7 @@
    "text": "mn ơi, ai để lịch lên màn hình khoá chưa?\nMình để cả tuần luôn, mở máy là thấy\nkhỏi phải nhớ gì nữa nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdJXkCIG4TT",
-   "views": 1655,
+   "views": 1658,
    "likes": 8,
    "replies": 1,
    "reposts": 1,
@@ -14266,7 +14266,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch cả tuần hiện thẳng lên màn hình khoá\nkhỏi mở app luôn nha",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdIgTpMDTT8",
-   "views": 183,
+   "views": 186,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -15211,7 +15211,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nMở PDF là dịch thẳng tại chỗ, giữ nguyên bố cục gốc;\nbấm vào Figure phức tạp là nó giải thích ngay;\ncòn tự đánh dấu điểm mới, phương pháp và kết luận của bài.\nLúc đó giáo sư còn bảo: \"Paper thì phải tự đọc chứ……\"",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF7dtfiG_B",
-   "views": 65008,
+   "views": 65014,
    "likes": 1165,
    "replies": 32,
    "reposts": 263,
@@ -15295,7 +15295,7 @@
    "text": "Mình từng bị giáo sư mắng vì dùng trang này trong lab.\n\nViết LaTeX xong là gần như thấy kết quả biên dịch ngay;\nbiên dịch nhanh hơn Overleaf nhiều;\nsửa đi sửa lại cũng không phải ngồi chờ đến phát bực.\nLúc đó giáo sư còn bảo: \"Viết luận văn thì dùng Overleaf là được rồi mà……\"\n\nGiờ thì chính giáo sư cũng đang dùng.",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ashgrey._02/post/DdF0lnfDBKv",
-   "views": 1864,
+   "views": 1869,
    "likes": 18,
    "replies": 7,
    "reposts": 1,
@@ -15358,7 +15358,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 20791,
+   "views": 20792,
    "likes": 141,
    "replies": 5,
    "reposts": 17,
@@ -15631,7 +15631,7 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 92712,
+   "views": 92714,
    "likes": 1405,
    "replies": 13,
    "reposts": 918,
@@ -15652,7 +15652,7 @@
    "text": "10 tahun pakai iPhone\nbaru tau lockscreen bisa nampilin ini.\njadwal seminggu nongol terus di situ\nsejak itu gak pernah lupa apa-apa",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
-   "views": 18655,
+   "views": 18658,
    "likes": 262,
    "replies": 12,
    "reposts": 21,
@@ -15673,7 +15673,7 @@
    "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
-   "views": 17133,
+   "views": 17135,
    "likes": 70,
    "replies": 8,
    "reposts": 10,
@@ -15736,7 +15736,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdDCEziDdRN",
-   "views": 4192,
+   "views": 4194,
    "likes": 21,
    "replies": 4,
    "reposts": 2,
@@ -15904,7 +15904,7 @@
    "text": "Này, những ai dùng iPhone,\nthử cái này một lần thôi.\nBắt đầu dùng rồi\nlà thật sự không quên gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdAgrY6oKKC",
-   "views": 8179,
+   "views": 8180,
    "likes": 24,
    "replies": 1,
    "reposts": 4,
@@ -16534,7 +16534,7 @@
    "text": "Hoá ra iPhone có app như thế này\nmà tới giờ mình mới biết…\nVẽ lên màn hình khoá, dán thêm sticker,\ntrang trí đúng theo ý mình luôn 💕📆",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dc4u6vYAqHj",
-   "views": 8065,
+   "views": 8068,
    "likes": 28,
    "replies": 1,
    "reposts": 2,
@@ -16891,7 +16891,7 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 434676,
+   "views": 434680,
    "likes": 4298,
    "replies": 88,
    "reposts": 703,
@@ -17368,95 +17368,10 @@
    "shares": 0
   }
  ],
- "pending": [
-  {
-   "id": "18098909624215788",
-   "user": "_n.mutfin",
-   "when": "09/24 15:09",
-   "text": "cho tui hỏi gói 99k kia là khác với mấy gói premium à b",
-   "link": "https://www.threads.com/@_n.mutfin/post/DdqbCyZk5Oh",
-   "account": "ashgrey._02",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "post": "18007978418975657",
-   "post_text": "này, mấy người dùng iPhone ơi",
-   "post_link": "https://www.threads.com/@ashgrey._02/post/DdoKqxNn0vo"
-  },
-  {
-   "id": "18143650540594915",
-   "user": "wweeeeeeee7789",
-   "when": "09/24 15:53",
-   "text": "วันแบบเรียลไทม์ ไหมครับ หรือแค่วอลเปเปอร์เฉยๆ",
-   "link": "https://www.threads.com/@wweeeeeeee7789/post/DdqgGDKEtWy",
-   "account": "pim.pm_02",
-   "project": "trace",
-   "country": "TH",
-   "flag": "🇹🇭",
-   "post": "18137461120619327",
-   "post_text": "นี่ คนที่ใช้ iPhone",
-   "post_link": "https://www.threads.com/@pim.pm_02/post/DdoQw6clsnv"
-  },
-  {
-   "id": "18167308063472902",
-   "user": "fanolparadise",
-   "when": "09/25 23:49",
-   "text": "Deine App?",
-   "link": "https://www.threads.com/@fanolparadise/post/DdudurgCOBp",
-   "account": "dot2day_",
-   "project": "trace",
-   "country": "DE",
-   "flag": "🇩🇪",
-   "post": "18434691784177100",
-   "post_text": "hey, ihr iPhone-Leute",
-   "post_link": "https://www.threads.com/@dot2day_/post/Ddt8zm4if6A"
-  },
-  {
-   "id": "18030050585853326",
-   "user": "thisisfaris",
-   "when": "09/26 11:39",
-   "text": "🔥🔥🔥Video & Testimoni 👇🏻🔥🔥🔥\nhttps://www.threads.com/@thisisfaris/post/DSShK2xk62_?xmt=AQF0f2JAk0d8K_OLo88cZ1X8nSTkz9oSHag81xEMVBu27TpzLhI69ZQgtJ-EcwzLo58bjvU&slof=1\n\n🔥🔥🔥Photo & Testimoni 👇🏻🔥🔥🔥\nhttps://www.threads.com/@63056483631/post/DURORWAk-Dc\n\n📲 Book now 👇🏻\nhttps://0183762481.wasap.my\n\n🔥🔥🔥Portfolio:\nthisisfaris.com/linktree",
-   "link": "https://www.threads.com/@thisisfaris/post/Ddu3871md-Y",
-   "account": "elle__jm",
-   "project": "moonlight",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "post": "17906169045561463",
-   "post_text": "Why I bought an iPad: to read papers",
-   "post_link": "https://www.threads.com/@elle__jm/post/DduzlnPDpp3"
-  },
-  {
-   "id": "18019044434945950",
-   "user": "bobs_599",
-   "when": "09/27 15:01",
-   "text": "Funktioniert bei mir nicht. Ich kriege es nicht auf den Sperrbildschirm - schade☹️",
-   "link": "https://www.threads.com/@bobs_599/post/DdyqzLREfzg",
-   "account": "dot2day_",
-   "project": "trace",
-   "country": "DE",
-   "flag": "🇩🇪",
-   "post": "18434691784177100",
-   "post_text": "hey, ihr iPhone-Leute",
-   "post_link": "https://www.threads.com/@dot2day_/post/Ddt8zm4if6A"
-  },
-  {
-   "id": "18107830090905174",
-   "user": "myai2311",
-   "when": "09/27 22:50",
-   "text": "Hi, b ơi cho mình hỏi có cách nào cho lịch nó tự động thay đổi ngày kh, mình kh vào bấm lưu lại thì hình nền và lịch vẫn ở ngày cũ á",
-   "link": "https://www.threads.com/@myai2311/post/Ddy-KQ6EsCE",
-   "account": "ashgrey._02",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "post": "17884526307501699",
-   "post_text": "Dùng iPhone 10 năm rồi",
-   "post_link": "https://www.threads.com/@ashgrey._02/post/DdvzgSqH7ru"
-  }
- ],
+ "pending": [],
  "skipped": [],
  "errors": [
   "aoi.02_ 게시물: 'aoi.02_'",
-  "inkling01 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Atb5xzjrP5l5yrfA00qwEzK\"}}"
+  "inkling01 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A5tU-VTnjbkK5vZFKe2H3l0\"}}"
  ]
 }
