@@ -378,7 +378,10 @@ def rounds_file(proj):
 
 
 def accounts():
-    return sorted(d.name for d in (ROOT / "accounts").iterdir() if d.is_dir())
+    # 영구정지(banned)는 토큰이 없어 수집하면 매번 오류만 난다.
+    st = account_status()
+    return sorted(d.name for d in (ROOT / "accounts").iterdir()
+                  if d.is_dir() and st.get(d.name, {}).get("state") != "banned")
 
 
 def scheduled():

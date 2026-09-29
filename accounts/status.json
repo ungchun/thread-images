@@ -1,9 +1,9 @@
 {
- "_설명": "계정 운영 상태. 대시보드가 읽어 계정별 표에 표시한다. state는 active(운영) / paused(중단) / dead(도달 없음).",
+ "_설명": "계정 운영 상태. 대시보드가 읽어 계정별 표에 표시한다. state는 active(운영) / paused(중단) / dead(도달 없음) / banned(영구정지, 수집 안 함).",
  "accounts": {
   "ashgrey._02":  {"state": "active", "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"},
   "inkling01":    {"state": "active", "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음"},
-  "aoi.02_":      {"state": "active", "note": "일본. 9/3에 32,241"},
+  "aoi.02_":      {"state": "banned", "note": "일본. 9/3에 32,241. 영구정지(9/23 인계 기준)"},
   "o2ndot":       {"state": "active", "note": "프랑스. 저녁 19시가 오전 8시보다 10배"},
   "ac_dd91":      {"state": "active", "note": "한국. 저녁 18시가 오전보다 나음"},
   "03ines.mar_":  {"state": "active", "note": "포르투갈"},
