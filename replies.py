@@ -86,9 +86,13 @@ def unanswered(account, post_id):
     convo = paged(f"{post_id}/conversation", token, fields=FIELDS)
     answered = {r.get("replied_to", {}).get("id")
                 for r in convo if r.get("username") == account}
+    ours = {r["id"] for r in convo if r.get("username") == account}
+    # /replies는 최상위만 준다. 우리 답장에 되단 답글은 conversation에만 있다.
+    top = paged(f"{post_id}/replies", token, fields=FIELDS)
+    nested = [r for r in convo if r.get("replied_to", {}).get("id") in ours]
     _, tz = meta(account)
     rows = []
-    for r in paged(f"{post_id}/replies", token, fields=FIELDS):
+    for r in {r["id"]: r for r in top + nested}.values():
         if r.get("username") == account or r["id"] in answered:
             continue
         if r.get("hide_status") in ("HIDDEN", "COVERED"):   # 숨긴 답글은 답할 대상이 아니다
@@ -135,6 +139,9 @@ def send(account, reply_to_id, body, media=None):
     media는 images/ 안의 파일명 목록. 여러 개면 캐러셀로 묶는다.
     본문 발행과 같은 규칙이라 확장자로 이미지/영상이 갈린다(run.media_kind).
     """
+    # 빈 id면 API가 답장이 아니라 새 게시글로 올린다(되돌릴 수 없음). 2026-09-28 실제로 났다.
+    if not str(reply_to_id).strip().isdigit():
+        sys.exit(f"reply_to_id가 숫자 id 하나가 아니다: {reply_to_id!r}")
     token, uid = creds(account)
     base = f"{RAW}/images"
     if not media:
