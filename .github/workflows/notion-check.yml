@@ -57,6 +57,19 @@ jobs:
               t = page.get("properties", {}).get("title") or page.get("properties", {}).get("Name")
               title = "".join(x["plain_text"] for x in t["title"]) if t and t.get("title") else "(제목 없음)"
               print(f"   OK — '{title}'")
+              # 내용이 본문 블록이 아니라 속성 칸에 있는 페이지(DB 행)가 있다. 속성을 전부 푼다.
+              def plain(v):
+                  t = v["type"]; x = v.get(t)
+                  if t in ("title", "rich_text"): return "".join(r["plain_text"] for r in x)
+                  if t in ("select", "status"): return x["name"] if x else ""
+                  if t == "multi_select": return ", ".join(o["name"] for o in x)
+                  if t == "date": return x["start"] if x else ""
+                  if t == "relation": return ", ".join(r["id"] for r in x)
+                  if t == "files": return ", ".join(f["name"] for f in x)
+                  return json.dumps(x, ensure_ascii=False)[:200]
+              print(f"   parent: {json.dumps(page.get('parent'))}")
+              for k, v in page.get("properties", {}).items():
+                  print(f"   [{k}] {plain(v)}")
           else:
               print(f"   실패 {code}: {d.get('message','')[:120]}")
               print("   → 페이지에 인티그레이션이 연결되지 않았다")
