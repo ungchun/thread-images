@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T09:36:12.096903+00:00",
+ "generated": "2026-09-29T09:54:48.237272+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -14,20 +14,20 @@
      "type": "W39 목 · 랩미팅 선배 / 경로 3갈래",
      "kr": "랩미팅 전날 논문 3편 몰아 읽는 거 보고\n선배가 \"그렇게 읽으면 하나도 안 남아\" 했었음.\n\nPDF 넣으면 원문 레이아웃 그대로 번역되고\nfigure는 클릭 한 번에 해석되고\n독창성·방법·결론까지 알아서 표시됨.\n\n근데 지금은 그 선배가 나한테 링크 달라고 함.",
      "note": "이미지 1장, 자국어 7개 언어(kr jp tw de fr es en) 나머지 es 폴백. 답글은 themoonlight 로케일 링크.",
-     "posts": 9,
-     "views": 356,
+     "posts": 11,
+     "views": 373,
      "likes": 4,
-     "median": 14,
+     "median": 11,
      "score": 1.77,
-     "sample": 9,
+     "sample": 11,
      "er_score": 1.02,
      "er_sample": 2,
      "variants": {
       "기존API": {
-       "posts": 9,
-       "median": 14,
+       "posts": 11,
+       "median": 11,
        "score": 1.77,
-       "sample": 9,
+       "sample": 11,
        "er_score": 1.02,
        "er_sample": 2
       }
@@ -39,20 +39,20 @@
      "type": "W39 토 · 아이패드 산 이유 / 경로 3갈래",
      "kr": "아이패드 산 이유: 논문 읽으려고\n아이패드로 실제로 한 것: 유튜브\n\n…였는데 이거 깔고 나서 진짜 논문 읽는 기계 됨",
      "note": "이미지 1장(아이패드 실사진). 답글 iOS·Android·Web 3줄.",
-     "posts": 9,
-     "views": 60,
+     "posts": 11,
+     "views": 65,
      "likes": 1,
      "median": 4,
      "score": 0.44,
-     "sample": 9,
+     "sample": 11,
      "er_score": 0.0,
      "er_sample": 2,
      "variants": {
       "기존API": {
-       "posts": 9,
+       "posts": 11,
        "median": 4,
        "score": 0.44,
-       "sample": 9,
+       "sample": 11,
        "er_score": 0.0,
        "er_sample": 2
       }
@@ -64,20 +64,20 @@
      "type": "W39 일 · 스트릭 / 경로 3갈래",
      "kr": "논문 한 편 여는 것도 귀찮아하던 사람인데\n이제 논문 읽기 기록 안 끊기게 하려고 매일 논문 읽음 😭",
      "note": "이미지 2장 캐러셀. 답글 크롬 익스텐션.",
-     "posts": 9,
-     "views": 105,
+     "posts": 11,
+     "views": 112,
      "likes": 0,
-     "median": 10,
-     "score": 0.72,
-     "sample": 9,
+     "median": 6,
+     "score": 0.57,
+     "sample": 11,
      "er_score": 0.0,
      "er_sample": 2,
      "variants": {
       "기존API": {
-       "posts": 9,
-       "median": 10,
-       "score": 0.72,
-       "sample": 9,
+       "posts": 11,
+       "median": 6,
+       "score": 0.57,
+       "sample": 11,
        "er_score": 0.0,
        "er_sample": 2
       }
@@ -86,25 +86,30 @@
    ],
    "insights": {
     "hour": {
+     "9": {
+      "n": 1,
+      "score": 0.0,
+      "median": 3
+     },
      "10": {
-      "n": 13,
+      "n": 19,
       "score": 0.12,
       "median": 8
      },
      "11": {
-      "n": 60,
-      "score": 0.27,
-      "median": 45
+      "n": 76,
+      "score": 0.26,
+      "median": 52
      },
      "12": {
-      "n": 12,
+      "n": 13,
       "score": 0.23,
-      "median": 4
+      "median": 5
      },
      "13": {
-      "n": 4,
+      "n": 5,
       "score": 2.47,
-      "median": 52
+      "median": 36
      },
      "15": {
       "n": 1,
@@ -117,14 +122,14 @@
       "median": 8
      },
      "18": {
-      "n": 10,
-      "score": 0.03,
-      "median": 26
+      "n": 16,
+      "score": 0.06,
+      "median": 18
      },
      "19": {
-      "n": 20,
+      "n": 24,
       "score": 0.2,
-      "median": 115
+      "median": 83
      },
      "20": {
       "n": 5,
@@ -139,41 +144,41 @@
     },
     "wday": {
      "화": {
-      "n": 27,
-      "score": 0.11,
-      "median": 48
+      "n": 36,
+      "score": 0.12,
+      "median": 40
      },
      "목": {
-      "n": 37,
-      "score": 0.35,
-      "median": 23
+      "n": 48,
+      "score": 0.27,
+      "median": 22
      },
      "토": {
-      "n": 38,
-      "score": 0.13,
+      "n": 48,
+      "score": 0.12,
       "median": 17
      },
      "일": {
-      "n": 25,
-      "score": 1.25,
-      "median": 27
+      "n": 30,
+      "score": 0.83,
+      "median": 20
      }
     },
     "media": {
      "IMAGE": {
-      "n": 102,
+      "n": 132,
       "score": 0.16,
-      "median": 23
+      "median": 22
      },
      "VIDEO": {
-      "n": 16,
-      "score": 3.33,
-      "median": 1626
+      "n": 19,
+      "score": 4.21,
+      "median": 2080
      },
      "CAROUSEL_ALBUM": {
-      "n": 9,
-      "score": 0.08,
-      "median": 10
+      "n": 11,
+      "score": 0.07,
+      "median": 6
      }
     },
     "accounts": {
@@ -213,7 +218,7 @@
        "10": {
         "n": 1,
         "score": 2.13,
-        "median": 29810
+        "median": 29811
        },
        "11": {
         "n": 4,
@@ -235,6 +240,38 @@
       "best_n": 1,
       "state": "active",
       "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
+     },
+     "kai_.03b": {
+      "flag": "PH",
+      "posts": 7,
+      "avg": 9112,
+      "max": 59652,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 0.0,
+        "median": 7
+       },
+       "11": {
+        "n": 4,
+        "score": 0.21,
+        "median": 1872
+       },
+       "18": {
+        "n": 1,
+        "score": 0.0,
+        "median": 22
+       },
+       "19": {
+        "n": 1,
+        "score": 0.02,
+        "median": 137
+       }
+      },
+      "best_hour": 11,
+      "best_n": 4,
+      "state": "active",
+      "note": "필리핀. 9/7 합류, 표본 부족"
      },
      "pim.pm_02": {
       "flag": "TH",
@@ -266,8 +303,8 @@
      "elif.dm_05": {
       "flag": "TR",
       "posts": 7,
-      "avg": 4851,
-      "max": 30538,
+      "avg": 4852,
+      "max": 30540,
       "hours": {
        "11": {
         "n": 6,
@@ -289,7 +326,7 @@
       "flag": "KR",
       "posts": 7,
       "avg": 2854,
-      "max": 11203,
+      "max": 11204,
       "hours": {
        "10": {
         "n": 1,
@@ -380,6 +417,43 @@
       "best_n": 1,
       "state": "active",
       "note": ""
+     },
+     "lune__v34": {
+      "flag": "IT",
+      "posts": 7,
+      "avg": 1614,
+      "max": 9003,
+      "hours": {
+       "9": {
+        "n": 1,
+        "score": 0.0,
+        "median": 3
+       },
+       "10": {
+        "n": 1,
+        "score": 0.01,
+        "median": 12
+       },
+       "11": {
+        "n": 3,
+        "score": 1.36,
+        "median": 2195
+       },
+       "18": {
+        "n": 1,
+        "score": 0.01,
+        "median": 20
+       },
+       "19": {
+        "n": 1,
+        "score": 0.03,
+        "median": 46
+       }
+      },
+      "best_hour": 11,
+      "best_n": 3,
+      "state": "active",
+      "note": "이탈리아. 9/7 합류, 표본 부족"
      },
      "shu.lin_03": {
       "flag": "TW",
@@ -492,6 +566,38 @@
       "state": "active",
       "note": ""
      },
+     "beatriz03._a": {
+      "flag": "ES",
+      "posts": 10,
+      "avg": 86,
+      "max": 689,
+      "hours": {
+       "10": {
+        "n": 2,
+        "score": 0.14,
+        "median": 12
+       },
+       "11": {
+        "n": 6,
+        "score": 0.09,
+        "median": 7
+       },
+       "18": {
+        "n": 1,
+        "score": 0.14,
+        "median": 12
+       },
+       "19": {
+        "n": 1,
+        "score": 0.65,
+        "median": 56
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "active",
+      "note": "스페인. 앞 계정 영구정지 후 재개설"
+     },
      "ivy_.k09": {
       "flag": "US",
       "posts": 9,
@@ -556,6 +662,38 @@
       "state": "active",
       "note": "독일. 오전 8시 성과가 특히 나빴다"
      },
+     "bia__rp03": {
+      "flag": "BR",
+      "posts": 7,
+      "avg": 31,
+      "max": 135,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 1.82,
+        "median": 58
+       },
+       "11": {
+        "n": 3,
+        "score": 0.13,
+        "median": 4
+       },
+       "12": {
+        "n": 1,
+        "score": 0.25,
+        "median": 8
+       },
+       "18": {
+        "n": 2,
+        "score": 0.27,
+        "median": 8
+       }
+      },
+      "best_hour": 10,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
      "mae.dw_04": {
       "flag": "US",
       "posts": 9,
@@ -589,6 +727,38 @@
        }
       },
       "best_hour": 20,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "haru._81a": {
+      "flag": "JP",
+      "posts": 4,
+      "avg": 17,
+      "max": 45,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 0.18,
+        "median": 3
+       },
+       "13": {
+        "n": 1,
+        "score": 0.18,
+        "median": 3
+       },
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 17
+       },
+       "19": {
+        "n": 1,
+        "score": 2.65,
+        "median": 45
+       }
+      },
+      "best_hour": 19,
       "best_n": 1,
       "state": "active",
       "note": ""
@@ -738,17 +908,6 @@
       "state": "active",
       "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
      },
-     "kai_.03b": {
-      "flag": "PH",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "필리핀. 9/7 합류, 표본 부족"
-     },
      "nia._055": {
       "flag": "IN",
       "posts": 0,
@@ -759,28 +918,6 @@
       "best_n": 0,
       "state": "active",
       "note": "인도. 9/7 합류, 표본 부족"
-     },
-     "lune__v34": {
-      "flag": "IT",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "이탈리아. 9/7 합류, 표본 부족"
-     },
-     "beatriz03._a": {
-      "flag": "ES",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "스페인. 앞 계정 영구정지 후 재개설"
      }
     }
    },
@@ -841,10 +978,20 @@
       "기존API": 0.5
      },
      "표본": {
-      "기존API": 27
+      "기존API": 33
      },
      "계정별": {
       "기존API": {
+       "beatriz03._a": [
+        0.57,
+        0.48,
+        0.86
+       ],
+       "bia__rp03": [
+        0.29,
+        0.0,
+        2.29
+       ],
        "dot2day_": [
         0.17,
         0.0,
@@ -892,7 +1039,7 @@
        ]
       }
      },
-     "현재해석": "기존API 0.5 (n=27)"
+     "현재해석": "기존API 0.5 (n=33)"
     }
    }
   },
@@ -904,20 +1051,20 @@
      "type": "W39 금 · LaTeX 즉시 컴파일 / 경로 3갈래",
      "kr": "나 왜 이제야 이걸 알았지?!\nLaTeX 쓰자마자 컴파일 결과가 거의 바로 보이고\n고칠 때마다 컴파일 버튼 누르고 멍 때릴 일이 없음…\nOverleaf 기다리던 시간 다 돌려받는 기분 😭",
      "note": "영상 1개 전 계정 공통(H.264 변환본). 답글 cortex.corca.ai 한 줄.",
-     "posts": 9,
-     "views": 110,
+     "posts": 11,
+     "views": 116,
      "likes": 0,
-     "median": 8,
+     "median": 6,
      "score": 0.6,
-     "sample": 9,
+     "sample": 11,
      "er_score": 0.0,
      "er_sample": 1,
      "variants": {
       "기존API": {
-       "posts": 9,
-       "median": 8,
+       "posts": 11,
+       "median": 6,
        "score": 0.6,
-       "sample": 9,
+       "sample": 11,
        "er_score": 0.0,
        "er_sample": 1
       }
@@ -927,19 +1074,19 @@
    "insights": {
     "hour": {
      "9": {
-      "n": 4,
-      "score": 0.22,
-      "median": 12
+      "n": 5,
+      "score": 0.26,
+      "median": 9
      },
      "10": {
-      "n": 31,
-      "score": 0.54,
-      "median": 31
+      "n": 44,
+      "score": 0.62,
+      "median": 15
      },
      "11": {
-      "n": 8,
-      "score": 0.12,
-      "median": 19
+      "n": 9,
+      "score": 0.14,
+      "median": 11
      },
      "17": {
       "n": 4,
@@ -947,9 +1094,9 @@
       "median": 33
      },
      "18": {
-      "n": 15,
-      "score": 1.68,
-      "median": 154
+      "n": 20,
+      "score": 1.75,
+      "median": 47
      },
      "20": {
       "n": 1,
@@ -964,31 +1111,31 @@
     },
     "wday": {
      "화": {
-      "n": 15,
-      "score": 1.68,
-      "median": 154
+      "n": 20,
+      "score": 1.75,
+      "median": 47
      },
      "목": {
-      "n": 11,
-      "score": 0.26,
-      "median": 24
+      "n": 14,
+      "score": 0.41,
+      "median": 21
      },
      "금": {
-      "n": 9,
+      "n": 11,
       "score": 0.14,
-      "median": 8
+      "median": 6
      },
      "토": {
-      "n": 32,
+      "n": 42,
       "score": 0.65,
-      "median": 31
+      "median": 16
      }
     },
     "media": {
      "VIDEO": {
-      "n": 67,
-      "score": 0.55,
-      "median": 31
+      "n": 87,
+      "score": 0.67,
+      "median": 19
      }
     },
     "accounts": {
@@ -1348,6 +1495,104 @@
       "state": "active",
       "note": "포르투갈"
      },
+     "kai_.03b": {
+      "flag": "PH",
+      "posts": 4,
+      "avg": 18,
+      "max": 40,
+      "hours": {
+       "10": {
+        "n": 3,
+        "score": 0.49,
+        "median": 9
+       },
+       "18": {
+        "n": 1,
+        "score": 2.19,
+        "median": 40
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "필리핀. 9/7 합류, 표본 부족"
+     },
+     "beatriz03._a": {
+      "flag": "ES",
+      "posts": 5,
+      "avg": 13,
+      "max": 44,
+      "hours": {
+       "10": {
+        "n": 4,
+        "score": 0.49,
+        "median": 6
+       },
+       "18": {
+        "n": 1,
+        "score": 3.28,
+        "median": 44
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "스페인. 앞 계정 영구정지 후 재개설"
+     },
+     "lune__v34": {
+      "flag": "IT",
+      "posts": 4,
+      "avg": 10,
+      "max": 19,
+      "hours": {
+       "9": {
+        "n": 1,
+        "score": 0.76,
+        "median": 8
+       },
+       "10": {
+        "n": 1,
+        "score": 1.24,
+        "median": 13
+       },
+       "11": {
+        "n": 1,
+        "score": 0.19,
+        "median": 2
+       },
+       "18": {
+        "n": 1,
+        "score": 1.81,
+        "median": 19
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "이탈리아. 9/7 합류, 표본 부족"
+     },
+     "bia__rp03": {
+      "flag": "BR",
+      "posts": 4,
+      "avg": 7,
+      "max": 18,
+      "hours": {
+       "10": {
+        "n": 3,
+        "score": 0.69,
+        "median": 5
+       },
+       "18": {
+        "n": 1,
+        "score": 0.69,
+        "median": 5
+       }
+      },
+      "best_hour": 10,
+      "best_n": 3,
+      "state": "active",
+      "note": ""
+     },
      "lari.s_07": {
       "flag": "BR",
       "posts": 4,
@@ -1396,6 +1641,28 @@
       "best_n": 2,
       "state": "dead",
       "note": "7건 평균 16·최고 40. 같은 문구 쓴 inkling01이 평균 7,885라 계정 문제. 예약에서 제외, 새 대만 계정 개설 예정"
+     },
+     "haru._81a": {
+      "flag": "JP",
+      "posts": 3,
+      "avg": 3,
+      "max": 3,
+      "hours": {
+       "10": {
+        "n": 2,
+        "score": 1.0,
+        "median": 3
+       },
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 3
+       }
+      },
+      "best_hour": 10,
+      "best_n": 2,
+      "state": "active",
+      "note": ""
      },
      "riya._m08": {
       "flag": "IN",
@@ -1478,17 +1745,6 @@
       "state": "active",
       "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
      },
-     "kai_.03b": {
-      "flag": "PH",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "필리핀. 9/7 합류, 표본 부족"
-     },
      "nia._055": {
       "flag": "IN",
       "posts": 0,
@@ -1499,28 +1755,6 @@
       "best_n": 0,
       "state": "active",
       "note": "인도. 9/7 합류, 표본 부족"
-     },
-     "lune__v34": {
-      "flag": "IT",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "이탈리아. 9/7 합류, 표본 부족"
-     },
-     "beatriz03._a": {
-      "flag": "ES",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "스페인. 앞 계정 영구정지 후 재개설"
      }
     }
    },
@@ -1581,10 +1815,16 @@
       "기존API": 0.6
      },
      "표본": {
-      "기존API": 9
+      "기존API": 11
      },
      "계정별": {
       "기존API": {
+       "beatriz03._a": [
+        0.62
+       ],
+       "bia__rp03": [
+        0.2
+       ],
        "dot2day_": [
         0.6
        ],
@@ -1614,7 +1854,7 @@
        ]
       }
      },
-     "현재해석": "기존API 0.6 (n=9)"
+     "현재해석": "기존API 0.6 (n=11)"
     }
    }
   },
@@ -1674,14 +1914,14 @@
      "type": "발견담",
      "kr": "아이폰에 이런 앱이 있었는데 나만 여태 모르고 있었네… 잠금화면에 그림도 그리고 스티커도 붙여서 내 맘대로 꾸며놨어",
      "note": "1인칭 발견담 + 꾸미기 소구. 영상+이미지2 캐러셀 첫 도입.",
-     "posts": 7,
-     "views": 9707,
-     "likes": 36,
-     "median": 304,
-     "score": 1.88,
-     "sample": 7,
-     "er_score": 0.7,
-     "er_sample": 3,
+     "posts": 10,
+     "views": 10598,
+     "likes": 38,
+     "median": 296,
+     "score": 2.35,
+     "sample": 10,
+     "er_score": 0.99,
+     "er_sample": 4,
      "variants": {}
     },
     {
@@ -1690,14 +1930,14 @@
      "type": "호명형",
      "kr": "야 아이폰 쓰는 사람들아, 이거 진짜 써봐 한 번만. 쓰기 시작하면 까먹는 게 없어진다 진짜로",
      "note": "03 재사용. 04(발견담)와 같은 계정 비교용.",
-     "posts": 6,
-     "views": 693,
-     "likes": 2,
-     "median": 64,
-     "score": 0.78,
-     "sample": 6,
-     "er_score": 1.19,
-     "er_sample": 2,
+     "posts": 9,
+     "views": 925,
+     "likes": 4,
+     "median": 94,
+     "score": 0.76,
+     "sample": 9,
+     "er_score": 2.02,
+     "er_sample": 3,
      "variants": {}
     },
     {
@@ -1706,30 +1946,30 @@
      "type": "호명형 A / 팁형 B (시각 이동 동시 실험)",
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로 ✨",
      "note": "나라별 저녁 시각으로 옮기고 문구 A/B를 같은 날 갈라 올렸다. 두 변수를 한 번에 움직인 데다 이미지도 2장→3장으로 늘어 교란됐다.",
-     "posts": 13,
-     "views": 45881,
-     "likes": 513,
-     "median": 423,
-     "score": 3.0,
-     "sample": 13,
-     "er_score": 0.62,
-     "er_sample": 5,
+     "posts": 20,
+     "views": 53826,
+     "likes": 533,
+     "median": 517,
+     "score": 3.89,
+     "sample": 20,
+     "er_score": 0.82,
+     "er_sample": 8,
      "variants": {
       "A": {
-       "posts": 7,
-       "median": 612,
-       "score": 4.93,
-       "sample": 7,
-       "er_score": 0.62,
-       "er_sample": 3
+       "posts": 10,
+       "median": 1258,
+       "score": 5.53,
+       "sample": 10,
+       "er_score": 1.4,
+       "er_sample": 4
       },
       "B": {
-       "posts": 6,
-       "median": 339,
-       "score": 2.76,
-       "sample": 6,
-       "er_score": 0.78,
-       "er_sample": 2
+       "posts": 9,
+       "median": 349,
+       "score": 3.0,
+       "sample": 9,
+       "er_score": 1.02,
+       "er_sample": 3
       }
      }
     },
@@ -1755,30 +1995,30 @@
      "type": "호명형 현지화 A / 고백형 B",
      "kr": "야 아이폰 쓰는 사람들아,\n이거 진짜 써봐 한 번만.\n쓰기 시작하면\n까먹는 게 없어진다 진짜로",
      "note": "수요일 저녁 발행. 문구를 나라별 Threads 문법으로 현지화(research/format_by_country.txt), 이모지 제거. 배정은 7라운드 반전. 신규 계정 7개(브라질2·미국2·인도·베트남·태국) 첫 발행. 한국·호주·일본은 같은 날 7라운드 잔여분이 나가 8라운드는 9/10에.",
-     "posts": 25,
-     "views": 139177,
-     "likes": 1844,
-     "median": 167,
-     "score": 2.38,
-     "sample": 25,
-     "er_score": 1.37,
-     "er_sample": 5,
+     "posts": 29,
+     "views": 172670,
+     "likes": 1944,
+     "median": 187,
+     "score": 3.94,
+     "sample": 29,
+     "er_score": 1.66,
+     "er_sample": 6,
      "variants": {
       "A": {
-       "posts": 12,
-       "median": 44,
-       "score": 4.75,
-       "sample": 12,
+       "posts": 14,
+       "median": 75,
+       "score": 6.45,
+       "sample": 14,
        "er_score": 1.37,
        "er_sample": 3
       },
       "B": {
-       "posts": 6,
-       "median": 380,
-       "score": 7.79,
-       "sample": 6,
-       "er_score": 1.95,
-       "er_sample": 1
+       "posts": 8,
+       "median": 837,
+       "score": 13.38,
+       "sample": 8,
+       "er_score": 1.97,
+       "er_sample": 2
       }
      }
     },
@@ -1788,28 +2028,28 @@
      "type": "W39 수 · 호명형(역대 최고 구조) / 경로 2갈래",
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
-     "posts": 17,
-     "views": 40767,
-     "likes": 347,
-     "median": 88,
-     "score": 2.0,
-     "sample": 17,
-     "er_score": 0.84,
-     "er_sample": 6,
+     "posts": 22,
+     "views": 41978,
+     "likes": 350,
+     "median": 82,
+     "score": 1.65,
+     "sample": 22,
+     "er_score": 0.61,
+     "er_sample": 8,
      "variants": {
       "기존API": {
-       "posts": 9,
-       "median": 77,
+       "posts": 11,
+       "median": 26,
        "score": 1.12,
-       "sample": 9,
+       "sample": 11,
        "er_score": 0.0,
-       "er_sample": 1
+       "er_sample": 2
       },
       "새API": {
-       "posts": 5,
+       "posts": 7,
        "median": 40,
        "score": 2.0,
-       "sample": 5,
+       "sample": 7,
        "er_score": 1.44,
        "er_sample": 2
       }
@@ -1821,28 +2061,28 @@
      "type": "W39 목 · 팁형 / 경로 2갈래",
      "kr": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨",
      "note": "미피밤 2장. 09/07 원문(한국 721·스페인 730) 재사용.",
-     "posts": 17,
-     "views": 14780,
-     "likes": 25,
-     "median": 28,
-     "score": 0.52,
-     "sample": 17,
+     "posts": 22,
+     "views": 15437,
+     "likes": 29,
+     "median": 29,
+     "score": 0.54,
+     "sample": 22,
      "er_score": 0.59,
-     "er_sample": 6,
+     "er_sample": 8,
      "variants": {
       "기존API": {
-       "posts": 9,
+       "posts": 11,
        "median": 24,
        "score": 0.52,
-       "sample": 9,
+       "sample": 11,
        "er_score": 0.0,
-       "er_sample": 1
+       "er_sample": 2
       },
       "새API": {
-       "posts": 5,
-       "median": 13,
-       "score": 0.19,
-       "sample": 5,
+       "posts": 7,
+       "median": 14,
+       "score": 0.22,
+       "sample": 7,
        "er_score": 0.46,
        "er_sample": 2
       }
@@ -1854,28 +2094,28 @@
      "type": "W39 금 · 설정형 / 경로 2갈래",
      "kr": "야 아이폰 쓰는 사람들아\n이거 한 번만 설정해봐.\n이번 주 일정이 잠금화면에 그냥 떠 있음\n앱 열 일이 없어진다",
      "note": "미피파랑 2장. 09/11 원문(대만 3,529·태국 18,345) 재사용.",
-     "posts": 17,
-     "views": 650,
-     "likes": 3,
-     "median": 28,
-     "score": 0.32,
-     "sample": 17,
-     "er_score": 0.7,
-     "er_sample": 6,
+     "posts": 22,
+     "views": 774,
+     "likes": 4,
+     "median": 25,
+     "score": 0.25,
+     "sample": 22,
+     "er_score": 0.66,
+     "er_sample": 8,
      "variants": {
       "기존API": {
-       "posts": 9,
+       "posts": 11,
        "median": 23,
-       "score": 0.7,
-       "sample": 9,
+       "score": 0.52,
+       "sample": 11,
        "er_score": 0.0,
-       "er_sample": 1
+       "er_sample": 2
       },
       "새API": {
-       "posts": 5,
-       "median": 18,
-       "score": 0.04,
-       "sample": 5,
+       "posts": 7,
+       "median": 15,
+       "score": 0.05,
+       "sample": 7,
        "er_score": 0.0,
        "er_sample": 2
       }
@@ -1887,28 +2127,28 @@
      "type": "W39 토 · 10년형 / 경로 2갈래",
      "kr": "아이폰 10년 썼는데\n잠금화면이 이게 된다는 걸 이제 알았네.\n이번 주가 통째로 떠 있으니까\n그 뒤로 뭘 까먹은 적이 없어",
      "note": "초록캐릭터 2장. 09/09 원문(필리핀 16,302·스페인 6,181) 재사용. 4개국 동시 성공한 유일 포맷.",
-     "posts": 17,
-     "views": 367,
-     "likes": 4,
-     "median": 10,
-     "score": 0.11,
-     "sample": 17,
-     "er_score": 2.7,
-     "er_sample": 6,
+     "posts": 22,
+     "views": 431,
+     "likes": 5,
+     "median": 9,
+     "score": 0.1,
+     "sample": 22,
+     "er_score": 2.17,
+     "er_sample": 8,
      "variants": {
       "기존API": {
-       "posts": 9,
-       "median": 8,
-       "score": 0.28,
-       "sample": 9,
+       "posts": 11,
+       "median": 7,
+       "score": 0.17,
+       "sample": 11,
        "er_score": 0.0,
-       "er_sample": 1
+       "er_sample": 2
       },
       "새API": {
-       "posts": 5,
+       "posts": 7,
        "median": 6,
-       "score": 0.01,
-       "sample": 5,
+       "score": 0.05,
+       "sample": 7,
        "er_score": 2.58,
        "er_sample": 2
       }
@@ -1920,29 +2160,29 @@
      "type": "W39 일 · 캘린더 안 열게 됨 / 경로 2갈래",
      "kr": "야, 아이폰 쓰는 사람들\n잠금화면에 일정 띄워둔 뒤로\n캘린더 앱을 아예 안 열게 됐어 🥹",
      "note": "헬로키티 2장. 독일 1,191·터키 1,020 구조에서 질문을 빼고 단정으로.",
-     "posts": 19,
-     "views": 2416,
-     "likes": 18,
-     "median": 17,
-     "score": 0.15,
-     "sample": 19,
-     "er_score": 1.36,
-     "er_sample": 6,
+     "posts": 25,
+     "views": 2602,
+     "likes": 20,
+     "median": 12,
+     "score": 0.14,
+     "sample": 25,
+     "er_score": 1.31,
+     "er_sample": 8,
      "variants": {
       "기존API": {
-       "posts": 11,
+       "posts": 15,
        "median": 12,
        "score": 0.15,
-       "sample": 11,
+       "sample": 15,
        "er_score": 0.0,
-       "er_sample": 1
+       "er_sample": 3
       },
       "새API": {
-       "posts": 6,
-       "median": 15,
-       "score": 0.09,
-       "sample": 6,
-       "er_score": 0.84,
+       "posts": 8,
+       "median": 7,
+       "score": 0.05,
+       "sample": 8,
+       "er_score": 0.78,
        "er_sample": 3
       }
      }
@@ -1952,63 +2192,68 @@
     "hour": {
      "1": {
       "n": 1,
-      "score": 0.72,
-      "median": 90
+      "score": 0.82,
+      "median": 104
+     },
+     "5": {
+      "n": 1,
+      "score": 0.36,
+      "median": 22
      },
      "8": {
-      "n": 26,
-      "score": 0.28,
-      "median": 296
+      "n": 32,
+      "score": 0.27,
+      "median": 225
      },
      "9": {
       "n": 3,
-      "score": 0.37,
+      "score": 0.43,
       "median": 9
      },
      "10": {
-      "n": 3,
-      "score": 4.01,
+      "n": 5,
+      "score": 1.81,
       "median": 67
      },
      "11": {
       "n": 2,
-      "score": 0.12,
-      "median": 149
+      "score": 0.15,
+      "median": 160
      },
      "14": {
       "n": 3,
       "score": 0.04,
-      "median": 460
+      "median": 478
      },
      "15": {
       "n": 1,
-      "score": 0.32,
-      "median": 241
+      "score": 0.33,
+      "median": 246
      },
      "16": {
-      "n": 3,
-      "score": 0.61,
-      "median": 221
+      "n": 5,
+      "score": 0.59,
+      "median": 244
      },
      "17": {
-      "n": 5,
+      "n": 6,
       "score": 0.01,
-      "median": 42
+      "median": 69
      },
      "18": {
-      "n": 16,
-      "score": 0.07,
-      "median": 60
+      "n": 19,
+      "score": 0.04,
+      "median": 31
      },
      "19": {
-      "n": 122,
-      "score": 0.23,
-      "median": 68
+      "n": 173,
+      "score": 0.22,
+      "median": 63
      },
      "20": {
-      "n": 49,
-      "score": 0.42,
-      "median": 23
+      "n": 56,
+      "score": 0.49,
+      "median": 24
      },
      "21": {
       "n": 6,
@@ -2018,54 +2263,54 @@
     },
     "wday": {
      "월": {
-      "n": 6,
-      "score": 1.88,
-      "median": 471
+      "n": 9,
+      "score": 1.76,
+      "median": 612
      },
      "화": {
-      "n": 37,
-      "score": 0.61,
-      "median": 221
+      "n": 49,
+      "score": 0.44,
+      "median": 244
      },
      "수": {
-      "n": 48,
-      "score": 1.53,
-      "median": 567
+      "n": 61,
+      "score": 1.46,
+      "median": 562
      },
      "목": {
-      "n": 28,
+      "n": 36,
       "score": 0.16,
-      "median": 23
+      "median": 26
      },
      "금": {
-      "n": 35,
-      "score": 0.22,
+      "n": 44,
+      "score": 0.21,
       "median": 40
      },
      "토": {
-      "n": 53,
-      "score": 0.11,
-      "median": 33
+      "n": 69,
+      "score": 0.12,
+      "median": 38
      },
      "일": {
-      "n": 33,
+      "n": 45,
       "score": 0.09,
-      "median": 23
+      "median": 21
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 240,
-      "score": 0.27,
-      "median": 53
+      "n": 313,
+      "score": 0.26,
+      "median": 56
      }
     },
     "accounts": {
      "ashgrey._02": {
       "flag": "VN",
       "posts": 17,
-      "avg": 29470,
-      "max": 435407,
+      "avg": 29471,
+      "max": 435409,
       "hours": {
        "8": {
         "n": 5,
@@ -2080,7 +2325,7 @@
        "14": {
         "n": 1,
         "score": 0.01,
-        "median": 431
+        "median": 440
        },
        "17": {
         "n": 2,
@@ -2106,18 +2351,18 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 13,
-      "avg": 14590,
-      "max": 93138,
+      "avg": 14593,
+      "max": 93139,
       "hours": {
        "14": {
         "n": 1,
         "score": 0.04,
-        "median": 543
+        "median": 581
        },
        "19": {
         "n": 11,
         "score": 0.06,
-        "median": 830
+        "median": 831
        },
        "20": {
         "n": 1,
@@ -2133,7 +2378,7 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 15,
-      "avg": 4205,
+      "avg": 4206,
       "max": 29136,
       "hours": {
        "8": {
@@ -2144,7 +2389,7 @@
        "14": {
         "n": 1,
         "score": 0.11,
-        "median": 460
+        "median": 478
        },
        "17": {
         "n": 2,
@@ -2167,10 +2412,79 @@
       "state": "active",
       "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
      },
+     "lune__v34": {
+      "flag": "IT",
+      "posts": 18,
+      "avg": 1357,
+      "max": 9915,
+      "hours": {
+       "8": {
+        "n": 2,
+        "score": 0.07,
+        "median": 100
+       },
+       "10": {
+        "n": 1,
+        "score": 0.05,
+        "median": 71
+       },
+       "19": {
+        "n": 14,
+        "score": 0.03,
+        "median": 35
+       },
+       "20": {
+        "n": 1,
+        "score": 0.44,
+        "median": 604
+       }
+      },
+      "best_hour": 20,
+      "best_n": 1,
+      "state": "active",
+      "note": "이탈리아. 9/7 합류, 표본 부족"
+     },
+     "kai_.03b": {
+      "flag": "PH",
+      "posts": 17,
+      "avg": 1247,
+      "max": 17308,
+      "hours": {
+       "8": {
+        "n": 2,
+        "score": 0.22,
+        "median": 278
+       },
+       "16": {
+        "n": 1,
+        "score": 0.27,
+        "median": 333
+       },
+       "18": {
+        "n": 2,
+        "score": 0.02,
+        "median": 22
+       },
+       "19": {
+        "n": 11,
+        "score": 0.21,
+        "median": 263
+       },
+       "20": {
+        "n": 1,
+        "score": 0.22,
+        "median": 269
+       }
+      },
+      "best_hour": 16,
+      "best_n": 1,
+      "state": "active",
+      "note": "필리핀. 9/7 합류, 표본 부족"
+     },
      "shu.lin_03": {
       "flag": "TW",
       "posts": 9,
-      "avg": 750,
+      "avg": 751,
       "max": 3571,
       "hours": {
        "8": {
@@ -2180,8 +2494,8 @@
        },
        "15": {
         "n": 1,
-        "score": 0.32,
-        "median": 241
+        "score": 0.33,
+        "median": 246
        },
        "18": {
         "n": 2,
@@ -2204,16 +2518,48 @@
       "state": "active",
       "note": ""
      },
+     "beatriz03._a": {
+      "flag": "ES",
+      "posts": 18,
+      "avg": 622,
+      "max": 6187,
+      "hours": {
+       "8": {
+        "n": 2,
+        "score": 0.29,
+        "median": 183
+       },
+       "10": {
+        "n": 1,
+        "score": 0.07,
+        "median": 43
+       },
+       "18": {
+        "n": 1,
+        "score": 0.04,
+        "median": 28
+       },
+       "19": {
+        "n": 14,
+        "score": 0.17,
+        "median": 105
+       }
+      },
+      "best_hour": 8,
+      "best_n": 2,
+      "state": "active",
+      "note": "스페인. 앞 계정 영구정지 후 재개설"
+     },
      "elif.dm_05": {
       "flag": "TR",
       "posts": 10,
-      "avg": 463,
+      "avg": 466,
       "max": 2465,
       "hours": {
        "11": {
         "n": 1,
-        "score": 0.24,
-        "median": 112
+        "score": 0.29,
+        "median": 134
        },
        "19": {
         "n": 8,
@@ -2234,13 +2580,13 @@
      "nur.aina_04": {
       "flag": "MY",
       "posts": 12,
-      "avg": 425,
+      "avg": 427,
       "max": 2208,
       "hours": {
        "16": {
         "n": 1,
-        "score": 0.99,
-        "median": 421
+        "score": 1.05,
+        "median": 448
        },
        "19": {
         "n": 11,
@@ -2256,7 +2602,7 @@
      "dot2day_": {
       "flag": "DE",
       "posts": 20,
-      "avg": 405,
+      "avg": 406,
       "max": 4373,
       "hours": {
        "8": {
@@ -2271,8 +2617,8 @@
        },
        "10": {
         "n": 1,
-        "score": 1.75,
-        "median": 709
+        "score": 1.81,
+        "median": 738
        },
        "18": {
         "n": 4,
@@ -2290,10 +2636,42 @@
       "state": "active",
       "note": "독일. 오전 8시 성과가 특히 나빴다"
      },
+     "haru._81a": {
+      "flag": "JP",
+      "posts": 9,
+      "avg": 375,
+      "max": 2090,
+      "hours": {
+       "16": {
+        "n": 1,
+        "score": 0.11,
+        "median": 42
+       },
+       "17": {
+        "n": 1,
+        "score": 0.55,
+        "median": 207
+       },
+       "19": {
+        "n": 4,
+        "score": 0.11,
+        "median": 43
+       },
+       "20": {
+        "n": 3,
+        "score": 1.5,
+        "median": 562
+       }
+      },
+      "best_hour": 20,
+      "best_n": 3,
+      "state": "active",
+      "note": ""
+     },
      "ac_dd91": {
       "flag": "KR",
       "posts": 17,
-      "avg": 363,
+      "avg": 365,
       "max": 1905,
       "hours": {
        "8": {
@@ -2303,8 +2681,8 @@
        },
        "16": {
         "n": 1,
-        "score": 0.61,
-        "median": 221
+        "score": 0.67,
+        "median": 244
        },
        "18": {
         "n": 3,
@@ -2325,18 +2703,18 @@
      "elle__jm": {
       "flag": "AU",
       "posts": 17,
-      "avg": 290,
+      "avg": 291,
       "max": 1056,
       "hours": {
        "8": {
         "n": 2,
-        "score": 0.98,
+        "score": 0.97,
         "median": 284
        },
        "18": {
         "n": 1,
-        "score": 1.08,
-        "median": 313
+        "score": 1.13,
+        "median": 328
        },
        "19": {
         "n": 9,
@@ -2345,7 +2723,7 @@
        },
        "20": {
         "n": 4,
-        "score": 1.17,
+        "score": 1.16,
         "median": 338
        },
        "21": {
@@ -2372,8 +2750,8 @@
        },
        "9": {
         "n": 1,
-        "score": 0.37,
-        "median": 82
+        "score": 0.43,
+        "median": 96
        },
        "19": {
         "n": 16,
@@ -2399,8 +2777,8 @@
        },
        "19": {
         "n": 3,
-        "score": 0.13,
-        "median": 23
+        "score": 0.14,
+        "median": 24
        },
        "20": {
         "n": 8,
@@ -2416,13 +2794,13 @@
      "ivy_.k09": {
       "flag": "US",
       "posts": 14,
-      "avg": 125,
+      "avg": 126,
       "max": 593,
       "hours": {
        "1": {
         "n": 1,
-        "score": 0.72,
-        "median": 90
+        "score": 0.82,
+        "median": 104
        },
        "19": {
         "n": 13,
@@ -2481,6 +2859,33 @@
       },
       "best_hour": 19,
       "best_n": 4,
+      "state": "active",
+      "note": ""
+     },
+     "bia__rp03": {
+      "flag": "BR",
+      "posts": 11,
+      "avg": 61,
+      "max": 296,
+      "hours": {
+       "5": {
+        "n": 1,
+        "score": 0.36,
+        "median": 22
+       },
+       "19": {
+        "n": 8,
+        "score": 0.45,
+        "median": 28
+       },
+       "20": {
+        "n": 2,
+        "score": 1.16,
+        "median": 71
+       }
+      },
+      "best_hour": 20,
+      "best_n": 2,
       "state": "active",
       "note": ""
      },
@@ -2607,17 +3012,6 @@
       "state": "active",
       "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
      },
-     "kai_.03b": {
-      "flag": "PH",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "필리핀. 9/7 합류, 표본 부족"
-     },
      "nia._055": {
       "flag": "IN",
       "posts": 0,
@@ -2628,28 +3022,6 @@
       "best_n": 0,
       "state": "active",
       "note": "인도. 9/7 합류, 표본 부족"
-     },
-     "lune__v34": {
-      "flag": "IT",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "이탈리아. 9/7 합류, 표본 부족"
-     },
-     "beatriz03._a": {
-      "flag": "ES",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "스페인. 앞 계정 영구정지 후 재개설"
      }
     }
    },
@@ -3223,12 +3595,12 @@
      "방침": "새API 가 1.0 이상이고 기존API 가 0.1 이하 → 앱 단위 스로틀 확정, 전 계정 새 앱으로 이관. 둘 다 1.0 이상 → 일시 제한이 풀린 것(새 앱 무관). 둘 다 0.1 이하 → 계정 단위 리뷰, 상위 6계정 2~4주 휴식. 앱 직접 발행 4계정 결과는 사용자가 따로 확인한다.",
      "반증": "새API 7계정 중 daily03dew·inkling01 은 09/19 이전부터 죽어 있어 안 살아나도 결론에 못 쓴다. 판정력 있는 건 pim·kai·ac_dd91·lune·03ines 다섯. 기존API 13계정도 대부분 도달이 작아 '안 죽었다'가 '살아 있다'를 뜻하지 않는다. 갈래당 표본 8건 미만이면 판정 보류.",
      "현재값": {
-      "새API": 0.11,
-      "기존API": 0.49
+      "새API": 0.08,
+      "기존API": 0.41
      },
      "표본": {
-      "새API": 26,
-      "기존API": 47
+      "새API": 36,
+      "기존API": 59
      },
      "계정별": {
       "새API": {
@@ -3260,18 +3632,48 @@
         0.0,
         0.0
        ],
+       "kai_.03b": [
+        0.02,
+        0.05,
+        0.06,
+        1.06,
+        2.24
+       ],
+       "lune__v34": [
+        0.08,
+        0.06,
+        0.05,
+        0.22,
+        0.24
+       ],
        "pim.pm_02": [
-        0.65,
+        0.7,
         0.03,
         0.01,
         0.04,
         1.0,
-        27.38
+        27.35
        ]
       },
       "기존API": {
+       "beatriz03._a": [
+        0.63,
+        0.04,
+        0.01,
+        0.41,
+        0.26,
+        0.28
+       ],
+       "bia__rp03": [
+        1.1,
+        0.05,
+        0.0,
+        0.0,
+        2.35,
+        1.3
+       ],
        "dot2day_": [
-        78.78,
+        82.0,
         0.0,
         0.33,
         1.67,
@@ -3281,9 +3683,9 @@
        "elif.dm_05": [
         0.06,
         0.07,
-        0.32,
-        0.25,
-        0.81
+        0.28,
+        0.23,
+        0.73
        ],
        "elle__jm": [
         0.12,
@@ -3293,7 +3695,7 @@
         4.96
        ],
        "ivy_.k09": [
-        1.68,
+        1.94,
         0.13,
         0.49,
         0.52,
@@ -3318,7 +3720,7 @@
         0.7,
         0.39,
         0.7,
-        0.7,
+        0.73,
         2.67
        ],
        "nur.aina_04": [
@@ -3337,7 +3739,7 @@
        ]
       }
      },
-     "현재해석": "새API 0.11 (n=26)  ·  기존API 0.49 (n=47)"
+     "현재해석": "새API 0.08 (n=36)  ·  기존API 0.41 (n=59)"
     },
     "문구 5종": {
      "상태": "같은 실험 안에서 날짜별로 문구가 다르다(호명형·팁형·설정형·10년형·캘린더형). 경로는 같은 날 갈래끼리, 문구는 날짜끼리 비교한다.",
@@ -3723,7 +4125,7 @@
    "text": "hey, anyone with an iPhone\ngive this a go, even just once!\nmy schedule sits right on my lock screen and I honestly don't forget a thing now 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elle__jm/post/Dd3UIeZmfpO",
-   "views": 313,
+   "views": 328,
    "likes": 1,
    "replies": 1,
    "reposts": 1,
@@ -3744,7 +4146,28 @@
    "text": "hey, iPhone people\ninstall this just once!\nmy schedule shows up right on my lock screen,\nand I literally don't forget anything anymore 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ivy_.k09/post/Dd3T93NkQRT",
-   "views": 90,
+   "views": 104,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15e",
+   "variant": "기존API"
+  },
+  {
+   "id": "18104716448362360",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-29T08:15:43+00:00",
+   "date": "2026-09-29",
+   "local": "09/29 05:15",
+   "text": "ei, quem usa iPhone\ninstala isso pelo menos uma vez!\nminha agenda aparece direto na tela de bloqueio,\nagora eu não esqueço mais nada mesmo 💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/Dd3TuelEy03",
+   "views": 22,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -3765,7 +4188,7 @@
    "text": "olha, quem usa iPhone\ninstalem isto nem que seja uma vez!\nos meus planos aparecem logo no ecrã de bloqueio,\nagora não me esqueço mesmo de nada 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/Dd3TaWhmpo-",
-   "views": 82,
+   "views": 96,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -3773,6 +4196,48 @@
    "shares": 0,
    "round": null,
    "variant": null
+  },
+  {
+   "id": "17910390552473757",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-29T08:10:09+00:00",
+   "date": "2026-09-29",
+   "local": "09/29 10:10",
+   "text": "ehi, voi che usate l'iPhone\ninstallate questa app almeno una volta!\ni miei impegni compaiono direttamente sulla schermata di blocco,\nora non dimentico più niente 💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/Dd3TFoFCaJp",
+   "views": 71,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18029062253683571",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-29T08:09:05+00:00",
+   "date": "2026-09-29",
+   "local": "09/29 10:09",
+   "text": "oye, los que usáis iPhone\n¡instalad esto aunque sea una vez!\nmis planes salen directamente en la pantalla de bloqueo y ya no se me olvida nada 💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Dd3S90DCaIa",
+   "views": 43,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15e",
+   "variant": "기존API"
   },
   {
    "id": "17993386757841284",
@@ -3786,7 +4251,7 @@
    "text": "hey, ihr iPhone-Leute\ninstalliert das hier einfach mal!\nmeine Termine stehen direkt auf dem Sperrbildschirm und ich vergesse echt nichts mehr 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@dot2day_/post/Dd3ShOLEa_7",
-   "views": 709,
+   "views": 738,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -3807,7 +4272,7 @@
    "text": "hey, iPhone kullananlar\nbunu bir kere indirip deneyin!\nplanlarım kilit ekranında görünüyor,\nartık gerçekten hiçbir şeyi unutmuyorum 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elif.dm_05/post/Dd3SY9HEg4U",
-   "views": 112,
+   "views": 134,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -3828,10 +4293,31 @@
    "text": "eh, korang yang guna iPhone\ncuba install ni sekali je!\njadual keluar terus kat skrin kunci,\nsekarang memang tak lupa apa-apa dah 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nur.aina_04/post/Dd3SFCYE6nl",
-   "views": 421,
+   "views": 448,
    "likes": 5,
    "replies": 1,
    "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18122401105906288",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-29T08:00:17+00:00",
+   "date": "2026-09-29",
+   "local": "09/29 16:00",
+   "text": "uy, mga naka-iPhone\ni-try niyo 'to kahit isang beses lang!\nlumalabas yung schedule sa lock screen kaya wala na talaga akong nakakalimutan 💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/Dd3R9buj6oh",
+   "views": 333,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
    "quotes": 0,
    "shares": 0,
    "round": null,
@@ -3849,7 +4335,7 @@
    "text": "eh, yang pakai iPhone\ncoba install ini sekali aja!\njadwal langsung muncul di lock screen,\nsekarang beneran nggak pernah lupa apa-apa lagi 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dd3RzQOFKZr",
-   "views": 460,
+   "views": 478,
    "likes": 7,
    "replies": 3,
    "reposts": 0,
@@ -3870,7 +4356,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nลองลงแอปนี้ดูสักครั้งนะ!\nตารางนัดขึ้นบนหน้าจอล็อกเลย ตอนนี้ไม่ลืมอะไรอีกแล้วจริงๆ 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dd3Ro_nj8yC",
-   "views": 543,
+   "views": 581,
    "likes": 3,
    "replies": 1,
    "reposts": 1,
@@ -3891,7 +4377,7 @@
    "text": "này, mấy người dùng iPhone ơi\ncài thử cái này một lần đi!\nlịch hiện ngay trên màn hình khóa nên giờ mình chẳng quên gì nữa luôn 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dd3ReC5n3sh",
-   "views": 431,
+   "views": 440,
    "likes": 4,
    "replies": 1,
    "reposts": 0,
@@ -3912,12 +4398,33 @@
    "text": "欸，iPhone 用戶們\n這個一定要裝來試試！\n鎖定畫面就看得到行程，我現在完全不會再忘東忘西了 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@shu.lin_03/post/Dd3RPEXkj5m",
-   "views": 241,
+   "views": 246,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18105835172349873",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-29T07:50:36+00:00",
+   "date": "2026-09-29",
+   "local": "09/29 16:50",
+   "text": "ねぇ、iPhone使ってる人たち\nこれ一回だけ入れてみて！\nロック画面に予定が出るから、もうほんとに何も忘れなくなった 💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/Dd3Q2cJE_hx",
+   "views": 42,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
    "round": null,
    "variant": null
   },
@@ -3933,8 +4440,8 @@
    "text": "야, 아이폰 쓰는 사람들아\n이거 한 번만 깔아봐!\n잠금화면에 일정이 떠서 이제 진짜 아무것도 안 까먹어 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/Dd3QvFPgREv",
-   "views": 221,
-   "likes": 3,
+   "views": 244,
+   "likes": 4,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -4090,6 +4597,27 @@
    "variant": "기존API"
   },
   {
+   "id": "17932384524143823",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-27T22:01:19+00:00",
+   "date": "2026-09-27",
+   "local": "09/27 19:01",
+   "text": "ei, quem usa iPhone\ndesde que coloquei os compromissos na tela de bloqueio\nnunca mais abri o app de calendário 🥹",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdzomkblPck",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15e",
+   "variant": "기존API"
+  },
+  {
    "id": "18021412907927555",
    "account": "03ines.mar_",
    "project": "trace",
@@ -4129,6 +4657,48 @@
    "quotes": 0,
    "shares": 0,
    "round": "ml07",
+   "variant": "기존API"
+  },
+  {
+   "id": "17945779914068867",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-27T17:31:48+00:00",
+   "date": "2026-09-27",
+   "local": "09/27 19:31",
+   "text": "ehi, voi che usate iPhone\nda quando ho messo gli impegni sulla schermata di blocco\nnon apro più l'app calendario 🥹",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdzJwgOCWUJ",
+   "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15e",
+   "variant": "새API"
+  },
+  {
+   "id": "18116654395841186",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-27T17:01:56+00:00",
+   "date": "2026-09-27",
+   "local": "09/27 19:01",
+   "text": "oye, los que usáis iPhone\ndesde que puse los planes en la pantalla de bloqueo\nya no abro nunca la app de calendario 🥹",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdzGVzpGFbQ",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15e",
    "variant": "기존API"
   },
   {
@@ -4237,6 +4807,27 @@
    "variant": "기존API"
   },
   {
+   "id": "18132469648677652",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-27T14:01:32+00:00",
+   "date": "2026-09-27",
+   "local": "09/27 11:01",
+   "text": "Eu tinha preguiça até de abrir um artigo\nagora leio um todo dia só pra não quebrar minha sequência de leitura 😭",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdyxsbPG0EK",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "ml07",
+   "variant": "기존API"
+  },
+  {
    "id": "18124490114311645",
    "account": "mint.le_06",
    "project": "trace",
@@ -4291,6 +4882,27 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@daily03dew/post/Ddyggdym6g3",
    "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15e",
+   "variant": "새API"
+  },
+  {
+   "id": "18133452403661305",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-27T11:01:59+00:00",
+   "date": "2026-09-27",
+   "local": "09/27 19:01",
+   "text": "uy, mga gumagamit ng iPhone\nsimula nung nilagay ko yung schedule sa lock screen\nhindi ko na talaga binubuksan yung calendar app 🥹",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdydJaFFo5X",
+   "views": 4,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4381,6 +4993,27 @@
    "quotes": 0,
    "shares": 0,
    "round": "t15e",
+   "variant": "기존API"
+  },
+  {
+   "id": "18371745811241391",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-27T09:01:43+00:00",
+   "date": "2026-09-27",
+   "local": "09/27 11:01",
+   "text": "Antes me daba pereza hasta abrir un solo paper\nahora leo uno cada día solo para no romper mi racha de lectura 😭",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdyPYkPG7im",
+   "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "ml07",
    "variant": "기존API"
   },
   {
@@ -4552,6 +5185,27 @@
    "variant": "기존API"
   },
   {
+   "id": "18106064773954318",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-26T22:02:05+00:00",
+   "date": "2026-09-26",
+   "local": "09/26 19:02",
+   "text": "10 anos de iPhone\ne só agora descobri que a tela de bloqueio faz isso.\nA semana inteira fica ali.\nDesde então não esqueci de nada",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdxD5JrAZb_",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15d",
+   "variant": "기존API"
+  },
+  {
    "id": "17869073658644618",
    "account": "03ines.mar_",
    "project": "trace",
@@ -4591,6 +5245,48 @@
    "quotes": 0,
    "shares": 0,
    "round": "ml06",
+   "variant": "기존API"
+  },
+  {
+   "id": "18013680866755089",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-26T17:32:00+00:00",
+   "date": "2026-09-26",
+   "local": "09/26 19:32",
+   "text": "Ho l'iPhone da 10 anni\ne solo adesso scopro che la schermata di blocco fa questo.\nTutta la settimana sta lì\ne da allora non ho dimenticato niente",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/Ddwk_GMmmih",
+   "views": 4,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15d",
+   "variant": "새API"
+  },
+  {
+   "id": "18128903015503941",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-26T17:02:18+00:00",
+   "date": "2026-09-26",
+   "local": "09/26 19:02",
+   "text": "Llevo años con iPhone\ny nadie me dijo que la pantalla de bloqueo hacía esto.\nAhora toda la semana está ahí.\nNo se me ha olvidado nada desde entonces",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Ddwhlw9Gpo_",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15d",
    "variant": "기존API"
   },
   {
@@ -4699,6 +5395,27 @@
    "variant": "기존API"
   },
   {
+   "id": "18126240259852082",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-26T14:01:46+00:00",
+   "date": "2026-09-26",
+   "local": "09/26 11:01",
+   "text": "Por que comprei um iPad: pra ler artigos\nPra que eu usei de verdade: YouTube\n\n…até instalar isso. Agora virou uma máquina de ler artigo de verdade",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdwM7CjEUoN",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "ml06",
+   "variant": "기존API"
+  },
+  {
    "id": "18104400752621703",
    "account": "mint.le_06",
    "project": "trace",
@@ -4762,6 +5479,27 @@
    "variant": "새API"
   },
   {
+   "id": "18590817706070317",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-26T11:01:56+00:00",
+   "date": "2026-09-26",
+   "local": "09/26 19:01",
+   "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/Ddv4WEcFuTv",
+   "views": 13,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15d",
+   "variant": "새API"
+  },
+  {
    "id": "18089826068201760",
    "account": "nur.aina_04",
    "project": "trace",
@@ -4781,6 +5519,27 @@
    "shares": 0,
    "round": "t15d",
    "variant": "기존API"
+  },
+  {
+   "id": "17962954941197032",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-26T10:22:43+00:00",
+   "date": "2026-09-26",
+   "local": "09/26 19:22",
+   "text": "iPhone歴10年だけど\nロック画面がこれできるの今知った。\n今週まるごとそこに出てるから\nそれ以来何も忘れてない",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/Ddvz37dE_b8",
+   "views": 46,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15d",
+   "variant": null
   },
   {
    "id": "18016680515936873",
@@ -4885,6 +5644,27 @@
    "quotes": 0,
    "shares": 0,
    "round": "t15d",
+   "variant": "기존API"
+  },
+  {
+   "id": "18569124949075379",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-26T09:01:47+00:00",
+   "date": "2026-09-26",
+   "local": "09/26 11:01",
+   "text": "Por qué me compré un iPad: para leer papers\nPara qué lo usé de verdad: YouTube\n\n…hasta que instalé esto. Ahora sí es una máquina de leer papers",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/Ddvql9-G41a",
+   "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "ml06",
    "variant": "기존API"
   },
   {
@@ -5077,6 +5857,27 @@
    "variant": "기존API"
   },
   {
+   "id": "17935447131388249",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-25T22:01:33+00:00",
+   "date": "2026-09-25",
+   "local": "09/25 19:01",
+   "text": "ei, quem usa iPhone\nconfigura isso só uma vez.\nOs compromissos da semana inteira ficam na tela de bloqueio\ne você não precisa mais abrir o app",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdufB01gZ2R",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15c",
+   "variant": "기존API"
+  },
+  {
    "id": "18116103011083085",
    "account": "03ines.mar_",
    "project": "trace",
@@ -5089,6 +5890,27 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DduDkAlFZj3",
    "views": 41,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15c",
+   "variant": "새API"
+  },
+  {
+   "id": "18114810020007071",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-25T17:31:51+00:00",
+   "date": "2026-09-25",
+   "local": "09/25 19:31",
+   "text": "ehi, voi con l'iPhone\nimpostatelo una volta sola.\nGli impegni di tutta la settimana restano sulla schermata di blocco\ne non dovete più aprire l'app",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DduALKimiFo",
+   "views": 3,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5137,6 +5959,27 @@
    "quotes": 0,
    "shares": 0,
    "round": "cx03",
+   "variant": "기존API"
+  },
+  {
+   "id": "17937200769363647",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-25T16:31:36+00:00",
+   "date": "2026-09-25",
+   "local": "09/25 18:31",
+   "text": "ey, los que tenéis iPhone\nconfiguradlo solo una vez.\nLos planes de toda la semana se quedan en la pantalla de bloqueo\ny ya no hace falta abrir la app",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Ddt5R8Qm0oJ",
+   "views": 28,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15c",
    "variant": "기존API"
   },
   {
@@ -5215,6 +6058,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@lari.s_07/post/DdtoE8YlwVt",
    "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "cx03",
+   "variant": "기존API"
+  },
+  {
+   "id": "18129851914814492",
+   "account": "bia__rp03",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-25T13:02:06+00:00",
+   "date": "2026-09-25",
+   "local": "09/25 10:02",
+   "text": "Como que eu só descobri isso agora?!\nVocê escreve LaTeX e o resultado compilado aparece quase na hora,\nacabou ficar clicando em compilar e olhando pro nada a cada correção…\nparece que me devolveram todo o tempo que eu perdi esperando o Overleaf 😭",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@bia__rp03/post/DdthRZTieUW",
+   "views": 1,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5306,6 +6170,48 @@
    "shares": 0,
    "round": "t15c",
    "variant": "기존API"
+  },
+  {
+   "id": "18414581032155329",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-25T11:01:50+00:00",
+   "date": "2026-09-25",
+   "local": "09/25 19:01",
+   "text": "mga gumagamit ng iPhone, subukan niyo 'to\nyung buong linggo mo lalabas na sa lock screen\nhindi mo na kailangan buksan yung app\nisang setting lang, tuloy-tuloy na",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdtTidQkW0k",
+   "views": 15,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15c",
+   "variant": "새API"
+  },
+  {
+   "id": "17991526437013686",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-25T10:51:03+00:00",
+   "date": "2026-09-25",
+   "local": "09/25 19:51",
+   "text": "ねえ、iPhone使ってる人\nこれ一度だけ設定してみて。\n今週の予定がロック画面にそのまま出てるから\nアプリを開くことがなくなる",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/DdtSUp3kxc_",
+   "views": 78,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15c",
+   "variant": null
   },
   {
    "id": "18049359080805773",
@@ -5410,6 +6316,27 @@
    "quotes": 0,
    "shares": 0,
    "round": "t15c",
+   "variant": "기존API"
+  },
+  {
+   "id": "17905716771558429",
+   "account": "beatriz03._a",
+   "project": "cortex",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-25T08:02:11+00:00",
+   "date": "2026-09-25",
+   "local": "09/25 10:02",
+   "text": "¡¿Cómo es que recién descubro esto?!\nEscribes LaTeX y el resultado compilado aparece casi al instante,\nse acabó darle a compilar y quedarte mirando la nada cada vez que corriges algo…\nsiento que me devolvieron todo el tiempo que perdí esperando a Overleaf 😭",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@beatriz03._a/post/Dds-8wxDUEi",
+   "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "cx03",
    "variant": "기존API"
   },
   {
@@ -5602,6 +6529,27 @@
    "variant": "기존API"
   },
   {
+   "id": "18103338194570867",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-24T22:01:33+00:00",
+   "date": "2026-09-24",
+   "local": "09/24 19:01",
+   "text": "ei, quem usa iPhone,\nconfigura a tela de bloqueio assim.\nToda vez que você pega o celular vê os compromissos do dia,\nnão tem como esquecer ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/Ddr6QKkFXlV",
+   "views": 47,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15b",
+   "variant": "기존API"
+  },
+  {
    "id": "18094489337533214",
    "account": "03ines.mar_",
    "project": "trace",
@@ -5641,6 +6589,48 @@
    "quotes": 0,
    "shares": 0,
    "round": "ml05",
+   "variant": "기존API"
+  },
+  {
+   "id": "17971993074137583",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-24T17:31:45+00:00",
+   "date": "2026-09-24",
+   "local": "09/24 19:31",
+   "text": "ehi, voi con l'iPhone,\nprovate a impostare così la schermata di blocco.\nVedete gli impegni di oggi ogni volta che accendete il telefono,\nnon c'è modo di dimenticare ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdrbXj-GPHh",
+   "views": 14,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15b",
+   "variant": "새API"
+  },
+  {
+   "id": "18109909283271478",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-24T17:03:02+00:00",
+   "date": "2026-09-24",
+   "local": "09/24 19:03",
+   "text": "ey, los que tenéis iPhone,\nconfigurad así la pantalla de bloqueo.\nVeis los planes del día cada vez que miráis el móvil,\nasí no hay manera de olvidarse ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdrYFQMoLQC",
+   "views": 18,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15b",
    "variant": "기존API"
   },
   {
@@ -5749,6 +6739,27 @@
    "variant": "기존API"
   },
   {
+   "id": "18079037012421552",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-24T15:01:20+00:00",
+   "date": "2026-09-24",
+   "local": "09/24 12:01",
+   "text": "Na véspera da reunião do laboratório eu tava lendo 3 artigos seguidos\ne um veterano do lab falou: \"lendo assim não vai ficar nada na cabeça\".\n\nJoga o PDF e ele traduz mantendo o layout original,\num clique numa figura e ele já explica,\ne ainda marca sozinho a novidade, o método e as conclusões.\n\nAgora é ele que vive me pedindo o link.",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdrKJ4tlN7s",
+   "views": 8,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "ml05",
+   "variant": "기존API"
+  },
+  {
    "id": "17988378813097255",
    "account": "mint.le_06",
    "project": "trace",
@@ -5760,7 +6771,7 @@
    "text": "Này, mấy bạn dùng iPhone,\nthử cài màn hình khoá như thế này xem.\nMỗi lần mở máy là thấy luôn lịch hôm nay,\nnên chẳng có cơ hội mà quên ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mint.le_06/post/Ddq5ADcm4_s",
-   "views": 23,
+   "views": 24,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5781,7 +6792,7 @@
    "text": "คนใช้ iPhone ลองตั้งหน้าจอล็อกแบบนี้ดูครับ\nเปิดเครื่องทีไรก็เห็นตารางวันนี้เลย\nเลยไม่มีโอกาสได้ลืม ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Ddq13OZFizJ",
-   "views": 830,
+   "views": 831,
    "likes": 5,
    "replies": 1,
    "reposts": 1,
@@ -5789,6 +6800,27 @@
    "shares": 0,
    "round": "t15b",
    "variant": "새API"
+  },
+  {
+   "id": "18051107933803034",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-24T11:46:36+00:00",
+   "date": "2026-09-24",
+   "local": "09/24 20:46",
+   "text": "ねえ、iPhone使ってる人、\nロック画面こうしてみて。\nスマホ見るたびに今日の予定が目に入るから\n忘れる隙がないよ ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/Ddqz4mwE-JA",
+   "views": 296,
+   "likes": 3,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15b",
+   "variant": null
   },
   {
    "id": "17973484023148750",
@@ -5823,7 +6855,7 @@
    "text": "woy, yang pakai iPhone,\ncoba atur lockscreen kayak gini.\ntiap buka HP langsung kelihatan jadwal hari ini,\njadi nggak ada celah buat lupa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdqzlI8lOjG",
-   "views": 55,
+   "views": 56,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -5867,6 +6899,27 @@
    "link": "https://www.threads.com/@daily03dew/post/DdqyHX8m8N0",
    "views": 0,
    "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15b",
+   "variant": "새API"
+  },
+  {
+   "id": "17877686583556004",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-24T11:02:14+00:00",
+   "date": "2026-09-24",
+   "local": "09/24 19:02",
+   "text": "uy, mga gumagamit ng iPhone,\nganito i-set yung lock screen mo.\nTuwing bubuksan mo yung phone, nandun agad yung gagawin mo ngayon,\nwala nang pagkakataon makalimot ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdquywDmw6W",
+   "views": 279,
+   "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -5935,6 +6988,27 @@
    "quotes": 0,
    "shares": 0,
    "round": "t15b",
+   "variant": "기존API"
+  },
+  {
+   "id": "18134882635635887",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-24T09:01:36+00:00",
+   "date": "2026-09-24",
+   "local": "09/24 11:01",
+   "text": "La noche antes de la reunión del laboratorio estaba leyendo 3 papers seguidos\ny un compañero mayor del lab me dijo: \"leyendo así no te va a quedar nada\".\n\nMetes el PDF y lo traduce manteniendo el diseño original,\nun clic en una figura y te la explica,\ny marca solo la novedad, el método y las conclusiones.\n\nAhora es él quien me pide el enlace.",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/Ddqg_BsFgXt",
+   "views": 9,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "ml05",
    "variant": "기존API"
   },
   {
@@ -6127,6 +7201,27 @@
    "variant": "기존API"
   },
   {
+   "id": "17900512206600198",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-23T22:01:57+00:00",
+   "date": "2026-09-23",
+   "local": "09/23 19:01",
+   "text": "ei, quem usa iPhone\nvocê precisa testar isso de verdade!\ndepois que comecei a usar, parei mesmo de esquecer das coisas💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdpVfjqCTxW",
+   "views": 26,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15a",
+   "variant": "기존API"
+  },
+  {
    "id": "18371310727214969",
    "account": "03ines.mar_",
    "project": "trace",
@@ -6146,6 +7241,48 @@
    "shares": 0,
    "round": "t15a",
    "variant": "새API"
+  },
+  {
+   "id": "17899656057657154",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-23T17:32:04+00:00",
+   "date": "2026-09-23",
+   "local": "09/23 19:32",
+   "text": "ehi, voi che usate iPhone\ndovete davvero provarla una volta!\nda quando la uso, davvero non mi dimentico più niente💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/Ddo2m3JFacb",
+   "views": 15,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15a",
+   "variant": "새API"
+  },
+  {
+   "id": "18142245640513178",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-23T17:31:10+00:00",
+   "date": "2026-09-23",
+   "local": "09/23 19:31",
+   "text": "oye, los que usáis iPhone\n¡de verdad tenéis que probar esto!\ndesde que lo uso, en serio ya no se me olvida nada💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Ddo2gaMlWnK",
+   "views": 19,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15a",
+   "variant": "기존API"
   },
   {
    "id": "17908686612539321",
@@ -6295,6 +7432,27 @@
    "variant": "새API"
   },
   {
+   "id": "18336475846258237",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-23T11:11:47+00:00",
+   "date": "2026-09-23",
+   "local": "09/23 20:11",
+   "text": "ねえ、iPhone使ってる人\nこれ本当に一度使ってみて！\n使い始めてから、本当に何も忘れなくなった💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/DdoLGqxE9PB",
+   "views": 562,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15a",
+   "variant": null
+  },
+  {
    "id": "17968214291961114",
    "account": "shu.lin_03",
    "project": "trace",
@@ -6356,6 +7514,27 @@
    "shares": 1,
    "round": "t15a",
    "variant": null
+  },
+  {
+   "id": "17886708705477362",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-23T11:01:59+00:00",
+   "date": "2026-09-23",
+   "local": "09/23 19:01",
+   "text": "uy, mga gumagamit ng iPhone\nkailangan mo talagang subukan ito!\nsimula nung ginamit ko, hindi na talaga ako nakakalimot💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdoJ-BTljvE",
+   "views": 589,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "t15a",
+   "variant": "새API"
   },
   {
    "id": "18121482793961042",
@@ -6484,6 +7663,27 @@
    "variant": null
   },
   {
+   "id": "17906379822328231",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-22T21:01:05+00:00",
+   "date": "2026-09-22",
+   "local": "09/22 18:01",
+   "text": "O combo definitivo pra sair do laboratório no horário\n\nEsquerda: Google Scholar\nMeio: Moonlight (versão iPad!)\nDireita: CorTex\n\nCom esse combo dá pra fazer tudo sem sair do lugar:\nachar os artigos → ler → já começar a escrever 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/Ddmpu4cge2h",
+   "views": 14,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18117285928987857",
    "account": "03ines.mar_",
    "project": "moonlight",
@@ -6496,6 +7696,48 @@
    "kind": "IMAGE",
    "link": "https://www.threads.com/@03ines.mar_/post/DdmRrc5lo9Q",
    "views": 70,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18064997156608680",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-22T16:31:24+00:00",
+   "date": "2026-09-22",
+   "local": "09/22 18:31",
+   "text": "La combo definitiva per uscire dal laboratorio in orario\n\nA sinistra: Google Scholar\nAl centro: Moonlight (versione iPad!)\nA destra: CorTex\n\nCon questa combo faccio tutto senza muovermi dalla sedia:\ncercare paper → leggerli → iniziare subito a scrivere 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lune__v34/post/DdmK3tRGrOT",
+   "views": 20,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17996331080825163",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-22T16:01:37+00:00",
+   "date": "2026-09-22",
+   "local": "09/22 18:01",
+   "text": "El combo definitivo para salir del laboratorio a tiempo\n\nIzquierda: Google Scholar\nCentro: Moonlight (¡versión para iPad!)\nDerecha: CorTex\n\nCon este combo puedo hacerlo todo sin moverme del sitio:\nbuscar artículos → leerlos → empezar a escribir directamente 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdmHdjeG2yQ",
+   "views": 12,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -6694,6 +7936,27 @@
    "variant": null
   },
   {
+   "id": "17970874197168870",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-22T10:01:33+00:00",
+   "date": "2026-09-22",
+   "local": "09/22 18:01",
+   "text": "Ang pinakamalupit na combo para makauwi on time galing lab\n\nKaliwa: Google Scholar\nGitna: Moonlight (iPad version!)\nKanan: CorTex\n\nSa combo na 'to, nakaupo ka lang sa isang lugar tapos\nmaghanap ng papers → basahin → diretso na sa pagsusulat 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@kai_.03b/post/DdleQTKm4xd",
+   "views": 22,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18140221183594109",
    "account": "nur.aina_04",
    "project": "moonlight",
@@ -6728,6 +7991,27 @@
    "link": "https://www.threads.com/@ac_dd91/post/DdlXY9MG8Rv",
    "views": 67,
    "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17992605506844708",
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-22T09:01:05+00:00",
+   "date": "2026-09-22",
+   "local": "09/22 18:01",
+   "text": "研究室から定時で帰るための最強セット\n\n左：Google Scholar\n中央：Moonlight（iPad版！）\n右：CorTex\n\nこの組み合わせなら、座ったまま\n論文を探す → 読む → そのまま論文を書くところまで全部できる 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@haru._81a/post/DdlXVYNG3KB",
+   "views": 17,
+   "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -6820,6 +8104,27 @@
    "variant": null
   },
   {
+   "id": "18486473542104286",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-20T22:01:08+00:00",
+   "date": "2026-09-20",
+   "local": "09/20 19:01",
+   "text": "é fim de semana, você lembra o que tem na semana que vem?\nna tela de bloqueio nem precisa procurar.\nliga a tela e vê a semana inteira💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdhnBF5AZra",
+   "views": 18,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18091047797404233",
    "account": "03ines.mar_",
    "project": "trace",
@@ -6832,6 +8137,48 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DdhLjR4mx5Q",
    "views": 21,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18094836035538206",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-20T17:31:42+00:00",
+   "date": "2026-09-20",
+   "local": "09/20 19:31",
+   "text": "è weekend, ti ricordi cosa hai la prossima settimana?\nsulla schermata di blocco non devi neanche cercarlo.\naccendi lo schermo e vedi tutta la settimana💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdhILvXGL8B",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17960949648211293",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-20T17:31:06+00:00",
+   "date": "2026-09-20",
+   "local": "09/20 19:31",
+   "text": "es finde, ¿te acuerdas de lo que tienes la semana que viene?\nen la pantalla de bloqueo ni hace falta buscarlo.\nenciendes la pantalla y ves la semana entera💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdhIHPwmO-M",
+   "views": 19,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -7030,6 +8377,48 @@
    "variant": null
   },
   {
+   "id": "17970758367148892",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-20T10:30:57+00:00",
+   "date": "2026-09-20",
+   "local": "09/20 18:30",
+   "text": "weekend na, natatandaan mo pa ba kung anong meron sa susunod na linggo?\nkapag nasa lockscreen, hindi mo na kailangang hanapin pa.\nbuksan mo lang ang screen, buong linggo agad makikita💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdgYCCcG5Gi",
+   "views": 24,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18135084535628979",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-20T10:01:38+00:00",
+   "date": "2026-09-20",
+   "local": "09/20 19:01",
+   "text": "週末だけど来週の予定って覚えてる?\nロック画面に出しておけばわざわざ探さなくていいよ。\n画面をつけるだけで今週まるごと見える💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/DdgUrZFm2eV",
+   "views": 19,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17931825891148128",
    "account": "ac_dd91",
    "project": "trace",
@@ -7219,6 +8608,27 @@
    "variant": null
   },
   {
+   "id": "18120838423866743",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-19T22:01:11+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 19:01",
+   "text": "você abre o app de calendário toda vez pra ver seus compromissos?\nna tela de bloqueio não precisa mais.\nos compromissos da semana e as tarefas atrasadas aparecem de uma vez só💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdfCOvkFB2X",
+   "views": 16,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18216683044354300",
    "account": "03ines.mar_",
    "project": "trace",
@@ -7261,6 +8671,27 @@
    "variant": null
   },
   {
+   "id": "17863671417680144",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-19T17:31:00+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 19:31",
+   "text": "apri l'app calendario ogni volta per vedere gli impegni?\nsulla schermata di blocco non serve più.\ngli impegni di questa settimana e le cose rimaste indietro si vedono tutti insieme💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdejTu6FB04",
+   "views": 8,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18633972943035758",
    "account": "ivy_.k09",
    "project": "moonlight",
@@ -7273,6 +8704,27 @@
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ivy_.k09/post/Ddef9I3FeWL",
    "views": 7,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18108618359177948",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-19T17:01:07+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 19:01",
+   "text": "¿abres la app de calendario cada vez que quieres ver tus planes?\nen la pantalla de bloqueo ya no hace falta.\nlos planes de esta semana y las tareas pendientes se ven de una vez💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Ddef44jlQQg",
+   "views": 27,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -7400,6 +8852,48 @@
    "link": "https://www.threads.com/@mint.le_06/post/DdeIChPETm0",
    "views": 190,
    "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17984622768119373",
+   "account": "bia__rp03",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-19T13:32:12+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:32",
+   "text": "Uma ferramenta indispensável para quem\nnão aguenta mais a lentidão do Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@bia__rp03/post/DdeH8phEVQ6",
+   "views": 18,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17981097876093876",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-19T13:30:48+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:30",
+   "text": "Uma ferramenta indispensável para quem\ntem dificuldade de ler artigos em inglês",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdeH05OEXRN",
+   "views": 58,
+   "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -7597,6 +9091,48 @@
    "variant": null
   },
   {
+   "id": "17959235096997944",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-19T10:31:18+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 18:31",
+   "text": "tuwing chine-check mo ba ang schedule, binubuksan mo pa ang calendar app?\nkapag nasa lockscreen na, hindi mo na kailangan.\nyung schedule ngayong linggo at yung mga naiwang gawain, sabay-sabay mong makikita💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DddzRriG7mY",
+   "views": 20,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18407284606094306",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-19T10:01:41+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 19:01",
+   "text": "予定チェックするたびにカレンダーアプリ開いてない?\nロック画面に出しておけばその必要ないよ。\n今週の予定も残ってるタスクも一目で見える💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/Dddv45MmxEB",
+   "views": 40,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17956229229015052",
    "account": "ac_dd91",
    "project": "trace",
@@ -7660,6 +9196,27 @@
    "variant": null
   },
   {
+   "id": "18057464813801273",
+   "account": "lune__v34",
+   "project": "cortex",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-19T09:02:10+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 11:02",
+   "text": "Uno strumento indispensabile per chi\nnon sopporta più quanto è lento Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@lune__v34/post/DddpC62DfZg",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18493825255097248",
    "account": "elle__jm",
    "project": "trace",
@@ -7702,6 +9259,27 @@
    "variant": null
   },
   {
+   "id": "18469973548113963",
+   "account": "beatriz03._a",
+   "project": "cortex",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-19T08:31:15+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:31",
+   "text": "Una herramienta imprescindible para quienes\nestán hartos de lo lento que es Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@beatriz03._a/post/Dddlf3FFfft",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18110265050170694",
    "account": "dot2day_",
    "project": "moonlight",
@@ -7714,6 +9292,48 @@
    "kind": "IMAGE",
    "link": "https://www.threads.com/@dot2day_/post/DddiIqQmzwk",
    "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18117387031976949",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-19T08:01:00+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:01",
+   "text": "Una herramienta imprescindible para quienes\ntienen dificultades para leer artículos académicos en inglés",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/DddiEwWG5Di",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18070906553577756",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-19T07:30:47+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 09:30",
+   "text": "Uno strumento indispensabile per chi\nfa fatica a leggere i paper in inglese",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lune__v34/post/DddeoHuFUp1",
+   "views": 3,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -7891,6 +9511,27 @@
    "variant": null
   },
   {
+   "id": "18462815233142099",
+   "account": "kai_.03b",
+   "project": "cortex",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-19T02:31:55+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:31",
+   "text": "A must-have tool for anyone\nna inis na inis sa bagal ng Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@kai_.03b/post/Ddc8Yovlaok",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17911237179532817",
    "account": "daily03dew",
    "project": "cortex",
@@ -7903,6 +9544,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@daily03dew/post/Ddc8S89iRVp",
    "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18099650096378413",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-19T02:01:33+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:01",
+   "text": "A must-have tool for anyone\nnahihirapang magbasa ng papers sa English",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@kai_.03b/post/Ddc48VZFHMO",
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -7933,6 +9595,27 @@
    "variant": null
   },
   {
+   "id": "18122582041906618",
+   "account": "haru._81a",
+   "project": "cortex",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-19T01:32:01+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:32",
+   "text": "Overleafが遅くて\n論文を書くのが大変だった人に必須のツール",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@haru._81a/post/Ddc1hqAAuWG",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18116498308783079",
    "account": "ac_dd91",
    "project": "cortex",
@@ -7945,6 +9628,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@ac_dd91/post/Ddc1cMXAlzi",
    "views": 23,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18128084728818482",
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-19T01:02:06+00:00",
+   "date": "2026-09-19",
+   "local": "09/19 10:02",
+   "text": "英語の原文が難しくて\n論文を読み進められない人に必須のツール",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@haru._81a/post/DdcyJRdmjdS",
+   "views": 3,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -8080,6 +9784,27 @@
    "variant": null
   },
   {
+   "id": "18115093685052133",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-17T14:01:04+00:00",
+   "date": "2026-09-17",
+   "local": "09/17 11:01",
+   "text": "O combo definitivo pra sair do laboratório no horário\n\nEsquerda: Google Scholar\nMeio: Moonlight (versão iPad!)\nDireita: CorTex\n\nCom esse combo dá pra fazer tudo sem sair do lugar:\nachar os artigos → ler → já começar a escrever 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdZBsQxIArF",
+   "views": 4,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18213836395348545",
    "account": "03ines.mar_",
    "project": "moonlight",
@@ -8097,6 +9822,27 @@
    "reposts": 2,
    "quotes": 1,
    "shares": 4,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18427224262146945",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-17T09:31:23+00:00",
+   "date": "2026-09-17",
+   "local": "09/17 11:31",
+   "text": "La combo definitiva per uscire dal laboratorio in orario\n\nA sinistra: Google Scholar\nAl centro: Moonlight (versione iPad!)\nA destra: CorTex\n\nCon questa combo faccio tutto senza muovermi dalla sedia:\ncercare paper → leggerli → iniziare subito a scrivere 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lune__v34/post/DdYi00Nm2HO",
+   "views": 2195,
+   "likes": 7,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
    "round": null,
    "variant": null
   },
@@ -8156,6 +9902,48 @@
    "link": "https://www.threads.com/@dot2day_/post/DdYfZlUFuZe",
    "views": 53,
    "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18096430133641963",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-17T09:00:56+00:00",
+   "date": "2026-09-17",
+   "local": "09/17 11:00",
+   "text": "El combo definitivo para salir del laboratorio a tiempo\n\nIzquierda: Google Scholar\nCentro: Moonlight (¡versión para iPad!)\nDerecha: CorTex\n\nCon este combo puedo hacerlo todo sin moverme del sitio:\nbuscar artículos → leerlos → empezar a escribir directamente 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdYfV_nFgeI",
+   "views": 60,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17863516734677895",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-17T08:16:29+00:00",
+   "date": "2026-09-17",
+   "local": "09/17 17:16",
+   "text": "ねぇ、iPhone 使ってる人\nこれ本当に使ってみて！\n使い始めてから 本当に何も忘れなくなった 💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/DdYaRmbEwDN",
+   "views": 207,
+   "likes": 2,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -8311,6 +10099,27 @@
    "variant": null
   },
   {
+   "id": "18112369541029957",
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-17T04:01:20+00:00",
+   "date": "2026-09-17",
+   "local": "09/17 13:01",
+   "text": "研究室から定時で帰るための最強セット\n\n左：Google Scholar\n中央：Moonlight（iPad版！）\n右：CorTex\n\nこの組み合わせなら、座ったまま\n論文を探す → 読む → そのまま論文を書くところまで全部できる 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@haru._81a/post/DdX9ENwGhp3",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17917341615241793",
    "account": "ashgrey._02",
    "project": "moonlight",
@@ -8343,12 +10152,33 @@
    "text": "Kombo paling ampuh biar bisa pulang tepat waktu dari lab\n\nKiri: Google Scholar\nTengah: Moonlight (versi iPad!)\nKanan: CorTex\n\nDengan kombo ini, duduk di tempat aja udah bisa\ncari paper → baca → langsung mulai nulis 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdX5n-sHCHc",
-   "views": 29810,
+   "views": 29811,
    "likes": 1175,
    "replies": 49,
    "reposts": 159,
    "quotes": 1,
    "shares": 97,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18112878020042578",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-17T03:30:53+00:00",
+   "date": "2026-09-17",
+   "local": "09/17 11:30",
+   "text": "Ang pinakamalupit na combo para makauwi on time galing lab\n\nKaliwa: Google Scholar\nGitna: Moonlight (iPad version!)\nKanan: CorTex\n\nSa combo na 'to, nakaupo ka lang sa isang lugar tapos\nmaghanap ng papers → basahin → diretso na sa pagsusulat 🤤",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@kai_.03b/post/DdX5krfnEIR",
+   "views": 3366,
+   "likes": 52,
+   "replies": 8,
+   "reposts": 7,
+   "quotes": 0,
+   "shares": 5,
    "round": null,
    "variant": null
   },
@@ -8406,7 +10236,7 @@
    "text": "연구실 칼퇴 최강 조합\n\n왼: 구글 스칼라\n가운데: 문라이트 (아이패드 버전!)\n오: Cortex\n\n이 조합이면 걍 앉은 자리에서\n논문 찾고, 읽고, 바로 논문 작성까지 바로 가능 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ac_dd91/post/DdXvU9cDoTV",
-   "views": 11203,
+   "views": 11204,
    "likes": 94,
    "replies": 7,
    "reposts": 29,
@@ -8500,6 +10330,27 @@
    "variant": null
   },
   {
+   "id": "18137124838617758",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-16T22:01:03+00:00",
+   "date": "2026-09-16",
+   "local": "09/16 19:01",
+   "text": "ei, quem usa iPhone\nvocê precisa testar isso de verdade!\ndepois que comecei a usar, parei mesmo de esquecer das coisas💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdXT1EmFGTx",
+   "views": 296,
+   "likes": 3,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18096412919560646",
    "account": "03ines.mar_",
    "project": "trace",
@@ -8512,6 +10363,27 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DdW4X23lfHH",
    "views": 86,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18113007146051301",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-16T17:31:18+00:00",
+   "date": "2026-09-16",
+   "local": "09/16 19:31",
+   "text": "ehi, voi che usate iPhone\ndovete davvero provare questa!\nda quando la uso, davvero non mi dimentico più niente💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdW09UTFFtp",
+   "views": 275,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -8535,6 +10407,27 @@
    "views": 592,
    "likes": 0,
    "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18103169759579958",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-16T17:01:14+00:00",
+   "date": "2026-09-16",
+   "local": "09/16 19:01",
+   "text": "oye, los que usáis iPhone\n¡de verdad tenéis que probar esto!\ndesde que lo uso, en serio ya no se me olvida nada💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdWxhJuEeGf",
+   "views": 683,
+   "likes": 5,
+   "replies": 3,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
@@ -8681,6 +10574,27 @@
    "link": "https://www.threads.com/@nur.aina_04/post/DdWIcFrlQKE",
    "views": 261,
    "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17907458349541381",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-16T11:01:40+00:00",
+   "date": "2026-09-16",
+   "local": "09/16 19:01",
+   "text": "uy, mga gumagamit ng iPhone\nkailangan mo talagang subukan ito!\nsimula nung ginamit ko, hindi na talaga ako nakakalimot💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdWIXk2lR3O",
+   "views": 850,
+   "likes": 3,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -8920,6 +10834,48 @@
    "variant": null
   },
   {
+   "id": "18043619894673338",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T22:31:16+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "Um app de calendário que sincroniza no iPhone, iPad, MacBook e Watch?\nUsa esse aí",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdUyfUnGL1h",
+   "views": 30,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18037226273646268",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T22:00:55+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:00",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nAbre o PDF e ele traduz ali mesmo, mantendo o layout original;\nclica numa figura complicada e ele explica na hora;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.\nNa época ele disse: \"artigo é pra ler por conta própria……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdUvBDloIbf",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18115205336325593",
    "account": "lari.s_07",
    "project": "cortex",
@@ -8932,6 +10888,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@lari.s_07/post/DdUrlSGjUHw",
    "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17920155516429386",
+   "account": "bia__rp03",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-15T21:01:14+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nEscreve o LaTeX e o resultado compilado aparece quase na hora;\ncompila muito mais rápido que o Overleaf;\npode editar quantas vezes quiser sem ficar esperando até perder a paciência.\nNa época ele disse: \"por que não usa o Overleaf como todo mundo……\"\n\nAgora ele mesmo está usando.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@bia__rp03/post/DdUoJ_kDXZI",
+   "views": 5,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -8962,6 +10939,27 @@
    "variant": null
   },
   {
+   "id": "18108061385182519",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-15T18:02:09+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:02",
+   "text": "Un'app calendario che si sincronizza su iPhone, iPad, MacBook e Watch?\nUsa questa e basta",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdUTsg6iOKd",
+   "views": 604,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18034068866895240",
    "account": "03ines.mar_",
    "project": "moonlight",
@@ -8974,6 +10972,27 @@
    "kind": "IMAGE",
    "link": "https://www.threads.com/@03ines.mar_/post/DdUTj8tiCPv",
    "views": 18,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18485949874106227",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-15T17:32:47+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:32",
+   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\nApri il PDF e lo traduce lì, tenendo il layout originale;\nclicchi su una figura complicata e te la spiega subito;\ne segna da solo la novità, il metodo e le conclusioni del paper.\nAll'epoca mi disse: \"i paper si leggono da soli……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lune__v34/post/DdUQVEiHfR5",
+   "views": 46,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -9004,6 +11023,27 @@
    "variant": null
   },
   {
+   "id": "18482130667111284",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-15T17:31:43+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:31",
+   "text": "¿Una app de calendario que se sincroniza en iPhone, iPad, MacBook y Watch?\nUsa esta y ya",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdUQNeNnd9z",
+   "views": 184,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18127255816771523",
    "account": "dot2day_",
    "project": "moonlight",
@@ -9025,6 +11065,27 @@
    "variant": null
   },
   {
+   "id": "17952426138258149",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-15T17:01:44+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:01",
+   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\nAbres el PDF y lo traduce ahí mismo manteniendo el diseño original;\nhaces clic en una figura complicada y te la explica al momento;\ny además marca sola la novedad, el método y las conclusiones del paper.\nEntonces me dijo: \"los papers hay que leerlos uno mismo……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdUMyYFms2V",
+   "views": 56,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18341114602252923",
    "account": "03ines.mar_",
    "project": "cortex",
@@ -9037,6 +11098,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@03ines.mar_/post/DdUMsc_CLIo",
    "views": 44,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18114409187079730",
+   "account": "lune__v34",
+   "project": "cortex",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-15T16:32:13+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:32",
+   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\nScrivi il LaTeX e il risultato compilato compare quasi subito;\ncompila molto più veloce di Overleaf;\npuoi modificare quante volte vuoi senza aspettare ogni volta fino a innervosirti.\nAll'epoca mi disse: \"perché non usi Overleaf come tutti……\"\n\nAdesso lo usa lui stesso.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@lune__v34/post/DdUJXu0mlDe",
+   "views": 19,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -9100,6 +11182,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@dot2day_/post/DdUF7t1gIoZ",
    "views": 154,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18170134804457096",
+   "account": "beatriz03._a",
+   "project": "cortex",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-15T16:01:25+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:01",
+   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\nEscribes el LaTeX y el resultado compilado aparece casi al instante;\ncompila muchísimo más rápido que Overleaf;\npuedes editar todo lo que quieras sin esperar cada vez hasta desesperarte.\nEntonces me dijo: \"¿por qué no usas Overleaf como todo el mundo……?\"\n\nAhora la usa él mismo.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdUF2NMEnD8",
+   "views": 44,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -9361,6 +11464,27 @@
    "variant": null
   },
   {
+   "id": "18432209068183553",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-15T12:31:08+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 20:31",
+   "text": "Calendar app na naka-sync sa iPhone, iPad, MacBook at Watch?\nIto na lang gamitin mo",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdTtz49m--6",
+   "views": 269,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18128333425766141",
    "account": "pim.pm_02",
    "project": "moonlight",
@@ -9571,6 +11695,27 @@
    "variant": null
   },
   {
+   "id": "18105531821213054",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-15T11:02:30+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:02",
+   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nBuksan mo lang yung PDF, translated agad na buo pa yung original layout;\nclick mo yung komplikadong figure, ipapaliwanag agad;\nauto pa niyang minamarkahan yung novelty, methods, at conclusion ng paper.\nSabi pa ng prof noon, \"dapat ikaw mismo nagbabasa ng paper……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@kai_.03b/post/DdTjqo8keHi",
+   "views": 137,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18093230000533006",
    "account": "daily03dew",
    "project": "moonlight",
@@ -9676,6 +11821,27 @@
    "variant": null
   },
   {
+   "id": "18012821903959703",
+   "account": "haru._81a",
+   "project": "moonlight",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-15T10:32:00+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 19:32",
+   "text": "研究室でこのサイトを使ってたら、教授に一度叱られたことがある。\n\nPDFを開くと、元のレイアウトのままその場で翻訳されて\n複雑なFigureはクリック一つですぐ解説してくれて\n論文の新規性・手法・結論まで自動でマークしてくれる。\n教授はその時「論文は自分で読むものだろ……」と言ってた。",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@haru._81a/post/DdTgL0fIFLp",
+   "views": 45,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18099232454036518",
    "account": "ac_dd91",
    "project": "trace",
@@ -9689,6 +11855,27 @@
    "link": "https://www.threads.com/@ac_dd91/post/DdTgEu_oJPZ",
    "views": 127,
    "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18101671493216505",
+   "account": "kai_.03b",
+   "project": "cortex",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-15T10:04:03+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:04",
+   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nSulat ka ng LaTeX, halos instant lumalabas yung compiled result;\nmas mabilis mag-compile kaysa Overleaf;\nkahit paulit-ulit kang mag-edit, hindi ka na maghihintay hanggang mainis.\nSabi pa ng prof noon, \"Overleaf na lang gamitin mo sa thesis……\"\n\nNgayon, siya na mismo yung gumagamit.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@kai_.03b/post/DdTc8EDjqJi",
+   "views": 40,
+   "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -9756,6 +11943,27 @@
    "reposts": 3,
    "quotes": 0,
    "shares": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18622903750010484",
+   "account": "haru._81a",
+   "project": "cortex",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-15T09:31:10+00:00",
+   "date": "2026-09-15",
+   "local": "09/15 18:31",
+   "text": "研究室でこのサイトを使ってたら、教授に一度叱られたことがある。\n\nLaTeXを書いたらほぼ即コンパイル結果が見えて\nOverleafよりコンパイルがずっと速くて\n何度直しても、毎回待たされてイライラすることがない。\n教授はその時「論文はOverleafでいいじゃないか……」と言ってた。\n\nで、今はその教授本人が使ってる。",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@haru._81a/post/DdTZL6wiVRi",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
    "round": null,
    "variant": null
   },
@@ -9907,6 +12115,27 @@
    "variant": null
   },
   {
+   "id": "17906933361545065",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-13T14:01:20+00:00",
+   "date": "2026-09-13",
+   "local": "09/13 11:01",
+   "text": "Por que eu só fui descobrir isso agora?! Como que ele traduz o artigo inteiro e ainda mantém o layout original? Até as imagens, tabelas e fórmulas do PDF ficam quase intactas… tô salvo 😭",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@bia__rp03/post/DdOug73Dtr9",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18117954241942869",
    "account": "nur.aina_04",
    "project": "trace",
@@ -9949,6 +12178,27 @@
    "variant": null
   },
   {
+   "id": "17924816166417279",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-13T09:04:19+00:00",
+   "date": "2026-09-13",
+   "local": "09/13 11:04",
+   "text": "Ma perché lo scopro solo adesso?! Com'è possibile tradurre un paper mantenendo il layout originale? Anche le immagini, le tabelle e le formule del PDF restano quasi intatte… sono salvo 😭",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@lune__v34/post/DdOMhkeDClK",
+   "views": 9003,
+   "likes": 22,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17907189321510186",
    "account": "dot2day_",
    "project": "moonlight",
@@ -9970,6 +12220,27 @@
    "variant": null
   },
   {
+   "id": "18119888834512914",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-13T09:02:38+00:00",
+   "date": "2026-09-13",
+   "local": "09/13 11:02",
+   "text": "¡¿Cómo es que no conocía esto antes?! ¿Cómo consigue traducir el artículo manteniendo su diseño original? Incluso las imágenes, las tablas y las fórmulas del PDF se conservan casi por completo… me acaba de salvar la vida 😭",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdOMVALkz3C",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17946797526291877",
    "account": "elif.dm_05",
    "project": "moonlight",
@@ -9981,7 +12252,7 @@
    "text": "Bunu nasıl şimdiye kadar bilmiyordum?! Makaleyi çeviriyor ama orijinal düzeni nasıl aynen koruyor? PDF'teki görseller, tablolar ve formüller bile neredeyse olduğu gibi duruyor… kurtuldum 😭",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elif.dm_05/post/DdOFUjoAg-g",
-   "views": 30538,
+   "views": 30540,
    "likes": 207,
    "replies": 9,
    "reposts": 16,
@@ -10180,6 +12451,27 @@
    "variant": null
   },
   {
+   "id": "18281847892295375",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-13T03:01:26+00:00",
+   "date": "2026-09-13",
+   "local": "09/13 11:01",
+   "text": "Bakit ngayon ko lang 'to nadiscover?! Paano niya nate-translate ang buong paper pero buo pa rin ang original layout? Kahit yung images, tables, at equations sa PDF, halos intact lahat… saved na ako 😭",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@kai_.03b/post/DdNi_ukEusa",
+   "views": 59652,
+   "likes": 1602,
+   "replies": 8,
+   "reposts": 256,
+   "quotes": 11,
+   "shares": 359,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18119296717922756",
    "account": "ac_dd91",
    "project": "moonlight",
@@ -10239,6 +12531,27 @@
    "reposts": 5,
    "quotes": 1,
    "shares": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17982294888087946",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-12T23:01:59+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 20:01",
+   "text": "Quem usa iPhone: o que você deixa na tela de bloqueio?\nEu começo: minha semana inteira\nvejo tudo sem abrir nada",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdNHnsJmbun",
+   "views": 137,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
    "round": null,
    "variant": null
   },
@@ -10344,6 +12657,48 @@
    "reposts": 1,
    "quotes": 0,
    "shares": 6,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17947407741055521",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-12T17:03:11+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 19:03",
+   "text": "Chi ha un iPhone: provate a tenere la settimana\nsulla schermata di blocco.\nLa vedete ogni volta, senza aprire niente",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdMej_pFizh",
+   "views": 2367,
+   "likes": 3,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18167336434466227",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-12T17:02:34+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 19:02",
+   "text": "Ey, los que tenéis iPhone\n¿habéis probado a poner la agenda en la pantalla de bloqueo?\nLo pones una vez\ny lo ves cada vez que coges el móvil",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdMefY-lh9c",
+   "views": 462,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 1,
    "round": null,
    "variant": null
   },
@@ -10474,6 +12829,27 @@
    "variant": null
   },
   {
+   "id": "18416057188153234",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-12T14:02:00+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 11:02",
+   "text": "Uma ferramenta indispensável para quem\ntem dificuldade de ler artigos em inglês",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdMJ0rMoMVU",
+   "views": 135,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18003594533987202",
    "account": "lari.s_07",
    "project": "cortex",
@@ -10486,6 +12862,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@lari.s_07/post/DdMGTEZF2zz",
    "views": 7,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18118335086293573",
+   "account": "bia__rp03",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-12T13:02:37+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 10:02",
+   "text": "Uma ferramenta indispensável para quem\nnão aguenta mais a lentidão do Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@bia__rp03/post/DdMC_-MEvOA",
+   "views": 5,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -10642,6 +13039,27 @@
    "variant": null
   },
   {
+   "id": "17956902198248642",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-12T11:02:06+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 19:02",
+   "text": "Uy, mga naka-iPhone\nnailagay niyo na ba 'yung schedule niyo sa lock screen?\nIsang set lang\ntapos makikita niyo agad tuwing bubuksan ang phone",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdL1PJFltJQ",
+   "views": 263,
+   "likes": 3,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18129334054674265",
    "account": "inkling01",
    "project": "trace",
@@ -10726,6 +13144,27 @@
    "variant": null
   },
   {
+   "id": "18406787239091899",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-12T09:02:42+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 11:02",
+   "text": "Uno strumento indispensabile per chi\nfa fatica a leggere i paper in inglese",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lune__v34/post/DdLnkf7m-mc",
+   "views": 20,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18111021766845575",
    "account": "dot2day_",
    "project": "moonlight",
@@ -10743,6 +13182,27 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18010960310976923",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-12T09:01:46+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 11:01",
+   "text": "Una herramienta imprescindible para quienes\ntienen dificultades para leer artículos académicos en inglés",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdLndzBG2RQ",
+   "views": 689,
+   "likes": 17,
+   "replies": 1,
+   "reposts": 2,
+   "quotes": 0,
+   "shares": 1,
    "round": null,
    "variant": null
   },
@@ -10768,6 +13228,27 @@
    "variant": null
   },
   {
+   "id": "18376897807236916",
+   "account": "lune__v34",
+   "project": "cortex",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-12T08:03:24+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 10:03",
+   "text": "Uno strumento indispensabile per chi\nnon sopporta più quanto è lento Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@lune__v34/post/DdLgwInlL99",
+   "views": 13,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18104928677192232",
    "account": "dot2day_",
    "project": "cortex",
@@ -10780,6 +13261,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@dot2day_/post/DdLgqWpj2Zt",
    "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18023154353880578",
+   "account": "beatriz03._a",
+   "project": "cortex",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-12T08:01:49+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 10:01",
+   "text": "Una herramienta imprescindible para quienes\nestán hartos de lo lento que es Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdLgkrPDs_b",
+   "views": 8,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -11125,6 +13627,27 @@
    "variant": null
   },
   {
+   "id": "18130155634823602",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-12T03:01:09+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 11:01",
+   "text": "A must-have tool for anyone\nnahihirapang magbasa ng papers sa English",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@kai_.03b/post/DdK-MgrG7rS",
+   "views": 378,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18625388608022036",
    "account": "inkling01",
    "project": "cortex",
@@ -11209,6 +13732,27 @@
    "variant": null
   },
   {
+   "id": "17992397259040877",
+   "account": "kai_.03b",
+   "project": "cortex",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-12T02:02:32+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 10:02",
+   "text": "A must-have tool for anyone\nna inis na inis sa bagal ng Overleaf",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@kai_.03b/post/DdK3dNSjUDH",
+   "views": 9,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18190753447395816",
    "account": "ac_dd91",
    "project": "moonlight",
@@ -11224,6 +13768,27 @@
    "likes": 2,
    "replies": 3,
    "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18196851118378850",
+   "account": "haru._81a",
+   "project": "cortex",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-12T01:31:08+00:00",
+   "date": "2026-09-12",
+   "local": "09/12 10:31",
+   "text": "Overleafが遅くて\n論文を書くのが大変だった人に必須のツール",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@haru._81a/post/DdKz3T2lPcd",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
    "quotes": 0,
    "shares": 0,
    "round": null,
@@ -11289,6 +13854,27 @@
    "reposts": 8,
    "quotes": 1,
    "shares": 17,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17989189728020716",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-11T23:02:19+00:00",
+   "date": "2026-09-11",
+   "local": "09/11 20:02",
+   "text": "Quem usa iPhone: como você lembra dos seus compromissos?\nEu começo: deixo a semana toda na tela de bloqueio\nnão abro mais o calendário",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdKi3bPoAEB",
+   "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
    "round": null,
    "variant": null
   },
@@ -11369,6 +13955,48 @@
    "link": "https://www.threads.com/@dot2day_/post/DdJ57QPm_TW",
    "views": 1191,
    "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18104050163255517",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-11T17:03:26+00:00",
+   "date": "2026-09-11",
+   "local": "09/11 19:03",
+   "text": "Chi ha un iPhone: mettete i vostri impegni\nsulla schermata di blocco.\nLi vedete ogni volta che accendete il telefono",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdJ5yyMm0xP",
+   "views": 6320,
+   "likes": 7,
+   "replies": 4,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17899209954377534",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-11T17:02:16+00:00",
+   "date": "2026-09-11",
+   "local": "09/11 19:02",
+   "text": "Ey, los que tenéis iPhone\nconfigurad esto una vez.\nSe queda la semana entera en la pantalla de bloqueo\ny ya no abres nada",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdJ5qOlG4rC",
+   "views": 241,
+   "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -11537,6 +14165,48 @@
    "link": "https://www.threads.com/@inkling01/post/DdJQrHmEa6z",
    "views": 4,
    "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18146684875506420",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-11T11:02:13+00:00",
+   "date": "2026-09-11",
+   "local": "09/11 19:02",
+   "text": "Uy, mga naka-iPhone\nbuong linggo ko nakikita agad sa lock screen\ndi ko na kailangan buksan ang calendar\nisang setup lang, promise",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdJQdvkDrM1",
+   "views": 245,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18102412010337477",
+   "account": "haru._81a",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-09-11T11:01:14+00:00",
+   "date": "2026-09-11",
+   "local": "09/11 20:01",
+   "text": "スケジュール管理が苦手な人へ\nロック画面に今週の予定を出す方法、まとめたよ\n①アプリを入れる ②表示する内容を選ぶ ③壁紙に設定\n一度やれば毎日勝手に変わるよ",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@haru._81a/post/DdJQV2REfEB",
+   "views": 2090,
+   "likes": 9,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -11755,6 +14425,27 @@
    "variant": "A"
   },
   {
+   "id": "18126841306763368",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-10T23:01:25+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 20:01",
+   "text": "Quem usa iPhone: o que você colocou na tela de bloqueio?\nEu começo: a semana inteira, direto ali\nnunca mais abri o app de calendário",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdH9-abjnM6",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17993137512041344",
    "account": "lari.s_07",
    "project": "trace",
@@ -11767,6 +14458,48 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lari.s_07/post/DdH3HL2DxyW",
    "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17991710240844552",
+   "account": "bia__rp03",
+   "project": "moonlight",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-10T21:30:56+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 18:30",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nAbre o PDF e ele traduz ali mesmo, mantendo o layout original;\nclica numa figura complicada e ele explica na hora;\ne ainda marca sozinho a novidade, o método e a conclusão do artigo.\nNa época ele disse: \"artigo é pra ler por conta própria……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@bia__rp03/post/DdHznDdoDE0",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18110699789161105",
+   "account": "bia__rp03",
+   "project": "cortex",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-10T20:31:12+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 17:31",
+   "text": "Uma vez levei bronca do meu orientador por usar esse site no laboratório.\n\nEscreve o LaTeX e o resultado compilado aparece quase na hora;\ncompila muito mais rápido que o Overleaf;\npode editar quantas vezes quiser sem ficar esperando até perder a paciência.\nNa época ele disse: \"por que não usa o Overleaf como todo mundo……\"\n\nAgora ele mesmo está usando.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@bia__rp03/post/DdHsvosCNG8",
+   "views": 0,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -11795,6 +14528,48 @@
    "shares": 0,
    "round": "08",
    "variant": "A"
+  },
+  {
+   "id": "18136274434722951",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-10T17:03:19+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 19:03",
+   "text": "Chi ha un iPhone: provate a mettere la settimana\nsulla schermata di blocco.\nCinque secondi e non aprite più il calendario",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdHU_C_CNc8",
+   "views": 55,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17968605639173101",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-10T17:01:53+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 19:01",
+   "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto lo configuras\ndejas de olvidarte de las cosas, de verdad",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdHU1NMD6Ak",
+   "views": 11,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "06",
+   "variant": null
   },
   {
    "id": "18493220251096354",
@@ -12133,6 +14908,27 @@
    "variant": null
   },
   {
+   "id": "17984469759026660",
+   "account": "lune__v34",
+   "project": "moonlight",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-10T08:03:57+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 10:03",
+   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\nApri il PDF e lo traduce lì, tenendo il layout originale;\nclicchi su una figura complicata e te la spiega subito;\ne segna da solo la novità, il metodo e le conclusioni del paper.\nAll'epoca mi disse: \"i paper si leggono da soli……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@lune__v34/post/DdGXQu-FqE5",
+   "views": 12,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18184314796406983",
    "account": "dot2day_",
    "project": "moonlight",
@@ -12145,6 +14941,27 @@
    "kind": "IMAGE",
    "link": "https://www.threads.com/@dot2day_/post/DdGXNXglmn6",
    "views": 76,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17936070384362411",
+   "account": "beatriz03._a",
+   "project": "moonlight",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-10T08:03:10+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 10:03",
+   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\nAbres el PDF y lo traduce ahí mismo manteniendo el diseño original;\nhaces clic en una figura complicada y te la explica al momento;\ny además marca sola la novedad, el método y las conclusiones del paper.\nEntonces me dijo: \"los papers hay que leerlos uno mismo……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdGXKz1ltXZ",
+   "views": 22,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -12196,6 +15013,27 @@
    "variant": null
   },
   {
+   "id": "18109628693144977",
+   "account": "beatriz03._a",
+   "project": "cortex",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-10T08:01:10+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 10:01",
+   "text": "Una vez mi profesor me echó la bronca por usar esta web en el laboratorio.\n\nEscribes el LaTeX y el resultado compilado aparece casi al instante;\ncompila muchísimo más rápido que Overleaf;\npuedes editar todo lo que quieras sin esperar cada vez hasta desesperarte.\nEntonces me dijo: \"¿por qué no usas Overleaf como todo el mundo……?\"\n\nAhora la usa él mismo.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdGW6b2iaoG",
+   "views": 9,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "17869942050602005",
    "account": "elle__jm",
    "project": "cortex",
@@ -12208,6 +15046,27 @@
    "kind": "VIDEO",
    "link": "https://www.threads.com/@elle__jm/post/DdGTx2fE6zG",
    "views": 52,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18123636647501634",
+   "account": "lune__v34",
+   "project": "cortex",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-10T07:32:22+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 09:32",
+   "text": "Una volta il mio professore mi ha rimproverato perché usavo questo sito in laboratorio.\n\nScrivi il LaTeX e il risultato compilato compare quasi subito;\ncompila molto più veloce di Overleaf;\npuoi modificare quante volte vuoi senza aspettare ogni volta fino a innervosirti.\nAll'epoca mi disse: \"perché non usi Overleaf come tutti……\"\n\nAdesso lo usa lui stesso.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@lune__v34/post/DdGTnXOFWSy",
+   "views": 8,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -12343,6 +15202,27 @@
    "variant": null
   },
   {
+   "id": "18023439938705706",
+   "account": "kai_.03b",
+   "project": "moonlight",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-10T03:01:53+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 11:01",
+   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nBuksan mo lang yung PDF, translated agad na buo pa yung original layout;\nclick mo yung komplikadong figure, ipapaliwanag agad;\nauto pa niyang minamarkahan yung novelty, methods, at conclusion ng paper.\nSabi pa ng prof noon, \"dapat ikaw mismo nagbabasa ng paper……\"",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@kai_.03b/post/DdF0sHKDXmf",
+   "views": 223,
+   "likes": 2,
+   "replies": 3,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18154341283505740",
    "account": "ashgrey._02",
    "project": "cortex",
@@ -12360,6 +15240,27 @@
    "reposts": 1,
    "quotes": 0,
    "shares": 11,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18122750807489106",
+   "account": "kai_.03b",
+   "project": "cortex",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-10T02:31:06+00:00",
+   "date": "2026-09-10",
+   "local": "09/10 10:31",
+   "text": "Napagalitan ako ng prof ko dati kasi 'to yung ginagamit ko sa lab.\n\nSulat ka ng LaTeX, halos instant lumalabas yung compiled result;\nmas mabilis mag-compile kaysa Overleaf;\nkahit paulit-ulit kang mag-edit, hindi ka na maghihintay hanggang mainis.\nSabi pa ng prof noon, \"Overleaf na lang gamitin mo sa thesis……\"\n\nNgayon, siya na mismo yung gumagamit.",
+   "kind": "VIDEO",
+   "link": "https://www.threads.com/@kai_.03b/post/DdFxI1REyTP",
+   "views": 23,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
    "round": null,
    "variant": null
   },
@@ -12396,7 +15297,7 @@
    "text": "mn ơi, ai dùng iPhone thử cái này chưa?\nLịch hiện thẳng lên màn hình khoá luôn.\nDùng rồi là\nkhông còn quên việc gì nữa thật đấy",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DdFqS2nIM46",
-   "views": 20963,
+   "views": 20965,
    "likes": 141,
    "replies": 5,
    "reposts": 17,
@@ -12448,6 +15349,27 @@
    "variant": "B"
   },
   {
+   "id": "17907160845500095",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-09-09T22:02:13+00:00",
+   "date": "2026-09-09",
+   "local": "09/09 19:02",
+   "text": "Quem usa iPhone: qual widget de tela de bloqueio salvou sua rotina? Eu começo:\na semana inteira na tela de bloqueio.\nDepois que configurei\nnunca mais esqueci nada",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DdFSZZHmpE8",
+   "views": 78,
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "08",
+   "variant": "A"
+  },
+  {
    "id": "18016740647947827",
    "account": "lari.s_07",
    "project": "trace",
@@ -12488,6 +15410,48 @@
    "shares": 1,
    "round": "08",
    "variant": "B"
+  },
+  {
+   "id": "18074538920442342",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-09T17:05:50+00:00",
+   "date": "2026-09-09",
+   "local": "09/09 19:05",
+   "text": "Llevo años con iPhone\ny nadie me dijo que la pantalla de bloqueo hacía esto.\nAhora toda la semana está ahí.\nNo se me ha olvidado nada desde entonces",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdEwfWGkatg",
+   "views": 6187,
+   "likes": 19,
+   "replies": 8,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 6,
+   "round": "08",
+   "variant": "B"
+  },
+  {
+   "id": "17895377340606133",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-09T17:03:00+00:00",
+   "date": "2026-09-09",
+   "local": "09/09 19:03",
+   "text": "Chi ha un iPhone:\nprovate a mettere la settimana intera sulla schermata di blocco.\nDa quando l'ho fatto\nnon dimentico più niente, davvero",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdEwJyNEfH_",
+   "views": 9915,
+   "likes": 8,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "08",
+   "variant": "A"
   },
   {
    "id": "18115210307060057",
@@ -12585,7 +15549,7 @@
    "text": "แนะนำให้คนใช้ iPhone ทุกคนลองอันนี้\nตารางวันนี้โผล่บนหน้าจอล็อกเลย ไม่ต้องเปิดแอป\nพอเริ่มใช้แล้ว\nไม่ลืมอะไรอีกเลยจริง ๆ ครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdEN1gHm0nV",
-   "views": 93138,
+   "views": 93139,
    "likes": 1407,
    "replies": 13,
    "reposts": 918,
@@ -12606,12 +15570,33 @@
    "text": "10 tahun pakai iPhone\nbaru tau lockscreen bisa nampilin ini.\njadwal seminggu nongol terus di situ\nsejak itu gak pernah lupa apa-apa",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdENop5G9n_",
-   "views": 19010,
+   "views": 19012,
    "likes": 267,
    "replies": 12,
    "reposts": 22,
    "quotes": 1,
    "shares": 53,
+   "round": "08",
+   "variant": "B"
+  },
+  {
+   "id": "18377697574230726",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-09T11:01:12+00:00",
+   "date": "2026-09-09",
+   "local": "09/09 19:01",
+   "text": "10 years na ako sa iPhone\ntapos ngayon ko lang nalaman na kaya 'to ng lock screen.\nNandun na lang lagi yung buong linggo ko\nwala na akong nakalimutan since then",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdEGv7NliLW",
+   "views": 17308,
+   "likes": 71,
+   "replies": 8,
+   "reposts": 10,
+   "quotes": 0,
+   "shares": 17,
    "round": "08",
    "variant": "B"
   },
@@ -12700,6 +15685,48 @@
    "variant": "A"
   },
   {
+   "id": "18109111316126688",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-08T17:02:52+00:00",
+   "date": "2026-09-08",
+   "local": "09/08 19:02",
+   "text": "Ehi, voi con l'iPhone,\nprovate a impostare così la schermata di blocco.\nVedete gli impegni di oggi ogni volta che accendete il telefono,\nnon c'è modo di dimenticare ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DdCLV-0nK2a",
+   "views": 1233,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "06",
+   "variant": "B"
+  },
+  {
+   "id": "17874919215564160",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-08T17:01:07+00:00",
+   "date": "2026-09-08",
+   "local": "09/08 19:01",
+   "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto empiezas a usarlo\nya no se te olvida nada, de verdad ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DdCLJqIHMbL",
+   "views": 2189,
+   "likes": 11,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 5,
+   "round": "06",
+   "variant": "A"
+  },
+  {
    "id": "18195006454389039",
    "account": "dot2day_",
    "project": "trace",
@@ -12733,6 +15760,27 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@inkling01/post/DdBo0BHHLdv",
    "views": 4,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "06",
+   "variant": "A"
+  },
+  {
+   "id": "18147682327555620",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-08T11:01:07+00:00",
+   "date": "2026-09-08",
+   "local": "09/08 19:01",
+   "text": "Uy, kayong mga naka-iPhone,\nsubukan niyo lang 'to kahit minsan.\nPag nagsimula ka nang gamitin\nwala ka na talagang makakalimutan ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/DdBh8lYG9eD",
+   "views": 304,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -12780,6 +15828,48 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "round": "06",
+   "variant": "B"
+  },
+  {
+   "id": "17980689948078309",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-07T17:01:35+00:00",
+   "date": "2026-09-07",
+   "local": "09/07 19:01",
+   "text": "Ehi, voi che avete un iPhone,\nprovatelo anche solo una volta.\nUna volta che iniziate a usarlo\nnon vi dimenticate più niente, davvero ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/Dc_mZntlRN5",
+   "views": 3349,
+   "likes": 3,
+   "replies": 3,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "round": "06",
+   "variant": "A"
+  },
+  {
+   "id": "18094679036244955",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-07T17:00:53+00:00",
+   "date": "2026-09-07",
+   "local": "09/07 19:00",
+   "text": "Ey, los que tenéis iPhone,\nconfigurad así la pantalla de bloqueo.\nVeis los planes del día cada vez que miráis el móvil,\nasí no hay manera de olvidarse ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Dc_mVO7lekF",
+   "views": 730,
+   "likes": 5,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 1,
    "round": "06",
    "variant": "B"
   },
@@ -12838,6 +15928,27 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@inkling01/post/Dc_EAuelk-Q",
    "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "06",
+   "variant": "B"
+  },
+  {
+   "id": "18163443805467075",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-07T11:30:46+00:00",
+   "date": "2026-09-07",
+   "local": "09/07 19:30",
+   "text": "Uy, mga naka-iPhone,\ni-set niyo ang lock screen niyo nang ganito.\nNakikita niyo agad ang schedule ngayong araw tuwing bubuksan ang phone,\nkaya wala nang makakalimutan ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/Dc_AjXHEQh_",
+   "views": 129,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -12910,6 +16021,27 @@
    "variant": null
   },
   {
+   "id": "18474033880113198",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-06T06:02:59+00:00",
+   "date": "2026-09-06",
+   "local": "09/06 08:02",
+   "text": "Ehi, voi che avete un iPhone,\nprovatelo anche solo una volta.\nUna volta che iniziate a usarlo\nnon vi dimenticate più niente, davvero ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/Dc72PHyE8az",
+   "views": 22,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "05",
+   "variant": null
+  },
+  {
    "id": "17946608499295216",
    "account": "dot2day_",
    "project": "trace",
@@ -12931,6 +16063,27 @@
    "variant": null
   },
   {
+   "id": "18093347147388567",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-06T06:01:13+00:00",
+   "date": "2026-09-06",
+   "local": "09/06 08:01",
+   "text": "Ey, los que tenéis iPhone,\nprobad esto aunque sea una vez.\nEn cuanto empiezas a usarlo\nya no se te olvida nada, de verdad ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Dc72CJLD7zO",
+   "views": 94,
+   "likes": 2,
+   "replies": 3,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "05",
+   "variant": null
+  },
+  {
    "id": "17988442338044716",
    "account": "rara.2k_",
    "project": "trace",
@@ -12944,6 +16097,27 @@
    "link": "https://www.threads.com/@rara.2k_/post/Dc7TtC-D_3h",
    "views": 386,
    "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "05",
+   "variant": null
+  },
+  {
+   "id": "18094938458537155",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-06T00:02:11+00:00",
+   "date": "2026-09-06",
+   "local": "09/06 08:02",
+   "text": "Uy, kayong mga naka-iPhone,\nsubukan niyo lang 'to kahit minsan.\nPag nagsimula ka nang gamitin\nwala ka na talagang makakalimutan ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/Dc7M9MVE8xJ",
+   "views": 116,
+   "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -13036,6 +16210,27 @@
    "variant": null
   },
   {
+   "id": "18145970971564947",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-09-05T06:03:03+00:00",
+   "date": "2026-09-05",
+   "local": "09/05 08:03",
+   "text": "Ma come facevo a non sapere\nche esisteva un'app così per iPhone…\nHo disegnato sulla schermata di blocco, ci ho messo gli sticker,\ne l'ho fatta proprio come volevo io 💕📆",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/Dc5RdZBIJ2W",
+   "views": 178,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "04",
+   "variant": null
+  },
+  {
    "id": "18152097949514004",
    "account": "dot2day_",
    "project": "trace",
@@ -13049,6 +16244,27 @@
    "link": "https://www.threads.com/@dot2day_/post/Dc5RWYoHBpA",
    "views": 9,
    "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "round": "04",
+   "variant": null
+  },
+  {
+   "id": "18115219925063184",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-09-05T06:01:11+00:00",
+   "date": "2026-09-05",
+   "local": "09/05 08:01",
+   "text": "Y yo sin saber que existía\nuna app así para iPhone…\nHe dibujado en la pantalla de bloqueo, le he puesto stickers,\ny la he dejado justo a mi gusto 💕📆",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/Dc5RPNPCuKt",
+   "views": 273,
+   "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -13095,6 +16311,27 @@
    "reposts": 2,
    "quotes": 0,
    "shares": 1,
+   "round": "04",
+   "variant": null
+  },
+  {
+   "id": "18578671330067848",
+   "account": "kai_.03b",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-09-05T00:02:05+00:00",
+   "date": "2026-09-05",
+   "local": "09/05 08:02",
+   "text": "Bakit ngayon ko lang nalaman\nna may ganitong app pala sa iPhone…\nNagdrawing ako sa lock screen, nilagyan ng stickers,\ntapos ginawa kong sakin na sakin 💕📆",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@kai_.03b/post/Dc4oJjLEc5V",
+   "views": 440,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 2,
    "round": "04",
    "variant": null
   },
@@ -13404,7 +16641,7 @@
    "text": "Ơ này, ai dùng iPhone\nthì thật sự phải dùng cái này đó!\nDùng thử rồi mới thấy\nđúng là không bao giờ quên việc gì nữa luôn ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Dcubs5fCcrR",
-   "views": 435407,
+   "views": 435409,
    "likes": 4300,
    "replies": 88,
    "reposts": 703,
@@ -13779,12 +17016,7 @@
  "pending": [],
  "skipped": [],
  "errors": [
-  "beatriz03._a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A39FQl1ZEX8skXMCN2gR-Rv\"}}",
-  "bia__rp03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AiOyLpOC9qYkfBOCoCnsUuc\"}}",
-  "haru._81a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A-oHqUdubW45zT9Kwbb7qS5\"}}",
-  "kai_.03b 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AiKjPM5ge50nbQD_ZKwfQQd\"}}",
-  "lune__v34 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AvFUKr5AycVUcIMkrsEvZfM\"}}",
-  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AGd8xTgxH7eQsrHh41FD0pe\"}}",
-  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AWHHwa_WpGo7OIbJG8CKxyJ\"}}"
+  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AWDND47OGinZqV16LwratPO\"}}",
+  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AHpsUFOEQv3K_IpyN0Gc9wu\"}}"
  ]
 }
