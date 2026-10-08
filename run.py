@@ -11,7 +11,8 @@ schedule.txt 한 줄 (탭 구분):
 그 표시를 남기고 줄을 유지해, 다음 회차가 실패한 쪽만 다시 시도한다. 같은 글이
 두 번 올라가는 일은 이 표시로 막는다.
 
-답글이 실패하면 done:reply-threads:<게시물id> 를 남겨 다음 회차가 답글만 다시 민다.
+Threads 답글은 본문 다음 회차(약 30분 뒤)에 단다. 본문을 올리면 done:reply-threads:<게시물id>
+를 남기고 시각을 25분 뒤로 미룬다. 답글이 실패해도 같은 표시로 다음 회차가 답글만 다시 민다.
 답글까지 끝나야 줄을 지우고 본문·이미지를 done/ 으로 옮긴다.
 """
 import json
@@ -22,12 +23,13 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).parent
 SCHEDULE = ROOT / "schedule.txt"
 DONE = ROOT / "done"
+REPLY_DELAY_MIN = 25   # cron이 30분 간격이라 25분이면 바로 다음 회차에 답글이 나간다
 RAW = "https://raw.githubusercontent.com/ungchun/thread-images/main"
 
 # 두 플랫폼은 호스트도 필드 이름도 다르다. 나머지 흐름(컨테이너→대기→발행)은 같다.
@@ -327,10 +329,17 @@ def main():
             if missing:
                 print(f"SKIP {account} {name}: 이미지 없음 {missing}", flush=True)
                 continue
+            reply = inline or fixed_reply(account, plat)
+            # Threads 답글은 본문과 같이 달지 않고 다음 회차(약 30분 뒤)에 단다.
+            # 시각을 25분 뒤로 당겨 두면 아래 '답글만 다시 민다' 경로가 다음 회차에 집어간다.
+            defer = bool(reply) and not is_ig
             try:
                 post_id = publish(plat, account, body, imgs,
-                                  inline or fixed_reply(account, plat), is_ig,
+                                  None if defer else reply, is_ig,
                                   spoiler_media="!" in done, rmedia=rmedia, rspoiler=rspoiler)
+                if defer:
+                    done.add(f"reply-{name}:{post_id}")
+                    when = (now + timedelta(minutes=REPLY_DELAY_MIN)).isoformat()
             except ReplyFailed as e:  # 본문은 올라갔다. 답글만 표시해 두고 다음 회차에 재시도
                 print(f"posted {name} {e.post_id} {account} {textfile}", flush=True)
                 print(f"REPLY-FAIL {account} {e.post_id}: {e} — 예약에 남김", flush=True)
