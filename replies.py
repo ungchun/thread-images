@@ -13,6 +13,7 @@
   python3 replies.py hide <계정> <답글id> [off]  남의 답글 숨김/해제 (남의 답글 삭제는 API 불가)
   python3 replies.py scopes <계정|all>           토큰 권한 목록
   python3 replies.py delete <계정> <게시물id>      우리 게시물 삭제 (threads_delete 승인 필요, 되돌릴 수 없음)
+  python3 replies.py delete all <파일>            파일의 "계정 게시물id" 줄을 전부 삭제. 실패해도 다음 줄로 간다
 """
 import json
 import os
@@ -231,6 +232,17 @@ def main():
                 print(f"{'삭제가능' if 'threads_delete' in sc else '삭제불가'}  {a}  {','.join(sc)}")
             except Exception as e:
                 print(f"오류      {a}  {e}")
+    elif cmd == "delete" and account == "all":
+        rows = [l.split() for l in Path(sys.argv[3]).read_text(encoding="utf-8").splitlines() if l.strip()]
+        ok = 0
+        for a, pid in rows:
+            try:
+                delete(a, pid)
+                ok += 1
+                print(f"DELETED {a} {pid}", flush=True)
+            except Exception as e:
+                print(f"DEL-FAIL {a} {pid} {e}", flush=True)
+        print(f"삭제 {ok}/{len(rows)}")
     elif cmd == "delete":
         print(delete(account, sys.argv[3]))
     elif cmd == "send":
