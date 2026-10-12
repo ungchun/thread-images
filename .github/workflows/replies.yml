@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       cmd:
-        description: 'posts | list | tone | send | hide'
+        description: 'posts | list | tone | send | hide | scopes | delete'
         required: true
         default: 'posts'
       account:
@@ -17,7 +17,7 @@ on:
         required: false
         default: ''
       arg:
-        description: 'list면 게시물 id, posts면 --days 값, tone이면 --limit 값, send·hide면 답글 id'
+        description: 'list·delete면 게시물 id, posts면 --days 값, tone이면 --limit 값, send·hide면 답글 id'
         required: false
         default: ''
 
@@ -38,5 +38,7 @@ jobs:
             tone)  python3 replies.py tone  "${{ inputs.account }}" --limit "${{ inputs.arg || 20 }}" ;;
             send)  python3 replies.py send  "${{ inputs.account }}" "${{ inputs.arg }}" "outbox/${{ inputs.body }}" ;;
             hide)  python3 replies.py hide  "${{ inputs.account }}" "${{ inputs.arg }}" "${{ inputs.body }}" ;;
+            scopes) python3 replies.py scopes "${{ inputs.account }}" ;;
+            delete) python3 replies.py delete "${{ inputs.account }}" "${{ inputs.arg }}" ;;
             *) echo "알 수 없는 cmd"; exit 1 ;;
           esac

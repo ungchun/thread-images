@@ -10,9 +10,12 @@
   python3 replies.py list <계정> <게시물id>        미답변 답글 (시간순)
   python3 replies.py tone <계정> [--limit 20]     우리가 지금까지 쓴 답장 (톤 참고용)
   python3 replies.py send <계정> <답글id> <파일>   답장 발행 (본문은 파일에서 읽는다)
-  python3 replies.py hide <계정> <답글id> [off]  남의 답글 숨김/해제 (삭제는 API 불가)
+  python3 replies.py hide <계정> <답글id> [off]  남의 답글 숨김/해제 (남의 답글 삭제는 API 불가)
+  python3 replies.py scopes <계정|all>           토큰 권한 목록
+  python3 replies.py delete <계정> <게시물id>      우리 게시물 삭제 (threads_delete 승인 필요, 되돌릴 수 없음)
 """
 import json
+import os
 import sys
 import time
 import urllib.error
@@ -179,6 +182,24 @@ def wait_ready(container, token, tries=20):
     raise RuntimeError(f"container {container}: 준비 안 됨")
 
 
+def scopes(account):
+    token, _ = creds(account)
+    return api("debug_token", token, input_token=token)["data"].get("scopes")
+
+
+def delete(account, post_id):
+    # 빈 id가 섞이면 엉뚱한 요청이 나간다(send에서 실제로 났다). 숫자 하나만 받는다.
+    if not str(post_id).strip().isdigit():
+        sys.exit(f"게시물 id가 숫자 하나가 아니다: {post_id!r}")
+    token, _ = creds(account)
+    url = f"{GRAPH}/{post_id}?" + urllib.parse.urlencode({"access_token": token})
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, method="DELETE"), timeout=30) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"{e.code} {e.read().decode()[:500]}") from None
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
@@ -202,6 +223,16 @@ def main():
             print(f"- {t}")
     elif cmd == "hide":
         print(hide(account, sys.argv[3], sys.argv[4] != "off" if len(sys.argv) > 4 else True))
+    elif cmd == "scopes":
+        names = sorted(json.loads(os.environ["THREADS_ACCOUNTS"])) if account == "all" else [account]
+        for a in names:
+            try:
+                sc = scopes(a)
+                print(f"{'삭제가능' if 'threads_delete' in sc else '삭제불가'}  {a}  {','.join(sc)}")
+            except Exception as e:
+                print(f"오류      {a}  {e}")
+    elif cmd == "delete":
+        print(delete(account, sys.argv[3]))
     elif cmd == "send":
         body = Path(sys.argv[4]).read_text(encoding="utf-8").strip()
         print(send(account, sys.argv[3], body))
