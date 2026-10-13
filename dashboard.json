@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T09:54:14.702016+00:00",
+ "generated": "2026-10-13T00:43:37.499294+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -411,96 +411,114 @@
    ],
    "insights": {
     "hour": {
+     "5": {
+      "n": 1,
+      "score": 1.0,
+      "median": 77
+     },
+     "6": {
+      "n": 1,
+      "score": 1.0,
+      "median": 4
+     },
      "8": {
       "n": 1,
-      "score": 1.43,
-      "median": 2157
+      "score": 1.38,
+      "median": 2163
+     },
+     "10": {
+      "n": 1,
+      "score": 1.0,
+      "median": 77
+     },
+     "11": {
+      "n": 4,
+      "score": 1.0,
+      "median": 30
+     },
+     "12": {
+      "n": 1,
+      "score": 1.0,
+      "median": 552
+     },
+     "15": {
+      "n": 1,
+      "score": 1.0,
+      "median": 7
      },
      "16": {
-      "n": 2,
-      "score": 0.32,
-      "median": 483
+      "n": 3,
+      "score": 0.22,
+      "median": 319
      },
      "17": {
-      "n": 3,
+      "n": 4,
       "score": 1.0,
-      "median": 515
+      "median": 169
      },
      "18": {
       "n": 4,
+      "score": 1.81,
+      "median": 2410
+     },
+     "20": {
+      "n": 1,
       "score": 1.0,
-      "median": 2321
+      "median": 70
      }
     },
     "wday": {
      "월": {
-      "n": 6,
-      "score": 0.98,
-      "median": 362
+      "n": 18,
+      "score": 1.0,
+      "median": 77
      },
      "일": {
       "n": 4,
-      "score": 1.22,
-      "median": 2467
+      "score": 1.81,
+      "median": 2489
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 10,
+      "n": 22,
       "score": 1.0,
-      "median": 712
+      "median": 169
      }
     },
     "accounts": {
-     "nur.aina_04": {
-      "flag": "MY",
+     "haru._81a": {
+      "flag": "JP",
       "posts": 1,
-      "avg": 2777,
-      "max": 2777,
+      "avg": 2881,
+      "max": 2881,
       "hours": {
-       "18": {
+       "17": {
         "n": 1,
         "score": 1.0,
-        "median": 2777
+        "median": 2881
        }
       },
-      "best_hour": 18,
+      "best_hour": 17,
       "best_n": 1,
       "state": "active",
       "note": ""
      },
-     "rara.2k_": {
-      "flag": "ID",
-      "posts": 1,
-      "avg": 1865,
-      "max": 1865,
-      "hours": {
-       "18": {
-        "n": 1,
-        "score": 1.0,
-        "median": 1865
-       }
-      },
-      "best_hour": 18,
-      "best_n": 1,
-      "state": "active",
-      "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
-     },
      "pim.pm_02": {
       "flag": "TH",
       "posts": 2,
-      "avg": 1724,
-      "max": 3336,
+      "avg": 2039,
+      "max": 3760,
       "hours": {
        "16": {
         "n": 1,
-        "score": 0.06,
-        "median": 112
+        "score": 0.16,
+        "median": 319
        },
        "18": {
         "n": 1,
-        "score": 1.94,
-        "median": 3336
+        "score": 1.84,
+        "median": 3760
        }
       },
       "best_hour": 18,
@@ -511,18 +529,18 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 2,
-      "avg": 1506,
-      "max": 2157,
+      "avg": 1569,
+      "max": 2163,
       "hours": {
        "8": {
         "n": 1,
-        "score": 1.43,
-        "median": 2157
+        "score": 1.38,
+        "median": 2163
        },
        "16": {
         "n": 1,
-        "score": 0.57,
-        "median": 855
+        "score": 0.62,
+        "median": 975
        }
       },
       "best_hour": 8,
@@ -530,33 +548,60 @@
       "state": "active",
       "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"
      },
-     "haru._81a": {
-      "flag": "JP",
+     "nur.aina_04": {
+      "flag": "MY",
       "posts": 2,
-      "avg": 542,
-      "max": 569,
+      "avg": 1461,
+      "max": 2815,
       "hours": {
        "17": {
-        "n": 2,
-        "score": 1.0,
-        "median": 542
+        "n": 1,
+        "score": 0.07,
+        "median": 108
+       },
+       "18": {
+        "n": 1,
+        "score": 1.93,
+        "median": 2815
        }
       },
-      "best_hour": 17,
-      "best_n": 2,
+      "best_hour": 18,
+      "best_n": 1,
       "state": "active",
       "note": ""
+     },
+     "rara.2k_": {
+      "flag": "ID",
+      "posts": 2,
+      "avg": 1125,
+      "max": 2005,
+      "hours": {
+       "16": {
+        "n": 1,
+        "score": 0.22,
+        "median": 246
+       },
+       "18": {
+        "n": 1,
+        "score": 1.78,
+        "median": 2005
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
      },
      "ac_dd91": {
       "flag": "KR",
       "posts": 1,
-      "avg": 210,
-      "max": 210,
+      "avg": 629,
+      "max": 629,
       "hours": {
        "18": {
         "n": 1,
         "score": 1.0,
-        "median": 210
+        "median": 629
        }
       },
       "best_hour": 18,
@@ -564,22 +609,209 @@
       "state": "active",
       "note": "한국. 저녁 18시가 오전보다 나음"
      },
-     "shu.lin_03": {
-      "flag": "TW",
+     "elif.dm_05": {
+      "flag": "TR",
       "posts": 1,
-      "avg": 14,
-      "max": 14,
+      "avg": 552,
+      "max": 552,
+      "hours": {
+       "12": {
+        "n": 1,
+        "score": 1.0,
+        "median": 552
+       }
+      },
+      "best_hour": 12,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "kai_.03b": {
+      "flag": "PH",
+      "posts": 1,
+      "avg": 230,
+      "max": 230,
       "hours": {
        "17": {
         "n": 1,
         "score": 1.0,
-        "median": 14
+        "median": 230
+       }
+      },
+      "best_hour": 17,
+      "best_n": 1,
+      "state": "active",
+      "note": "필리핀. 9/7 합류, 표본 부족"
+     },
+     "03ines.mar_": {
+      "flag": "PT",
+      "posts": 1,
+      "avg": 77,
+      "max": 77,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 1.0,
+        "median": 77
+       }
+      },
+      "best_hour": 10,
+      "best_n": 1,
+      "state": "active",
+      "note": "포르투갈"
+     },
+     "mae.dw_04": {
+      "flag": "US",
+      "posts": 1,
+      "avg": 77,
+      "max": 77,
+      "hours": {
+       "5": {
+        "n": 1,
+        "score": 1.0,
+        "median": 77
+       }
+      },
+      "best_hour": 5,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "elle__jm": {
+      "flag": "AU",
+      "posts": 1,
+      "avg": 70,
+      "max": 70,
+      "hours": {
+       "20": {
+        "n": 1,
+        "score": 1.0,
+        "median": 70
+       }
+      },
+      "best_hour": 20,
+      "best_n": 1,
+      "state": "active",
+      "note": "호주. 9/7 합류, 표본 부족"
+     },
+     "lune__v34": {
+      "flag": "IT",
+      "posts": 1,
+      "avg": 66,
+      "max": 66,
+      "hours": {
+       "11": {
+        "n": 1,
+        "score": 1.0,
+        "median": 66
+       }
+      },
+      "best_hour": 11,
+      "best_n": 1,
+      "state": "active",
+      "note": "이탈리아. 9/7 합류, 표본 부족"
+     },
+     "beatriz03._a": {
+      "flag": "ES",
+      "posts": 1,
+      "avg": 47,
+      "max": 47,
+      "hours": {
+       "11": {
+        "n": 1,
+        "score": 1.0,
+        "median": 47
+       }
+      },
+      "best_hour": 11,
+      "best_n": 1,
+      "state": "active",
+      "note": "스페인. 앞 계정 영구정지 후 재개설"
+     },
+     "shu.lin_03": {
+      "flag": "TW",
+      "posts": 1,
+      "avg": 23,
+      "max": 23,
+      "hours": {
+       "17": {
+        "n": 1,
+        "score": 1.0,
+        "median": 23
        }
       },
       "best_hour": 17,
       "best_n": 1,
       "state": "active",
       "note": ""
+     },
+     "o2ndot": {
+      "flag": "FR",
+      "posts": 1,
+      "avg": 13,
+      "max": 13,
+      "hours": {
+       "11": {
+        "n": 1,
+        "score": 1.0,
+        "median": 13
+       }
+      },
+      "best_hour": 11,
+      "best_n": 1,
+      "state": "active",
+      "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
+     },
+     "riya._m08": {
+      "flag": "IN",
+      "posts": 1,
+      "avg": 7,
+      "max": 7,
+      "hours": {
+       "15": {
+        "n": 1,
+        "score": 1.0,
+        "median": 7
+       }
+      },
+      "best_hour": 15,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "bia__rp03": {
+      "flag": "BR",
+      "posts": 1,
+      "avg": 4,
+      "max": 4,
+      "hours": {
+       "6": {
+        "n": 1,
+        "score": 1.0,
+        "median": 4
+       }
+      },
+      "best_hour": 6,
+      "best_n": 1,
+      "state": "active",
+      "note": ""
+     },
+     "dot2day_": {
+      "flag": "DE",
+      "posts": 1,
+      "avg": 4,
+      "max": 4,
+      "hours": {
+       "11": {
+        "n": 1,
+        "score": 1.0,
+        "median": 4
+       }
+      },
+      "best_hour": 11,
+      "best_n": 1,
+      "state": "active",
+      "note": "독일. 오전 8시 성과가 특히 나빴다"
      },
      "inkling01": {
       "flag": "TW",
@@ -603,61 +835,6 @@
       "state": "banned",
       "note": "일본. 9/3에 32,241. 영구정지(9/23 인계 기준)"
      },
-     "o2ndot": {
-      "flag": "FR",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
-     },
-     "03ines.mar_": {
-      "flag": "PT",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "포르투갈"
-     },
-     "dot2day_": {
-      "flag": "DE",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "독일. 오전 8시 성과가 특히 나빴다"
-     },
-     "elle__jm": {
-      "flag": "AU",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "호주. 9/7 합류, 표본 부족"
-     },
-     "kai_.03b": {
-      "flag": "PH",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "필리핀. 9/7 합류, 표본 부족"
-     },
      "nia._055": {
       "flag": "IN",
       "posts": 0,
@@ -668,28 +845,6 @@
       "best_n": 0,
       "state": "active",
       "note": "인도. 9/7 합류, 표본 부족"
-     },
-     "lune__v34": {
-      "flag": "IT",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "이탈리아. 9/7 합류, 표본 부족"
-     },
-     "beatriz03._a": {
-      "flag": "ES",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "스페인. 앞 계정 영구정지 후 재개설"
      },
      "daily03dew": {
       "flag": "TW",
@@ -1301,8 +1456,8 @@
    "text": "grabe… pwede palang ilagay lahat ng schedule sa lockscreen, bakit walang nagsabi sa akin??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/DeY8-Luj5Xc",
-   "views": 0,
-   "likes": 1,
+   "views": 230,
+   "likes": 3,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -1322,8 +1477,8 @@
    "text": "ya ampun… jadwal bisa dipajang semua di lock screen, kok nggak ada yang kasih tahu sih??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DeY8w5oFB8U",
-   "views": 0,
-   "likes": 1,
+   "views": 246,
+   "likes": 3,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -1343,7 +1498,7 @@
    "text": "hang on… you can put all your plans on your lock screen and no one thought to tell me??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elle__jm/post/DeY8mFemb8D",
-   "views": 0,
+   "views": 70,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1364,7 +1519,7 @@
    "text": "hold on… why did no one tell me you can put your whole schedule on your lock screen??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mae.dw_04/post/DeY8dKpk51P",
-   "views": 0,
+   "views": 77,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1385,7 +1540,7 @@
    "text": "gente… dá pra colocar a agenda inteira na tela de bloqueio e ninguém me avisou??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@bia__rp03/post/DeY8SNBkyaG",
-   "views": 0,
+   "views": 4,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1406,7 +1561,7 @@
    "text": "então… dá para pôr a agenda toda no ecrã de bloqueio e ninguém me disse nada??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/DeY8JgNmk2M",
-   "views": 0,
+   "views": 77,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1427,7 +1582,7 @@
    "text": "attends… on peut afficher tout son planning sur l'écran verrouillé et personne m'a rien dit??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/DeY7-glFGUF",
-   "views": 0,
+   "views": 13,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1448,7 +1603,7 @@
    "text": "cioè… si può mettere tutta l'agenda sulla schermata di blocco e nessuno me l'ha mai detto??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@lune__v34/post/DeY72hZidn0",
-   "views": 0,
+   "views": 66,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1469,7 +1624,7 @@
    "text": "moment mal… man kann alle Termine auf dem Sperrbildschirm anzeigen und niemand hat's mir gesagt??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@dot2day_/post/DeY7tMFkeCj",
-   "views": 0,
+   "views": 4,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1490,7 +1645,7 @@
    "text": "o sea… ¿cómo que se puede poner toda la agenda en la pantalla de bloqueo y nadie me avisó??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/DeY7kItiaYa",
-   "views": 0,
+   "views": 47,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1511,12 +1666,12 @@
    "text": "yani… bütün programı kilit ekranına koyabiliyormuşuz, neden kimse söylemedi??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elif.dm_05/post/DeY7dBQEnXS",
-   "views": 0,
-   "likes": 1,
+   "views": 552,
+   "likes": 5,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 1,
+   "shares": 2,
    "round": null,
    "variant": null
   },
@@ -1532,10 +1687,10 @@
    "text": "eh… boleh letak semua jadual kat lock screen, kenapa takde siapa bagitau aku??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nur.aina_04/post/DeY7Fvak-3n",
-   "views": 0,
-   "likes": 1,
+   "views": 108,
+   "likes": 2,
    "replies": 2,
-   "reposts": 0,
+   "reposts": 1,
    "quotes": 0,
    "shares": 0,
    "round": null,
@@ -1553,7 +1708,7 @@
    "text": "मतलब… सारा शेड्यूल लॉक स्क्रीन पर लगा सकते हैं और किसी ने मुझे बताया ही नहीं??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@riya._m08/post/DeY69EsmUi_",
-   "views": 0,
+   "views": 7,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -1574,8 +1729,8 @@
    "text": "อ้าว… ขึ้นตารางทั้งหมดบนหน้าจอล็อกได้ แล้วทำไมไม่มีใครบอกกันเลย??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeY5GMQD_Xb",
-   "views": 112,
-   "likes": 2,
+   "views": 319,
+   "likes": 4,
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
@@ -1595,8 +1750,8 @@
    "text": "trời ơi… hiện được hết lịch lên màn hình khóa mà sao không ai chỉ tui vậy??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DeY47zAHyel",
-   "views": 855,
-   "likes": 6,
+   "views": 975,
+   "likes": 7,
    "replies": 2,
    "reposts": 0,
    "quotes": 0,
@@ -1637,7 +1792,7 @@
    "text": "欸不是…鎖定畫面可以顯示全部行程，為什麼都沒有人告訴我？？！！",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@shu.lin_03/post/DeY4QOGkuDF",
-   "views": 14,
+   "views": 23,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -1658,8 +1813,8 @@
    "text": "아니… 잠금화면에 일정 다 띄울 수 있는 거 왜 아무도 안 알려줬냐고??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DeY4F9LAUaN",
-   "views": 210,
-   "likes": 2,
+   "views": 629,
+   "likes": 3,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -1679,30 +1834,9 @@
    "text": "iPhone何年も使ってるのに、ロック画面に予定まるごと出せるの今日はじめて知った？？？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/DeYzAXsE5jw",
-   "views": 515,
-   "likes": 4,
+   "views": 2881,
+   "likes": 8,
    "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18115490288174239",
-   "account": "haru._81a",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-12T08:21:37+00:00",
-   "date": "2026-10-12",
-   "local": "10/12 17:21",
-   "text": "iPhone何年も使ってるのに、ロック画面に予定まるごと出せるの今日はじめて知った？？？",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@haru._81a/post/DeYyu_AE33E",
-   "views": 569,
-   "likes": 0,
-   "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
@@ -1721,12 +1855,12 @@
    "text": "bentar… jadwal seminggu bisa ditaruh semua di lockscreen, cuma aku yang nggak tahu??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DeWgZJ3lkhd",
-   "views": 1865,
+   "views": 2005,
    "likes": 13,
    "replies": 1,
    "reposts": 2,
    "quotes": 0,
-   "shares": 0,
+   "shares": 1,
    "round": null,
    "variant": null
   },
@@ -1742,11 +1876,11 @@
    "text": "เดี๋ยวนะ… ตารางทั้งสัปดาห์ใส่ไว้บนหน้าจอล็อกได้ มีแค่เราที่ไม่รู้เหรอ??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeWgWOWFlxP",
-   "views": 3336,
-   "likes": 26,
+   "views": 3760,
+   "likes": 27,
    "replies": 1,
-   "reposts": 19,
-   "quotes": 0,
+   "reposts": 20,
+   "quotes": 1,
    "shares": 11,
    "round": null,
    "variant": null
@@ -1763,7 +1897,7 @@
    "text": "kejap… boleh letak semua jadual minggu ni kat lock screen, aku je ke yang tak tahu??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nur.aina_04/post/DeWZfR0mwcY",
-   "views": 2777,
+   "views": 2815,
    "likes": 39,
    "replies": 1,
    "reposts": 8,
@@ -1784,7 +1918,7 @@
    "text": "khoan… để hết lịch cả tuần lên màn hình khóa được mà chỉ có mình tui không biết hả??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DeVblWjG3Bk",
-   "views": 2157,
+   "views": 2163,
    "likes": 2,
    "replies": 1,
    "reposts": 1,
@@ -1795,22 +1929,7 @@
   }
  ],
  "ig_posts": [],
- "pending": [
-  {
-   "id": "18016986539955891",
-   "user": "bin.jecere",
-   "when": "10/12 16:25",
-   "text": "Ai hỏi mà trả lời ? Vô duyên vl",
-   "link": "https://www.threads.com/@bin.jecere/post/DeY6C1hoNxO",
-   "account": "ashgrey._02",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "post": "18190705291406114",
-   "post_text": "trời ơi… hiện được hết lịch lên màn hình",
-   "post_link": "https://www.threads.com/@ashgrey._02/post/DeY47zAHyel"
-  }
- ],
+ "pending": [],
  "skipped": [],
  "errors": []
 }
