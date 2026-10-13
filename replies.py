@@ -245,6 +245,22 @@ def main():
         print(f"삭제 {ok}/{len(rows)}")
     elif cmd == "delete":
         print(delete(account, sys.argv[3]))
+    elif cmd == "send" and account == "all":
+        # 목록 한 줄 = "계정 게시물id 본문파일". 우리 계정 답글이 이미 있으면 건너뛴다.
+        rows = [l.split() for l in Path(sys.argv[4]).read_text(encoding="utf-8").splitlines() if l.strip()]
+        ok = 0
+        for a, pid, f in rows:
+            try:
+                token, _ = creds(a)
+                if any(r.get("username") == a for r in paged(f"{pid}/replies", token, fields=FIELDS)):
+                    print(f"SKIP {a} {pid} 이미 우리 답글 있음", flush=True)
+                    continue
+                send(a, pid, Path(f).read_text(encoding="utf-8").strip())
+                ok += 1
+                print(f"SENT {a} {pid}", flush=True)
+            except Exception as e:
+                print(f"SEND-FAIL {a} {pid} {e}", flush=True)
+        print(f"발행 {ok}/{len(rows)}")
     elif cmd == "send":
         body = Path(sys.argv[4]).read_text(encoding="utf-8").strip()
         print(send(account, sys.argv[3], body))
