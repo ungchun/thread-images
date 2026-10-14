@@ -297,6 +297,12 @@ def main():
 
         body, _, inline = (ROOT / textfile).read_text(encoding="utf-8").partition("\n---\n")
         body, inline = body.strip(), inline.strip()
+        # 답글 블록 첫 줄 "delay: 60"이면 답글을 본문 60분 뒤(그 직전 회차)에 단다. 없으면 다음 회차
+        delay = REPLY_DELAY_MIN
+        if inline.startswith("delay:"):
+            first, _, inline = inline.partition("\n")
+            delay = int(first.split(":", 1)[1]) - 5   # cron 30분 주기라 5분 당겨 둬야 그 회차에 걸린다
+            inline = inline.strip()
         inline, rmedia, rspoiler = reply_block(inline, account)
 
         # 지난 회차에 본문만 올라가고 답글이 빠진 행. 답글만 다시 민다.
@@ -339,7 +345,7 @@ def main():
                                   spoiler_media="!" in done, rmedia=rmedia, rspoiler=rspoiler)
                 if defer:
                     done.add(f"reply-{name}:{post_id}")
-                    when = (now + timedelta(minutes=REPLY_DELAY_MIN)).isoformat()
+                    when = (now + timedelta(minutes=delay)).isoformat()
             except ReplyFailed as e:  # 본문은 올라갔다. 답글만 표시해 두고 다음 회차에 재시도
                 print(f"posted {name} {e.post_id} {account} {textfile}", flush=True)
                 print(f"REPLY-FAIL {account} {e.post_id}: {e} — 예약에 남김", flush=True)
