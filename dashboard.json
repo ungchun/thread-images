@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T05:52:23.720555+00:00",
+ "generated": "2026-10-15T06:55:23.280986+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -62,7 +62,7 @@
      "10": {
       "n": 1,
       "score": 1.94,
-      "median": 30096
+      "median": 30098
      },
      "11": {
       "n": 6,
@@ -99,12 +99,12 @@
       "flag": "VN",
       "posts": 2,
       "avg": 21228,
-      "max": 36313,
+      "max": 36314,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.71,
-        "median": 36313
+        "median": 36314
        },
        "19": {
         "n": 1,
@@ -120,13 +120,13 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 2,
-      "avg": 15539,
-      "max": 30096,
+      "avg": 15540,
+      "max": 30098,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.94,
-        "median": 30096
+        "median": 30098
        },
        "19": {
         "n": 1,
@@ -143,12 +143,12 @@
       "flag": "KR",
       "posts": 2,
       "avg": 6922,
-      "max": 11438,
+      "max": 11439,
       "hours": {
        "11": {
         "n": 1,
         "score": 1.65,
-        "median": 11438
+        "median": 11439
        },
        "19": {
         "n": 1,
@@ -456,13 +456,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 1,
-      "avg": 2306,
-      "max": 2306,
+      "avg": 2308,
+      "max": 2308,
       "hours": {
        "18": {
         "n": 1,
         "score": 1.0,
-        "median": 2306
+        "median": 2308
        }
       },
       "best_hour": 18,
@@ -875,8 +875,8 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 24,
-     "views": 745265,
-     "likes": 901,
+     "views": 848654,
+     "likes": 961,
      "median": 98,
      "score": 1.0,
      "sample": 17,
@@ -888,7 +888,7 @@
        "median": 21,
        "score": 0.89,
        "sample": 6,
-       "er_score": 1.45,
+       "er_score": 1.27,
        "er_sample": 6
       },
       "새API": {
@@ -908,9 +908,9 @@
      "kr": "야 아이폰 쓰는 사람들,\n잠금화면 이렇게 해봐.\n폰 켤 때마다 오늘 할 일이 보이니까\n까먹을 틈이 없다 ✨",
      "note": "미피밤 2장. 09/07 원문(한국 721·스페인 730) 재사용.",
      "posts": 2,
-     "views": 14394,
+     "views": 14399,
      "likes": 23,
-     "median": 7197,
+     "median": 7199,
      "score": 1.83,
      "sample": 2,
      "er_score": 0.44,
@@ -918,10 +918,10 @@
      "variants": {
       "새API": {
        "posts": 1,
-       "median": 1003,
+       "median": 1008,
        "score": 0.29,
        "sample": 1,
-       "er_score": 0.71,
+       "er_score": 0.72,
        "er_sample": 1
       }
      }
@@ -965,20 +965,20 @@
      "kr": "야, 아이폰 쓰는 사람들\n잠금화면에 일정 띄워둔 뒤로\n캘린더 앱을 아예 안 열게 됐어 🥹",
      "note": "헬로키티 2장. 독일 1,191·터키 1,020 구조에서 질문을 빼고 단정으로.",
      "posts": 2,
-     "views": 2171,
+     "views": 2179,
      "likes": 23,
-     "median": 1085,
+     "median": 1089,
      "score": 0.45,
      "sample": 2,
-     "er_score": 1.25,
+     "er_score": 1.26,
      "er_sample": 2,
      "variants": {
       "새API": {
        "posts": 1,
-       "median": 760,
+       "median": 766,
        "score": 0.22,
        "sample": 1,
-       "er_score": 0.94,
+       "er_score": 0.95,
        "er_sample": 1
       }
      }
@@ -988,7 +988,7 @@
     "hour": {
      "1": {
       "n": 1,
-      "score": 1.49,
+      "score": 1.47,
       "median": 139
      },
      "3": {
@@ -997,9 +997,9 @@
       "median": 2158
      },
      "4": {
-      "n": 3,
-      "score": 0.18,
-      "median": 8
+      "n": 4,
+      "score": 0.32,
+      "median": 9
      },
      "5": {
       "n": 3,
@@ -1013,7 +1013,7 @@
      },
      "7": {
       "n": 8,
-      "score": 0.43,
+      "score": 0.42,
       "median": 4868
      },
      "8": {
@@ -1023,52 +1023,52 @@
      },
      "9": {
       "n": 3,
-      "score": 0.9,
+      "score": 0.88,
       "median": 47
      },
      "10": {
       "n": 5,
-      "score": 0.64,
-      "median": 38
+      "score": 0.75,
+      "median": 39
      },
      "11": {
       "n": 9,
       "score": 0.51,
-      "median": 235
+      "median": 318
      },
      "12": {
       "n": 4,
-      "score": 0.41,
-      "median": 418
+      "score": 0.43,
+      "median": 429
      },
      "13": {
       "n": 3,
       "score": 1.0,
-      "median": 3802
+      "median": 3984
      },
      "14": {
       "n": 5,
       "score": 0.11,
-      "median": 393
+      "median": 407
      },
      "15": {
       "n": 3,
       "score": 1.75,
-      "median": 4968
+      "median": 5003
      },
      "16": {
       "n": 6,
-      "score": 0.28,
-      "median": 557
+      "score": 0.25,
+      "median": 566
      },
      "17": {
       "n": 7,
-      "score": 0.61,
+      "score": 0.6,
       "median": 251
      },
      "18": {
       "n": 9,
-      "score": 0.7,
+      "score": 0.69,
       "median": 2831
      },
      "19": {
@@ -1099,14 +1099,14 @@
       "median": 3562
      },
      "목": {
-      "n": 11,
-      "score": 0.11,
-      "median": 47
+      "n": 12,
+      "score": 0.28,
+      "median": 43
      },
      "금": {
       "n": 9,
       "score": 0.71,
-      "median": 3500
+      "median": 3507
      },
      "일": {
       "n": 4,
@@ -1116,7 +1116,7 @@
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 93,
+      "n": 94,
       "score": 0.52,
       "median": 766
      }
@@ -1125,53 +1125,53 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 12,
-      "avg": 66721,
-      "max": 698834,
+      "avg": 75356,
+      "max": 802180,
       "hours": {
        "7": {
         "n": 2,
         "score": 0.04,
-        "median": 2776
+        "median": 2783
        },
        "11": {
         "n": 1,
-        "score": 0.27,
-        "median": 18156
+        "score": 0.24,
+        "median": 18168
        },
        "13": {
         "n": 1,
-        "score": 0.06,
-        "median": 3802
+        "score": 0.05,
+        "median": 3984
        },
        "14": {
         "n": 1,
         "score": 0.01,
-        "median": 760
+        "median": 766
        },
        "15": {
         "n": 1,
-        "score": 10.47,
-        "median": 698834
+        "score": 10.65,
+        "median": 802180
        },
        "16": {
         "n": 1,
         "score": 0.01,
-        "median": 535
+        "median": 553
        },
        "18": {
         "n": 1,
-        "score": 0.07,
-        "median": 4455
+        "score": 0.06,
+        "median": 4471
        },
        "19": {
         "n": 3,
-        "score": 0.34,
-        "median": 22919
+        "score": 0.3,
+        "median": 22927
        },
        "20": {
         "n": 1,
         "score": 0.03,
-        "median": 2145
+        "median": 2148
        }
       },
       "best_hour": 15,
@@ -1182,8 +1182,8 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 11,
-      "avg": 13172,
-      "max": 62154,
+      "avg": 13424,
+      "max": 62157,
       "hours": {
        "7": {
         "n": 2,
@@ -1192,18 +1192,18 @@
        },
        "12": {
         "n": 1,
-        "score": 4.72,
-        "median": 62154
+        "score": 4.63,
+        "median": 62157
        },
        "13": {
         "n": 1,
-        "score": 4.29,
-        "median": 56456
+        "score": 4.41,
+        "median": 59221
        },
        "14": {
         "n": 1,
         "score": 0.11,
-        "median": 1411
+        "median": 1413
        },
        "16": {
         "n": 1,
@@ -1218,7 +1218,7 @@
        "19": {
         "n": 2,
         "score": 0.12,
-        "median": 1575
+        "median": 1576
        }
       },
       "best_hour": 12,
@@ -1229,33 +1229,33 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 10,
-      "avg": 9604,
-      "max": 45932,
+      "avg": 9610,
+      "max": 45933,
       "hours": {
        "7": {
         "n": 2,
         "score": 0.94,
-        "median": 9048
+        "median": 9052
        },
        "8": {
         "n": 2,
         "score": 0.47,
-        "median": 4524
+        "median": 4525
        },
        "9": {
         "n": 1,
         "score": 0.0,
-        "median": 24
+        "median": 36
        },
        "11": {
         "n": 1,
         "score": 4.78,
-        "median": 45932
+        "median": 45933
        },
        "15": {
         "n": 1,
         "score": 0.52,
-        "median": 4968
+        "median": 5003
        },
        "16": {
         "n": 1,
@@ -1298,13 +1298,13 @@
      "beatriz03._a": {
       "flag": "ES",
       "posts": 5,
-      "avg": 1917,
+      "avg": 1918,
       "max": 8820,
       "hours": {
        "4": {
         "n": 1,
-        "score": 0.0,
-        "median": 6
+        "score": 0.01,
+        "median": 10
        },
        "7": {
         "n": 1,
@@ -1335,13 +1335,13 @@
      "haru._81a": {
       "flag": "JP",
       "posts": 3,
-      "avg": 1732,
+      "avg": 1734,
       "max": 3118,
       "hours": {
        "12": {
         "n": 1,
-        "score": 0.06,
-        "median": 111
+        "score": 0.07,
+        "median": 117
        },
        "17": {
         "n": 2,
@@ -1357,18 +1357,18 @@
      "nur.aina_04": {
       "flag": "MY",
       "posts": 8,
-      "avg": 1721,
+      "avg": 1723,
       "max": 4852,
       "hours": {
        "8": {
         "n": 2,
-        "score": 1.83,
+        "score": 1.82,
         "median": 3142
        },
        "14": {
         "n": 1,
-        "score": 0.23,
-        "median": 393
+        "score": 0.24,
+        "median": 407
        },
        "16": {
         "n": 1,
@@ -1436,33 +1436,33 @@
      "ac_dd91": {
       "flag": "KR",
       "posts": 5,
-      "avg": 527,
-      "max": 856,
+      "avg": 532,
+      "max": 859,
       "hours": {
        "9": {
         "n": 1,
-        "score": 1.26,
+        "score": 1.25,
         "median": 666
        },
        "12": {
         "n": 1,
-        "score": 0.41,
-        "median": 217
+        "score": 0.45,
+        "median": 239
        },
        "16": {
         "n": 1,
-        "score": 1.1,
+        "score": 1.09,
         "median": 579
        },
        "17": {
         "n": 1,
-        "score": 0.61,
+        "score": 0.6,
         "median": 321
        },
        "18": {
         "n": 1,
-        "score": 1.62,
-        "median": 856
+        "score": 1.61,
+        "median": 859
        }
       },
       "best_hour": 18,
@@ -1479,7 +1479,7 @@
        "10": {
         "n": 1,
         "score": 0.08,
-        "median": 38
+        "median": 39
        },
        "17": {
         "n": 2,
@@ -1488,7 +1488,7 @@
        },
        "19": {
         "n": 1,
-        "score": 3.64,
+        "score": 3.63,
         "median": 1746
        }
       },
@@ -1506,7 +1506,7 @@
        "14": {
         "n": 1,
         "score": 0.11,
-        "median": 47
+        "median": 48
        },
        "19": {
         "n": 3,
@@ -1527,26 +1527,26 @@
      "kai_.03b": {
       "flag": "PH",
       "posts": 3,
-      "avg": 191,
-      "max": 251,
+      "avg": 219,
+      "max": 321,
       "hours": {
        "11": {
         "n": 1,
-        "score": 1.23,
-        "median": 235
+        "score": 1.46,
+        "median": 321
        },
        "16": {
         "n": 1,
-        "score": 0.46,
+        "score": 0.4,
         "median": 87
        },
        "17": {
         "n": 1,
-        "score": 1.31,
+        "score": 1.14,
         "median": 251
        }
       },
-      "best_hour": 17,
+      "best_hour": 11,
       "best_n": 1,
       "state": "active",
       "note": "필리핀. 9/7 합류, 표본 부족"
@@ -1571,18 +1571,18 @@
      "ivy_.k09": {
       "flag": "US",
       "posts": 2,
-      "avg": 93,
+      "avg": 94,
       "max": 139,
       "hours": {
        "1": {
         "n": 1,
-        "score": 1.49,
+        "score": 1.47,
         "median": 139
        },
        "20": {
         "n": 1,
-        "score": 0.51,
-        "median": 48
+        "score": 0.53,
+        "median": 50
        }
       },
       "best_hour": 1,
@@ -1615,22 +1615,22 @@
      "03ines.mar_": {
       "flag": "PT",
       "posts": 3,
-      "avg": 52,
+      "avg": 53,
       "max": 77,
       "hours": {
        "4": {
         "n": 1,
-        "score": 0.63,
-        "median": 33
+        "score": 0.67,
+        "median": 36
        },
        "9": {
         "n": 1,
-        "score": 0.9,
+        "score": 0.88,
         "median": 47
        },
        "10": {
         "n": 1,
-        "score": 1.47,
+        "score": 1.44,
         "median": 77
        }
       },
@@ -1702,18 +1702,23 @@
      },
      "o2ndot": {
       "flag": "FR",
-      "posts": 2,
-      "avg": 11,
+      "posts": 3,
+      "avg": 8,
       "max": 15,
       "hours": {
+       "4": {
+        "n": 1,
+        "score": 0.46,
+        "median": 4
+       },
        "10": {
         "n": 1,
-        "score": 0.64,
+        "score": 0.81,
         "median": 7
        },
        "11": {
         "n": 1,
-        "score": 1.36,
+        "score": 1.73,
         "median": 15
        }
       },
@@ -2382,16 +2387,16 @@
         0.55
        ],
        "kai_.03b": [
-        0.37
+        0.35
        ],
        "lune__v34": [
         1.0
        ],
        "pim.pm_02": [
-        199.67,
+        228.74,
         0.22,
         0.29,
-        6.55
+        6.54
        ]
       },
       "기존API": {
@@ -2438,7 +2443,7 @@
    "text": "Sa mga laging nag-aadjust ng sched sa jowa, gamitin niyo 'tong libreng shared calendar, wala nang gulo sa mga lakad",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@kai_.03b/post/Def8-Tjj4tF",
-   "views": 235,
+   "views": 321,
    "likes": 1,
    "replies": 4,
    "reposts": 0,
@@ -2480,7 +2485,7 @@
    "text": "couples still texting \"what are you doing that day?\"?? just share a calendar and you're done",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ivy_.k09/post/Def8z0LD60d",
-   "views": 48,
+   "views": 50,
    "likes": 1,
    "replies": 0,
    "reposts": 0,
@@ -2522,7 +2527,7 @@
    "text": "커플들 아직도 SNS로 \"그날 뭐해?\" 물어봄?? 캘린더 공유하면 끝인데",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/Def8pS8AQJi",
-   "views": 217,
+   "views": 239,
    "likes": 1,
    "replies": 0,
    "reposts": 0,
@@ -2543,7 +2548,7 @@
    "text": "恋人と予定合わせてる人、この無料の共有カレンダー使ってから約束ひとつもかぶらなくなった",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/Def8f7tk-tm",
-   "views": 111,
+   "views": 117,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2564,7 +2569,7 @@
    "text": "If you share plans with your family, get this, it's free and you can see everyone's schedule at a glance",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elle__jm/post/Def8aRgmctE",
-   "views": 47,
+   "views": 48,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2585,7 +2590,7 @@
    "text": "Quem partilha a agenda com a família, instalem isto: é grátis e veem os planos de todos num relance",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@03ines.mar_/post/Def8Ug6mjbK",
-   "views": 33,
+   "views": 36,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2627,7 +2632,7 @@
    "text": "Parejas que siempre andan cuadrando planes: con este calendario compartido gratis, cero líos con las citas",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@beatriz03._a/post/Def8Ff6iWT7",
-   "views": 6,
+   "views": 10,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2648,7 +2653,7 @@
    "text": "跟另一半喬行程的人，用了這個免費共享行事曆，行程再也沒打架過",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@shu.lin_03/post/Def79i4EreD",
-   "views": 38,
+   "views": 39,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2690,7 +2695,7 @@
    "text": "Si vous partagez votre agenda en famille, installez ça : c'est gratuit et vous voyez le planning de tout le monde d'un coup d'œil",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@o2ndot/post/Def7lPJko2v",
-   "views": 0,
+   "views": 4,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2711,7 +2716,7 @@
    "text": "Các cặp đôi vẫn còn nhắn tin hỏi \"hôm đó làm gì?\" à?? Chia sẻ lịch với nhau là xong mà",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Def7f7dH1tH",
-   "views": 24,
+   "views": 36,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2858,7 +2863,7 @@
    "text": "Kalendar Mac terus settle dengan app ni! iPhone, iPad, Apple Watch semua boleh sync free rupanya! 👏",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nur.aina_04/post/DedubeUEyp8",
-   "views": 393,
+   "views": 407,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -2879,7 +2884,7 @@
    "text": "แอปปฏิทินบน Mac จบที่ตัวนี้! iPhone, iPad, Apple Watch ซิงก์ฟรีได้หมดเลยนี่นา! 👏",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeduQHRjyLi",
-   "views": 3802,
+   "views": 3984,
    "likes": 25,
    "replies": 3,
    "reposts": 9,
@@ -2921,12 +2926,12 @@
    "text": "Sejak tampil di iPhone dan iPad, sekarang aku nggak pernah lupa tugas lagi",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DedtokkFCVy",
-   "views": 56456,
-   "likes": 715,
-   "replies": 35,
+   "views": 59221,
+   "likes": 719,
+   "replies": 37,
    "reposts": 86,
    "quotes": 2,
-   "shares": 69,
+   "shares": 70,
    "round": null,
    "variant": null
   },
@@ -3236,12 +3241,12 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DebZ47UD5dc",
-   "views": 698834,
-   "likes": 510,
-   "replies": 3,
-   "reposts": 256,
-   "quotes": 17,
-   "shares": 136,
+   "views": 802180,
+   "likes": 570,
+   "replies": 7,
+   "reposts": 288,
+   "quotes": 21,
+   "shares": 164,
    "round": "t15a",
    "variant": "새API"
   },
@@ -3257,7 +3262,7 @@
    "text": "này, mấy người dùng iPhone ơi\nphải thử cái này thật đấy!\ndùng rồi thì thật sự chẳng còn quên việc gì nữa💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DebZqcxEj8S",
-   "views": 4968,
+   "views": 5003,
    "likes": 29,
    "replies": 6,
    "reposts": 2,
@@ -3614,7 +3619,7 @@
    "text": "อ้าว… ขึ้นตารางทั้งหมดบนหน้าจอล็อกได้ แล้วทำไมไม่มีใครบอกกันเลย??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeY5GMQD_Xb",
-   "views": 535,
+   "views": 553,
    "likes": 4,
    "replies": 1,
    "reposts": 2,
@@ -3698,7 +3703,7 @@
    "text": "아니… 잠금화면에 일정 다 띄울 수 있는 거 왜 아무도 안 알려줬냐고??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ac_dd91/post/DeY4F9LAUaN",
-   "views": 856,
+   "views": 859,
    "likes": 4,
    "replies": 1,
    "reposts": 0,
@@ -3761,7 +3766,7 @@
    "text": "เดี๋ยวนะ… ตารางทั้งสัปดาห์ใส่ไว้บนหน้าจอล็อกได้ มีแค่เราที่ไม่รู้เหรอ??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeWgWOWFlxP",
-   "views": 4455,
+   "views": 4471,
    "likes": 27,
    "replies": 1,
    "reposts": 20,
@@ -3866,7 +3871,7 @@
    "text": "đứa bạn nhìn màn hình khóa của tui xong hỏi cách làm tận 3 lần",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DeQR_65Fg16",
-   "views": 6868,
+   "views": 6869,
    "likes": 110,
    "replies": 7,
    "reposts": 18,
@@ -3929,7 +3934,7 @@
    "text": "loh… kok nggak ada yang bilang kalau jadwal bisa ditaruh semua di lock screen??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DeLjsI2lMOg",
-   "views": 62154,
+   "views": 62157,
    "likes": 206,
    "replies": 7,
    "reposts": 8,
@@ -3950,7 +3955,7 @@
    "text": "เดี๋ยวนะ… ทำไมไม่มีใครบอกว่าเอาตารางทั้งหมดขึ้นหน้าจอล็อกได้??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeLjkKijxBP",
-   "views": 18156,
+   "views": 18168,
    "likes": 187,
    "replies": 3,
    "reposts": 103,
@@ -3971,7 +3976,7 @@
    "text": "ủa… sao không ai nói là có thể đưa nguyên lịch trình lên màn hình khóa vậy??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DeLjbvUn6pO",
-   "views": 45932,
+   "views": 45933,
    "likes": 514,
    "replies": 4,
    "reposts": 64,
@@ -4055,7 +4060,7 @@
    "text": "ใครใช้ iPhone อยู่\nแอปนี้ต้องลงเลยนะ!\nสิ่งที่ต้องทำขึ้นบนหน้าจอล็อก เลยไม่เคยลืมอีกเลย 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeF8fPjD6l5",
-   "views": 2052,
+   "views": 2060,
    "likes": 13,
    "replies": 1,
    "reposts": 1,
@@ -4076,7 +4081,7 @@
    "text": "mấy bạn dùng iPhone ơi\ncái này phải cài liền nha!\nviệc cần làm hiện trên màn hình khóa, hết quên luôn 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DeF8aAAn2hh",
-   "views": 14133,
+   "views": 14142,
    "likes": 101,
    "replies": 7,
    "reposts": 6,
@@ -4160,7 +4165,7 @@
    "text": "นี่ คนใช้ iPhone\nลองลงแอปนี้ดูนะ จริงๆ!\nตารางขึ้นบนหน้าจอล็อกเลย ตอนนี้ไม่ลืมอะไรแล้ว 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dd-Nd0ND_3J",
-   "views": 3500,
+   "views": 3507,
    "likes": 38,
    "replies": 1,
    "reposts": 20,
@@ -4265,7 +4270,7 @@
    "text": "eh, yang pakai iPhone\ncoba install ini sekali aja!\njadwal langsung muncul di lock screen,\nsekarang beneran nggak pernah lupa apa-apa lagi 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Dd3RzQOFKZr",
-   "views": 1411,
+   "views": 1413,
    "likes": 18,
    "replies": 3,
    "reposts": 0,
@@ -4286,7 +4291,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nลองลงแอปนี้ดูสักครั้งนะ!\nตารางนัดขึ้นบนหน้าจอล็อกเลย ตอนนี้ไม่ลืมอะไรอีกแล้วจริงๆ 💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dd3Ro_nj8yC",
-   "views": 760,
+   "views": 766,
    "likes": 5,
    "replies": 1,
    "reposts": 1,
@@ -4328,7 +4333,7 @@
    "text": "คนใช้ iPhone ลองตั้งหน้าจอล็อกแบบนี้ดูครับ\nเปิดเครื่องทีไรก็เห็นตารางวันนี้เลย\nเลยไม่มีโอกาสได้ลืม ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Ddq13OZFizJ",
-   "views": 1003,
+   "views": 1008,
    "likes": 5,
    "replies": 1,
    "reposts": 1,
@@ -4370,7 +4375,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdoQw6clsnv",
-   "views": 22919,
+   "views": 22927,
    "likes": 261,
    "replies": 3,
    "reposts": 91,
@@ -4559,8 +4564,8 @@
    "text": "Combo mạnh nhất để về đúng giờ khỏi phòng lab\n\nTrái: Google Scholar\nGiữa: Moonlight (bản iPad!)\nPhải: CorTex\n\nVới combo này, ngồi yên một chỗ là\ntìm paper → đọc → viết luôn được hết 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ashgrey._02/post/DdX9BoZmpI1",
-   "views": 36313,
-   "likes": 1019,
+   "views": 36314,
+   "likes": 1018,
    "replies": 18,
    "reposts": 192,
    "quotes": 1,
@@ -4580,7 +4585,7 @@
    "text": "Kombo paling ampuh biar bisa pulang tepat waktu dari lab\n\nKiri: Google Scholar\nTengah: Moonlight (versi iPad!)\nKanan: CorTex\n\nDengan kombo ini, duduk di tempat aja udah bisa\ncari paper → baca → langsung mulai nulis 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@rara.2k_/post/DdX5n-sHCHc",
-   "views": 30096,
+   "views": 30098,
    "likes": 1179,
    "replies": 52,
    "reposts": 159,
@@ -4622,7 +4627,7 @@
    "text": "연구실 칼퇴 최강 조합\n\n왼: 구글 스칼라\n가운데: 문라이트 (아이패드 버전!)\n오: Cortex\n\n이 조합이면 걍 앉은 자리에서\n논문 찾고, 읽고, 바로 논문 작성까지 바로 가능 🤤",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@ac_dd91/post/DdXvU9cDoTV",
-   "views": 11438,
+   "views": 11439,
    "likes": 98,
    "replies": 7,
    "reposts": 29,
@@ -4706,7 +4711,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdWPVLVm6D7",
-   "views": 42496,
+   "views": 42500,
    "likes": 474,
    "replies": 3,
    "reposts": 197,
@@ -4769,7 +4774,7 @@
    "text": "แอปจัดการตารางที่ซิงก์ครบทั้ง iPhone, iPad, MacBook และ Watch?\nใช้ตัวนี้เลยครับ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DdTxQfMFbrg",
-   "views": 2145,
+   "views": 2148,
    "likes": 33,
    "replies": 1,
    "reposts": 13,
@@ -4811,7 +4816,7 @@
    "text": "Aplikasi kalender yang nyambung ke iPhone, iPad, MacBook, sama Watch?\nPakai ini aja",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/DdTt4BNG2al",
-   "views": 1330,
+   "views": 1331,
    "likes": 16,
    "replies": 1,
    "reposts": 1,
@@ -4874,7 +4879,7 @@
    "text": "ผมเคยโดนอาจารย์ดุเพราะใช้เว็บนี้ในแล็บครับ\n\nเขียน LaTeX เสร็จก็เห็นผล compile แทบจะทันที\ncompile เร็วกว่า Overleaf มาก\nแก้กี่รอบก็ไม่ต้องนั่งรอจนหงุดหงิด\nตอนนั้นอาจารย์ยังบอกว่า \"เขียนเปเปอร์ก็ใช้ Overleaf ไปสิ……\"\n\nตอนนี้อาจารย์เองก็ใช้อยู่ครับ",
    "kind": "VIDEO",
    "link": "https://www.threads.com/@pim.pm_02/post/DdTjxOziQAJ",
-   "views": 2306,
+   "views": 2308,
    "likes": 21,
    "replies": 1,
    "reposts": 15,
@@ -4971,11 +4976,11 @@
  "ig_posts": [],
  "pending": [
   {
-   "id": "18312787639304190",
-   "user": "ruhaisa_binti_abdulraning",
-   "when": "10/15 08:07",
-   "text": "เสียค่าบริการไหม",
-   "link": "https://www.threads.com/@ruhaisa_binti_abdulraning/post/DefvbfWHXiu",
+   "id": "18224395594337518",
+   "user": "gg_kenika",
+   "when": "10/15 13:02",
+   "text": "ใช้ยังไงง่า",
+   "link": "https://www.threads.com/@gg_kenika/post/DegRPCLE6g1",
    "account": "pim.pm_02",
    "project": "trace",
    "country": "TH",
@@ -4985,11 +4990,11 @@
    "post_link": "https://www.threads.com/@pim.pm_02/post/DebZ47UD5dc"
   },
   {
-   "id": "17871309522641426",
-   "user": "leoeing",
-   "when": "10/15 10:27",
-   "text": "พื้นหลังน่ารักกดด",
-   "link": "https://www.threads.com/@leoeing/post/Def_eLrH6yK",
+   "id": "18017785448955092",
+   "user": "kimnune_",
+   "when": "10/15 13:13",
+   "text": "เสียเงินไหมึะ",
+   "link": "https://www.threads.com/@kimnune_/post/DegSccrH3s5",
    "account": "pim.pm_02",
    "project": "trace",
    "country": "TH",
@@ -4997,20 +5002,6 @@
    "post": "18091460873199917",
    "post_text": "นี่ คนที่ใช้ iPhone",
    "post_link": "https://www.threads.com/@pim.pm_02/post/DebZ47UD5dc"
-  },
-  {
-   "id": "17992212261105617",
-   "user": "dumpby__me",
-   "when": "10/15 10:30",
-   "text": "😭 soalnya aku ada apps sejenis dan cuma tampil di layar kalau premium juga😭",
-   "link": "https://www.threads.com/@dumpby__me/post/Def_xWTjxSX",
-   "account": "rara.2k_",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "post": "17987384595065736",
-   "post_text": "Sejak tampil di iPhone dan iPad, sekaran",
-   "post_link": "https://www.threads.com/@rara.2k_/post/DedtokkFCVy"
   }
  ],
  "skipped": [
