@@ -1,4 +1,5 @@
 {
  "_설명": "대시보드를 같이 보는 사람. 키는 GitHub 아이디. actions가 true인 사람의 계정만 Secrets로 Actions가 발행·수집한다. 나머지는 각자 로컬에서 수집해 dashboard_<아이디>.json을 푸시한다. /setup 스킬이 추가한다.",
- "ungchun": {"name": "성훈", "actions": true}
+ "ungchun": {"name": "성훈", "actions": true},
+ "seongji-code": {"name": "성지"}
 }
