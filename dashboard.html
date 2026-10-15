@@ -119,10 +119,14 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
 .err{background:#2a1618;border:1px solid #4a2226;border-radius:8px;padding:10px 14px;
  margin-bottom:16px;font-size:13px}
 
+.pg{display:flex;gap:4px;margin-right:4px}
+.pg a{font-size:16px;font-weight:600;color:var(--dim);text-decoration:none;padding:2px 10px;border-radius:7px}
+.pg a:hover{color:var(--fg)}
+.pg a.on{color:var(--fg);background:var(--line)}
 </style>
 
 <header>
-  <h1>대시보드</h1>
+  <div class="pg"><a href="dashboard.html" class="on">우리 계정</a><a href="watch.html">경쟁 계정</a></div>
   <span class="stamp" id="stamp"></span>
   <button id="refresh">갱신</button>
   <span class="stamp" id="rmsg"></span>
