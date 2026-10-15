@@ -12,6 +12,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from report import actions_owner, owner
 from run import creds
 
 ROOT = Path(__file__).resolve().parent
@@ -74,12 +75,16 @@ def check_ig(account):
     return "정상", d["id"]
 
 
+def mine():
+    """Actions 주인 계정만. 팀원 계정 토큰은 Secrets에 없어 매번 '설정없음'으로 걸린다."""
+    me = actions_owner()
+    return [d for d in sorted((ROOT / "accounts").iterdir()) if d.is_dir() and owner(d.name) == me]
+
+
 def main():
     if "--ig" in sys.argv:
         bad = 0
-        for d in sorted((ROOT / "accounts").iterdir()):
-            if not d.is_dir():
-                continue
+        for d in mine():
             state, detail = check_ig(d.name)
             if state not in ("정상", "미설정"):
                 bad += 1
@@ -89,9 +94,7 @@ def main():
     if "--posted" in sys.argv:
         since = sys.argv[sys.argv.index("--posted") + 1]
         total = 0
-        for d in sorted((ROOT / "accounts").iterdir()):
-            if not d.is_dir():
-                continue
+        for d in mine():
             try:
                 rows = posted(d.name, since)
             except Exception as e:
@@ -103,9 +106,7 @@ def main():
         print(f"\n총 {total}건")
         return
     bad = 0
-    for d in sorted((ROOT / "accounts").iterdir()):
-        if not d.is_dir():
-            continue
+    for d in mine():
         state, detail = check(d.name)
         if state != "정상":
             bad += 1

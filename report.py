@@ -51,10 +51,42 @@ def flag(code):
     return "".join(chr(ord(c) + 0x1F1A5) for c in code.upper())
 
 
+def _meta_parts(account):
+    """accounts/<계정>/meta.txt = "<국가코드> <시간대> [소유자] [프로젝트]"."""
+    f = ROOT / "accounts" / account / "meta.txt"
+    return f.read_text(encoding="utf-8").split() if f.exists() else []
+
+
+def team():
+    """team.json = {GitHub 아이디: {name, actions}}. actions가 true인 사람만 Secrets로 Actions가 돈다."""
+    return {k: v for k, v in json.loads((ROOT / "team.json").read_text(encoding="utf-8")).items()
+            if not k.startswith("_")}
+
+
+def actions_owner():
+    return next(k for k, v in team().items() if v.get("actions"))
+
+
+def owner(account):
+    """계정 소유자. meta.txt 3번째 토큰, 없으면 Actions 주인(팀 합류 전에 만든 계정들)."""
+    parts = _meta_parts(account)
+    return parts[2] if len(parts) > 2 else actions_owner()
+
+
+def account_project(account):
+    """팀원 계정이 홍보하는 프로젝트. meta.txt 4번째 토큰. 본문 대조로 못 찾을 때 쓴다."""
+    parts = _meta_parts(account)
+    return parts[3] if len(parts) > 3 else "trace"
+
+
+def data_file(who):
+    """소유자별 대시보드 데이터. Actions 주인은 기존 dashboard.json을 그대로 쓴다."""
+    return ROOT / ("dashboard.json" if team()[who].get("actions") else f"dashboard_{who}.json")
+
+
 def meta(account):
     """accounts/<계정>/meta.txt = "<국가코드> <시간대>". 시각은 현지 기준으로 보여준다."""
-    f = ROOT / "accounts" / account / "meta.txt"
-    parts = f.read_text(encoding="utf-8").split() if f.exists() else []
+    parts = _meta_parts(account)
     code = parts[0] if parts else "??"
     try:
         tz = ZoneInfo(parts[1]) if len(parts) > 1 else KST
@@ -236,8 +268,9 @@ def main():
 
     since = datetime.now(timezone.utc) - timedelta(days=window)
     rows = []
+    me = actions_owner()
     for d in sorted((ROOT / "accounts").iterdir()):
-        if not d.is_dir():
+        if not d.is_dir() or owner(d.name) != me:   # 팀원 계정 토큰은 Secrets에 없다
             continue
         try:
             rows += collect(d.name, since)

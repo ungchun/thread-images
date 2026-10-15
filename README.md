@@ -19,6 +19,12 @@ cd thread-images && claude
 토큰은 받을 필요 없다. 발행은 Actions가 Secrets로 하므로 레포 협업자 권한만 있으면 된다.
 `gh auth login`만 해두면 워크플로를 부를 수 있다.
 
+### 팀원: 내 계정을 대시보드에 붙이기
+
+클론한 폴더에서 `/setup`을 부르면 한 단계씩 진행한다. 팀원 계정은 발행하지 않고 대시보드에만 보인다.
+토큰은 각자 로컬 `accounts/<계정>/env.sh`(커밋 안 됨)에 두고, 갱신 버튼이 자기 계정만 수집해
+`dashboard_<GitHub아이디>.json`을 푸시한다. 대시보드는 `team.json`에 적힌 사람별 파일을 합쳐 보여준다.
+
 ## 구조
 
 ```
@@ -28,7 +34,8 @@ schedule.txt        예약 목록 (탭 구분: UTC시각·계정·본문·스레
 texts/              발행 전 본문. `---` 아래가 답글
 images/             발행 전 미디어
 done/, done/images/ 발행 끝난 것
-accounts/<계정>/    meta.txt(국가 타임존), reply.txt(트레이스 고정 답글)
+accounts/<계정>/    meta.txt(국가 타임존 [소유자] [프로젝트]), reply.txt(트레이스 고정 답글)
+team.json           대시보드를 같이 보는 사람. 소유자 생략 = actions 주인
 research/           나라별 포맷 조사, 시장 조사, 주말 전수조사 보고서
 ```
 

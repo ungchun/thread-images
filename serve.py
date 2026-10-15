@@ -4,9 +4,11 @@
 두 가지를 한다.
   1. 캐시를 완전히 막는다 — 기본 http.server는 Last-Modified/ETag로 304를 주고,
      그러면 HTML을 고쳐도 브라우저가 옛 화면을 계속 쓴다.
-  2. /refresh 로 갱신 워크플로를 부른다. GitHub 토큰이 필요한 일이라
+  2. /refresh 로 갱신한다. GitHub 토큰이 필요한 일이라
      브라우저가 직접 못 한다(HTML에 토큰을 넣으면 파일 여는 누구나 레포에 쓸 수 있다).
-     여기서 gh를 대신 실행한다.
+     여기서 gh·git을 대신 실행한다.
+     - Actions 주인(team.json actions): 갱신 워크플로를 부른다. 토큰은 Secrets에 있다.
+     - 팀원: 로컬 토큰(accounts/*/env.sh)으로 dashboard.py를 돌려 자기 파일만 푸시한다.
 
   python3 serve.py        # http://localhost:8899/dashboard.html
 """
@@ -26,9 +28,35 @@ _state = {"running": False, "started": 0.0, "error": ""}
 _lock = threading.Lock()
 
 
+def _local(me):
+    """팀원 갱신. 자기 계정만 수집해 dashboard_<아이디>.json 하나만 커밋·푸시한다."""
+    from report import data_file
+    subprocess.run(["python3", "dashboard.py", "--owner", me], cwd=ROOT, check=True,
+                   capture_output=True, timeout=900)
+    f = data_file(me).name
+    subprocess.run(["git", "add", "--", f], cwd=ROOT, check=True, timeout=30)
+    subprocess.run(["git", "commit", "-m", f"dashboard {me}", "--", f], cwd=ROOT,
+                   capture_output=True, timeout=30)   # 바뀐 게 없으면 실패해도 된다
+    for _ in range(3):   # 다른 사람 푸시와 겹치면 받아서 다시. 각자 자기 파일만 쓰니 충돌은 없다
+        subprocess.run(["git", "pull", "--rebase", "--autostash", "--quiet"], cwd=ROOT,
+                       capture_output=True, timeout=60)
+        if subprocess.run(["git", "push", "--quiet"], cwd=ROOT,
+                          capture_output=True, timeout=60).returncode == 0:
+            return
+        time.sleep(3)
+    raise RuntimeError("푸시 실패 — 터미널에서 git status를 확인")
+
+
 def _run():
-    """워크플로를 부르고 끝날 때까지 지켜본다. 상태는 /refresh?status로 읽는다."""
+    """갱신하고 끝날 때까지 지켜본다. 상태는 /refresh?status로 읽는다."""
     try:
+        from report import team
+        me = subprocess.run(["gh", "api", "user", "-q", ".login"], capture_output=True,
+                            text=True, timeout=30).stdout.strip()
+        if me not in team():
+            raise RuntimeError(f"team.json에 {me or 'gh 로그인'}이 없다 — /setup을 먼저")
+        if not team()[me].get("actions"):
+            return _local(me)
         subprocess.run(["gh", "workflow", "run", "dashboard.yml", "-R", REPO],
                        check=True, capture_output=True, timeout=30)
         time.sleep(8)   # 실행이 목록에 뜨기까지

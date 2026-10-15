@@ -23,7 +23,8 @@ schedule.txt          예약 목록 (탭 구분)
 texts/                발행 전 본문. --- 아래가 답글
 images/               발행 전 미디어
 done/, done/images/   발행 끝난 본문·미디어
-accounts/<계정>/      meta.txt(국가 타임존), reply.txt(트레이스 고정 답글)
+accounts/<계정>/      meta.txt(국가 타임존 [소유자] [프로젝트]), reply.txt(트레이스 고정 답글)
+                     소유자가 Actions 주인이 아닌 계정은 팀원 계정 — 예약 대상이 아니다(토큰이 Secrets에 없다)
 run.py                러너. Actions가 부른다
 check.py              전 계정 토큰 실검사
 ```

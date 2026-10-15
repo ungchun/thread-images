@@ -10,7 +10,10 @@
 번역은 하지 않는다 - Actions 안에서 LLM을 못 부른다. 원문만 넘기고
 번역이 필요하면 사람이 threads-reply 스킬로 처리한다.
 
-  python3 dashboard.py [--days 30] [--replies-days 14]
+  python3 dashboard.py [--days 30] [--replies-days 14] [--owner <GitHub 아이디>]
+
+--owner 계정만 모아 그 사람 파일(report.data_file)에 쓴다. 기본은 Actions 주인 → dashboard.json.
+팀원은 serve.py 갱신 버튼이 로컬 토큰(env.sh)으로 이걸 돌리고 자기 파일만 푸시한다.
 """
 import json
 import sys
@@ -23,12 +26,11 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from replies import unanswered
-from report import flag, insights, meta
+from report import account_project, actions_owner, data_file, flag, insights, meta, owner
 from run import creds, parse
 from replies import api, paged, FIELDS
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "dashboard.json"
 METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
 
 
@@ -359,8 +361,9 @@ def text_dirs(proj):
 _body_proj = None
 
 
-def project_of_text(text):
-    """게시물 본문을 texts/·done/ 파일과 대조해 프로젝트를 찾는다. 못 찾으면 trace."""
+def project_of_text(text, account):
+    """게시물 본문을 texts/·done/ 파일과 대조해 프로젝트를 찾는다.
+    못 찾으면 계정의 프로젝트(meta.txt) — 팀원 글은 이 레포 texts/를 거치지 않는다."""
     global _body_proj
     if _body_proj is None:
         _body_proj = {}
@@ -369,7 +372,7 @@ def project_of_text(text):
                 for t in d.rglob("*.txt"):
                     body = t.read_text(encoding="utf-8").partition("\n---\n")[0]
                     _body_proj[_norm(body)] = project_of_file(t.relative_to(ROOT))
-    return _body_proj.get(_norm(text or ""), "trace")
+    return _body_proj.get(_norm(text or "")) or account_project(account)
 
 
 def rounds_file(proj):
@@ -377,15 +380,15 @@ def rounds_file(proj):
     return ROOT / ("rounds.json" if proj == "trace" else f"rounds_{proj}.json")
 
 
-def accounts():
+def accounts(who):
     # 영구정지(banned)는 토큰이 없어 수집하면 매번 오류만 난다.
     st = account_status()
     return sorted(d.name for d in (ROOT / "accounts").iterdir()
-                  if d.is_dir() and st.get(d.name, {}).get("state") != "banned")
+                  if d.is_dir() and owner(d.name) == who and st.get(d.name, {}).get("state") != "banned")
 
 
-def scheduled():
-    """아직 안 나간 예약. 시각은 계정 현지로도 같이 준다."""
+def scheduled(accs):
+    """아직 안 나간 예약 중 accs 계정 것. 시각은 계정 현지로도 같이 준다."""
     f = ROOT / "schedule.txt"
     if not f.exists():
         return []
@@ -394,6 +397,8 @@ def scheduled():
         if not line.strip() or line.startswith("#"):
             continue
         when, acc, textfile, tw, ig, done = parse(line)
+        if acc not in accs:
+            continue
         code, tz = meta(acc)
         utc = datetime.fromisoformat(when)
         body = ""
@@ -432,7 +437,7 @@ def posts_of(account, days):
             "link": p.get("permalink", ""),
             **{k: m.get(k, 0) for k in METRICS},
         })
-        out[-1]["project"] = project_of_text(out[-1]["text"])
+        out[-1]["project"] = project_of_text(out[-1]["text"], account)
     return out
 
 
@@ -487,7 +492,7 @@ def ig_posts_of(account, days):
             "replies": m.get("comments", 0), "saved": m.get("saved", 0),
             "shares": m.get("shares", 0),
         })
-        out[-1]["project"] = project_of_text(out[-1]["text"])
+        out[-1]["project"] = project_of_text(out[-1]["text"], account)
     return out
 
 
@@ -511,8 +516,12 @@ def main():
     rdays = (int(sys.argv[sys.argv.index("--replies-days") + 1])
              if "--replies-days" in sys.argv else 14)
 
+    who = sys.argv[sys.argv.index("--owner") + 1] if "--owner" in sys.argv else actions_owner()
+    out = data_file(who)   # team.json에 없는 아이디면 수집 전에 여기서 멈춘다
+    accs = accounts(who)
+
     all_posts, all_ig, all_pending, all_skipped, errors = [], [], [], [], []
-    for a in accounts():
+    for a in accs:
         try:
             all_ig += ig_posts_of(a, days)
         except Exception as e:
@@ -557,15 +566,15 @@ def main():
         "projects": PROJECTS,
         "experiments": experiments,
         "window_days": days,
-        "scheduled": scheduled(),
+        "scheduled": scheduled(accs),
         "posts": sorted(all_posts, key=lambda r: r["utc"], reverse=True),
         "ig_posts": sorted(all_ig, key=lambda r: r["utc"], reverse=True),
         "pending": sorted(all_pending, key=lambda r: r["when"]),
         "skipped": sorted(all_skipped, key=lambda r: r["when"]),
         "errors": errors,
     }
-    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"예약 {len(data['scheduled'])} · 게시물 {len(data['posts'])} · 인스타 {len(data['ig_posts'])} · "
+    out.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{out.name} · 계정 {len(accs)} · 예약 {len(data['scheduled'])} · 게시물 {len(data['posts'])} · 인스타 {len(data['ig_posts'])} · "
           f"미답변 {len(data['pending'])} · 답안함 {len(data['skipped'])} · 오류 {len(errors)}")
     for e in errors:
         print(" ", e)
