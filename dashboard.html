@@ -1,8 +1,19 @@
 <!doctype html>
 <meta charset="utf-8">
 <title>대시보드</title>
+<script>try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch{}</script>
 <style>
-:root{--bg:#0f1115;--card:#171a21;--line:#252a34;--dim:#8b93a1;--fg:#e8eaed;--hot:#4ade80}
+:root{--bg:#0f1115;--card:#171a21;--line:#252a34;--dim:#8b93a1;--fg:#e8eaed;--hot:#4ade80;--ink:#0f1115;--tipbg:#000;--well:#12151b;--ok-bg:#12301f;--ok:#5fd08a;--top:#151d19;--empty:#1b1f27;--hover:#1c2028;--barc:#1e3a2a;--err-bg:#2a1618;--err-line:#4a2226;--bad-bg:#2e1519;--bad:#e06c78;--bad2:#c46;--warn-bg:#2e2a14;--warn:#d6bd57;--edge:#2f6b47;--soft:#cbd3c9;color-scheme:dark}
+:root[data-theme="light"]{--bg:#f6f7f9;--card:#ffffff;--line:#e2e5ea;--dim:#6b7280;--fg:#1a1d23;--hot:#16a34a;--ink:#0f1115;--tipbg:#ffffff;--well:#f1f3f6;--ok-bg:#dcf5e5;--ok:#15803d;--top:#eefaf2;--empty:#eceff3;--hover:#f1f3f6;--barc:#d3f0dd;--err-bg:#fdecee;--err-line:#f5c2c8;--bad-bg:#fde4e7;--bad:#c2394a;--bad2:#c2394a;--warn-bg:#fbf3d5;--warn:#8a6d0b;--edge:#86d3a3;--soft:#3f4a3f;color-scheme:light}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f6f7f9;--card:#ffffff;--line:#e2e5ea;--dim:#6b7280;--fg:#1a1d23;--hot:#16a34a;--ink:#0f1115;--tipbg:#ffffff;--well:#f1f3f6;--ok-bg:#dcf5e5;--ok:#15803d;--top:#eefaf2;--empty:#eceff3;--hover:#f1f3f6;--barc:#d3f0dd;--err-bg:#fdecee;--err-line:#f5c2c8;--bad-bg:#fde4e7;--bad:#c2394a;--bad2:#c2394a;--warn-bg:#fbf3d5;--warn:#8a6d0b;--edge:#86d3a3;--soft:#3f4a3f;color-scheme:light}}
+.theme{display:inline-flex;margin-left:auto;background:var(--line);border-radius:999px;padding:2px}
+.theme button{background:none;border:0;color:var(--dim);padding:4px 10px;border-radius:999px;cursor:pointer;font-size:12px;font-family:inherit}
+.theme button.on{background:var(--card);color:var(--fg)}
+.tip{box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.pop{position:fixed;z-index:10;display:none;background:#fff;border:1px solid var(--line);border-radius:12px;
+ overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.pop.on{display:block}
+.pop iframe{width:100%;height:100%;border:0;display:block}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);
  font:14px/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}
@@ -31,8 +42,8 @@ table{width:100%;border-collapse:collapse}
 th{text-align:left;font-weight:500;color:var(--dim);font-size:12px;
  padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
 td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
-tr:hover td{background:#1c2028}
-.num{text-align:right;font-variant-numeric:tabular-nums}
+tr:hover td{background:var(--hover)}
+.num{text-align:right;font-variant-numeric:tabular-nums;font-size:13px}
 .dim{color:var(--dim)}
 .txt{white-space:pre-wrap;font-size:13px;line-height:1.5}
 a{color:inherit}
@@ -40,44 +51,89 @@ a{color:inherit}
 .grid table{width:auto;border-collapse:separate;border-spacing:3px}
 .grid th{padding:4px 6px;font-size:11px}
 .grid td{padding:0;border:0}
-.cell{width:34px;height:30px;border-radius:5px;background:#1b1f27;display:block;
+.cell{width:34px;height:30px;border-radius:5px;background:var(--empty);display:block;
  position:relative;cursor:pointer;border:1px solid transparent}
 .cell:hover{border-color:var(--hot)}
 .cell span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
- font-size:10px;color:#0f1115;font-weight:600}
-.tip{position:fixed;background:#000;border:1px solid var(--line);border-radius:8px;
+ font-size:10px;color:var(--ink);font-weight:600}
+.tip{position:fixed;background:var(--tipbg);border:1px solid var(--line);border-radius:8px;
  padding:10px 12px;font-size:12px;max-width:340px;pointer-events:none;z-index:9;
  display:none;white-space:pre-wrap;line-height:1.55}
 .legend{color:var(--dim);font-size:11px;margin-top:12px}
 .acct{font-weight:500;white-space:nowrap}
 .bar{position:relative}
-.bar i{position:absolute;left:0;top:3px;bottom:3px;background:#1e3a2a;border-radius:3px;z-index:0}
+.bar i{position:absolute;left:0;top:3px;bottom:3px;background:var(--barc);border-radius:3px;z-index:0}
 .bar b{position:relative;z-index:1;font-weight:500}
-.big{font-size:15px;font-weight:600}
+.big{font-size:14px;font-weight:600}
 .tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
 .tools select,.tools input{background:var(--card);color:var(--fg);border:1px solid var(--line);
  border-radius:7px;padding:6px 10px;font-size:13px;font-family:inherit}
 .tools .sp{flex:1}
+.tools .lbl{color:var(--dim);font-size:12px;margin-left:6px}
+.chips{display:inline-flex;gap:4px;flex-wrap:wrap}
+.chips button{background:var(--line);border:0;color:var(--dim);padding:5px 11px;border-radius:999px;
+ cursor:pointer;font-size:12px;font-family:inherit}
+.chips button.on{background:var(--fg);color:var(--bg)}
+.grid > table{margin-top:8px}
+.grid th.cty{text-align:left;vertical-align:top;padding-top:8px;white-space:nowrap;color:var(--fg)}
+.grid tr.gap td{height:8px}
+.cell.multi::after{content:"";position:absolute;top:3px;right:3px;width:4px;height:4px;border-radius:50%;background:var(--ink)}
+table.daily tr.total td{font-weight:600;border-bottom:2px solid var(--line)}
+table.daily td{padding:7px 12px}
+table.daily th{padding:8px 12px}
+table.daily td.num{font-size:12.5px}
+table.daily tr.day td.num{font-size:13px}
+table.daily tr.acc td.num{font-size:12px}
+table.daily .big{font-size:13px}
+table.daily tr.day td{background:var(--card);font-weight:600;border-top:1px solid var(--line);cursor:pointer}
+table.daily tr.day:hover td{background:var(--hover)}
+table.daily tr.acc td{font-size:13px}
+table.daily .ind{padding-left:18px;white-space:nowrap}
+table.daily .fold{color:var(--dim);display:inline-block;width:12px}
+table.daily .clip{width:170px;max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+table.daily tr.day.open td{background:var(--barc)}
+table.daily tr.day.focus td{box-shadow:inset 0 1px 0 var(--fg),inset 0 -1px 0 var(--fg)}
+table.daily tr.day.focus td:first-child{box-shadow:inset 1px 1px 0 var(--fg),inset 0 -1px 0 var(--fg)}
+table.daily tr.day.focus td:last-child{box-shadow:inset -1px 1px 0 var(--fg),inset 0 -1px 0 var(--fg)}
+.split{display:flex;gap:24px;align-items:flex-start}
+.split-l{flex:0 1 auto;min-width:0;overflow-x:auto}
+.cal{flex:0 0 300px;position:sticky;top:12px;background:var(--card);border:1px solid var(--line);
+ border-radius:10px;padding:12px 14px}
+.cal-key{font-size:11px;color:var(--dim);margin-bottom:4px}
+.cal-key b{color:var(--fg);font-weight:600}
+.cal-m{font-size:12px;font-weight:600;margin:8px 0 6px}
+.cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal-w{font-style:normal;font-size:10px;color:var(--dim);text-align:center}
+.cal-d{display:flex;flex-direction:column;align-items:center;justify-content:center;height:46px;
+ border-radius:6px;font-style:normal;text-decoration:none;color:var(--ink);border:1px solid transparent;line-height:1.15}
+a.cal-d{cursor:pointer}
+a.cal-d:hover,.cal-d.on{border-color:var(--fg)}
+.cal-d em{font-style:normal;font-size:9px;opacity:.7}
+.cal-d b{font-size:12px;font-weight:700}
+.cal-d span{font-size:10px;opacity:.8}
+.cal-d.none{background:var(--empty);color:var(--dim)}
+.cal-d.off{color:var(--dim);opacity:.35}
+@media(max-width:1100px){.split{flex-direction:column}.cal{position:static;width:100%;flex-basis:auto}}
 th.s{cursor:pointer;user-select:none}
 th.s:hover{color:var(--fg)}
 th.s.on{color:var(--hot)}
 .rank{color:var(--dim);font-size:12px;width:26px;text-align:right}
 .sub{color:var(--dim);font-size:11px}
-tr.top td{background:#151d19}
+tr.top td{background:var(--top)}
 .skip{opacity:.5}
 .skip .txt{text-decoration:line-through;text-decoration-color:var(--line)}
 .why{color:var(--dim);font-size:11px;font-style:italic}
 .divider{border-top:1px solid var(--line);margin:28px 0 4px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
  padding:16px 18px;margin-bottom:12px}
-.card.next{border-color:#2f6b47}
+.card.next{border-color:var(--edge)}
 .score{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
-.scorebar{height:6px;border-radius:3px;background:#1b1f27;margin:8px 0 2px;overflow:hidden}
+.scorebar{height:6px;border-radius:3px;background:var(--empty);margin:8px 0 2px;overflow:hidden}
 .scorebar i{display:block;height:100%;background:var(--hot)}
 .copy{white-space:pre-wrap;font-size:13px;line-height:1.6;color:var(--fg);
- background:#12151b;border-radius:8px;padding:10px 12px;margin:8px 0}
+ background:var(--well);border-radius:8px;padding:10px 12px;margin:8px 0}
 .meta{color:var(--dim);font-size:12px}
-.verdict{font-size:13px;margin-top:8px;color:#cbd3c9}
+.verdict{font-size:13px;margin-top:8px;color:var(--soft)}
 .vs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:760px){.vs{grid-template-columns:1fr}}
 .tag{display:inline-block;border:1px solid var(--line);border-radius:20px;
@@ -86,7 +142,7 @@ tr.top td{background:#151d19}
 .ins h4{margin:0 0 10px;font-size:13px;color:var(--dim);font-weight:500}
 .row{display:flex;align-items:center;gap:8px;padding:3px 0;font-size:12px}
 .row .k{width:38px;text-align:right;color:var(--dim);flex:none}
-.row .b{flex:1;height:14px;background:#1b1f27;border-radius:3px;overflow:hidden}
+.row .b{flex:1;height:14px;background:var(--empty);border-radius:3px;overflow:hidden}
 .row .b i{display:block;height:100%;background:var(--hot);opacity:.85}
 .row .v{width:74px;text-align:right;font-variant-numeric:tabular-nums;flex:none}
 .row.thin{opacity:.35}
@@ -96,7 +152,7 @@ tr.top td{background:#151d19}
 .acct-ins td,.acct-ins th{padding:5px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
 .tour{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 @media(max-width:760px){.tour{grid-template-columns:1fr}}
-.champ{border-color:#2f6b47}
+.champ{border-color:var(--edge)}
 .champ .copy{border-left:2px solid var(--hot)}
 .q{padding:8px 0;border-bottom:1px solid var(--line)}
 .q:last-child{border:0}
@@ -104,19 +160,19 @@ tr.top td{background:#151d19}
 .q .copy{margin:6px 0 4px;font-size:12px}
 .acct-ins th{color:var(--dim);font-weight:500;text-align:left}
 .badge{display:inline-block;border-radius:5px;padding:1px 7px;font-size:11px;font-weight:500}
-.badge.active{background:#12301f;color:#5fd08a}
-.badge.paused{background:#2e2a14;color:#d6bd57}
-.badge.dead{background:#2e1519;color:#e06c78}
+.badge.active{background:var(--ok-bg);color:var(--ok)}
+.badge.paused{background:var(--warn-bg);color:var(--warn)}
+.badge.dead{background:var(--bad-bg);color:var(--bad)}
 tr.off td{opacity:.45}
 .sum{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px;font-size:12px;color:var(--dim)}
 .sum b{color:var(--fg);font-weight:600}
-.dead{color:#c46;font-size:11px}
+.dead{color:var(--bad2);font-size:11px}
 .accs{font-size:12px;color:var(--dim);line-height:1.8}
 .pill{display:inline-block;background:var(--line);border-radius:6px;padding:1px 7px;
  font-size:11px;color:var(--dim);margin-left:6px}
 .reply{border-left:2px solid var(--line);padding-left:12px;margin:2px 0 14px}
 h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
-.err{background:#2a1618;border:1px solid #4a2226;border-radius:8px;padding:10px 14px;
+.err{background:var(--err-bg);border:1px solid var(--err-line);border-radius:8px;padding:10px 14px;
  margin-bottom:16px;font-size:13px}
 
 .pg{display:flex;gap:4px;margin-right:4px}
@@ -130,21 +186,21 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
   <span class="stamp" id="stamp"></span>
   <button id="refresh">갱신</button>
   <span class="stamp" id="rmsg"></span>
+  <span class="theme" id="theme"><button data-v="">자동</button><button data-v="light">라이트</button><button data-v="dark">다크</button></span>
 </header>
-<div class="proj" id="owner"></div>
 <div class="proj" id="proj"></div>
 <nav>
-  <button data-t="sched" class="on">예약<b id="n-sched">0</b></button>
-  <button data-t="posts">스레드<b id="n-posts">0</b></button>
+  <button data-t="posts" class="on">스레드<b id="n-posts">0</b></button>
   <button data-t="ig">인스타<b id="n-ig">0</b></button>
-  <button data-t="pending">미답변<b id="n-pending">0</b></button>
+  <button data-t="sched">예약<b id="n-sched">0</b></button>
+  <button data-t="pending">미답변 댓글<b id="n-pending">0</b></button>
   <button data-t="insight">인사이트</button>
 </nav>
 <main>
   <div id="errors"></div>
-  <section id="sched" class="on"></section>
-  <section id="posts"></section>
+  <section id="posts" class="on"></section>
   <section id="ig"></section>
+  <section id="sched"></section>
   <section id="pending"></section>
   <section id="insight">
     <h3>실험별 결과 (트레이스)</h3>
@@ -158,6 +214,7 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
   </section>
 </main>
 <div class="tip" id="tip"></div>
+<div class="pop" id="pop"><iframe referrerpolicy="no-referrer"></iframe></div>
 
 <script>
 const $ = s => document.querySelector(s);
@@ -165,6 +222,17 @@ const $ = s => document.querySelector(s);
 const esc = s => (s == null ? "" : Array.isArray(s) ? s.join(", ") : String(s))
   .replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const n = v => (v||0).toLocaleString();
+
+// 테마: 자동(시스템 따라감) / 라이트 / 다크. 고른 건 브라우저가 기억한다.
+function setTheme(v){
+  if(v) document.documentElement.dataset.theme = v; else delete document.documentElement.dataset.theme;
+  try { localStorage.setItem("theme", v); } catch {}
+  document.querySelectorAll("#theme button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
+  if(typeof P !== "undefined" && P.rows.length) [P, G].forEach(paintPosts);   // 히트맵 색은 JS가 칠한다
+}
+document.querySelectorAll("#theme button").forEach(b => b.onclick = () => setTheme(b.dataset.v));
+document.querySelectorAll("#theme button").forEach(b => b.classList.toggle("on", b.dataset.v === (document.documentElement.dataset.theme || "")));
+matchMedia("(prefers-color-scheme: light)").addEventListener("change", () => { if(P.rows.length) [P, G].forEach(paintPosts); });
 
 document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
   document.querySelectorAll("nav button").forEach(x => x.classList.remove("on"));
@@ -191,99 +259,218 @@ function renderSched(rows){
   </tr>`).join("") + `</tbody></table>`;
 }
 
-const mkState = (id, cols, third) => ({rows: [], sort: "views", desc: true, acct: "", id, cols, third});
+const mkState = (id, cols, third) => ({rows: [], acct: "", id, cols, third});
 let P = mkState("p", [["views","조회"],["likes","하트"],["replies","댓글"],["reposts","리포스트"],["shares","공유"],["clicks","링크 클릭"]], "reposts");
 let G = mkState("g", [["views","조회"],["likes","하트"],["replies","댓글"],["saved","저장"],["shares","공유"]], "saved");
 
+// 스레드·인스타 탭이 같이 쓰는 필터. 탭을 옮겨도 유지된다.
+const ls = (k, v) => { try { return v === undefined ? localStorage.getItem(k) : localStorage.setItem(k, v); } catch {} };
+const F = {who: ls("owner") || "", days: +(ls("days") || 7), order: "views", metric: "views"};
+const DAYS = [3, 7, 14, 30];
+const ORDERS = [["views","조회수 높은 순"],["recent","최근 글 순"],["country","국가 이름 순"]];
+let PEOPLE = [], STATE = {};   // 계정주 목록, 계정 운영 상태(active/paused/banned/dead)
+
+const isLight = () => document.documentElement.dataset.theme === "light"
+  || (!document.documentElement.dataset.theme && matchMedia("(prefers-color-scheme: light)").matches);
 function heatOf(v, max){
-  if(!v) return "#1b1f27";
+  if(!v) return "var(--empty)";
   const t = Math.log10(v + 1) / Math.log10(max + 1);
-  return `hsl(${140 - t * 30} ${45 + t * 40}% ${18 + t * 42}%)`;
+  return isLight() ? `hsl(${140 - t * 20} ${40 + t * 35}% ${88 - t * 40}%)`
+                   : `hsl(${140 - t * 30} ${45 + t * 40}% ${18 + t * 42}%)`;
 }
+const kfmt = v => !v ? "" : v >= 1e6 ? (v/1e6).toFixed(1).replace(".0","") + "M" : v > 999 ? (v >= 10000 ? Math.round(v/1000) : (v/1000).toFixed(1).replace(".0","")) + "k" : String(v);
 
 function renderPosts(S, rows){
   S.rows = rows;
   if(!rows.length) return `<div class="empty">게시물이 없다</div>`;
-  const accs = [...new Set(rows.map(r => r.account))].sort();
-  return `<div class="tools">
-    <select id="${S.id}-acct"><option value="">전체 계정</option>` +
-      accs.map(a => {
-        const f = rows.find(r => r.account === a);
-        return `<option value="${a}">${f.flag} ${a}</option>`;
-      }).join("") + `</select>
-    <span class="sp"></span>
-    <span class="dim" id="${S.id}-count"></span>
-  </div><div id="${S.id}-body"></div>`;
+  return `<div class="tools" id="${S.id}-tools"></div><div id="${S.id}-body"></div>`;
+}
+
+function chips(name, items, cur){
+  return `<span class="chips" data-f="${name}">` + items.map(([k,l]) =>
+    `<button data-v="${k}" class="${String(k)===String(cur)?"on":""}">${esc(l)}</button>`).join("") + `</span>`;
+}
+
+function filtered(S){
+  const cut = new Date(Date.now() - (F.days - 1) * 864e5).toISOString().slice(0,10);
+  return S.rows.filter(r => (!F.who || r.owner === F.who)
+    && (STATE[r.account] || "active") === "active"     // 운영 중인 계정만
+    && r.date >= cut);
 }
 
 function paintPosts(S){
   const box = $("#" + S.id + "-body"); if(!box) return;
-  let rows = S.rows.filter(r => !S.acct || r.account === S.acct);
-  $("#" + S.id + "-count").textContent = rows.length + "건";
-  box.innerHTML = postsGrid(S, rows) + `<h3>전체 목록</h3>` +
+  const base = filtered(S);
+  const accs = [...new Set(base.map(r => r.account))].sort();
+  if(S.acct && !accs.includes(S.acct)) S.acct = "";
+  const rows = base.filter(r => !S.acct || r.account === S.acct);
+  $("#" + S.id + "-tools").innerHTML =
+    `<span class="lbl">계정주</span>` + chips("who", [["", "전체"], ...PEOPLE], F.who) +
+    `<span class="lbl">기간</span>` + chips("days", DAYS.map(d => [d, d + "일"]), F.days) +
+    `<span class="lbl">정렬</span><select id="${S.id}-order">` +
+      ORDERS.map(([k,l]) => `<option value="${k}" ${k===F.order?"selected":""}>${l}</option>`).join("") + `</select>
+    <select id="${S.id}-acct"><option value="">전체 계정</option>` +
+      accs.map(a => `<option value="${a}" ${a===S.acct?"selected":""}>${rows.concat(base).find(r => r.account === a).flag} ${a}</option>`).join("") + `</select>
+    <span class="sp"></span><span class="dim">${rows.length}건</span>`;
+  if(!rows.length){ box.innerHTML = `<div class="empty">이 조건에 맞는 게시물이 없다</div>`; return wireTools(S); }
+  box.innerHTML = `<h3>날짜별 · 계정별 성과</h3><div class="split"><div class="split-l">` + dailyTable(S, rows) +
     (S.id === "p" ? `<div class="legend">링크 클릭 = 글에 단 답글 속 앱 링크를 누른 수. Threads API가 답글 단위로는 0만 줘서 계정 단위로 받아, 날마다 그날까지 올라온 글들에 조회수 비율로 나눈 추정치다(날짜는 미국 태평양 시간 기준). 프로필에 링크가 있으면 그 클릭도 섞인다. – 는 아직 이 항목을 수집하기 전 데이터.</div>` : "") +
-    postsList(S, rows);
-  wireSort(S);
-}
-
-function postsList(S, rows){
-  const k = S.sort;
-  rows = [...rows].sort((a,b) => {
-    const d = k === "date" ? (a.utc < b.utc ? -1 : 1) : (a[k]||0) - (b[k]||0);
-    return S.desc ? -d : d;
-  });
-  const max = Math.max(...rows.map(r => r.views||0), 1);
-  const cols = S.cols;
-  const head = `<th class="rank"></th><th class="s ${k==="date"?"on":""}" data-k="date">날짜</th>
-    <th>계정</th><th>국가</th>` + cols.map(([c,l]) =>
-      `<th class="s num ${k===c?"on":""}" data-k="${c}">${l}${k===c?(S.desc?" ↓":" ↑"):""}</th>`).join("") +
-    `<th>본문</th>`;
-  return `<table><thead><tr>${head}</tr></thead><tbody>` + rows.map((r,i) => {
-    const w = Math.max(2, Math.round((r.views||0) / max * 100));
-    return `<tr class="${i<3&&k==="views"&&S.desc?"top":""}">
-      <td class="rank">${i+1}</td>
-      <td class="dim">${esc(r.local)}<div class="sub">${esc(r.date)}</div></td>
-      <td class="acct">${r.flag} ${esc(r.account)}</td>
-      <td class="dim">${esc(cname(r.country))}</td>
-      <td class="num bar"><i style="width:${w}%"></i><b class="${r.views>10000?"big":""}">${n(r.views)}</b></td>
-      <td class="num">${n(r.likes)}</td><td class="num">${n(r.replies)}</td>
-      <td class="num">${n(r[S.third])}</td><td class="num">${n(r.shares)}</td>
-      ${S.id === "p" ? `<td class="num">${r.clicks == null ? `<span class="dim">–</span>` : n(r.clicks)}</td>` : ""}
-      <td class="txt"><a href="${r.link}" target="_blank">${esc(r.text)}</a></td>
-    </tr>`;
-  }).join("") + `</tbody></table>`;
-}
-
-function postsGrid(S, rows){
-  const dates = [...new Set(rows.map(r => r.date))].sort();
-  const accs = [...new Set(rows.map(r => r.account))].sort();
-  const by = {}; rows.forEach(r => by[r.account + "|" + r.date] = r);
-  const max = Math.max(...rows.map(r => r.views||0), 1);
-  // 계정은 그 기간 총조회 순으로 — 잘 되는 나라가 위로 온다
-  const tot = {}; rows.forEach(r => tot[r.account] = (tot[r.account]||0) + (r.views||0));
-  accs.sort((a,b) => tot[b] - tot[a]);
-  let g = `<div class="grid"><table><thead><tr><th></th>` +
-    dates.map(d => `<th>${d.slice(5)}</th>`).join("") + `<th style="padding-left:12px">합계</th></tr></thead><tbody>`;
-  accs.forEach(a => {
-    const f = rows.find(r => r.account === a);
-    g += `<tr><th style="text-align:right">${f.flag} ${esc(a)}</th>` + dates.map(d => {
-      const r = by[a + "|" + d];
-      if(!r) return `<td><i class="cell"></i></td>`;
-      const tip = `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n${S.cols[3][1]} ${n(r[S.third])} · 공유 ${n(r.shares)}${r.clicks != null ? ` · 링크 클릭 ${n(r.clicks)}` : ""}\n\n${r.text}`;
-      return `<td><a class="cell" style="background:${heatOf(r.views,max)}" href="${r.link}"
-        target="_blank" data-tip="${esc(tip)}"><span>${r.views>999?Math.round(r.views/1000)+"k":(r.views||"")}</span></a></td>`;
-    }).join("") + `<td class="num dim" style="padding-left:12px">${n(tot[a])}</td></tr>`;
-  });
-  g += `</tbody></table></div><div class="legend">칸 = 게시물 하나. 색이 진할수록 조회수 높음. 계정은 총조회 순. 마우스를 올리면 지표, 누르면 원글로 이동.</div>`;
-  return g;
-}
-
-function wireSort(S){
-  document.querySelectorAll("#" + S.id + "-body th.s").forEach(th => th.onclick = () => {
-    const k = th.dataset.k;
-    if(S.sort === k) S.desc = !S.desc; else { S.sort = k; S.desc = true; }
+    `</div>` + calendar(S, rows) + `</div>` +
+    `<h3>계정 × 날짜</h3>` + postsGrid(S, rows);
+  wireTools(S);
+  document.querySelectorAll(`#${S.id}-cal [data-d]`).forEach(c => c.onclick = () => focusDay(S, c.dataset.d, true));
+  document.querySelectorAll(`#${S.id}-daily th.s`).forEach(th => th.onclick = () => {
+    const k = th.dataset.dk;
+    S.ddesc = S.dk === k ? !S.ddesc : true; S.dk = k;
     paintPosts(S);
   });
+  document.querySelectorAll(`#${S.id}-daily tr.day`).forEach(tr => tr.onclick = () => {
+    const k = S.id + tr.dataset.d; OPEN.has(k) ? OPEN.delete(k) : OPEN.add(k); paintPosts(S); focusDay(S, tr.dataset.d, false);
+  });
+}
+
+function wireTools(S){
+  document.querySelectorAll(`#${S.id}-tools .chips button, #${S.id}-body .chips button`).forEach(b => b.onclick = () => {
+    const f = b.closest(".chips").dataset.f;
+    F[f] = f === "days" ? +b.dataset.v : b.dataset.v;
+    if(f !== "metric") ls(f === "who" ? "owner" : f, F[f]);
+    [P, G].forEach(paintPosts);
+  });
+  const o = $("#" + S.id + "-order");
+  if(o) o.onchange = e => {
+    F.order = e.target.value;
+    [P, G].forEach(X => { X.dk = null; paintPosts(X); });
+  };
+  const a = $("#" + S.id + "-acct");
+  if(a) a.onchange = e => { S.acct = e.target.value; paintPosts(S); };
+}
+
+// 합계. 링크 클릭은 수집 전 데이터가 null이라 하나도 없으면 null로 둔다.
+function sumOf(rows, k){
+  const v = rows.map(r => r[k]).filter(x => x != null);
+  return v.length ? v.reduce((a,b) => a + b, 0) : null;
+}
+
+// 날짜별 합계 줄 아래에 그날 올린 계정을 줄마다 펼친다. 한 계정이 하루 여러 건이면 합친다.
+// 처음엔 날짜 줄만 보이고, 누르면 그날 계정 줄이 펼쳐진다.
+const OPEN = new Set();
+function dailyTable(S, rows){
+  const by = {}; rows.forEach(r => (by[r.date] = by[r.date] || []).push(r));
+  // 날짜는 늘 최신이 위. 정렬은 그날 안의 계정 줄에만 걸린다 — 기본은 조회수 많은 순,
+  // 열 이름을 누르면 그 열로 바꾼다(누를 때마다 ↓/↑). 위 '정렬' 드롭다운이 기본값을 정한다.
+  const dk = S.dk || (F.order === "views" ? "views" : null), dd = S.dk ? S.ddesc : true;
+  const metric = (g, k) => k === "n" ? g.length : (sumOf(g, k) ?? -1);
+  const dates = Object.keys(by).sort().reverse();
+  // 막대 길이는 그날 계정끼리 비교한다 (기간 전체 최고치에 맞추면 한 번 터진 날 빼고 다 납작해진다)
+  let mx = {};
+  const cell = (v, k, bar) => v == null ? `<td class="num dim">–</td>`
+    : bar ? `<td class="num bar"><i style="width:${Math.max(2, Math.round(v / mx[k] * 100))}%"></i><b class="${k==="views"&&v>10000?"big":""}">${n(v)}</b></td>`
+    : `<td class="num">${n(v)}</td>`;
+  const W = ["일","월","화","수","목","금","토"];
+  const accOrder = F.order === "country" ? (x,y) => cname(x[0].country).localeCompare(cname(y[0].country), "ko") || (sumOf(y,"views") - sumOf(x,"views"))
+    : F.order === "recent" ? (x,y) => (y.map(r => r.utc).sort().pop() < x.map(r => r.utc).sort().pop() ? -1 : 1)
+    : (x,y) => sumOf(y,"views") - sumOf(x,"views");
+  const order = dk ? (x,y) => (dd ? -1 : 1) * (metric(x, dk) - metric(y, dk)) || accOrder(x, y) : accOrder;
+  const th = (k, l, cls) => `<th class="s ${cls||""} ${dk===k?"on":""}" data-dk="${k}">${l}${dk===k?(dd?" ↓":" ↑"):""}</th>`;
+  return `<table class="daily" id="${S.id}-daily"><thead><tr>` + `<th>날짜 · 계정</th>` + th("n", "글", "num") +
+    S.cols.map(([k,l]) => th(k, l, "num")).join("") +
+    `<th>본문 (조회 최고 글)</th></tr></thead><tbody>` +
+    dates.map(d => {
+      const list = by[d], open = OPEN.has(S.id + d);
+      const accs = Object.values(list.reduce((m, r) => ((m[r.account] = m[r.account] || []).push(r), m), {})).sort(order);
+      mx = Object.fromEntries(S.cols.map(([k]) => [k, Math.max(1, ...accs.map(g => sumOf(g, k) || 0))]));
+      return `<tr class="day${open ? " open" : ""}" data-d="${d}" id="${S.id}-day-${d}"><td class="acct"><span class="fold">${open ? "▾" : "▸"}</span> ${d.slice(5).replace("-","/")} <span class="dim">${W[new Date(d + "T00:00:00").getDay()]} · 계정 ${accs.length}개</span></td>
+        <td class="num">${list.length}</td>` +
+        S.cols.map(([k]) => cell(sumOf(list, k), k, false)).join("") +
+        `<td></td></tr>` +
+        (open ? accs.map(g => {
+          const best = g.reduce((x,y) => (y.views||0) > (x.views||0) ? y : x);
+          return `<tr class="acc"><td><span class="ind">${best.flag} ${esc(best.account)}</span> <span class="sub">${esc(cname(best.country))}${g.length > 1 ? "" : " · " + esc(best.local.split(" ")[1] || "")}</span></td>
+            <td class="num">${g.length}</td>` +
+            S.cols.map(([k]) => cell(sumOf(g, k), k, true)).join("") +
+            `<td class="txt clip"><a class="pv" href="${best.link}" target="_blank">${esc(best.text)}</a></td></tr>`;
+        }).join("") : "");
+    }).join("") + `</tbody></table>`;
+}
+
+// 오른쪽 달력. 날마다 조회와 둘째 지표(스레드는 링크 클릭, 인스타는 저장)를 위아래로 쓴다.
+function calendar(S, rows){
+  const k2 = S.id === "p" ? "clicks" : S.third, l2 = S.cols.find(([k]) => k === k2)[1];
+  const by = {}; rows.forEach(r => (by[r.date] = by[r.date] || []).push(r));
+  const ds = Object.keys(by).sort();
+  const cut = new Date(Date.now() - (F.days - 1) * 864e5).toISOString().slice(0,10);
+  const today = new Date().toISOString().slice(0,10);
+  const max = Math.max(1, ...ds.map(d => sumOf(by[d], "views") || 0));
+  const months = []; for(let m = cut.slice(0,7); m <= today.slice(0,7); ){
+    months.push(m); const [y, mo] = m.split("-").map(Number);
+    m = mo === 12 ? `${y+1}-01` : `${y}-${String(mo+1).padStart(2,"0")}`;
+  }
+  return `<aside class="cal" id="${S.id}-cal"><div class="cal-key"><b>조회</b> / <span>${l2}</span></div>` + months.map(m => {
+    const [y, mo] = m.split("-").map(Number);
+    const first = new Date(y, mo - 1, 1).getDay(), last = new Date(y, mo, 0).getDate();
+    let h = `<div class="cal-m">${y}년 ${mo}월</div><div class="cal-g">` + "일월화수목금토".split("").map(w => `<i class="cal-w">${w}</i>`).join("");
+    for(let i = 0; i < first; i++) h += `<i></i>`;
+    for(let day = 1; day <= last; day++){
+      const d = `${m}-${String(day).padStart(2,"0")}`, list = by[d];
+      if(d < cut || d > today){ h += `<i class="cal-d off"><em>${day}</em></i>`; continue; }
+      if(!list){ h += `<i class="cal-d none"><em>${day}</em></i>`; continue; }
+      const v = sumOf(list, "views") || 0, c = sumOf(list, k2);
+      h += `<a class="cal-d" data-d="${d}" style="background:${heatOf(v, max)}" title="${d} · 글 ${list.length}건">
+        <em>${day}</em><b>${kfmt(v) || 0}</b><span>${c == null ? "–" : kfmt(c) || 0}</span></a>`;
+    }
+    return h + `</div>`;
+  }).join("") + `<div class="legend">날짜를 누르면 표의 그날 줄로 이동한다.</div></aside>`;
+}
+
+function focusDay(S, d, scroll){
+  const tr = $(`#${S.id}-day-${d}`); if(!tr) return;
+  if(scroll) tr.scrollIntoView({behavior: "smooth", block: "center"});
+  document.querySelectorAll(`#${S.id}-daily tr.day.focus, #${S.id}-cal .cal-d.on`).forEach(x => x.classList.remove("focus", "on"));
+  tr.classList.add("focus");
+  const c = $(`#${S.id}-cal [data-d="${d}"]`); if(c) c.classList.add("on");
+}
+
+// 계정 × 날짜. 같은 나라 계정끼리 묶는다. 한 계정이 하루에 여러 번 올리면 합친다.
+function postsGrid(S, rows){
+  const m = S.cols.some(([k]) => k === F.metric) ? F.metric : "views";
+    const dates = [...new Set(rows.map(r => r.date))].sort();
+  const by = {}; rows.forEach(r => (by[r.account + "|" + r.date] = by[r.account + "|" + r.date] || []).push(r));
+  const val = list => sumOf(list, m) || 0;
+  const max = Math.max(1, ...Object.values(by).map(val));
+  const tot = {}, last = {}, ctot = {}, cacc = {};
+  rows.forEach(r => {
+    tot[r.account] = Math.max(tot[r.account]||0, r[m]||0);
+    last[r.account] = last[r.account] > r.utc ? last[r.account] : r.utc;
+    ctot[r.country] = Math.max(ctot[r.country]||0, r[m]||0);
+    if(!(cacc[r.country] = cacc[r.country] || []).includes(r.account)) cacc[r.country].push(r.account);
+  });
+  const clast = c => cacc[c].map(a => last[a]).sort().pop();
+  const countries = Object.keys(cacc).sort(
+    F.order === "country" ? (a,b) => cname(a).localeCompare(cname(b), "ko")
+    : F.order === "recent" ? (a,b) => clast(b) < clast(a) ? -1 : 1
+    : (a,b) => ctot[b] - ctot[a]);
+  const accOrder = F.order === "recent" ? (a,b) => last[b] < last[a] ? -1 : 1 : (a,b) => tot[b] - tot[a];
+  let g = chips("metric", S.cols.map(([k,l]) => [k, l]), m) +
+    `<div class="grid"><table><thead><tr><th>국가</th><th>계정</th>` +
+    dates.map(d => `<th>${d.slice(5).replace("-","/")}</th>`).join("") + `</tr></thead><tbody>`;
+  countries.forEach((c, ci) => {
+    const accs = cacc[c].sort(accOrder);
+    if(ci) g += `<tr class="gap"><td colspan="${dates.length + 2}"></td></tr>`;
+    accs.forEach((a, ai) => {
+      const f = rows.find(r => r.account === a);
+      g += `<tr>` + (ai ? "" : `<th class="cty" rowspan="${accs.length}">${f.flag} ${esc(cname(c))}</th>`) +
+        `<th style="text-align:right">${esc(a)}</th>` + dates.map(d => {
+        const list = by[a + "|" + d];
+        if(!list) return `<td><i class="cell"></i></td>`;
+        const r = list.reduce((x,y) => (y.views||0) > (x.views||0) ? y : x), v = val(list);
+        const tip = list.map(r => `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n${S.cols[3][1]} ${n(r[S.third])} · 공유 ${n(r.shares)}${r.clicks != null ? ` · 링크 클릭 ${n(r.clicks)}` : ""}\n\n${r.text}`).join("\n\n────────\n\n");
+        return `<td><a class="cell${list.length > 1 ? " multi" : ""}" style="background:${heatOf(v,max)}" href="${r.link}"
+          target="_blank" data-tip="${esc(tip)}"><span>${kfmt(v)}</span></a></td>`;
+      }).join("") + `</tr>`;
+    });
+  });
+  g += `</tbody></table></div><div class="legend">칸 = 그 계정이 그날 올린 글. 숫자·색 = 위에서 고른 지표(진할수록 높음). 점 표시는 하루에 2건 이상 올려 합친 칸. 마우스를 올리면 글별 지표, 누르면 원글로 이동. 운영 중인 계정만 보인다.</div>`;
+  return g;
 }
 
 function renderPending(rows, skipped){
@@ -372,6 +559,9 @@ get("team.json").then(async team => {
     stamps.push(`${t.name} ${x.generated.slice(5,16).replace("T"," ")}`);
     d.window_days = x.window_days;
     Object.assign(d.projects, x.projects);
+    Object.values(x.experiments||{}).forEach(e => Object.entries(e?.insights?.accounts||{}).forEach(([a, v]) => {
+      if(v.state && v.state !== "active") STATE[a] = v.state; else if(!STATE[a]) STATE[a] = "active";
+    }));
     ["scheduled","posts","ig_posts","pending","skipped"].forEach(k => (x[k]||[]).forEach(r => d[k].push({...r, owner: id})));
     (x.errors||[]).forEach(e => d.errors.push(`${t.name} ${e}`));
   });
@@ -380,18 +570,15 @@ get("team.json").then(async team => {
   $("#stamp").textContent = "갱신(UTC) " + stamps.join(" · ") + " · 최근 " + (d.window_days||30) + "일";
 
   // 사람 × 프로젝트로 거른다. 사람은 ""이 전체.
-  let who = localStorage.getItem("owner") || "";
-  if(who && !team[who]) who = "";
-  const projects = Object.keys(d.projects).length ? d.projects : {trace: "트레이스"};
+  PEOPLE = people.map(([id, t]) => [id, t.name]);
+  if(F.who && !team[F.who]) F.who = "";
+  const HIDE = ["moonlight", "cortex"];   // 탭에서 뺀 프로젝트. 데이터는 그대로 수집된다
+  const projects = Object.fromEntries(Object.entries(Object.keys(d.projects).length ? d.projects : {trace: "트레이스"}).filter(([k]) => !HIDE.includes(k)));
   let cur = localStorage.getItem("proj");
   if(!projects[cur]) cur = "trace" in projects ? "trace" : Object.keys(projects)[0];
-  const ofProj = rows => (rows||[]).filter(r => (r.project||"trace") === cur && (!who || r.owner === who));
+  const ofProj = rows => (rows||[]).filter(r => (r.project||"trace") === cur);
   function paintProject(){
     localStorage.setItem("proj", cur);
-    localStorage.setItem("owner", who);
-    $("#owner").innerHTML = [["", "전체"], ...people.map(([id, t]) => [id, t.name])].map(([k,l]) =>
-      `<button data-o="${k}" class="${k===who?"on":""}">${esc(l)}</button>`).join("");
-    document.querySelectorAll("#owner button").forEach(b => b.onclick = () => { who = b.dataset.o; paintProject(); });
     $("#proj").innerHTML = Object.entries(projects).map(([k,l]) =>
       `<button data-p="${k}" class="${k===cur?"on":""}">${esc(l)}</button>`).join("");
     document.querySelectorAll("#proj button").forEach(b => b.onclick = () => { cur = b.dataset.p; paintProject(); });
@@ -407,8 +594,6 @@ get("team.json").then(async team => {
     $("#ig").innerHTML = renderPosts(G, ig);
     [P, G].forEach(S => {
       S.acct = "";
-      const sel = $("#" + S.id + "-acct");
-      if(sel) sel.onchange = e => { S.acct = e.target.value; paintPosts(S); };
       paintPosts(S);
     });
     $("#pending").innerHTML = renderPending(pending, skipped);
@@ -416,6 +601,27 @@ get("team.json").then(async team => {
   paintProject();
   if(d.errors && d.errors.length)
     $("#errors").innerHTML = `<div class="err">수집 실패 ${d.errors.length}건: ${esc(d.errors.join(" / "))}</div>`;
+
+  // 본문 링크에 마우스를 올리면 원글을 팝오버로 띄운다. 원글 페이지는 임베드를 막아서 /embed 주소를 쓴다.
+  const pop = $("#pop"), frame = pop.querySelector("iframe");
+  const embedOf = u => /instagram\.com/.test(u) ? u.replace(/\/?(\?.*)?$/, "/") + "embed" : u.replace(/\/?(\?.*)?$/, "") + "/embed";
+  let showT = null, hideT = null;
+  document.addEventListener("mouseover", e => {
+    const a = e.target.closest("a.pv");
+    if(e.target.closest("#pop")) return clearTimeout(hideT);
+    if(!a){ clearTimeout(showT); if(pop.classList.contains("on")) { clearTimeout(hideT); hideT = setTimeout(() => pop.classList.remove("on"), 250); } return; }
+    clearTimeout(hideT); clearTimeout(showT);
+    showT = setTimeout(() => {
+      const src = embedOf(a.href);
+      if(frame.dataset.src !== src){ frame.dataset.src = src; frame.src = src; }
+      const r = a.getBoundingClientRect(), W = 380, H = Math.min(560, innerHeight - 24);
+      pop.style.width = W + "px"; pop.style.height = H + "px";
+      pop.style.left = (r.right + 12 + W < innerWidth ? r.right + 12 : Math.max(12, r.left - W - 12)) + "px";
+      pop.style.top = Math.max(12, Math.min(r.top - 40, innerHeight - H - 12)) + "px";
+      pop.classList.add("on");
+    }, 350);
+  });
+  addEventListener("scroll", () => pop.classList.remove("on"), {passive: true});
 
   const tip = $("#tip");
   document.addEventListener("mouseover", e => {
