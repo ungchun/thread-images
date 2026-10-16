@@ -172,13 +172,18 @@ document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
   b.classList.add("on"); $("#" + b.dataset.t).classList.add("on");
 });
 
+// 국가 코드 → 한국어 이름 (US → 미국)
+const REGION = new Intl.DisplayNames(["ko"], {type: "region"});
+const cname = c => { try { return REGION.of(c); } catch { return c || ""; } };
+
 function renderSched(rows){
   if(!rows.length) return `<div class="empty">예약된 글이 없다</div>`;
   return `<table><thead><tr>
-    <th>현지 시각</th><th>계정</th><th>본문</th><th>미디어</th><th>UTC</th>
+    <th>현지 시각</th><th>계정</th><th>국가</th><th>본문</th><th>미디어</th><th>UTC</th>
   </tr></thead><tbody>` + rows.map(r => `<tr>
     <td class="acct">${r.flag} ${esc(r.local)}</td>
     <td>${esc(r.account)}</td>
+    <td class="dim">${esc(cname(r.country))}</td>
     <td class="txt">${esc(r.text)}</td>
     <td class="dim">스레드 ${r.media.length}개<br><span style="font-size:11px">${esc(r.media.join(", "))}</span>
       <br>${(r.ig||[]).length ? `인스타 ${r.ig.length}개<br><span style="font-size:11px">${esc(r.ig.join(", "))}</span>` : `<span style="font-size:11px">인스타 없음</span>`}</td>
@@ -187,7 +192,7 @@ function renderSched(rows){
 }
 
 const mkState = (id, cols, third) => ({rows: [], sort: "views", desc: true, acct: "", id, cols, third});
-let P = mkState("p", [["views","조회"],["likes","하트"],["replies","댓글"],["reposts","리포스트"],["shares","공유"]], "reposts");
+let P = mkState("p", [["views","조회"],["likes","하트"],["replies","댓글"],["reposts","리포스트"],["shares","공유"],["clicks","링크 클릭"]], "reposts");
 let G = mkState("g", [["views","조회"],["likes","하트"],["replies","댓글"],["saved","저장"],["shares","공유"]], "saved");
 
 function heatOf(v, max){
@@ -215,7 +220,9 @@ function paintPosts(S){
   const box = $("#" + S.id + "-body"); if(!box) return;
   let rows = S.rows.filter(r => !S.acct || r.account === S.acct);
   $("#" + S.id + "-count").textContent = rows.length + "건";
-  box.innerHTML = postsGrid(S, rows) + `<h3>전체 목록</h3>` + postsList(S, rows);
+  box.innerHTML = postsGrid(S, rows) + `<h3>전체 목록</h3>` +
+    (S.id === "p" ? `<div class="legend">링크 클릭 = 글에 단 답글 속 앱 링크를 누른 수. Threads API가 답글 단위로는 0만 줘서 계정 단위로 받아, 그 글을 올린 날부터 같은 계정 다음 글 전날까지의 클릭을 그 글 몫으로 친다(날짜는 미국 태평양 시간 기준). 프로필에 링크가 있으면 그 클릭도 섞인다. – 는 아직 이 항목을 수집하기 전 데이터.</div>` : "") +
+    postsList(S, rows);
   wireSort(S);
 }
 
@@ -228,7 +235,7 @@ function postsList(S, rows){
   const max = Math.max(...rows.map(r => r.views||0), 1);
   const cols = S.cols;
   const head = `<th class="rank"></th><th class="s ${k==="date"?"on":""}" data-k="date">날짜</th>
-    <th>계정</th>` + cols.map(([c,l]) =>
+    <th>계정</th><th>국가</th>` + cols.map(([c,l]) =>
       `<th class="s num ${k===c?"on":""}" data-k="${c}">${l}${k===c?(S.desc?" ↓":" ↑"):""}</th>`).join("") +
     `<th>본문</th>`;
   return `<table><thead><tr>${head}</tr></thead><tbody>` + rows.map((r,i) => {
@@ -237,9 +244,11 @@ function postsList(S, rows){
       <td class="rank">${i+1}</td>
       <td class="dim">${esc(r.local)}<div class="sub">${esc(r.date)}</div></td>
       <td class="acct">${r.flag} ${esc(r.account)}</td>
+      <td class="dim">${esc(cname(r.country))}</td>
       <td class="num bar"><i style="width:${w}%"></i><b class="${r.views>10000?"big":""}">${n(r.views)}</b></td>
       <td class="num">${n(r.likes)}</td><td class="num">${n(r.replies)}</td>
       <td class="num">${n(r[S.third])}</td><td class="num">${n(r.shares)}</td>
+      ${S.id === "p" ? `<td class="num">${r.clicks == null ? `<span class="dim">–</span>` : n(r.clicks)}</td>` : ""}
       <td class="txt"><a href="${r.link}" target="_blank">${esc(r.text)}</a></td>
     </tr>`;
   }).join("") + `</tbody></table>`;
@@ -260,7 +269,7 @@ function postsGrid(S, rows){
     g += `<tr><th style="text-align:right">${f.flag} ${esc(a)}</th>` + dates.map(d => {
       const r = by[a + "|" + d];
       if(!r) return `<td><i class="cell"></i></td>`;
-      const tip = `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n${S.cols[3][1]} ${n(r[S.third])} · 공유 ${n(r.shares)}\n\n${r.text}`;
+      const tip = `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n${S.cols[3][1]} ${n(r[S.third])} · 공유 ${n(r.shares)}${r.clicks != null ? ` · 링크 클릭 ${n(r.clicks)}` : ""}\n\n${r.text}`;
       return `<td><a class="cell" style="background:${heatOf(r.views,max)}" href="${r.link}"
         target="_blank" data-tip="${esc(tip)}"><span>${r.views>999?Math.round(r.views/1000)+"k":(r.views||"")}</span></a></td>`;
     }).join("") + `<td class="num dim" style="padding-left:12px">${n(tot[a])}</td></tr>`;

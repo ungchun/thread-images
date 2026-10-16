@@ -21,7 +21,7 @@ import traceback
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -441,6 +441,46 @@ def posts_of(account, days):
     return out
 
 
+PT = ZoneInfo("America/Los_Angeles")
+
+
+def link_clicks(account, posts):
+    """앱 링크 클릭을 각 글에 붙인다.
+
+    Threads는 링크 클릭을 글 단위로 주지 않는다(글 insights의 clicks는 늘 0). 계정 단위
+    threads_insights?metric=clicks만 잡히고, 그것도 태평양 시간 하루 단위로 끊긴다.
+    그래서 날마다 받아서, 그 글이 올라간 날부터 같은 계정 다음 글 전날까지의 클릭을 그 글 몫으로 친다.
+    """
+    if not posts:
+        return
+    token, uid = creds(account)
+
+    def clicks(day):
+        a = datetime.combine(day, datetime.min.time(), PT)
+        b = min(a + timedelta(days=1) - timedelta(seconds=1), datetime.now(timezone.utc))
+        d = api(f"{uid}/threads_insights", token, metric="clicks",
+                since=int(a.timestamp()), until=int(b.timestamp()))
+        return sum(x.get("value", 0) for x in (d.get("data") or [{}])[0].get("link_total_values", []))
+
+    ps = sorted(posts, key=lambda p: p["utc"])
+    pday = lambda p: datetime.fromisoformat(p["utc"]).astimezone(PT).date()
+    first, today = pday(ps[0]), datetime.now(PT).date()
+    days = [first + timedelta(days=i) for i in range((today - first).days + 1)]
+    # 기간 전체가 0이면 날마다 물을 필요가 없다 — 대부분 계정이 여기서 끝난다
+    a = datetime.combine(first, datetime.min.time(), PT)
+    total = api(f"{uid}/threads_insights", token, metric="clicks",
+                since=int(a.timestamp()), until=int(datetime.now(timezone.utc).timestamp()))
+    daily = {d: 0 for d in days}
+    if sum(x.get("value", 0) for x in (total.get("data") or [{}])[0].get("link_total_values", [])):
+        daily = {d: clicks(d) for d in days}
+    for p in ps:
+        p["clicks"] = 0
+    for d, c in daily.items():
+        owner = [p for p in ps if pday(p) <= d]
+        if owner:
+            owner[-1]["clicks"] += c
+
+
 IG_GRAPH = "https://graph.instagram.com/v23.0"
 IG_METRICS = ["views", "likes", "comments", "saved", "shares"]
 
@@ -532,6 +572,10 @@ def main():
         except Exception as e:
             errors.append(f"{a} 게시물: {e}")
             continue
+        try:
+            link_clicks(a, ps)
+        except Exception as e:
+            errors.append(f"{a} 링크 클릭: {e}")
         try:
             skip = skiplist(a)
             for r in pending_of(a, ps, rdays):
