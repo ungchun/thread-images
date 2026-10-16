@@ -221,7 +221,7 @@ function paintPosts(S){
   let rows = S.rows.filter(r => !S.acct || r.account === S.acct);
   $("#" + S.id + "-count").textContent = rows.length + "건";
   box.innerHTML = postsGrid(S, rows) + `<h3>전체 목록</h3>` +
-    (S.id === "p" ? `<div class="legend">링크 클릭 = 글에 단 답글 속 앱 링크를 누른 수. Threads API가 답글 단위로는 0만 줘서 계정 단위로 받아, 그 글을 올린 날부터 같은 계정 다음 글 전날까지의 클릭을 그 글 몫으로 친다(날짜는 미국 태평양 시간 기준). 프로필에 링크가 있으면 그 클릭도 섞인다. – 는 아직 이 항목을 수집하기 전 데이터.</div>` : "") +
+    (S.id === "p" ? `<div class="legend">링크 클릭 = 글에 단 답글 속 앱 링크를 누른 수. Threads API가 답글 단위로는 0만 줘서 계정 단위로 받아, 날마다 그날까지 올라온 글들에 조회수 비율로 나눈 추정치다(날짜는 미국 태평양 시간 기준). 프로필에 링크가 있으면 그 클릭도 섞인다. – 는 아직 이 항목을 수집하기 전 데이터.</div>` : "") +
     postsList(S, rows);
   wireSort(S);
 }

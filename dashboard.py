@@ -449,7 +449,7 @@ def link_clicks(account, posts):
 
     Threads는 링크 클릭을 글 단위로 주지 않는다(글 insights의 clicks는 늘 0). 계정 단위
     threads_insights?metric=clicks만 잡히고, 그것도 태평양 시간 하루 단위로 끊긴다.
-    그래서 날마다 받아서, 그 글이 올라간 날부터 같은 계정 다음 글 전날까지의 클릭을 그 글 몫으로 친다.
+    그래서 날마다 받아서 그날까지 올라온 글들에 나눠 준다(spread_clicks).
     """
     if not posts:
         return
@@ -473,12 +473,26 @@ def link_clicks(account, posts):
     daily = {d: 0 for d in days}
     if sum(x.get("value", 0) for x in (total.get("data") or [{}])[0].get("link_total_values", [])):
         daily = {d: clicks(d) for d in days}
-    for p in ps:
-        p["clicks"] = 0
+    spread_clicks(ps, daily, pday)
+
+
+def spread_clicks(ps, daily, pday):
+    """그날 클릭을 그날까지 올라온 글들에 조회수 비율로 나눈다.
+
+    가장 최근 글 하나에 몰아주면 늦게 터진 글이 0이 된다(pim 10/13 글 115만 조회 → 0).
+    조회 0인 리포스트는 자연히 몫이 없다. 조회가 전부 0인 날만 가장 최근 글에 준다.
+    ponytail: 누적 조회 비율이라 오래된 대박 글이 새 글 몫을 조금씩 가져간다. 글마다 링크를 다르게 달면 정확해진다.
+    """
+    share = {id(p): 0.0 for p in ps}
     for d, c in daily.items():
         owner = [p for p in ps if pday(p) <= d]
-        if owner:
-            owner[-1]["clicks"] += c
+        w = sum(p.get("views") or 0 for p in owner)
+        for p in owner:
+            share[id(p)] += c * (p.get("views") or 0) / w if w else 0
+        if owner and not w:
+            share[id(owner[-1])] += c
+    for p in ps:
+        p["clicks"] = round(share[id(p)])
 
 
 IG_GRAPH = "https://graph.instagram.com/v23.0"
