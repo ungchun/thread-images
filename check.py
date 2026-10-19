@@ -76,8 +76,14 @@ def check_ig(account):
 
 
 def mine():
-    """Actions 주인 계정만. 팀원 계정 토큰은 Secrets에 없어 매번 '설정없음'으로 걸린다."""
-    me = actions_owner()
+    """한 사람 계정만. 기본은 Actions 주인, --owner <아이디>면 그 팀원.
+
+    팀원 토큰은 THREADS_<아이디 대문자, -는 _> 시크릿에 따로 있다(THREADS_ACCOUNTS와 섞지 않는다 —
+    발행·답장이 팀원 계정을 건드리지 않게). 그 값을 THREADS_ACCOUNTS 자리에 끼워 creds()가 그대로 읽게 한다.
+    """
+    me = sys.argv[sys.argv.index("--owner") + 1] if "--owner" in sys.argv else actions_owner()
+    if me != actions_owner():
+        os.environ["THREADS_ACCOUNTS"] = os.environ.get("THREADS_" + me.upper().replace("-", "_"), "")
     return [d for d in sorted((ROOT / "accounts").iterdir()) if d.is_dir() and owner(d.name) == me]
 
 
