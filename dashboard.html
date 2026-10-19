@@ -260,7 +260,7 @@ function renderSched(rows){
 }
 
 const mkState = (id, cols, third) => ({rows: [], acct: "", id, cols, third});
-let P = mkState("p", [["views","조회"],["likes","하트"],["replies","댓글"],["reposts","리포스트"],["shares","공유"],["clicks","링크 클릭"]], "reposts");
+let P = mkState("p", [["views","조회"],["clicks","링크 클릭"],["likes","하트"],["replies","댓글"],["reposts","리포스트"],["shares","공유"]], "reposts");
 let G = mkState("g", [["views","조회"],["likes","하트"],["replies","댓글"],["saved","저장"],["shares","공유"]], "saved");
 
 // 스레드·인스타 탭이 같이 쓰는 필터. 탭을 옮겨도 유지된다.
@@ -318,7 +318,11 @@ function paintPosts(S){
     `</div>` + calendar(S, rows) + `</div>` +
     `<h3>계정 × 날짜</h3>` + postsGrid(S, rows);
   wireTools(S);
-  document.querySelectorAll(`#${S.id}-cal [data-d]`).forEach(c => c.onclick = () => focusDay(S, c.dataset.d, true));
+  document.querySelectorAll(`#${S.id}-cal [data-d]`).forEach(c => c.onclick = () => {
+    const d = c.dataset.d;   // 달력에서 고른 날은 펼쳐서 보여준다
+    if(!OPEN.has(S.id + d)){ OPEN.add(S.id + d); paintPosts(S); }
+    focusDay(S, d, true);
+  });
   document.querySelectorAll(`#${S.id}-daily th.s`).forEach(th => th.onclick = () => {
     const k = th.dataset.dk;
     S.ddesc = S.dk === k ? !S.ddesc : true; S.dk = k;
@@ -419,12 +423,12 @@ function calendar(S, rows){
         <em>${day}</em><b>${kfmt(v) || 0}</b><span>${c == null ? "–" : kfmt(c) || 0}</span></a>`;
     }
     return h + `</div>`;
-  }).join("") + `<div class="legend">날짜를 누르면 표의 그날 줄로 이동한다.</div></aside>`;
+  }).join("") + `<div class="legend">날짜를 누르면 표의 그날 줄을 펼쳐 보여준다.</div></aside>`;
 }
 
 function focusDay(S, d, scroll){
   const tr = $(`#${S.id}-day-${d}`); if(!tr) return;
-  if(scroll) tr.scrollIntoView({behavior: "smooth", block: "center"});
+  if(scroll) scrollTo({top: tr.getBoundingClientRect().top + scrollY - 60, behavior: "smooth"});   // 펼친 계정 줄이 아래로 보이게 위쪽에 붙인다
   document.querySelectorAll(`#${S.id}-daily tr.day.focus, #${S.id}-cal .cal-d.on`).forEach(x => x.classList.remove("focus", "on"));
   tr.classList.add("focus");
   const c = $(`#${S.id}-cal [data-d="${d}"]`); if(c) c.classList.add("on");
@@ -463,7 +467,7 @@ function postsGrid(S, rows){
         const list = by[a + "|" + d];
         if(!list) return `<td><i class="cell"></i></td>`;
         const r = list.reduce((x,y) => (y.views||0) > (x.views||0) ? y : x), v = val(list);
-        const tip = list.map(r => `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n${S.cols[3][1]} ${n(r[S.third])} · 공유 ${n(r.shares)}${r.clicks != null ? ` · 링크 클릭 ${n(r.clicks)}` : ""}\n\n${r.text}`).join("\n\n────────\n\n");
+        const tip = list.map(r => `${r.flag} ${r.account}  ${r.local}\n조회 ${n(r.views)}${r.clicks != null ? ` · 링크 클릭 ${n(r.clicks)}` : ""} · 하트 ${n(r.likes)} · 댓글 ${n(r.replies)}\n${S.cols.find(([k]) => k === S.third)[1]} ${n(r[S.third])} · 공유 ${n(r.shares)}\n\n${r.text}`).join("\n\n────────\n\n");
         return `<td><a class="cell${list.length > 1 ? " multi" : ""}" style="background:${heatOf(v,max)}" href="${r.link}"
           target="_blank" data-tip="${esc(tip)}"><span>${kfmt(v)}</span></a></td>`;
       }).join("") + `</tr>`;
