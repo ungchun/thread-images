@@ -1,0 +1,29 @@
+name: briefing
+
+# 매일 아침 스레드 홍보 브리핑 (트레이스, 팀 전체 계정 조회수) → 슬랙 tmp_azhy2(trace-dashboard).
+# 08:00 KST(23:00 UTC)에 cron-job.org가 workflow_dispatch로 깨운다 — 이 레포는 GitHub schedule cron을 쓰지 않는다.
+# 팀원 토큰은 사람별 시크릿 THREADS_<아이디>. 새 팀원은 시크릿을 넣고 아래 env에 한 줄 추가한다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      send:
+        description: 'false면 슬랙에 보내지 않고 로그로만 출력'
+        required: false
+        default: 'true'
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Send briefing
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
+          THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
+          SLACK_BRIEFING_WEBHOOK_URL: ${{ secrets.SLACK_BRIEFING_WEBHOOK_URL }}
+        run: python3 briefing.py ${{ inputs.send != 'false' && '--send' || '' }}

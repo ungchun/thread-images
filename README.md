@@ -58,6 +58,7 @@ GitHub Actions는 자체 cron을 쓰지 않는다. cron-job.org가 workflow_disp
 |---|---|---|
 | 30분마다 | 예약 발행 | post.yml |
 | 매일 08:00 KST | 노션 동기화 (문라이트·코르텍스) | notion-sync.yml |
+| 매일 08:00 KST | 슬랙 스레드 브리핑 (트레이스, 팀 전체 조회수) | briefing.yml |
 | 매일 10:00 KST | 슬랙 홍보 브리핑 (트레이스) | report.yml |
 | 수동 | 성과 수집 / 답글 / 토큰 점검 | dashboard.yml, replies.yml, check.yml |
 
