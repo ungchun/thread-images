@@ -22,7 +22,7 @@ def check(account):
     try:
         token, uid = creds(account)
     except Exception as e:
-        return "설정없음", str(e)[:60]
+        return "설정없음", str(e)[:100]   # JSON 오류 위치(줄·칸)까지 보이게. 값은 안 담긴다
     url = ("https://graph.threads.net/v1.0/me?" +
            urllib.parse.urlencode({"fields": "id,username", "access_token": token}))
     try:
