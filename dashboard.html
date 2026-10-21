@@ -119,6 +119,7 @@ th.s:hover{color:var(--fg)}
 th.s.on{color:var(--hot)}
 .rank{color:var(--dim);font-size:12px;width:26px;text-align:right}
 .sub{color:var(--dim);font-size:11px}
+.kst{color:var(--dim);font-size:10px}
 tr.top td{background:var(--top)}
 .skip{opacity:.5}
 .skip .txt{text-decoration:line-through;text-decoration-color:var(--line)}
@@ -313,7 +314,7 @@ function paintPosts(S){
       accs.map(a => `<option value="${a}" ${a===S.acct?"selected":""}>${rows.concat(base).find(r => r.account === a).flag} ${a}</option>`).join("") + `</select>
     <span class="sp"></span><span class="dim">${rows.length}건</span>`;
   if(!rows.length){ box.innerHTML = `<div class="empty">이 조건에 맞는 게시물이 없다</div>`; return wireTools(S); }
-  box.innerHTML = `<h3>날짜별 · 계정별 성과</h3><div class="split"><div class="split-l">` + dailyTable(S, rows) +
+  box.innerHTML = `<h3>날짜별 · 게시물별 성과</h3><div class="split"><div class="split-l">` + dailyTable(S, rows) +
     (S.id === "p" ? `<div class="legend">링크 클릭 = 글에 단 답글 속 앱 링크를 누른 수. Threads API가 답글 단위로는 0만 줘서 계정 단위로 받아, 날마다 그날까지 올라온 글들에 조회수 비율로 나눈 추정치다(날짜는 미국 태평양 시간 기준). 프로필에 링크가 있으면 그 클릭도 섞인다. – 는 아직 이 항목을 수집하기 전 데이터.</div>` : "") +
     `</div>` + calendar(S, rows) + `</div>` +
     `<h3>계정 × 날짜</h3>` + postsGrid(S, rows);
@@ -355,17 +356,19 @@ function sumOf(rows, k){
   return v.length ? v.reduce((a,b) => a + b, 0) : null;
 }
 
-// 날짜별 합계 줄 아래에 그날 올린 계정을 줄마다 펼친다. 한 계정이 하루 여러 건이면 합친다.
-// 처음엔 날짜 줄만 보이고, 누르면 그날 계정 줄이 펼쳐진다.
+// 날짜별 합계 줄 아래에 그날 올린 게시물을 한 줄씩 펼친다. 같은 계정이 하루 여러 건 올려도 따로 보인다.
+// 처음엔 날짜 줄만 보이고, 누르면 그날 게시물 줄이 펼쳐진다.
 const OPEN = new Set();
+// 칸에는 현지 시간을 쓰고, 정렬은 실제로 올라간 순서라 옆에 한국 시간을 같이 적는다.
+const kst = utc => new Date(utc).toLocaleTimeString("ko-KR", {timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", hourCycle: "h23"});
 function dailyTable(S, rows){
   const by = {}; rows.forEach(r => (by[r.date] = by[r.date] || []).push(r));
-  // 날짜는 늘 최신이 위. 정렬은 그날 안의 계정 줄에만 걸린다 — 기본은 조회수 많은 순,
+  // 날짜는 늘 최신이 위. 정렬은 그날 안의 게시물 줄에만 걸린다 — 기본은 조회수 많은 순,
   // 열 이름을 누르면 그 열로 바꾼다(누를 때마다 ↓/↑). 위 '정렬' 드롭다운이 기본값을 정한다.
   const dk = S.dk || (F.order === "views" ? "views" : null), dd = S.dk ? S.ddesc : true;
-  const metric = (g, k) => k === "n" ? g.length : (sumOf(g, k) ?? -1);
+  const metric = (g, k) => k === "t" ? Date.parse(g[0].utc) : (sumOf(g, k) ?? -1);
   const dates = Object.keys(by).sort().reverse();
-  // 막대 길이는 그날 계정끼리 비교한다 (기간 전체 최고치에 맞추면 한 번 터진 날 빼고 다 납작해진다)
+  // 막대 길이는 그날 게시물끼리 비교한다 (기간 전체 최고치에 맞추면 한 번 터진 날 빼고 다 납작해진다)
   let mx = {};
   const cell = (v, k, bar) => v == null ? `<td class="num dim">–</td>`
     : bar ? `<td class="num bar"><i style="width:${Math.max(2, Math.round(v / mx[k] * 100))}%"></i><b class="${k==="views"&&v>10000?"big":""}">${n(v)}</b></td>`
@@ -376,21 +379,21 @@ function dailyTable(S, rows){
     : (x,y) => sumOf(y,"views") - sumOf(x,"views");
   const order = dk ? (x,y) => (dd ? -1 : 1) * (metric(x, dk) - metric(y, dk)) || accOrder(x, y) : accOrder;
   const th = (k, l, cls) => `<th class="s ${cls||""} ${dk===k?"on":""}" data-dk="${k}">${l}${dk===k?(dd?" ↓":" ↑"):""}</th>`;
-  return `<table class="daily" id="${S.id}-daily"><thead><tr>` + `<th>날짜 · 계정</th>` + th("n", "글", "num") +
+  return `<table class="daily" id="${S.id}-daily"><thead><tr>` + `<th>날짜 (총 게시물 수)</th>` + th("t", "올린 시간", "num") +
     S.cols.map(([k,l]) => th(k, l, "num")).join("") +
-    `<th>본문 (조회 최고 글)</th></tr></thead><tbody>` +
+    `<th>본문</th></tr></thead><tbody>` +
     dates.map(d => {
       const list = by[d], open = OPEN.has(S.id + d);
-      const accs = Object.values(list.reduce((m, r) => ((m[r.account] = m[r.account] || []).push(r), m), {})).sort(order);
+      const accs = list.map(r => [r]).sort(order);
       mx = Object.fromEntries(S.cols.map(([k]) => [k, Math.max(1, ...accs.map(g => sumOf(g, k) || 0))]));
-      return `<tr class="day${open ? " open" : ""}" data-d="${d}" id="${S.id}-day-${d}"><td class="acct"><span class="fold">${open ? "▾" : "▸"}</span> ${d.slice(5).replace("-","/")} <span class="dim">${W[new Date(d + "T00:00:00").getDay()]} · 계정 ${accs.length}개</span></td>
-        <td class="num">${list.length}</td>` +
+      return `<tr class="day${open ? " open" : ""}" data-d="${d}" id="${S.id}-day-${d}"><td class="acct"><span class="fold">${open ? "▾" : "▸"}</span> ${d.slice(5).replace("-","/")} <span class="dim">${W[new Date(d + "T00:00:00").getDay()]} (${list.length})</span></td>
+        <td></td>` +
         S.cols.map(([k]) => cell(sumOf(list, k), k, false)).join("") +
         `<td></td></tr>` +
         (open ? accs.map(g => {
-          const best = g.reduce((x,y) => (y.views||0) > (x.views||0) ? y : x);
-          return `<tr class="acc"><td><span class="ind">${best.flag} ${esc(best.account)}</span> <span class="sub">${esc(cname(best.country))}${g.length > 1 ? "" : " · " + esc(best.local.split(" ")[1] || "")}</span></td>
-            <td class="num">${g.length}</td>` +
+          const best = g[0];
+          return `<tr class="acc"><td><span class="ind">${best.flag} ${esc(best.account)}</span> <span class="sub">${esc(cname(best.country))}</span></td>
+            <td class="num">${esc(best.local.split(" ")[1] || "")}${best.country === "KR" ? "" : ` <span class="kst">(🇰🇷 ${kst(best.utc)})</span>`}</td>` +
             S.cols.map(([k]) => cell(sumOf(g, k), k, true)).join("") +
             `<td class="txt clip"><a class="pv" href="${best.link}" target="_blank">${esc(best.text)}</a></td></tr>`;
         }).join("") : "");
