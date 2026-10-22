@@ -29,7 +29,7 @@ def load():
     ds = []
     for f in sorted(ROOT.glob("dashboard*.json")):
         try:
-            ds.append(json.loads(f.read_text(encoding="utf-8")))
+            ds.append({**json.loads(f.read_text(encoding="utf-8")), "_file": f.name})
         except (ValueError, OSError):
             continue
     st = json.loads((ROOT / "accounts" / "status.json").read_text(encoding="utf-8"))["accounts"]
@@ -116,11 +116,13 @@ def build(today=None):
     today = today or datetime.now(KST).date()
     lines = [f"*트레이스 스레드 브리핑* {today:%m/%d}"]
 
-    gen = [d["generated"] for d in ds if d.get("generated")]
-    if gen:
-        age = (datetime.now(timezone.utc) - datetime.fromisoformat(min(gen))).total_seconds() / 3600
-        if age > STALE_H:
-            lines.append(f"⚠️ 가장 오래된 수집이 {age:.0f}시간 전이다. dashboard 워크플로 실행 기록을 확인한다 — 아래 판정이 낡았다")
+    now = datetime.now(timezone.utc)
+    stale = [(d["_file"], (now - datetime.fromisoformat(d["generated"])).total_seconds() / 3600)
+             for d in ds if d.get("generated")]
+    stale = [(n, h) for n, h in stale if h > STALE_H]
+    if stale:   # 파일마다 따로 — 팀원 시크릿이 빠지면 그 사람 파일만 낡는다
+        lines.append("⚠️ 수집이 낡았다: " + ", ".join(f"{n} {h:.0f}시간 전" for n, h in stale)
+                     + " — dashboard 워크플로 기록과 팀원 시크릿을 확인한다. 그 계정들 판정은 낡은 값이다")
 
     health = {}
     for d in ds:
