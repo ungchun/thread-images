@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T01:43:06.987620+00:00",
+ "generated": "2026-10-22T07:34:36.397909+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -407,361 +407,656 @@
      "er_score": null,
      "er_sample": 0,
      "variants": {}
+    },
+    {
+     "id": "R16",
+     "date": "2026-10-23",
+     "type": "고백형 한 줄 훅(H) vs 현행 문구(C) · 부분 전환 1주차",
+     "kr": "아이폰 속 작은 거 하나가\n엉망인 내 하루를 살렸다",
+     "note": "스펙 §5 부분 전환 1주차. 갈래는 계정으로 나뉜다(round 레벨 arms — 최상위 새API/기존API 상속을 끊는다). 설계는 '설계' 참조.",
+     "posts": 0,
+     "views": 0,
+     "likes": 0,
+     "median": 0,
+     "score": null,
+     "sample": 0,
+     "er_score": null,
+     "er_sample": 0,
+     "variants": {}
+    },
+    {
+     "id": "R16s",
+     "date": "2026-10-30",
+     "type": "고백형 한 줄 훅(H) vs 현행 문구(C) · 부분 전환 2주차(갈래 맞바꿈)",
+     "kr": "아이폰 속 작은 거 하나가\n엉망인 내 하루를 살렸다",
+     "note": "R16 설계 그대로, 갈래만 맞바꿨다. 파일명 R16s_<계정>[_<MMDD>].txt. 판정은 R16과 합쳐서 낸다.",
+     "posts": 0,
+     "views": 0,
+     "likes": 0,
+     "median": 0,
+     "score": null,
+     "sample": 0,
+     "er_score": null,
+     "er_sample": 0,
+     "variants": {}
     }
    ],
    "insights": {
     "hour": {
      "1": {
-      "n": 5,
-      "score": 2.01,
-      "median": 47
+      "n": 8,
+      "score": 1.5,
+      "median": 54
      },
      "4": {
       "n": 4,
-      "score": 0.56,
+      "score": 0.63,
       "median": 23
+     },
+     "5": {
+      "n": 2,
+      "score": 0.53,
+      "median": 30
      },
      "6": {
       "n": 2,
-      "score": 1.3,
+      "score": 1.41,
       "median": 47
      },
      "7": {
-      "n": 2,
-      "score": 0.55,
-      "median": 4
+      "n": 5,
+      "score": 0.72,
+      "median": 8
      },
      "8": {
-      "n": 4,
-      "score": 0.74,
-      "median": 5
+      "n": 8,
+      "score": 1.06,
+      "median": 28
      },
      "9": {
       "n": 2,
-      "score": 0.25,
+      "score": 0.28,
       "median": 9
      },
-     "11": {
-      "n": 1,
-      "score": 0.07,
+     "10": {
+      "n": 2,
+      "score": 0.06,
       "median": 2
      },
+     "11": {
+      "n": 4,
+      "score": 0.75,
+      "median": 19
+     },
      "12": {
-      "n": 2,
-      "score": 1.42,
-      "median": 11
+      "n": 4,
+      "score": 0.89,
+      "median": 21
      },
      "13": {
       "n": 6,
-      "score": 1.07,
-      "median": 21
+      "score": 0.72,
+      "median": 24
      },
      "14": {
-      "n": 2,
-      "score": 1.32,
-      "median": 2810
+      "n": 3,
+      "score": 0.46,
+      "median": 683
      },
      "15": {
       "n": 2,
-      "score": 0.43,
-      "median": 3
+      "score": 0.36,
+      "median": 4
      },
      "16": {
-      "n": 6,
-      "score": 0.68,
-      "median": 3
+      "n": 8,
+      "score": 0.64,
+      "median": 8
+     },
+     "17": {
+      "n": 4,
+      "score": 1.32,
+      "median": 43
      },
      "18": {
-      "n": 3,
-      "score": 0.63,
-      "median": 83
+      "n": 5,
+      "score": 0.68,
+      "median": 31
      },
      "19": {
-      "n": 4,
-      "score": 0.8,
-      "median": 11
+      "n": 7,
+      "score": 1.03,
+      "median": 13
      },
      "20": {
-      "n": 3,
-      "score": 1.37,
-      "median": 7
+      "n": 11,
+      "score": 0.44,
+      "median": 9
+     },
+     "21": {
+      "n": 1,
+      "score": 0.02,
+      "median": 1
+     },
+     "22": {
+      "n": 1,
+      "score": 0.96,
+      "median": 25
      }
     },
     "wday": {
+     "월": {
+      "n": 23,
+      "score": 0.9,
+      "median": 13
+     },
      "화": {
-      "n": 1,
-      "score": 0.21,
-      "median": 453
+      "n": 7,
+      "score": 1.03,
+      "median": 37
      },
      "수": {
-      "n": 9,
-      "score": 1.23,
-      "median": 23
+      "n": 15,
+      "score": 0.61,
+      "median": 13
      },
      "목": {
-      "n": 30,
-      "score": 0.75,
-      "median": 12
+      "n": 32,
+      "score": 0.46,
+      "median": 13
      },
      "금": {
-      "n": 8,
-      "score": 0.55,
-      "median": 5
+      "n": 10,
+      "score": 0.36,
+      "median": 7
+     },
+     "일": {
+      "n": 2,
+      "score": 1.32,
+      "median": 76
      }
     },
     "media": {
-     "IMAGE": {
-      "n": 18,
-      "score": 1.03,
-      "median": 14
-     },
      "CAROUSEL_ALBUM": {
-      "n": 29,
-      "score": 0.71,
-      "median": 11
+      "n": 56,
+      "score": 0.63,
+      "median": 13
+     },
+     "IMAGE": {
+      "n": 31,
+      "score": 0.86,
+      "median": 25
      },
      "TEXT_POST": {
-      "n": 1,
-      "score": 0.36,
-      "median": 765
+      "n": 2,
+      "score": 0.35,
+      "median": 516
      }
     },
     "accounts": {
      "jeongmin_trace": {
       "flag": "KR",
-      "posts": 3,
-      "avg": 2128,
-      "max": 5167,
+      "posts": 5,
+      "avg": 1484,
+      "max": 5334,
       "hours": {
-       "14": {
-        "n": 2,
-        "score": 1.32,
-        "median": 2810
-       },
-       "18": {
+       "12": {
         "n": 1,
-        "score": 0.36,
-        "median": 765
-       }
-      },
-      "best_hour": 14,
-      "best_n": 2,
-      "state": "active",
-      "note": ""
-     },
-     "appfindsna9": {
-      "flag": "US",
-      "posts": 7,
-      "avg": 64,
-      "max": 142,
-      "hours": {
-       "1": {
-        "n": 2,
-        "score": 1.34,
-        "median": 86
-       },
-       "4": {
-        "n": 2,
-        "score": 0.26,
-        "median": 16
-       },
-       "13": {
-        "n": 2,
-        "score": 1.16,
-        "median": 74
-       },
-       "20": {
-        "n": 1,
-        "score": 1.48,
-        "median": 95
-       }
-      },
-      "best_hour": 20,
-      "best_n": 1,
-      "state": "active",
-      "note": ""
-     },
-     "appfindsuk8": {
-      "flag": "GB",
-      "posts": 7,
-      "avg": 36,
-      "max": 86,
-      "hours": {
-       "1": {
-        "n": 1,
-        "score": 1.01,
-        "median": 37
-       },
-       "6": {
-        "n": 2,
-        "score": 1.3,
-        "median": 47
-       },
-       "9": {
-        "n": 2,
         "score": 0.25,
-        "median": 9
+        "median": 372
+       },
+       "14": {
+        "n": 3,
+        "score": 0.46,
+        "median": 683
        },
        "18": {
-        "n": 2,
-        "score": 1.45,
-        "median": 53
+        "n": 1,
+        "score": 0.61,
+        "median": 898
        }
       },
       "best_hour": 18,
-      "best_n": 2,
-      "state": "active",
-      "note": ""
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 4,
+       "last": 372,
+       "recent": [
+        5334,
+        683,
+        372
+       ],
+       "base": 527,
+       "approx": 4,
+       "multiple": 0.71,
+       "like_rate": 4.83,
+       "burst": 0.0,
+       "label": "정상"
+      }
      },
-     "appfinds_anz": {
-      "flag": "AU",
-      "posts": 7,
-      "avg": 29,
-      "max": 98,
-      "hours": {
-       "4": {
-        "n": 2,
-        "score": 2.02,
-        "median": 59
-       },
-       "11": {
-        "n": 1,
-        "score": 0.07,
-        "median": 2
-       },
-       "16": {
-        "n": 2,
-        "score": 1.07,
-        "median": 31
-       },
-       "19": {
-        "n": 2,
-        "score": 0.37,
-        "median": 11
-       }
-      },
-      "best_hour": 4,
-      "best_n": 2,
-      "state": "active",
-      "note": ""
-     },
-     "appfinds_my": {
-      "flag": "MY",
-      "posts": 8,
-      "avg": 23,
-      "max": 59,
+     "appfindsna9": {
+      "flag": "US",
+      "posts": 14,
+      "avg": 57,
+      "max": 155,
       "hours": {
        "1": {
         "n": 2,
-        "score": 2.27,
-        "median": 53
+        "score": 1.51,
+        "median": 87
        },
-       "8": {
+       "4": {
         "n": 2,
-        "score": 0.73,
-        "median": 17
+        "score": 0.35,
+        "median": 20
+       },
+       "5": {
+        "n": 2,
+        "score": 0.53,
+        "median": 30
+       },
+       "7": {
+        "n": 1,
+        "score": 1.11,
+        "median": 64
        },
        "13": {
         "n": 2,
-        "score": 0.92,
-        "median": 21
+        "score": 1.3,
+        "median": 75
        },
-       "16": {
-        "n": 2,
-        "score": 0.09,
-        "median": 2
+       "20": {
+        "n": 4,
+        "score": 1.32,
+        "median": 76
+       },
+       "21": {
+        "n": 1,
+        "score": 0.02,
+        "median": 1
        }
       },
       "best_hour": 1,
       "best_n": 2,
-      "state": "active",
-      "note": ""
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 12,
+       "last": 9,
+       "recent": [
+        86,
+        52,
+        9
+       ],
+       "base": 49,
+       "approx": 12,
+       "multiple": 0.18,
+       "like_rate": 0.67,
+       "burst": 0.25,
+       "label": "막힘"
+      }
+     },
+     "appfinds_my": {
+      "flag": "MY",
+      "posts": 14,
+      "avg": 35,
+      "max": 82,
+      "hours": {
+       "1": {
+        "n": 2,
+        "score": 1.5,
+        "median": 54
+       },
+       "8": {
+        "n": 4,
+        "score": 0.75,
+        "median": 27
+       },
+       "13": {
+        "n": 2,
+        "score": 0.67,
+        "median": 24
+       },
+       "16": {
+        "n": 2,
+        "score": 0.07,
+        "median": 2
+       },
+       "17": {
+        "n": 2,
+        "score": 2.17,
+        "median": 78
+       },
+       "19": {
+        "n": 1,
+        "score": 1.03,
+        "median": 37
+       },
+       "20": {
+        "n": 1,
+        "score": 1.14,
+        "median": 41
+       }
+      },
+      "best_hour": 17,
+      "best_n": 2,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 12,
+       "last": 82,
+       "recent": [
+        13,
+        74,
+        82
+       ],
+       "base": 36,
+       "approx": 12,
+       "multiple": 2.28,
+       "like_rate": 1.41,
+       "burst": 0.17,
+       "label": "휴식"
+      }
+     },
+     "appfindsuk8": {
+      "flag": "GB",
+      "posts": 14,
+      "avg": 33,
+      "max": 135,
+      "hours": {
+       "1": {
+        "n": 4,
+        "score": 1.11,
+        "median": 37
+       },
+       "6": {
+        "n": 2,
+        "score": 1.41,
+        "median": 47
+       },
+       "9": {
+        "n": 2,
+        "score": 0.28,
+        "median": 9
+       },
+       "10": {
+        "n": 2,
+        "score": 0.06,
+        "median": 2
+       },
+       "12": {
+        "n": 1,
+        "score": 0.89,
+        "median": 30
+       },
+       "18": {
+        "n": 2,
+        "score": 1.58,
+        "median": 53
+       },
+       "19": {
+        "n": 1,
+        "score": 0.03,
+        "median": 1
+       }
+      },
+      "best_hour": 18,
+      "best_n": 2,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 12,
+       "last": 2,
+       "recent": [
+        135,
+        2,
+        2
+       ],
+       "base": 12,
+       "approx": 12,
+       "multiple": 0.17,
+       "like_rate": 0.9,
+       "burst": 0.33,
+       "label": "저조"
+      }
+     },
+     "appfinds_anz": {
+      "flag": "AU",
+      "posts": 14,
+      "avg": 26,
+      "max": 98,
+      "hours": {
+       "4": {
+        "n": 2,
+        "score": 2.29,
+        "median": 59
+       },
+       "11": {
+        "n": 4,
+        "score": 0.75,
+        "median": 19
+       },
+       "16": {
+        "n": 2,
+        "score": 1.21,
+        "median": 31
+       },
+       "18": {
+        "n": 1,
+        "score": 0.23,
+        "median": 6
+       },
+       "19": {
+        "n": 2,
+        "score": 0.42,
+        "median": 11
+       },
+       "20": {
+        "n": 2,
+        "score": 0.04,
+        "median": 1
+       },
+       "22": {
+        "n": 1,
+        "score": 0.96,
+        "median": 25
+       }
+      },
+      "best_hour": 4,
+      "best_n": 2,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 12,
+       "last": 1,
+       "recent": [
+        32,
+        1,
+        1
+       ],
+       "base": 16,
+       "approx": 12,
+       "multiple": 0.06,
+       "like_rate": 1.2,
+       "burst": 0.33,
+       "label": "막힘"
+      }
+     },
+     "appfinds_ph": {
+      "flag": "PH",
+      "posts": 14,
+      "avg": 20,
+      "max": 79,
+      "hours": {
+       "8": {
+        "n": 4,
+        "score": 1.37,
+        "median": 28
+       },
+       "13": {
+        "n": 2,
+        "score": 0.44,
+        "median": 9
+       },
+       "16": {
+        "n": 2,
+        "score": 0.17,
+        "median": 3
+       },
+       "17": {
+        "n": 2,
+        "score": 0.59,
+        "median": 12
+       },
+       "19": {
+        "n": 1,
+        "score": 3.87,
+        "median": 79
+       },
+       "20": {
+        "n": 3,
+        "score": 0.39,
+        "median": 8
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 12,
+       "last": 12,
+       "recent": [
+        76,
+        12,
+        12
+       ],
+       "base": 10,
+       "approx": 12,
+       "multiple": 1.14,
+       "like_rate": 2.01,
+       "burst": 0.17,
+       "label": "막힘"
+      }
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 8,
-      "avg": 8,
-      "max": 16,
+      "posts": 14,
+      "avg": 11,
+      "max": 31,
       "hours": {
        "7": {
-        "n": 2,
-        "score": 0.55,
-        "median": 4
+        "n": 4,
+        "score": 0.72,
+        "median": 8
        },
        "12": {
         "n": 2,
-        "score": 1.42,
+        "score": 1.03,
         "median": 11
        },
        "15": {
         "n": 2,
-        "score": 0.43,
-        "median": 3
-       },
-       "19": {
-        "n": 2,
-        "score": 1.6,
-        "median": 13
-       }
-      },
-      "best_hour": 19,
-      "best_n": 2,
-      "state": "active",
-      "note": ""
-     },
-     "appfinds_ph": {
-      "flag": "PH",
-      "posts": 8,
-      "avg": 5,
-      "max": 10,
-      "hours": {
-       "8": {
-        "n": 2,
-        "score": 0.78,
+        "score": 0.36,
         "median": 4
-       },
-       "13": {
-        "n": 2,
-        "score": 1.46,
-        "median": 7
        },
        "16": {
         "n": 2,
-        "score": 0.68,
-        "median": 3
+        "score": 1.12,
+        "median": 12
+       },
+       "18": {
+        "n": 1,
+        "score": 2.78,
+        "median": 31
+       },
+       "19": {
+        "n": 2,
+        "score": 1.35,
+        "median": 15
        },
        "20": {
-        "n": 2,
-        "score": 1.07,
-        "median": 5
+        "n": 1,
+        "score": 0.54,
+        "median": 6
        }
       },
-      "best_hour": 13,
-      "best_n": 2,
-      "state": "active",
-      "note": ""
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 12,
+       "last": 13,
+       "recent": [
+        12,
+        12,
+        13
+       ],
+       "base": 11,
+       "approx": 12,
+       "multiple": 1.18,
+       "like_rate": 3.36,
+       "burst": 0.0,
+       "label": "휴식"
+      }
      },
-     "ashgrey._02": {
-      "flag": "VN",
+     "03ines.mar_": {
+      "flag": "PT",
       "posts": 0,
       "avg": 0,
       "max": 0,
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "active",
-      "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대"
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 포르투갈",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
-     "inkling01": {
-      "flag": "TW",
+     "ac_dd91": {
+      "flag": "KR",
       "posts": 0,
       "avg": 0,
       "max": 0,
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "active",
-      "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음"
+      "state": "paused",
+      "note": "한국은 별도 판단 대기 — 10월 조회수 중앙값 252. 한국. 저녁 18시가 오전보다 나음",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "aisyah.zr_05": {
+      "flag": "MY",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
      },
      "aoi.02_": {
       "flag": "JP",
@@ -772,10 +1067,31 @@
       "best_hour": null,
       "best_n": 0,
       "state": "banned",
-      "note": "일본. 9/3에 32,241. 영구정지(9/23 인계 기준)"
+      "note": "일본. 9/3에 32,241. 영구정지(9/23 인계 기준)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
-     "o2ndot": {
-      "flag": "FR",
+     "aoi_1124_gram": {
+      "flag": "JP",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
+     },
+     "ashgrey._02": {
+      "flag": "VN",
       "posts": 0,
       "avg": 0,
       "max": 0,
@@ -783,10 +1099,79 @@
       "best_hour": null,
       "best_n": 0,
       "state": "active",
-      "note": "프랑스. 저녁 19시가 오전 8시보다 10배"
+      "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
-     "ac_dd91": {
-      "flag": "KR",
+     "bea.cruz_03": {
+      "flag": "PH",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "beatriz03._a": {
+      "flag": "ES",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 스페인. 앞 계정 영구정지 후 재개설",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "bia__rp03": {
+      "flag": "BR",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "claire.mw_02": {
+      "flag": "US",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "daily.life_gram": {
+      "flag": "TW",
       "posts": 0,
       "avg": 0,
       "max": 0,
@@ -794,18 +1179,28 @@
       "best_hour": null,
       "best_n": 0,
       "state": "active",
-      "note": "한국. 저녁 18시가 오전보다 나음"
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
-     "03ines.mar_": {
-      "flag": "PT",
+     "daily03dew": {
+      "flag": "TW",
       "posts": 0,
       "avg": 0,
       "max": 0,
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "active",
-      "note": "포르투갈"
+      "state": "rest",
+      "note": "7건 평균 16·최고 40. 같은 문구 쓴 inkling01이 평균 7,885라 계정 문제. 예약에서 제외, 새 대만 계정 개설 예정",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
      },
      "dot2day_": {
       "flag": "DE",
@@ -815,8 +1210,29 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "active",
-      "note": "독일. 오전 8시 성과가 특히 나빴다"
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 독일. 오전 8시 성과가 특히 나빴다",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "elif.dm_05": {
+      "flag": "TR",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
      "elle__jm": {
       "flag": "AU",
@@ -826,8 +1242,285 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 호주. 9/7 합류, 표본 부족",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "fah.pk_03": {
+      "flag": "TH",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
       "state": "active",
-      "note": "호주. 9/7 합류, 표본 부족"
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "giulia.r_055": {
+      "flag": "IT",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "haru._81a": {
+      "flag": "JP",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "inkling01": {
+      "flag": "TW",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "rest",
+      "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
+     },
+     "ivy_.k09": {
+      "flag": "US",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "kai_.03b": {
+      "flag": "PH",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 필리핀. 9/7 합류, 표본 부족",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "lari.s_07": {
+      "flag": "BR",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "linh.ngx_02": {
+      "flag": "VN",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "lune__v34": {
+      "flag": "IT",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 이탈리아. 9/7 합류, 표본 부족",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "mae.dw_04": {
+      "flag": "US",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "mint.le_06": {
+      "flag": "VN",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "mio._k27": {
+      "flag": "JP",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "nadia.ps_04": {
+      "flag": "ID",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
+     },
+     "nia._055": {
+      "flag": "IN",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 인도. 9/7 합류, 표본 부족",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "nur.aina_04": {
+      "flag": "MY",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "o2ndot": {
+      "flag": "FR",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비). 프랑스. 저녁 19시가 오전 8시보다 10배",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "pim.pm_02": {
+      "flag": "TH",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
      "rara.2k_": {
       "flag": "ID",
@@ -838,20 +1531,14 @@
       "best_hour": null,
       "best_n": 0,
       "state": "active",
-      "note": "인도네시아. 9/7 합류. 앱 현지화 미완"
+      "note": "인도네시아. 9/7 합류. 앱 현지화 미완",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
-     "kai_.03b": {
-      "flag": "PH",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "필리핀. 9/7 합류, 표본 부족"
-     },
-     "nia._055": {
+     "riya._m08": {
       "flag": "IN",
       "posts": 0,
       "avg": 0,
@@ -859,32 +1546,31 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "active",
-      "note": "인도. 9/7 합류, 표본 부족"
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
-     "lune__v34": {
-      "flag": "IT",
+     "seoyn.k_97": {
+      "flag": "KR",
       "posts": 0,
       "avg": 0,
       "max": 0,
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "active",
-      "note": "이탈리아. 9/7 합류, 표본 부족"
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      },
-     "beatriz03._a": {
-      "flag": "ES",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "스페인. 앞 계정 영구정지 후 재개설"
-     },
-     "daily03dew": {
+     "shu.lin_03": {
       "flag": "TW",
       "posts": 0,
       "avg": 0,
@@ -892,8 +1578,45 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "dead",
-      "note": "7건 평균 16·최고 40. 같은 문구 쓴 inkling01이 평균 7,885라 계정 문제. 예약에서 제외, 새 대만 계정 개설 예정"
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
+     },
+     "yuting._066": {
+      "flag": "TW",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "zeynep.ak_06": {
+      "flag": "TR",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
      }
     }
    },
@@ -1457,6 +2180,12 @@
      "방침": "오래된 계정도 실험 표본에서 빼지 않는다. 터질 수 있다.",
      "확정일": "2026-09-14",
      "결론": "계정은 늙어서 죽지 않는다. 오래된 계정도 표본에서 빼지 않는다."
+    },
+    "문구_재개": {
+     "상태": "문구 실험 재개 (2026-10-22). 위 문구_AB 기록은 그대로 둔다.",
+     "이유": "문구_AB는 요일·시각을 함께 고정한 깨끗한 대결이 없어 판정 불가로 닫았다. 10/12 이후 노출이 계정 단위로 막혀 운영을 재정비했고(스펙 §1·§4: 계정당 하루 1개, 리포스트 중단, 휴식), 스펙 §5가 유지 계정 일부만 고백형 한 줄 훅으로 바꾸는 부분 전환을 지시했다. 이번엔 실패기록 교훈대로 같은 날·같은 시각대·같은 이미지에 문구 하나만 움직이고, 7일 뒤 갈래를 맞바꾼다.",
+     "범위": "R16·R16s 2주(10/23~11/05) 한정. 결과는 방향 읽기이고 확정으로 올리지 않는다. 고백형 전체 전환과 살아 있는 계정의 같은 문구 반복 대조는 스펙 §10 보류.",
+     "재개일": "2026-10-22"
     }
    },
    "watching": {
@@ -1475,13 +2204,1088 @@
      "상태": "같은 실험 안에서 날짜별로 문구가 다르다(호명형·팁형·설정형·10년형·캘린더형). 경로는 같은 날 갈래끼리, 문구는 날짜끼리 비교한다.",
      "방침": "도달이 돌아온 뒤에만 문구를 읽는다. 지금은 도달 자체가 꺼져 있어 문구 차이가 묻힌다.",
      "반증": "5종 모두 과거 반응 좋았던 원문 재사용이라 '새 문구의 힘'은 못 잰다. 재사용이 재발행 페널티를 받는지도 섞여 있다."
+    },
+    "R16 고백형 부분 전환": {
+     "상태": "예정 10/23~11/05. H 5계정(고백형 한 줄 훅) vs C 6계정(현행 문구), 7일 뒤 맞바꿈. 현재값은 라운드 표의 R16·R16s 변종 점수(H·C)를 본다.",
+     "방침": "두 주 모두 H가 도달·반응 배수에서 1.3배 이상 앞서면 다음 2주에 유지 계정 절반 이상으로 넓힌다(전체 전환은 별도 결정). 반대면 고백형을 큐로 돌리고 카피기준 파생 문구를 유지한다.",
+     "반증": "계정 11개뿐이라 한두 계정의 회복·막힘이 갈래 점수를 뒤집는다. 같은 기간 휴식 계정 복귀·크리에이터 협업이 겹치므로 갈래 밖 변화는 해석하지 않는다. 관측 카드의 갈래점수(W39)는 arms가 있는 라운드를 라벨로 합쳐 보여서 H·C가 거기에도 같이 뜬다."
     }
    }
   }
  },
  "window_days": 30,
  "scheduled": [],
+ "accounts_health": {
+  "appfinds_anz": {
+   "n": 12,
+   "last": 1,
+   "recent": [
+    32,
+    1,
+    1
+   ],
+   "base": 16,
+   "approx": 12,
+   "multiple": 0.06,
+   "like_rate": 1.2,
+   "burst": 0.33,
+   "label": "막힘",
+   "state": "paused",
+   "until": null
+  },
+  "appfinds_id": {
+   "n": 12,
+   "last": 13,
+   "recent": [
+    12,
+    12,
+    13
+   ],
+   "base": 11,
+   "approx": 12,
+   "multiple": 1.18,
+   "like_rate": 3.36,
+   "burst": 0.0,
+   "label": "휴식",
+   "state": "rest",
+   "until": "2026-11-05"
+  },
+  "appfinds_my": {
+   "n": 12,
+   "last": 82,
+   "recent": [
+    13,
+    74,
+    82
+   ],
+   "base": 36,
+   "approx": 12,
+   "multiple": 2.28,
+   "like_rate": 1.41,
+   "burst": 0.17,
+   "label": "휴식",
+   "state": "rest",
+   "until": "2026-11-05"
+  },
+  "appfinds_ph": {
+   "n": 12,
+   "last": 12,
+   "recent": [
+    76,
+    12,
+    12
+   ],
+   "base": 10,
+   "approx": 12,
+   "multiple": 1.14,
+   "like_rate": 2.01,
+   "burst": 0.17,
+   "label": "막힘",
+   "state": "paused",
+   "until": null
+  },
+  "appfindsna9": {
+   "n": 12,
+   "last": 9,
+   "recent": [
+    86,
+    52,
+    9
+   ],
+   "base": 49,
+   "approx": 12,
+   "multiple": 0.18,
+   "like_rate": 0.67,
+   "burst": 0.25,
+   "label": "막힘",
+   "state": "paused",
+   "until": null
+  },
+  "appfindsuk8": {
+   "n": 12,
+   "last": 2,
+   "recent": [
+    135,
+    2,
+    2
+   ],
+   "base": 12,
+   "approx": 12,
+   "multiple": 0.17,
+   "like_rate": 0.9,
+   "burst": 0.33,
+   "label": "저조",
+   "state": "paused",
+   "until": null
+  },
+  "jeongmin_trace": {
+   "n": 4,
+   "last": 372,
+   "recent": [
+    5334,
+    683,
+    372
+   ],
+   "base": 527,
+   "approx": 4,
+   "multiple": 0.71,
+   "like_rate": 4.83,
+   "burst": 0.0,
+   "label": "정상",
+   "state": "paused",
+   "until": null
+  }
+ },
+ "proposals": [],
+ "violations": [],
+ "hits": [],
  "posts": [
+  {
+   "id": "18077546726730084",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-10-22T06:08:07+00:00",
+   "date": "2026-10-22",
+   "local": "10/22 15:08",
+   "text": "",
+   "kind": "REPOST_FACADE",
+   "link": "https://www.threads.com/@jeongmin_trace/post/DeyTZ9IoNu4",
+   "views": null,
+   "likes": null,
+   "replies": null,
+   "reposts": null,
+   "quotes": null,
+   "shares": null,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18609577180064120",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-10-22T06:08:05+00:00",
+   "date": "2026-10-22",
+   "local": "10/22 15:08",
+   "text": "",
+   "kind": "REPOST_FACADE",
+   "link": "https://www.threads.com/@jeongmin_trace/post/DeyTZsdoIfd",
+   "views": null,
+   "likes": null,
+   "replies": null,
+   "reposts": null,
+   "quotes": null,
+   "shares": null,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18093949556676238",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-10-22T06:08:03+00:00",
+   "date": "2026-10-22",
+   "local": "10/22 15:08",
+   "text": "",
+   "kind": "REPOST_FACADE",
+   "link": "https://www.threads.com/@jeongmin_trace/post/DeyTZeGoKpt",
+   "views": null,
+   "likes": null,
+   "replies": null,
+   "reposts": null,
+   "quotes": null,
+   "shares": null,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18109605284250628",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-10-22T06:08:01+00:00",
+   "date": "2026-10-22",
+   "local": "10/22 15:08",
+   "text": "",
+   "kind": "REPOST_FACADE",
+   "link": "https://www.threads.com/@jeongmin_trace/post/DeyTZPqoGwv",
+   "views": null,
+   "likes": null,
+   "replies": null,
+   "reposts": null,
+   "quotes": null,
+   "shares": null,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18107140378968031",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-10-22T06:07:57+00:00",
+   "date": "2026-10-22",
+   "local": "10/22 15:07",
+   "text": "",
+   "kind": "REPOST_FACADE",
+   "link": "https://www.threads.com/@jeongmin_trace/post/DeyTYy-ILci",
+   "views": null,
+   "likes": null,
+   "replies": null,
+   "reposts": null,
+   "quotes": null,
+   "shares": null,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18134755756659109",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-10-22T05:03:17+00:00",
+   "date": "2026-10-22",
+   "local": "10/22 14:03",
+   "text": "트레이스 마케팅을 하면서 요즘 고민이 하나 생겼어요.\n\n저는 일정이랑 할 일을 편하게 관리할 수 있다는 걸 알리고 싶은데, 얼마 전에는 치이카와 잠금화면을 보고 어떤 앱인지 물어봐주신 분이 있었어요.\n\n제가 설명하고 싶은 좋은 점과, 누군가 써보고 싶어지는 이유가 다를 수도 있겠더라고요.\n\n그럼 예쁜 잠금화면을 더 보여드리면 될까 싶다가도, 그렇게 들어온 분들께 일정관리의 편함도 잘 전해질까 고민돼요.\n\n생각해보면 그분께는 예쁜 잠금화면 자체가 가장 필요한 기능일 수도 있고요ㅎㅎ",
+   "kind": "TEXT_POST",
+   "link": "https://www.threads.com/@jeongmin_trace/post/DeyL_Lqgb_t",
+   "views": 134,
+   "likes": 11,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18082940951378367",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-10-22T01:00:29+00:00",
+   "date": "2026-10-21",
+   "local": "10/21 21:00",
+   "text": "A work schedule screenshot is not a calendar entry yet.\n\nTrace can turn schedule images into drafts, so you can check the dates and times before adding them.\n\nWhat do you keep retyping: shifts, classes, or appointments?",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfindsna9/post/DexwLxLD1tA",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18135402826661794",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-10-21T18:15:33+00:00",
+   "date": "2026-10-21",
+   "local": "10/21 19:15",
+   "text": "The task that shouts loudest isn’t always the most important.\n\nTrace has a Matrix view for sorting tasks by urgency and importance. You choose what goes where.\n\nWhat’s the important thing you keep putting off?",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfindsuk8/post/DexB2MXEoag",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17914442205535628",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-10-21T13:00:22+00:00",
+   "date": "2026-10-21",
+   "local": "10/21 20:00",
+   "text": "Jadwal berubah, kalendernya belum diubah. Relate? 🥲\n\nDi Trace, kamu bisa minta perubahan jadwal lewat kalimat biasa. Cek tanggal dan jamnya dulu sebelum disimpan.\n\nYang paling sering geser: meeting, kelas, atau janji pribadi?",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfinds_id/post/Dewdx1uIO23",
+   "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18061917527538735",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-10-21T12:45:34+00:00",
+   "date": "2026-10-21",
+   "local": "10/21 20:45",
+   "text": "Reminder dah swipe, lepas tu terus lupa? 🥲\n\nTrace boleh letak jadual dan to-do pada wallpaper Lock Screen iPhone.\nSwipe gambar kedua untuk tengok tetapan dalam app.\n\nKorang lebih perlukan jadual atau to-do dekat situ?",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_my/post/DewcFW_luMl",
+   "views": 41,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17916858342463708",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-10-21T12:31:19+00:00",
+   "date": "2026-10-21",
+   "local": "10/21 20:31",
+   "text": "Nasa calendar na yung deadline. Pero kailan mo gagawin yung task? 🥲\n\nSa Trace, may calendar para sa oras at task list para sa kailangang gawin.\n\nIkaw, deadline lang ba nilalagay mo o pati oras para gawin yung task?",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_ph/post/DewadCWHHMB",
+   "views": 8,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18601226275064652",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-10-21T07:31:06+00:00",
+   "date": "2026-10-21",
+   "local": "10/21 18:31",
+   "text": "Before making another to-do list: where will you actually see it?\n\nTrace lets you choose what goes on your iPhone Lock Screen wallpaper. First slide: the settings. Second: the layout.\n\nWould you put your week or just today’s plans there?",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_anz/post/Dev4GNlm-Ww",
+   "views": 6,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18120311120321930",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-10-20T11:05:03+00:00",
+   "date": "2026-10-20",
+   "local": "10/20 18:05",
+   "text": "Niatnya cuma cek jam,\nmalah sekalian keinget jadwal hari ini 🥹\n\nWallpaper tetap gemas.\nAgenda hari ini + kalender sebulan, langsung kelihatan di lock screen.",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfinds_id/post/DetryC1iXJu",
+   "views": 31,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18018254996955393",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-10-20T11:04:48+00:00",
+   "date": "2026-10-20",
+   "local": "10/20 19:04",
+   "text": "Ingatkan wallpaper comel je… rupanya ada jadual sekali 🥹\n\nMesyuarat, bungkusan nak ambil, plan minggu ni.\nBuka skrin je, terus nampak.",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfinds_my/post/DetrwLDCRHR",
+   "views": 37,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18128916760634042",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-10-20T11:04:11+00:00",
+   "date": "2026-10-20",
+   "local": "10/20 19:04",
+   "text": "Ang cute ng wallpaper… tapos may schedule pala 😭🗓️\n\nStudy session, group meeting, deadline: kita agad sa lock screen.\nPara sa mga “wait, ano ulit gagawin ko today?” moments.",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfinds_ph/post/DetrrrvCYt6",
+   "views": 79,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17873755770636305",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-10-20T11:04:10+00:00",
+   "date": "2026-10-20",
+   "local": "10/20 12:04",
+   "text": "For anyone whose brain has 37 tabs open:\nthe plan can live on your lock screen.\n\nMeetings. A parcel to collect. The rest of the month.\nAll here, and still cute. 🥹",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfindsuk8/post/Detrrq4CcWa",
+   "views": 30,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17926120095432613",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-10-20T11:03:56+00:00",
+   "date": "2026-10-20",
+   "local": "10/20 22:03",
+   "text": "Work catch-up. Parcel to collect. Coffee with a mate.\nAll on the lock screen, with room for the cute wallpaper 🥹\n\nA tiny bit less life admin.",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfinds_anz/post/Detrp5eifZZ",
+   "views": 25,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18641042971034206",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-10-20T11:03:17+00:00",
+   "date": "2026-10-20",
+   "local": "10/20 07:03",
+   "text": "Wait. A whole month AND today’s plans on the lock screen?? 🥹\n\nCute wallpaper, actual schedule.\nSame screen.",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfindsna9/post/DetrlKBieSu",
+   "views": 64,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18150724102550671",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-10-19T09:32:54+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 17:32",
+   "text": "Bago mag-log off, may invoice pang kailangang ipadala.\n\nSa Trace, puwedeng lagyan ng due date at oras ang task: 27 Oct, 5 PM.\nIsang malinaw na deadline para sa “Send the invoice”.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_ph/post/Deq8cgqCf8A",
+   "views": 12,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18131676595812642",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-10-19T09:32:20+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 16:32",
+   "text": "Balas atasan dulu. Rencana liburan nanti.\n\nDi Matrix Trace, tugas bisa dipisah menurut penting dan mendesaknya. Kamu pilih sendiri kotaknya.\nContoh di gambar: “Reply to manager” dan “Plan next year’s trip”.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/Deq8YQiibZS",
+   "views": 13,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18145185481648316",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-10-19T09:31:43+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 17:31",
+   "text": "Sebelum masuk kelas: Matematik 5A pukul 8, Sains 5B pukul 9.30, mesyuarat pukul 2.\nTugasan semak buku pun ada di sebelah jadual.\n\nContoh Lock Screen Trace untuk hari Isnin, 26 Oktober.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_my/post/Deq8TyeiRzd",
+   "views": 82,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18103035347280476",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-10-19T09:31:04+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 20:31",
+   "text": "Two plans, one message.\n\n“Monday 26 October 2026: Team check-in 10:00–11:00. Pick up parcel 14:00–14:15. Remind me 15 minutes before both.”\n\nTrace prepares two event cards. Check the dates, times and reminders before saving.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_anz/post/Deq8PJviaCS",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18038539451654281",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-10-19T09:30:31+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 10:30",
+   "text": "Two plans, one message.\n\n“Monday 26 October 2026: Team check-in 10:00–11:00. Pick up parcel 14:00–14:15. Remind me 15 minutes before both.”\n\nTrace prepares two event cards. Check the dates, times and reminders before saving.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsuk8/post/Deq8LaQCdU-",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18151457404538913",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-10-19T09:30:01+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 05:30",
+   "text": "Two plans, one message.\n\n“Monday 26 October 2026: Team check-in 10:00–11:00. Pick up parcel 14:00–14:15. Remind me 15 minutes before both.”\n\nTrace prepares two event cards. Check the dates, times and reminders before saving.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsna9/post/Deq8HZHieqA",
+   "views": 9,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18134654671786735",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-10-19T09:29:25+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 17:29",
+   "text": "pov: may work meeting ka, may parcel ka pang kukunin.\nNasa iisang Lock Screen na ang schedule at to-dos.\n\nTrace demo: 26 Oct, 10am check-in + 2pm parcel pick-up.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_ph/post/Deq8C9fCQQ4",
+   "views": 12,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17962408200213183",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-10-19T09:28:52+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 16:28",
+   "text": "Tim yang males masukin jadwal satu-satu 🙋🏻‍♀️\nRapat jam 10, berangkat ke acara jam 14. Tulis dalam satu pesan, lalu cek dua kartunya di Trace.\n\nGeser untuk contoh yang bisa disalin, hasilnya, dan langkah simpan.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/Deq7-75iatC",
+   "views": 12,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18026547440921091",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-10-19T09:28:11+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 17:28",
+   "text": "Cikgu, satu mesej untuk dua kelas, satu mesyuarat dan satu tugasan semak buku.\n\nContoh Isnin, 26 Oktober: Matematik 5A pukul 8, Sains 5B pukul 9.30, mesyuarat pukul 2, semak buku pukul 4.\n\nSemak tarikh, masa dan jenis kad sebelum simpan dalam Trace.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_my/post/Deq754uCWOQ",
+   "views": 74,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18125226031928046",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-10-19T09:27:33+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 20:27",
+   "text": "Your 10am check-in. Your 2pm parcel pick-up.\nYour to-dos beside them.\nThis is Trace on your Lock Screen.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_anz/post/Deq71XGCaiI",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18132167773780994",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-10-19T09:26:57+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 10:26",
+   "text": "Your 10am check-in. Your 2pm parcel pick-up.\nYour to-dos beside them.\nThis is Trace on your Lock Screen.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsuk8/post/Deq7xSVibsT",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17941938507100147",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-10-19T09:26:24+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 05:26",
+   "text": "Your 10am check-in. Your 2pm parcel pick-up.\nYour to-dos beside them.\nThis is Trace on your Lock Screen.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsna9/post/Deq7syjiad4",
+   "views": 52,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 1,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17920462308445224",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-10-19T03:16:32+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 12:16",
+   "text": "개발자인데 마케팅을 시작한 지 이제 2주 정도 됐어요🐣\n\n개발할 땐 안 되면 로그부터 봤는데\n마케팅은 반응이 없을 때 어디부터 봐야 할지 아직 모르겠어요ㅋㅋ\n\n글도 올려보고 다른 분들 계정도 보면서 배우는 중인데, 초반에 뭘 해보면 좋을지 궁금해요.\n\n처음 시작할 때 도움됐던 공부 방법이나\n“이건 직접 해봐라” 싶은 행동 하나 추천해주실 수 있나요?\n\n마케터분들도, 직접 서비스를 알리고 계신 분들도 경험 나눠주시면 감사하겠습니다!\n\n추천받은 것들 하나씩 해보고\n배운 점이랑 결과도 여기 공유해볼게요🙂",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@jeongmin_trace/post/DeqRYsagWWI",
+   "views": 372,
+   "likes": 25,
+   "replies": 3,
+   "reposts": 8,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18354863446222618",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-10-19T00:52:34+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 08:52",
+   "text": "What if your plans were right there on your Lock Screen?\nMeet Trace — calendar + to-dos for iPhone.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_ph/post/DeqA5VHCdKZ",
+   "views": 76,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18124858373314401",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-10-19T00:51:58+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 08:51",
+   "text": "pov: you finally decide to get your week together",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_ph/post/DeqA1U8iZqP",
+   "views": 36,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18642833077049811",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-10-19T00:51:15+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 07:51",
+   "text": "Tim to-do list-nya panjang banget 🙋🏻‍♀️\nDi Trace, pisahin yang penting dan yang mendesak dulu.\nBiar nggak semua kelihatan harus dikerjain sekarang 🥹✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/DeqAvsAieV4",
+   "views": 12,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18243196111315692",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-10-19T00:50:44+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 07:50",
+   "text": "Tim males masukin jadwal satu-satu 🙋🏻‍♀️\nTulis di Trace → cek tanggal & jam → simpan 🥹✨\nKuliah, kerja, ngonten. Satu tempat.",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/DeqAsBOCcsn",
+   "views": 8,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17888806659478557",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-10-19T00:50:02+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 08:50",
+   "text": "Hujung tahun ni banyak kan benda nak kena ingat 😭\nKelas, mesyuarat, deadline… letak dulu dalam Trace.\nJadual dengan to-do, satu tempat 🤗",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_my/post/DeqAm71CUG3",
+   "views": 13,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18090351938246586",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-10-19T00:49:30+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 08:49",
+   "text": "Dah tak payah masukkan jadual satu-satu dah cikgu!\nTulis je dalam Trace, semak kad, lepas tu simpan 🤗",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_my/post/DeqAjVJiSBk",
+   "views": 49,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18074233556743331",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-10-19T00:48:56+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 11:48",
+   "text": "a little space on your lock screen for everyday plans 🌿",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_anz/post/DeqAfCSiQBg",
+   "views": 32,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18111755288123399",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-10-19T00:48:28+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 11:48",
+   "text": "4 little views for a calmer week 🌿",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfinds_anz/post/DeqAbayCRuR",
+   "views": 85,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18057617762571121",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-10-19T00:48:04+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 01:48",
+   "text": "Here’s a planner for your everyday chaos",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsuk8/post/DeqAYhKiW9L",
+   "views": 135,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18188047390416796",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-10-19T00:46:37+00:00",
+   "date": "2026-10-19",
+   "local": "10/19 01:46",
+   "text": "a little planner find ✨🫶🏻",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsuk8/post/DeqANr7iZDQ",
+   "views": 13,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18102457688368549",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-10-19T00:45:52+00:00",
+   "date": "2026-10-18",
+   "local": "10/18 20:45",
+   "text": "hey iPhone users\nyour plans and to-dos\nright where you already look",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsna9/post/DeqAIKxgeXb",
+   "views": 86,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17976528132173523",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-10-19T00:45:13+00:00",
+   "date": "2026-10-18",
+   "local": "10/18 20:45",
+   "text": "hey iPhone users\nput your plans on your lock screen\nsee what’s next without opening your calendar",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsna9/post/DeqADmCAbAU",
+   "views": 66,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18187284211413916",
    "account": "appfinds_ph",
@@ -1494,12 +3298,13 @@
    "text": "friendly little planner app.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_ph/post/DeiS1QCkstX",
-   "views": 1,
+   "views": 5,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1515,12 +3320,13 @@
    "text": "Schedule + to-dos.\nAll in one place.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_ph/post/DeiSwwUEmQR",
-   "views": 7,
+   "views": 20,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1536,12 +3342,13 @@
    "text": "receh, tapi countdown ke jadwal berikutnya satisfying banget.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_id/post/DeiSt7uEnVF",
-   "views": 3,
+   "views": 5,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1557,12 +3364,13 @@
    "text": "calendar app yang rapi.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_id/post/DeiSq7-EiFM",
-   "views": 6,
+   "views": 8,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1578,12 +3386,13 @@
    "text": "iPhone users, tengok ni jap.\njadual dengan to-do list, satu app.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/DeiSnjPErp6",
-   "views": 30,
+   "views": 41,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -1599,12 +3408,13 @@
    "text": "planner app yang kemas.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/DeiSjkAkj5U",
-   "views": 4,
-   "likes": 0,
+   "views": 5,
+   "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1620,12 +3430,13 @@
    "text": "All your plans, in one place.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_anz/post/DeiSexKkpQf",
-   "views": 2,
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1641,12 +3452,13 @@
    "text": "call me nerdy, but this countdown is oddly satisfying.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_anz/post/DeiSbs7kj3c",
-   "views": 0,
+   "views": 3,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1662,12 +3474,13 @@
    "text": "calendar app.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsuk8/post/DeiSYWxkgsj",
-   "views": 0,
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1683,12 +3496,13 @@
    "text": "call me nerdy, but a calendar widget like this makes me happy.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsuk8/post/DeiSVU6kv1-",
-   "views": 37,
+   "views": 62,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1704,12 +3518,13 @@
    "text": "hey iPhone users\ncalendar + to-dos in one app",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsna9/post/DeiSQ0vkpbh",
-   "views": 95,
+   "views": 155,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -1725,12 +3540,13 @@
    "text": "friendly daily planner app",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsna9/post/DeiSMr6EkW3",
-   "views": 0,
+   "views": 11,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1752,6 +3568,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1767,12 +3584,13 @@
    "text": "Bil telefon. Bil internet. Sewa.\nSemua nak jumpa minggu yang sama 😭\nYang mana korang selalu hampir terlupa?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/DegkinDEuiS",
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1794,6 +3612,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1815,6 +3634,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1830,12 +3650,13 @@
    "text": "Rencana weekend: beresin semuanya.\nRealita: pindah dari kasur ke sofa 😭\nDi Trace, slot istirahat juga boleh masuk. Tim rebahan apa tim jalan?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/DegkLMlEuCX",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1857,6 +3678,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1878,6 +3700,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1899,6 +3722,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1914,12 +3738,13 @@
    "text": "Life admin. My least favourite hobby.\nOne small job in Trace, then the kettle’s going on. Which job have you been putting off?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Degj5KvEkq6",
-   "views": 7,
+   "views": 8,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1941,6 +3766,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1956,12 +3782,13 @@
    "text": "Some days the to-do list is one thing long. Still counts.\nWhat’s your tiny win today?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsna9/post/DegjvzfkkuJ",
-   "views": 7,
-   "likes": 0,
+   "views": 14,
+   "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1983,6 +3810,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -1998,12 +3826,13 @@
    "text": "Cikgu, selalu buka gambar jadual sebelum kelas? Letak jadual dekat Lock Screen iPhone dengan Trace. Background pun boleh ikut pilihan sendiri.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_my/post/DegLMFFiVTQ",
-   "views": 27,
+   "views": 31,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2019,12 +3848,13 @@
    "text": "Jadual kelas dah ada. Due date assignment pun nak letak sekali? Dalam Trace, kelas masuk sebagai event, assignment sebagai task.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_my/post/DegLIH8CcwM",
-   "views": 16,
+   "views": 17,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2040,12 +3870,13 @@
    "text": "Sabay-sabay ang requirements? Piliin muna kung ano ang uunahin today. Sa Trace Matrix, ikaw ang nag-aayos kung alin ang urgent at important.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_ph/post/DegLFbEiRLV",
-   "views": 10,
+   "views": 13,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2067,6 +3898,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2088,6 +3920,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2109,6 +3942,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2130,6 +3964,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2151,6 +3986,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2172,6 +4008,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2193,6 +4030,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2214,6 +4052,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2229,12 +4068,13 @@
    "text": "iPhone people: keep today’s plans somewhere you already look. Trace puts your calendar and to-dos on your Lock Screen. Setup in the replies.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsna9/post/DegKncACf6p",
-   "views": 142,
+   "views": 145,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2250,12 +4090,13 @@
    "text": "Cikgu yang selalu buka gambar jadual tu, boleh cuba letak jadual kelas dekat Lock Screen iPhone.\n\nDalam Trace, pilih background sendiri dan pilih apa yang nak dipaparkan.\n\nBuka phone, nampak jadual. Senang nak semak sebelum masuk kelas.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/Dee7j_OCai-",
-   "views": 59,
+   "views": 61,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2277,6 +4118,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2292,12 +4134,13 @@
    "text": "iPhone people who forget a plan as soon as the calendar closes:\n\nyou can put your calendar and event list on your Lock Screen with Trace.\n\nPick a background, choose what shows up, and keep the plan somewhere you’ll see it.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsna9/post/Dee7cUXiYMC",
-   "views": 103,
+   "views": 104,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2319,6 +4162,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2334,12 +4178,13 @@
    "text": "Anyone else set up a planner, then forget to open it?\n\nTrace lets you put your calendar on your iPhone Lock Screen, with the background you choose.\n\nHandy for the things you want to see before the day gets away from you.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Dee7U7JCWsb",
-   "views": 83,
+   "views": 84,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2361,6 +4206,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2382,6 +4228,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2403,6 +4250,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2424,6 +4272,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2439,12 +4288,13 @@
    "text": "Para sa mga nagre-review for boards: lagyan din ng oras yung ‘magre-review ako’ 😭\n\nSa Trace, type your review sessions in one message, then check the dates and reminders before adding them.\n\nAccounting review, then practice questions. Mas madaling makita kung kailan ka mag-aaral.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_ph/post/DeeZV2yCVKF",
-   "views": 7,
+   "views": 9,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2460,12 +4310,13 @@
    "text": "Buat yang suka nanya ‘selesainya jam berapa?’ 😅\n\nDi Trace, jam mulai dan selesai rapat bisa ditulis sekalian dengan waktu berangkat.\n\nCek draft-nya, pasang pengingat, lalu tambahkan ke kalender.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/DeeZTORiQSY",
-   "views": 10,
+   "views": 13,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2481,12 +4332,13 @@
    "text": "Buat yang jadwal kuliahnya masih jadi screenshot di galeri:\n\nTrace bisa bantu ubah gambar jadwal jadi draft jadwal di kalender.\n\nCek tanggal dan jamnya, atur pengingat, baru tambahkan. Nggak perlu ketik tiap kelas satu-satu.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/DeeZQVVCTR-",
-   "views": 16,
+   "views": 17,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2502,12 +4354,13 @@
    "text": "얼마 전에 치이카와 극장판 보고 왔어요ㅎㅎ\n보고 와서 트레이스앱의 잠금화면도 이렇게 바꿔봤어요.\n세이렌까지 같이 있으니까 폰 켤 때마다 영화 생각나네요\n\n원래 우사기를 좋아해서 그런지 눈은 자꾸 우사기한테 가요ㅋㅋ",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@jeongmin_trace/post/DebAxTWAdEq",
-   "views": 453,
-   "likes": 17,
-   "replies": 6,
-   "reposts": 4,
+   "views": 683,
+   "likes": 26,
+   "replies": 7,
+   "reposts": 6,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2523,12 +4376,13 @@
    "text": "트레이스, 9월 역대 최고 매출 달성했습니다 🎉\n\n14일 만에 기존 한 달 최고 기록을 넘었고,\n월말에는 그 기록의 거의 두 배로 마감했어요\n\n일상을 함께할 일정앱으로 트레이스를 선택해주셔서 감사합니다!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeOJX4ggfkz",
-   "views": 5167,
-   "likes": 37,
-   "replies": 18,
-   "reposts": 3,
+   "views": 5334,
+   "likes": 46,
+   "replies": 19,
+   "reposts": 4,
    "quotes": 0,
    "shares": 6,
+   "clicks": 7,
    "round": null,
    "variant": null
   },
@@ -2544,12 +4398,13 @@
    "text": "",
    "kind": "REPOST_FACADE",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeMHl_NoJ8q",
-   "views": 0,
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
+   "views": null,
+   "likes": null,
+   "replies": null,
+   "reposts": null,
+   "quotes": null,
+   "shares": null,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2565,88 +4420,19 @@
    "text": "안녕! 백엔드 개발자로 시작해서 지금은 코르카에서 AX 컨설팅과 AI 일정 앱 ‘트레이스’ 마케팅을 하고 있는 문정민이야.\n\n대덕소프트웨어마이스터고를 나와 금융기관 연동 시스템, 연구 데이터 도구, 쇼핑몰을 개발했고, 일하면서 방송대 컴퓨터과학과 공부도 이어가고 있어.\n\n올해 6월 코르카에 합류한 뒤에는 회사의 블로그 전체 프로세스를 구성하고 동료들의 발표와 시행착오를 블로그 글로 남기는 AI 인터뷰 ‘씰터뷰’를 기획하고 제작 과정을 다듬었어.\n(corca.ai/blog)\n\n요즘은 트레이스라는 일정관리 앱의 콘텐츠를 만들고 마케팅을 자동화하는 실험을 하고 있어. \n\n개발자이던 내가 코르카 입사 후에 글을 쓰는걸 배우고 마케팅까지 해보는 중이라 많은 시행착오를 겪고 있어😿 그 과정을 공유하고 트레이스를 쓰는 일상을 공유할게\n\n그리고 내가 하는 일들에 비추어서 AI로 일을 줄여보는 사람, 일정이나 할 일 관리에 관심 있는 사람들과 이야기하고 싶어.\n\n다들 요즘 어떤 도구에 정착했어?",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeMCqD_AQJs",
-   "views": 765,
-   "likes": 11,
+   "views": 898,
+   "likes": 17,
    "replies": 6,
-   "reposts": 1,
+   "reposts": 2,
    "quotes": 0,
    "shares": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   }
  ],
  "ig_posts": [],
  "pending": [
-  {
-   "id": "17943817455358121",
-   "user": "baedorphin",
-   "when": "10/08 17:05",
-   "text": "앱 만들었어? 자랑은 어디서?\n\"앱자랑\" 앱 만드는 사람들끼리 피드백을 주고받는 커뮤니티\nhttps://hongbo.sanghak.kr/",
-   "link": "https://www.threads.com/@baedorphin/post/DeOdsK8k46p",
-   "account": "jeongmin_trace",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "post": "18124535417317417",
-   "post_text": "트레이스, 9월 역대 최고 매출 달성했습니다 🎉",
-   "post_link": "https://www.threads.com/@jeongmin_trace/post/DeOJX4ggfkz"
-  },
-  {
-   "id": "17887478781686637",
-   "user": "dietthatgirl",
-   "when": "10/08 18:22",
-   "text": "고머웅",
-   "link": "https://www.threads.com/@dietthatgirl/post/DeOmfZkE5tG",
-   "account": "jeongmin_trace",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "post": "18124535417317417",
-   "post_text": "트레이스, 9월 역대 최고 매출 달성했습니다 🎉",
-   "post_link": "https://www.threads.com/@jeongmin_trace/post/DeOJX4ggfkz"
-  },
-  {
-   "id": "17900343750531912",
-   "user": "it_by_sso",
-   "when": "10/08 18:30",
-   "text": "끄악 넵 ㅠㅠ",
-   "link": "https://www.threads.com/@it_by_sso/post/DeOnZm0Dy3w",
-   "account": "jeongmin_trace",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "post": "18124535417317417",
-   "post_text": "트레이스, 9월 역대 최고 매출 달성했습니다 🎉",
-   "post_link": "https://www.threads.com/@jeongmin_trace/post/DeOJX4ggfkz"
-  },
-  {
-   "id": "17961801729235346",
-   "user": "mkt_kkoompl",
-   "when": "10/10 11:02",
-   "text": "난 클로드랑 gpt !!!!",
-   "link": "https://www.threads.com/@mkt_kkoompl/post/DeS9zKkGPEh",
-   "account": "jeongmin_trace",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "post": "18114105020040337",
-   "post_text": "안녕! 백엔드 개발자로 시작해서 지금은 코르카에서 AX 컨설팅과 AI 일",
-   "post_link": "https://www.threads.com/@jeongmin_trace/post/DeMCqD_AQJs"
-  },
-  {
-   "id": "17961180882000683",
-   "user": "buidlermason",
-   "when": "10/13 00:11",
-   "text": "“블로그 글 한 편 써주세요”보다 질문 하나씩 답하는 게 훨씬 덜 막막하겠네요.",
-   "link": "https://www.threads.com/@buidlermason/post/DeZhq4mkYtN",
-   "account": "jeongmin_trace",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "post": "18114105020040337",
-   "post_text": "안녕! 백엔드 개발자로 시작해서 지금은 코르카에서 AX 컨설팅과 AI 일",
-   "post_link": "https://www.threads.com/@jeongmin_trace/post/DeMCqD_AQJs"
-  },
   {
    "id": "17923160697443175",
    "user": "imagine_c_c",
@@ -2695,6 +4481,34 @@
    "when": "10/14 10:37",
    "text": "오옹 감사해용!!!!!",
    "link": "https://www.threads.com/@eat.easy/post/DedOGbdCfR2",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "post": "18191976097393739",
+   "post_text": "얼마 전에 치이카와 극장판 보고 왔어요ㅎㅎ",
+   "post_link": "https://www.threads.com/@jeongmin_trace/post/DebAxTWAdEq"
+  },
+  {
+   "id": "18198353584382393",
+   "user": "han_woori7",
+   "when": "10/19 15:31",
+   "text": "저는 응원으로 보탤게요~~~ 👏👏💪💪💖💖",
+   "link": "https://www.threads.com/@han_woori7/post/DeqnrnukgLW",
+   "account": "jeongmin_trace",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "post": "17920462308445224",
+   "post_text": "개발자인데 마케팅을 시작한 지 이제 2주 정도 됐어요🐣",
+   "post_link": "https://www.threads.com/@jeongmin_trace/post/DeqRYsagWWI"
+  },
+  {
+   "id": "18168579022486500",
+   "user": "lucasbrothershouse",
+   "when": "10/22 16:07",
+   "text": "이쁘긴 한데 저작권은 확인하고 쓰는거지?",
+   "link": "https://www.threads.com/@lucasbrothershouse/post/DeyaOnbEQBk",
    "account": "jeongmin_trace",
    "project": "trace",
    "country": "KR",
