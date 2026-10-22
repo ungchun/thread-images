@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T14:07:02.707369+00:00",
+ "generated": "2026-10-22T20:40:18.221470+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -445,7 +445,7 @@
     "hour": {
      "1": {
       "n": 8,
-      "score": 1.61,
+      "score": 1.62,
       "median": 54
      },
      "4": {
@@ -455,7 +455,7 @@
      },
      "5": {
       "n": 2,
-      "score": 0.56,
+      "score": 0.55,
       "median": 30
      },
      "6": {
@@ -465,7 +465,7 @@
      },
      "7": {
       "n": 6,
-      "score": 0.75,
+      "score": 0.79,
       "median": 8
      },
      "8": {
@@ -490,7 +490,7 @@
      },
      "12": {
       "n": 4,
-      "score": 0.91,
+      "score": 0.94,
       "median": 21
      },
      "13": {
@@ -501,27 +501,27 @@
      "14": {
       "n": 3,
       "score": 0.57,
-      "median": 733
+      "median": 736
      },
      "15": {
       "n": 2,
-      "score": 0.38,
+      "score": 0.4,
       "median": 4
      },
      "16": {
       "n": 8,
-      "score": 0.67,
+      "score": 0.7,
       "median": 8
      },
      "17": {
       "n": 5,
       "score": 0.65,
-      "median": 71
+      "median": 74
      },
      "18": {
-      "n": 6,
-      "score": 0.7,
-      "median": 27
+      "n": 7,
+      "score": 0.68,
+      "median": 23
      },
      "19": {
       "n": 11,
@@ -535,8 +535,8 @@
      },
      "21": {
       "n": 1,
-      "score": 0.11,
-      "median": 6
+      "score": 0.29,
+      "median": 16
      },
      "22": {
       "n": 2,
@@ -547,7 +547,7 @@
     "wday": {
      "월": {
       "n": 23,
-      "score": 0.96,
+      "score": 0.94,
       "median": 13
      },
      "화": {
@@ -558,67 +558,67 @@
      "수": {
       "n": 15,
       "score": 0.68,
-      "median": 13
+      "median": 16
      },
      "목": {
-      "n": 40,
+      "n": 41,
       "score": 0.45,
-      "median": 12
+      "median": 11
      },
      "금": {
       "n": 10,
-      "score": 0.38,
+      "score": 0.39,
       "median": 7
      },
      "일": {
       "n": 2,
-      "score": 1.4,
+      "score": 1.38,
       "median": 76
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
       "n": 63,
-      "score": 0.48,
+      "score": 0.49,
       "median": 12
      },
      "IMAGE": {
-      "n": 32,
-      "score": 0.82,
-      "median": 23
+      "n": 33,
+      "score": 0.79,
+      "median": 20
      },
      "TEXT_POST": {
       "n": 2,
-      "score": 0.44,
-      "median": 575
+      "score": 0.45,
+      "median": 578
      }
     },
     "accounts": {
      "jeongmin_trace": {
       "flag": "KR",
       "posts": 6,
-      "avg": 1292,
-      "max": 5364,
+      "avg": 1296,
+      "max": 5369,
       "hours": {
        "12": {
         "n": 1,
         "score": 0.34,
-        "median": 435
+        "median": 439
        },
        "14": {
         "n": 3,
         "score": 0.57,
-        "median": 733
+        "median": 736
        },
        "17": {
         "n": 1,
-        "score": 0.05,
-        "median": 71
+        "score": 0.06,
+        "median": 77
        },
        "18": {
         "n": 1,
-        "score": 0.72,
-        "median": 925
+        "score": 0.71,
+        "median": 926
        }
       },
       "best_hour": 18,
@@ -645,43 +645,43 @@
      "appfindsna9": {
       "flag": "US",
       "posts": 15,
-      "avg": 54,
+      "avg": 55,
       "max": 155,
       "hours": {
        "1": {
         "n": 2,
-        "score": 1.61,
+        "score": 1.59,
         "median": 87
        },
        "4": {
         "n": 2,
-        "score": 0.37,
+        "score": 0.36,
         "median": 20
        },
        "5": {
         "n": 2,
-        "score": 0.56,
+        "score": 0.55,
         "median": 30
        },
        "7": {
         "n": 2,
-        "score": 0.61,
+        "score": 0.6,
         "median": 33
        },
        "13": {
         "n": 2,
-        "score": 1.38,
+        "score": 1.36,
         "median": 75
        },
        "20": {
         "n": 4,
-        "score": 1.4,
+        "score": 1.38,
         "median": 76
        },
        "21": {
         "n": 1,
-        "score": 0.11,
-        "median": 6
+        "score": 0.29,
+        "median": 16
        }
       },
       "best_hour": 1,
@@ -772,21 +772,21 @@
       "flag": "MY",
       "posts": 16,
       "avg": 33,
-      "max": 84,
+      "max": 85,
       "hours": {
        "1": {
         "n": 2,
-        "score": 1.61,
+        "score": 1.62,
         "median": 54
        },
        "8": {
         "n": 4,
-        "score": 0.81,
+        "score": 0.8,
         "median": 27
        },
        "13": {
         "n": 2,
-        "score": 0.72,
+        "score": 0.71,
         "median": 24
        },
        "16": {
@@ -801,13 +801,13 @@
        },
        "19": {
         "n": 3,
-        "score": 0.63,
+        "score": 0.62,
         "median": 21
        },
        "20": {
         "n": 1,
-        "score": 1.37,
-        "median": 46
+        "score": 1.4,
+        "median": 47
        }
       },
       "best_hour": 17,
@@ -954,47 +954,47 @@
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 15,
+      "posts": 16,
       "avg": 10,
       "max": 32,
       "hours": {
        "7": {
         "n": 4,
-        "score": 0.75,
+        "score": 0.79,
         "median": 8
        },
        "12": {
         "n": 2,
-        "score": 1.08,
+        "score": 1.14,
         "median": 11
        },
        "15": {
         "n": 2,
-        "score": 0.38,
+        "score": 0.4,
         "median": 4
        },
        "16": {
         "n": 2,
-        "score": 1.17,
+        "score": 1.23,
         "median": 12
        },
        "18": {
-        "n": 2,
-        "score": 1.64,
-        "median": 17
+        "n": 3,
+        "score": 0.4,
+        "median": 4
        },
        "19": {
         "n": 2,
-        "score": 1.41,
+        "score": 1.48,
         "median": 15
        },
        "20": {
         "n": 1,
-        "score": 0.56,
+        "score": 0.59,
         "median": 6
        }
       },
-      "best_hour": 18,
+      "best_hour": 19,
       "best_n": 2,
       "state": "rest",
       "note": "",
@@ -2401,7 +2401,7 @@
    "text": "Kerja jalan.\nUsaha jalan.\nKonten jalan.\nOlahraga jalan.\nYang belum jalan: mulai satu-satu 🫠\n\nKalau target udah numpuk, coba pilih tiga tugas kecil dulu. Di Matrix Trace, kamu bisa bagi sendiri mana yang penting dan mendesak, mana yang bisa dijadwalkan.\n\nHari ini, satu hal apa yang pengen kamu beresin dulu?",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_id/post/Dey2slnCRp5",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2489,7 +2489,7 @@
    "text": "Warga Bandung, ada rekomendasi komunitas yang ramah buat pemula? Buat yang pengen ikut kelas, jalan pagi, atau belajar bareng.\n\nJangan sampai rekomendasinya cuma numpuk di simpanan 😭\n\nKalau udah nemu jadwal yang cocok, tulis di Trace pakai bahasa sehari-hari, cek drafnya, lalu simpan.\n\nRekomendasi satu dong. Kegiatan apa, di mana, biasanya hari apa?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/Dey2o-aiQxY",
-   "views": 3,
+   "views": 4,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2643,7 +2643,7 @@
    "text": "Tibo의 Codex 리셋 예고",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeykNRlAXxU",
-   "views": 71,
+   "views": 77,
    "likes": 4,
    "replies": 0,
    "reposts": 1,
@@ -2775,7 +2775,7 @@
    "text": "트레이스 마케팅을 하면서 요즘 고민이 하나 생겼어요.\n\n저는 일정이랑 할 일을 편하게 관리할 수 있다는 걸 알리고 싶은데, 얼마 전에는 치이카와 잠금화면을 보고 어떤 앱인지 물어봐주신 분이 있었어요.\n\n제가 설명하고 싶은 좋은 점과, 누군가 써보고 싶어지는 이유가 다를 수도 있겠더라고요.\n\n그럼 예쁜 잠금화면을 더 보여드리면 될까 싶다가도, 그렇게 들어온 분들께 일정관리의 편함도 잘 전해질까 고민돼요.\n\n생각해보면 그분께는 예쁜 잠금화면 자체가 가장 필요한 기능일 수도 있고요ㅎㅎ",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeyL_Lqgb_t",
-   "views": 225,
+   "views": 230,
    "likes": 15,
    "replies": 1,
    "reposts": 2,
@@ -2797,7 +2797,7 @@
    "text": "A work schedule screenshot is not a calendar entry yet.\n\nTrace can turn schedule images into drafts, so you can check the dates and times before adding them.\n\nWhat do you keep retyping: shifts, classes, or appointments?",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsna9/post/DexwLxLD1tA",
-   "views": 6,
+   "views": 16,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2863,7 +2863,7 @@
    "text": "Reminder dah swipe, lepas tu terus lupa? 🥲\n\nTrace boleh letak jadual dan to-do pada wallpaper Lock Screen iPhone.\nSwipe gambar kedua untuk tengok tetapan dalam app.\n\nKorang lebih perlukan jadual atau to-do dekat situ?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/DewcFW_luMl",
-   "views": 46,
+   "views": 47,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3105,7 +3105,7 @@
    "text": "Sebelum masuk kelas: Matematik 5A pukul 8, Sains 5B pukul 9.30, mesyuarat pukul 2.\nTugasan semak buku pun ada di sebelah jadual.\n\nContoh Lock Screen Trace untuk hari Isnin, 26 Oktober.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/Deq8TyeiRzd",
-   "views": 84,
+   "views": 85,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3325,7 +3325,7 @@
    "text": "개발자인데 마케팅을 시작한 지 이제 2주 정도 됐어요🐣\n\n개발할 땐 안 되면 로그부터 봤는데\n마케팅은 반응이 없을 때 어디부터 봐야 할지 아직 모르겠어요ㅋㅋ\n\n글도 올려보고 다른 분들 계정도 보면서 배우는 중인데, 초반에 뭘 해보면 좋을지 궁금해요.\n\n처음 시작할 때 도움됐던 공부 방법이나\n“이건 직접 해봐라” 싶은 행동 하나 추천해주실 수 있나요?\n\n마케터분들도, 직접 서비스를 알리고 계신 분들도 경험 나눠주시면 감사하겠습니다!\n\n추천받은 것들 하나씩 해보고\n배운 점이랑 결과도 여기 공유해볼게요🙂",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeqRYsagWWI",
-   "views": 435,
+   "views": 439,
    "likes": 29,
    "replies": 3,
    "reposts": 8,
@@ -4425,7 +4425,7 @@
    "text": "Jadual kelas dah ada dalam screenshot, tapi belum masuk calendar? 😭\n\nTrace boleh tukarkan gambar jadual kepada draft event. Check tarikh dan masa dulu, set reminder, baru tambah.\n\nTak perlu key in setiap kelas satu-satu.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/Dee7gIKCQi0",
-   "views": 47,
+   "views": 48,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -4667,7 +4667,7 @@
    "text": "얼마 전에 치이카와 극장판 보고 왔어요ㅎㅎ\n보고 와서 트레이스앱의 잠금화면도 이렇게 바꿔봤어요.\n세이렌까지 같이 있으니까 폰 켤 때마다 영화 생각나네요\n\n원래 우사기를 좋아해서 그런지 눈은 자꾸 우사기한테 가요ㅋㅋ",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@jeongmin_trace/post/DebAxTWAdEq",
-   "views": 733,
+   "views": 736,
    "likes": 28,
    "replies": 7,
    "reposts": 6,
@@ -4689,7 +4689,7 @@
    "text": "트레이스, 9월 역대 최고 매출 달성했습니다 🎉\n\n14일 만에 기존 한 달 최고 기록을 넘었고,\n월말에는 그 기록의 거의 두 배로 마감했어요\n\n일상을 함께할 일정앱으로 트레이스를 선택해주셔서 감사합니다!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeOJX4ggfkz",
-   "views": 5364,
+   "views": 5369,
    "likes": 49,
    "replies": 19,
    "reposts": 4,
@@ -4733,7 +4733,7 @@
    "text": "안녕! 백엔드 개발자로 시작해서 지금은 코르카에서 AX 컨설팅과 AI 일정 앱 ‘트레이스’ 마케팅을 하고 있는 문정민이야.\n\n대덕소프트웨어마이스터고를 나와 금융기관 연동 시스템, 연구 데이터 도구, 쇼핑몰을 개발했고, 일하면서 방송대 컴퓨터과학과 공부도 이어가고 있어.\n\n올해 6월 코르카에 합류한 뒤에는 회사의 블로그 전체 프로세스를 구성하고 동료들의 발표와 시행착오를 블로그 글로 남기는 AI 인터뷰 ‘씰터뷰’를 기획하고 제작 과정을 다듬었어.\n(corca.ai/blog)\n\n요즘은 트레이스라는 일정관리 앱의 콘텐츠를 만들고 마케팅을 자동화하는 실험을 하고 있어. \n\n개발자이던 내가 코르카 입사 후에 글을 쓰는걸 배우고 마케팅까지 해보는 중이라 많은 시행착오를 겪고 있어😿 그 과정을 공유하고 트레이스를 쓰는 일상을 공유할게\n\n그리고 내가 하는 일들에 비추어서 AI로 일을 줄여보는 사람, 일정이나 할 일 관리에 관심 있는 사람들과 이야기하고 싶어.\n\n다들 요즘 어떤 도구에 정착했어?",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeMCqD_AQJs",
-   "views": 925,
+   "views": 926,
    "likes": 19,
    "replies": 6,
    "reposts": 2,
