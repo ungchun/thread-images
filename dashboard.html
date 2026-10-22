@@ -164,6 +164,14 @@ tr.top td{background:var(--top)}
 .badge.active{background:var(--ok-bg);color:var(--ok)}
 .badge.paused{background:var(--warn-bg);color:var(--warn)}
 .badge.dead{background:var(--bad-bg);color:var(--bad)}
+.badge.rest{background:var(--line);color:var(--dim)}
+.acst{padding:12px 16px}
+.acst summary{cursor:pointer;font-size:13px;color:var(--dim);list-style-position:inside}
+.acst summary b{color:var(--fg);font-weight:600;margin-right:8px}
+.acst summary .badge{margin-left:4px}
+.acst h4{margin:14px 0 6px;font-size:12px;color:var(--dim);font-weight:500}
+.acst table td,.acst table th{padding:5px 8px;font-size:12px}
+.acst .more{color:var(--dim);font-size:11px;margin-top:6px}
 tr.off td{opacity:.45}
 .sum{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px;font-size:12px;color:var(--dim)}
 .sum b{color:var(--fg);font-weight:600}
@@ -199,6 +207,7 @@ h3{font-size:13px;color:var(--dim);font-weight:500;margin:22px 0 8px}
 </nav>
 <main>
   <div id="errors"></div>
+  <div id="acst"></div>
   <section id="posts" class="on"></section>
   <section id="ig"></section>
   <section id="sched"></section>
@@ -222,7 +231,7 @@ const $ = s => document.querySelector(s);
 // 값이 배열·숫자로 들어오는 필드가 있어(rounds.json은 손으로 쓴다) 문자열로 먼저 눕힌다.
 const esc = s => (s == null ? "" : Array.isArray(s) ? s.join(", ") : String(s))
   .replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
-const n = v => (v||0).toLocaleString();
+const n = v => v == null ? "–" : (+v).toLocaleString();   // null = 지표를 못 받은 글(0과 다르다)
 
 // 테마: 자동(시스템 따라감) / 라이트 / 다크. 고른 건 브라우저가 기억한다.
 function setTheme(v){
@@ -269,7 +278,44 @@ const ls = (k, v) => { try { return v === undefined ? localStorage.getItem(k) : 
 const F = {who: ls("owner") || "", days: +(ls("days") || 7), order: "views", metric: "views"};
 const DAYS = [3, 7, 14, 30];
 const ORDERS = [["views","조회수 높은 순"],["recent","최근 글 순"],["country","국가 이름 순"]];
-let PEOPLE = [], STATE = {};   // 계정주 목록, 계정 운영 상태(active/paused/banned/dead)
+let PEOPLE = [], STATE = {}, HEALTH = {}, PROPOSALS = [], VIOLATIONS = [];   // 계정주 목록, 운영 상태(active/rest/paused/banned/dead), 48시간 조회수 판정, 상태 변경 제안, 규칙 위반
+const HIDDEN = ["paused", "banned", "dead"];   // 화면에서 빼는 상태. 휴식(rest)은 복귀 판정을 봐야 해서 보인다
+const HCLS = {"정상": "active", "회복": "active", "저조": "paused", "휴식": "rest", "막힘": "dead"};
+const SNAME = {active: "유지", rest: "휴식", paused: "중단", banned: "영구정지", dead: "도달 없음"};
+function healthBadge(a){
+  const h = HEALTH[a]; if(!h || !h.label) return "";
+  const test = (h.rest_test || []).map(n).join(", ");
+  const tip = [`48시간 판정 ${h.n}건` + (h.approx ? ` (근사 ${h.approx}건)` : "") + ` · 최근 ${(h.recent || [h.last]).map(n).join(", ")} · 평소 ${n(h.base)}` + (h.multiple != null ? ` (×${h.multiple})` : ""),
+    h.like_rate != null ? `조회 대비 하트 ${h.like_rate}% (정상 0.3~1.5%)` : "",
+    `터짐률 ${Math.round((h.burst||0) * 100)}% (평소 2배 이상)`,
+    h.until ? `휴식 ${h.until}까지` + (test ? ` · 복귀 테스트 ${test}` + ({pass: " → 통과", fail: " → 실패"}[h.rest_verdict] || " → 판정 중") : "") : "",
+    "막힘 = 100 미만 3회 연속 · 저조 = 최근 3건 중앙값 500 미만 · 회복 = 막힌 뒤 500 이상 2회 연속",
+    "평소 = 10/13 이후 글 중앙값 · 근사 = 48시간 값을 못 적어 지금 조회수로 판정"].filter(Boolean).join("\n");
+  return ` <span class="badge ${HCLS[h.label] || "rest"}" data-tip="${esc(tip)}">${h.label}</span>`;
+}
+
+// 계정 상태 패널. 제안은 status.json을 바꾸자는 것일 뿐 — 사람이 보고 고친다.
+function renderAcctState(){
+  const live = Object.entries(HEALTH).filter(([a]) => ["active", "rest"].includes(STATE[a] || "active"));
+  const cnt = {}; live.forEach(([a, h]) => { const k = STATE[a] === "rest" ? "휴식" : (h.label || "판정 전"); cnt[k] = (cnt[k] || 0) + 1; });
+  const vk = {}; VIOLATIONS.forEach(v => vk[v.kind] = (vk[v.kind] || 0) + 1);
+  if(!live.length && !PROPOSALS.length && !VIOLATIONS.length) return "";
+  const MAXV = 30;
+  let h = `<details class="card acst"${VIOLATIONS.length || PROPOSALS.length ? " open" : ""}><summary><b>계정 상태</b>` +
+    ["정상","회복","저조","막힘","휴식","판정 전"].filter(k => cnt[k]).map(k => `<span class="badge ${HCLS[k] || "rest"}">${k} ${cnt[k]}</span>`).join("") +
+    ` · 제안 ${PROPOSALS.length} · 위반 ${VIOLATIONS.length}` +
+    (VIOLATIONS.length ? ` (${Object.entries(vk).map(([k, c]) => `${esc(k)} ${c}`).join(", ")})` : "") + `</summary>`;
+  if(PROPOSALS.length) h += `<h4>제안 — accounts/status.json은 사람이 고친다</h4><table><thead><tr><th>계정</th><th>상태</th><th>휴식 끝</th><th>이유</th></tr></thead><tbody>` +
+    PROPOSALS.map(p => `<tr><td class="acct">${esc(p.account)}</td>
+      <td>${p.from === p.to ? `<span class="badge rest">${SNAME[p.from] || esc(p.from)}</span>` : `<span class="badge rest">${SNAME[p.from] || esc(p.from)}</span> → <span class="badge ${p.to === "active" ? "active" : p.to === "paused" ? "dead" : "paused"}">${SNAME[p.to] || esc(p.to)}</span>`}</td>
+      <td class="dim">${esc(p.until || "")}</td><td>${esc(p.reason)}</td></tr>`).join("") + `</tbody></table>`;
+  if(VIOLATIONS.length) h += `<h4>규칙 위반 — 10/23부터 · 루프 밖 발행 = posted.log(Actions run.py 발행 기록)에 없는 글</h4><table><thead><tr><th>종류</th><th>계정</th><th>현지 날짜</th><th>내용</th><th></th></tr></thead><tbody>` +
+    VIOLATIONS.slice(0, MAXV).map(v => `<tr><td><span class="badge ${v.kind === "하루 상한 초과" || v.kind === "리포스트" ? "paused" : "dead"}">${esc(v.kind)}</span></td>
+      <td class="acct">${esc(v.account)}</td><td class="dim">${esc(v.date)}</td><td>${esc(v.detail)}</td>
+      <td>${v.link ? `<a class="pv" href="${esc(v.link)}" target="_blank">원글</a>` : ""}</td></tr>`).join("") + `</tbody></table>` +
+    (VIOLATIONS.length > MAXV ? `<div class="more">외 ${VIOLATIONS.length - MAXV}건</div>` : "");
+  return h + `</details>`;
+}
 
 const isLight = () => document.documentElement.dataset.theme === "light"
   || (!document.documentElement.dataset.theme && matchMedia("(prefers-color-scheme: light)").matches);
@@ -295,7 +341,7 @@ function chips(name, items, cur){
 function filtered(S){
   const cut = new Date(Date.now() - (F.days - 1) * 864e5).toISOString().slice(0,10);
   return S.rows.filter(r => (!F.who || r.owner === F.who)
-    && (STATE[r.account] || "active") === "active"     // 운영 중인 계정만
+    && !HIDDEN.includes(STATE[r.account])     // 유지·휴식 계정만
     && r.date >= cut);
 }
 
@@ -466,7 +512,7 @@ function postsGrid(S, rows){
     accs.forEach((a, ai) => {
       const f = rows.find(r => r.account === a);
       g += `<tr>` + (ai ? "" : `<th class="cty" rowspan="${accs.length}">${f.flag} ${esc(cname(c))}</th>`) +
-        `<th style="text-align:right">${esc(a)}</th>` + dates.map(d => {
+        `<th style="text-align:right">${esc(a)}${healthBadge(a)}</th>` + dates.map(d => {
         const list = by[a + "|" + d];
         if(!list) return `<td><i class="cell"></i></td>`;
         const r = list.reduce((x,y) => (y.views||0) > (x.views||0) ? y : x), v = val(list);
@@ -476,7 +522,7 @@ function postsGrid(S, rows){
       }).join("") + `</tr>`;
     });
   });
-  g += `</tbody></table></div><div class="legend">칸 = 그 계정이 그날 올린 글. 숫자·색 = 위에서 고른 지표(진할수록 높음). 점 표시는 하루에 2건 이상 올려 합친 칸. 마우스를 올리면 글별 지표, 누르면 원글로 이동. 운영 중인 계정만 보인다.</div>`;
+  g += `</tbody></table></div><div class="legend">칸 = 그 계정이 그날 올린 글. 숫자·색 = 위에서 고른 지표(진할수록 높음). 점 표시는 하루에 2건 이상 올려 합친 칸. 마우스를 올리면 글별 지표, 누르면 원글로 이동. 유지·휴식 계정만 보인다. 계정 옆 표시는 48시간 조회수로 판정한 상태(정상·저조·막힘·휴식·회복), 마우스를 올리면 근거 지표.</div>`;
   return g;
 }
 
@@ -568,11 +614,21 @@ get("team.json").then(async team => {
     Object.assign(d.projects, x.projects);
     Object.values(x.experiments||{}).forEach(e => Object.entries(e?.insights?.accounts||{}).forEach(([a, v]) => {
       if(v.state && v.state !== "active") STATE[a] = v.state; else if(!STATE[a]) STATE[a] = "active";
+      if(!x.accounts_health && v.health && (v.health.n || 0) >= (HEALTH[a]?.n || 0)) HEALTH[a] = {...v.health, until: v.until};   // 옛 파일: 프로젝트가 여럿이면 표본 많은 쪽
     }));
+    // 계정의 전 프로젝트 글로 잰 판정이 있으면 그걸 쓴다
+    Object.entries(x.accounts_health || {}).forEach(([a, h]) => {
+      HEALTH[a] = h;
+      if(h.state && h.state !== "active") STATE[a] = h.state; else if(!STATE[a]) STATE[a] = "active";
+    });
+    (x.proposals || []).forEach(p => PROPOSALS.push({...p, owner: id}));
+    (x.violations || []).forEach(v => VIOLATIONS.push({...v, owner: id}));
     ["scheduled","posts","ig_posts","pending","skipped"].forEach(k => (x[k]||[]).forEach(r => d[k].push({...r, owner: id})));
     (x.errors||[]).forEach(e => d.errors.push(`${t.name} ${e}`));
   });
   d.scheduled.sort((a,b) => a.utc < b.utc ? -1 : 1);
+  VIOLATIONS.sort((a,b) => a.utc < b.utc ? 1 : -1);
+  $("#acst").innerHTML = renderAcctState();
   d.pending.sort((a,b) => a.when < b.when ? -1 : 1);
   $("#stamp").textContent = "갱신(UTC) " + stamps.join(" · ") + " · 최근 " + (d.window_days||30) + "일";
 

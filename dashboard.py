@@ -3,8 +3,10 @@
 
 세 가지만 담는다.
   scheduled  아직 안 나간 예약 (schedule.txt 그대로)
-  posts      계정별 게시물 + 지표
+  posts      계정별 게시물 + 지표 (insights 실패 글은 지표가 None)
   pending    미답변 답글
+계정 운영(2026-10-22 재정비)용으로 accounts_health·proposals·violations·hits를 같이 낸다.
+48시간 조회수는 stats/h48.json에 글마다 한 번 적는다(Actions에서만 저장).
 
 수집은 계정별로 독립이라 하나가 죽어도 나머지는 담는다.
 번역은 하지 않는다 - Actions 안에서 LLM을 못 부른다. 원문만 넘기고
@@ -14,8 +16,11 @@
 
 --owner 계정만 모아 그 사람 파일(report.data_file)에 쓴다. 기본은 Actions 주인 → dashboard.json.
 팀원은 serve.py 갱신 버튼이 로컬 토큰(env.sh)으로 이걸 돌리고 자기 파일만 푸시한다.
+Actions(dashboard.yml)는 주인과 팀원(THREADS_<아이디> 시크릿)을 한 잡에서 차례로 돈다.
+  python3 dashboard.py --merge-h48 <파일>   stats/h48.json에 다른 기록을 합친다 (커밋 직전)
 """
 import json
+import os
 import sys
 import traceback
 import urllib.error
@@ -32,6 +37,11 @@ from replies import api, paged, FIELDS
 
 ROOT = Path(__file__).resolve().parent
 METRICS = ["views", "likes", "replies", "reposts", "quotes", "shares"]
+
+
+def known(ps):
+    """조회수를 받은 글만. insights가 실패한 글은 views가 None이다 — 0으로 세면 막힌 글처럼 보인다."""
+    return [p for p in ps if p.get("views") is not None]
 
 
 def rounds(proj="trace"):
@@ -120,9 +130,9 @@ def baselines(by_acc):
     import statistics
     out = {}
     for acc, ps in by_acc.items():
-        views = [p.get("views", 0) for p in ps]
+        views = [p["views"] for p in known(ps)] or [0]
         # 하트율은 조회가 0이면 정의되지 않는다
-        ers = [p.get("likes", 0) / p["views"] for p in ps if p.get("views", 0) > 0]
+        ers = [(p.get("likes") or 0) / p["views"] for p in known(ps) if p["views"] > 0]
         out[acc] = {
             "views": statistics.median(views) or 1,
             "er": statistics.median(ers) if ers else None,
@@ -138,11 +148,11 @@ def ratios_of(p, base):
     가리켰다(조회는 A 우세, 하트율은 B가 두 배). 나라별 하트율 기준선은
     인도네시아 1.58%와 이탈리아 0.09%로 열 배 넘게 벌어진다.
     """
-    reach = p.get("views", 0) / base["views"]
+    reach = (p.get("views") or 0) / base["views"]
     er_base = base["er"]
     if not er_base or not p.get("views"):
         return reach, None
-    return reach, (p.get("likes", 0) / p["views"]) / er_base
+    return reach, ((p.get("likes") or 0) / p["views"]) / er_base
 
 
 def compare(posts, rs):
@@ -168,7 +178,7 @@ def compare(posts, rs):
     for acc, ps in by_acc.items():
         if len(hist.get(acc, [])) < 3:   # 이력 3건 미만이면 중앙값이 불안정
             continue
-        for p in ps:
+        for p in known(ps):
             a, b = ratios_of(p, base[acc])
             reach.setdefault(p["round"], []).append(a)
             if b is not None:
@@ -183,9 +193,9 @@ def compare(posts, rs):
             "id": r["id"], "date": r["date"], "type": r["type"],
             "kr": r["kr"], "note": r.get("note", ""),
             "posts": len(got),
-            "views": sum(p.get("views", 0) for p in got),
-            "likes": sum(p.get("likes", 0) for p in got),
-            "median": int(statistics.median([p.get("views", 0) for p in got])) if got else 0,
+            "views": sum(p.get("views") or 0 for p in got),
+            "likes": sum(p.get("likes") or 0 for p in got),
+            "median": int(statistics.median([p["views"] for p in known(got)])) if known(got) else 0,
             "score": round(statistics.median(rr), 2) if rr else None,
             "sample": len(rr),
             "er_score": round(statistics.median(er), 2) if er else None,
@@ -208,7 +218,7 @@ def variant_scores(got, by_acc, base):
     out = {}
     for k, ps in sorted(vs.items()):
         rr, er = [], []
-        for p in ps:
+        for p in known(ps):
             if len(by_acc.get(p["account"], [])) < 3:   # by_acc 는 전체 이력(hist)
                 continue
             a, b = ratios_of(p, base[p["account"]])
@@ -216,7 +226,7 @@ def variant_scores(got, by_acc, base):
             if b is not None:
                 er.append(b)
         out[k] = {"posts": len(ps),
-                  "median": int(statistics.median([p.get("views", 0) for p in ps])),
+                  "median": int(statistics.median([p["views"] for p in known(ps)])) if known(ps) else 0,
                   "score": round(statistics.median(rr), 2) if rr else None,
                   "sample": len(rr),
                   "er_score": round(statistics.median(er), 2) if er else None,
@@ -239,7 +249,7 @@ def arm_scores(posts, rs):
         hist.setdefault(p["account"], []).append(p)
     base = baselines(hist)
     by_arm, accs = {}, {}
-    for p in posts:
+    for p in known(posts):
         if p.get("round") in armed and p.get("variant") and len(hist.get(p["account"], [])) >= 3:
             r = ratios_of(p, base[p["account"]])[0]
             by_arm.setdefault(p["variant"], []).append(r)
@@ -254,6 +264,259 @@ def account_status():
     if not f.exists():
         return {}
     return json.loads(f.read_text(encoding="utf-8")).get("accounts", {})
+
+
+BLOCK_VIEWS, BLOCK_RUN = 100, 3      # 48시간 조회수 100 미만 3회 연속 → 막힘
+RECOVER_VIEWS, RECOVER_RUN = 500, 2  # 500 이상 2회 연속 → 회복 (막힌 적이 있을 때)
+LOW_RUN = 3                          # 막힘은 아닌데 최근 3건 중앙값이 RECOVER_VIEWS 미만 → 저조
+REST_DAYS = 14                       # 막힘 → 휴식 기간
+REST_TEST_POSTS = 2                  # 복귀 테스트: until 이후 첫 2건 중 하나라도 500 이상이면 복귀 (스펙은 1건, 10/22 주인 승인으로 2건)
+# 평소(중앙값)는 이 날 이후 글로만 잡는다. 10/12에 노출이 계정 단위로 무너져 그 전 글은
+# 중앙값이 수천이다. 섞으면 평소가 부풀어 지금 글의 배수·터짐률이 전부 바닥에 붙는다.
+HEALTH_FROM = "2026-10-13"
+
+H48_FILE = ROOT / "stats" / "h48.json"
+H48_MIN, H48_MAX = 48, 60   # 수집이 6시간마다라 이 12시간 창에 두 번 걸린다
+H48_KEEP_DAYS = 45          # 집계 창(30일)보다 길게만 두면 된다. 파일이 커지지 않게 자른다
+H48 = {}                    # main이 채운다. health()의 기본값
+
+
+def load_h48(path=H48_FILE):
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def save_h48(h48, path=H48_FILE):
+    """한 줄에 한 글. 6시간마다 커밋되니 diff가 추가된 줄만 보이게 한다."""
+    Path(path).parent.mkdir(exist_ok=True)
+    body = ",\n".join(f"{json.dumps(k)}:{json.dumps(v, ensure_ascii=False, separators=(',', ':'))}"
+                      for k, v in sorted(h48.items()))
+    Path(path).write_text("{\n" + body + "\n}\n", encoding="utf-8")
+
+
+def record_h48(h48, posts, now=None):
+    """48시간 조회수를 글마다 한 번만 적는다. API는 지금 값만 주므로 48~60시간 사이에 본 값을 48시간 값으로 쓴다.
+    60시간 넘도록 못 적은 글(수집이 빠졌거나 이 기록 이전 글)은 지금 값을 approx로 적는다 — 늦게 붙은 조회가 섞인다.
+    조회수를 못 받은 글(None)은 다음 수집에 다시 본다."""
+    now = now or datetime.now(timezone.utc)
+    added = 0
+    for p in posts:
+        if p["id"] in h48 or p.get("views") is None or p.get("kind") == "REPOST_FACADE":
+            continue
+        age = (now - datetime.fromisoformat(p["utc"])).total_seconds() / 3600
+        if age < H48_MIN:
+            continue
+        h48[p["id"]] = {"views": p["views"], "likes": p.get("likes") or 0, "reposts": p.get("reposts") or 0,
+                        "at": now.isoformat(timespec="seconds"), "age_h": round(age, 1), "approx": age > H48_MAX}
+        added += 1
+    return added
+
+
+def prune_h48(h48, now=None):
+    cut = ((now or datetime.now(timezone.utc)) - timedelta(days=H48_KEEP_DAYS)).isoformat()
+    for k in [k for k, r in h48.items() if r.get("at", "") < cut]:
+        del h48[k]
+
+
+def merge_h48(a, b):
+    """같은 글이 양쪽에 있으면 진짜 48시간 값(approx 아님)을, 둘 다 같으면 먼저 적은 쪽을 남긴다.
+    한 잡에서 주인별로 여러 번 돌고, 커밋 전에 원격 것과도 합치므로 덮어쓰면 기록이 사라진다."""
+    out = dict(a)
+    for k, r in b.items():
+        o = out.get(k)
+        if o is None or (bool(o.get("approx")), o.get("at", "")) > (bool(r.get("approx")), r.get("at", "")):
+            out[k] = r
+    return out
+
+
+def health(rows, info, h48=None, now=None):
+    """계정 상태 — 정상·저조·막힘·휴식·회복 (2026-10-22 재정비 기준). 한 계정의 전 프로젝트 글을 넣는다.
+
+    48시간 조회수로 판정한다. stats/h48.json 값을 쓰고, 없으면 지금 조회수로 근사한다(approx에 건수).
+    48시간이 안 된 글과 조회수를 못 받은 글(None)은 판정에서 뺀다 — 0으로 세면 막힘으로 오판한다.
+    평소 = HEALTH_FROM 이후 판정 글의 조회수 중앙값(없으면 전체). 하트율·터짐률(평소 2배 이상)도 같은 글로 잰다.
+    저조 = 막힘은 아니지만 최근 3건 중앙값이 회복 기준 미만. 이게 없으면 [4, 0, 0]도 정상으로 떴다.
+    휴식 계정은 until 이후 첫 2건이 복귀 테스트다 — 하나라도 500 이상이면 pass, 둘 다 미만이면 fail.
+    """
+    import statistics
+    h48 = H48 if h48 is None else h48
+    cut = ((now or datetime.now(timezone.utc)) - timedelta(hours=H48_MIN)).isoformat()
+    judged = []
+    for p in sorted(rows, key=lambda p: p["utc"]):
+        if p["utc"] > cut or p.get("kind") == "REPOST_FACADE":
+            continue
+        r = h48.get(p["id"])
+        m = r or p
+        if m.get("views") is None:
+            continue
+        judged.append({"date": p["date"], "views": m["views"], "likes": m.get("likes") or 0,
+                       "approx": bool(not r or r.get("approx"))})
+    v = [j["views"] for j in judged]
+    out = {"n": len(v)}
+    if v:
+        pool = [j for j in judged if j["date"] >= HEALTH_FROM] or judged
+        base = statistics.median(j["views"] for j in pool)
+        views = sum(j["views"] for j in pool)
+        out.update(last=v[-1], recent=v[-LOW_RUN:], base=int(base),
+                   approx=sum(j["approx"] for j in judged),
+                   multiple=round(v[-1] / base, 2) if base else None,
+                   like_rate=round(sum(j["likes"] for j in pool) / views * 100, 2) if views else None,
+                   burst=round(sum(j["views"] >= 2 * base for j in pool) / len(pool), 2) if base else 0)
+
+    def runs(i, ok, k):   # i에서 끝나는 k개가 전부 ok인가
+        return i + 1 >= k and all(ok(x) for x in v[i + 1 - k:i + 1])
+
+    low = lambda x: x < BLOCK_VIEWS
+    high = lambda x: x >= RECOVER_VIEWS
+    if info.get("state") == "rest":
+        label = "휴식"
+        until = info.get("until")
+        test = [j["views"] for j in judged if until and j["date"] >= until][:REST_TEST_POSTS]
+        if test:
+            out["rest_test"] = test
+            out["rest_verdict"] = ("pass" if any(high(x) for x in test)
+                                   else "fail" if len(test) >= REST_TEST_POSTS else None)
+    elif v and runs(len(v) - 1, low, BLOCK_RUN):
+        label = "막힘"
+    elif (v and runs(len(v) - 1, high, RECOVER_RUN)
+          and any(runs(i, low, BLOCK_RUN) for i in range(len(v) - RECOVER_RUN))):
+        label = "회복"
+    elif v and statistics.median(v[-LOW_RUN:]) < RECOVER_VIEWS:
+        label = "저조"
+    else:
+        label = "정상" if v else ""
+    out["label"] = label
+    return out
+
+
+def accounts_health(posts, accs, st=None):
+    """계정별 상태. read_signals는 프로젝트별이라 글이 갈리면 표본이 줄어 판정이 흔들린다 — 여기선 계정의 전 글로 잰다."""
+    st = account_status() if st is None else st
+    out = {}
+    for a in accs:
+        info = st.get(a, {})
+        out[a] = {**health([p for p in posts if p["account"] == a], info),
+                  "state": info.get("state", "active"), "until": info.get("until")}
+    return out
+
+
+def proposals(acc_health, posts, sched, st=None, today=None):
+    """status.json을 바꾸자는 제안. 쓰지는 않는다 — 사람이 보고 status.json을 고친다.
+
+    막힘인 유지 계정 → 2주 휴식. 휴식 계정 복귀 테스트 pass → 유지, fail → 중단.
+    휴식이 끝났는데 테스트 글이 올라가지도 예약되지도 않았으면 예약하라고 알린다.
+    날짜는 계정 현지 기준이다(gate.py가 until을 현지 날짜로 본다).
+    """
+    from datetime import date
+    st = account_status() if st is None else st
+    out = []
+    for a, h in sorted(acc_health.items()):
+        info = st.get(a, {})
+        state, until = info.get("state", "active"), info.get("until")
+        day = today or datetime.now(meta(a)[1]).date()
+        if state == "active" and h.get("label") == "막힘":
+            out.append({"account": a, "from": "active", "to": "rest",
+                        "until": (day + timedelta(days=REST_DAYS)).isoformat(),
+                        "reason": f"48시간 조회수 {BLOCK_VIEWS} 미만 {BLOCK_RUN}회 연속 ({', '.join(map(str, h.get('recent', [])))})"})
+        elif state == "rest" and until:
+            test = ", ".join(map(str, h.get("rest_test", [])))
+            done = sum(p["account"] == a and p["date"] >= until and p.get("kind") != "REPOST_FACADE" for p in posts)
+            queued = any(s["account"] == a and s["local"][:10] >= until for s in sched)
+            if h.get("rest_verdict") == "pass":
+                out.append({"account": a, "from": "rest", "to": "active",
+                            "reason": f"복귀 테스트 통과 — 48시간 조회수 {test} ({RECOVER_VIEWS} 이상 있음)"})
+            elif h.get("rest_verdict") == "fail":
+                out.append({"account": a, "from": "rest", "to": "paused",
+                            "reason": f"복귀 테스트 {REST_TEST_POSTS}건 모두 {RECOVER_VIEWS} 미만 ({test})"})
+            elif day >= date.fromisoformat(until) and not done and not queued:
+                out.append({"account": a, "from": "rest", "to": "rest",
+                            "reason": f"복귀 테스트 예약 필요 — {until} 휴식 끝, 올라간 글도 예약도 없음"})
+            elif done == 1 and len(h.get("rest_test", [])) == 1 and not queued:   # 첫 건이 500 미만으로 판정됐다
+                out.append({"account": a, "from": "rest", "to": "rest",
+                            "reason": f"두 번째 복귀 테스트 예약 필요 — 첫 건 48시간 조회수 {test}"})
+    return out
+
+
+# posted.log는 run.py가 이날부터 적는다. 그 전 글은 대조할 기록이 없다.
+LOOP_FROM = "2026-10-23"
+# 발행 규칙(하루 1개·휴식·중단·리포스트 금지) 검사 시작일. 10/22 당일 글은 재정비 전에 예약된 것이다.
+RULES_FROM = "2026-10-23"
+
+
+def posted_log(path=None):
+    """run.py가 Threads 본문 발행마다 남기는 기록(TSV: utc account platform post_id textfile).
+    → (게시물 id 집합, 첫 기록 UTC). 파일이 없거나 비었으면 None — 대조를 건너뛴다."""
+    try:
+        lines = Path(path or ROOT / "posted.log").read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return None
+    ids, first = set(), None
+    for line in lines:
+        c = line.split("\t")
+        if line.startswith("#") or len(c) < 4 or not c[3].strip():
+            continue
+        try:
+            t = datetime.fromisoformat(c[0].strip().replace("Z", "+00:00")).astimezone(timezone.utc).isoformat()
+        except ValueError:
+            continue
+        ids.add(c[3].strip())
+        first = min(first or t, t)
+    return (ids, first) if ids else None
+
+
+def violations(posts, st=None, log=None):
+    """규칙 위반·루프 밖 발행. 전 계정이 이 레포 Actions(run.py)로만 올리기로 했다(10/22 Plan A).
+    posted.log에 없는 글은 다른 경로로 올라간 것이다. log가 None이면 그 대조만 건너뛴다."""
+    from collections import defaultdict
+    st = account_status() if st is None else st
+    out = []
+
+    def add(kind, p, detail):
+        out.append({"kind": kind, "account": p["account"], "date": p["date"], "utc": p["utc"],
+                    "detail": detail, "link": p.get("link", "")})
+
+    own = [p for p in posts if p.get("kind") != "REPOST_FACADE"]
+    if log:
+        ids, first = log
+        start = max(LOOP_FROM, first)   # 로그가 늦게 시작했으면 그 전 글은 묻지 않는다
+        for p in own:
+            if p["utc"] >= start and p["id"] not in ids:
+                add("루프 밖 발행", p, "posted.log에 없다 — Actions run.py 밖에서 올라간 글")
+    day = defaultdict(list)
+    after = defaultdict(list)
+    for p in sorted(own, key=lambda p: p["utc"]):
+        if p["date"] < RULES_FROM:
+            continue
+        day[(p["account"], p["date"])].append(p)
+        info = st.get(p["account"], {})
+        state, until = info.get("state", "active"), info.get("until")
+        if state in ("paused", "banned", "dead"):
+            add("중단 계정 발행", p, f"상태 {state}")
+        elif state == "rest" and until and p["date"] < until:
+            add("휴식 중 발행", p, f"{until}까지 휴식")
+        elif state == "rest" and until:
+            after[p["account"]].append(p)
+            if len(after[p["account"]]) > REST_TEST_POSTS:
+                add("복귀 테스트 초과", p, f"휴식 뒤 테스트는 {REST_TEST_POSTS}건까지 — 판정 후 상태부터 바꾼다")
+    for (a, d), ps in day.items():
+        if len(ps) > 1:
+            add("하루 상한 초과", ps[-1], f"현지 {d}에 {len(ps)}건 (계정당 하루 1개)")
+    for p in posts:
+        if p.get("kind") == "REPOST_FACADE" and p["date"] >= RULES_FROM:
+            add("리포스트", p, "계정끼리 리포스트하지 않는다")
+    return sorted(out, key=lambda r: r["utc"], reverse=True)
+
+
+HIT_LIKES = 100
+
+
+def hits(posts):
+    """좋아요 100 이상 글. 다음 회차 문구의 기준(스펙 §5) — threads 스킬이 여기서 베이스를 고른다."""
+    keep = ["account", "country", "project", "utc", "views", "likes", "reposts", "text", "link"]
+    rows = [p for p in posts if (p.get("likes") or 0) >= HIT_LIKES and p.get("kind") != "REPOST_FACADE"]
+    return [{k: p.get(k) for k in keep} for p in sorted(rows, key=lambda p: -p["likes"])]
 
 
 def read_signals(posts):
@@ -307,6 +570,8 @@ def read_signals(posts):
             "hours": dict(sorted(g.items())),
             "best_hour": best[0], "best_n": best[1]["n"],
             "state": info.get("state", "active"), "note": info.get("note", ""),
+            "until": info.get("until"),
+            "health": health([p for p in posts if p["account"] == a], info),
         }
     # 최근 글이 없어 위 루프에 안 잡힌 계정도 상태는 보여준다
     for a, info in st.items():
@@ -314,7 +579,9 @@ def read_signals(posts):
             by_acc[a] = {"flag": meta(a)[0] if (ROOT/"accounts"/a).is_dir() else "??",
                          "posts": 0, "avg": 0, "max": 0, "hours": {},
                          "best_hour": None, "best_n": 0,
-                         "state": info.get("state", "active"), "note": info.get("note", "")}
+                         "state": info.get("state", "active"), "note": info.get("note", ""),
+                         "until": info.get("until"),
+                         "health": health([p for p in posts if p["account"] == a], info)}
 
     return {
         "hour": dict(sorted(group(hour).items())),
@@ -426,6 +693,7 @@ def posts_of(account, days):
         utc = datetime.fromisoformat(p["timestamp"].replace("+0000", "+00:00"))
         if utc.timestamp() < since:
             continue
+        # 실패하면 빈 dict다. 0으로 채우면 진짜 0(노출 막힘)과 구분이 안 돼 막힘 판정을 오염시킨다 → None.
         m = insights(p["id"], token)
         out.append({
             "id": p["id"], "account": account, "project": None, "country": code, "flag": flag(code),
@@ -435,7 +703,7 @@ def posts_of(account, days):
             "text": (p.get("text") or "").strip(),
             "kind": p.get("media_type", ""),
             "link": p.get("permalink", ""),
-            **{k: m.get(k, 0) for k in METRICS},
+            **{k: (m.get(k, 0) if m else None) for k in METRICS},
         })
         out[-1]["project"] = project_of_text(out[-1]["text"], account)
     return out
@@ -566,6 +834,11 @@ def pending_of(account, posts, days):
 
 
 def main():
+    if "--merge-h48" in sys.argv:   # dashboard.yml 커밋 단계: 원격 위에 방금 적은 기록을 합친다
+        h = merge_h48(load_h48(), load_h48(sys.argv[sys.argv.index("--merge-h48") + 1]))
+        prune_h48(h)
+        save_h48(h)
+        return print(f"{H48_FILE.name} {len(h)}건")
     days = int(sys.argv[sys.argv.index("--days") + 1]) if "--days" in sys.argv else 30
     rdays = (int(sys.argv[sys.argv.index("--replies-days") + 1])
              if "--replies-days" in sys.argv else 14)
@@ -575,6 +848,7 @@ def main():
     accs = accounts(who)
 
     all_posts, all_ig, all_pending, all_skipped, errors = [], [], [], [], []
+    failed = set()
     for a in accs:
         try:
             all_ig += ig_posts_of(a, days)
@@ -585,6 +859,7 @@ def main():
             all_posts += ps
         except Exception as e:
             errors.append(f"{a} 게시물: {e}")
+            failed.add(a)
             continue
         try:
             link_clicks(a, ps)
@@ -600,6 +875,22 @@ def main():
         except Exception as e:
             errors.append(f"{a} 답글: {e}")
 
+    if accs and failed == set(accs):
+        # 토큰이 통째로 없을 때(시크릿 누락) 빈 파일로 덮으면 남의 대시보드가 지워진다. 쓰지 않고 멈춘다.
+        print(f"{out.name} · 계정 {len(accs)}개 전부 수집 실패 — 파일을 그대로 둔다")
+        for e in errors[:5]:
+            print(" ", e)
+        sys.exit(1)
+
+    # 48시간 조회수 기록. 커밋은 Actions(dashboard.yml)만 한다 — 로컬 팀원 갱신은 자기 파일만 푸시하므로
+    # 여기서 h48.json을 고치면 pull --autostash 충돌만 만든다. 로컬에선 메모리로만 쓴다.
+    H48.clear()
+    H48.update(load_h48())
+    fresh = record_h48(H48, all_posts)
+    if os.environ.get("GITHUB_ACTIONS"):
+        prune_h48(H48)
+        save_h48(H48)
+
     experiments = {}
     for proj in PROJECTS:
         rs = rounds(proj)
@@ -607,9 +898,12 @@ def main():
         tag_rounds(mine, rs)
         rj = json.loads(rounds_file(proj).read_text(encoding="utf-8")) if rounds_file(proj).exists() else {}
         watching = rj.get("관측", {})
-        arms = arm_scores(mine, rs)
+        all_arms = arm_scores(mine, rs)
         for w in watching.values():   # 갈래점수 표시가 있는 관측 항목은 현재값을 매 갱신마다 계산해 채운다
             if isinstance(w, dict) and w.get("갈래점수"):
+                # 카드마다 자기 갈래만. 라운드별 arms(R16 H·C)가 생겨 최상위 arms 카드(W39)에 섞이던 것을 막는다
+                labels = w.get("갈래") or list(rj.get("arms", {}))
+                arms = {k: v for k, v in all_arms.items() if k in labels}
                 w["현재값"] = {k: v["score"] for k, v in arms.items()}
                 w["표본"] = {k: v["n"] for k, v in arms.items()}
                 w["계정별"] = {k: v["accounts"] for k, v in arms.items()}
@@ -619,12 +913,20 @@ def main():
                              "plan": rj.get("plan", []), "tournament": rj.get("tournament", {}),
                              # 확정/관측은 rounds.json이 단일 출처다. 화면은 이 둘을 맨 위에 보여준다.
                              "settled": rj.get("확정", {}), "watching": watching}
+    ok = [a for a in accs if a not in failed]   # 수집 실패 계정은 글이 0건으로 보여 판정·제안이 틀어진다
+    health_all = accounts_health(all_posts, ok)
+    sched = scheduled(accs)
     data = {
         "generated": datetime.now(timezone.utc).isoformat(),
         "projects": PROJECTS,
         "experiments": experiments,
         "window_days": days,
-        "scheduled": scheduled(accs),
+        "scheduled": sched,
+        # 계정 상태는 계정의 전 프로젝트 글로 잰다(experiments의 health는 프로젝트별). 화면은 이쪽을 먼저 쓴다.
+        "accounts_health": health_all,
+        "proposals": proposals(health_all, all_posts, sched),
+        "violations": violations(all_posts, log=posted_log()),
+        "hits": hits(all_posts),
         "posts": sorted(all_posts, key=lambda r: r["utc"], reverse=True),
         "ig_posts": sorted(all_ig, key=lambda r: r["utc"], reverse=True),
         "pending": sorted(all_pending, key=lambda r: r["when"]),
@@ -633,7 +935,8 @@ def main():
     }
     out.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{out.name} · 계정 {len(accs)} · 예약 {len(data['scheduled'])} · 게시물 {len(data['posts'])} · 인스타 {len(data['ig_posts'])} · "
-          f"미답변 {len(data['pending'])} · 답안함 {len(data['skipped'])} · 오류 {len(errors)}")
+          f"미답변 {len(data['pending'])} · 답안함 {len(data['skipped'])} · 오류 {len(errors)} · "
+          f"48시간 기록 +{fresh} · 제안 {len(data['proposals'])} · 위반 {len(data['violations'])}")
     for e in errors:
         print(" ", e)
 
@@ -649,4 +952,20 @@ def _selfcheck():
     assert list(inspect.signature(insights).parameters) == ["post_id", "token"], \
         "report.insights가 가려졌다"
     assert list(inspect.signature(read_signals).parameters) == ["posts"]
+    # 판정 규칙. 글은 전부 48시간이 지난 것으로 만든다
+    t0 = datetime.now(timezone.utc) - timedelta(days=10)
+    mk = lambda vs: [{"id": str(i), "account": "x", "utc": (t0 + timedelta(hours=i)).isoformat(),
+                      "date": HEALTH_FROM, "views": v, "likes": 0} for i, v in enumerate(vs)]
+    lab = lambda vs, info={}: health(mk(vs), info, h48={})["label"]
+    assert lab([4000, 4, 0, 0]) == "막힘"
+    assert lab([4000, 800, 90, 300]) == "저조"            # 막힘은 아니지만 최근 3건 중앙값 300
+    assert lab([50, 50, 50, 600, 700]) == "회복"
+    assert lab([900, None, None]) == "정상"               # 조회수 못 받은 글은 0이 아니라 판정 제외
+    assert health(mk([900, None, None]), {}, h48={})["n"] == 1
+    assert lab([]) == ""
+    rest = {"state": "rest", "until": HEALTH_FROM}
+    assert health(mk([300, 600]), rest, h48={})["rest_verdict"] == "pass"
+    assert health(mk([300, 400]), rest, h48={})["rest_verdict"] == "fail"
+    assert health(mk([300]), rest, h48={})["rest_verdict"] is None
+    assert health(mk([50, 50, 50]), {}, h48={"0": {"views": 5000}})["label"] == "저조"   # h48 값이 지금 값보다 우선
     print("ok")

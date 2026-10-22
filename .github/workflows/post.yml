@@ -24,9 +24,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # 2026-10-22부터 팀원 계정도 이 러너로만 발행한다. 팀원 토큰은 THREADS_<아이디> 시크릿에 따로 두고
+      # creds()가 THREADS_ACCOUNTS에 없는 계정일 때만 찾아 쓴다. 시크릿이 비어 있으면 그 계정 줄만 실패한다.
       - run: python3 run.py
         env:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
+          THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
       # 발행 기록(schedule.txt에서 줄 삭제)을 반드시 남긴다.
       # 푸시가 거부되면 그 줄이 살아남아 30분 뒤 회차가 같은 글을 다시 올린다.
       # 2026-09-10에 실제로 발생: 대시보드 커밋과 충돌 → 스페인·독일·이탈리아·프랑스 4건 중복 발행.

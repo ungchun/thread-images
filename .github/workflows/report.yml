@@ -5,11 +5,6 @@ on:
   # post.yml과 마찬가지로 cron-job.org가 매일 10:00 KST(01:00 UTC)에
   # 이 워크플로의 workflow_dispatch를 호출한다.
   workflow_dispatch:
-    inputs:
-      days:
-        description: '집계할 일수 (기본 1 = 어제 하루)'
-        required: false
-        default: '1'
 
 jobs:
   report:
@@ -21,8 +16,9 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Send report
+      # 2026-10-22부터 매일 브리핑은 brief.py다 — 계정 상태·승인할 제안·규칙 위반·OKR 진척.
+      # API를 부르지 않고 dashboard.yml(6시간마다)이 커밋한 dashboard*.json만 읽는다. 예전 report.py는 수동으로만 쓴다.
+      - name: Send brief
         env:
-          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        run: python3 report.py --days "${{ inputs.days || 1 }}"
+        run: python3 brief.py

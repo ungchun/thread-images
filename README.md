@@ -21,7 +21,7 @@ cd thread-images && claude
 
 ### 팀원: 내 계정을 대시보드에 붙이기
 
-클론한 폴더에서 `/setup`을 부르면 한 단계씩 진행한다. 팀원 계정은 발행하지 않고 대시보드에만 보인다.
+클론한 폴더에서 `/setup`을 부르면 한 단계씩 진행한다. 2026-10-22부터 팀원 계정도 이 레포 예약으로만 발행한다 — 토큰을 `THREADS_<아이디 대문자>` 시크릿에 넣으면 post.yml이 쓴다.
 토큰은 각자 로컬 `accounts/<계정>/env.sh`(커밋 안 됨)에 두고, 갱신 버튼이 자기 계정만 수집해
 `dashboard_<GitHub아이디>.json`을 푸시한다. 대시보드는 `team.json`에 적힌 사람별 파일을 합쳐 보여준다.
 
@@ -35,6 +35,7 @@ texts/              발행 전 본문. `---` 아래가 답글
 images/             발행 전 미디어
 done/, done/images/ 발행 끝난 것
 accounts/<계정>/    meta.txt(국가 타임존 [소유자] [프로젝트]), reply.txt(트레이스 고정 답글)
+accounts/status.json 계정 운영 상태 (유지·휴식·중단, 휴식 종료일)
 team.json           대시보드를 같이 보는 사람. 소유자 생략 = actions 주인
 research/           나라별 포맷 조사, 시장 조사, 주말 전수조사 보고서
 ```
@@ -45,6 +46,7 @@ dashboard.py     성과 수집 → dashboard.json
 notion_sync.py   문라이트·코르텍스 성과를 노션 DB에 upsert
 replies.py       답글 조회·발행·숨김
 check.py         전 계정 토큰 실검사
+gate.py          예약 검사 (휴식·중단 계정, 계정당 하루 1개, 최근 같은 본문)
 report.py        트레이스 성과를 슬랙으로
 serve.py         대시보드 로컬 서버 (localhost:8899)
 ```

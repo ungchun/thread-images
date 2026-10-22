@@ -1,6 +1,9 @@
 name: dashboard
 
 on:
+  # GitHub schedule cron은 쓰지 않는다(post.yml 참고). cron-job.org가 6시간마다
+  # 이 워크플로의 workflow_dispatch를 부른다 — 48시간 조회수(stats/h48.json)는
+  # 48~60시간 창에서 한 번 적으므로 6시간 간격이면 창마다 두 번 걸린다.
   workflow_dispatch:
     inputs:
       days:
@@ -15,6 +18,11 @@ on:
 permissions:
   contents: write
 
+# 두 실행이 겹치면 h48.json을 서로 덮는다. 앞 실행이 끝날 때까지 기다린다.
+concurrency:
+  group: dashboard
+  cancel-in-progress: false
+
 jobs:
   dashboard:
     runs-on: ubuntu-latest
@@ -24,24 +32,54 @@ jobs:
         with:
           python-version: '3.12'
 
+      # 만든 파일만 /tmp/dash에 모은다. 건너뛴 팀원 파일까지 옮기면, 그 사이 팀원이
+      # 로컬에서 푸시한 새 파일을 옛것으로 덮는다.
       - name: Collect
         env:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
-        run: python3 dashboard.py --days "${{ inputs.days || 30 }}" --replies-days "${{ inputs.replies_days || 14 }}"
+        run: |
+          mkdir -p /tmp/dash
+          python3 dashboard.py --days "${{ inputs.days || 30 }}" --replies-days "${{ inputs.replies_days || 14 }}"
+          cp dashboard.json /tmp/dash/
+
+      # 팀원 계정도 같은 잡에서 모은다(10/22부터 전 계정이 이 레포 Actions로 발행).
+      # 토큰은 THREADS_<아이디 대문자, - → _> 시크릿. 없거나 실패해도 잡을 죽이지 않는다.
+      # 차례로 돌아 stats/h48.json을 앞 실행 위에 이어 쓴다(덮지 않는다).
+      - name: Collect teammates
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
+          THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
+        run: |
+          for who in seongji-code mun-jeong-min; do
+            var="THREADS_$(echo "$who" | tr 'a-z-' 'A-Z_')"
+            if [ -z "${!var}" ]; then
+              echo "::warning::$var 시크릿이 없다 — $who 수집을 건너뛴다"
+              continue
+            fi
+            if python3 dashboard.py --owner "$who" --days "${{ inputs.days || 30 }}" --replies-days "${{ inputs.replies_days || 14 }}"; then
+              cp "dashboard_$who.json" /tmp/dash/
+            else
+              echo "::warning::$who 수집 실패 — 나머지는 커밋한다"
+            fi
+          done
+          [ -f stats/h48.json ] && cp stats/h48.json /tmp/dash/h48.json || true
 
       - name: Commit
         run: |
           git config user.name github-actions
           git config user.email actions@github.com
-          # dashboard.json은 매번 통째로 다시 만드는 생성물이라 병합할 게 없다.
+          # dashboard*.json은 매번 통째로 다시 만드는 생성물이라 병합할 게 없다.
           # 수집 중 발행 워크플로가 먼저 밀어넣는 일이 잦은데, 리베이스하면 충돌만 난다.
           # 원격을 받아 그 위에 방금 만든 파일을 얹는다.
-          cp dashboard.json /tmp/dashboard.json
+          # h48.json만은 누적 기록이라 얹지 않고 원격 것과 합친다.
           for i in 1 2 3; do
             git fetch origin main --quiet
             git reset --hard origin/main --quiet
-            cp /tmp/dashboard.json dashboard.json
-            git add dashboard.json
+            cp /tmp/dash/dashboard*.json .
+            [ -f /tmp/dash/h48.json ] && python3 dashboard.py --merge-h48 /tmp/dash/h48.json
+            git add dashboard*.json
+            [ -f stats/h48.json ] && git add stats/h48.json
             git diff --staged --quiet && exit 0
             git commit -m "dashboard" --quiet
             git push && exit 0

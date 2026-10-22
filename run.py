@@ -14,6 +14,11 @@ schedule.txt 한 줄 (탭 구분):
 Threads 답글은 본문 다음 회차(약 30분 뒤)에 단다. 본문을 올리면 done:reply-threads:<게시물id>
 를 남기고 시각을 25분 뒤로 미룬다. 답글이 실패해도 같은 표시로 다음 회차가 답글만 다시 민다.
 답글까지 끝나야 줄을 지우고 본문·이미지를 done/ 으로 옮긴다.
+
+발행 직전에 운영 규칙(accounts/status.json, 2026-10-22 재정비)을 본다. 휴식·중단 계정이거나
+그 계정이 현지 날짜로 오늘 이미 올렸으면 줄을 지우지 않고 done:hold-<사유>를 붙여 세운다.
+다음 날로 미뤄 내보내면 시각이 틀어지므로 자동으로 풀지 않는다 — 사람이 다시 잡거나 지운다.
+발행한 글은 posted.log에 남는다. 대시보드가 이 기록과 대조해 루프 밖 발행을 잡는다.
 """
 import json
 import os
@@ -23,12 +28,18 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).parent
 SCHEDULE = ROOT / "schedule.txt"
 DONE = ROOT / "done"
+STATUS = ROOT / "accounts" / "status.json"
+POSTED_LOG = ROOT / "posted.log"
+DAILY_CAP = 1          # 계정당 하루(현지 날짜) 1개
+REST_TESTS = 2         # 휴식 종료 뒤 복귀 테스트 건수. 1건은 우연에 너무 흔들려 2건으로 본다(2026-10-22 승인)
+OPEN_STATES = {"active", "official"}
 REPLY_DELAY_MIN = 25   # cron이 30분 간격이라 25분이면 바로 다음 회차에 답글이 나간다
 RAW = "https://raw.githubusercontent.com/ungchun/thread-images/main"
 
@@ -82,7 +93,10 @@ def creds(account, ig=False):
     """계정별 토큰. THREADS_ACCOUNTS(JSON) 우선, 없으면 로컬 파일."""
     blob = os.environ.get("THREADS_ACCOUNTS")
     if blob:
-        a = json.loads(blob)[account]
+        accs = json.loads(blob)
+        if account not in accs:   # 팀원 계정은 THREADS_<아이디> 시크릿에 따로 있다. 2026-10-22부터 전 계정을 이 러너로 발행한다
+            accs = json.loads(os.environ.get(team_secret(account)) or "{}")
+        a = accs[account]
         return (a["ig_token"], a["ig_user_id"]) if ig else (a["token"], a["user_id"])
     d = ROOT / "accounts" / account
     if ig:
@@ -93,6 +107,66 @@ def creds(account, ig=False):
             k, _, v = line[7:].partition("=")
             env[k.strip()] = v.strip().strip("'\"")
     return env["THREADS_TOKEN"], env["THREADS_USER_ID"]
+
+
+def _meta(account):
+    f = ROOT / "accounts" / account / "meta.txt"
+    return f.read_text(encoding="utf-8").split() if f.exists() else []
+
+
+def team_secret(account):
+    """팀원 토큰 시크릿 이름. meta.txt 3번째 토큰(소유자) → THREADS_SEONGJI_CODE 식."""
+    parts = _meta(account)
+    return "THREADS_" + parts[2].upper().replace("-", "_") if len(parts) > 2 else "THREADS_ACCOUNTS"
+
+
+def local_tz(account):
+    parts = _meta(account)
+    return ZoneInfo(parts[1]) if len(parts) > 1 else ZoneInfo("Asia/Seoul")
+
+
+def posts_since(account, since):
+    """since(UTC) 이후 이 계정이 올린 본문 글 수. 리포스트는 우리 글이 아니라 뺀다.
+    어느 경로로 올렸든(앱 직접 포함) 잡히도록 API로 직접 센다."""
+    token, uid = creds(account)
+    q = urllib.parse.urlencode({"fields": "id,timestamp,media_type", "limit": 25,
+                                "since": int(since.timestamp()), "access_token": token})
+    with urllib.request.urlopen(f"{THREADS['base']}/{uid}/threads?{q}", timeout=25) as r:
+        data = json.load(r).get("data", [])
+    return sum(1 for p in data if p.get("media_type") != "REPOST_FACADE"
+               and datetime.fromisoformat(p["timestamp"].replace("+0000", "+00:00")) >= since)
+
+
+def hold_reason(account, now, states, count=None):
+    """발행해도 되는가. 걸리면 hold 사유 코드, 통과면 None.
+    API 조회가 실패하면 예외를 그대로 던진다 — 호출자가 이번 회차만 건너뛴다."""
+    count = count or posts_since
+    info = states.get(account)
+    if info is None:
+        return "unknown"            # status.json에 없는 새 계정은 상태를 정하기 전까지 안 올린다
+    tz = local_tz(account)
+    today = now.astimezone(tz).date()
+    state = info.get("state")
+    if state == "rest":
+        until = date.fromisoformat(info["until"])
+        if today < until:
+            return "rest"
+        if count(account, datetime.combine(until, datetime.min.time(), tz)) >= REST_TESTS:
+            return "resttest"       # 복귀 테스트는 끝났다. 48시간 판정 뒤 status.json을 바꾼다
+    elif state not in OPEN_STATES:
+        return state or "unknown"   # paused·banned·dead
+    if count(account, datetime.combine(today, datetime.min.time(), tz)) >= DAILY_CAP:
+        return "cap"
+    return None
+
+
+def log_post(name, post_id, account, textfile):
+    """발행 기록. 대시보드가 게시물 id와 대조해 이 러너를 거치지 않은 발행을 찾는다."""
+    new = not POSTED_LOG.exists()
+    with POSTED_LOG.open("a", encoding="utf-8") as f:
+        if new:
+            f.write("# utc\taccount\tplatform\tpost_id\ttextfile\n")
+        f.write(f"{datetime.now(timezone.utc).isoformat(timespec='seconds')}\t{account}\t{name}\t{post_id}\t{textfile}\n")
 
 
 VIDEO_EXT = {".mp4", ".mov"}
@@ -285,13 +359,14 @@ def main():
         return
     now = datetime.now(timezone.utc)
     kept, finished, changed = [], [], False
+    states = json.loads(STATUS.read_text(encoding="utf-8")).get("accounts", {}) if STATUS.exists() else {}
 
     for line in SCHEDULE.read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             kept.append(line)
             continue
         when, account, textfile, tw_imgs, ig_imgs, done = parse(line)
-        if datetime.fromisoformat(when) > now:
+        if datetime.fromisoformat(when) > now or any(d.startswith("hold-") for d in done):
             kept.append(line)
             continue
 
@@ -309,7 +384,11 @@ def main():
         for mark in [d for d in done if d.startswith("reply-")]:
             name, post_id = mark[len("reply-"):].split(":", 1)
             plat, is_ig = (INSTAGRAM, True) if name == "ig" else (THREADS, False)
-            token, user = creds(account, is_ig)
+            try:   # 토큰이 없으면(팀원 시크릿 누락) 여기서 죽으면 안 된다 — 앞 줄 발행 기록까지 날아가 중복이 난다
+                token, user = creds(account, is_ig)
+            except Exception as e:
+                print(f"REPLY-FAIL {account} {post_id}: 토큰 없음 {e} — 다음 회차 재시도", flush=True)
+                continue
             try:
                 reply_with_retry(plat, account, token, user, f"{RAW}/{plat['images']}",
                                  f"{user}/{plat['create']}", post_id,
@@ -320,6 +399,21 @@ def main():
             print(f"reply-ok {name} {post_id} {account} {textfile}", flush=True)
             done.discard(mark)
             changed = True
+
+        # 새 본문을 올리기 직전에만 운영 규칙을 본다. 답글 재시도(위)는 이미 나간 글이라 막지 않는다.
+        if "threads" not in done and tw_imgs:
+            try:
+                why = hold_reason(account, now, states)
+            except Exception as e:   # 하루 건수를 못 세면 이번 회차는 올리지 않는다
+                print(f"SKIP {account}: 하루 건수 조회 실패 {e}", flush=True)
+                kept.append(line)
+                continue
+            if why:
+                print(f"HOLD {account} {textfile}: {why}", flush=True)
+                done.add(f"hold-{why}")
+                kept.append(render(when, account, textfile, tw_imgs, ig_imgs, done))
+                changed = True
+                continue
 
         # 이미지가 준비 안 된 플랫폼은 건너뛴다. 예약은 남아 다음 회차에 다시 본다.
         targets = []
@@ -348,6 +442,7 @@ def main():
                     when = (now + timedelta(minutes=delay)).isoformat()
             except ReplyFailed as e:  # 본문은 올라갔다. 답글만 표시해 두고 다음 회차에 재시도
                 print(f"posted {name} {e.post_id} {account} {textfile}", flush=True)
+                log_post(name, e.post_id, account, textfile)
                 print(f"REPLY-FAIL {account} {e.post_id}: {e} — 예약에 남김", flush=True)
                 done.add(name)
                 done.add(f"reply-{name}:{e.post_id}")
@@ -357,6 +452,7 @@ def main():
                 print(f"FAIL {account} {name} {textfile}: {e}", flush=True)
                 continue
             print(f"posted {name} {post_id} {account} {textfile}", flush=True)
+            log_post(name, post_id, account, textfile)
             done.add(name)
             changed = True
 
@@ -431,6 +527,7 @@ def _selfcheck():
     assert media_kind("a.MP4", "U") == {"media_type": "VIDEO", "video_url": "U"}
     assert media_kind("a.mov", "U", ig=True) == {"media_type": "REELS", "video_url": "U"}
     _check_archive()
+    _check_hold()
     t, e = spoilers("a||bc||d ||éf||")
     assert t == "abcd éf" and e == [{"entity_type": "SPOILER", "offset": 1, "length": 2},
                                     {"entity_type": "SPOILER", "offset": 5, "length": 2}], (t, e)
@@ -445,6 +542,25 @@ def _selfcheck():
     w, a, tf, tw, ig, d = parse("2026-01-01T00:00:00+00:00\tacc\ttexts/x.txt\ta.png\t-\tdone:threads,reply-threads:123")
     assert "reply-threads:123" in d and render(w, a, tf, tw, ig, d).endswith("done:reply-threads:123,threads"), d
     print("ok")
+
+
+def _check_hold():
+    """운영 규칙 판정. 발행 건수는 가짜 count로 넣는다 — API를 부르지 않는다."""
+    now = datetime(2026, 11, 5, 3, 0, tzinfo=timezone.utc)          # 방콕 11/05 10:00
+    st = {"pim.pm_02": {"state": "active"}, "o2ndot": {"state": "paused"},
+          "inkling01": {"state": "rest", "until": "2026-11-06"},
+          "shu.lin_03": {"state": "rest", "until": "2026-11-05"}}
+    zero, one, two = (lambda a, s: 0), (lambda a, s: 1), (lambda a, s: 2)
+    assert hold_reason("pim.pm_02", now, st, zero) is None
+    assert hold_reason("pim.pm_02", now, st, one) == "cap"
+    assert hold_reason("o2ndot", now, st, zero) == "paused"
+    assert hold_reason("nobody", now, st, zero) == "unknown"
+    assert hold_reason("inkling01", now, st, zero) == "rest"      # 대만 11/05 11:00 < until
+    assert hold_reason("shu.lin_03", now, st, zero) is None       # 복귀 테스트 첫 건
+    assert hold_reason("shu.lin_03", now, st, two) == "resttest"
+    seen = []
+    hold_reason("pim.pm_02", now, st, lambda a, s: seen.append(s) or 0)
+    assert seen[0].isoformat() == "2026-11-05T00:00:00+07:00", seen   # 현지 자정부터 센다
 
 
 def _check_archive():

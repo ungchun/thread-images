@@ -31,6 +31,8 @@ jobs:
           python-version: '3.12'
       - env:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
+          THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
         run: |
           case "${{ inputs.cmd }}" in
             posts) python3 replies.py posts "${{ inputs.account }}" --days "${{ inputs.arg || 30 }}" ;;

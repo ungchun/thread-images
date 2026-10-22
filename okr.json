@@ -1,0 +1,37 @@
+{
+ "_설명": "2주 OKR. brief.py가 매일 진척을 슬랙에 낸다. 자동 지표는 dashboard*.json에서 계산하고, 사람이 하는 일(크리에이터·공식 계정·설치 수)은 manual에 손으로 적는다. 기간이 끝나면 판정을 result에 적고 다음 기간을 periods 맨 뒤에 붙인다.",
+ "periods": [
+  {
+   "id": "2026-P1",
+   "start": "2026-10-23",
+   "end": "2026-11-09",
+   "_기간메모": "스펙은 2주(11/05)지만 휴식 복귀 테스트 48시간 판정이 11/07에 나와 판정일을 11/09(월)로 옮겼다",
+   "objective": "대만·일본·태국을 중심으로 트레이스 설치로 이어지는 노출을 되살린다",
+   "targets": {
+    "active_median_views": 2000,
+    "hits_per_week": 2,
+    "rest_returned": 4,
+    "creators_contacted": 30,
+    "creators_signed": 3,
+    "creator_posts": 3,
+    "official_accounts": 2,
+    "official_wallpaper_posts": 4
+   },
+   "baseline": {
+    "active_median_views": 181,
+    "_baseline메모": "유지 11계정의 10/13 이후 계정별 조회수 중앙값의 중앙값. 스펙의 54는 10/13 주 전 계정 캐러셀 중앙값이라 정의가 다르다"
+   },
+   "rest_accounts": ["aoi_1124_gram", "shu.lin_03", "inkling01", "daily03dew", "aisyah.zr_05", "appfinds_my", "nadia.ps_04", "appfinds_id"],
+   "manual": {
+    "creators_contacted": 0,
+    "creators_signed": 0,
+    "creator_posts": 0,
+    "official_accounts": 0,
+    "official_wallpaper_posts": 0,
+    "installs_target_countries": null,
+    "_manual메모": "installs_target_countries는 trace-analytics 기준. 답글 링크 ct 토큰 연동 전까지 손으로 적는다"
+   },
+   "result": null
+  }
+ ]
+}

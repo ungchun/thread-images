@@ -165,7 +165,7 @@ def load_prev():
     if not STATS.is_dir():
         return {}
     today = f"{datetime.now(KST):%Y-%m-%d}.json"
-    files = sorted(f for f in STATS.glob("*.json") if f.name != today)
+    files = sorted(f for f in STATS.glob("20*.json") if f.name != today)   # h48.json 등 날짜 아닌 파일은 뺀다
     if not files:
         return {}
     return json.loads(files[-1].read_text(encoding="utf-8"))

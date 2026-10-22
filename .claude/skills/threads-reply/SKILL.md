@@ -24,7 +24,8 @@ cd "$ROOT" && git pull --quiet --rebase
 ### 1. 계정 선택
 
 `accounts/*/meta.txt`를 읽어 계정과 국가를 보여주고 사용자가 고른다.
-3번째 토큰(소유자)이 team.json의 Actions 주인이 아닌 계정은 팀원 계정이라 목록에서 뺀다.
+중단·영구정지 계정(accounts/status.json의 paused·banned)은 목록에서 뺀다. 팀원 계정은 2026-10-22부터 포함한다 —
+replies.yml이 THREADS_<아이디> 시크릿을 넘긴다.
 인라인 텍스트로 묻는다. AskUserQuestion 금지.
 
 ### 2. 게시물 선택
