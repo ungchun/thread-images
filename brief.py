@@ -2,7 +2,7 @@
 """매일 슬랙 브리핑 — 계정 상태·승인할 제안·규칙 위반·OKR 진척. cron-job.org가 매일 10:00 KST에 부른다.
 
 2026-10-22 재정비 뒤의 루프에서 사람이 할 일은 "승인"뿐이게 만드는 게 목적이다.
-API를 부르지 않는다 — dashboard.yml(6시간마다)이 모아 둔 dashboard*.json과 okr.json만 읽는다.
+API를 부르지 않는다 — dashboard.yml(4시간마다, GitHub schedule)이 모아 둔 dashboard*.json과 okr.json만 읽는다.
 그래서 수집이 멈추면 맨 위에 그 사실부터 낸다.
 
   python3 brief.py          # 발송 (SLACK_WEBHOOK_URL 필요, 없으면 출력만)
@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 KST = timezone(timedelta(hours=9))
 TARGET = {"TH", "JP", "TW", "ID", "VN", "MY"}
-STALE_H = 8           # 6시간 수집 + 여유
+STALE_H = 9           # 4시간 수집이 한 회차 빠져도 + 스케줄 지연
 
 
 def load():
@@ -120,7 +120,7 @@ def build(today=None):
     if gen:
         age = (datetime.now(timezone.utc) - datetime.fromisoformat(min(gen))).total_seconds() / 3600
         if age > STALE_H:
-            lines.append(f"⚠️ 가장 오래된 수집이 {age:.0f}시간 전이다. dashboard.yml 호출(cron-job.org)을 확인한다 — 아래 판정이 낡았다")
+            lines.append(f"⚠️ 가장 오래된 수집이 {age:.0f}시간 전이다. dashboard 워크플로 실행 기록을 확인한다 — 아래 판정이 낡았다")
 
     health = {}
     for d in ds:

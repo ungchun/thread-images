@@ -53,15 +53,16 @@ serve.py         대시보드 로컬 서버 (localhost:8899)
 
 ## 자동으로 도는 것
 
-GitHub Actions는 자체 cron을 쓰지 않는다. cron-job.org가 workflow_dispatch로 깨운다 —
-스케줄러가 회차를 통째로 흘리는 일이 두 번 있어서 옮겼다.
+발행은 cron-job.org가 workflow_dispatch로 깨운다 — GitHub 스케줄러가 회차를 통째로 흘리는 일이
+두 번 있어서 옮겼다. 늦거나 한 회차 빠져도 괜찮은 수집·브리핑은 GitHub schedule로 돈다.
 
 | 언제 | 무엇 | 워크플로 |
 |---|---|---|
 | 30분마다 | 예약 발행 | post.yml |
 | 매일 08:00 KST | 노션 동기화 (문라이트·코르텍스) | notion-sync.yml |
-| 매일 10:00 KST | 슬랙 홍보 브리핑 (트레이스) | report.yml |
-| 수동 | 성과 수집 / 답글 / 토큰 점검 | dashboard.yml, replies.yml, check.yml |
+| 4시간마다 (GitHub schedule) | 성과 수집·48시간 판정·위반 감지 (팀원 계정 포함) | dashboard.yml |
+| 매일 10:07 KST (GitHub schedule) | 슬랙 브리핑: 계정 상태·승인할 제안·OKR (brief.py) | report.yml |
+| 수동 | 답글 / 토큰 점검 | replies.yml, check.yml |
 
 앱 매출 브리핑(08:00 슬랙)은 이 레포가 아니라 `corca-ai/trace-analytics`에 있다.
 

@@ -1,9 +1,10 @@
 name: report
 
 on:
-  # GitHub schedule cron은 쓰지 않는다. 회차를 통째로 흘리는 일이 반복돼
-  # post.yml과 마찬가지로 cron-job.org가 매일 10:00 KST(01:00 UTC)에
-  # 이 워크플로의 workflow_dispatch를 호출한다.
+  # 매일 10:07 KST(01:07 UTC). 발행과 달리 GitHub schedule을 쓴다 — 브리핑은 늦거나 하루 빠져도
+  # 사고가 아니다. 00:17 UTC 수집 뒤에 돌도록 잡았다. 수집이 낡았으면 brief.py가 맨 위에 경고한다.
+  schedule:
+    - cron: '7 1 * * *'
   workflow_dispatch:
 
 jobs:
