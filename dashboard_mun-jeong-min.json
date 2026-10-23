@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T06:50:54.847345+00:00",
+ "generated": "2026-10-23T13:46:34.824258+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -465,8 +465,8 @@
      },
      "7": {
       "n": 5,
-      "score": 0.69,
-      "median": 8
+      "score": 0.84,
+      "median": 10
      },
      "8": {
       "n": 8,
@@ -490,7 +490,7 @@
      },
      "12": {
       "n": 3,
-      "score": 0.86,
+      "score": 0.93,
       "median": 13
      },
      "13": {
@@ -505,7 +505,7 @@
      },
      "16": {
       "n": 8,
-      "score": 0.61,
+      "score": 0.6,
       "median": 8
      },
      "17": {
@@ -519,14 +519,14 @@
       "median": 32
      },
      "19": {
-      "n": 9,
-      "score": 1.03,
-      "median": 16
+      "n": 6,
+      "score": 1.06,
+      "median": 15
      },
      "20": {
-      "n": 12,
-      "score": 0.56,
-      "median": 13
+      "n": 8,
+      "score": 0.3,
+      "median": 10
      },
      "22": {
       "n": 1,
@@ -541,18 +541,18 @@
       "median": 13
      },
      "화": {
-      "n": 8,
-      "score": 1.09,
+      "n": 6,
+      "score": 1.04,
       "median": 34
      },
      "수": {
-      "n": 10,
-      "score": 0.93,
-      "median": 24
+      "n": 8,
+      "score": 0.92,
+      "median": 20
      },
      "목": {
-      "n": 33,
-      "score": 0.42,
+      "n": 30,
+      "score": 0.45,
       "median": 13
      },
      "금": {
@@ -568,53 +568,17 @@
     },
     "media": {
      "IMAGE": {
-      "n": 30,
-      "score": 0.9,
+      "n": 26,
+      "score": 0.93,
       "median": 28
      },
      "CAROUSEL_ALBUM": {
-      "n": 55,
-      "score": 0.56,
+      "n": 52,
+      "score": 0.6,
       "median": 13
      }
     },
     "accounts": {
-     "trace.planner.tw": {
-      "flag": "TW",
-      "posts": 4,
-      "avg": 89,
-      "max": 268,
-      "hours": {
-       "19": {
-        "n": 3,
-        "score": 0.18,
-        "median": 16
-       },
-       "20": {
-        "n": 1,
-        "score": 0.71,
-        "median": 63
-       }
-      },
-      "best_hour": 20,
-      "best_n": 1,
-      "state": "official",
-      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 268,
-       "recent": [
-        268
-       ],
-       "base": 268,
-       "approx": 1,
-       "multiple": 1.0,
-       "like_rate": 0.75,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
      "appfindsna9": {
       "flag": "US",
       "posts": 13,
@@ -905,37 +869,6 @@
        "label": "막힘"
       }
      },
-     "trace.planner.jp": {
-      "flag": "JP",
-      "posts": 3,
-      "avg": 14,
-      "max": 25,
-      "hours": {
-       "20": {
-        "n": 3,
-        "score": 1.14,
-        "median": 16
-       }
-      },
-      "best_hour": 20,
-      "best_n": 3,
-      "state": "official",
-      "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 16,
-       "recent": [
-        16
-       ],
-       "base": 16,
-       "approx": 1,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
      "appfinds_id": {
       "flag": "ID",
       "posts": 13,
@@ -944,13 +877,13 @@
       "hours": {
        "7": {
         "n": 4,
-        "score": 0.69,
-        "median": 8
+        "score": 0.76,
+        "median": 9
        },
        "12": {
         "n": 2,
-        "score": 0.99,
-        "median": 11
+        "score": 1.01,
+        "median": 12
        },
        "15": {
         "n": 2,
@@ -959,17 +892,17 @@
        },
        "16": {
         "n": 2,
-        "score": 1.08,
+        "score": 1.06,
         "median": 12
        },
        "18": {
         "n": 1,
-        "score": 2.75,
+        "score": 2.7,
         "median": 32
        },
        "19": {
         "n": 2,
-        "score": 1.29,
+        "score": 1.27,
         "median": 15
        }
       },
@@ -1324,6 +1257,38 @@
       "best_n": 0,
       "state": "excluded",
       "note": "정민 님 개인 팔로워 운영 계정 (10/23 정민 님 요청) — 예약·삭제·수집 모두 하지 않는다",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "trace.planner.jp": {
+      "flag": "JP",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "official",
+      "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "trace.planner.tw": {
+      "flag": "TW",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "official",
+      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
        "n": 0,
@@ -2319,32 +2284,14 @@
    "until": null
   },
   "trace.planner.jp": {
-   "n": 1,
-   "last": 16,
-   "recent": [
-    16
-   ],
-   "base": 16,
-   "approx": 1,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "official",
    "until": null
   },
   "trace.planner.tw": {
-   "n": 1,
-   "last": 268,
-   "recent": [
-    268
-   ],
-   "base": 268,
-   "approx": 1,
-   "multiple": 1.0,
-   "like_rate": 0.75,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "official",
    "until": null
   }
@@ -2353,138 +2300,6 @@
  "violations": [],
  "hits": [],
  "posts": [
-  {
-   "id": "18139896055616280",
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-22T11:15:21+00:00",
-   "date": "2026-10-22",
-   "local": "10/22 19:15",
-   "text": "演唱會消息一出：先截圖再說。\n開賣那天：欸？是今天？？？\n\n有搶票的脆友，拜託別讓開賣資訊只住在相簿裡🥲\n等官方日期、時間確定後，把公告圖丟進 Trace，核對產生的行程再存起來。\n\n你是公告一出就記行事曆，還是開賣前才被朋友救到？",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@trace.planner.tw/post/Dey2jWvid4m",
-   "views": 16,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18125055974514216",
-   "account": "trace.planner.jp",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-22T11:15:15+00:00",
-   "date": "2026-10-22",
-   "local": "10/22 20:15",
-   "text": "ロック画面、好きな写真だけにしたい。\nでも今日の予定も、ちゃんと見えるところに置きたい。\n\nTraceは背景を選んで、カレンダーやToDoの表示をカスタマイズできます。\n「かわいい」と「忘れない」を、同じ画面に。\n\nあなたのロック画面は、推し・ペット・風景のどれ派？",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@trace.planner.jp/post/Dey2iv2Ca28",
-   "views": 1,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18022945961721907",
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-22T11:14:56+00:00",
-   "date": "2026-10-22",
-   "local": "10/22 19:14",
-   "text": "手搖的甜度冰塊記得超清楚，\n繳費、回信、預約卻要靠「等一下應該會想起來」🤣\n\n想問脆友：你們喝手搖也會把吸管套打結嗎？\n這種小習慣，真的比記行程還牢。\n\nTrace 的四象限可以自己把待辦分好，先看重要又急的事。\n今天有哪件事，不能再「等一下」了？",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@trace.planner.tw/post/Dey2gVrCRPg",
-   "views": 10,
-   "likes": 0,
-   "replies": 2,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 1,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18118024616002788",
-   "account": "trace.planner.jp",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-22T11:14:41+00:00",
-   "date": "2026-10-22",
-   "local": "10/22 20:14",
-   "text": "電車で寝てても、降りる駅の直前に起きられる人。\nその能力、明日の予定にも使いたい。笑\n\n「明日は絶対忘れない」って思った用事ほど、朝にはどこかへ。\nTraceなら、予定とやることをロック画面の壁紙にまとめられます。\n\nみんながつい忘れるの、持ち物？返信？それとも予約？",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@trace.planner.jp/post/Dey2ejdiTcQ",
-   "views": 0,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18131648866801128",
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-21T12:20:32+00:00",
-   "date": "2026-10-21",
-   "local": "10/21 20:20",
-   "text": "待辦清單越寫越長，反而不知道先做哪件。\n\nTrace 可以把事情分進「重要／緊急」四象限，先把優先順序看清楚。\n\n你比較常卡在「事情太多」，還是「不知道先做哪件」？",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@trace.planner.tw/post/DewZN32DzBH",
-   "views": 63,
-   "likes": 0,
-   "replies": 2,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18103119044295684",
-   "account": "trace.planner.jp",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-21T11:13:45+00:00",
-   "date": "2026-10-21",
-   "local": "10/21 20:13",
-   "text": "予定は入れた。でも、カレンダーを見るのを忘れる。\n\nTraceなら予定をロック画面の壁紙にできます。\n2枚目はアプリ内の設定画面。\n\nロック画面に置くなら、予定とやること、どっちが便利？",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@trace.planner.jp/post/DewRk4pIFZl",
-   "views": 25,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
   {
    "id": "18120311120321930",
    "account": "appfinds_id",
@@ -2614,50 +2429,6 @@
    "quotes": 0,
    "shares": 0,
    "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18028244105863914",
-   "account": "trace.planner.jp",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-20T11:03:16+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 20:03",
-   "text": "ロック画面、時計を見るだけだともったいない🥹\n\n今日の予定も、1か月のカレンダーもここに。\nしかも壁紙はちゃんとかわいい。\n\n予定を確認するのが、ちょっと楽しみになるやつ。",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@trace.planner.jp/post/DetrlDuiabP",
-   "views": 16,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18109230283897767",
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-20T11:03:03+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 19:03",
-   "text": "原本只是想看時間，\n結果連今天的行程也一起看到了🥹\n\n行事曆放上鎖定畫面，\n桌布還能這麼可愛，真的有點犯規。",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@trace.planner.tw/post/Detrj-zic_o",
-   "views": 268,
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 5,
    "round": null,
    "variant": null
   },
@@ -3003,7 +2774,7 @@
    "text": "Tim males masukin jadwal satu-satu 🙋🏻‍♀️\nTulis di Trace → cek tanggal & jam → simpan 🥹✨\nKuliah, kerja, ngonten. Satu tempat.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/DeqAsBOCcsn",
-   "views": 8,
+   "views": 10,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3817,7 +3588,7 @@
    "text": "Kuliah sambil kerja? Pisahkan jam kelas, jam kerja, dan deadline dulu. Ini contoh dua jadwal yang dicek dulu sebelum disimpan di Trace.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_id/post/DegK_BSiYLn",
-   "views": 10,
+   "views": 11,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -4247,36 +4018,7 @@
   }
  ],
  "ig_posts": [],
- "pending": [
-  {
-   "id": "18031225010857235",
-   "user": "danzo0918",
-   "when": "10/21 22:07",
-   "text": "排順序時，我還會加問一句：「這件沒做，會卡住誰？」有些事本身只要五分鐘，卻讓下一個人等半天。把等待的人跟期限一起寫進去，才比較看得出先做哪件。",
-   "link": "https://www.threads.com/@danzo0918/post/Dewlg6-nTSh",
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "post": "18131648866801128",
-   "post_text": "待辦清單越寫越長，反而不知道先做哪件。",
-   "post_link": "https://www.threads.com/@trace.planner.tw/post/DewZN32DzBH"
-  },
-  {
-   "id": "17922384816448484",
-   "user": "tea_able_pro",
-   "when": "10/23 08:25",
-   "text": "嗯\n甜度冰塊\n很多人會猶豫很久😂😂",
-   "link": "https://www.threads.com/@tea_able_pro/post/De0Q_4NEnyA",
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "post": "18022945961721907",
-   "post_text": "手搖的甜度冰塊記得超清楚，",
-   "post_link": "https://www.threads.com/@trace.planner.tw/post/Dey2gVrCRPg"
-  }
- ],
+ "pending": [],
  "skipped": [],
  "errors": []
 }
