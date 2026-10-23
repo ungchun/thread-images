@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T13:46:34.824258+00:00",
+ "generated": "2026-10-23T20:12:11.675638+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -562,7 +562,7 @@
      },
      "일": {
       "n": 2,
-      "score": 1.22,
+      "score": 1.23,
       "median": 76
      }
     },
@@ -612,7 +612,7 @@
        },
        "20": {
         "n": 4,
-        "score": 1.22,
+        "score": 1.23,
         "median": 76
        }
       },
@@ -2406,7 +2406,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2516,7 +2515,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2648,7 +2646,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2846,7 +2843,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2868,7 +2864,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2950,7 +2945,7 @@
    "text": "hey iPhone users\nput your plans on your lock screen\nsee what’s next without opening your calendar",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsna9/post/DeqADmCAbAU",
-   "views": 66,
+   "views": 67,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3110,7 +3105,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -3132,7 +3126,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -3374,7 +3367,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -3396,7 +3388,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -3638,7 +3629,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -3660,7 +3650,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -3902,7 +3891,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -3924,7 +3912,6 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -4020,5 +4007,7 @@
  "ig_posts": [],
  "pending": [],
  "skipped": [],
- "errors": []
+ "errors": [
+  "appfinds_anz 링크 클릭: 500 {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"code\":2,\"type\":\"OAuthException\",\"is_transient\":true,\"fbtrace_id\":\"Am1ow5lBBG3rUx-nnRdw4Sx\"}}"
+ ]
 }
