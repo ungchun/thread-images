@@ -26,8 +26,8 @@ from report import actions_owner, meta, owner
 from run import DAILY_CAP, OPEN_STATES, POSTED_LOG, REST_TESTS, parse
 
 ROOT = Path(__file__).resolve().parent
-BLOCKED = {"rest": "휴식", "paused": "중단", "banned": "영구정지", "dead": "도달 없음"}
-HOLDS = {"rest": "휴식 중", "paused": "중단", "banned": "영구정지", "dead": "도달 없음", "unknown": "status.json에 없음",
+BLOCKED = {"rest": "휴식", "paused": "중단", "banned": "영구정지", "excluded": "운영 제외", "dead": "도달 없음"}
+HOLDS = {"rest": "휴식 중", "paused": "중단", "banned": "영구정지", "excluded": "운영 제외", "dead": "도달 없음", "unknown": "status.json에 없음",
          "cap": "하루 1개 초과", "resttest": "복귀 테스트 끝 — 판정 뒤 상태 변경"}
 WEAK = {"막힘", "저조"}
 STALE_H = 6

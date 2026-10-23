@@ -492,6 +492,8 @@ def violations(posts, st=None, log=None):
         day[(p["account"], p["date"])].append(p)
         info = st.get(p["account"], {})
         state, until = info.get("state", "active"), info.get("until")
+        if state == "excluded":
+            continue
         if state in ("paused", "banned", "dead"):
             add("중단 계정 발행", p, f"상태 {state}")
         elif state == "rest" and until and p["date"] < until:
@@ -648,10 +650,10 @@ def rounds_file(proj):
 
 
 def accounts(who):
-    # 영구정지(banned)는 토큰이 없어 수집하면 매번 오류만 난다.
+    # 영구정지(banned)는 토큰이 없어 수집하면 매번 오류만 난다. excluded는 팀원 개인 계정이라 아예 안 본다.
     st = account_status()
     return sorted(d.name for d in (ROOT / "accounts").iterdir()
-                  if d.is_dir() and owner(d.name) == who and st.get(d.name, {}).get("state") != "banned")
+                  if d.is_dir() and owner(d.name) == who and st.get(d.name, {}).get("state") not in ("banned", "excluded"))
 
 
 def scheduled(accs):

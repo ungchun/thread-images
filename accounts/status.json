@@ -1,5 +1,5 @@
 {
- "_설명": "계정 운영 상태. /threads 스킬·gate.py·대시보드가 읽는다. state는 active(유지, 하루 1개 상한) / rest(휴식, until까지 발행 안 함) / paused(중단) / banned(영구정지, 수집 안 함). rest는 until 이후 1개를 올려 48시간 조회수 500 이상이면 active로, 미만이면 paused로 바꾼다. 2026-10-22 재정비 기준 — 대상 국가 TH·JP·TW·ID·VN·MY, 나머지 나라는 중단.",
+ "_설명": "계정 운영 상태. /threads 스킬·gate.py·대시보드가 읽는다. state는 active(유지, 하루 1개 상한) / rest(휴식, until까지 발행 안 함) / paused(중단) / banned(영구정지, 수집 안 함) / excluded(팀원 개인 계정, 손대지 않고 수집도 안 함). rest는 until 이후 1개를 올려 48시간 조회수 500 이상이면 active로, 미만이면 paused로 바꾼다. 2026-10-22 재정비 기준 — 대상 국가 TH·JP·TW·ID·VN·MY, 나머지 나라는 중단.",
  "accounts": {
   "03ines.mar_":      {"state": "paused", "note": "중단 국가 (10/22 재정비). 포르투갈"},
   "ac_dd91":          {"state": "paused", "note": "한국은 별도 판단 대기 — 10월 조회수 중앙값 252. 한국. 저녁 18시가 오전보다 나음"},
@@ -27,7 +27,7 @@
   "haru._81a":        {"state": "active", "note": ""},
   "inkling01":        {"state": "rest", "until": "2026-11-05", "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음"},
   "ivy_.k09":         {"state": "paused", "note": "중단 국가 (10/22 재정비)"},
-  "jeongmin_trace":   {"state": "paused", "note": "중단 국가 (10/22 재정비)"},
+  "jeongmin_trace":   {"state": "excluded", "note": "정민 님 개인 팔로워 운영 계정 (10/23 정민 님 요청) — 예약·삭제·수집 모두 하지 않는다"},
   "kai_.03b":         {"state": "paused", "note": "중단 국가 (10/22 재정비). 필리핀. 9/7 합류, 표본 부족"},
   "lari.s_07":        {"state": "paused", "note": "중단 국가 (10/22 재정비)"},
   "linh.ngx_02":      {"state": "active", "note": ""},
