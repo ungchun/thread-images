@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T01:06:39.090677+00:00",
+ "generated": "2026-10-23T05:12:14.052247+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -445,7 +445,7 @@
     "hour": {
      "1": {
       "n": 8,
-      "score": 1.62,
+      "score": 1.61,
       "median": 54
      },
      "4": {
@@ -485,7 +485,7 @@
      },
      "11": {
       "n": 4,
-      "score": 0.8,
+      "score": 0.79,
       "median": 19
      },
      "12": {
@@ -501,7 +501,7 @@
      "14": {
       "n": 3,
       "score": 0.57,
-      "median": 736
+      "median": 738
      },
      "15": {
       "n": 2,
@@ -540,8 +540,8 @@
      },
      "22": {
       "n": 2,
-      "score": 0.55,
-      "median": 13
+      "score": 0.57,
+      "median": 14
      }
     },
     "wday": {
@@ -552,7 +552,7 @@
      },
      "화": {
       "n": 7,
-      "score": 1.1,
+      "score": 1.09,
       "median": 37
      },
      "수": {
@@ -590,35 +590,35 @@
      "TEXT_POST": {
       "n": 2,
       "score": 0.45,
-      "median": 579
+      "median": 582
      }
     },
     "accounts": {
      "jeongmin_trace": {
       "flag": "KR",
       "posts": 6,
-      "avg": 1297,
-      "max": 5371,
+      "avg": 1300,
+      "max": 5375,
       "hours": {
        "12": {
         "n": 1,
         "score": 0.34,
-        "median": 439
+        "median": 443
        },
        "14": {
         "n": 3,
         "score": 0.57,
-        "median": 736
+        "median": 738
        },
        "17": {
         "n": 1,
         "score": 0.06,
-        "median": 79
+        "median": 84
        },
        "18": {
         "n": 1,
         "score": 0.71,
-        "median": 926
+        "median": 929
        }
       },
       "best_hour": 18,
@@ -705,6 +705,69 @@
        "label": "막힘"
       }
      },
+     "appfinds_my": {
+      "flag": "MY",
+      "posts": 16,
+      "avg": 33,
+      "max": 85,
+      "hours": {
+       "1": {
+        "n": 2,
+        "score": 1.61,
+        "median": 54
+       },
+       "8": {
+        "n": 4,
+        "score": 0.8,
+        "median": 27
+       },
+       "13": {
+        "n": 2,
+        "score": 0.71,
+        "median": 24
+       },
+       "16": {
+        "n": 2,
+        "score": 0.07,
+        "median": 2
+       },
+       "17": {
+        "n": 2,
+        "score": 2.35,
+        "median": 79
+       },
+       "19": {
+        "n": 3,
+        "score": 0.62,
+        "median": 21
+       },
+       "20": {
+        "n": 1,
+        "score": 1.39,
+        "median": 47
+       }
+      },
+      "best_hour": 17,
+      "best_n": 2,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 13,
+       "last": 37,
+       "recent": [
+        74,
+        82,
+        37
+       ],
+       "base": 37,
+       "approx": 12,
+       "multiple": 1.0,
+       "like_rate": 1.3,
+       "burst": 0.15,
+       "label": "휴식"
+      }
+     },
      "appfindsuk8": {
       "flag": "GB",
       "posts": 14,
@@ -768,69 +831,6 @@
        "label": "막힘"
       }
      },
-     "appfinds_my": {
-      "flag": "MY",
-      "posts": 16,
-      "avg": 33,
-      "max": 85,
-      "hours": {
-       "1": {
-        "n": 2,
-        "score": 1.62,
-        "median": 54
-       },
-       "8": {
-        "n": 4,
-        "score": 0.8,
-        "median": 27
-       },
-       "13": {
-        "n": 2,
-        "score": 0.71,
-        "median": 24
-       },
-       "16": {
-        "n": 2,
-        "score": 0.07,
-        "median": 2
-       },
-       "17": {
-        "n": 2,
-        "score": 2.36,
-        "median": 79
-       },
-       "19": {
-        "n": 3,
-        "score": 0.62,
-        "median": 21
-       },
-       "20": {
-        "n": 1,
-        "score": 1.4,
-        "median": 47
-       }
-      },
-      "best_hour": 17,
-      "best_n": 2,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
-      "health": {
-       "n": 13,
-       "last": 37,
-       "recent": [
-        74,
-        82,
-        37
-       ],
-       "base": 37,
-       "approx": 12,
-       "multiple": 1.0,
-       "like_rate": 1.3,
-       "burst": 0.15,
-       "label": "휴식"
-      }
-     },
      "appfinds_anz": {
       "flag": "AU",
       "posts": 15,
@@ -844,12 +844,12 @@
        },
        "11": {
         "n": 4,
-        "score": 0.8,
+        "score": 0.79,
         "median": 19
        },
        "16": {
         "n": 2,
-        "score": 1.29,
+        "score": 1.28,
         "median": 31
        },
        "18": {
@@ -869,8 +869,8 @@
        },
        "22": {
         "n": 2,
-        "score": 0.55,
-        "median": 13
+        "score": 0.57,
+        "median": 14
        }
       },
       "best_hour": 4,
@@ -2379,7 +2379,7 @@
    "text": "POV: itinerary Jepun 18 hari siap cantik dalam Excel.\nTukar satu booking, kena cari balik screenshot, chat, email… penat dia lain macam 😂\n\nDalam Trace, boleh taip perubahan jadual guna bahasa biasa. Semak draf tu, baru simpan.\n\nKorang jenis plan sampai minit, atau satu hari satu tempat pun dah cukup?",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_my/post/Dey2stfiSfw",
-   "views": 5,
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2533,7 +2533,7 @@
    "text": "“I’ll sort it on Friday.”\n\nFriday would like to know who approved this workload.\n\nIf opening your planner is another thing to remember, put the plan where you already look.\nTrace can show your calendar and to-dos on your iPhone Lock Screen wallpaper.\n\nWhat’s the one thing future-you needs to see this week?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_anz/post/Dey2kdWCcgn",
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2643,8 +2643,8 @@
    "text": "Tibo의 Codex 리셋 예고",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeykNRlAXxU",
-   "views": 79,
-   "likes": 4,
+   "views": 84,
+   "likes": 5,
    "replies": 0,
    "reposts": 1,
    "quotes": 0,
@@ -2775,8 +2775,8 @@
    "text": "트레이스 마케팅을 하면서 요즘 고민이 하나 생겼어요.\n\n저는 일정이랑 할 일을 편하게 관리할 수 있다는 걸 알리고 싶은데, 얼마 전에는 치이카와 잠금화면을 보고 어떤 앱인지 물어봐주신 분이 있었어요.\n\n제가 설명하고 싶은 좋은 점과, 누군가 써보고 싶어지는 이유가 다를 수도 있겠더라고요.\n\n그럼 예쁜 잠금화면을 더 보여드리면 될까 싶다가도, 그렇게 들어온 분들께 일정관리의 편함도 잘 전해질까 고민돼요.\n\n생각해보면 그분께는 예쁜 잠금화면 자체가 가장 필요한 기능일 수도 있고요ㅎㅎ",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeyL_Lqgb_t",
-   "views": 232,
-   "likes": 15,
+   "views": 236,
+   "likes": 16,
    "replies": 1,
    "reposts": 2,
    "quotes": 0,
@@ -3325,7 +3325,7 @@
    "text": "개발자인데 마케팅을 시작한 지 이제 2주 정도 됐어요🐣\n\n개발할 땐 안 되면 로그부터 봤는데\n마케팅은 반응이 없을 때 어디부터 봐야 할지 아직 모르겠어요ㅋㅋ\n\n글도 올려보고 다른 분들 계정도 보면서 배우는 중인데, 초반에 뭘 해보면 좋을지 궁금해요.\n\n처음 시작할 때 도움됐던 공부 방법이나\n“이건 직접 해봐라” 싶은 행동 하나 추천해주실 수 있나요?\n\n마케터분들도, 직접 서비스를 알리고 계신 분들도 경험 나눠주시면 감사하겠습니다!\n\n추천받은 것들 하나씩 해보고\n배운 점이랑 결과도 여기 공유해볼게요🙂",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeqRYsagWWI",
-   "views": 439,
+   "views": 443,
    "likes": 29,
    "replies": 3,
    "reposts": 8,
@@ -4667,7 +4667,7 @@
    "text": "얼마 전에 치이카와 극장판 보고 왔어요ㅎㅎ\n보고 와서 트레이스앱의 잠금화면도 이렇게 바꿔봤어요.\n세이렌까지 같이 있으니까 폰 켤 때마다 영화 생각나네요\n\n원래 우사기를 좋아해서 그런지 눈은 자꾸 우사기한테 가요ㅋㅋ",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@jeongmin_trace/post/DebAxTWAdEq",
-   "views": 736,
+   "views": 738,
    "likes": 28,
    "replies": 7,
    "reposts": 6,
@@ -4689,7 +4689,7 @@
    "text": "트레이스, 9월 역대 최고 매출 달성했습니다 🎉\n\n14일 만에 기존 한 달 최고 기록을 넘었고,\n월말에는 그 기록의 거의 두 배로 마감했어요\n\n일상을 함께할 일정앱으로 트레이스를 선택해주셔서 감사합니다!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeOJX4ggfkz",
-   "views": 5371,
+   "views": 5375,
    "likes": 49,
    "replies": 19,
    "reposts": 4,
@@ -4733,8 +4733,8 @@
    "text": "안녕! 백엔드 개발자로 시작해서 지금은 코르카에서 AX 컨설팅과 AI 일정 앱 ‘트레이스’ 마케팅을 하고 있는 문정민이야.\n\n대덕소프트웨어마이스터고를 나와 금융기관 연동 시스템, 연구 데이터 도구, 쇼핑몰을 개발했고, 일하면서 방송대 컴퓨터과학과 공부도 이어가고 있어.\n\n올해 6월 코르카에 합류한 뒤에는 회사의 블로그 전체 프로세스를 구성하고 동료들의 발표와 시행착오를 블로그 글로 남기는 AI 인터뷰 ‘씰터뷰’를 기획하고 제작 과정을 다듬었어.\n(corca.ai/blog)\n\n요즘은 트레이스라는 일정관리 앱의 콘텐츠를 만들고 마케팅을 자동화하는 실험을 하고 있어. \n\n개발자이던 내가 코르카 입사 후에 글을 쓰는걸 배우고 마케팅까지 해보는 중이라 많은 시행착오를 겪고 있어😿 그 과정을 공유하고 트레이스를 쓰는 일상을 공유할게\n\n그리고 내가 하는 일들에 비추어서 AI로 일을 줄여보는 사람, 일정이나 할 일 관리에 관심 있는 사람들과 이야기하고 싶어.\n\n다들 요즘 어떤 도구에 정착했어?",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@jeongmin_trace/post/DeMCqD_AQJs",
-   "views": 926,
-   "likes": 19,
+   "views": 929,
+   "likes": 20,
    "replies": 6,
    "reposts": 2,
    "quotes": 0,
