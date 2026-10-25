@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T13:27:03.792307+00:00",
+ "generated": "2026-10-25T19:21:06.494243+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -470,7 +470,7 @@
      },
      "8": {
       "n": 8,
-      "score": 1.04,
+      "score": 1.03,
       "median": 28
      },
      "9": {
@@ -528,6 +528,11 @@
       "score": 0.42,
       "median": 9
      },
+     "21": {
+      "n": 1,
+      "score": 1.0,
+      "median": 118
+     },
      "22": {
       "n": 1,
       "score": 0.94,
@@ -561,9 +566,9 @@
       "median": 7
      },
      "일": {
-      "n": 3,
-      "score": 1.1,
-      "median": 69
+      "n": 4,
+      "score": 1.05,
+      "median": 77
      }
     },
     "media": {
@@ -573,12 +578,34 @@
       "median": 28
      },
      "CAROUSEL_ALBUM": {
-      "n": 53,
-      "score": 0.63,
+      "n": 54,
+      "score": 0.68,
       "median": 13
      }
     },
     "accounts": {
+     "trace.planner.tw": {
+      "flag": "TW",
+      "posts": 1,
+      "avg": 118,
+      "max": 118,
+      "hours": {
+       "21": {
+        "n": 1,
+        "score": 1.0,
+        "median": 118
+       }
+      },
+      "best_hour": 21,
+      "best_n": 1,
+      "state": "official",
+      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
      "appfindsna9": {
       "flag": "US",
       "posts": 13,
@@ -839,7 +866,7 @@
        },
        "19": {
         "n": 1,
-        "score": 3.68,
+        "score": 3.65,
         "median": 79
        },
        "20": {
@@ -930,13 +957,13 @@
      "trace.planner.jp": {
       "flag": "JP",
       "posts": 1,
-      "avg": 6,
-      "max": 6,
+      "avg": 7,
+      "max": 7,
       "hours": {
        "20": {
         "n": 1,
         "score": 1.0,
-        "median": 6
+        "median": 7
        }
       },
       "best_hour": 20,
@@ -1279,22 +1306,6 @@
       "best_n": 0,
       "state": "excluded",
       "note": "정민 님 개인 팔로워 운영 계정 (10/23 정민 님 요청) — 예약·삭제·수집 모두 하지 않는다",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "trace.planner.tw": {
-      "flag": "TW",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "official",
-      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
        "n": 0,
@@ -2185,23 +2196,7 @@
   }
  },
  "window_days": 30,
- "scheduled": [
-  {
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-25T13:30:00+00:00",
-   "local": "2026-10-25 21:30",
-   "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？\n---\ndelay: 30\nmedia: shared.trace_appstore.png\nApp 的名字是 Trace 👇\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tw_trace.planner.tw&mt=8",
-   "media": [
-    "trace/r325/pair_table_tw_1.png",
-    "trace/r325/pair_shared_tw_2.png"
-   ],
-   "ig": [],
-   "done": []
-  }
- ],
+ "scheduled": [],
  "accounts_health": {
   "appfinds_anz": {
    "n": 13,
@@ -2323,6 +2318,28 @@
  "hits": [],
  "posts": [
   {
+   "id": "18112639627887773",
+   "account": "trace.planner.tw",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-10-25T13:31:34+00:00",
+   "date": "2026-10-25",
+   "local": "10/25 21:31",
+   "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@trace.planner.tw/post/De60hkzlkpc",
+   "views": 118,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18171903583480740",
    "account": "trace.planner.jp",
    "project": "trace",
@@ -2334,7 +2351,7 @@
    "text": "iPhoneを2台並べると、ロック画面が1枚の絵になる。\nふたりの記念日カウントダウンも、予定も一緒に。\n一緒に使いたい人、いますか？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.jp/post/De6jaVeEQRY",
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2752,7 +2769,7 @@
    "text": "What if your plans were right there on your Lock Screen?\nMeet Trace — calendar + to-dos for iPhone.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_ph/post/DeqA5VHCdKZ",
-   "views": 76,
+   "views": 78,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
