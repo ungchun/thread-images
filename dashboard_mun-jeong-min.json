@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T05:07:42.923118+00:00",
+ "generated": "2026-10-26T15:38:32.803240+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -445,7 +445,7 @@
     "hour": {
      "1": {
       "n": 8,
-      "score": 1.52,
+      "score": 1.51,
       "median": 55
      },
      "4": {
@@ -510,7 +510,7 @@
      },
      "17": {
       "n": 4,
-      "score": 1.32,
+      "score": 1.31,
       "median": 43
      },
      "18": {
@@ -531,7 +531,7 @@
      "21": {
       "n": 1,
       "score": 1.0,
-      "median": 122
+      "median": 127
      },
      "22": {
       "n": 1,
@@ -557,7 +557,7 @@
      },
      "목": {
       "n": 30,
-      "score": 0.45,
+      "score": 0.44,
       "median": 13
      },
      "금": {
@@ -587,13 +587,13 @@
      "trace.planner.tw": {
       "flag": "TW",
       "posts": 1,
-      "avg": 122,
-      "max": 122,
+      "avg": 127,
+      "max": 127,
       "hours": {
        "21": {
         "n": 1,
         "score": 1.0,
-        "median": 122
+        "median": 127
        }
       },
       "best_hour": 21,
@@ -664,6 +664,64 @@
        "label": "막힘"
       }
      },
+     "appfinds_my": {
+      "flag": "MY",
+      "posts": 13,
+      "avg": 36,
+      "max": 90,
+      "hours": {
+       "1": {
+        "n": 2,
+        "score": 1.51,
+        "median": 55
+       },
+       "8": {
+        "n": 4,
+        "score": 0.74,
+        "median": 27
+       },
+       "13": {
+        "n": 2,
+        "score": 0.66,
+        "median": 24
+       },
+       "16": {
+        "n": 2,
+        "score": 0.07,
+        "median": 2
+       },
+       "17": {
+        "n": 2,
+        "score": 2.27,
+        "median": 82
+       },
+       "19": {
+        "n": 1,
+        "score": 1.02,
+        "median": 37
+       }
+      },
+      "best_hour": 17,
+      "best_n": 2,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 13,
+       "last": 37,
+       "recent": [
+        74,
+        82,
+        37
+       ],
+       "base": 37,
+       "approx": 12,
+       "multiple": 1.0,
+       "like_rate": 1.3,
+       "burst": 0.15,
+       "label": "휴식"
+      }
+     },
      "appfindsuk8": {
       "flag": "GB",
       "posts": 13,
@@ -720,64 +778,6 @@
        "like_rate": 0.85,
        "burst": 0.38,
        "label": "막힘"
-      }
-     },
-     "appfinds_my": {
-      "flag": "MY",
-      "posts": 13,
-      "avg": 36,
-      "max": 86,
-      "hours": {
-       "1": {
-        "n": 2,
-        "score": 1.52,
-        "median": 55
-       },
-       "8": {
-        "n": 4,
-        "score": 0.75,
-        "median": 27
-       },
-       "13": {
-        "n": 2,
-        "score": 0.67,
-        "median": 24
-       },
-       "16": {
-        "n": 2,
-        "score": 0.07,
-        "median": 2
-       },
-       "17": {
-        "n": 2,
-        "score": 2.23,
-        "median": 80
-       },
-       "19": {
-        "n": 1,
-        "score": 1.03,
-        "median": 37
-       }
-      },
-      "best_hour": 17,
-      "best_n": 2,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
-      "health": {
-       "n": 13,
-       "last": 37,
-       "recent": [
-        74,
-        82,
-        37
-       ],
-       "base": 37,
-       "approx": 12,
-       "multiple": 1.0,
-       "like_rate": 1.3,
-       "burst": 0.15,
-       "label": "휴식"
       }
      },
      "appfinds_anz": {
@@ -2329,7 +2329,7 @@
    "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/De60hkzlkpc",
-   "views": 122,
+   "views": 127,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2440,7 +2440,7 @@
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsuk8/post/Detrrq4CcWa",
    "views": 30,
-   "likes": 0,
+   "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
@@ -2549,7 +2549,7 @@
    "text": "Sebelum masuk kelas: Matematik 5A pukul 8, Sains 5B pukul 9.30, mesyuarat pukul 2.\nTugasan semak buku pun ada di sebelah jadual.\n\nContoh Lock Screen Trace untuk hari Isnin, 26 Oktober.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/Deq8TyeiRzd",
-   "views": 86,
+   "views": 90,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
