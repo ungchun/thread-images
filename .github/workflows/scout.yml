@@ -1,0 +1,44 @@
+name: scout
+
+on:
+  # 판 정찰(scout.py) — 하루 한 번. 아침(KST 07:23)에 모아 두면 그날 소재를 고를 때 쓴다.
+  # 정각은 GitHub 스케줄이 몰려 늦어지므로 :23에 둔다.
+  schedule:
+    - cron: '23 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Collect
+        run: |
+          python3 scout.py
+          mkdir -p /tmp/scout && cp scout/*.json /tmp/scout/
+          # 로그아웃 검색이 이 IP에서 막히면 글이 0개로 온다 — 실패로 알린다
+          python3 -c "import json,glob,sys; f=sorted(glob.glob('scout/*.json'))[-1]; n=sum(len(q['posts']) for q in json.load(open(f))['queries']); print(f, n); sys.exit(0 if n else 1)"
+
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          # scout/날짜.json은 그날 통째로 만드는 생성물이라 원격 위에 얹는다(dashboard.yml과 같은 방식)
+          for i in 1 2 3; do
+            git fetch origin main --quiet
+            git reset --hard origin/main --quiet
+            cp /tmp/scout/*.json scout/
+            git add scout/
+            git diff --staged --quiet && exit 0
+            git commit -m "scout" --quiet
+            git push && exit 0
+            sleep 5
+          done
+          echo "푸시 실패"; exit 1
