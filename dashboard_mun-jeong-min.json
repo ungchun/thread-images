@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T10:07:40.547938+00:00",
+ "generated": "2026-10-27T14:49:54.410424+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -531,7 +531,7 @@
      "21": {
       "n": 1,
       "score": 1.0,
-      "median": 129
+      "median": 130
      },
      "22": {
       "n": 1,
@@ -587,13 +587,13 @@
      "trace.planner.tw": {
       "flag": "TW",
       "posts": 1,
-      "avg": 129,
-      "max": 129,
+      "avg": 130,
+      "max": 130,
       "hours": {
        "21": {
         "n": 1,
         "score": 1.0,
-        "median": 129
+        "median": 130
        }
       },
       "best_hour": 21,
@@ -602,8 +602,17 @@
       "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 130,
+       "recent": [
+        130
+       ],
+       "base": 130,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "appfindsna9": {
@@ -972,8 +981,17 @@
       "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 7,
+       "recent": [
+        7
+       ],
+       "base": 7,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "03ines.mar_": {
@@ -2301,14 +2319,32 @@
    "until": null
   },
   "trace.planner.jp": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 7,
+   "recent": [
+    7
+   ],
+   "base": 7,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "official",
    "until": null
   },
   "trace.planner.tw": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 130,
+   "recent": [
+    130
+   ],
+   "base": 130,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "official",
    "until": null
   }
@@ -2329,7 +2365,7 @@
    "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/De60hkzlkpc",
-   "views": 129,
+   "views": 130,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
