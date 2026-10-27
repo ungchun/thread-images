@@ -1,0 +1,31 @@
+name: peek
+
+# 지정한 계정의 최근 글 조회수만 로그로 본다. 아무것도 커밋하지 않는다.
+# 전체 대시보드 갱신(dashboard.yml)은 4시간 스케줄과, 오너가 요청할 때만 돌린다.
+on:
+  workflow_dispatch:
+    inputs:
+      accounts:
+        description: '계정 (쉼표로 여러 개)'
+        required: true
+      hours:
+        description: '최근 몇 시간 글 (기본 72)'
+        required: false
+        default: '72'
+
+jobs:
+  peek:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Peek
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
+          THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
+          ACCS: ${{ inputs.accounts }}
+          HOURS: ${{ inputs.hours || 72 }}
+        run: python3 peek.py "$ACCS" --hours "$HOURS"
