@@ -18,15 +18,19 @@ def peek(account, hours):
     _, tz = meta(account)
     now = datetime.now(timezone.utc)
     data = api(f"{uid}/threads", token, fields="id,text,timestamp", limit=25)
-    for p in data.get("data", []):
+    shown = 0
+    for p in data.get("data", []):   # 고정 글이 맨 앞에 올 수 있어 끊지 않고 다 본다
         utc = datetime.fromisoformat(p["timestamp"].replace("+0000", "+00:00"))
         age = (now - utc).total_seconds() / 3600
         if age > hours:
-            break
+            continue
         m = insights(p["id"], token)
         head = " ".join((p.get("text") or "").split())[:30]
         print(f"{account}\t{utc.astimezone(tz):%m/%d %H:%M}\t{age:5.1f}h\t"
               f"조회 {m.get('views', '?')}\t좋아요 {m.get('likes', '?')}\t답글 {m.get('replies', '?')}\t{head}")
+        shown += 1
+    if not shown:
+        print(f"{account}\t최근 {hours:g}시간 글 없음 (받은 글 {len(data.get('data', []))}건)")
 
 
 def main():
