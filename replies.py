@@ -183,6 +183,13 @@ def wait_ready(container, token, tries=20):
     raise RuntimeError(f"container {container}: 준비 안 됨")
 
 
+def media(account, post_id):
+    """게시물에 붙은 이미지·영상 원본 주소. 캐러셀이면 칸마다 하나씩. 주소는 서명돼 있어 며칠 뒤 만료된다."""
+    token, _ = creds(account)
+    kids = api(f"{post_id}/children", token, fields="id,media_type,media_url").get("data", [])
+    return kids or [api(post_id, token, fields="id,media_type,media_url")]
+
+
 def scopes(account):
     token, _ = creds(account)
     return api("debug_token", token, input_token=token)["data"].get("scopes")
@@ -261,9 +268,13 @@ def main():
             except Exception as e:
                 print(f"SEND-FAIL {a} {pid} {e}", flush=True)
         print(f"발행 {ok}/{len(rows)}")
+    elif cmd == "media":
+        for m in media(account, sys.argv[3]):
+            print(m.get("media_type"), m.get("media_url"))
     elif cmd == "send":
         body = Path(sys.argv[4]).read_text(encoding="utf-8").strip()
-        print(send(account, sys.argv[3], body))
+        files = [m for m in (sys.argv[5] if len(sys.argv) > 5 else "").split(",") if m]
+        print(send(account, sys.argv[3], body, files or None))
     else:
         print(__doc__)
         sys.exit(1)

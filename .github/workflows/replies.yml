@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       cmd:
-        description: 'posts | list | tone | send | hide | scopes | delete'
+        description: 'posts | list | tone | send | hide | scopes | delete | media'
         required: true
         default: 'posts'
       account:
@@ -17,7 +17,11 @@ on:
         required: false
         default: ''
       arg:
-        description: 'list·delete면 게시물 id, posts면 --days 값, tone이면 --limit 값, send·hide면 답글 id'
+        description: 'list·delete·media면 게시물 id, posts면 --days 값, tone이면 --limit 값, send·hide면 답글 id'
+        required: false
+        default: ''
+      media:
+        description: 'send에 붙일 images/ 아래 파일(쉼표로 여러 개, 비우면 글만)'
         required: false
         default: ''
 
@@ -38,9 +42,10 @@ jobs:
             posts) python3 replies.py posts "${{ inputs.account }}" --days "${{ inputs.arg || 30 }}" ;;
             list)  python3 replies.py list  "${{ inputs.account }}" "${{ inputs.arg }}" ;;
             tone)  python3 replies.py tone  "${{ inputs.account }}" --limit "${{ inputs.arg || 20 }}" ;;
-            send)  python3 replies.py send  "${{ inputs.account }}" "${{ inputs.arg }}" "outbox/${{ inputs.body }}" ;;
+            send)  python3 replies.py send  "${{ inputs.account }}" "${{ inputs.arg }}" "outbox/${{ inputs.body }}" "${{ inputs.media }}" ;;
             hide)  python3 replies.py hide  "${{ inputs.account }}" "${{ inputs.arg }}" "${{ inputs.body }}" ;;
             scopes) python3 replies.py scopes "${{ inputs.account }}" ;;
             delete) python3 replies.py delete "${{ inputs.account }}" "${{ inputs.arg }}" ;;
+            media) python3 replies.py media "${{ inputs.account }}" "${{ inputs.arg }}" ;;
             *) echo "알 수 없는 cmd"; exit 1 ;;
           esac
