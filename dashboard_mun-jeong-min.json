@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T12:12:22.199630+00:00",
+ "generated": "2026-11-03T19:44:27.851229+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -446,7 +446,7 @@
      "1": {
       "n": 8,
       "score": 1.51,
-      "median": 55
+      "median": 56
      },
      "4": {
       "n": 4,
@@ -460,8 +460,8 @@
      },
      "6": {
       "n": 2,
-      "score": 1.3,
-      "median": 47
+      "score": 1.29,
+      "median": 48
      },
      "7": {
       "n": 5,
@@ -475,13 +475,13 @@
      },
      "9": {
       "n": 2,
-      "score": 0.26,
-      "median": 9
+      "score": 0.28,
+      "median": 10
      },
      "10": {
       "n": 2,
-      "score": 0.05,
-      "median": 2
+      "score": 0.08,
+      "median": 3
      },
      "11": {
       "n": 4,
@@ -490,12 +490,12 @@
      },
      "12": {
       "n": 3,
-      "score": 0.93,
+      "score": 0.91,
       "median": 14
      },
      "13": {
       "n": 6,
-      "score": 0.67,
+      "score": 0.66,
       "median": 24
      },
      "15": {
@@ -510,12 +510,12 @@
      },
      "17": {
       "n": 4,
-      "score": 1.29,
+      "score": 1.28,
       "median": 43
      },
      "18": {
       "n": 3,
-      "score": 2.29,
+      "score": 2.27,
       "median": 33
      },
      "19": {
@@ -568,18 +568,18 @@
      "일": {
       "n": 4,
       "score": 1.05,
-      "median": 77
+      "median": 78
      }
     },
     "media": {
      "IMAGE": {
       "n": 26,
-      "score": 0.92,
+      "score": 0.91,
       "median": 28
      },
      "CAROUSEL_ALBUM": {
       "n": 54,
-      "score": 0.68,
+      "score": 0.69,
       "median": 13
      }
     },
@@ -648,8 +648,8 @@
        },
        "20": {
         "n": 4,
-        "score": 1.23,
-        "median": 77
+        "score": 1.24,
+        "median": 78
        }
       },
       "best_hour": 1,
@@ -673,6 +673,64 @@
        "label": "막힘"
       }
      },
+     "appfindsuk8": {
+      "flag": "GB",
+      "posts": 13,
+      "avg": 37,
+      "max": 136,
+      "hours": {
+       "1": {
+        "n": 4,
+        "score": 1.01,
+        "median": 38
+       },
+       "6": {
+        "n": 2,
+        "score": 1.29,
+        "median": 48
+       },
+       "9": {
+        "n": 2,
+        "score": 0.28,
+        "median": 10
+       },
+       "10": {
+        "n": 2,
+        "score": 0.08,
+        "median": 3
+       },
+       "12": {
+        "n": 1,
+        "score": 0.91,
+        "median": 34
+       },
+       "18": {
+        "n": 2,
+        "score": 1.45,
+        "median": 54
+       }
+      },
+      "best_hour": 18,
+      "best_n": 2,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 13,
+       "last": 30,
+       "recent": [
+        2,
+        2,
+        30
+       ],
+       "base": 13,
+       "approx": 12,
+       "multiple": 2.31,
+       "like_rate": 0.85,
+       "burst": 0.38,
+       "label": "막힘"
+      }
+     },
      "appfinds_my": {
       "flag": "MY",
       "posts": 13,
@@ -681,8 +739,8 @@
       "hours": {
        "1": {
         "n": 2,
-        "score": 1.55,
-        "median": 57
+        "score": 1.56,
+        "median": 58
        },
        "8": {
         "n": 4,
@@ -701,7 +759,7 @@
        },
        "17": {
         "n": 2,
-        "score": 2.28,
+        "score": 2.27,
         "median": 84
        },
        "19": {
@@ -729,64 +787,6 @@
        "like_rate": 1.3,
        "burst": 0.15,
        "label": "휴식"
-      }
-     },
-     "appfindsuk8": {
-      "flag": "GB",
-      "posts": 13,
-      "avg": 36,
-      "max": 135,
-      "hours": {
-       "1": {
-        "n": 4,
-        "score": 1.02,
-        "median": 37
-       },
-       "6": {
-        "n": 2,
-        "score": 1.3,
-        "median": 47
-       },
-       "9": {
-        "n": 2,
-        "score": 0.26,
-        "median": 9
-       },
-       "10": {
-        "n": 2,
-        "score": 0.05,
-        "median": 2
-       },
-       "12": {
-        "n": 1,
-        "score": 0.93,
-        "median": 34
-       },
-       "18": {
-        "n": 2,
-        "score": 1.46,
-        "median": 53
-       }
-      },
-      "best_hour": 18,
-      "best_n": 2,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 13,
-       "last": 30,
-       "recent": [
-        2,
-        2,
-        30
-       ],
-       "base": 13,
-       "approx": 12,
-       "multiple": 2.31,
-       "like_rate": 0.85,
-       "burst": 0.38,
-       "label": "막힘"
       }
      },
      "appfinds_anz": {
@@ -905,6 +905,37 @@
        "label": "막힘"
       }
      },
+     "trace.planner.jp": {
+      "flag": "JP",
+      "posts": 1,
+      "avg": 13,
+      "max": 13,
+      "hours": {
+       "20": {
+        "n": 1,
+        "score": 1.0,
+        "median": 13
+       }
+      },
+      "best_hour": 20,
+      "best_n": 1,
+      "state": "official",
+      "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
+      "until": null,
+      "health": {
+       "n": 1,
+       "last": 7,
+       "recent": [
+        7
+       ],
+       "base": 7,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
      "appfinds_id": {
       "flag": "ID",
       "posts": 13,
@@ -961,37 +992,6 @@
        "like_rate": 2.65,
        "burst": 0.08,
        "label": "휴식"
-      }
-     },
-     "trace.planner.jp": {
-      "flag": "JP",
-      "posts": 1,
-      "avg": 12,
-      "max": 12,
-      "hours": {
-       "20": {
-        "n": 1,
-        "score": 1.0,
-        "median": 12
-       }
-      },
-      "best_hour": 20,
-      "best_n": 1,
-      "state": "official",
-      "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 7,
-       "recent": [
-        7
-       ],
-       "base": 7,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
       }
      },
      "03ines.mar_": {
@@ -2387,7 +2387,7 @@
    "text": "iPhoneを2台並べると、ロック画面が1枚の絵になる。\nふたりの記念日カウントダウンも、予定も一緒に。\n一緒に使いたい人、いますか？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.jp/post/De6jaVeEQRY",
-   "views": 12,
+   "views": 13,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2629,7 +2629,7 @@
    "text": "Two plans, one message.\n\n“Monday 26 October 2026: Team check-in 10:00–11:00. Pick up parcel 14:00–14:15. Remind me 15 minutes before both.”\n\nTrace prepares two event cards. Check the dates, times and reminders before saving.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Deq8LaQCdU-",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2761,7 +2761,7 @@
    "text": "Your 10am check-in. Your 2pm parcel pick-up.\nYour to-dos beside them.\nThis is Trace on your Lock Screen.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Deq7xSVibsT",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2981,7 +2981,7 @@
    "text": "Here’s a planner for your everyday chaos",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/DeqAYhKiW9L",
-   "views": 135,
+   "views": 136,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3025,7 +3025,7 @@
    "text": "hey iPhone users\nyour plans and to-dos\nright where you already look",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsna9/post/DeqAIKxgeXb",
-   "views": 86,
+   "views": 87,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3245,7 +3245,7 @@
    "text": "calendar app.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsuk8/post/DeiSYWxkgsj",
-   "views": 7,
+   "views": 8,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3267,7 +3267,7 @@
    "text": "call me nerdy, but a calendar widget like this makes me happy.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsuk8/post/DeiSVU6kv1-",
-   "views": 62,
+   "views": 63,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3509,7 +3509,7 @@
    "text": "Life admin. My least favourite hobby.\nOne small job in Trace, then the kettle’s going on. Which job have you been putting off?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Degj5KvEkq6",
-   "views": 8,
+   "views": 9,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3531,7 +3531,7 @@
    "text": "Plans tonight? Fully booked. With the sofa.\nWhat’s the one programme you actually keep an evening free for?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Degj1D7kvMN",
-   "views": 11,
+   "views": 12,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3773,7 +3773,7 @@
    "text": "That thing you need to ring about on Monday? Give it a date, then keep it in view on your iPhone Lock Screen. Trace setup below.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsuk8/post/DegKxmBCYsJ",
-   "views": 86,
+   "views": 87,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -3795,7 +3795,7 @@
    "text": "Another bookshop event saved for later? Pop the ones you’re actually going to into your diary. Here’s the Trace draft before adding it.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfindsuk8/post/DegKuJRCQF5",
-   "views": 9,
+   "views": 10,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -3883,7 +3883,7 @@
    "text": "Jadual kelas dah ada dalam screenshot, tapi belum masuk calendar? 😭\n\nTrace boleh tukarkan gambar jadual kepada draft event. Check tarikh dan masa dulu, set reminder, baru tambah.\n\nTak perlu key in setiap kelas satu-satu.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/Dee7gIKCQi0",
-   "views": 49,
+   "views": 50,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -3949,7 +3949,7 @@
    "text": "Anyone else set up a planner, then forget to open it?\n\nTrace lets you put your calendar on your iPhone Lock Screen, with the background you choose.\n\nHandy for the things you want to see before the day gets away from you.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Dee7U7JCWsb",
-   "views": 84,
+   "views": 85,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -3971,7 +3971,7 @@
    "text": "School drop-off at 8.30. Pick-up at 3.15. Already a lot to keep in your head.\n\nWith Trace, you can type both in one go and check the two event cards before adding them.\n\nA small bit of admin you can get out of the way.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfindsuk8/post/Dee7QrdiVet",
-   "views": 23,
+   "views": 24,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
