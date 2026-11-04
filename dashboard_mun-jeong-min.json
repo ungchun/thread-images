@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T12:26:19.587073+00:00",
+ "generated": "2026-11-04T19:59:59.704413+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -525,7 +525,7 @@
      },
      "20": {
       "n": 9,
-      "score": 0.51,
+      "score": 0.55,
       "median": 12
      },
      "21": {
@@ -855,7 +855,7 @@
       "hours": {
        "8": {
         "n": 4,
-        "score": 1.29,
+        "score": 1.28,
         "median": 28
        },
        "13": {
@@ -875,13 +875,13 @@
        },
        "19": {
         "n": 1,
-        "score": 3.63,
+        "score": 3.62,
         "median": 79
        },
        "20": {
         "n": 2,
-        "score": 0.34,
-        "median": 7
+        "score": 0.37,
+        "median": 8
        }
       },
       "best_hour": 19,
@@ -2349,7 +2349,20 @@
    "until": null
   }
  },
- "proposals": [],
+ "proposals": [
+  {
+   "account": "appfinds_id",
+   "from": "rest",
+   "to": "rest",
+   "reason": "복귀 테스트 예약 필요 — 2026-11-05 휴식 끝, 올라간 글도 예약도 없음"
+  },
+  {
+   "account": "appfinds_my",
+   "from": "rest",
+   "to": "rest",
+   "reason": "복귀 테스트 예약 필요 — 2026-11-05 휴식 끝, 올라간 글도 예약도 없음"
+  }
+ ],
  "violations": [],
  "hits": [],
  "posts": [
@@ -4059,7 +4072,7 @@
    "text": "Para sa mga nagre-review for boards: lagyan din ng oras yung ‘magre-review ako’ 😭\n\nSa Trace, type your review sessions in one message, then check the dates and reminders before adding them.\n\nAccounting review, then practice questions. Mas madaling makita kung kailan ka mag-aaral.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_ph/post/DeeZV2yCVKF",
-   "views": 11,
+   "views": 12,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
