@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T00:43:58.657723+00:00",
+ "generated": "2026-11-04T12:20:58.745792+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -1175,7 +1175,7 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 15,
-     "views": 2677108,
+     "views": 2677228,
      "likes": 1350,
      "median": 96,
      "score": 1.25,
@@ -1311,9 +1311,9 @@
       "median": 209
      },
      "3": {
-      "n": 2,
-      "score": 2.28,
-      "median": 1929
+      "n": 1,
+      "score": 1.1,
+      "median": 596
      },
      "4": {
       "n": 3,
@@ -1333,12 +1333,12 @@
      "7": {
       "n": 1,
       "score": 5.45,
-      "median": 1484635
+      "median": 1484721
      },
      "8": {
-      "n": 2,
-      "score": 1.33,
-      "median": 822
+      "n": 1,
+      "score": 1.07,
+      "median": 209
      },
      "9": {
       "n": 2,
@@ -1352,33 +1352,33 @@
      },
      "11": {
       "n": 6,
-      "score": 1.06,
+      "score": 1.31,
       "median": 419
      },
      "12": {
       "n": 5,
-      "score": 0.22,
+      "score": 0.35,
       "median": 189
      },
      "13": {
       "n": 2,
       "score": 0.42,
-      "median": 3098
+      "median": 3101
      },
      "14": {
       "n": 2,
-      "score": 0.28,
+      "score": 0.32,
       "median": 217
      },
      "15": {
       "n": 2,
       "score": 2.45,
-      "median": 579154
+      "median": 579167
      },
      "16": {
       "n": 5,
       "score": 0.05,
-      "median": 794
+      "median": 795
      },
      "17": {
       "n": 12,
@@ -1392,7 +1392,7 @@
      },
      "19": {
       "n": 6,
-      "score": 0.16,
+      "score": 0.21,
       "median": 228
      },
      "20": {
@@ -1408,13 +1408,13 @@
     },
     "wday": {
      "월": {
-      "n": 27,
-      "score": 0.67,
-      "median": 80
+      "n": 25,
+      "score": 0.66,
+      "median": 74
      },
      "화": {
       "n": 13,
-      "score": 1.0,
+      "score": 1.08,
       "median": 96
      },
      "수": {
@@ -1429,33 +1429,33 @@
      },
      "금": {
       "n": 12,
-      "score": 0.56,
+      "score": 0.58,
       "median": 260
      },
      "일": {
       "n": 6,
-      "score": 1.48,
-      "median": 1745
+      "score": 1.67,
+      "median": 1747
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 79,
-      "score": 0.67,
-      "median": 151
+      "n": 77,
+      "score": 0.66,
+      "median": 148
      }
     },
     "accounts": {
      "pim.pm_02": {
       "flag": "TH",
       "posts": 10,
-      "avg": 272402,
-      "max": 1484635,
+      "avg": 272416,
+      "max": 1484721,
       "hours": {
        "7": {
         "n": 1,
         "score": 5.45,
-        "median": 1484635
+        "median": 1484721
        },
        "11": {
         "n": 1,
@@ -1465,27 +1465,27 @@
        "13": {
         "n": 1,
         "score": 0.02,
-        "median": 6038
+        "median": 6044
        },
        "15": {
         "n": 1,
         "score": 4.25,
-        "median": 1158302
+        "median": 1158327
        },
        "16": {
         "n": 3,
         "score": 0.01,
-        "median": 3197
+        "median": 3200
        },
        "18": {
         "n": 1,
         "score": 0.02,
-        "median": 5056
+        "median": 5061
        },
        "19": {
         "n": 2,
         "score": 0.06,
-        "median": 16750
+        "median": 16754
        }
       },
       "best_hour": 7,
@@ -1511,33 +1511,28 @@
      },
      "nur.aina_04": {
       "flag": "MY",
-      "posts": 6,
-      "avg": 909,
-      "max": 2896,
+      "posts": 5,
+      "avg": 805,
+      "max": 2899,
       "hours": {
-       "8": {
-        "n": 1,
-        "score": 1.58,
-        "median": 1435
-       },
        "14": {
         "n": 1,
-        "score": 0.48,
+        "score": 0.54,
         "median": 433
        },
        "17": {
         "n": 2,
-        "score": 0.3,
+        "score": 0.34,
         "median": 273
        },
        "18": {
         "n": 1,
-        "score": 3.18,
-        "median": 2896
+        "score": 3.6,
+        "median": 2899
        },
        "19": {
         "n": 1,
-        "score": 0.16,
+        "score": 0.18,
         "median": 147
        }
       },
@@ -1547,7 +1542,7 @@
       "note": "",
       "until": null,
       "health": {
-       "n": 6,
+       "n": 5,
        "last": 146,
        "recent": [
         419,
@@ -1555,76 +1550,18 @@
         146
        ],
        "base": 419,
-       "approx": 5,
+       "approx": 4,
        "multiple": 0.35,
        "like_rate": 1.01,
        "burst": 0.0,
        "label": "저조"
       }
      },
-     "elif.dm_05": {
-      "flag": "TR",
-      "posts": 9,
-      "avg": 846,
-      "max": 3263,
-      "hours": {
-       "3": {
-        "n": 2,
-        "score": 2.28,
-        "median": 1929
-       },
-       "6": {
-        "n": 1,
-        "score": 0.0,
-        "median": 3
-       },
-       "11": {
-        "n": 1,
-        "score": 0.91,
-        "median": 768
-       },
-       "12": {
-        "n": 3,
-        "score": 0.22,
-        "median": 189
-       },
-       "18": {
-        "n": 1,
-        "score": 2.33,
-        "median": 1972
-       },
-       "19": {
-        "n": 1,
-        "score": 0.15,
-        "median": 129
-       }
-      },
-      "best_hour": 18,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 9,
-       "last": 122,
-       "recent": [
-        592,
-        72,
-        122
-       ],
-       "base": 154,
-       "approx": 8,
-       "multiple": 0.79,
-       "like_rate": 0.52,
-       "burst": 0.33,
-       "label": "저조"
-      }
-     },
      "haru._81a": {
       "flag": "JP",
       "posts": 9,
-      "avg": 784,
-      "max": 3363,
+      "avg": 785,
+      "max": 3369,
       "hours": {
        "9": {
         "n": 1,
@@ -1639,7 +1576,7 @@
        "17": {
         "n": 2,
         "score": 3.4,
-        "median": 2670
+        "median": 2673
        },
        "18": {
         "n": 2,
@@ -1648,7 +1585,7 @@
        },
        "19": {
         "n": 1,
-        "score": 0.4,
+        "score": 0.39,
         "median": 310
        },
        "20": {
@@ -1680,6 +1617,64 @@
        "multiple": 0.08,
        "like_rate": 0.55,
        "burst": 0.12,
+       "label": "저조"
+      }
+     },
+     "elif.dm_05": {
+      "flag": "TR",
+      "posts": 8,
+      "avg": 544,
+      "max": 1972,
+      "hours": {
+       "3": {
+        "n": 1,
+        "score": 1.1,
+        "median": 596
+       },
+       "6": {
+        "n": 1,
+        "score": 0.01,
+        "median": 3
+       },
+       "11": {
+        "n": 1,
+        "score": 1.41,
+        "median": 768
+       },
+       "12": {
+        "n": 3,
+        "score": 0.35,
+        "median": 189
+       },
+       "18": {
+        "n": 1,
+        "score": 3.62,
+        "median": 1972
+       },
+       "19": {
+        "n": 1,
+        "score": 0.24,
+        "median": 129
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 8,
+       "last": 122,
+       "recent": [
+        592,
+        72,
+        122
+       ],
+       "base": 154,
+       "approx": 7,
+       "multiple": 0.79,
+       "like_rate": 0.52,
+       "burst": 0.33,
        "label": "저조"
       }
      },
@@ -3285,8 +3280,8 @@
        ],
        "pim.pm_02": [
         3.22,
-        146.88,
-        114.59
+        146.83,
+        114.56
        ]
       },
       "기존API": {
@@ -3294,7 +3289,7 @@
         1.0
        ],
        "elif.dm_05": [
-        1.29
+        1.96
        ],
        "ivy_.k09": [
         1.24
@@ -3395,7 +3390,7 @@
    "until": "2026-11-05"
   },
   "elif.dm_05": {
-   "n": 9,
+   "n": 8,
    "last": 122,
    "recent": [
     592,
@@ -3403,7 +3398,7 @@
     122
    ],
    "base": 154,
-   "approx": 8,
+   "approx": 7,
    "multiple": 0.79,
    "like_rate": 0.52,
    "burst": 0.33,
@@ -3548,7 +3543,7 @@
    "until": null
   },
   "nur.aina_04": {
-   "n": 6,
+   "n": 5,
    "last": 146,
    "recent": [
     419,
@@ -3556,7 +3551,7 @@
     146
    ],
    "base": 419,
-   "approx": 5,
+   "approx": 4,
    "multiple": 0.35,
    "like_rate": 1.01,
    "burst": 0.0,
@@ -3624,7 +3619,7 @@
    "country": "TH",
    "project": "trace",
    "utc": "2026-10-13T08:42:14+00:00",
-   "views": 1158302,
+   "views": 1158327,
    "likes": 786,
    "reposts": 429,
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
@@ -3635,7 +3630,7 @@
    "country": "TH",
    "project": "trace",
    "utc": "2026-10-18T00:35:57+00:00",
-   "views": 1484635,
+   "views": 1484721,
    "likes": 544,
    "reposts": 262,
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
@@ -3732,13 +3727,13 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dey_RiJlN-O",
-   "views": 32550,
+   "views": 32559,
    "likes": 4,
    "replies": 3,
    "reposts": 3,
    "quotes": 0,
    "shares": 2,
-   "clicks": 0,
+   "clicks": 1,
    "round": "t15a",
    "variant": "새API"
   },
@@ -4062,7 +4057,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Deq6mNVD6-Z",
-   "views": 14178,
+   "views": 14179,
    "likes": 36,
    "replies": 1,
    "reposts": 9,
@@ -4150,13 +4145,13 @@
    "text": "Mac'teki takvim uygulamam artık bu! iPhone, iPad, Apple Watch hepsi ücretsiz senkronize oluyor 👏",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@elif.dm_05/post/DenbnwAEnAs",
-   "views": 595,
+   "views": 596,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 2,
    "round": null,
    "variant": null
   },
@@ -4238,7 +4233,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DenaNrDjz6p",
-   "views": 1484635,
+   "views": 1484721,
    "likes": 544,
    "replies": 6,
    "reposts": 262,
@@ -4376,7 +4371,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 3,
+   "clicks": 4,
    "round": null,
    "variant": null
   },
@@ -4480,7 +4475,7 @@
    "text": "พอตั้งให้ขึ้นทั้งใน iPhone และ iPad ตอนนี้ไม่ลืมงานสักอย่างเลย",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DejL6m1D6-9",
-   "views": 3197,
+   "views": 3200,
    "likes": 30,
    "replies": 1,
    "reposts": 11,
@@ -4530,7 +4525,7 @@
    "reposts": 0,
    "quotes": 2,
    "shares": 6,
-   "clicks": 40,
+   "clicks": 41,
    "round": null,
    "variant": null
   },
@@ -4854,7 +4849,7 @@
    "text": "แอปปฏิทินบน Mac จบที่ตัวนี้! iPhone, iPad, Apple Watch ซิงก์ฟรีได้หมดเลยนี่นา! 👏",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeduQHRjyLi",
-   "views": 6038,
+   "views": 6044,
    "likes": 30,
    "replies": 3,
    "reposts": 15,
@@ -5058,7 +5053,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 2,
+   "clicks": 4,
    "round": "t15a",
    "variant": "기존API"
   },
@@ -5118,7 +5113,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DebZ47UD5dc",
-   "views": 1158302,
+   "views": 1158327,
    "likes": 786,
    "replies": 9,
    "reposts": 429,
@@ -5322,7 +5317,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 2,
-   "clicks": 2,
+   "clicks": 3,
    "round": null,
    "variant": null
   },
@@ -5344,7 +5339,7 @@
    "reposts": 1,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -5382,7 +5377,7 @@
    "text": "อ้าว… ขึ้นตารางทั้งหมดบนหน้าจอล็อกได้ แล้วทำไมไม่มีใครบอกกันเลย??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeY5GMQD_Xb",
-   "views": 794,
+   "views": 795,
    "likes": 4,
    "replies": 1,
    "reposts": 2,
@@ -5470,7 +5465,7 @@
    "text": "iPhone何年も使ってるのに、ロック画面に予定まるごと出せるの今日はじめて知った？？？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/DeYzAXsE5jw",
-   "views": 3363,
+   "views": 3369,
    "likes": 9,
    "replies": 1,
    "reposts": 0,
@@ -5492,7 +5487,7 @@
    "text": "เดี๋ยวนะ… ตารางทั้งสัปดาห์ใส่ไว้บนหน้าจอล็อกได้ มีแค่เราที่ไม่รู้เหรอ??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DeWgWOWFlxP",
-   "views": 5056,
+   "views": 5061,
    "likes": 27,
    "replies": 1,
    "reposts": 20,
@@ -5514,13 +5509,13 @@
    "text": "kejap… boleh letak semua jadual minggu ni kat lock screen, aku je ke yang tak tahu??!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nur.aina_04/post/DeWZfR0mwcY",
-   "views": 2896,
+   "views": 2899,
    "likes": 39,
    "replies": 1,
    "reposts": 8,
    "quotes": 0,
    "shares": 11,
-   "clicks": 12,
+   "clicks": 17,
    "round": null,
    "variant": null
   },
@@ -5542,7 +5537,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 6,
+   "clicks": 11,
    "round": null,
    "variant": null
   },
@@ -5567,63 +5562,19 @@
    "clicks": 78,
    "round": null,
    "variant": null
-  },
-  {
-   "id": "17949082395054494",
-   "account": "elif.dm_05",
-   "project": "trace",
-   "country": "TR",
-   "flag": "🇹🇷",
-   "utc": "2026-10-05T00:44:55+00:00",
-   "date": "2026-10-05",
-   "local": "10/05 03:44",
-   "text": "iPhone kullanan herkes\nbu uygulamayı mutlaka indirin!\nyapacaklarım kilit ekranında duruyor, artık unutmak yok 💕",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@elif.dm_05/post/DeF853lkmQ6",
-   "views": 3263,
-   "likes": 11,
-   "replies": 1,
-   "reposts": 1,
-   "quotes": 0,
-   "shares": 4,
-   "clicks": 100,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18243497977312279",
-   "account": "nur.aina_04",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-05T00:43:25+00:00",
-   "date": "2026-10-05",
-   "local": "10/05 08:43",
-   "text": "siapa guna iPhone tu\nwajib install app ni tau!\nto-do keluar terus kat skrin kunci, dah tak lupa apa-apa 💕",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@nur.aina_04/post/DeF8u_dE1jb",
-   "views": 1435,
-   "likes": 12,
-   "replies": 1,
-   "reposts": 12,
-   "quotes": 0,
-   "shares": 9,
-   "clicks": 33,
-   "round": null,
-   "variant": null
   }
  ],
  "ig_posts": [],
  "pending": [],
  "skipped": [],
  "errors": [
-  "ashgrey._02 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 31-Oct-26 23:13:57 PDT. The current time is Tuesday, 03-Nov-26 16:41:23 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A4NRd7AinFcECBk9Z5mR-89\"}}",
-  "beatriz03._a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:19:27 PST. The current time is Tuesday, 03-Nov-26 16:41:23 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Aze6zzXnjvjSMtskagdwe_Z\"}}",
+  "ashgrey._02 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 31-Oct-26 23:13:57 PDT. The current time is Wednesday, 04-Nov-26 04:17:17 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AzNs-CtDFsb_wToFcL08L_E\"}}",
+  "beatriz03._a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:19:27 PST. The current time is Wednesday, 04-Nov-26 04:17:18 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Aqim0KWDRTvJ0A0rdfRV0T3\"}}",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
-  "dot2day_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:50:00 PDT. The current time is Tuesday, 03-Nov-26 16:41:31 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AWHHASHM0tvuj3dT6KBrK2q\"}}",
-  "elle__jm 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:15:45 PST. The current time is Tuesday, 03-Nov-26 16:41:49 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AyBmj9TCkptdgqf7RKItcpX\"}}",
-  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:12:58 PST. The current time is Tuesday, 03-Nov-26 16:43:05 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ARWU1Cy-9sw0Bl23gw2Dywh\"}}",
-  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:53:02 PDT. The current time is Tuesday, 03-Nov-26 16:43:23 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AnHeW1M6HBd34huSQUGbWH-\"}}",
-  "rara.2k_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:14:29 PST. The current time is Tuesday, 03-Nov-26 16:43:42 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AYix3GGj-Q8coau421364Sh\"}}"
+  "dot2day_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:50:00 PDT. The current time is Wednesday, 04-Nov-26 04:17:28 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ACCWnK0WpmeJBYTE6K7FMZF\"}}",
+  "elle__jm 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:15:45 PST. The current time is Wednesday, 04-Nov-26 04:17:55 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AKIpA_QK4zXiJJ2uAQ5fH1b\"}}",
+  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:12:58 PST. The current time is Wednesday, 04-Nov-26 04:19:45 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AylRN2n4VYZjiYhb7laOOpF\"}}",
+  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:53:02 PDT. The current time is Wednesday, 04-Nov-26 04:20:05 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AFMq5b4L8n7RwfHMWpoxQmk\"}}",
+  "rara.2k_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:14:29 PST. The current time is Wednesday, 04-Nov-26 04:20:35 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AErwQi2x2t8w_jHtFLBVp7b\"}}"
  ]
 }
