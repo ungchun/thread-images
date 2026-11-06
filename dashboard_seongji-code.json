@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T22:12:48.614501+00:00",
+ "generated": "2026-11-06T07:02:41.710072+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -446,7 +446,7 @@
      "8": {
       "n": 5,
       "score": 0.0,
-      "median": 121
+      "median": 122
      },
      "9": {
       "n": 6,
@@ -481,12 +481,12 @@
      "15": {
       "n": 10,
       "score": 1.25,
-      "median": 1138
+      "median": 1140
      },
      "16": {
       "n": 2,
       "score": 0.26,
-      "median": 1237
+      "median": 1238
      },
      "17": {
       "n": 7,
@@ -511,7 +511,7 @@
      "21": {
       "n": 12,
       "score": 0.45,
-      "median": 60
+      "median": 61
      },
      "22": {
       "n": 4,
@@ -520,8 +520,8 @@
      },
      "23": {
       "n": 1,
-      "score": 1.44,
-      "median": 136
+      "score": 1.45,
+      "median": 137
      }
     },
     "wday": {
@@ -533,16 +533,16 @@
      "화": {
       "n": 23,
       "score": 0.44,
-      "median": 121
+      "median": 122
      },
      "수": {
       "n": 28,
       "score": 0.79,
-      "median": 331
+      "median": 332
      },
      "목": {
       "n": 20,
-      "score": 0.53,
+      "score": 0.52,
       "median": 205
      },
      "금": {
@@ -577,28 +577,28 @@
      "aoi_1124_gram": {
       "flag": "JP",
       "posts": 14,
-      "avg": 53644,
-      "max": 468137,
+      "avg": 53646,
+      "max": 468140,
       "hours": {
        "8": {
         "n": 5,
         "score": 0.0,
-        "median": 121
+        "median": 122
        },
        "15": {
         "n": 3,
         "score": 0.02,
-        "median": 1234
+        "median": 1235
        },
        "16": {
         "n": 1,
         "score": 0.04,
-        "median": 2247
+        "median": 2248
        },
        "20": {
         "n": 3,
         "score": 0.0,
-        "median": 239
+        "median": 242
        },
        "22": {
         "n": 2,
@@ -630,13 +630,13 @@
      "fah.pk_03": {
       "flag": "TH",
       "posts": 7,
-      "avg": 2150,
-      "max": 8115,
+      "avg": 2151,
+      "max": 8119,
       "hours": {
        "15": {
         "n": 2,
         "score": 1.39,
-        "median": 2989
+        "median": 2990
        },
        "19": {
         "n": 4,
@@ -673,8 +673,8 @@
      "daily.life_gram": {
       "flag": "TW",
       "posts": 20,
-      "avg": 1621,
-      "max": 13262,
+      "avg": 1622,
+      "max": 13291,
       "hours": {
        "12": {
         "n": 4,
@@ -708,8 +708,8 @@
        },
        "21": {
         "n": 2,
-        "score": 4.13,
-        "median": 6701
+        "score": 4.14,
+        "median": 6716
        },
        "22": {
         "n": 1,
@@ -938,8 +938,8 @@
        },
        "19": {
         "n": 1,
-        "score": 1.26,
-        "median": 320
+        "score": 1.27,
+        "median": 323
        },
        "20": {
         "n": 3,
@@ -976,12 +976,12 @@
      "bea.cruz_03": {
       "flag": "PH",
       "posts": 11,
-      "avg": 195,
-      "max": 1043,
+      "avg": 196,
+      "max": 1046,
       "hours": {
        "15": {
         "n": 3,
-        "score": 1.48,
+        "score": 1.47,
         "median": 289
        },
        "19": {
@@ -1034,18 +1034,18 @@
        },
        "20": {
         "n": 1,
-        "score": 4.6,
+        "score": 4.59,
         "median": 434
        },
        "21": {
         "n": 5,
-        "score": 0.3,
-        "median": 28
+        "score": 0.31,
+        "median": 29
        },
        "23": {
         "n": 1,
-        "score": 1.44,
-        "median": 136
+        "score": 1.45,
+        "median": 137
        }
       },
       "best_hour": 20,
@@ -1082,17 +1082,17 @@
        },
        "17": {
         "n": 1,
-        "score": 2.18,
-        "median": 195
+        "score": 2.2,
+        "median": 197
        },
        "18": {
         "n": 1,
-        "score": 0.81,
+        "score": 0.8,
         "median": 72
        },
        "20": {
         "n": 1,
-        "score": 3.47,
+        "score": 3.46,
         "median": 310
        },
        "21": {
@@ -1169,21 +1169,21 @@
       "flag": "ID",
       "posts": 9,
       "avg": 23,
-      "max": 88,
+      "max": 90,
       "hours": {
        "14": {
         "n": 4,
-        "score": 0.3,
+        "score": 0.29,
         "median": 7
        },
        "18": {
         "n": 3,
-        "score": 1.02,
+        "score": 1.01,
         "median": 24
        },
        "19": {
         "n": 1,
-        "score": 2.25,
+        "score": 2.23,
         "median": 53
        },
        "20": {
@@ -2836,7 +2836,7 @@
    "reposts": 1,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2858,7 +2858,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 9,
+   "clicks": 10,
    "round": null,
    "variant": null
   },
@@ -2962,7 +2962,7 @@
    "text": "สาย iPhone\nที่โหลดแอปจดงานไว้เต็มเครื่อง ลองอันนี้ดู\nทุกอย่างที่ต้องใช้จัดการตารางมีครบในแอปเดียว\nแอปที่เคยใช้หลายตัว เหลือแค่ตัวนี้ตัวเดียวพอ🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@fah.pk_03/post/Dev7hnxEVBK",
-   "views": 4085,
+   "views": 4087,
    "likes": 38,
    "replies": 3,
    "reposts": 15,
@@ -2984,7 +2984,7 @@
    "text": "Mga naka-iPhone\nna nag-install ng kung anu-anong app para sa to-do, try niyo 'to.\nNandito na lahat ng kailangan para sa schedule,\nyung ilang apps na gamit niyo, isa na lang 'to🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@bea.cruz_03/post/Dev4F4RETDr",
-   "views": 1043,
+   "views": 1046,
    "likes": 7,
    "replies": 1,
    "reposts": 2,
@@ -3012,7 +3012,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 12,
+   "clicks": 13,
    "round": null,
    "variant": null
   },
@@ -3094,7 +3094,7 @@
    "text": "iPhone民、親友とこれやってみて。予定を共有して2人ともロック画面に出すと、約束忘れることなくなる😭",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@mio._k27/post/DevEkquEk5k",
-   "views": 125,
+   "views": 126,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3116,7 +3116,7 @@
    "text": "ちなみに親友と予定共有して、2人ともロック画面に出せるよ🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DevBJLpEglp",
-   "views": 173,
+   "views": 175,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3292,7 +3292,7 @@
    "text": "아이폰 쓰는 베프 있으면 이거 해봐. 둘이 일정 공유해서 잠금화면에 띄우면 약속 까먹을 일 없음 😭",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@seoyn.k_97/post/DetyLJGEuPY",
-   "views": 65,
+   "views": 66,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3314,7 +3314,7 @@
    "text": "Pengguna iPhone\nyang install banyak aplikasi buat atur to-do, coba yang ini deh.\nSemua yang dibutuhin buat atur jadwal ada di sini,\naplikasi yang tadinya banyak cukup diganti satu ini aja🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nadia.ps_04/post/DetuvqnEp1q",
-   "views": 88,
+   "views": 90,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3336,7 +3336,7 @@
    "text": "iPhone使ってて\nTODO管理でアプリいくつも入れてる人はこれ試してみて。\nスケジュール管理に必要な機能が全部あるから、\nバラバラだったアプリがこれ1つにまとまる🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Detsdo9kvZA",
-   "views": 112,
+   "views": 114,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3402,7 +3402,7 @@
    "text": "Geng iPhone\nyang install macam-macam app untuk urus to-do, try yang ni.\nSemua benda untuk urus jadual ada dalam satu app,\nbanyak app yang korang pakai tu boleh ganti dengan satu je🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aisyah.zr_05/post/Detdm0AkjSg",
-   "views": 195,
+   "views": 197,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -3600,7 +3600,7 @@
    "text": "ちなみに親友と予定共有して、2人ともロック画面に出せるよ🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DescVDhAfI-",
-   "views": 121,
+   "views": 122,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3798,7 +3798,7 @@
    "text": "아이폰 쓰는 베프 있으면 이거 해봐. 둘이 일정 공유해서 잠금화면에 띄우면 약속 까먹을 일 없음 😭",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@seoyn.k_97/post/DerNY1Uifex",
-   "views": 28,
+   "views": 29,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3842,7 +3842,7 @@
    "text": "iPhone使ってて\nTODO管理でアプリいくつも入れてる人はこれ試してみて。\nスケジュール管理に必要な機能が全部あるから、\nバラバラだったアプリがこれ1つにまとまる🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DerHrRyCWkY",
-   "views": 239,
+   "views": 242,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -4040,7 +4040,7 @@
    "text": "ちなみに親友と予定共有して、2人ともロック画面に出せるよ🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dep3i1PE9EI",
-   "views": 93,
+   "views": 94,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4282,7 +4282,7 @@
    "text": "ちなみに親友と予定共有して、2人ともロック画面に出せるよ🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DenSww3k6FA",
-   "views": 108,
+   "views": 109,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4546,7 +4546,7 @@
    "text": "아이폰 쓰는 베프 있으면 이거 해봐. 둘이 일정 공유해서 잠금화면에 띄우면 약속 까먹을 일 없음 😭",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@seoyn.k_97/post/DejvK0WEgsn",
-   "views": 136,
+   "views": 137,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4766,7 +4766,7 @@
    "text": "ちなみに親友と予定共有して、2人ともロック画面に出せるよ🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DeiJVenEjIm",
-   "views": 235,
+   "views": 236,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -5162,7 +5162,7 @@
    "text": "คู่รักสาย iPhone ลองอันนี้เลย แชร์ปฏิทินกับแฟนแล้วเอาขึ้นหน้าจอล็อกทั้งคู่ ไม่มีใครลืมนัดอีกแน่นอน 😭",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@fah.pk_03/post/DeeZZhZiWx6",
-   "views": 8115,
+   "views": 8119,
    "likes": 58,
    "replies": 3,
    "reposts": 34,
@@ -5184,7 +5184,7 @@
    "text": "Mấy cặp đôi xài iPhone thử cái này đi. Share lịch chung với người yêu rồi để lên màn hình khóa cả hai, đảm bảo không ai quên hẹn nữa 😭",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@linh.ngx_02/post/DeeY1-kCb__",
-   "views": 320,
+   "views": 323,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
@@ -5322,7 +5322,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 26,
+   "clicks": 27,
    "round": null,
    "variant": null
   },
@@ -5338,13 +5338,13 @@
    "text": "我的吉伊卡哇桌布早上、中午、晚上都會變！▓\n有人想知道怎麼設定嗎?!▓",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@daily.life_gram/post/DeZW7UTiQK-",
-   "views": 13262,
+   "views": 13291,
    "likes": 88,
    "replies": 12,
    "reposts": 2,
    "quotes": 0,
    "shares": 27,
-   "clicks": 274,
+   "clicks": 277,
    "round": null,
    "variant": null
   },
@@ -5360,7 +5360,7 @@
    "text": "ねえ、iPhoneユーザー\nロック画面これにしたら\nやることマジで忘れなくなった🥹❤️\nしかも可愛くて何回も見ちゃう￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DeWEghuH4D1",
-   "views": 1234,
+   "views": 1235,
    "likes": 3,
    "replies": 0,
    "reposts": 0,
@@ -5388,7 +5388,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 1,
-   "clicks": 90,
+   "clicks": 91,
    "round": null,
    "variant": null
   },
@@ -5426,7 +5426,7 @@
    "text": "iPhone使ってる人、これ試してみて！\nロック画面をこんなふうに使うようになってから、やることを本当に忘れなくなった！😍",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DeOZyILEjT_",
-   "views": 2247,
+   "views": 2248,
    "likes": 4,
    "replies": 1,
    "reposts": 1,
@@ -5476,7 +5476,7 @@
    "reposts": 3,
    "quotes": 0,
    "shares": 0,
-   "clicks": 754,
+   "clicks": 757,
    "round": null,
    "variant": null
   },
@@ -5498,7 +5498,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 4,
-   "clicks": 130,
+   "clicks": 131,
    "round": null,
    "variant": null
   },
@@ -5514,13 +5514,13 @@
    "text": "ねえ、iPhone使ってる人\nこれほんとに使ってみて！\n使い始めてから、ほんとに予定忘れなくなった￼￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DeMQkTynzbE",
-   "views": 468137,
+   "views": 468140,
    "likes": 96,
    "replies": 1,
    "reposts": 1,
    "quotes": 1,
    "shares": 0,
-   "clicks": 1270,
+   "clicks": 1274,
    "round": null,
    "variant": null
   },
