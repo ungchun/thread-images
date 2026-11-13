@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T07:00:42.797254+00:00",
+ "generated": "2026-11-13T16:39:40.642398+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -465,12 +465,12 @@
      },
      "7": {
       "n": 5,
-      "score": 0.83,
+      "score": 0.87,
       "median": 10
      },
      "8": {
       "n": 8,
-      "score": 1.0,
+      "score": 0.96,
       "median": 28
      },
      "9": {
@@ -490,27 +490,27 @@
      },
      "12": {
       "n": 3,
-      "score": 0.93,
+      "score": 0.95,
       "median": 14
      },
      "13": {
       "n": 6,
-      "score": 0.66,
+      "score": 0.63,
       "median": 24
      },
      "15": {
       "n": 2,
-      "score": 0.33,
+      "score": 0.35,
       "median": 4
      },
      "16": {
       "n": 8,
-      "score": 0.63,
+      "score": 0.64,
       "median": 8
      },
      "17": {
       "n": 4,
-      "score": 1.28,
+      "score": 1.26,
       "median": 44
      },
      "18": {
@@ -519,14 +519,14 @@
       "median": 33
      },
      "19": {
-      "n": 6,
-      "score": 1.03,
-      "median": 15
+      "n": 4,
+      "score": 0.69,
+      "median": 24
      },
      "20": {
-      "n": 9,
-      "score": 0.55,
-      "median": 12
+      "n": 7,
+      "score": 1.0,
+      "median": 21
      },
      "21": {
       "n": 1,
@@ -542,7 +542,7 @@
     "wday": {
      "월": {
       "n": 22,
-      "score": 0.91,
+      "score": 0.95,
       "median": 13
      },
      "화": {
@@ -551,13 +551,13 @@
       "median": 36
      },
      "수": {
-      "n": 8,
-      "score": 0.9,
-      "median": 20
+      "n": 4,
+      "score": 1.19,
+      "median": 65
      },
      "목": {
       "n": 30,
-      "score": 0.43,
+      "score": 0.44,
       "median": 13
      },
      "금": {
@@ -574,11 +574,11 @@
     "media": {
      "IMAGE": {
       "n": 26,
-      "score": 0.92,
+      "score": 0.94,
       "median": 28
      },
      "CAROUSEL_ALBUM": {
-      "n": 54,
+      "n": 50,
       "score": 0.68,
       "median": 13
      }
@@ -849,39 +849,34 @@
      },
      "appfinds_ph": {
       "flag": "PH",
-      "posts": 13,
-      "avg": 21,
+      "posts": 11,
+      "avg": 24,
       "max": 79,
       "hours": {
        "8": {
         "n": 4,
-        "score": 1.28,
+        "score": 1.15,
         "median": 28
        },
        "13": {
         "n": 2,
-        "score": 0.41,
+        "score": 0.37,
         "median": 9
        },
        "16": {
         "n": 2,
-        "score": 0.16,
+        "score": 0.14,
         "median": 3
        },
        "17": {
         "n": 2,
-        "score": 0.55,
+        "score": 0.49,
         "median": 12
        },
        "19": {
         "n": 1,
-        "score": 3.62,
+        "score": 3.24,
         "median": 79
-       },
-       "20": {
-        "n": 2,
-        "score": 0.37,
-        "median": 8
        }
       },
       "best_hour": 19,
@@ -890,7 +885,7 @@
       "note": "중단 국가 (10/22 재정비)",
       "until": null,
       "health": {
-       "n": 13,
+       "n": 11,
        "last": 79,
        "recent": [
         12,
@@ -898,10 +893,10 @@
         79
        ],
        "base": 12,
-       "approx": 12,
+       "approx": 10,
        "multiple": 6.58,
-       "like_rate": 1.8,
-       "burst": 0.23,
+       "like_rate": 1.13,
+       "burst": 0.27,
        "label": "막힘"
       }
      },
@@ -938,39 +933,34 @@
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 13,
-      "avg": 12,
+      "posts": 11,
+      "avg": 11,
       "max": 33,
       "hours": {
        "7": {
         "n": 4,
-        "score": 0.75,
+        "score": 0.78,
         "median": 9
        },
        "12": {
         "n": 2,
-        "score": 1.04,
+        "score": 1.08,
         "median": 12
        },
        "15": {
         "n": 2,
-        "score": 0.33,
+        "score": 0.35,
         "median": 4
        },
        "16": {
         "n": 2,
-        "score": 1.08,
+        "score": 1.13,
         "median": 13
        },
        "18": {
         "n": 1,
-        "score": 2.73,
+        "score": 2.86,
         "median": 33
-       },
-       "19": {
-        "n": 2,
-        "score": 1.24,
-        "median": 15
        }
       },
       "best_hour": 18,
@@ -979,18 +969,18 @@
       "note": "",
       "until": "2026-11-05",
       "health": {
-       "n": 13,
+       "n": 11,
        "last": 32,
        "recent": [
         12,
         13,
         32
        ],
-       "base": 12,
-       "approx": 12,
-       "multiple": 2.67,
-       "like_rate": 2.65,
-       "burst": 0.08,
+       "base": 10,
+       "approx": 10,
+       "multiple": 3.2,
+       "like_rate": 1.65,
+       "burst": 0.09,
        "label": "휴식"
       }
      },
@@ -2234,18 +2224,18 @@
    "until": null
   },
   "appfinds_id": {
-   "n": 13,
+   "n": 11,
    "last": 32,
    "recent": [
     12,
     13,
     32
    ],
-   "base": 12,
-   "approx": 12,
-   "multiple": 2.67,
-   "like_rate": 2.65,
-   "burst": 0.08,
+   "base": 10,
+   "approx": 10,
+   "multiple": 3.2,
+   "like_rate": 1.65,
+   "burst": 0.09,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
@@ -2268,7 +2258,7 @@
    "until": "2026-11-05"
   },
   "appfinds_ph": {
-   "n": 13,
+   "n": 11,
    "last": 79,
    "recent": [
     12,
@@ -2276,10 +2266,10 @@
     79
    ],
    "base": 12,
-   "approx": 12,
+   "approx": 10,
    "multiple": 6.58,
-   "like_rate": 1.8,
-   "burst": 0.23,
+   "like_rate": 1.13,
+   "burst": 0.27,
    "label": "막힘",
    "state": "paused",
    "until": null
@@ -4029,94 +4019,6 @@
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_anz/post/Dee7JCmCZd0",
    "views": 21,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17904700050354567",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-14T12:35:46+00:00",
-   "date": "2026-10-14",
-   "local": "10/14 20:35",
-   "text": "pov: lahat ng requirements, ‘urgent’ 😭\n\nTrace’s Matrix lets you sort tasks by importance and urgency.\n\nPwede mong ihiwalay yung due this week sa mga kailangan mong paghandaan. Mas malinaw kung ano ang uunahin.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/DeeZZYACZWN",
-   "views": 4,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18134414059662603",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-14T12:35:17+00:00",
-   "date": "2026-10-14",
-   "local": "10/14 20:35",
-   "text": "Para sa mga nagre-review for boards: lagyan din ng oras yung ‘magre-review ako’ 😭\n\nSa Trace, type your review sessions in one message, then check the dates and reminders before adding them.\n\nAccounting review, then practice questions. Mas madaling makita kung kailan ka mag-aaral.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/DeeZV2yCVKF",
-   "views": 12,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18109860755626557",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-14T12:34:56+00:00",
-   "date": "2026-10-14",
-   "local": "10/14 19:34",
-   "text": "Buat yang suka nanya ‘selesainya jam berapa?’ 😅\n\nDi Trace, jam mulai dan selesai rapat bisa ditulis sekalian dengan waktu berangkat.\n\nCek draft-nya, pasang pengingat, lalu tambahkan ke kalender.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/DeeZTORiQSY",
-   "views": 13,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18118743221074661",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-14T12:34:31+00:00",
-   "date": "2026-10-14",
-   "local": "10/14 19:34",
-   "text": "Buat yang jadwal kuliahnya masih jadi screenshot di galeri:\n\nTrace bisa bantu ubah gambar jadwal jadi draft jadwal di kalender.\n\nCek tanggal dan jamnya, atur pengingat, baru tambahkan. Nggak perlu ketik tiap kelas satu-satu.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/DeeZQVVCTR-",
-   "views": 17,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
