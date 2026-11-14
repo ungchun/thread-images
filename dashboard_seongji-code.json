@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T16:37:56.539869+00:00",
+ "generated": "2026-11-14T01:01:13.204361+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -444,14 +444,14 @@
    "insights": {
     "hour": {
      "8": {
-      "n": 5,
-      "score": 1.01,
-      "median": 131
+      "n": 6,
+      "score": 1.0,
+      "median": 123
      },
      "9": {
-      "n": 5,
-      "score": 0.4,
-      "median": 142
+      "n": 6,
+      "score": 0.39,
+      "median": 139
      },
      "10": {
       "n": 3,
@@ -465,12 +465,12 @@
      },
      "12": {
       "n": 2,
-      "score": 0.73,
+      "score": 0.74,
       "median": 162
      },
      "13": {
       "n": 1,
-      "score": 0.77,
+      "score": 0.81,
       "median": 100
      },
      "14": {
@@ -500,17 +500,17 @@
      },
      "20": {
       "n": 14,
-      "score": 1.19,
-      "median": 210
+      "score": 1.43,
+      "median": 212
      },
      "21": {
       "n": 11,
-      "score": 0.72,
+      "score": 0.76,
       "median": 57
      },
      "22": {
       "n": 3,
-      "score": 0.96,
+      "score": 1.02,
       "median": 125
      },
      "23": {
@@ -527,7 +527,7 @@
      },
      "화": {
       "n": 20,
-      "score": 0.96,
+      "score": 0.99,
       "median": 115
      },
      "수": {
@@ -546,9 +546,9 @@
       "median": 138
      },
      "토": {
-      "n": 10,
+      "n": 12,
       "score": 0.37,
-      "median": 23
+      "median": 25
      },
      "일": {
       "n": 13,
@@ -558,13 +558,13 @@
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 100,
-      "score": 0.58,
-      "median": 112
+      "n": 102,
+      "score": 0.57,
+      "median": 106
      },
      "TEXT_POST": {
       "n": 2,
-      "score": 0.41,
+      "score": 0.43,
       "median": 53
      }
     },
@@ -654,7 +654,7 @@
       "flag": "TR",
       "posts": 9,
       "avg": 513,
-      "max": 3822,
+      "max": 3823,
       "hours": {
        "17": {
         "n": 6,
@@ -875,72 +875,55 @@
        "label": "저조"
       }
      },
-     "daily.life_gram": {
-      "flag": "TW",
-      "posts": 1,
-      "avg": 138,
-      "max": 138,
-      "hours": {
-       "20": {
-        "n": 1,
-        "score": 1.0,
-        "median": 138
-       }
-      },
-      "best_hour": 20,
-      "best_n": 1,
-      "state": "active",
-      "note": "",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
      "aoi_1124_gram": {
       "flag": "JP",
-      "posts": 14,
-      "avg": 129,
+      "posts": 15,
+      "avg": 123,
       "max": 282,
       "hours": {
        "8": {
         "n": 5,
-        "score": 1.01,
+        "score": 1.07,
         "median": 131
+       },
+       "9": {
+        "n": 1,
+        "score": 0.2,
+        "median": 25
        },
        "12": {
         "n": 1,
-        "score": 0.32,
+        "score": 0.34,
         "median": 42
        },
        "13": {
         "n": 1,
-        "score": 0.77,
+        "score": 0.81,
         "median": 100
        },
        "15": {
         "n": 1,
-        "score": 0.49,
-        "median": 64
+        "score": 0.53,
+        "median": 65
        },
        "18": {
         "n": 1,
-        "score": 0.25,
-        "median": 33
+        "score": 0.29,
+        "median": 36
        },
        "20": {
         "n": 2,
-        "score": 1.58,
+        "score": 1.66,
         "median": 204
        },
        "21": {
         "n": 1,
-        "score": 0.72,
+        "score": 0.76,
         "median": 93
        },
        "22": {
         "n": 2,
-        "score": 1.0,
+        "score": 1.05,
         "median": 129
        }
       },
@@ -968,6 +951,33 @@
        ],
        "rest_verdict": "fail",
        "label": "휴식"
+      }
+     },
+     "daily.life_gram": {
+      "flag": "TW",
+      "posts": 2,
+      "avg": 97,
+      "max": 143,
+      "hours": {
+       "8": {
+        "n": 1,
+        "score": 0.53,
+        "median": 51
+       },
+       "20": {
+        "n": 1,
+        "score": 1.47,
+        "median": 143
+       }
+      },
+      "best_hour": 20,
+      "best_n": 1,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
       }
      },
      "aisyah.zr_05": {
@@ -2574,6 +2584,30 @@
  ],
  "violations": [
   {
+   "kind": "루프 밖 발행",
+   "account": "aoi_1124_gram",
+   "date": "2026-11-14",
+   "utc": "2026-11-14T00:23:43+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@aoi_1124_gram/post/Dfs6RslHymj"
+  },
+  {
+   "kind": "복귀 테스트 초과",
+   "account": "aoi_1124_gram",
+   "date": "2026-11-14",
+   "utc": "2026-11-14T00:23:43+00:00",
+   "detail": "휴식 뒤 테스트는 2건까지 — 판정 후 상태부터 바꾼다",
+   "link": "https://www.threads.com/@aoi_1124_gram/post/Dfs6RslHymj"
+  },
+  {
+   "kind": "루프 밖 발행",
+   "account": "daily.life_gram",
+   "date": "2026-11-14",
+   "utc": "2026-11-14T00:19:11+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@trace_tw_gram/post/Dfs5waQE16l"
+  },
+  {
    "kind": "리포스트",
    "account": "daily.life_gram",
    "date": "2026-11-13",
@@ -2665,6 +2699,50 @@
  "hits": [],
  "posts": [
   {
+   "id": "17994366348067633",
+   "account": "aoi_1124_gram",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-14T00:23:43+00:00",
+   "date": "2026-11-14",
+   "local": "11/14 09:23",
+   "text": "iPhoneユーザーなら、これマジで試してみて！\n「忘年会のお店と行き方を調べて」って言うだけで、\n場所も行き方も全部調べてくれて、\nその情報をそのままカレンダーに残してくれる。\nもういちいちコピペしなくていい😎",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@aoi_1124_gram/post/Dfs6RslHymj",
+   "views": 25,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18506237401102474",
+   "account": "daily.life_gram",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-11-14T00:19:11+00:00",
+   "date": "2026-11-14",
+   "local": "11/14 08:19",
+   "text": "iPhone 用戶，這個真的要試試看！\n跟它說一句「明天跟女友吃飯，幫我找餐廳」，三家直接挑好給你\n選一家，它就寫進明天的行程裡\n約會前一天才想到也來得及 😎￼",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@trace_tw_gram/post/Dfs5waQE16l",
+   "views": 51,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 4,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18109597777970177",
    "account": "daily.life_gram",
    "project": "trace",
@@ -2676,13 +2754,13 @@
    "text": "iPhone 用戶，這個真的要試試看！\n跟它說一句「明天跟女友吃飯，幫我找餐廳」，三家直接挑好給你\n選一家，它就寫進明天的行程裡\n約會前一天才想到也來得及 😎",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfrlcICES4F",
-   "views": 138,
+   "views": 143,
    "likes": 2,
-   "replies": 1,
+   "replies": 3,
    "reposts": 0,
    "quotes": 0,
    "shares": 2,
-   "clicks": 9,
+   "clicks": 10,
    "round": null,
    "variant": null
   },
@@ -2764,7 +2842,7 @@
    "text": "調べたお店の情報、そのまま予定に残してくれるの便利すぎる。\nもうコピペしなくていいんだ…",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DfowUKYH5T1",
-   "views": 33,
+   "views": 36,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3314,7 +3392,7 @@
    "text": "iPhone kullananlar\nyapılacaklar için bir sürü uygulama indirdiyseniz bunu deneyin.\nPlanlama için gereken her şey içinde var,\nkullandığınız onca uygulamanın yerine tek bu yeter🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@zeynep.ak_06/post/DeuUjAhEu9c",
-   "views": 3822,
+   "views": 3823,
    "likes": 27,
    "replies": 9,
    "reposts": 1,
@@ -4612,7 +4690,7 @@
    "text": "iPhoneユーザーで、まだこれ試してない人いる？\nこれ、生活の効率が200%アップする方法だよ。▓",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dei3425H3zR",
-   "views": 64,
+   "views": 65,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -5000,11 +5078,11 @@
  "ig_posts": [],
  "pending": [
   {
-   "id": "18122027348097719",
+   "id": "18004057826810411",
    "user": "trace_tw_gram",
-   "when": "11/13 20:31",
-   "text": "App 的名字是 Trace 👇\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tw_daily.life_gram&mt=8",
-   "link": "https://www.threads.com/@trace_tw_gram/post/DfroyQqEatC",
+   "when": "11/14 00:48",
+   "text": "",
+   "link": "https://www.threads.com/@trace_tw_gram/post/DfsGMYdE0uT",
    "account": "daily.life_gram",
    "project": "trace",
    "country": "TW",
@@ -5012,6 +5090,34 @@
    "post": "18109597777970177",
    "post_text": "iPhone 用戶，這個真的要試試看！",
    "post_link": "https://www.threads.com/@trace_tw_gram/post/DfrlcICES4F"
+  },
+  {
+   "id": "17955049797314390",
+   "user": "trace_tw_gram",
+   "when": "11/14 00:49",
+   "text": "https://apps.apple.com/tw/app/trace-ai-calendar-planner/id6503812022",
+   "link": "https://www.threads.com/@trace_tw_gram/post/DfsGSlOEy0r",
+   "account": "daily.life_gram",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "post": "18109597777970177",
+   "post_text": "iPhone 用戶，這個真的要試試看！",
+   "post_link": "https://www.threads.com/@trace_tw_gram/post/DfrlcICES4F"
+  },
+  {
+   "id": "18359961265169314",
+   "user": "trace_tw_gram",
+   "when": "11/14 08:35",
+   "text": "https://apps.apple.com/tw/app/trace-ai-calendar-planner/id6503812022",
+   "link": "https://www.threads.com/@trace_tw_gram/post/Dfs7l1BkwO6",
+   "account": "daily.life_gram",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "post": "18506237401102474",
+   "post_text": "iPhone 用戶，這個真的要試試看！",
+   "post_link": "https://www.threads.com/@trace_tw_gram/post/Dfs5waQE16l"
   }
  ],
  "skipped": [],
