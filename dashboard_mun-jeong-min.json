@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T01:03:06.286710+00:00",
+ "generated": "2026-11-14T11:39:48.896988+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -444,84 +444,59 @@
    "insights": {
     "hour": {
      "1": {
-      "n": 6,
-      "score": 1.16,
-      "median": 46
-     },
-     "4": {
-      "n": 2,
-      "score": 0.34,
-      "median": 20
+      "n": 4,
+      "score": 1.03,
+      "median": 38
      },
      "5": {
       "n": 2,
-      "score": 0.5,
+      "score": 0.47,
       "median": 30
-     },
-     "6": {
-      "n": 2,
-      "score": 1.4,
-      "median": 48
      },
      "7": {
       "n": 5,
-      "score": 0.87,
+      "score": 0.74,
       "median": 10
      },
      "8": {
       "n": 8,
-      "score": 1.02,
+      "score": 0.74,
       "median": 28
-     },
-     "9": {
-      "n": 2,
-      "score": 0.3,
-      "median": 10
      },
      "10": {
       "n": 2,
-      "score": 0.09,
+      "score": 0.08,
       "median": 3
      },
      "11": {
       "n": 4,
-      "score": 0.89,
+      "score": 0.88,
       "median": 19
      },
      "12": {
-      "n": 3,
-      "score": 1.01,
-      "median": 14
-     },
-     "13": {
-      "n": 4,
-      "score": 0.52,
-      "median": 15
-     },
-     "15": {
-      "n": 2,
-      "score": 0.35,
-      "median": 4
+      "n": 1,
+      "score": 0.94,
+      "median": 35
      },
      "16": {
-      "n": 8,
-      "score": 0.65,
-      "median": 8
+      "n": 2,
+      "score": 0.97,
+      "median": 13
      },
      "17": {
       "n": 4,
-      "score": 1.38,
+      "score": 1.02,
       "median": 44
      },
      "18": {
       "n": 1,
-      "score": 2.86,
+      "score": 2.46,
       "median": 33
      },
      "19": {
-      "n": 4,
-      "score": 0.8,
-      "median": 24
+      "n": 2,
+      "score": 1.55,
+      "median": 58
      },
      "20": {
       "n": 7,
@@ -535,47 +510,47 @@
      },
      "22": {
       "n": 1,
-      "score": 1.19,
+      "score": 1.17,
       "median": 26
      }
     },
     "wday": {
      "월": {
       "n": 22,
-      "score": 0.95,
+      "score": 0.85,
       "median": 13
      },
      "화": {
       "n": 6,
-      "score": 1.15,
+      "score": 1.1,
       "median": 36
      },
      "목": {
-      "n": 26,
-      "score": 0.46,
-      "median": 12
+      "n": 2,
+      "score": 1.31,
+      "median": 84
      },
      "금": {
       "n": 10,
-      "score": 0.38,
+      "score": 0.34,
       "median": 7
      },
      "일": {
       "n": 4,
-      "score": 1.07,
+      "score": 1.03,
       "median": 78
      }
     },
     "media": {
      "IMAGE": {
-      "n": 26,
-      "score": 0.98,
-      "median": 28
+      "n": 14,
+      "score": 0.88,
+      "median": 29
      },
      "CAROUSEL_ALBUM": {
-      "n": 42,
-      "score": 0.49,
-      "median": 12
+      "n": 30,
+      "score": 0.9,
+      "median": 13
      }
     },
     "accounts": {
@@ -612,139 +587,66 @@
      },
      "appfindsna9": {
       "flag": "US",
-      "posts": 11,
-      "avg": 60,
+      "posts": 7,
+      "avg": 64,
       "max": 157,
       "hours": {
-       "1": {
-        "n": 2,
-        "score": 1.44,
-        "median": 87
-       },
-       "4": {
-        "n": 2,
-        "score": 0.34,
-        "median": 20
-       },
        "5": {
         "n": 2,
-        "score": 0.5,
+        "score": 0.47,
         "median": 30
        },
        "7": {
         "n": 1,
-        "score": 1.09,
+        "score": 1.02,
         "median": 66
        },
        "20": {
         "n": 4,
-        "score": 1.28,
+        "score": 1.21,
         "median": 78
        }
       },
-      "best_hour": 1,
-      "best_n": 2,
+      "best_hour": 20,
+      "best_n": 4,
       "state": "paused",
       "note": "중단 국가 (10/22 재정비)",
       "until": null,
       "health": {
-       "n": 11,
+       "n": 7,
        "last": 65,
        "recent": [
         52,
         9,
         65
        ],
-       "base": 52,
-       "approx": 10,
-       "multiple": 1.25,
-       "like_rate": 0.46,
-       "burst": 0.18,
-       "label": "막힘"
-      }
-     },
-     "appfindsuk8": {
-      "flag": "GB",
-      "posts": 11,
-      "avg": 34,
-      "max": 136,
-      "hours": {
-       "1": {
-        "n": 4,
-        "score": 1.11,
-        "median": 38
-       },
-       "6": {
-        "n": 2,
-        "score": 1.4,
-        "median": 48
-       },
-       "9": {
-        "n": 2,
-        "score": 0.3,
-        "median": 10
-       },
-       "10": {
-        "n": 2,
-        "score": 0.09,
-        "median": 3
-       },
-       "12": {
-        "n": 1,
-        "score": 1.01,
-        "median": 35
-       }
-      },
-      "best_hour": 6,
-      "best_n": 2,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 11,
-       "last": 30,
-       "recent": [
-        2,
-        2,
-        30
-       ],
-       "base": 11,
-       "approx": 10,
-       "multiple": 2.73,
-       "like_rate": 0.55,
-       "burst": 0.36,
+       "base": 65,
+       "approx": 6,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.14,
        "label": "막힘"
       }
      },
      "appfinds_my": {
       "flag": "MY",
-      "posts": 11,
-      "avg": 33,
+      "posts": 7,
+      "avg": 45,
       "max": 94,
       "hours": {
        "8": {
         "n": 4,
-        "score": 0.8,
+        "score": 0.6,
         "median": 27
-       },
-       "13": {
-        "n": 2,
-        "score": 0.72,
-        "median": 24
-       },
-       "16": {
-        "n": 2,
-        "score": 0.09,
-        "median": 3
        },
        "17": {
         "n": 2,
-        "score": 2.53,
+        "score": 1.89,
         "median": 85
        },
        "19": {
         "n": 1,
-        "score": 1.1,
+        "score": 0.82,
         "median": 37
        }
       },
@@ -754,50 +656,83 @@
       "note": "",
       "until": "2026-11-05",
       "health": {
-       "n": 11,
+       "n": 7,
        "last": 37,
        "recent": [
         74,
         82,
         37
        ],
-       "base": 31,
-       "approx": 10,
-       "multiple": 1.19,
-       "like_rate": 1.13,
-       "burst": 0.18,
+       "base": 41,
+       "approx": 6,
+       "multiple": 0.9,
+       "like_rate": 0.66,
+       "burst": 0.14,
        "label": "휴식"
+      }
+     },
+     "appfindsuk8": {
+      "flag": "GB",
+      "posts": 7,
+      "avg": 37,
+      "max": 136,
+      "hours": {
+       "1": {
+        "n": 4,
+        "score": 1.03,
+        "median": 38
+       },
+       "10": {
+        "n": 2,
+        "score": 0.08,
+        "median": 3
+       },
+       "12": {
+        "n": 1,
+        "score": 0.94,
+        "median": 35
+       }
+      },
+      "best_hour": 1,
+      "best_n": 4,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 7,
+       "last": 30,
+       "recent": [
+        2,
+        2,
+        30
+       ],
+       "base": 13,
+       "approx": 6,
+       "multiple": 2.31,
+       "like_rate": 0.0,
+       "burst": 0.43,
+       "label": "막힘"
       }
      },
      "appfinds_ph": {
       "flag": "PH",
-      "posts": 11,
-      "avg": 24,
+      "posts": 7,
+      "avg": 34,
       "max": 79,
       "hours": {
        "8": {
         "n": 4,
-        "score": 1.15,
+        "score": 0.81,
         "median": 28
-       },
-       "13": {
-        "n": 2,
-        "score": 0.37,
-        "median": 9
-       },
-       "16": {
-        "n": 2,
-        "score": 0.14,
-        "median": 3
        },
        "17": {
         "n": 2,
-        "score": 0.49,
+        "score": 0.35,
         "median": 12
        },
        "19": {
         "n": 1,
-        "score": 3.24,
+        "score": 2.28,
         "median": 79
        }
       },
@@ -807,41 +742,31 @@
       "note": "중단 국가 (10/22 재정비)",
       "until": null,
       "health": {
-       "n": 11,
+       "n": 7,
        "last": 79,
        "recent": [
         12,
         12,
         79
        ],
-       "base": 12,
-       "approx": 10,
-       "multiple": 6.58,
-       "like_rate": 1.13,
-       "burst": 0.27,
+       "base": 20,
+       "approx": 6,
+       "multiple": 3.95,
+       "like_rate": 0.42,
+       "burst": 0.29,
        "label": "막힘"
       }
      },
      "appfinds_anz": {
       "flag": "AU",
-      "posts": 11,
-      "avg": 21,
+      "posts": 7,
+      "avg": 22,
       "max": 85,
       "hours": {
        "11": {
         "n": 4,
-        "score": 0.89,
+        "score": 0.88,
         "median": 19
-       },
-       "16": {
-        "n": 2,
-        "score": 1.44,
-        "median": 31
-       },
-       "19": {
-        "n": 2,
-        "score": 0.5,
-        "median": 11
        },
        "20": {
         "n": 2,
@@ -850,28 +775,28 @@
        },
        "22": {
         "n": 1,
-        "score": 1.19,
+        "score": 1.17,
         "median": 26
        }
       },
-      "best_hour": 16,
-      "best_n": 2,
+      "best_hour": 22,
+      "best_n": 1,
       "state": "paused",
       "note": "중단 국가 (10/22 재정비)",
       "until": null,
       "health": {
-       "n": 11,
+       "n": 7,
        "last": 26,
        "recent": [
         1,
         1,
         26
        ],
-       "base": 11,
-       "approx": 10,
-       "multiple": 2.36,
-       "like_rate": 1.25,
-       "burst": 0.45,
+       "base": 7,
+       "approx": 6,
+       "multiple": 3.71,
+       "like_rate": 0.65,
+       "burst": 0.43,
        "label": "막힘"
       }
      },
@@ -908,33 +833,23 @@
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 11,
-      "avg": 11,
+      "posts": 7,
+      "avg": 13,
       "max": 33,
       "hours": {
        "7": {
         "n": 4,
-        "score": 0.78,
+        "score": 0.67,
         "median": 9
-       },
-       "12": {
-        "n": 2,
-        "score": 1.08,
-        "median": 12
-       },
-       "15": {
-        "n": 2,
-        "score": 0.35,
-        "median": 4
        },
        "16": {
         "n": 2,
-        "score": 1.13,
+        "score": 0.97,
         "median": 13
        },
        "18": {
         "n": 1,
-        "score": 2.86,
+        "score": 2.46,
         "median": 33
        }
       },
@@ -944,18 +859,18 @@
       "note": "",
       "until": "2026-11-05",
       "health": {
-       "n": 11,
+       "n": 7,
        "last": 32,
        "recent": [
         12,
         13,
         32
        ],
-       "base": 10,
-       "approx": 10,
-       "multiple": 3.2,
-       "like_rate": 1.65,
-       "burst": 0.09,
+       "base": 12,
+       "approx": 6,
+       "multiple": 2.67,
+       "like_rate": 0.0,
+       "burst": 0.14,
        "label": "휴식"
       }
      },
@@ -2182,103 +2097,103 @@
  "scheduled": [],
  "accounts_health": {
   "appfinds_anz": {
-   "n": 11,
+   "n": 7,
    "last": 26,
    "recent": [
     1,
     1,
     26
    ],
-   "base": 11,
-   "approx": 10,
-   "multiple": 2.36,
-   "like_rate": 1.25,
-   "burst": 0.45,
+   "base": 7,
+   "approx": 6,
+   "multiple": 3.71,
+   "like_rate": 0.65,
+   "burst": 0.43,
    "label": "막힘",
    "state": "paused",
    "until": null
   },
   "appfinds_id": {
-   "n": 11,
+   "n": 7,
    "last": 32,
    "recent": [
     12,
     13,
     32
    ],
-   "base": 10,
-   "approx": 10,
-   "multiple": 3.2,
-   "like_rate": 1.65,
-   "burst": 0.09,
+   "base": 12,
+   "approx": 6,
+   "multiple": 2.67,
+   "like_rate": 0.0,
+   "burst": 0.14,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
   },
   "appfinds_my": {
-   "n": 11,
+   "n": 7,
    "last": 37,
    "recent": [
     74,
     82,
     37
    ],
-   "base": 31,
-   "approx": 10,
-   "multiple": 1.19,
-   "like_rate": 1.13,
-   "burst": 0.18,
+   "base": 41,
+   "approx": 6,
+   "multiple": 0.9,
+   "like_rate": 0.66,
+   "burst": 0.14,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
   },
   "appfinds_ph": {
-   "n": 11,
+   "n": 7,
    "last": 79,
    "recent": [
     12,
     12,
     79
    ],
-   "base": 12,
-   "approx": 10,
-   "multiple": 6.58,
-   "like_rate": 1.13,
-   "burst": 0.27,
+   "base": 20,
+   "approx": 6,
+   "multiple": 3.95,
+   "like_rate": 0.42,
+   "burst": 0.29,
    "label": "막힘",
    "state": "paused",
    "until": null
   },
   "appfindsna9": {
-   "n": 11,
+   "n": 7,
    "last": 65,
    "recent": [
     52,
     9,
     65
    ],
-   "base": 52,
-   "approx": 10,
-   "multiple": 1.25,
-   "like_rate": 0.46,
-   "burst": 0.18,
+   "base": 65,
+   "approx": 6,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.14,
    "label": "막힘",
    "state": "paused",
    "until": null
   },
   "appfindsuk8": {
-   "n": 11,
+   "n": 7,
    "last": 30,
    "recent": [
     2,
     2,
     30
    ],
-   "base": 11,
-   "approx": 10,
-   "multiple": 2.73,
-   "like_rate": 0.55,
-   "burst": 0.36,
+   "base": 13,
+   "approx": 6,
+   "multiple": 2.31,
+   "like_rate": 0.0,
+   "burst": 0.43,
    "label": "막힘",
    "state": "paused",
    "until": null
@@ -3141,7 +3056,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 2,
    "round": null,
    "variant": null
   },
@@ -3273,7 +3188,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 3,
    "round": null,
    "variant": null
   },
@@ -3296,534 +3211,6 @@
    "quotes": 0,
    "shares": 0,
    "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17875866372582689",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-15T08:52:42+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 16:52",
-   "text": "May pusa ka? Congrats, may boss ka na rin 😭\nAling “utos” niya ang kailangan mong isulat para hindi makalimutan?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/DegkQEVEqKL",
-   "views": 3,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17891307006457028",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-15T08:51:37+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 16:51",
-   "text": "Bil telefon. Bil internet. Sewa.\nSemua nak jumpa minggu yang sama 😭\nYang mana korang selalu hampir terlupa?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_my/post/DegkinDEuiS",
-   "views": 3,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17929874508421984",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-15T08:51:00+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 16:51",
-   "text": "Oyen hari ni: tidur, kerja, atau fikir nak makan apa? 😭\nPilih geng korang. Lepas tu satu task je dulu dalam Trace.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_my/post/Degkd-8kip_",
-   "views": 3,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18069631880506418",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-15T08:50:26+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 16:50",
-   "text": "“Tara soon” na naman sa GC 😭\nAnong date muna, bestie? Isang date. Isang oras. Para hindi drawing ulit.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/DegkaVtEkob",
-   "views": 4,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18372546748246118",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-15T08:48:26+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 15:48",
-   "text": "Rencana weekend: beresin semuanya.\nRealita: pindah dari kasur ke sofa 😭\nDi Trace, slot istirahat juga boleh masuk. Tim rebahan apa tim jalan?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/DegkLMlEuCX",
-   "views": 3,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18113418361859921",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-15T08:47:52+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 15:47",
-   "text": "Jadwal buat orang lain: penuh.\nJadwal buat diri sendiri: “nanti aja”.\nDi Trace, kasih satu slot buat diri sendiri juga. Mau diisi apa?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/DegkHDikvT_",
-   "views": 5,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18125090764899493",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-15T08:47:10+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 19:47",
-   "text": "Buying hobby supplies: sorted.\nMaking time for the hobby: still pending.\nOne project. One hour in Trace. Which one are you picking back up?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_anz/post/DegkB-xkrw8",
-   "views": 11,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18395792548205930",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-15T08:46:38+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 19:46",
-   "text": "Clocked off. Time for a walk.\nThe magpie’s already left the desk. What’s your after-work plan?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_anz/post/Degj9_JEjzW",
-   "views": 11,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17898592806393222",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-15T08:45:58+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 09:45",
-   "text": "Life admin. My least favourite hobby.\nOne small job in Trace, then the kettle’s going on. Which job have you been putting off?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsuk8/post/Degj5KvEkq6",
-   "views": 9,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17925706575202389",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-15T08:45:24+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 09:45",
-   "text": "Plans tonight? Fully booked. With the sofa.\nWhat’s the one programme you actually keep an evening free for?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsuk8/post/Degj1D7kvMN",
-   "views": 12,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18116792441069581",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-15T08:44:38+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 04:44",
-   "text": "Some days the to-do list is one thing long. Still counts.\nWhat’s your tiny win today?",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsna9/post/DegjvzfkkuJ",
-   "views": 15,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17993067216047302",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-15T08:43:59+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 04:43",
-   "text": "POV: the manager has four paws and every deadline is dinner.\nActual work gets a slot in Trace. Management would prefer snacks.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsna9/post/DegjqksktGU",
-   "views": 26,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18114220694127458",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-15T05:10:07+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 13:10",
-   "text": "Cikgu, selalu buka gambar jadual sebelum kelas? Letak jadual dekat Lock Screen iPhone dengan Trace. Background pun boleh ikut pilihan sendiri.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_my/post/DegLMFFiVTQ",
-   "views": 31,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18129660955844705",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-15T05:09:36+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 13:09",
-   "text": "Jadual kelas dah ada. Due date assignment pun nak letak sekali? Dalam Trace, kelas masuk sebagai event, assignment sebagai task.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_my/post/DegLIH8CcwM",
-   "views": 17,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18147518956542942",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-15T05:09:09+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 13:09",
-   "text": "Sabay-sabay ang requirements? Piliin muna kung ano ang uunahin today. Sa Trace Matrix, ikaw ang nag-aayos kung alin ang urgent at important.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_ph/post/DegLFbEiRLV",
-   "views": 13,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18102926396285752",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-15T05:08:47+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 13:08",
-   "text": "Working reviewee sa iPhone? Ilagay sa calendar kung kailan ka talaga makakapag-review—after work o sa weekend. Sample review blocks sa Trace.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_ph/post/DegLCLECR4K",
-   "views": 5,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17934163416144743",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-15T05:08:21+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 12:08",
-   "text": "Kuliah sambil kerja? Pisahkan jam kelas, jam kerja, dan deadline dulu. Ini contoh dua jadwal yang dicek dulu sebelum disimpan di Trace.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_id/post/DegK_BSiYLn",
-   "views": 11,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17949670080300073",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-15T05:07:47+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 12:07",
-   "text": "Buat yang mau masukin jadwal dari satu chat: tulis di Trace, cek tanggal dan jam di kartunya, lalu simpan. Contohnya begini.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_id/post/DegK6vOifSX",
-   "views": 14,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18047884334818072",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-15T05:07:19+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 16:07",
-   "text": "Uni timetable won’t export? Try turning the screenshot into calendar drafts in Trace, then check the dates and times before adding them.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_anz/post/DegK3hGCbuN",
-   "views": 32,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18135518845560363",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-15T05:06:52+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 16:06",
-   "text": "Saved the line-up. Have you saved the date as well? Festival day in the calendar, ticket-page check as a separate to-do in Trace.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_anz/post/DegK0rPiTrz",
-   "views": 31,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18020024387925826",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-15T05:06:27+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 06:06",
-   "text": "That thing you need to ring about on Monday? Give it a date, then keep it in view on your iPhone Lock Screen. Trace setup below.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfindsuk8/post/DegKxmBCYsJ",
-   "views": 87,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17939899350385298",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-15T05:06:02+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 06:06",
-   "text": "Another bookshop event saved for later? Pop the ones you’re actually going to into your diary. Here’s the Trace draft before adding it.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfindsuk8/post/DegKuJRCQF5",
-   "views": 10,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18466200577137677",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-15T05:05:34+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 01:05",
-   "text": "School notice saved. Calendar still empty? Turn the school’s actual dates into drafts in Trace, check them, then add them.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfindsna9/post/DegKrPlCax3",
-   "views": 30,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18110607575579869",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-15T05:05:07+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 01:05",
-   "text": "iPhone people: keep today’s plans somewhere you already look. Trace puts your calendar and to-dos on your Lock Screen. Setup in the replies.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfindsna9/post/DegKncACf6p",
-   "views": 145,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
    "round": null,
    "variant": null
   }

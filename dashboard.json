@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T00:57:31.023248+00:00",
+ "generated": "2026-11-14T11:37:13.979900+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -335,9 +335,9 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 2,
-     "views": 1518843,
+     "views": 1518939,
      "likes": 549,
-     "median": 759421,
+     "median": 759469,
      "score": 53.51,
      "sample": 2,
      "er_score": 0.67,
@@ -345,7 +345,7 @@
      "variants": {
       "새API": {
        "posts": 2,
-       "median": 759421,
+       "median": 759469,
        "score": 53.51,
        "sample": 2,
        "er_score": 0.67,
@@ -452,30 +452,20 @@
    ],
    "insights": {
     "hour": {
-     "4": {
-      "n": 2,
-      "score": 0.63,
-      "median": 25
-     },
      "7": {
       "n": 1,
       "score": 4.83,
-      "median": 1486196
+      "median": 1486287
      },
      "10": {
       "n": 2,
-      "score": 0.9,
+      "score": 1.0,
       "median": 37
      },
      "11": {
-      "n": 3,
-      "score": 1.77,
-      "median": 38
-     },
-     "12": {
-      "n": 1,
-      "score": 1.4,
-      "median": 260
+      "n": 2,
+      "score": 1.0,
+      "median": 21
      },
      "16": {
       "n": 2,
@@ -484,24 +474,24 @@
      },
      "17": {
       "n": 2,
-      "score": 0.62,
+      "score": 1.0,
       "median": 88
      },
      "18": {
       "n": 2,
-      "score": 0.8,
+      "score": 1.0,
       "median": 149
      },
      "19": {
       "n": 2,
       "score": 0.05,
-      "median": 16799
+      "median": 16802
      }
     },
     "wday": {
      "월": {
       "n": 5,
-      "score": 0.35,
+      "score": 0.44,
       "median": 38
      },
      "수": {
@@ -510,25 +500,25 @@
       "median": 952
      },
      "목": {
-      "n": 5,
-      "score": 1.2,
-      "median": 260
+      "n": 1,
+      "score": 0.11,
+      "median": 32652
      },
      "금": {
       "n": 5,
-      "score": 0.28,
+      "score": 1.0,
       "median": 172
      },
      "일": {
       "n": 1,
       "score": 4.83,
-      "median": 1486196
+      "median": 1486287
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 17,
-      "score": 0.35,
+      "n": 13,
+      "score": 0.44,
       "median": 172
      }
     },
@@ -536,13 +526,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 5,
-      "avg": 307437,
-      "max": 1486196,
+      "avg": 307457,
+      "max": 1486287,
       "hours": {
        "7": {
         "n": 1,
         "score": 4.83,
-        "median": 1486196
+        "median": 1486287
        },
        "16": {
         "n": 2,
@@ -552,7 +542,7 @@
        "19": {
         "n": 2,
         "score": 0.05,
-        "median": 16799
+        "median": 16802
        }
       },
       "best_hour": 7,
@@ -578,131 +568,108 @@
      },
      "kai_.03b": {
       "flag": "PH",
-      "posts": 2,
-      "avg": 744,
-      "max": 1316,
+      "posts": 1,
+      "avg": 172,
+      "max": 172,
       "hours": {
-       "11": {
-        "n": 1,
-        "score": 1.77,
-        "median": 1316
-       },
        "17": {
         "n": 1,
-        "score": 0.23,
+        "score": 1.0,
         "median": 172
        }
       },
-      "best_hour": 11,
+      "best_hour": 17,
       "best_n": 1,
       "state": "paused",
       "note": "중단 국가 (10/22 재정비). 필리핀. 9/7 합류, 표본 부족",
       "until": null,
       "health": {
-       "n": 2,
+       "n": 1,
        "last": 165,
        "recent": [
-        1286,
         165
        ],
-       "base": 725,
-       "approx": 2,
-       "multiple": 0.23,
-       "like_rate": 0.69,
+       "base": 165,
+       "approx": 1,
+       "multiple": 1.0,
+       "like_rate": 0.61,
        "burst": 0.0,
-       "label": "정상"
+       "label": "저조"
       }
      },
      "ac_dd91": {
       "flag": "KR",
-      "posts": 3,
-      "avg": 186,
-      "max": 260,
+      "posts": 2,
+      "avg": 149,
+      "max": 233,
       "hours": {
-       "12": {
-        "n": 1,
-        "score": 1.4,
-        "median": 260
-       },
        "18": {
         "n": 2,
-        "score": 0.8,
+        "score": 1.0,
         "median": 149
        }
       },
-      "best_hour": 12,
-      "best_n": 1,
+      "best_hour": 18,
+      "best_n": 2,
       "state": "paused",
       "note": "한국은 별도 판단 대기 — 10월 조회수 중앙값 252. 한국. 저녁 18시가 오전보다 나음",
       "until": null,
       "health": {
-       "n": 3,
+       "n": 2,
        "last": 59,
        "recent": [
-        252,
         232,
         59
        ],
-       "base": 232,
-       "approx": 3,
-       "multiple": 0.25,
-       "like_rate": 0.74,
+       "base": 145,
+       "approx": 2,
+       "multiple": 0.41,
+       "like_rate": 1.03,
        "burst": 0.0,
        "label": "저조"
       }
      },
      "03ines.mar_": {
       "flag": "PT",
-      "posts": 3,
-      "avg": 41,
+      "posts": 2,
+      "avg": 37,
       "max": 67,
       "hours": {
-       "4": {
-        "n": 1,
-        "score": 1.2,
-        "median": 50
-       },
        "10": {
         "n": 2,
-        "score": 0.9,
+        "score": 1.0,
         "median": 37
        }
       },
-      "best_hour": 4,
-      "best_n": 1,
+      "best_hour": 10,
+      "best_n": 2,
       "state": "paused",
       "note": "중단 국가 (10/22 재정비). 포르투갈",
       "until": null,
       "health": {
-       "n": 3,
+       "n": 2,
        "last": 8,
        "recent": [
-        50,
         67,
         8
        ],
-       "base": 50,
-       "approx": 3,
-       "multiple": 0.16,
-       "like_rate": 2.4,
+       "base": 37,
+       "approx": 2,
+       "multiple": 0.21,
+       "like_rate": 2.67,
        "burst": 0.0,
-       "label": "막힘"
+       "label": "저조"
       }
      },
      "lune__v34": {
       "flag": "IT",
-      "posts": 3,
-      "avg": 14,
+      "posts": 2,
+      "avg": 21,
       "max": 38,
       "hours": {
-       "4": {
-        "n": 1,
-        "score": 0.07,
-        "median": 1
-       },
        "11": {
         "n": 2,
-        "score": 1.47,
+        "score": 1.0,
         "median": 21
        }
       },
@@ -712,19 +679,18 @@
       "note": "중단 국가 (10/22 재정비). 이탈리아. 9/7 합류, 표본 부족",
       "until": null,
       "health": {
-       "n": 3,
+       "n": 2,
        "last": 38,
        "recent": [
-        1,
         4,
         38
        ],
-       "base": 4,
-       "approx": 3,
-       "multiple": 9.5,
-       "like_rate": 6.98,
-       "burst": 0.33,
-       "label": "막힘"
+       "base": 21,
+       "approx": 2,
+       "multiple": 1.81,
+       "like_rate": 4.76,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "inkling01": {
@@ -2026,34 +1992,32 @@
  "scheduled": [],
  "accounts_health": {
   "03ines.mar_": {
-   "n": 3,
+   "n": 2,
    "last": 8,
    "recent": [
-    50,
     67,
     8
    ],
-   "base": 50,
-   "approx": 3,
-   "multiple": 0.16,
-   "like_rate": 2.4,
+   "base": 37,
+   "approx": 2,
+   "multiple": 0.21,
+   "like_rate": 2.67,
    "burst": 0.0,
-   "label": "막힘",
+   "label": "저조",
    "state": "paused",
    "until": null
   },
   "ac_dd91": {
-   "n": 3,
+   "n": 2,
    "last": 59,
    "recent": [
-    252,
     232,
     59
    ],
-   "base": 232,
-   "approx": 3,
-   "multiple": 0.25,
-   "like_rate": 0.74,
+   "base": 145,
+   "approx": 2,
+   "multiple": 0.41,
+   "like_rate": 1.03,
    "burst": 0.0,
    "label": "저조",
    "state": "paused",
@@ -2083,35 +2047,33 @@
    "until": "2026-11-05"
   },
   "kai_.03b": {
-   "n": 2,
+   "n": 1,
    "last": 165,
    "recent": [
-    1286,
     165
    ],
-   "base": 725,
-   "approx": 2,
-   "multiple": 0.23,
-   "like_rate": 0.69,
+   "base": 165,
+   "approx": 1,
+   "multiple": 1.0,
+   "like_rate": 0.61,
    "burst": 0.0,
-   "label": "정상",
+   "label": "저조",
    "state": "paused",
    "until": null
   },
   "lune__v34": {
-   "n": 3,
+   "n": 2,
    "last": 38,
    "recent": [
-    1,
     4,
     38
    ],
-   "base": 4,
-   "approx": 3,
-   "multiple": 9.5,
-   "like_rate": 6.98,
-   "burst": 0.33,
-   "label": "막힘",
+   "base": 21,
+   "approx": 2,
+   "multiple": 1.81,
+   "like_rate": 4.76,
+   "burst": 0.0,
+   "label": "저조",
    "state": "paused",
    "until": null
   },
@@ -2154,7 +2116,7 @@
    "country": "TH",
    "project": "trace",
    "utc": "2026-10-18T00:35:57+00:00",
-   "views": 1486196,
+   "views": 1486287,
    "likes": 545,
    "reposts": 263,
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
@@ -2174,7 +2136,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dey_RiJlN-O",
-   "views": 32647,
+   "views": 32652,
    "likes": 4,
    "replies": 3,
    "reposts": 3,
@@ -2284,7 +2246,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Deq6mNVD6-Z",
-   "views": 14192,
+   "views": 14193,
    "likes": 36,
    "replies": 1,
    "reposts": 9,
@@ -2334,7 +2296,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2372,13 +2334,13 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DenaNrDjz6p",
-   "views": 1486196,
+   "views": 1486287,
    "likes": 545,
    "replies": 6,
    "reposts": 263,
    "quotes": 16,
    "shares": 139,
-   "clicks": 2307,
+   "clicks": 2310,
    "round": "t15a",
    "variant": "새API"
   },
@@ -2444,7 +2406,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 6,
+   "clicks": 54,
    "round": null,
    "variant": null
   },
@@ -2466,7 +2428,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 5,
+   "clicks": 11,
    "round": null,
    "variant": null
   },
@@ -2491,94 +2453,6 @@
    "clicks": 80,
    "round": null,
    "variant": null
-  },
-  {
-   "id": "17907636726330629",
-   "account": "kai_.03b",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-15T03:05:46+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 11:05",
-   "text": "Sa mga laging nag-aadjust ng sched sa jowa, gamitin niyo 'tong libreng shared calendar, wala nang gulo sa mga lakad",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@kai_.03b/post/Def8-Tjj4tF",
-   "views": 1316,
-   "likes": 9,
-   "replies": 4,
-   "reposts": 0,
-   "quotes": 2,
-   "shares": 6,
-   "clicks": 65,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18116642644802304",
-   "account": "ac_dd91",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "utc": "2026-10-15T03:02:54+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 12:02",
-   "text": "커플들 아직도 SNS로 \"그날 뭐해?\" 물어봄?? 캘린더 공유하면 끝인데",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@ac_dd91/post/Def8pS8AQJi",
-   "views": 260,
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 11,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17995196604101623",
-   "account": "03ines.mar_",
-   "project": "trace",
-   "country": "PT",
-   "flag": "🇵🇹",
-   "utc": "2026-10-15T03:00:04+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 04:00",
-   "text": "Quem partilha a agenda com a família, instalem isto: é grátis e veem os planos de todos num relance",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@03ines.mar_/post/Def8Ug6mjbK",
-   "views": 50,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18063591416538690",
-   "account": "lune__v34",
-   "project": "trace",
-   "country": "IT",
-   "flag": "🇮🇹",
-   "utc": "2026-10-15T02:54:34+00:00",
-   "date": "2026-10-15",
-   "local": "10/15 04:54",
-   "text": "Coppie, ancora a chiedervi per messaggio \"che fai quel giorno?\"?? Basta condividere il calendario",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@lune__v34/post/Def7sRJCVac",
-   "views": 1,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
   }
  ],
  "ig_posts": [],
@@ -2587,31 +2461,31 @@
  "errors": [
   "03ines.mar_ 인스타: HTTP Error 400: Bad Request",
   "ashgrey._02 인스타: HTTP Error 400: Bad Request",
-  "ashgrey._02 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 31-Oct-26 23:13:57 PDT. The current time is Friday, 13-Nov-26 16:56:08 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A-_RTWgNiVWYYCrVxMXo5am\"}}",
+  "ashgrey._02 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 31-Oct-26 23:13:57 PDT. The current time is Saturday, 14-Nov-26 03:36:26 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AnOCAlUkrGJcCDdATDEeTT4\"}}",
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
-  "beatriz03._a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:19:27 PST. The current time is Friday, 13-Nov-26 16:56:09 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A6gyUShkbkHTP_BAAtPcnMu\"}}",
-  "bia__rp03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:16:28 PST. The current time is Friday, 13-Nov-26 16:56:09 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AaXU_FgIbhbgqUE7PJoiRtd\"}}",
+  "beatriz03._a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:19:27 PST. The current time is Saturday, 14-Nov-26 03:36:26 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AoWdguK0_cxdxP6jAPBSI4s\"}}",
+  "bia__rp03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:16:28 PST. The current time is Saturday, 14-Nov-26 03:36:26 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Ap7xR_YqL3GAqLnd72c9Nvr\"}}",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "dot2day_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:50:00 PDT. The current time is Friday, 13-Nov-26 16:56:10 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A6M5DQee6tOpw3hr5X2Rb2G\"}}",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Friday, 13-Nov-26 16:56:10 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A8jVuOvruv6sQLI5A1sO-5u\"}}",
+  "dot2day_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:50:00 PDT. The current time is Saturday, 14-Nov-26 03:36:27 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A65i45omgD4-kkswnN28AZ4\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Saturday, 14-Nov-26 03:36:27 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AWee1hZLCiQ6NBz81FsWTZB\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
-  "elle__jm 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:15:45 PST. The current time is Friday, 13-Nov-26 16:56:11 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A-Ni_kWotrb3cXNRXCSxTL6\"}}",
-  "haru._81a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:05:33 PST. The current time is Friday, 13-Nov-26 16:56:11 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AbOjlT1F8cp_bDVMwxqjzhk\"}}",
-  "ivy_.k09 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:34 PST. The current time is Friday, 13-Nov-26 16:56:14 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AJebe5LvibqhkB09Gx1z-B9\"}}",
+  "elle__jm 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:15:45 PST. The current time is Saturday, 14-Nov-26 03:36:27 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ADKF3hGAUMycYAXfesqVeeL\"}}",
+  "haru._81a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:05:33 PST. The current time is Saturday, 14-Nov-26 03:36:27 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AW5_nu-m-1YLhILKKtqYCY-\"}}",
+  "ivy_.k09 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:34 PST. The current time is Saturday, 14-Nov-26 03:36:29 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Ad4jNV1UgcQk7mQcbMlDErb\"}}",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
-  "lari.s_07 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:15:55 PST. The current time is Friday, 13-Nov-26 16:56:42 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"APnKAuCWgp6Z-jNqnEkUkOh\"}}",
+  "lari.s_07 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:15:55 PST. The current time is Saturday, 14-Nov-26 03:36:45 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ADiQf0MfO8i3vJxt9Xn1V08\"}}",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
-  "mae.dw_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:01 PST. The current time is Friday, 13-Nov-26 16:57:05 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A6MbBvch1frS9c3z7Y9jxWO\"}}",
-  "mint.le_06 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:19:17 PST. The current time is Friday, 13-Nov-26 16:57:05 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AY2C9cGK1CBHGOhe0igZT02\"}}",
+  "mae.dw_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:01 PST. The current time is Saturday, 14-Nov-26 03:36:57 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AwthVfVlho-xN0s5cxupchd\"}}",
+  "mint.le_06 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:19:17 PST. The current time is Saturday, 14-Nov-26 03:36:57 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A-gHgE6Ocgm1nMGtXuLh8Nk\"}}",
   "nia._055 인스타: HTTP Error 400: Bad Request",
-  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:12:58 PST. The current time is Friday, 13-Nov-26 16:57:06 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AwxO2nT-PT_F_qQv--ZzKFp\"}}",
-  "nur.aina_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:06:32 PST. The current time is Friday, 13-Nov-26 16:57:06 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A-Ouh0YTg1Ncw2aUQo1iApi\"}}",
+  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:12:58 PST. The current time is Saturday, 14-Nov-26 03:36:58 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AmN2XBWQHB8HjE9paOBKpBj\"}}",
+  "nur.aina_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:06:32 PST. The current time is Saturday, 14-Nov-26 03:36:58 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AbO-8gPFWozzkEwMBqX1rO-\"}}",
   "o2ndot 인스타: HTTP Error 400: Bad Request",
-  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:53:02 PDT. The current time is Friday, 13-Nov-26 16:57:07 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AzAjzt09THcri0_HIuoxRU1\"}}",
+  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:53:02 PDT. The current time is Saturday, 14-Nov-26 03:36:58 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AzzMoFPb3EdrW7P0_ORdA-i\"}}",
   "rara.2k_ 인스타: HTTP Error 400: Bad Request",
-  "rara.2k_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:14:29 PST. The current time is Friday, 13-Nov-26 16:57:30 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ASPJDzv03fR1TGZHH7G9ImH\"}}",
-  "riya._m08 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:18:08 PST. The current time is Friday, 13-Nov-26 16:57:30 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AgLQnbThRgdyBUMP8955rhr\"}}",
-  "shu.lin_03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:04:27 PST. The current time is Friday, 13-Nov-26 16:57:30 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AKnhxkfe97vmu6_DUZwtb14\"}}"
+  "rara.2k_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:14:29 PST. The current time is Saturday, 14-Nov-26 03:37:13 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AqFTxF5AMXeO4fNLMpXrNNB\"}}",
+  "riya._m08 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:18:08 PST. The current time is Saturday, 14-Nov-26 03:37:13 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Agtt2cNhj_O2RDslvZaTwsM\"}}",
+  "shu.lin_03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:04:27 PST. The current time is Saturday, 14-Nov-26 03:37:13 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ATPorObCN2-fxxzpRk_TYF7\"}}"
  ]
 }
