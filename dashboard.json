@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T15:45:35.281731+00:00",
+ "generated": "2026-11-15T21:07:05.365147+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -335,9 +335,9 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 2,
-     "views": 1519269,
+     "views": 1519296,
      "likes": 549,
-     "median": 759634,
+     "median": 759648,
      "score": 32.42,
      "sample": 2,
      "er_score": 1.0,
@@ -345,7 +345,7 @@
      "variants": {
       "새API": {
        "posts": 2,
-       "median": 759634,
+       "median": 759648,
        "score": 32.42,
        "sample": 2,
        "er_score": 1.0,
@@ -455,7 +455,7 @@
      "7": {
       "n": 1,
       "score": 3.88,
-      "median": 1486604
+      "median": 1486628
      },
      "10": {
       "n": 1,
@@ -485,7 +485,7 @@
      "19": {
       "n": 2,
       "score": 0.04,
-      "median": 16810
+      "median": 16812
      }
     },
     "wday": {
@@ -502,12 +502,12 @@
      "목": {
       "n": 1,
       "score": 0.09,
-      "median": 32665
+      "median": 32668
      },
      "일": {
       "n": 1,
       "score": 3.88,
-      "median": 1486604
+      "median": 1486628
      }
     },
     "media": {
@@ -521,13 +521,13 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 4,
-      "avg": 383605,
-      "max": 1486604,
+      "avg": 383612,
+      "max": 1486628,
       "hours": {
        "7": {
         "n": 1,
         "score": 3.88,
-        "median": 1486604
+        "median": 1486628
        },
        "16": {
         "n": 1,
@@ -537,7 +537,7 @@
        "19": {
         "n": 2,
         "score": 0.04,
-        "median": 16810
+        "median": 16812
        }
       },
       "best_hour": 7,
@@ -2081,7 +2081,7 @@
    "country": "TH",
    "project": "trace",
    "utc": "2026-10-18T00:35:57+00:00",
-   "views": 1486604,
+   "views": 1486628,
    "likes": 545,
    "reposts": 264,
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
@@ -2101,7 +2101,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dey_RiJlN-O",
-   "views": 32665,
+   "views": 32668,
    "likes": 4,
    "replies": 3,
    "reposts": 3,
@@ -2261,7 +2261,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 4,
+   "clicks": 5,
    "round": null,
    "variant": null
   },
@@ -2299,7 +2299,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DenaNrDjz6p",
-   "views": 1486604,
+   "views": 1486628,
    "likes": 545,
    "replies": 6,
    "reposts": 264,
@@ -2316,31 +2316,31 @@
  "errors": [
   "03ines.mar_ 인스타: HTTP Error 400: Bad Request",
   "ashgrey._02 인스타: HTTP Error 400: Bad Request",
-  "ashgrey._02 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 31-Oct-26 23:13:57 PDT. The current time is Sunday, 15-Nov-26 07:44:47 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AZqHQ3heg7pQyEq5R8y8xyj\"}}",
+  "ashgrey._02 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 31-Oct-26 23:13:57 PDT. The current time is Sunday, 15-Nov-26 13:06:22 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AtFsl-KoZljwHpZ46ICh1PY\"}}",
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
-  "beatriz03._a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:19:27 PST. The current time is Sunday, 15-Nov-26 07:44:47 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A-nF42jLlx_zNaEQkBhFuwz\"}}",
-  "bia__rp03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:16:28 PST. The current time is Sunday, 15-Nov-26 07:44:47 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A9keqPi3NORx5nkbyFaQOHs\"}}",
+  "beatriz03._a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:19:27 PST. The current time is Sunday, 15-Nov-26 13:06:22 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AH3yqJ4lmLW5zDeby27qbMe\"}}",
+  "bia__rp03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:16:28 PST. The current time is Sunday, 15-Nov-26 13:06:23 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A38XuMTeFzB2UnoW1I6CwG6\"}}",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "dot2day_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:50:00 PDT. The current time is Sunday, 15-Nov-26 07:44:49 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AfYNKlCrEy7dbf4IRdgaCRy\"}}",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Sunday, 15-Nov-26 07:44:49 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AOzndyTyFwqKNLYfbXOKLFm\"}}",
+  "dot2day_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:50:00 PDT. The current time is Sunday, 15-Nov-26 13:06:24 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Af9epZb4JqiCzeKnKk_IfK0\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Sunday, 15-Nov-26 13:06:24 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A5O7s2Mdzx8Afbr6gnCHso7\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
-  "elle__jm 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:15:45 PST. The current time is Sunday, 15-Nov-26 07:44:50 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A7azth2syTGoIHhNVPa0u3q\"}}",
-  "haru._81a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:05:33 PST. The current time is Sunday, 15-Nov-26 07:44:50 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AplxAUgRw9dj0QsrWyZ8S3m\"}}",
-  "ivy_.k09 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:34 PST. The current time is Sunday, 15-Nov-26 07:44:53 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AYEV_XFl8Ax3ytq6VON-9Ku\"}}",
+  "elle__jm 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:15:45 PST. The current time is Sunday, 15-Nov-26 13:06:24 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AkeWJ4zT-aE5wCaiX5aJsZW\"}}",
+  "haru._81a 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:05:33 PST. The current time is Sunday, 15-Nov-26 13:06:24 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A8MyUjyz1QkksZFUMibsINy\"}}",
+  "ivy_.k09 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:34 PST. The current time is Sunday, 15-Nov-26 13:06:28 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AZKDHQdchnjPI3icBpviLsZ\"}}",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
-  "lari.s_07 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:15:55 PST. The current time is Sunday, 15-Nov-26 07:44:55 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ARuq1eyc2dhl-QHe7vqmP3I\"}}",
+  "lari.s_07 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:15:55 PST. The current time is Sunday, 15-Nov-26 13:06:29 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A5gQ4iV3hmRkmO3E6E-9pMp\"}}",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
-  "mae.dw_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:01 PST. The current time is Sunday, 15-Nov-26 07:45:13 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Av3DqIl-Vfu1yvDSeZ0UTP6\"}}",
-  "mint.le_06 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:19:17 PST. The current time is Sunday, 15-Nov-26 07:45:13 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A-7MnFWWhwUt8xC313hRAjD\"}}",
+  "mae.dw_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:17:01 PST. The current time is Sunday, 15-Nov-26 13:06:44 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AdvZw6FGtE63K3zJTR03Jcl\"}}",
+  "mint.le_06 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:19:17 PST. The current time is Sunday, 15-Nov-26 13:06:44 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AeIsSGzC1ICYGHRLvhbY6kM\"}}",
   "nia._055 인스타: HTTP Error 400: Bad Request",
-  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:12:58 PST. The current time is Sunday, 15-Nov-26 07:45:14 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AeSZ4cv5xd8iTREgvs5pdkW\"}}",
-  "nur.aina_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:06:32 PST. The current time is Sunday, 15-Nov-26 07:45:14 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AlJ0WEG3JZf9CASX7EEGf8c\"}}",
+  "nia._055 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:12:58 PST. The current time is Sunday, 15-Nov-26 13:06:45 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AVmQ9pxxn9UCyjf9rNCUQVK\"}}",
+  "nur.aina_04 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:06:32 PST. The current time is Sunday, 15-Nov-26 13:06:45 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AHpU-VlCFkMAyN7EscRF1mE\"}}",
   "o2ndot 인스타: HTTP Error 400: Bad Request",
-  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:53:02 PDT. The current time is Sunday, 15-Nov-26 07:45:15 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ASlgv1mYYMnm0zICoih_E40\"}}",
+  "o2ndot 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 30-Oct-26 01:53:02 PDT. The current time is Sunday, 15-Nov-26 13:06:46 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AHR5dL2_46Q_r4srSopWzCQ\"}}",
   "rara.2k_ 인스타: HTTP Error 400: Bad Request",
-  "rara.2k_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:14:29 PST. The current time is Sunday, 15-Nov-26 07:45:34 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AmSUZ9AzGaCwYJB6y8OMYfg\"}}",
-  "riya._m08 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:18:08 PST. The current time is Sunday, 15-Nov-26 07:45:34 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AySbIRkP1E9ymPmiLM-KTsh\"}}",
-  "shu.lin_03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:04:27 PST. The current time is Sunday, 15-Nov-26 07:45:35 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AFMqPUdbGNFtgMoapaYrOvG\"}}"
+  "rara.2k_ 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 02-Nov-26 21:14:29 PST. The current time is Sunday, 15-Nov-26 13:07:04 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AUZsE4vTykc53dTnk6Pm--a\"}}",
+  "riya._m08 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 07-Nov-26 22:18:08 PST. The current time is Sunday, 15-Nov-26 13:07:04 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AKDS3ILWe-2SFhTbEYMHF4a\"}}",
+  "shu.lin_03 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:04:27 PST. The current time is Sunday, 15-Nov-26 13:07:05 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A8rKvlQ9pL56zlMc8tAd30t\"}}"
  ]
 }

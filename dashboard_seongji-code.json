@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T15:48:28.609798+00:00",
+ "generated": "2026-11-15T21:09:37.899513+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -450,7 +450,7 @@
      },
      "8": {
       "n": 5,
-      "score": 1.16,
+      "score": 1.15,
       "median": 140
      },
      "9": {
@@ -470,17 +470,17 @@
      },
      "12": {
       "n": 1,
-      "score": 0.41,
+      "score": 0.4,
       "median": 49
      },
      "13": {
       "n": 2,
-      "score": 0.72,
-      "median": 87
+      "score": 0.76,
+      "median": 92
      },
      "14": {
       "n": 7,
-      "score": 0.23,
+      "score": 0.22,
       "median": 8
      },
      "15": {
@@ -505,7 +505,7 @@
      },
      "20": {
       "n": 14,
-      "score": 1.27,
+      "score": 1.26,
       "median": 228
      },
      "21": {
@@ -515,7 +515,7 @@
      },
      "22": {
       "n": 1,
-      "score": 1.07,
+      "score": 1.06,
       "median": 129
      }
     },
@@ -528,7 +528,7 @@
      "화": {
       "n": 20,
       "score": 0.95,
-      "median": 119
+      "median": 121
      },
      "수": {
       "n": 13,
@@ -547,7 +547,7 @@
      },
      "토": {
       "n": 12,
-      "score": 0.44,
+      "score": 0.45,
       "median": 34
      },
      "일": {
@@ -559,12 +559,12 @@
     "media": {
      "CAROUSEL_ALBUM": {
       "n": 83,
-      "score": 0.62,
-      "median": 106
+      "score": 0.64,
+      "median": 110
      },
      "TEXT_POST": {
       "n": 1,
-      "score": 0.41,
+      "score": 0.4,
       "median": 49
      }
     },
@@ -572,13 +572,13 @@
      "fah.pk_03": {
       "flag": "TH",
       "posts": 5,
-      "avg": 1375,
-      "max": 4152,
+      "avg": 1376,
+      "max": 4156,
       "hours": {
        "15": {
         "n": 2,
         "score": 2.2,
-        "median": 3026
+        "median": 3028
        },
        "19": {
         "n": 2,
@@ -859,7 +859,7 @@
       "flag": "TW",
       "posts": 3,
       "avg": 157,
-      "max": 208,
+      "max": 209,
       "hours": {
        "7": {
         "n": 1,
@@ -868,8 +868,8 @@
        },
        "8": {
         "n": 1,
-        "score": 1.32,
-        "median": 208
+        "score": 1.33,
+        "median": 209
        },
        "20": {
         "n": 1,
@@ -899,47 +899,47 @@
      "aoi_1124_gram": {
       "flag": "JP",
       "posts": 13,
-      "avg": 120,
+      "avg": 121,
       "max": 295,
       "hours": {
        "8": {
         "n": 4,
-        "score": 1.07,
+        "score": 1.06,
         "median": 129
        },
        "9": {
         "n": 1,
-        "score": 0.43,
-        "median": 52
+        "score": 0.44,
+        "median": 53
        },
        "12": {
         "n": 1,
-        "score": 0.41,
+        "score": 0.4,
         "median": 49
        },
        "13": {
         "n": 2,
-        "score": 0.72,
-        "median": 87
+        "score": 0.76,
+        "median": 92
        },
        "18": {
         "n": 1,
-        "score": 0.46,
+        "score": 0.45,
         "median": 55
        },
        "20": {
         "n": 2,
-        "score": 1.77,
+        "score": 1.76,
         "median": 214
        },
        "21": {
         "n": 1,
-        "score": 0.82,
+        "score": 0.81,
         "median": 99
        },
        "22": {
         "n": 1,
-        "score": 1.07,
+        "score": 1.06,
         "median": 129
        }
       },
@@ -972,8 +972,8 @@
      "aisyah.zr_05": {
       "flag": "MY",
       "posts": 5,
-      "avg": 83,
-      "max": 362,
+      "avg": 85,
+      "max": 369,
       "hours": {
        "11": {
         "n": 3,
@@ -982,8 +982,8 @@
        },
        "17": {
         "n": 1,
-        "score": 4.33,
-        "median": 362
+        "score": 4.34,
+        "median": 369
        },
        "21": {
         "n": 1,
@@ -1092,21 +1092,21 @@
       "flag": "ID",
       "posts": 6,
       "avg": 26,
-      "max": 106,
+      "max": 110,
       "hours": {
        "14": {
         "n": 3,
-        "score": 0.23,
+        "score": 0.22,
         "median": 6
        },
        "18": {
         "n": 2,
-        "score": 2.48,
-        "median": 65
+        "score": 2.5,
+        "median": 67
        },
        "20": {
         "n": 1,
-        "score": 0.31,
+        "score": 0.3,
         "median": 8
        }
       },
@@ -2726,7 +2726,7 @@
    "text": "iPhoneユーザーなら、これマジで試してみて！\n「忘年会のお店と行き方を調べて」って言うだけで、\n場所も行き方も全部調べてくれて、\nその情報をそのままカレンダーに残してくれる。\nもういちいちコピペしなくていい😎￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dfv9Xytn7iZ",
-   "views": 68,
+   "views": 78,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2754,7 +2754,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 3,
+   "clicks": 4,
    "round": null,
    "variant": null
   },
@@ -2770,7 +2770,7 @@
    "text": "iPhoneユーザーなら、これマジで試してみて！\n「忘年会のお店と行き方を調べて」って言うだけで、\n場所も行き方も全部調べてくれて、\nその情報をそのままカレンダーに残してくれる。\nもういちいちコピペしなくていい😎",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dfs6RslHymj",
-   "views": 52,
+   "views": 53,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2792,13 +2792,13 @@
    "text": "iPhone 用戶，這個真的要試試看！\n跟它說一句「明天跟女友吃飯，幫我找餐廳」，三家直接挑好給你\n選一家，它就寫進明天的行程裡\n約會前一天才想到也來得及 😎￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Dfs5waQE16l",
-   "views": 208,
+   "views": 209,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 17,
+   "clicks": 18,
    "round": null,
    "variant": null
   },
@@ -2820,7 +2820,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 2,
-   "clicks": 13,
+   "clicks": 14,
    "round": null,
    "variant": null
   },
@@ -3254,7 +3254,7 @@
    "text": "สาย iPhone\nที่โหลดแอปจดงานไว้เต็มเครื่อง ลองอันนี้ดู\nทุกอย่างที่ต้องใช้จัดการตารางมีครบในแอปเดียว\nแอปที่เคยใช้หลายตัว เหลือแค่ตัวนี้ตัวเดียวพอ🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@fah.pk_03/post/Dev7hnxEVBK",
-   "views": 4152,
+   "views": 4156,
    "likes": 38,
    "replies": 3,
    "reposts": 15,
@@ -3562,7 +3562,7 @@
    "text": "Pengguna iPhone\nyang install banyak aplikasi buat atur to-do, coba yang ini deh.\nSemua yang dibutuhin buat atur jadwal ada di sini,\naplikasi yang tadinya banyak cukup diganti satu ini aja🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@nadia.ps_04/post/DetuvqnEp1q",
-   "views": 106,
+   "views": 110,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -3650,7 +3650,7 @@
    "text": "Geng iPhone\nyang install macam-macam app untuk urus to-do, try yang ni.\nSemua benda untuk urus jadual ada dalam satu app,\nbanyak app yang korang pakai tu boleh ganti dengan satu je🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aisyah.zr_05/post/Detdm0AkjSg",
-   "views": 362,
+   "views": 369,
    "likes": 3,
    "replies": 1,
    "reposts": 0,
@@ -4052,7 +4052,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 94,
+   "clicks": 95,
    "round": null,
    "variant": null
   },
