@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T13:39:16.777304+00:00",
+ "generated": "2026-11-17T23:37:17.562055+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -335,9 +335,9 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 1,
-     "views": 32691,
+     "views": 32693,
      "likes": 4,
-     "median": 32691,
+     "median": 32693,
      "score": 2.3,
      "sample": 1,
      "er_score": 1.0,
@@ -345,7 +345,7 @@
      "variants": {
       "새API": {
        "posts": 1,
-       "median": 32691,
+       "median": 32693,
        "score": 2.3,
        "sample": 1,
        "er_score": 1.0,
@@ -499,7 +499,7 @@
      },
      "18": {
       "n": 2,
-      "score": 0.95,
+      "score": 0.94,
       "median": 139
      },
      "19": {
@@ -532,7 +532,7 @@
      "목": {
       "n": 3,
       "score": 1.71,
-      "median": 409
+      "median": 410
      }
     },
     "media": {
@@ -547,7 +547,7 @@
       "flag": "TH",
       "posts": 3,
       "avg": 15949,
-      "max": 32691,
+      "max": 32693,
       "hours": {
        "16": {
         "n": 1,
@@ -557,7 +557,7 @@
        "19": {
         "n": 2,
         "score": 1.05,
-        "median": 16824
+        "median": 16825
        }
       },
       "best_hour": 19,
@@ -585,7 +585,7 @@
       "flag": "JP",
       "posts": 4,
       "avg": 239,
-      "max": 409,
+      "max": 410,
       "hours": {
        "18": {
         "n": 1,
@@ -594,7 +594,7 @@
        },
        "19": {
         "n": 1,
-        "score": 1.3,
+        "score": 1.29,
         "median": 310
        },
        "20": {
@@ -605,7 +605,7 @@
        "21": {
         "n": 1,
         "score": 1.71,
-        "median": 409
+        "median": 410
        }
       },
       "best_hour": 21,
@@ -632,18 +632,18 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 2,
-      "avg": 187,
+      "avg": 188,
       "max": 232,
       "hours": {
        "16": {
         "n": 1,
-        "score": 1.24,
+        "score": 1.23,
         "median": 232
        },
        "19": {
         "n": 1,
-        "score": 0.76,
-        "median": 143
+        "score": 0.77,
+        "median": 145
        }
       },
       "best_hour": 16,
@@ -2598,7 +2598,7 @@
    "text": "スマホのホーム画面が、やっと手帳みたいになった\n三日坊主の私でも、これだけは毎日見てる",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/Dey_TqPlFA4",
-   "views": 409,
+   "views": 410,
    "likes": 5,
    "replies": 1,
    "reposts": 0,
@@ -2620,7 +2620,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dey_RiJlN-O",
-   "views": 32691,
+   "views": 32693,
    "likes": 4,
    "replies": 3,
    "reposts": 3,
@@ -2664,7 +2664,7 @@
    "text": "chỉ đổi đúng một thứ này trên iPhone thôi\nmà dạo này ai cũng bảo mình như thành người khác",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DewahVUoBF7",
-   "views": 143,
+   "views": 145,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2714,7 +2714,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 9,
+   "clicks": 10,
    "round": null,
    "variant": null
   },
@@ -3044,7 +3044,7 @@
    "reposts": 9,
    "quotes": 1,
    "shares": 6,
-   "clicks": 828,
+   "clicks": 829,
    "round": null,
    "variant": null
   },
@@ -3066,7 +3066,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 33,
+   "clicks": 34,
    "round": null,
    "variant": null
   },
@@ -3146,7 +3146,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Tuesday, 17-Nov-26 05:37:22 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A_cDmu2VS7lgDm3tVvHV2K4\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Tuesday, 17-Nov-26 15:35:03 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AOS74gtMcNJxL_cAYuy97MT\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
