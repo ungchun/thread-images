@@ -190,6 +190,18 @@ def hold_reason(account, cfg, now, times):
     return None
 
 
+def lint_reason(account, cfg, textfile):
+    """현지어 린터 block이 있으면 "lint". X 계정은 전부 공식이라 block을 그대로 적용한다."""
+    from locale_lint import COUNTRY_LANG, fmt, lint
+    lang = COUNTRY_LANG.get(((cfg or {}).get("country") or "").upper())
+    if not lang:
+        return None
+    blocks = [f for f in lint((ROOT / textfile).read_text(encoding="utf-8"), lang) if f.severity == "block"]
+    for f in blocks:
+        print(f"LINT {account} {textfile}: {fmt(f)}", flush=True)
+    return "lint" if blocks else None
+
+
 def log_post(account, post_id, textfile):
     with POSTED_LOG.open("a", encoding="utf-8") as f:
         f.write(f"{datetime.now(timezone.utc).isoformat(timespec='seconds')}\t{account}\tx\t{post_id}\t{textfile}\n")
@@ -218,7 +230,7 @@ def main(dry=False):
                 raise ValueError("영상은 한 글에 하나만, 이미지와 섞지 않는다")
             posted = next((d.split(":", 1)[1] for d in done if d.startswith("x:")), None)
             if not posted:
-                why = hold_reason(account, cfg, now, posted_times(account))
+                why = hold_reason(account, cfg, now, posted_times(account)) or lint_reason(account, cfg, textfile)
                 if why:
                     print(f"HOLD {account} {textfile}: {why}", flush=True)
                     kept.append(render(when, account, textfile, media, done | {f"hold-{why}"}))
@@ -276,6 +288,18 @@ def _selfcheck():
     assert hold_reason("a", {**cfg, "state": "paused"}, now, []) == "paused"
     log = "2026-10-27T03:00:00+00:00\tx_trace_jp\tx\t1\tt\n2026-10-27T03:00:00+00:00\tx_trace_jp\tthreads\t2\tt\n"
     assert len(posted_times("x_trace_jp", log)) == 1
+    import tempfile
+    with tempfile.TemporaryDirectory() as d:
+        global ROOT
+        old, ROOT = ROOT, Path(d)
+        try:
+            (ROOT / "bad.txt").write_text("すごい!!\n12/1は休み", encoding="utf-8")
+            (ROOT / "ok.txt").write_text("今日の予定です\n12/1(火)は休み", encoding="utf-8")
+            assert lint_reason("a", {"country": "JP"}, "bad.txt") == "lint"
+            assert lint_reason("a", {"country": "JP"}, "ok.txt") is None
+            assert lint_reason("a", {"country": "KR"}, "bad.txt") is None
+        finally:
+            ROOT = old
     print("x_run selfcheck ok")
 
 

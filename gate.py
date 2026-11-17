@@ -9,6 +9,11 @@
     pim.pm_02는 같은 문구로 세 번 다 터졌다
   - 같은 30분 회차에 우리 계정 3개 이상을 몰지 않는다. 같은 계정을 3일 연속 같은 현지 시각에 올리지 않는다
 
+  - 현지어 린터(locale_lint.py): 일본·대만 글을 검사한다. block은 공식 계정(status.json official)만 막고,
+    팀원 계정은 같은 결과를 경고로만 보여 준다
+  - 분리 관문(separation.py): 공식 계정 줄이 최근 30일 안에 공식이 아닌 계정이 쓴 이미지·답글 문장을 쓰면 막는다.
+    반대 방향은 경고
+
   python3 gate.py            schedule.txt 검사. 걸리면 종료 코드 1
   python3 gate.py accounts   발행 가능한 계정 목록
 
@@ -22,13 +27,15 @@ from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
+from locale_lint import fmt, lint_for_account, official_accounts, summary
 from report import actions_owner, meta, owner
+from separation import check_row, usages
 from run import DAILY_CAP, OPEN_STATES, POSTED_LOG, REST_TESTS, parse
 
 ROOT = Path(__file__).resolve().parent
 BLOCKED = {"rest": "휴식", "paused": "중단", "banned": "영구정지", "excluded": "운영 제외", "dead": "도달 없음"}
 HOLDS = {"rest": "휴식 중", "paused": "중단", "banned": "영구정지", "excluded": "운영 제외", "dead": "도달 없음", "unknown": "status.json에 없음",
-         "cap": "하루 1개 초과", "resttest": "복귀 테스트 끝 — 판정 뒤 상태 변경"}
+         "lint": "현지어 린터 block", "cap": "하루 1개 초과", "resttest": "복귀 테스트 끝 — 판정 뒤 상태 변경"}
 WEAK = {"막힘", "저조"}
 STALE_H = 6
 SLOT_MAX = 2          # 같은 30분 회차에 우리 계정 최대 2개
@@ -111,10 +118,11 @@ def check():
     slots = defaultdict(list)
     f = ROOT / "schedule.txt"
     lines = f.read_text(encoding="utf-8").splitlines() if f.exists() else []
+    used = usages(ROOT)
     for line in lines:
         if not line.strip() or line.startswith("#"):
             continue
-        when, a, textfile, _, _, done = parse(line)
+        when, a, textfile, tw, ig, done = parse(line)
         held = [d[len("hold-"):] for d in done if d.startswith("hold-")]
         if held:
             holds.append(f"{a} {local(when, a):%m/%d %H:%M} {textfile} — {HOLDS.get(held[0], held[0])}")
@@ -141,6 +149,15 @@ def check():
         if len(day_count[(a, d)]) > DAILY_CAP:
             errs.append(f"{tag} — 하루 {DAILY_CAP}개 상한 초과 ({len(day_count[(a, d)])}건, 현지 날짜 기준)")
         tf = ROOT / textfile
+        if tf.exists():
+            blocks, notes = lint_for_account(tf.read_text(encoding="utf-8"), a, ROOT)
+            if blocks:
+                errs.append(f"{tag} — 현지어 린터 block {len(blocks)}건 ({textfile}): " + summary(blocks))
+                errs.extend(f"    {fmt(x)}" for x in blocks)
+            if notes:
+                warns.append(f"{tag} — 현지어 린터 {len(notes)}건 ({textfile}{'' if a in official_accounts(ROOT) else ', 비공식 계정이라 막지 않음'}): " + summary(notes))
+        for sev, msg in check_row(ROOT, a, when, tw + ig, textfile, used):
+            (errs if sev == "block" else warns).append(f"{tag} — 분리 관문: {msg}")
         if tf.exists() and body(tf.read_text(encoding="utf-8")) in recent[a]:
             weak = label.get(a) in WEAK or (info or {}).get("state") == "rest"
             msg = f"{tag} — 최근 나간 본문과 같다 ({textfile})"
