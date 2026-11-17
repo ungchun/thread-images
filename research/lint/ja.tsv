@@ -1,0 +1,23 @@
+# severity	kind	pattern(정규식, 대소문자 구분·여러 줄)	hint	출처. kind가 emoji(임계 개수)·length(가중 글자 한도)·count(패턴 2회 이상)면 pattern 칸이 그 매개값. 오너가 이 파일만 고쳐도 된다
+block	punct	~	반각 물결표. 일본어 글에서는 全角 「〜」를 쓴다	jp-localization.md ② (c) 半角/全角
+block	punct	[!！]{2,}	「!!」「！！」 금지. 「！」는 한 글에 1개	jp-localization.md ② (c) 「！」
+block	kana	[｡-ﾟ]	半角カナ 금지 (全角カナ로)	jp-localization.md ② (c) 半角/全角
+block	date	(?<![\d/.])\d{1,2}/\d{1,2}(?![\d/])	曜日 없는 날짜. 「12/1(火)」, 祝日은 「1/11(月・祝)」, 범위는 「〜」(마지막 날짜에 曜日)	jp-localization.md ② (c) 날짜
+warn	date	\d{1,2}月\d{1,2}日(?!\s*[（(][月火水木金土日])	曜日 없는 날짜는 쓰지 않는 규칙 (月日 표기)	jp-localization.md ② (c) 날짜
+warn	date	(?<![\d.])(?:1[0-2]|[1-9])\.(?:3[01]|[12]?\d)(?![\d.])	점 표기 날짜(12.1)는 한국어 습관. 점 표기는 이미지 장식에만 (버전 번호 오탐 가능)	jp-localization.md ② (a) 한국어 습관
+warn	emoji	2	이모지 0~1개, 줄 끝에만, 기본은 ☁️. 연발 금지	jp-localization.md ② (c) 이모지
+warn	count	！	「！」는 한 글에 1개	jp-localization.md ② (c) 「！」
+warn	punct	(?<![!])!(?![!])|(?<!\?)\?	반각 !? 는 全角 ！？ 로 (기호는 全角)	jp-localization.md ② (c) 半角/全角
+warn	punct	[“”]	“ ” 금지. 「」를 쓴다	jp-localization.md ② (c) 半角/全角
+warn	punct	\^\^|\.\.\.|[ㄱ-ㅣ]	한국어 습관(^^ ... ㅠ). 「…」로	jp-localization.md ② (a) 한국어 습관
+warn	punct	(?:[^、。\n]*、){3}	「、」는 한 문장에 2개 이하 (おじさん構文)	jp-localization.md ② (c) 句読点
+warn	spacing	[ぁ-んァ-ヶ一-龠ー][ 　]+[A-Za-z0-9]|[A-Za-z0-9][ 　]+[ぁ-んァ-ヶ一-龠ー]	일본어와 영숫자 사이 공백은 넣지 않는 쪽으로 통일	jp-localization.md ② (c) 半角/全角
+warn	length	280	3줄 이하·140자 이하 (全角 1자=2, 한도 280)	jp-localization.md ② (c) 길이
+warn	tone	あなた	번역체·AI체	jp-localization.md ② (a)
+warn	tone	しましょう	「〜しましょう」는 번역체·AI체	jp-localization.md ② (a)
+warn	tone	アップグレード|最適化|シームレス|AIの力|することができ|いかがでしたか|ぜひチェック	번역체·AI체 금지어	jp-localization.md ② (a)
+warn	tone	弊社|私たち|僕	1인칭은 「中の人」 또는 생략. 「弊社」「私たち」「僕」는 피한다	jp-localization.md ② (c) 1인칭
+warn	tone	ひとりで|少人数|一人で作	팀 규모를 연상시키는 표현 금지 (오너 결정)	jp-localization.md ② (c) 1인칭
+warn	free	無料(?!・アプリ内購入)	「無料」 단독 사용 금지 (스토어 표시는 「無料・アプリ内購入」). 待受는 「アプリなしで使えます」	jp-localization.md ⑥ (c) 無料
+warn	free	自動で課金されません|1分でかんたん	「自動で課金されません」은 앱 체험에만 맞는 말(有利誤認), 「1分でかんたん」은 금지	jp-localization.md ⑥ (c)
+warn	mixed	[가-힣]	일본어 글 안의 한글	jp-localization.md ② (a) 한국어 습관

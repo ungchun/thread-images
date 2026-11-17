@@ -1,0 +1,61 @@
+# severity	kind	pattern(정규식, 대소문자 구분·여러 줄)	hint	출처. kind가 emoji(임계 개수)·length(가중 글자 한도)·count(패턴 2회 이상)면 pattern 칸이 그 매개값. 오너가 이 파일만 고쳐도 된다
+block	punct	[一-鿿][,!?:;]|[一-鿿]\.(?!\.)	반각 문장부호가 한자 바로 뒤. 全形 ，。！？：； 를 쓴다	tw-localization.md 0-6 기호
+warn	punct	\.{3}|…{1,2}(?!…)	말줄임표는 ⋯⋯ (아래 붙음)	tw-localization.md 0-6 기호
+warn	punct	[“”]|——	“”→「」, 「——」 남발 금지	tw-localization.md 0-6 기호
+block	punct	・	일본식 中點. 「·」 또는 띄어쓰기	tw-localization.md 0-6 기호
+block	interj	哦	「哦」 금지 → 「喔」	tw-localization.md ② (c), 0-6 SNS
+block	ad	沒業配	「沒業配」 금지	tw-localization.md ② (c)
+block	emoji	3	이모지 3개 이상 (터진 대만 글은 이모지 0)	tw-localization.md ② (a), 0-5 ⑤
+warn	emoji	1	이모지 1개 이상 (✨💕 등 한국식 이모지 남발)	tw-localization.md ② (a)
+warn	count	真的	「真的」 3줄에 2번 반복 (한국어 직역 티)	tw-localization.md ② (a)
+warn	count	XD	XD는 한 글에 1번	tw-localization.md ② (c)
+warn	tone	一站式|全方位|讓你的每一天|更快速、更簡單、更聰明|如果你是 ?iPhone 用戶	AI·광고·한국어 직역 티	tw-localization.md ② (a)
+warn	tone	劃時代|最強|訪華	판매 문구(PTT 噓), 「訪華」 금지는 「來台」	tw-localization.md ② (a), ① (c)
+warn	tone	[ㄅㄆㄇㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒ]	注音文은 브랜드상 쓰지 않음(Dcard 女孩板 1개까지)	tw-localization.md ② (c)
+block	mainland	視頻	大陸用語 「視頻」→「影片」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	屏幕	大陸用語 「屏幕」→「螢幕」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	軟件	大陸用語 「軟件」→「軟體」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	鎖屏	大陸用語 「鎖屏」→「鎖定畫面」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	壁紙	大陸用語 「壁紙」→「桌布」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	小組件	大陸用語 「小組件」→「小工具」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	快捷指令	大陸用語 「快捷指令」→「捷徑」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	設置	大陸用語 「設置」→「設定」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	默認	大陸用語 「默認」→「預設」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	登錄	大陸用語 「登錄」→「登入」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	賬號	大陸用語 「賬號」→「帳號」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	網絡	大陸用語 「網絡」→「網路」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	激活	大陸用語 「激活」→「啟用」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	鏈接	大陸用語 「鏈接」→「連結」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	界面	大陸用語 「界面」→「介面」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	內存	大陸用語 「內存」→「記憶體」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	日程	大陸用語 「日程」→「行程」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	日歷	大陸用語 「日歷」→「日曆」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	行事歷	大陸用語 「行事歷」→「行事曆」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	招聘	大陸用語 「招聘」→「徵才」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	營銷	大陸用語 「營銷」→「行銷」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	短信	大陸用語 「短信」→「簡訊」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	私信	大陸用語 「私信」→「私訊」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	博主	大陸用語 「博主」→「創作者」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	點贊	大陸用語 「點贊」→「按讚」	tw-localization.md 0-6 大陸用語 대조표
+block	mainland	評論區	大陸用語 「評論區」→「留言區」	tw-localization.md 0-6 大陸用語 대조표
+warn	mainland	質量	大陸用語 「質量」→「品質」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	保存	大陸用語 「保存」→「儲存」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	刷新	大陸用語 「刷新」→「重新整理」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	搜索	大陸用語 「搜索」→「搜尋」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	點擊	大陸用語 「點擊」→「點/按」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	程序	大陸用語 「程序」→「程式」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	數據	大陸用語 「數據」→「資料」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	計劃	大陸用語 「計劃」→「計畫」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	項目	大陸用語 「項目」→「專案」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	月度	大陸用語 「月度」→「每月」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	年會	大陸用語 「年會」→「尾牙」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	策劃	大陸用語 「策劃」→「企劃」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	匯報	大陸用語 「匯報」→「報告/簡報」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	關注	大陸用語 「關注」→「追蹤」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	種草	大陸用語 「種草」→「推坑」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+warn	mainland	安利	大陸用語 「安利」→「被燒到」	tw-localization.md 0-6 大陸用語 대조표 (번체권에서도 쓰이는 낱말이라 warn)
+block	mainland	周[末一二三四五六日]	週末/週一 (周→週)	tw-localization.md 0-6 일정
+block	mainland	家人們|寶子們|集美|絕絕子|yyds	대륙 SNS 말투. 쓰지 않음	tw-localization.md 0-6 SNS
+block	simplified	[这们说时会来对发为与华门见长车东书买卖头让认识应该还没过关开问间云历个爱单实现网软设记录号码体点击项计户钟议题样觉经种视频级动无创备约览邮获选师读谢请给当总将带机复价钱画压灯万业鸡乐国学]	간체 전용 글자 (번체에서 다른 글자를 쓰는 고빈도 글자). 云은 「云云」이 있으나 우리 맥락에선 구름=雲이라 block	簡體字 목록: 번체 문장에 나오지 않는 간체 전용 고빈도 글자. tw-localization.md 0-6 간자 변환 사고, 오너 지시
+block	simplified	什么|怎么|这么|那么|多么	간체 「么」 (什麼·怎麼·這麼)	簡體字 목록: 번체 문장에 나오지 않는 간체 전용 고빈도 글자. 고빈도 단어
+warn	simplified	后|(?<![公英海])里(?![程長])|[一二兩三四五六七八九十\d]只|面[條粉包]|干[嘛什麼么]	번체에서도 쓰이는 글자(皇后·公里·只·面·干)라 간체 의심 문맥만 warn: 后→後, 里→裡, 只→隻, 面→麵, 干→幹/乾	tw-localization.md 0-6 간자 변환 사고
