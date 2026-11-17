@@ -1,0 +1,52 @@
+name: refresh
+
+# 만료 전 토큰 60일 연장. 새 토큰은 값이 바뀌므로 THREADS_ACCOUNTS 전체를
+# 입력받은 공개키로 암호화해 아티팩트로만 내보낸다. 로그엔 토큰이 안 찍힌다.
+# 받은 쪽이 개인키로 풀어 gh secret set THREADS_ACCOUNTS 한다.
+on:
+  workflow_dispatch:
+    inputs:
+      accounts:
+        description: '쉼표로 구분한 계정'
+        required: true
+      pubkey:
+        description: 'RSA 공개키 PEM (base64 한 줄)'
+        required: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh and encrypt
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          ACCS: ${{ inputs.accounts }}
+          PUB: ${{ inputs.pubkey }}
+        run: |
+          umask 077
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request
+          accs = json.loads(os.environ["THREADS_ACCOUNTS"])
+          for a in os.environ["ACCS"].split(","):
+              a = a.strip()
+              q = urllib.parse.urlencode({"grant_type": "th_refresh_token", "access_token": accs[a]["token"]})
+              try:
+                  r = json.load(urllib.request.urlopen("https://graph.threads.net/refresh_access_token?" + q, timeout=20))
+                  accs[a]["token"] = r["access_token"]
+                  print(f"연장 {a} {r['expires_in'] // 86400}일")
+              except Exception as e:
+                  print(f"실패 {a} {str(e)[:60]}")
+          open("blob.json", "w").write(json.dumps(accs, ensure_ascii=False))
+          PY
+          echo "$PUB" | base64 -d > pub.pem
+          openssl rand -hex 32 > k
+          openssl enc -aes-256-cbc -pbkdf2 -salt -in blob.json -out blob.enc -pass file:k
+          openssl pkeyutl -encrypt -pubin -inkey pub.pem -pkeyopt rsa_padding_mode:oaep -in k -out k.enc
+          rm -f blob.json k
+      - uses: actions/upload-artifact@v4
+        with:
+          name: refreshed
+          path: |
+            blob.enc
+            k.enc
+          retention-days: 1
