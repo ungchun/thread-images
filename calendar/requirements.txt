@@ -1,0 +1,6 @@
+# 렌더 (render.py)
+Pillow==11.3.0
+lunar_python==1.4.9
+fonttools==4.60.2
+# 원문 재추출 (tools/extract_dgpa.py), 테스트 대조용 표는 이미 data/에 있다
+openpyxl==3.1.5

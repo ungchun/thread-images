@@ -1,0 +1,13 @@
+원문 사본 (fetched 2026-11-17). data/*.csv는 이 파일들에서 tools/ 추출기 또는 손 대조로 만들었다.
+
+cao_syukujitsu.csv       内閣府「国民の祝日について」 https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv
+                         → tools/extract_jp.py → data/jp_holidays.csv  (render.check()가 매번 다시 읽어 대조)
+dgpa_115_calendar.xlsx   行政院人事行政總處 115年(2026) 政府行政機關辦公日曆表 https://www.dgpa.gov.tw/information?uid=30&pid=12573
+dgpa_116_calendar.xlsx   同 116年(2027) https://www.dgpa.gov.tw/information?uid=30&pid=12982
+                         → tools/extract_dgpa.py → data/tw_dgpa_days.csv  (날별 放假日·공식 農曆 표기)
+dgpa_115_appendix3.pdf   115年 附表3 紀念日及節日放假日期 https://www.dgpa.gov.tw/FileConversion?filename=dgpa%2Ffiles%2F202506%2F105f965b-c3e3-49e8-9e67-dadedccb2052.pdf
+dgpa_116_appendix1.pdf   116年 附表1 放假日期 https://www.dgpa.gov.tw/FileConversion?filename=dgpa%2Ffiles%2F202605%2Fb3f2c62b-8de9-4e29-b8ea-64069be0cc2b.pdf
+dgpa_116_appendix2.pdf   116年 附表2 (2026-05판, 4/7을 「三月大」로 적은 오기 있음 — xlsx·辦公日曆表 PDF는 「三月小」)
+dgpa_116_press.txt       116年 新聞稿 본문 https://www.dgpa.gov.tw/information?pid=12983&uid=82
+                         → data/tw_holidays.csv 각 줄의 source 열
+116年辦公日曆表 PDF      https://www.dgpa.gov.tw/uploads/dgpa/files/202609/116年辦公日曆表-1.pdf (눈 대조만, 사본 없음 — 같은 내용이 xlsx)
