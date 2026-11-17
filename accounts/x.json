@@ -1,0 +1,15 @@
+{
+  "_설명": "X 계정 설정. x_run.py가 읽는다. 키는 GitHub 시크릿 <secret_prefix>_API_KEY·_API_SECRET·_ACCESS_TOKEN·_ACCESS_SECRET. link는 본문 {link} 자리에 들어가는 유일한 앱 링크(2026-10-26 오너: X에서는 ct=x_ourtrace만). state는 active/paused. 나라(언어)당 계정 하나 — research/threads_expert/x_strategy_draft.md",
+  "accounts": {
+    "x_trace_jp": {
+      "handle": "kimsangonemsjq",
+      "user_id": "2097221594406117376",
+      "country": "JP",
+      "tz": "Asia/Tokyo",
+      "state": "paused",
+      "secret_prefix": "X_JP",
+      "link": "https://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=x_ourtrace&mt=8",
+      "note": "2026-10-26 개설·키 발급. API 크레딧 $0이라 결제 수단 등록 전까지 paused. 프로필은 Trace 공식(일본)으로 정비 예정. 이름은 영어 'Trace, AI Shared Calendar' 유지(10/26 오너 결정, 인증 배지 있음) — 일본어로 바꾸지 않는다."
+    }
+  }
+}

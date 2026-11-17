@@ -31,6 +31,15 @@ jobs:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
           THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
           THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
+      # X 발행(x_schedule.txt). Threads가 실패한 회차엔 아래 commit도 안 돌아 X 발행 기록이 남지 않으니
+      # always()를 붙이지 않는다. X 실패가 commit을 막으면 안 되므로 continue-on-error.
+      - run: python3 x_run.py
+        continue-on-error: true
+        env:
+          X_JP_API_KEY: ${{ secrets.X_JP_API_KEY }}
+          X_JP_API_SECRET: ${{ secrets.X_JP_API_SECRET }}
+          X_JP_ACCESS_TOKEN: ${{ secrets.X_JP_ACCESS_TOKEN }}
+          X_JP_ACCESS_SECRET: ${{ secrets.X_JP_ACCESS_SECRET }}
       # 발행 기록(schedule.txt에서 줄 삭제)을 반드시 남긴다.
       # 푸시가 거부되면 그 줄이 살아남아 30분 뒤 회차가 같은 글을 다시 올린다.
       # 2026-09-10에 실제로 발생: 대시보드 커밋과 충돌 → 스페인·독일·이탈리아·프랑스 4건 중복 발행.
