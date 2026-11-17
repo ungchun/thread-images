@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T03:03:07.629487+00:00",
+ "generated": "2026-11-17T13:42:09.729525+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -506,7 +506,7 @@
      "21": {
       "n": 1,
       "score": 1.0,
-      "median": 146
+      "median": 147
      },
      "22": {
       "n": 1,
@@ -547,13 +547,13 @@
      "trace.planner.tw": {
       "flag": "TW",
       "posts": 1,
-      "avg": 146,
-      "max": 146,
+      "avg": 147,
+      "max": 147,
       "hours": {
        "21": {
         "n": 1,
         "score": 1.0,
-        "median": 146
+        "median": 147
        }
       },
       "best_hour": 21,
@@ -2084,7 +2084,40 @@
   }
  },
  "window_days": 30,
- "scheduled": [],
+ "scheduled": [
+  {
+   "account": "trace.planner.jp",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-12-01T10:00:00+00:00",
+   "local": "2026-12-01 19:00",
+   "text": "iPhone使ってる人、12月のロック画面これにしてみて\nスマホを見るたびに今月の予定がぜんぶ目に入るから\n忘年会もクリスマスも、もううっかり忘れない☁️\n---\ndelay: 30\nmedia: -\nこのロック画面は、iPhoneアプリ「Trace」で作れます\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_jp_trace.planner.jp&mt=8",
+   "media": [
+    "trace/cal/2612/month_jp_hand.jpg",
+    "trace/cal/2612/month_jp_lock.png",
+    "trace/cal/2612/month_jp_close.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "trace.planner.tw",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-12-02T11:00:00+00:00",
+   "local": "2026-12-02 19:00",
+   "text": "用 iPhone 的人，12 月的鎖定畫面可以試試這樣\n每次拿起手機，整個月的行程就在眼前\n交換禮物、冬至湯圓、跨年，一個都不會漏掉\n---\ndelay: 30\nmedia: -\n這個鎖定畫面用 iPhone App「Trace」就做得出來\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tw_trace.planner.tw&mt=8",
+   "media": [
+    "trace/cal/2612/month_tw_hand.jpg",
+    "trace/cal/2612/month_tw_lock.png",
+    "trace/cal/2612/month_tw_close.png"
+   ],
+   "ig": [],
+   "done": []
+  }
+ ],
  "accounts_health": {
   "appfinds_anz": {
    "n": 5,
@@ -2248,7 +2281,7 @@
    "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/De60hkzlkpc",
-   "views": 146,
+   "views": 147,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
