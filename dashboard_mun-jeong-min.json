@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T07:44:06.543244+00:00",
+ "generated": "2026-11-18T17:24:08.468902+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -443,82 +443,57 @@
    ],
    "insights": {
     "hour": {
-     "5": {
-      "n": 2,
-      "score": 0.72,
-      "median": 30
-     },
      "7": {
       "n": 1,
-      "score": 1.56,
+      "score": 1.0,
       "median": 66
      },
      "8": {
       "n": 1,
-      "score": 0.35,
-      "median": 6
-     },
-     "10": {
-      "n": 2,
-      "score": 0.22,
-      "median": 3
+      "score": 0.38,
+      "median": 8
      },
      "12": {
       "n": 1,
-      "score": 2.56,
+      "score": 1.0,
       "median": 35
-     },
-     "16": {
-      "n": 2,
-      "score": 0.82,
-      "median": 14
-     },
-     "17": {
-      "n": 4,
-      "score": 0.73,
-      "median": 44
      },
      "18": {
       "n": 1,
-      "score": 2.0,
+      "score": 1.62,
       "median": 34
      },
      "19": {
       "n": 2,
-      "score": 1.42,
+      "score": 1.0,
       "median": 58
      },
      "20": {
-      "n": 3,
-      "score": 0.11,
-      "median": 1
+      "n": 1,
+      "score": 1.0,
+      "median": 23
      },
      "21": {
       "n": 1,
       "score": 1.0,
-      "median": 147
+      "median": 148
      },
      "22": {
       "n": 1,
-      "score": 2.79,
+      "score": 1.0,
       "median": 26
      }
     },
     "wday": {
-     "월": {
-      "n": 12,
-      "score": 0.35,
-      "median": 12
-     },
      "화": {
       "n": 6,
-      "score": 2.15,
+      "score": 1.0,
       "median": 36
      },
      "수": {
       "n": 1,
-      "score": 0.35,
-      "median": 6
+      "score": 0.38,
+      "median": 8
      },
      "일": {
       "n": 2,
@@ -529,26 +504,26 @@
     "media": {
      "IMAGE": {
       "n": 6,
-      "score": 2.15,
+      "score": 1.0,
       "median": 36
      },
      "CAROUSEL_ALBUM": {
-      "n": 15,
-      "score": 0.35,
-      "median": 12
+      "n": 3,
+      "score": 1.0,
+      "median": 23
      }
     },
     "accounts": {
      "trace.planner.tw": {
       "flag": "TW",
       "posts": 1,
-      "avg": 147,
-      "max": 147,
+      "avg": 148,
+      "max": 148,
       "hours": {
        "21": {
         "n": 1,
         "score": 1.0,
-        "median": 147
+        "median": 148
        }
       },
       "best_hour": 21,
@@ -570,96 +545,15 @@
        "label": "저조"
       }
      },
-     "appfinds_my": {
-      "flag": "MY",
-      "posts": 3,
-      "avg": 69,
-      "max": 94,
-      "hours": {
-       "17": {
-        "n": 2,
-        "score": 1.23,
-        "median": 85
-       },
-       "19": {
-        "n": 1,
-        "score": 0.54,
-        "median": 37
-       }
-      },
-      "best_hour": 17,
-      "best_n": 2,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
-      "health": {
-       "n": 3,
-       "last": 37,
-       "recent": [
-        74,
-        82,
-        37
-       ],
-       "base": 74,
-       "approx": 2,
-       "multiple": 0.5,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "휴식"
-      }
-     },
-     "appfindsna9": {
-      "flag": "US",
-      "posts": 3,
-      "avg": 42,
-      "max": 66,
-      "hours": {
-       "5": {
-        "n": 2,
-        "score": 0.72,
-        "median": 30
-       },
-       "7": {
-        "n": 1,
-        "score": 1.56,
-        "median": 66
-       }
-      },
-      "best_hour": 7,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 3,
-       "last": 65,
-       "recent": [
-        52,
-        9,
-        65
-       ],
-       "base": 52,
-       "approx": 2,
-       "multiple": 1.25,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "막힘"
-      }
-     },
      "appfinds_ph": {
       "flag": "PH",
-      "posts": 3,
-      "avg": 34,
+      "posts": 1,
+      "avg": 79,
       "max": 79,
       "hours": {
-       "17": {
-        "n": 2,
-        "score": 0.35,
-        "median": 12
-       },
        "19": {
         "n": 1,
-        "score": 2.3,
+        "score": 1.0,
         "median": 79
        }
       },
@@ -669,19 +563,141 @@
       "note": "중단 국가 (10/22 재정비)",
       "until": null,
       "health": {
-       "n": 3,
+       "n": 1,
        "last": 79,
        "recent": [
-        12,
-        12,
         79
        ],
-       "base": 12,
-       "approx": 2,
-       "multiple": 6.58,
-       "like_rate": 0.97,
-       "burst": 0.33,
-       "label": "막힘"
+       "base": 79,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 1.27,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
+     "appfindsna9": {
+      "flag": "US",
+      "posts": 1,
+      "avg": 66,
+      "max": 66,
+      "hours": {
+       "7": {
+        "n": 1,
+        "score": 1.0,
+        "median": 66
+       }
+      },
+      "best_hour": 7,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 1,
+       "last": 65,
+       "recent": [
+        65
+       ],
+       "base": 65,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
+     "appfinds_my": {
+      "flag": "MY",
+      "posts": 1,
+      "avg": 37,
+      "max": 37,
+      "hours": {
+       "19": {
+        "n": 1,
+        "score": 1.0,
+        "median": 37
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 1,
+       "last": 37,
+       "recent": [
+        37
+       ],
+       "base": 37,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "휴식"
+      }
+     },
+     "appfindsuk8": {
+      "flag": "GB",
+      "posts": 1,
+      "avg": 35,
+      "max": 35,
+      "hours": {
+       "12": {
+        "n": 1,
+        "score": 1.0,
+        "median": 35
+       }
+      },
+      "best_hour": 12,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 1,
+       "last": 30,
+       "recent": [
+        30
+       ],
+       "base": 30,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
+     "appfinds_anz": {
+      "flag": "AU",
+      "posts": 1,
+      "avg": 26,
+      "max": 26,
+      "hours": {
+       "22": {
+        "n": 1,
+        "score": 1.0,
+        "median": 26
+       }
+      },
+      "best_hour": 22,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 1,
+       "last": 26,
+       "recent": [
+        26
+       ],
+       "base": 26,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 3.85,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "trace.planner.jp": {
@@ -717,23 +733,18 @@
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 4,
-      "avg": 17,
+      "posts": 2,
+      "avg": 21,
       "max": 34,
       "hours": {
        "8": {
         "n": 1,
-        "score": 0.35,
-        "median": 6
-       },
-       "16": {
-        "n": 2,
-        "score": 0.82,
-        "median": 14
+        "score": 0.38,
+        "median": 8
        },
        "18": {
         "n": 1,
-        "score": 2.0,
+        "score": 1.62,
         "median": 34
        }
       },
@@ -743,95 +754,17 @@
       "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
-       "n": 3,
+       "n": 1,
        "last": 32,
        "recent": [
-        12,
-        13,
         32
        ],
-       "base": 13,
-       "approx": 2,
-       "multiple": 2.46,
+       "base": 32,
+       "approx": 0,
+       "multiple": 1.0,
        "like_rate": 0.0,
-       "burst": 0.33,
-       "label": "막힘"
-      }
-     },
-     "appfindsuk8": {
-      "flag": "GB",
-      "posts": 3,
-      "avg": 13,
-      "max": 35,
-      "hours": {
-       "10": {
-        "n": 2,
-        "score": 0.22,
-        "median": 3
-       },
-       "12": {
-        "n": 1,
-        "score": 2.56,
-        "median": 35
-       }
-      },
-      "best_hour": 12,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 3,
-       "last": 30,
-       "recent": [
-        2,
-        2,
-        30
-       ],
-       "base": 2,
-       "approx": 2,
-       "multiple": 15.0,
-       "like_rate": 0.0,
-       "burst": 0.33,
-       "label": "막힘"
-      }
-     },
-     "appfinds_anz": {
-      "flag": "AU",
-      "posts": 3,
-      "avg": 9,
-      "max": 26,
-      "hours": {
-       "20": {
-        "n": 2,
-        "score": 0.11,
-        "median": 1
-       },
-       "22": {
-        "n": 1,
-        "score": 2.79,
-        "median": 26
-       }
-      },
-      "best_hour": 22,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 3,
-       "last": 26,
-       "recent": [
-        1,
-        1,
-        26
-       ],
-       "base": 1,
-       "approx": 2,
-       "multiple": 26.0,
-       "like_rate": 3.57,
-       "burst": 0.33,
-       "label": "막힘"
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "03ines.mar_": {
@@ -2090,50 +2023,44 @@
  ],
  "accounts_health": {
   "appfinds_anz": {
-   "n": 3,
+   "n": 1,
    "last": 26,
    "recent": [
-    1,
-    1,
     26
    ],
-   "base": 1,
-   "approx": 2,
-   "multiple": 26.0,
-   "like_rate": 3.57,
-   "burst": 0.33,
-   "label": "막힘",
+   "base": 26,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 3.85,
+   "burst": 0.0,
+   "label": "저조",
    "state": "paused",
    "until": null
   },
   "appfinds_id": {
-   "n": 3,
+   "n": 1,
    "last": 32,
    "recent": [
-    12,
-    13,
     32
    ],
-   "base": 13,
-   "approx": 2,
-   "multiple": 2.46,
+   "base": 32,
+   "approx": 0,
+   "multiple": 1.0,
    "like_rate": 0.0,
-   "burst": 0.33,
-   "label": "막힘",
+   "burst": 0.0,
+   "label": "저조",
    "state": "active",
    "until": null
   },
   "appfinds_my": {
-   "n": 3,
+   "n": 1,
    "last": 37,
    "recent": [
-    74,
-    82,
     37
    ],
-   "base": 74,
-   "approx": 2,
-   "multiple": 0.5,
+   "base": 37,
+   "approx": 0,
+   "multiple": 1.0,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "휴식",
@@ -2141,53 +2068,47 @@
    "until": "2026-11-05"
   },
   "appfinds_ph": {
-   "n": 3,
+   "n": 1,
    "last": 79,
    "recent": [
-    12,
-    12,
     79
    ],
-   "base": 12,
-   "approx": 2,
-   "multiple": 6.58,
-   "like_rate": 0.97,
-   "burst": 0.33,
-   "label": "막힘",
+   "base": 79,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 1.27,
+   "burst": 0.0,
+   "label": "저조",
    "state": "paused",
    "until": null
   },
   "appfindsna9": {
-   "n": 3,
+   "n": 1,
    "last": 65,
    "recent": [
-    52,
-    9,
     65
    ],
-   "base": 52,
-   "approx": 2,
-   "multiple": 1.25,
+   "base": 65,
+   "approx": 0,
+   "multiple": 1.0,
    "like_rate": 0.0,
    "burst": 0.0,
-   "label": "막힘",
+   "label": "저조",
    "state": "paused",
    "until": null
   },
   "appfindsuk8": {
-   "n": 3,
+   "n": 1,
    "last": 30,
    "recent": [
-    2,
-    2,
     30
    ],
-   "base": 2,
-   "approx": 2,
-   "multiple": 15.0,
+   "base": 30,
+   "approx": 0,
+   "multiple": 1.0,
    "like_rate": 0.0,
-   "burst": 0.33,
-   "label": "막힘",
+   "burst": 0.0,
+   "label": "저조",
    "state": "paused",
    "until": null
   },
@@ -2224,13 +2145,6 @@
  },
  "proposals": [
   {
-   "account": "appfinds_id",
-   "from": "active",
-   "to": "rest",
-   "until": "2026-12-02",
-   "reason": "48시간 조회수 100 미만 3회 연속 (12, 13, 32)"
-  },
-  {
    "account": "appfinds_my",
    "from": "rest",
    "to": "rest",
@@ -2252,7 +2166,7 @@
    "text": "Cari kafe Jakarta sampai kebanyakan tab?\n\nContoh lokal Trace: bandingkan info resmi Tanamera dan Fore Coffee, lalu masukkan pilihanmu ke jadwal pribadi.\nKamu cek lokasi atau profil tempatnya dulu?",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/Df3WRaUGqru",
-   "views": 6,
+   "views": 8,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2274,7 +2188,7 @@
    "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/De60hkzlkpc",
-   "views": 147,
+   "views": 148,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2346,7 +2260,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 2,
    "round": null,
    "variant": null
   },
@@ -2435,270 +2349,6 @@
    "quotes": 0,
    "shares": 0,
    "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18150724102550671",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-19T09:32:54+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 17:32",
-   "text": "Bago mag-log off, may invoice pang kailangang ipadala.\n\nSa Trace, puwedeng lagyan ng due date at oras ang task: 27 Oct, 5 PM.\nIsang malinaw na deadline para sa “Send the invoice”.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/Deq8cgqCf8A",
-   "views": 12,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18131676595812642",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-19T09:32:20+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 16:32",
-   "text": "Balas atasan dulu. Rencana liburan nanti.\n\nDi Matrix Trace, tugas bisa dipisah menurut penting dan mendesaknya. Kamu pilih sendiri kotaknya.\nContoh di gambar: “Reply to manager” dan “Plan next year’s trip”.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/Deq8YQiibZS",
-   "views": 14,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18145185481648316",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-19T09:31:43+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 17:31",
-   "text": "Sebelum masuk kelas: Matematik 5A pukul 8, Sains 5B pukul 9.30, mesyuarat pukul 2.\nTugasan semak buku pun ada di sebelah jadual.\n\nContoh Lock Screen Trace untuk hari Isnin, 26 Oktober.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_my/post/Deq8TyeiRzd",
-   "views": 94,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18103035347280476",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-19T09:31:04+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 20:31",
-   "text": "Two plans, one message.\n\n“Monday 26 October 2026: Team check-in 10:00–11:00. Pick up parcel 14:00–14:15. Remind me 15 minutes before both.”\n\nTrace prepares two event cards. Check the dates, times and reminders before saving.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_anz/post/Deq8PJviaCS",
-   "views": 1,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18038539451654281",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-19T09:30:31+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 10:30",
-   "text": "Two plans, one message.\n\n“Monday 26 October 2026: Team check-in 10:00–11:00. Pick up parcel 14:00–14:15. Remind me 15 minutes before both.”\n\nTrace prepares two event cards. Check the dates, times and reminders before saving.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsuk8/post/Deq8LaQCdU-",
-   "views": 3,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18151457404538913",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-19T09:30:01+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 05:30",
-   "text": "Two plans, one message.\n\n“Monday 26 October 2026: Team check-in 10:00–11:00. Pick up parcel 14:00–14:15. Remind me 15 minutes before both.”\n\nTrace prepares two event cards. Check the dates, times and reminders before saving.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsna9/post/Deq8HZHieqA",
-   "views": 9,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18134654671786735",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-19T09:29:25+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 17:29",
-   "text": "pov: may work meeting ka, may parcel ka pang kukunin.\nNasa iisang Lock Screen na ang schedule at to-dos.\n\nTrace demo: 26 Oct, 10am check-in + 2pm parcel pick-up.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/Deq8C9fCQQ4",
-   "views": 12,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17962408200213183",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-19T09:28:52+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 16:28",
-   "text": "Tim yang males masukin jadwal satu-satu 🙋🏻‍♀️\nRapat jam 10, berangkat ke acara jam 14. Tulis dalam satu pesan, lalu cek dua kartunya di Trace.\n\nGeser untuk contoh yang bisa disalin, hasilnya, dan langkah simpan.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/Deq7-75iatC",
-   "views": 14,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18026547440921091",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-19T09:28:11+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 17:28",
-   "text": "Cikgu, satu mesej untuk dua kelas, satu mesyuarat dan satu tugasan semak buku.\n\nContoh Isnin, 26 Oktober: Matematik 5A pukul 8, Sains 5B pukul 9.30, mesyuarat pukul 2, semak buku pukul 4.\n\nSemak tarikh, masa dan jenis kad sebelum simpan dalam Trace.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_my/post/Deq754uCWOQ",
-   "views": 76,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18125226031928046",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-19T09:27:33+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 20:27",
-   "text": "Your 10am check-in. Your 2pm parcel pick-up.\nYour to-dos beside them.\nThis is Trace on your Lock Screen.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_anz/post/Deq71XGCaiI",
-   "views": 1,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18132167773780994",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-19T09:26:57+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 10:26",
-   "text": "Your 10am check-in. Your 2pm parcel pick-up.\nYour to-dos beside them.\nThis is Trace on your Lock Screen.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsuk8/post/Deq7xSVibsT",
-   "views": 3,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17941938507100147",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-19T09:26:24+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 05:26",
-   "text": "Your 10am check-in. Your 2pm parcel pick-up.\nYour to-dos beside them.\nThis is Trace on your Lock Screen.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsna9/post/Deq7syjiad4",
-   "views": 52,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 1,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
    "round": null,
    "variant": null
   }
