@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T23:42:01.678596+00:00",
+ "generated": "2026-11-18T07:44:06.543244+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -443,65 +443,55 @@
    ],
    "insights": {
     "hour": {
-     "1": {
-      "n": 2,
-      "score": 1.96,
-      "median": 75
-     },
      "5": {
       "n": 2,
-      "score": 0.54,
+      "score": 0.72,
       "median": 30
      },
      "7": {
-      "n": 3,
-      "score": 0.74,
-      "median": 12
+      "n": 1,
+      "score": 1.56,
+      "median": 66
      },
      "8": {
-      "n": 4,
-      "score": 0.87,
-      "median": 42
+      "n": 1,
+      "score": 0.35,
+      "median": 6
      },
      "10": {
       "n": 2,
-      "score": 0.08,
+      "score": 0.22,
       "median": 3
-     },
-     "11": {
-      "n": 2,
-      "score": 2.02,
-      "median": 58
      },
      "12": {
       "n": 1,
-      "score": 0.92,
+      "score": 2.56,
       "median": 35
      },
      "16": {
       "n": 2,
-      "score": 0.8,
-      "median": 13
+      "score": 0.82,
+      "median": 14
      },
      "17": {
       "n": 4,
-      "score": 0.84,
+      "score": 0.73,
       "median": 44
      },
      "18": {
       "n": 1,
-      "score": 2.04,
-      "median": 33
+      "score": 2.0,
+      "median": 34
      },
      "19": {
       "n": 2,
-      "score": 1.25,
+      "score": 1.42,
       "median": 58
      },
      "20": {
-      "n": 5,
-      "score": 1.0,
-      "median": 23
+      "n": 3,
+      "score": 0.11,
+      "median": 1
      },
      "21": {
       "n": 1,
@@ -510,37 +500,42 @@
      },
      "22": {
       "n": 1,
-      "score": 0.9,
+      "score": 2.79,
       "median": 26
      }
     },
     "wday": {
      "월": {
-      "n": 22,
-      "score": 0.77,
-      "median": 13
+      "n": 12,
+      "score": 0.35,
+      "median": 12
      },
      "화": {
       "n": 6,
-      "score": 1.04,
+      "score": 2.15,
       "median": 36
      },
+     "수": {
+      "n": 1,
+      "score": 0.35,
+      "median": 6
+     },
      "일": {
-      "n": 4,
-      "score": 1.11,
-      "median": 78
+      "n": 2,
+      "score": 1.0,
+      "median": 85
      }
     },
     "media": {
      "IMAGE": {
-      "n": 7,
-      "score": 1.17,
-      "median": 37
+      "n": 6,
+      "score": 2.15,
+      "median": 36
      },
      "CAROUSEL_ALBUM": {
-      "n": 25,
-      "score": 0.8,
-      "median": 14
+      "n": 15,
+      "score": 0.35,
+      "median": 12
      }
     },
     "accounts": {
@@ -575,68 +570,20 @@
        "label": "저조"
       }
      },
-     "appfindsna9": {
-      "flag": "US",
-      "posts": 5,
-      "avg": 56,
-      "max": 87,
-      "hours": {
-       "5": {
-        "n": 2,
-        "score": 0.54,
-        "median": 30
-       },
-       "7": {
-        "n": 1,
-        "score": 1.17,
-        "median": 66
-       },
-       "20": {
-        "n": 2,
-        "score": 1.38,
-        "median": 78
-       }
-      },
-      "best_hour": 20,
-      "best_n": 2,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 5,
-       "last": 65,
-       "recent": [
-        52,
-        9,
-        65
-       ],
-       "base": 65,
-       "approx": 4,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "막힘"
-      }
-     },
      "appfinds_my": {
       "flag": "MY",
-      "posts": 5,
-      "avg": 53,
+      "posts": 3,
+      "avg": 69,
       "max": 94,
       "hours": {
-       "8": {
-        "n": 2,
-        "score": 0.58,
-        "median": 31
-       },
        "17": {
         "n": 2,
-        "score": 1.58,
+        "score": 1.23,
         "median": 85
        },
        "19": {
         "n": 1,
-        "score": 0.69,
+        "score": 0.54,
         "median": 37
        }
       },
@@ -646,40 +593,73 @@
       "note": "",
       "until": "2026-11-05",
       "health": {
-       "n": 5,
+       "n": 3,
        "last": 37,
        "recent": [
         74,
         82,
         37
        ],
-       "base": 49,
-       "approx": 4,
-       "multiple": 0.76,
-       "like_rate": 0.39,
+       "base": 74,
+       "approx": 2,
+       "multiple": 0.5,
+       "like_rate": 0.0,
        "burst": 0.0,
        "label": "휴식"
       }
      },
+     "appfindsna9": {
+      "flag": "US",
+      "posts": 3,
+      "avg": 42,
+      "max": 66,
+      "hours": {
+       "5": {
+        "n": 2,
+        "score": 0.72,
+        "median": 30
+       },
+       "7": {
+        "n": 1,
+        "score": 1.56,
+        "median": 66
+       }
+      },
+      "best_hour": 7,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 3,
+       "last": 65,
+       "recent": [
+        52,
+        9,
+        65
+       ],
+       "base": 52,
+       "approx": 2,
+       "multiple": 1.25,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "막힘"
+      }
+     },
      "appfinds_ph": {
       "flag": "PH",
-      "posts": 5,
-      "avg": 43,
+      "posts": 3,
+      "avg": 34,
       "max": 79,
       "hours": {
-       "8": {
-        "n": 2,
-        "score": 1.31,
-        "median": 57
-       },
        "17": {
         "n": 2,
-        "score": 0.28,
+        "score": 0.35,
         "median": 12
        },
        "19": {
         "n": 1,
-        "score": 1.82,
+        "score": 2.3,
         "median": 79
        }
       },
@@ -689,104 +669,18 @@
       "note": "중단 국가 (10/22 재정비)",
       "until": null,
       "health": {
-       "n": 5,
+       "n": 3,
        "last": 79,
        "recent": [
         12,
         12,
         79
        ],
-       "base": 36,
-       "approx": 4,
-       "multiple": 2.19,
-       "like_rate": 0.47,
-       "burst": 0.4,
-       "label": "막힘"
-      }
-     },
-     "appfindsuk8": {
-      "flag": "GB",
-      "posts": 5,
-      "avg": 38,
-      "max": 136,
-      "hours": {
-       "1": {
-        "n": 2,
-        "score": 1.96,
-        "median": 75
-       },
-       "10": {
-        "n": 2,
-        "score": 0.08,
-        "median": 3
-       },
-       "12": {
-        "n": 1,
-        "score": 0.92,
-        "median": 35
-       }
-      },
-      "best_hour": 1,
-      "best_n": 2,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 5,
-       "last": 30,
-       "recent": [
-        2,
-        2,
-        30
-       ],
-       "base": 13,
-       "approx": 4,
-       "multiple": 2.31,
-       "like_rate": 0.0,
-       "burst": 0.4,
-       "label": "막힘"
-      }
-     },
-     "appfinds_anz": {
-      "flag": "AU",
-      "posts": 5,
-      "avg": 29,
-      "max": 85,
-      "hours": {
-       "11": {
-        "n": 2,
-        "score": 2.02,
-        "median": 58
-       },
-       "20": {
-        "n": 2,
-        "score": 0.03,
-        "median": 1
-       },
-       "22": {
-        "n": 1,
-        "score": 0.9,
-        "median": 26
-       }
-      },
-      "best_hour": 11,
-      "best_n": 2,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 5,
-       "last": 26,
-       "recent": [
-        1,
-        1,
-        26
-       ],
-       "base": 26,
-       "approx": 4,
-       "multiple": 1.0,
-       "like_rate": 0.69,
-       "burst": 0.2,
+       "base": 12,
+       "approx": 2,
+       "multiple": 6.58,
+       "like_rate": 0.97,
+       "burst": 0.33,
        "label": "막힘"
       }
      },
@@ -823,45 +717,121 @@
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 5,
-      "avg": 16,
-      "max": 33,
+      "posts": 4,
+      "avg": 17,
+      "max": 34,
       "hours": {
-       "7": {
-        "n": 2,
-        "score": 0.68,
-        "median": 11
+       "8": {
+        "n": 1,
+        "score": 0.35,
+        "median": 6
        },
        "16": {
         "n": 2,
-        "score": 0.8,
-        "median": 13
+        "score": 0.82,
+        "median": 14
        },
        "18": {
         "n": 1,
-        "score": 2.04,
-        "median": 33
+        "score": 2.0,
+        "median": 34
        }
       },
       "best_hour": 18,
       "best_n": 1,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
+      "until": null,
       "health": {
-       "n": 5,
+       "n": 3,
        "last": 32,
        "recent": [
         12,
         13,
         32
        ],
-       "base": 12,
-       "approx": 4,
-       "multiple": 2.67,
+       "base": 13,
+       "approx": 2,
+       "multiple": 2.46,
        "like_rate": 0.0,
-       "burst": 0.2,
-       "label": "휴식"
+       "burst": 0.33,
+       "label": "막힘"
+      }
+     },
+     "appfindsuk8": {
+      "flag": "GB",
+      "posts": 3,
+      "avg": 13,
+      "max": 35,
+      "hours": {
+       "10": {
+        "n": 2,
+        "score": 0.22,
+        "median": 3
+       },
+       "12": {
+        "n": 1,
+        "score": 2.56,
+        "median": 35
+       }
+      },
+      "best_hour": 12,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 3,
+       "last": 30,
+       "recent": [
+        2,
+        2,
+        30
+       ],
+       "base": 2,
+       "approx": 2,
+       "multiple": 15.0,
+       "like_rate": 0.0,
+       "burst": 0.33,
+       "label": "막힘"
+      }
+     },
+     "appfinds_anz": {
+      "flag": "AU",
+      "posts": 3,
+      "avg": 9,
+      "max": 26,
+      "hours": {
+       "20": {
+        "n": 2,
+        "score": 0.11,
+        "median": 1
+       },
+       "22": {
+        "n": 1,
+        "score": 2.79,
+        "median": 26
+       }
+      },
+      "best_hour": 22,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 3,
+       "last": 26,
+       "recent": [
+        1,
+        1,
+        26
+       ],
+       "base": 1,
+       "approx": 2,
+       "multiple": 26.0,
+       "like_rate": 3.57,
+       "burst": 0.33,
+       "label": "막힘"
       }
      },
      "03ines.mar_": {
@@ -1176,8 +1146,8 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -2120,84 +2090,84 @@
  ],
  "accounts_health": {
   "appfinds_anz": {
-   "n": 5,
+   "n": 3,
    "last": 26,
    "recent": [
     1,
     1,
     26
    ],
-   "base": 26,
-   "approx": 4,
-   "multiple": 1.0,
-   "like_rate": 0.69,
-   "burst": 0.2,
+   "base": 1,
+   "approx": 2,
+   "multiple": 26.0,
+   "like_rate": 3.57,
+   "burst": 0.33,
    "label": "막힘",
    "state": "paused",
    "until": null
   },
   "appfinds_id": {
-   "n": 5,
+   "n": 3,
    "last": 32,
    "recent": [
     12,
     13,
     32
    ],
-   "base": 12,
-   "approx": 4,
-   "multiple": 2.67,
+   "base": 13,
+   "approx": 2,
+   "multiple": 2.46,
    "like_rate": 0.0,
-   "burst": 0.2,
-   "label": "휴식",
-   "state": "rest",
-   "until": "2026-11-05"
+   "burst": 0.33,
+   "label": "막힘",
+   "state": "active",
+   "until": null
   },
   "appfinds_my": {
-   "n": 5,
+   "n": 3,
    "last": 37,
    "recent": [
     74,
     82,
     37
    ],
-   "base": 49,
-   "approx": 4,
-   "multiple": 0.76,
-   "like_rate": 0.39,
+   "base": 74,
+   "approx": 2,
+   "multiple": 0.5,
+   "like_rate": 0.0,
    "burst": 0.0,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
   },
   "appfinds_ph": {
-   "n": 5,
+   "n": 3,
    "last": 79,
    "recent": [
     12,
     12,
     79
    ],
-   "base": 36,
-   "approx": 4,
-   "multiple": 2.19,
-   "like_rate": 0.47,
-   "burst": 0.4,
+   "base": 12,
+   "approx": 2,
+   "multiple": 6.58,
+   "like_rate": 0.97,
+   "burst": 0.33,
    "label": "막힘",
    "state": "paused",
    "until": null
   },
   "appfindsna9": {
-   "n": 5,
+   "n": 3,
    "last": 65,
    "recent": [
     52,
     9,
     65
    ],
-   "base": 65,
-   "approx": 4,
-   "multiple": 1.0,
+   "base": 52,
+   "approx": 2,
+   "multiple": 1.25,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "막힘",
@@ -2205,18 +2175,18 @@
    "until": null
   },
   "appfindsuk8": {
-   "n": 5,
+   "n": 3,
    "last": 30,
    "recent": [
     2,
     2,
     30
    ],
-   "base": 13,
-   "approx": 4,
-   "multiple": 2.31,
+   "base": 2,
+   "approx": 2,
+   "multiple": 15.0,
    "like_rate": 0.0,
-   "burst": 0.4,
+   "burst": 0.33,
    "label": "막힘",
    "state": "paused",
    "until": null
@@ -2255,9 +2225,10 @@
  "proposals": [
   {
    "account": "appfinds_id",
-   "from": "rest",
+   "from": "active",
    "to": "rest",
-   "reason": "복귀 테스트 예약 필요 — 2026-11-05 휴식 끝, 올라간 글도 예약도 없음"
+   "until": "2026-12-02",
+   "reason": "48시간 조회수 100 미만 3회 연속 (12, 13, 32)"
   },
   {
    "account": "appfinds_my",
@@ -2269,6 +2240,28 @@
  "violations": [],
  "hits": [],
  "posts": [
+  {
+   "id": "18093873074236611",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-18T01:40:48+00:00",
+   "date": "2026-11-18",
+   "local": "11/18 08:40",
+   "text": "Cari kafe Jakarta sampai kebanyakan tab?\n\nContoh lokal Trace: bandingkan info resmi Tanamera dan Fore Coffee, lalu masukkan pilihanmu ke jadwal pribadi.\nKamu cek lokasi atau profil tempatnya dulu?",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/Df3WRaUGqru",
+   "views": 6,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18112639627887773",
    "account": "trace.planner.tw",
@@ -2325,7 +2318,7 @@
    "text": "Niatnya cuma cek jam,\nmalah sekalian keinget jadwal hari ini 🥹\n\nWallpaper tetap gemas.\nAgenda hari ini + kalender sebulan, langsung kelihatan di lock screen.",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@appfinds_id/post/DetryC1iXJu",
-   "views": 33,
+   "views": 34,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2441,7 +2434,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2479,7 +2472,7 @@
    "text": "Balas atasan dulu. Rencana liburan nanti.\n\nDi Matrix Trace, tugas bisa dipisah menurut penting dan mendesaknya. Kamu pilih sendiri kotaknya.\nContoh di gambar: “Reply to manager” dan “Plan next year’s trip”.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/Deq8YQiibZS",
-   "views": 13,
+   "views": 14,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2611,7 +2604,7 @@
    "text": "Tim yang males masukin jadwal satu-satu 🙋🏻‍♀️\nRapat jam 10, berangkat ke acara jam 14. Tulis dalam satu pesan, lalu cek dua kartunya di Trace.\n\nGeser untuk contoh yang bisa disalin, hasilnya, dan langkah simpan.",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/Deq7-75iatC",
-   "views": 13,
+   "views": 14,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2703,270 +2696,6 @@
    "likes": 0,
    "replies": 1,
    "reposts": 1,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18354863446222618",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-19T00:52:34+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 08:52",
-   "text": "What if your plans were right there on your Lock Screen?\nMeet Trace — calendar + to-dos for iPhone.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/DeqA5VHCdKZ",
-   "views": 78,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18124858373314401",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-19T00:51:58+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 08:51",
-   "text": "pov: you finally decide to get your week together",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_ph/post/DeqA1U8iZqP",
-   "views": 36,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18642833077049811",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-19T00:51:15+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 07:51",
-   "text": "Tim to-do list-nya panjang banget 🙋🏻‍♀️\nDi Trace, pisahin yang penting dan yang mendesak dulu.\nBiar nggak semua kelihatan harus dikerjain sekarang 🥹✨",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/DeqAvsAieV4",
-   "views": 12,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18243196111315692",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-19T00:50:44+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 07:50",
-   "text": "Tim males masukin jadwal satu-satu 🙋🏻‍♀️\nTulis di Trace → cek tanggal & jam → simpan 🥹✨\nKuliah, kerja, ngonten. Satu tempat.",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_id/post/DeqAsBOCcsn",
-   "views": 10,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17888806659478557",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-19T00:50:02+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 08:50",
-   "text": "Hujung tahun ni banyak kan benda nak kena ingat 😭\nKelas, mesyuarat, deadline… letak dulu dalam Trace.\nJadual dengan to-do, satu tempat 🤗",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_my/post/DeqAm71CUG3",
-   "views": 13,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18090351938246586",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-19T00:49:30+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 08:49",
-   "text": "Dah tak payah masukkan jadual satu-satu dah cikgu!\nTulis je dalam Trace, semak kad, lepas tu simpan 🤗",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_my/post/DeqAjVJiSBk",
-   "views": 49,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18074233556743331",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-19T00:48:56+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 11:48",
-   "text": "a little space on your lock screen for everyday plans 🌿",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfinds_anz/post/DeqAfCSiQBg",
-   "views": 32,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18111755288123399",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-19T00:48:28+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 11:48",
-   "text": "4 little views for a calmer week 🌿",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_anz/post/DeqAbayCRuR",
-   "views": 85,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18057617762571121",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-19T00:48:04+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 01:48",
-   "text": "Here’s a planner for your everyday chaos",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsuk8/post/DeqAYhKiW9L",
-   "views": 136,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18188047390416796",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-19T00:46:37+00:00",
-   "date": "2026-10-19",
-   "local": "10/19 01:46",
-   "text": "a little planner find ✨🫶🏻",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsuk8/post/DeqANr7iZDQ",
-   "views": 14,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18102457688368549",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-19T00:45:52+00:00",
-   "date": "2026-10-18",
-   "local": "10/18 20:45",
-   "text": "hey iPhone users\nyour plans and to-dos\nright where you already look",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsna9/post/DeqAIKxgeXb",
-   "views": 87,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17976528132173523",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-19T00:45:13+00:00",
-   "date": "2026-10-18",
-   "local": "10/18 20:45",
-   "text": "hey iPhone users\nput your plans on your lock screen\nsee what’s next without opening your calendar",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@appfindsna9/post/DeqADmCAbAU",
-   "views": 69,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
    "quotes": 0,
    "shares": 0,
    "clicks": 0,

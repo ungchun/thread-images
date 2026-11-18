@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T23:37:17.562055+00:00",
+ "generated": "2026-11-18T07:42:22.182872+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -335,9 +335,9 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 1,
-     "views": 32693,
+     "views": 32701,
      "likes": 4,
-     "median": 32693,
+     "median": 32701,
      "score": 2.3,
      "sample": 1,
      "er_score": 1.0,
@@ -345,7 +345,7 @@
      "variants": {
       "새API": {
        "posts": 1,
-       "median": 32693,
+       "median": 32701,
        "score": 2.3,
        "sample": 1,
        "er_score": 1.0,
@@ -454,8 +454,8 @@
     "hour": {
      "2": {
       "n": 1,
-      "score": 0.99,
-      "median": 117
+      "score": 1.35,
+      "median": 118
      },
      "5": {
       "n": 1,
@@ -490,7 +490,7 @@
      "16": {
       "n": 2,
       "score": 1.06,
-      "median": 7215
+      "median": 7216
      },
      "17": {
       "n": 1,
@@ -498,13 +498,13 @@
       "median": 5
      },
      "18": {
-      "n": 2,
-      "score": 0.94,
-      "median": 139
+      "n": 3,
+      "score": 0.89,
+      "median": 65
      },
      "19": {
       "n": 6,
-      "score": 1.0,
+      "score": 1.15,
       "median": 228
      },
      "20": {
@@ -524,9 +524,14 @@
       "score": 1.0,
       "median": 31
      },
+     "화": {
+      "n": 1,
+      "score": 0.29,
+      "median": 25
+     },
      "수": {
       "n": 6,
-      "score": 1.0,
+      "score": 1.08,
       "median": 178
      },
      "목": {
@@ -537,27 +542,27 @@
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 25,
+      "n": 26,
       "score": 1.0,
-      "median": 117
+      "median": 102
      }
     },
     "accounts": {
      "pim.pm_02": {
       "flag": "TH",
       "posts": 3,
-      "avg": 15949,
-      "max": 32693,
+      "avg": 15953,
+      "max": 32701,
       "hours": {
        "16": {
         "n": 1,
         "score": 0.89,
-        "median": 14199
+        "median": 14201
        },
        "19": {
         "n": 2,
         "score": 1.05,
-        "median": 16825
+        "median": 16830
        }
       },
       "best_hour": 19,
@@ -736,25 +741,30 @@
      },
      "ivy_.k09": {
       "flag": "US",
-      "posts": 2,
-      "avg": 118,
-      "max": 119,
+      "posts": 3,
+      "avg": 87,
+      "max": 120,
       "hours": {
        "2": {
         "n": 1,
-        "score": 0.99,
-        "median": 117
+        "score": 1.35,
+        "median": 118
+       },
+       "18": {
+        "n": 1,
+        "score": 0.29,
+        "median": 25
        },
        "19": {
         "n": 1,
-        "score": 1.01,
-        "median": 119
+        "score": 1.37,
+        "median": 120
        }
       },
       "best_hour": 19,
       "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
        "n": 2,
@@ -1185,12 +1195,12 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
+      "until": null,
       "health": {
        "n": 0,
-       "label": "휴식"
+       "label": ""
       }
      },
      "appfinds_my": {
@@ -2368,7 +2378,7 @@
    "like_rate": 0.85,
    "burst": 0.0,
    "label": "저조",
-   "state": "paused",
+   "state": "active",
    "until": null
   },
   "kai_.03b": {
@@ -2543,6 +2553,28 @@
  "hits": [],
  "posts": [
   {
+   "id": "18195109798405607",
+   "account": "ivy_.k09",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-18T02:02:00+00:00",
+   "date": "2026-11-17",
+   "local": "11/17 18:02",
+   "text": "If your plans keep changing,\ntry talking to your calendar.\n\nAdd yoga and a meeting in one message.\nThen: “Move the dentist appointment to 5.”\nWhich is more annoying—adding plans or changing them?",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@ivy_.k09/post/Df3Yr8Fjl4_",
+   "views": 25,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18025562819925433",
    "account": "haru._81a",
    "project": "trace",
@@ -2620,13 +2652,13 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Dey_RiJlN-O",
-   "views": 32693,
+   "views": 32701,
    "likes": 4,
    "replies": 3,
    "reposts": 3,
    "quotes": 0,
    "shares": 2,
-   "clicks": 53,
+   "clicks": 54,
    "round": "t15a",
    "variant": "새API"
   },
@@ -2642,7 +2674,7 @@
    "text": "only changed this one thing on my iPhone\nand now people keep saying i'm a different person",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ivy_.k09/post/Dex3ON3myIf",
-   "views": 119,
+   "views": 120,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2686,7 +2718,7 @@
    "text": "แค่เปลี่ยนอันนี้อันเดียวใน iPhone\nช่วงนี้มีแต่คนทักว่าเหมือนเป็นคนละคน",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DewXMYUFvfC",
-   "views": 957,
+   "views": 959,
    "likes": 0,
    "replies": 3,
    "reposts": 0,
@@ -2994,7 +3026,7 @@
    "text": "hey, iPhone people\nyou really need to try this!\nafter using it I genuinely stopped forgetting things",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ivy_.k09/post/Deq7EdKERve",
-   "views": 117,
+   "views": 118,
    "likes": 2,
    "replies": 3,
    "reposts": 0,
@@ -3038,7 +3070,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Deq6mNVD6-Z",
-   "views": 14199,
+   "views": 14201,
    "likes": 36,
    "replies": 1,
    "reposts": 9,
@@ -3146,7 +3178,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Tuesday, 17-Nov-26 15:35:03 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AOS74gtMcNJxL_cAYuy97MT\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Tuesday, 17-Nov-26 23:41:16 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AEQSKLZ7oePunaGDHWSw_yC\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
