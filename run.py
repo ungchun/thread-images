@@ -372,6 +372,8 @@ def main():
 
         body, _, inline = (ROOT / textfile).read_text(encoding="utf-8").partition("\n---\n")
         body, inline = body.strip(), inline.strip()
+        no_reply = inline == "noreply"   # 바이럴 글: 계정 고정 답글(트레이스 링크)도 달지 않는다
+        inline = "" if no_reply else inline
         # 답글 블록 첫 줄 "delay: 60"이면 답글을 본문 60분 뒤(그 직전 회차)에 단다. 없으면 다음 회차
         delay = REPLY_DELAY_MIN
         if inline.startswith("delay:"):
@@ -429,7 +431,7 @@ def main():
             if missing:
                 print(f"SKIP {account} {name}: 이미지 없음 {missing}", flush=True)
                 continue
-            reply = inline or fixed_reply(account, plat)
+            reply = None if no_reply else (inline or fixed_reply(account, plat))
             # Threads 답글은 본문과 같이 달지 않고 다음 회차(약 30분 뒤)에 단다.
             # 시각을 25분 뒤로 당겨 두면 아래 '답글만 다시 민다' 경로가 다음 회차에 집어간다.
             defer = bool(reply) and not is_ig
