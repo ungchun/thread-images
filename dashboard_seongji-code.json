@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T01:57:43.753096+00:00",
+ "generated": "2026-11-19T13:31:25.032748+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -445,144 +445,149 @@
     "hour": {
      "7": {
       "n": 1,
-      "score": 0.32,
-      "median": 126
+      "score": 0.21,
+      "median": 133
      },
      "8": {
       "n": 4,
-      "score": 0.81,
-      "median": 226
+      "score": 0.65,
+      "median": 230
      },
      "9": {
       "n": 3,
-      "score": 0.41,
+      "score": 1.08,
       "median": 130
      },
      "10": {
       "n": 3,
-      "score": 0.63,
+      "score": 0.88,
       "median": 132
      },
      "11": {
-      "n": 4,
-      "score": 1.0,
-      "median": 178
+      "n": 2,
+      "score": 1.39,
+      "median": 676
      },
      "12": {
       "n": 1,
-      "score": 0.27,
-      "median": 60
+      "score": 0.25,
+      "median": 63
      },
      "13": {
       "n": 2,
-      "score": 0.56,
-      "median": 122
+      "score": 0.5,
+      "median": 124
      },
      "14": {
-      "n": 2,
-      "score": 0.17,
-      "median": 8
+      "n": 1,
+      "score": 0.2,
+      "median": 9
      },
      "15": {
-      "n": 5,
-      "score": 1.12,
-      "median": 1055
+      "n": 4,
+      "score": 1.31,
+      "median": 672
+     },
+     "16": {
+      "n": 1,
+      "score": 0.18,
+      "median": 45
      },
      "17": {
-      "n": 3,
-      "score": 0.68,
-      "median": 269
+      "n": 2,
+      "score": 0.23,
+      "median": 154
      },
      "18": {
-      "n": 5,
-      "score": 0.4,
-      "median": 72
+      "n": 3,
+      "score": 0.3,
+      "median": 75
      },
      "19": {
-      "n": 5,
-      "score": 0.53,
-      "median": 194
+      "n": 4,
+      "score": 0.54,
+      "median": 310
      },
      "20": {
-      "n": 9,
+      "n": 7,
       "score": 1.8,
       "median": 342
      },
      "21": {
-      "n": 5,
-      "score": 0.63,
-      "median": 107
+      "n": 4,
+      "score": 0.53,
+      "median": 270
      }
     },
     "wday": {
      "월": {
       "n": 1,
-      "score": 0.68,
-      "median": 269
+      "score": 0.45,
+      "median": 286
      },
      "화": {
-      "n": 19,
-      "score": 1.12,
-      "median": 115
+      "n": 7,
+      "score": 1.8,
+      "median": 79
      },
      "수": {
       "n": 16,
-      "score": 0.95,
-      "median": 288
+      "score": 0.9,
+      "median": 289
      },
      "목": {
-      "n": 7,
-      "score": 0.41,
-      "median": 149
+      "n": 9,
+      "score": 0.3,
+      "median": 120
      },
      "금": {
       "n": 1,
-      "score": 0.43,
-      "median": 168
+      "score": 0.27,
+      "median": 173
      },
      "토": {
       "n": 3,
-      "score": 0.52,
-      "median": 115
+      "score": 0.35,
+      "median": 116
      },
      "일": {
       "n": 5,
-      "score": 0.32,
-      "median": 107
+      "score": 0.21,
+      "median": 108
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 50,
-      "score": 0.63,
-      "median": 144
+      "n": 39,
+      "score": 0.56,
+      "median": 149
      },
      "TEXT_POST": {
       "n": 1,
-      "score": 0.27,
-      "median": 60
+      "score": 0.25,
+      "median": 63
      },
      "IMAGE": {
-      "n": 1,
-      "score": 0.68,
-      "median": 269
+      "n": 2,
+      "score": 0.32,
+      "median": 203
      }
     },
     "accounts": {
      "fah.pk_03": {
       "flag": "TH",
-      "posts": 4,
-      "avg": 1692,
-      "max": 4179,
+      "posts": 3,
+      "avg": 1624,
+      "max": 4184,
       "hours": {
        "15": {
-        "n": 2,
-        "score": 1.8,
-        "median": 3041
+        "n": 1,
+        "score": 2.58,
+        "median": 4184
        },
        "19": {
         "n": 1,
-        "score": 0.39,
+        "score": 0.41,
         "median": 661
        },
        "20": {
@@ -592,23 +597,23 @@
        }
       },
       "best_hour": 15,
-      "best_n": 2,
+      "best_n": 1,
       "state": "active",
       "note": "",
       "until": null,
       "health": {
-       "n": 4,
+       "n": 3,
        "last": 16,
        "recent": [
         3971,
         657,
         16
        ],
-       "base": 1268,
+       "base": 657,
        "approx": 0,
-       "multiple": 0.01,
-       "like_rate": 0.83,
-       "burst": 0.25,
+       "multiple": 0.02,
+       "like_rate": 0.9,
+       "burst": 0.33,
        "label": "정상"
       }
      },
@@ -690,205 +695,178 @@
      },
      "daily.life_gram": {
       "flag": "TW",
-      "posts": 8,
-      "avg": 393,
-      "max": 1186,
+      "posts": 9,
+      "avg": 635,
+      "max": 2292,
       "hours": {
        "7": {
         "n": 1,
-        "score": 0.32,
-        "median": 126
+        "score": 0.21,
+        "median": 133
        },
        "8": {
         "n": 2,
-        "score": 1.08,
-        "median": 425
+        "score": 1.98,
+        "median": 1257
        },
        "9": {
         "n": 1,
-        "score": 0.41,
-        "median": 163
+        "score": 1.34,
+        "median": 850
        },
        "11": {
         "n": 1,
-        "score": 3.01,
-        "median": 1186
+        "score": 1.91,
+        "median": 1216
+       },
+       "15": {
+        "n": 1,
+        "score": 0.19,
+        "median": 120
        },
        "17": {
         "n": 1,
-        "score": 0.68,
-        "median": 269
+        "score": 0.45,
+        "median": 286
        },
        "19": {
         "n": 1,
-        "score": 0.98,
-        "median": 387
+        "score": 0.67,
+        "median": 427
        },
        "20": {
         "n": 1,
-        "score": 0.43,
-        "median": 168
+        "score": 0.27,
+        "median": 173
        }
       },
-      "best_hour": 11,
-      "best_n": 1,
+      "best_hour": 8,
+      "best_n": 2,
       "state": "active",
       "note": "",
       "until": null,
       "health": {
-       "n": 4,
-       "last": 263,
+       "n": 5,
+       "last": 1216,
        "recent": [
-        211,
         112,
-        263
+        263,
+        1216
        ],
-       "base": 186,
+       "base": 211,
        "approx": 0,
-       "multiple": 1.41,
-       "like_rate": 9.91,
-       "burst": 0.0,
+       "multiple": 5.76,
+       "like_rate": 4.08,
+       "burst": 0.2,
        "label": "저조"
       }
      },
      "bea.cruz_03": {
       "flag": "PH",
-      "posts": 5,
-      "avg": 365,
+      "posts": 3,
+      "avg": 512,
       "max": 1055,
       "hours": {
        "15": {
-        "n": 3,
-        "score": 0.79,
-        "median": 289
+        "n": 2,
+        "score": 1.31,
+        "median": 672
        },
        "19": {
-        "n": 2,
+        "n": 1,
         "score": 0.38,
-        "median": 140
+        "median": 194
        }
       },
       "best_hour": 15,
-      "best_n": 3,
+      "best_n": 2,
       "state": "paused",
       "note": "중단 국가 (10/22 재정비)",
       "until": null,
       "health": {
-       "n": 5,
+       "n": 3,
        "last": 288,
        "recent": [
         1031,
         193,
         288
        ],
-       "base": 200,
+       "base": 288,
        "approx": 0,
-       "multiple": 1.44,
-       "like_rate": 0.5,
-       "burst": 0.2,
+       "multiple": 1.0,
+       "like_rate": 0.6,
+       "burst": 0.33,
        "label": "저조"
-      }
-     },
-     "aisyah.zr_05": {
-      "flag": "MY",
-      "posts": 2,
-      "avg": 221,
-      "max": 435,
-      "hours": {
-       "11": {
-        "n": 1,
-        "score": 0.04,
-        "median": 8
-       },
-       "17": {
-        "n": 1,
-        "score": 1.96,
-        "median": 435
-       }
-      },
-      "best_hour": 17,
-      "best_n": 1,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
-      "health": {
-       "n": 2,
-       "last": 36,
-       "recent": [
-        7,
-        36
-       ],
-       "base": 21,
-       "approx": 0,
-       "multiple": 1.67,
-       "like_rate": 2.33,
-       "burst": 0.0,
-       "label": "휴식"
       }
      },
      "aoi_1124_gram": {
       "flag": "JP",
       "posts": 10,
-      "avg": 219,
-      "max": 1257,
+      "avg": 247,
+      "max": 1567,
       "hours": {
        "8": {
         "n": 1,
-        "score": 1.07,
-        "median": 235
+        "score": 0.96,
+        "median": 237
        },
        "9": {
         "n": 1,
-        "score": 0.34,
-        "median": 75
+        "score": 0.32,
+        "median": 78
        },
        "10": {
         "n": 1,
-        "score": 0.02,
-        "median": 5
+        "score": 0.22,
+        "median": 54
        },
        "12": {
         "n": 1,
-        "score": 0.27,
-        "median": 60
+        "score": 0.25,
+        "median": 63
        },
        "13": {
         "n": 2,
-        "score": 0.56,
-        "median": 122
+        "score": 0.5,
+        "median": 124
+       },
+       "16": {
+        "n": 1,
+        "score": 0.18,
+        "median": 45
        },
        "18": {
         "n": 1,
-        "score": 0.33,
-        "median": 72
+        "score": 0.3,
+        "median": 75
        },
        "20": {
-        "n": 2,
-        "score": 3.18,
-        "median": 698
+        "n": 1,
+        "score": 6.33,
+        "median": 1567
        },
        "21": {
         "n": 1,
-        "score": 0.49,
-        "median": 107
+        "score": 0.44,
+        "median": 108
        }
       },
       "best_hour": 20,
-      "best_n": 2,
+      "best_n": 1,
       "state": "rest",
       "note": "",
       "until": "2026-11-05",
       "health": {
-       "n": 8,
+       "n": 7,
        "last": 118,
        "recent": [
         50,
         56,
         118
        ],
-       "base": 67,
+       "base": 61,
        "approx": 0,
-       "multiple": 1.76,
+       "multiple": 1.93,
        "like_rate": 0.0,
        "burst": 0.0,
        "rest_test": [
@@ -899,89 +877,88 @@
        "label": "휴식"
       }
      },
-     "linh.ngx_02": {
-      "flag": "VN",
-      "posts": 6,
-      "avg": 210,
-      "max": 509,
+     "yuting._066": {
+      "flag": "TW",
+      "posts": 2,
+      "avg": 157,
+      "max": 178,
       "hours": {
-       "8": {
+       "11": {
         "n": 1,
-        "score": 0.14,
-        "median": 30
+        "score": 0.87,
+        "median": 137
        },
-       "10": {
-        "n": 2,
-        "score": 0.67,
-        "median": 140
-       },
-       "20": {
-        "n": 2,
-        "score": 2.21,
-        "median": 464
-       },
-       "21": {
+       "18": {
         "n": 1,
-        "score": 0.11,
-        "median": 23
+        "score": 1.13,
+        "median": 178
        }
       },
-      "best_hour": 20,
-      "best_n": 2,
+      "best_hour": 18,
+      "best_n": 1,
       "state": "active",
       "note": "",
       "until": null,
       "health": {
-       "n": 5,
+       "n": 2,
+       "last": 169,
+       "recent": [
+        135,
+        169
+       ],
+       "base": 152,
+       "approx": 0,
+       "multiple": 1.11,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
+     "linh.ngx_02": {
+      "flag": "VN",
+      "posts": 5,
+      "avg": 150,
+      "max": 420,
+      "hours": {
+       "8": {
+        "n": 1,
+        "score": 0.2,
+        "median": 30
+       },
+       "10": {
+        "n": 2,
+        "score": 0.93,
+        "median": 140
+       },
+       "20": {
+        "n": 1,
+        "score": 2.79,
+        "median": 420
+       },
+       "21": {
+        "n": 1,
+        "score": 0.15,
+        "median": 23
+       }
+      },
+      "best_hour": 20,
+      "best_n": 1,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 4,
        "last": 22,
        "recent": [
         401,
         148,
         22
        ],
-       "base": 148,
+       "base": 138,
        "approx": 0,
-       "multiple": 0.15,
-       "like_rate": 0.42,
-       "burst": 0.4,
-       "label": "저조"
-      }
-     },
-     "yuting._066": {
-      "flag": "TW",
-      "posts": 3,
-      "avg": 178,
-      "max": 219,
-      "hours": {
-       "11": {
-        "n": 2,
-        "score": 1.0,
-        "median": 178
-       },
-       "18": {
-        "n": 1,
-        "score": 1.0,
-        "median": 178
-       }
-      },
-      "best_hour": 11,
-      "best_n": 2,
-      "state": "active",
-      "note": "",
-      "until": null,
-      "health": {
-       "n": 3,
-       "last": 169,
-       "recent": [
-        218,
-        135,
-        169
-       ],
-       "base": 169,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.19,
-       "burst": 0.0,
+       "multiple": 0.16,
+       "like_rate": 0.43,
+       "burst": 0.25,
        "label": "저조"
       }
      },
@@ -1017,80 +994,6 @@
        "base": 111,
        "approx": 0,
        "multiple": 0.92,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "nadia.ps_04": {
-      "flag": "ID",
-      "posts": 2,
-      "avg": 61,
-      "max": 115,
-      "hours": {
-       "14": {
-        "n": 1,
-        "score": 0.13,
-        "median": 8
-       },
-       "18": {
-        "n": 1,
-        "score": 1.87,
-        "median": 115
-       }
-      },
-      "best_hour": 18,
-      "best_n": 1,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
-      "health": {
-       "n": 2,
-       "last": 28,
-       "recent": [
-        7,
-        28
-       ],
-       "base": 17,
-       "approx": 0,
-       "multiple": 1.6,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "휴식"
-      }
-     },
-     "seoyn.k_97": {
-      "flag": "KR",
-      "posts": 2,
-      "avg": 47,
-      "max": 76,
-      "hours": {
-       "18": {
-        "n": 1,
-        "score": 0.4,
-        "median": 19
-       },
-       "21": {
-        "n": 1,
-        "score": 1.6,
-        "median": 76
-       }
-      },
-      "best_hour": 21,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 2,
-       "last": 52,
-       "recent": [
-        9,
-        52
-       ],
-       "base": 30,
-       "approx": 0,
-       "multiple": 1.7,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -1163,6 +1066,22 @@
       "health": {
        "n": 0,
        "label": ""
+      }
+     },
+     "aisyah.zr_05": {
+      "flag": "MY",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
       }
      },
      "aoi.02_": {
@@ -1565,6 +1484,22 @@
        "label": ""
       }
      },
+     "nadia.ps_04": {
+      "flag": "ID",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
+     },
      "nia._055": {
       "flag": "IN",
       "posts": 0,
@@ -1647,6 +1582,22 @@
      },
      "riya._m08": {
       "flag": "IN",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "seoyn.k_97": {
+      "flag": "KR",
       "posts": 0,
       "avg": 0,
       "max": 0,
@@ -2332,32 +2283,22 @@
  ],
  "accounts_health": {
   "aisyah.zr_05": {
-   "n": 2,
-   "last": 36,
-   "recent": [
-    7,
-    36
-   ],
-   "base": 21,
-   "approx": 0,
-   "multiple": 1.67,
-   "like_rate": 2.33,
-   "burst": 0.0,
+   "n": 0,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
   },
   "aoi_1124_gram": {
-   "n": 8,
+   "n": 7,
    "last": 118,
    "recent": [
     50,
     56,
     118
    ],
-   "base": 67,
+   "base": 61,
    "approx": 0,
-   "multiple": 1.76,
+   "multiple": 1.93,
    "like_rate": 0.0,
    "burst": 0.0,
    "rest_test": [
@@ -2370,18 +2311,18 @@
    "until": "2026-11-05"
   },
   "bea.cruz_03": {
-   "n": 5,
+   "n": 3,
    "last": 288,
    "recent": [
     1031,
     193,
     288
    ],
-   "base": 200,
+   "base": 288,
    "approx": 0,
-   "multiple": 1.44,
-   "like_rate": 0.5,
-   "burst": 0.2,
+   "multiple": 1.0,
+   "like_rate": 0.6,
+   "burst": 0.33,
    "label": "저조",
    "state": "paused",
    "until": null
@@ -2403,35 +2344,35 @@
    "until": null
   },
   "daily.life_gram": {
-   "n": 4,
-   "last": 263,
+   "n": 5,
+   "last": 1216,
    "recent": [
-    211,
     112,
-    263
+    263,
+    1216
    ],
-   "base": 186,
+   "base": 211,
    "approx": 0,
-   "multiple": 1.41,
-   "like_rate": 9.91,
-   "burst": 0.0,
+   "multiple": 5.76,
+   "like_rate": 4.08,
+   "burst": 0.2,
    "label": "저조",
    "state": "active",
    "until": null
   },
   "fah.pk_03": {
-   "n": 4,
+   "n": 3,
    "last": 16,
    "recent": [
     3971,
     657,
     16
    ],
-   "base": 1268,
+   "base": 657,
    "approx": 0,
-   "multiple": 0.01,
-   "like_rate": 0.83,
-   "burst": 0.25,
+   "multiple": 0.02,
+   "like_rate": 0.9,
+   "burst": 0.33,
    "label": "정상",
    "state": "active",
    "until": null
@@ -2454,18 +2395,18 @@
    "until": null
   },
   "linh.ngx_02": {
-   "n": 5,
+   "n": 4,
    "last": 22,
    "recent": [
     401,
     148,
     22
    ],
-   "base": 148,
+   "base": 138,
    "approx": 0,
-   "multiple": 0.15,
-   "like_rate": 0.42,
-   "burst": 0.4,
+   "multiple": 0.16,
+   "like_rate": 0.43,
+   "burst": 0.25,
    "label": "저조",
    "state": "active",
    "until": null
@@ -2487,49 +2428,28 @@
    "until": null
   },
   "nadia.ps_04": {
-   "n": 2,
-   "last": 28,
-   "recent": [
-    7,
-    28
-   ],
-   "base": 17,
-   "approx": 0,
-   "multiple": 1.6,
-   "like_rate": 0.0,
-   "burst": 0.0,
+   "n": 0,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
   },
   "seoyn.k_97": {
-   "n": 2,
-   "last": 52,
-   "recent": [
-    9,
-    52
-   ],
-   "base": 30,
-   "approx": 0,
-   "multiple": 1.7,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "paused",
    "until": null
   },
   "yuting._066": {
-   "n": 3,
+   "n": 2,
    "last": 169,
    "recent": [
-    218,
     135,
     169
    ],
-   "base": 169,
+   "base": 152,
    "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.19,
+   "multiple": 1.11,
+   "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
    "state": "active",
@@ -2576,6 +2496,46 @@
  "violations": [
   {
    "kind": "루프 밖 발행",
+   "account": "daily.life_gram",
+   "date": "2026-11-19",
+   "utc": "2026-11-19T07:52:06+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@trace_tw_gram/post/Df6lkE8Ewah"
+  },
+  {
+   "kind": "하루 상한 초과",
+   "account": "daily.life_gram",
+   "date": "2026-11-19",
+   "utc": "2026-11-19T07:52:06+00:00",
+   "detail": "현지 2026-11-19에 3건 (계정당 하루 1개)",
+   "link": "https://www.threads.com/@trace_tw_gram/post/Df6lkE8Ewah"
+  },
+  {
+   "kind": "루프 밖 발행",
+   "account": "aoi_1124_gram",
+   "date": "2026-11-19",
+   "utc": "2026-11-19T07:34:42+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@aoi_1124_gram/post/Df6jkran0la"
+  },
+  {
+   "kind": "복귀 테스트 초과",
+   "account": "aoi_1124_gram",
+   "date": "2026-11-19",
+   "utc": "2026-11-19T07:34:42+00:00",
+   "detail": "휴식 뒤 테스트는 2건까지 — 판정 후 상태부터 바꾼다",
+   "link": "https://www.threads.com/@aoi_1124_gram/post/Df6jkran0la"
+  },
+  {
+   "kind": "하루 상한 초과",
+   "account": "aoi_1124_gram",
+   "date": "2026-11-19",
+   "utc": "2026-11-19T07:34:42+00:00",
+   "detail": "현지 2026-11-19에 2건 (계정당 하루 1개)",
+   "link": "https://www.threads.com/@aoi_1124_gram/post/Df6jkran0la"
+  },
+  {
+   "kind": "루프 밖 발행",
    "account": "aoi_1124_gram",
    "date": "2026-11-19",
    "utc": "2026-11-19T01:10:33+00:00",
@@ -2596,14 +2556,6 @@
    "date": "2026-11-19",
    "utc": "2026-11-19T01:01:19+00:00",
    "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
-   "link": "https://www.threads.com/@trace_tw_gram/post/Df52jcXk9Lx"
-  },
-  {
-   "kind": "하루 상한 초과",
-   "account": "daily.life_gram",
-   "date": "2026-11-19",
-   "utc": "2026-11-19T01:01:19+00:00",
-   "detail": "현지 2026-11-19에 2건 (계정당 하루 1개)",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df52jcXk9Lx"
   },
   {
@@ -2794,6 +2746,50 @@
  "hits": [],
  "posts": [
   {
+   "id": "18149173204599742",
+   "account": "daily.life_gram",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-11-19T07:52:06+00:00",
+   "date": "2026-11-19",
+   "local": "11/19 15:52",
+   "text": "為什麼我的鎖定畫面要弄成這樣？\n因為我連看待辦事項都會忘記🥲\n但手機總不可能忘記看吧🤣",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@trace_tw_gram/post/Df6lkE8Ewah",
+   "views": 120,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18356366482270855",
+   "account": "aoi_1124_gram",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-19T07:34:42+00:00",
+   "date": "2026-11-19",
+   "local": "11/19 16:34",
+   "text": "📝 予定もやることも多すぎる人におすすめの管理術！🌟\n\n① 予定は色分けして一目でわかるようにする\n② ToDoはカテゴリー別に分けて整理する\n③ 大事な予定や締切はカウントダウンで管理\n④ 毎日確認するものはロック画面にまとめる\n\n私はこんな感じで管理してる！☺️\nスマホを見るだけで確認できるのが本当に便利。",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@aoi_1124_gram/post/Df6jkran0la",
+   "views": 45,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18038240531894737",
    "account": "aoi_1124_gram",
    "project": "trace",
@@ -2805,7 +2801,7 @@
    "text": "お気に入りの壁紙たち！▓\n欲しい人いたら送るよ〜！",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Df53nF0H5h6",
-   "views": 5,
+   "views": 54,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2827,13 +2823,13 @@
    "text": "2026 年我用過的桌布們🤍\n有喜歡的嗎？\n想要的人我可以分享給你們～～！",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df52jcXk9Lx",
-   "views": 163,
-   "likes": 0,
-   "replies": 0,
+   "views": 850,
+   "likes": 2,
+   "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 4,
    "round": null,
    "variant": null
   },
@@ -2849,13 +2845,13 @@
    "text": "欸，用 iPhone 的人\n真的要用這個耶！\n用過之後\n真的完全不會再忘記事情了✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df5wYGPk-hf",
-   "views": 632,
-   "likes": 4,
+   "views": 2292,
+   "likes": 7,
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
-   "shares": 2,
-   "clicks": 2,
+   "shares": 0,
+   "clicks": 12,
    "round": null,
    "variant": null
   },
@@ -2871,13 +2867,13 @@
    "text": "超級J人就是這樣用行事曆的",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df4YpCik05o",
-   "views": 387,
+   "views": 427,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 2,
    "round": null,
    "variant": null
   },
@@ -2893,13 +2889,13 @@
    "text": "AppleユーザーのJ型が、iPhoneとiPadを使うとこうなる。😉",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Df4YZeRn5l4",
-   "views": 1257,
-   "likes": 3,
+   "views": 1567,
+   "likes": 5,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 9,
+   "clicks": 11,
    "round": null,
    "variant": null
   },
@@ -2937,13 +2933,13 @@
    "text": "欸，用 iPhone 的人\n真的要用這個耶！\n用過之後\n真的完全不會再忘記事情了✨￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df086QgE-wu",
-   "views": 1186,
+   "views": 1216,
    "likes": 6,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 1,
-   "clicks": 33,
+   "clicks": 36,
    "round": null,
    "variant": null
   },
@@ -2959,13 +2955,13 @@
    "text": "拯救 P 人的 4 款 App 🫠\n不用計畫、不用自律，丟給它們就好\n介紹跟連結放留言 👇 你們 P 人都靠什麼活下來的？",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfzCT5Rk7qA",
-   "views": 269,
-   "likes": 71,
+   "views": 286,
+   "likes": 75,
    "replies": 4,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 7,
+   "clicks": 8,
    "round": null,
    "variant": null
   },
@@ -2981,13 +2977,13 @@
    "text": "iPhoneユーザーなら、これマジで試してみて！\n「忘年会のお店と行き方を調べて」って言うだけで、\n場所も行き方も全部調べてくれて、\nその情報をそのままカレンダーに残してくれる。\nもういちいちコピペしなくていい😎￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dfv9Xytn7iZ",
-   "views": 129,
+   "views": 133,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 8,
+   "clicks": 10,
    "round": null,
    "variant": null
   },
@@ -3003,13 +2999,13 @@
    "text": "iPhone 用戶，這個真的要試試看！\n跟它說一句「明天跟女友吃飯，幫我找餐廳」，三家直接挑好給你\n選一家，它就寫進明天的行程裡\n約會前一天才想到也來得及 😎￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfvVkmeE1lE",
-   "views": 126,
+   "views": 133,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 11,
+   "clicks": 12,
    "round": null,
    "variant": null
   },
@@ -3025,13 +3021,13 @@
    "text": "iPhoneユーザーなら、これマジで試してみて！\n「忘年会のお店と行き方を調べて」って言うだけで、\n場所も行き方も全部調べてくれて、\nその情報をそのままカレンダーに残してくれる。\nもういちいちコピペしなくていい😎",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dfs6RslHymj",
-   "views": 75,
+   "views": 78,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 6,
+   "clicks": 7,
    "round": null,
    "variant": null
   },
@@ -3047,13 +3043,13 @@
    "text": "iPhone 用戶，這個真的要試試看！\n跟它說一句「明天跟女友吃飯，幫我找餐廳」，三家直接挑好給你\n選一家，它就寫進明天的行程裡\n約會前一天才想到也來得及 😎￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Dfs5waQE16l",
-   "views": 218,
+   "views": 223,
    "likes": 2,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 29,
+   "clicks": 30,
    "round": null,
    "variant": null
   },
@@ -3069,7 +3065,7 @@
    "text": "iPhone 用戶，這個真的要試試看！\n跟它說一句「明天跟女友吃飯，幫我找餐廳」，三家直接挑好給你\n選一家，它就寫進明天的行程裡\n約會前一天才想到也來得及 😎",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfrlcICES4F",
-   "views": 168,
+   "views": 173,
    "likes": 2,
    "replies": 3,
    "reposts": 0,
@@ -3157,13 +3153,13 @@
    "text": "調べたお店の情報、そのまま予定に残してくれるの便利すぎる。\nもうコピペしなくていいんだ…",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DfowUKYH5T1",
-   "views": 72,
+   "views": 75,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 6,
+   "clicks": 7,
    "round": null,
    "variant": null
   },
@@ -3201,13 +3197,13 @@
    "text": "最近AIエージェント増えすぎじゃない…？\n\n便利なのはいいけど、そのためにまた別のアプリを入れて、予定も個人情報も登録するのはちょっと面倒。\n私、予定もやることも全部カレンダーに入れてるから、もはや一番愛着のあるアプリなんだよね。\n今さら別のアプリに乗り換えるなんて、育ててきた我が子を手放す気分😂\n\nお願いだから、いつものカレンダーの中で全部できるようになってほしい…",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DfoFYUbn3Pg",
-   "views": 60,
+   "views": 63,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 7,
+   "clicks": 9,
    "round": null,
    "variant": null
   },
@@ -3223,13 +3219,13 @@
    "text": "iPhoneユーザーなら\nこれ使ってみて！\nカレンダーに予定を入れただけなのに\n必要な情報を勝手に調べてくれる…！",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dfew08cn-fR",
-   "views": 107,
+   "views": 108,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 22,
+   "clicks": 27,
    "round": null,
    "variant": null
   },
@@ -3245,13 +3241,13 @@
    "text": "iPhone使ってる人、これ試してみて。\nカレンダーに予定を入れるだけで、必要な準備まで教えてくれるのすごくない…？\nしかも、そのままお願いできるの便利すぎる▓",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DfbVajGn9rG",
-   "views": 115,
+   "views": 116,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 32,
+   "clicks": 41,
    "round": null,
    "variant": null
   },
@@ -3339,7 +3335,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -3405,7 +3401,7 @@
    "reposts": 1,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 2,
    "round": null,
    "variant": null
   },
@@ -3509,13 +3505,13 @@
    "text": "สาย iPhone\nที่โหลดแอปจดงานไว้เต็มเครื่อง ลองอันนี้ดู\nทุกอย่างที่ต้องใช้จัดการตารางมีครบในแอปเดียว\nแอปที่เคยใช้หลายตัว เหลือแค่ตัวนี้ตัวเดียวพอ🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@fah.pk_03/post/Dev7hnxEVBK",
-   "views": 4179,
+   "views": 4184,
    "likes": 38,
    "replies": 3,
    "reposts": 15,
    "quotes": 1,
    "shares": 5,
-   "clicks": 11,
+   "clicks": 16,
    "round": null,
    "variant": null
   },
@@ -3559,7 +3555,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 3,
    "round": null,
    "variant": null
   },
@@ -3581,7 +3577,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 2,
    "round": null,
    "variant": null
   },
@@ -3641,13 +3637,13 @@
    "text": "ちなみに親友と予定共有して、2人ともロック画面に出せるよ🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DevBJLpEglp",
-   "views": 235,
+   "views": 237,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 199,
+   "clicks": 297,
    "round": null,
    "variant": null
   },
@@ -3758,270 +3754,6 @@
    "quotes": 0,
    "shares": 0,
    "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18373890814212308",
-   "account": "linh.ngx_02",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-10-20T13:00:57+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 20:00",
-   "text": "Ai xài iPhone\nmà cài cả đống app để quản lý việc cần làm thì thử cái này đi.\nCần gì để quản lý lịch cũng có đủ hết,\nmấy app đang xài riêng lẻ gom lại còn đúng một cái🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@linh.ngx_02/post/Det5DMakkn0",
-   "views": 509,
-   "likes": 2,
-   "replies": 1,
-   "reposts": 1,
-   "quotes": 0,
-   "shares": 3,
-   "clicks": 3,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18124851635475450",
-   "account": "seoyn.k_97",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "utc": "2026-10-20T12:00:50+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 21:00",
-   "text": "아이폰 쓰는 베프 있으면 이거 해봐. 둘이 일정 공유해서 잠금화면에 띄우면 약속 까먹을 일 없음 😭",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@seoyn.k_97/post/DetyLJGEuPY",
-   "views": 76,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18104421737364682",
-   "account": "nadia.ps_04",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-20T11:30:52+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 18:30",
-   "text": "Pengguna iPhone\nyang install banyak aplikasi buat atur to-do, coba yang ini deh.\nSemua yang dibutuhin buat atur jadwal ada di sini,\naplikasi yang tadinya banyak cukup diganti satu ini aja🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@nadia.ps_04/post/DetuvqnEp1q",
-   "views": 115,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18224232922351243",
-   "account": "aoi_1124_gram",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-20T11:10:58+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 20:10",
-   "text": "iPhone使ってて\nTODO管理でアプリいくつも入れてる人はこれ試してみて。\nスケジュール管理に必要な機能が全部あるから、\nバラバラだったアプリがこれ1つにまとまる🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@aoi_1124_gram/post/Detsdo9kvZA",
-   "views": 139,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 118,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18239878606318872",
-   "account": "bea.cruz_03",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-20T11:00:55+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 19:00",
-   "text": "Uy, mga naka-iPhone, try niyo 'to with your bestie. I-share niyo yung calendar tapos ilagay sa lock screen niyong dalawa, wala nang makakalimutang lakad 😭",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@bea.cruz_03/post/DetrUAXkiap",
-   "views": 86,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18083941478359513",
-   "account": "seoyn.k_97",
-   "project": "trace",
-   "country": "KR",
-   "flag": "🇰🇷",
-   "utc": "2026-10-20T09:21:09+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 18:21",
-   "text": "아이폰 유저인데\n할 일 관리한다고 이것저것 깔아둔 사람은 이거 써봐.\n일정관리에 필요한 거 다 들어있어서,\n여러 개 쓰던 앱 이거 하나로 싹 정리됨🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@seoyn.k_97/post/Detf5UtknZL",
-   "views": 19,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17872084911644219",
-   "account": "aisyah.zr_05",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-20T09:01:08+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 17:01",
-   "text": "Geng iPhone\nyang install macam-macam app untuk urus to-do, try yang ni.\nSemua benda untuk urus jadual ada dalam satu app,\nbanyak app yang korang pakai tu boleh ganti dengan satu je🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@aisyah.zr_05/post/Detdm0AkjSg",
-   "views": 435,
-   "likes": 4,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18128674370478771",
-   "account": "fah.pk_03",
-   "project": "trace",
-   "country": "TH",
-   "flag": "🇹🇭",
-   "utc": "2026-10-20T08:01:10+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 15:01",
-   "text": "สาย iPhone\nที่โหลดแอปจดงานไว้เต็มเครื่อง ลองอันนี้ดู\nทุกอย่างที่ต้องใช้จัดการตารางมีครบในแอปเดียว\nแอปที่เคยใช้หลายตัว เหลือแค่ตัวนี้ตัวเดียวพอ🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@fah.pk_03/post/DetWvbpkZUq",
-   "views": 1903,
-   "likes": 13,
-   "replies": 1,
-   "reposts": 7,
-   "quotes": 1,
-   "shares": 9,
-   "clicks": 5,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18446364034135020",
-   "account": "bea.cruz_03",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-20T07:31:08+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 15:31",
-   "text": "Mga naka-iPhone\nna nag-install ng kung anu-anong app para sa to-do, try niyo 'to.\nNandito na lahat ng kailangan para sa schedule,\nyung ilang apps na gamit niyo, isa na lang 'to🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@bea.cruz_03/post/DetTTyjkcOf",
-   "views": 202,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18399006307205824",
-   "account": "nadia.ps_04",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-20T07:01:18+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 14:01",
-   "text": "Pengguna iPhone, coba ini sama bestie. Share kalender berdua terus pasang di lock screen, nggak bakal lupa janji main lagi 😭",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@nadia.ps_04/post/DetP5Hxkbms",
-   "views": 8,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18138561580616616",
-   "account": "aisyah.zr_05",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-20T03:20:59+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 11:20",
-   "text": "Geng iPhone, try benda ni dengan bestie. Share calendar berdua, letak kat lock screen, confirm tak lupa plan lepak dah 😭",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@aisyah.zr_05/post/Des2rPqEjBI",
-   "views": 8,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 1,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18133691935657124",
-   "account": "yuting._066",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-20T03:00:58+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 11:00",
-   "text": "iPhone 使用者，跟閨蜜一起用這個。把行程共用到兩個人的鎖定畫面，從此不會再忘記約好的事 😭",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@yuting._066/post/Des0Yvzkloc",
-   "views": 219,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 8,
    "round": null,
    "variant": null
   }
@@ -4139,6 +3871,20 @@
    "post": "17931875820182093",
    "post_text": "欸，用 iPhone 的人",
    "post_link": "https://www.threads.com/@trace_tw_gram/post/Df5wYGPk-hf"
+  },
+  {
+   "id": "18212474803368709",
+   "user": "tina0222520",
+   "when": "11/19 10:41",
+   "text": "想要了解",
+   "link": "https://www.threads.com/@tina0222520/post/Df6B_klo_ZC",
+   "account": "daily.life_gram",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "post": "18077312249590919",
+   "post_text": "2026 年我用過的桌布們🤍",
+   "post_link": "https://www.threads.com/@trace_tw_gram/post/Df52jcXk9Lx"
   }
  ],
  "skipped": [],

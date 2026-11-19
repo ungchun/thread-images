@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T01:58:06.128852+00:00",
+ "generated": "2026-11-19T13:31:44.277032+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -443,30 +443,10 @@
    ],
    "insights": {
     "hour": {
-     "7": {
-      "n": 1,
-      "score": 1.0,
-      "median": 66
-     },
      "8": {
       "n": 1,
-      "score": 0.38,
+      "score": 1.0,
       "median": 8
-     },
-     "12": {
-      "n": 1,
-      "score": 1.0,
-      "median": 35
-     },
-     "18": {
-      "n": 1,
-      "score": 1.62,
-      "median": 34
-     },
-     "19": {
-      "n": 2,
-      "score": 1.0,
-      "median": 58
      },
      "20": {
       "n": 1,
@@ -476,37 +456,22 @@
      "21": {
       "n": 1,
       "score": 1.0,
-      "median": 148
-     },
-     "22": {
-      "n": 1,
-      "score": 1.0,
-      "median": 26
+      "median": 150
      }
     },
     "wday": {
-     "화": {
-      "n": 6,
-      "score": 1.0,
-      "median": 36
-     },
      "수": {
       "n": 1,
-      "score": 0.38,
+      "score": 1.0,
       "median": 8
      },
      "일": {
       "n": 2,
       "score": 1.0,
-      "median": 85
+      "median": 86
      }
     },
     "media": {
-     "IMAGE": {
-      "n": 6,
-      "score": 1.0,
-      "median": 36
-     },
      "CAROUSEL_ALBUM": {
       "n": 3,
       "score": 1.0,
@@ -517,13 +482,13 @@
      "trace.planner.tw": {
       "flag": "TW",
       "posts": 1,
-      "avg": 148,
-      "max": 148,
+      "avg": 150,
+      "max": 150,
       "hours": {
        "21": {
         "n": 1,
         "score": 1.0,
-        "median": 148
+        "median": 150
        }
       },
       "best_hour": 21,
@@ -541,161 +506,6 @@
        "approx": 0,
        "multiple": 1.0,
        "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "appfinds_ph": {
-      "flag": "PH",
-      "posts": 1,
-      "avg": 79,
-      "max": 79,
-      "hours": {
-       "19": {
-        "n": 1,
-        "score": 1.0,
-        "median": 79
-       }
-      },
-      "best_hour": 19,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 79,
-       "recent": [
-        79
-       ],
-       "base": 79,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 1.27,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "appfindsna9": {
-      "flag": "US",
-      "posts": 1,
-      "avg": 66,
-      "max": 66,
-      "hours": {
-       "7": {
-        "n": 1,
-        "score": 1.0,
-        "median": 66
-       }
-      },
-      "best_hour": 7,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 65,
-       "recent": [
-        65
-       ],
-       "base": 65,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "appfinds_my": {
-      "flag": "MY",
-      "posts": 1,
-      "avg": 37,
-      "max": 37,
-      "hours": {
-       "19": {
-        "n": 1,
-        "score": 1.0,
-        "median": 37
-       }
-      },
-      "best_hour": 19,
-      "best_n": 1,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
-      "health": {
-       "n": 1,
-       "last": 37,
-       "recent": [
-        37
-       ],
-       "base": 37,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "휴식"
-      }
-     },
-     "appfindsuk8": {
-      "flag": "GB",
-      "posts": 1,
-      "avg": 35,
-      "max": 35,
-      "hours": {
-       "12": {
-        "n": 1,
-        "score": 1.0,
-        "median": 35
-       }
-      },
-      "best_hour": 12,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 30,
-       "recent": [
-        30
-       ],
-       "base": 30,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "appfinds_anz": {
-      "flag": "AU",
-      "posts": 1,
-      "avg": 26,
-      "max": 26,
-      "hours": {
-       "22": {
-        "n": 1,
-        "score": 1.0,
-        "median": 26
-       }
-      },
-      "best_hour": 22,
-      "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 26,
-       "recent": [
-        26
-       ],
-       "base": 26,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 3.85,
        "burst": 0.0,
        "label": "저조"
       }
@@ -733,38 +543,24 @@
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 2,
-      "avg": 21,
-      "max": 34,
+      "posts": 1,
+      "avg": 8,
+      "max": 8,
       "hours": {
        "8": {
         "n": 1,
-        "score": 0.38,
+        "score": 1.0,
         "median": 8
-       },
-       "18": {
-        "n": 1,
-        "score": 1.62,
-        "median": 34
        }
       },
-      "best_hour": 18,
+      "best_hour": 8,
       "best_n": 1,
       "state": "active",
       "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 32,
-       "recent": [
-        32
-       ],
-       "base": 32,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
+       "n": 0,
+       "label": ""
       }
      },
      "03ines.mar_": {
@@ -845,6 +641,86 @@
       "health": {
        "n": 0,
        "label": "휴식"
+      }
+     },
+     "appfinds_anz": {
+      "flag": "AU",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "appfinds_my": {
+      "flag": "MY",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
+      }
+     },
+     "appfinds_ph": {
+      "flag": "PH",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "appfindsna9": {
+      "flag": "US",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "appfindsuk8": {
+      "flag": "GB",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
       }
      },
      "ashgrey._02": {
@@ -2023,92 +1899,38 @@
  ],
  "accounts_health": {
   "appfinds_anz": {
-   "n": 1,
-   "last": 26,
-   "recent": [
-    26
-   ],
-   "base": 26,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 3.85,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "paused",
    "until": null
   },
   "appfinds_id": {
-   "n": 1,
-   "last": 32,
-   "recent": [
-    32
-   ],
-   "base": 32,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "active",
    "until": null
   },
   "appfinds_my": {
-   "n": 1,
-   "last": 37,
-   "recent": [
-    37
-   ],
-   "base": 37,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
+   "n": 0,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
   },
   "appfinds_ph": {
-   "n": 1,
-   "last": 79,
-   "recent": [
-    79
-   ],
-   "base": 79,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 1.27,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "paused",
    "until": null
   },
   "appfindsna9": {
-   "n": 1,
-   "last": 65,
-   "recent": [
-    65
-   ],
-   "base": 65,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "paused",
    "until": null
   },
   "appfindsuk8": {
-   "n": 1,
-   "last": 30,
-   "recent": [
-    30
-   ],
-   "base": 30,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "paused",
    "until": null
   },
@@ -2188,7 +2010,7 @@
    "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/De60hkzlkpc",
-   "views": 148,
+   "views": 150,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2217,138 +2039,6 @@
    "quotes": 0,
    "shares": 0,
    "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18120311120321930",
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-10-20T11:05:03+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 18:05",
-   "text": "Niatnya cuma cek jam,\nmalah sekalian keinget jadwal hari ini 🥹\n\nWallpaper tetap gemas.\nAgenda hari ini + kalender sebulan, langsung kelihatan di lock screen.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_id/post/DetryC1iXJu",
-   "views": 34,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18018254996955393",
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-10-20T11:04:48+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 19:04",
-   "text": "Ingatkan wallpaper comel je… rupanya ada jadual sekali 🥹\n\nMesyuarat, bungkusan nak ambil, plan minggu ni.\nBuka skrin je, terus nampak.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_my/post/DetrwLDCRHR",
-   "views": 37,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 2,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18128916760634042",
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-10-20T11:04:11+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 19:04",
-   "text": "Ang cute ng wallpaper… tapos may schedule pala 😭🗓️\n\nStudy session, group meeting, deadline: kita agad sa lock screen.\nPara sa mga “wait, ano ulit gagawin ko today?” moments.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_ph/post/DetrrrvCYt6",
-   "views": 79,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17873755770636305",
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-10-20T11:04:10+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 12:04",
-   "text": "For anyone whose brain has 37 tabs open:\nthe plan can live on your lock screen.\n\nMeetings. A parcel to collect. The rest of the month.\nAll here, and still cute. 🥹",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfindsuk8/post/Detrrq4CcWa",
-   "views": 35,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17926120095432613",
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-10-20T11:03:56+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 22:03",
-   "text": "Work catch-up. Parcel to collect. Coffee with a mate.\nAll on the lock screen, with room for the cute wallpaper 🥹\n\nA tiny bit less life admin.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfinds_anz/post/Detrp5eifZZ",
-   "views": 26,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18641042971034206",
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-20T11:03:17+00:00",
-   "date": "2026-10-20",
-   "local": "10/20 07:03",
-   "text": "Wait. A whole month AND today’s plans on the lock screen?? 🥹\n\nCute wallpaper, actual schedule.\nSame screen.",
-   "kind": "IMAGE",
-   "link": "https://www.threads.com/@appfindsna9/post/DetrlKBieSu",
-   "views": 66,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
    "round": null,
    "variant": null
   }
