@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T23:09:44.209205+00:00",
+ "generated": "2026-11-20T07:30:47.183371+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -559,8 +559,17 @@
       "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 10,
+       "recent": [
+        10
+       ],
+       "base": 10,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "03ines.mar_": {
@@ -1905,8 +1914,17 @@
    "until": null
   },
   "appfinds_id": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 10,
+   "recent": [
+    10
+   ],
+   "base": 10,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "active",
    "until": null
   },

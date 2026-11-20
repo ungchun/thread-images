@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T23:07:42.308907+00:00",
+ "generated": "2026-11-20T07:29:23.669143+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -452,11 +452,6 @@
    ],
    "insights": {
     "hour": {
-     "8": {
-      "n": 1,
-      "score": 1.17,
-      "median": 209
-     },
      "18": {
       "n": 2,
       "score": 0.24,
@@ -474,7 +469,7 @@
      },
      "21": {
       "n": 2,
-      "score": 1.44,
+      "score": 1.52,
       "median": 280
      }
     },
@@ -490,9 +485,9 @@
       "median": 26
      },
      "수": {
-      "n": 10,
+      "n": 9,
       "score": 1.0,
-      "median": 133
+      "median": 120
      },
      "목": {
       "n": 3,
@@ -502,16 +497,16 @@
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 15,
+      "n": 14,
       "score": 1.0,
-      "median": 146
+      "median": 133
      }
     },
     "accounts": {
      "pim.pm_02": {
       "flag": "TH",
       "posts": 3,
-      "avg": 11230,
+      "avg": 11231,
       "max": 32707,
       "hours": {
        "19": {
@@ -585,37 +580,31 @@
      },
      "mint.le_06": {
       "flag": "VN",
-      "posts": 2,
-      "avg": 179,
-      "max": 209,
+      "posts": 1,
+      "avg": 149,
+      "max": 149,
       "hours": {
-       "8": {
-        "n": 1,
-        "score": 1.17,
-        "median": 209
-       },
        "21": {
         "n": 1,
-        "score": 0.83,
+        "score": 1.0,
         "median": 149
        }
       },
-      "best_hour": 8,
+      "best_hour": 21,
       "best_n": 1,
       "state": "active",
       "note": "",
       "until": null,
       "health": {
-       "n": 2,
+       "n": 1,
        "last": 147,
        "recent": [
-        204,
         147
        ],
-       "base": 175,
+       "base": 147,
        "approx": 0,
-       "multiple": 0.84,
-       "like_rate": 0.28,
+       "multiple": 1.0,
+       "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
       }
@@ -710,14 +699,15 @@
       "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 119,
+       "n": 2,
+       "last": 26,
        "recent": [
-        119
+        119,
+        26
        ],
-       "base": 119,
+       "base": 72,
        "approx": 0,
-       "multiple": 1.0,
+       "multiple": 0.36,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -726,13 +716,13 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 1,
-      "avg": 3,
-      "max": 3,
+      "avg": 6,
+      "max": 6,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 3
+        "median": 6
        }
       },
       "best_hour": 19,
@@ -1109,16 +1099,7 @@
       "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음",
       "until": "2026-11-05",
       "health": {
-       "n": 1,
-       "last": 0,
-       "recent": [
-        0
-       ],
-       "base": 0,
-       "approx": 0,
-       "multiple": null,
-       "like_rate": null,
-       "burst": 0,
+       "n": 0,
        "label": "휴식"
       }
      },
@@ -2077,29 +2058,21 @@
    "until": null
   },
   "inkling01": {
-   "n": 1,
-   "last": 0,
-   "recent": [
-    0
-   ],
-   "base": 0,
-   "approx": 0,
-   "multiple": null,
-   "like_rate": null,
-   "burst": 0,
+   "n": 0,
    "label": "휴식",
    "state": "rest",
    "until": "2026-11-05"
   },
   "ivy_.k09": {
-   "n": 1,
-   "last": 119,
+   "n": 2,
+   "last": 26,
    "recent": [
-    119
+    119,
+    26
    ],
-   "base": 119,
+   "base": 72,
    "approx": 0,
-   "multiple": 1.0,
+   "multiple": 0.36,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
@@ -2131,16 +2104,15 @@
    "until": null
   },
   "mint.le_06": {
-   "n": 2,
+   "n": 1,
    "last": 147,
    "recent": [
-    204,
     147
    ],
-   "base": 175,
+   "base": 147,
    "approx": 0,
-   "multiple": 0.84,
-   "like_rate": 0.28,
+   "multiple": 1.0,
+   "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
    "state": "active",
@@ -2237,7 +2209,7 @@
    "text": "Wallpaper Natal bikinan AI ini gemes banget 🐶🐱\n\nBuat pribadi bebas save aja ya 🥰\n\nAku coba bikin anjing & kucing\npakai syal merah di malam bersalju 🎄\n\nAda yang mau bikin versi anabul sendiri?\nKalau banyak yang mau,\nnanti aku share prompt-nya 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Df4gy69FmTY",
-   "views": 3,
+   "views": 6,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2259,7 +2231,7 @@
    "text": "วอลเปเปอร์คริสต์มาสที่ทำจาก AI น่ารักเกินไปแล้ว 🐶🐱\n\nใช้ส่วนตัวเซฟไปได้เลยนะ 🥰\n\nลองทำน้องหมาน้องแมวพันผ้าพันคอสีแดง\nท่ามกลางคืนหิมะตก 🎄\n\nใครอยากทำให้น้องที่บ้านบ้างยกมือ 🙋\nถ้ามีคนอยากได้เยอะ\nเดี๋ยวแจกพรอมต์ให้เลย 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Df4dYm-lZSb",
-   "views": 26,
+   "views": 27,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2554,50 +2526,6 @@
    "clicks": 2,
    "round": null,
    "variant": null
-  },
-  {
-   "id": "18033664391897123",
-   "account": "mint.le_06",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-10-21T01:01:39+00:00",
-   "date": "2026-10-21",
-   "local": "10/21 08:01",
-   "text": "từ khi dùng cái này\nmình hết phải hỏi trong nhóm chat “ủa, cái đó là hôm nay hả?”",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@mint.le_06/post/DevLhaPjvIl",
-   "views": 209,
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18499156915100136",
-   "account": "inkling01",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-21T00:01:38+00:00",
-   "date": "2026-10-21",
-   "local": "10/21 08:01",
-   "text": "用 iPhone 還會忘記待辦的人？\n只有我知道太可惜了，分享一下",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@inkling01/post/DevEqgCESqv",
-   "views": 0,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
   }
  ],
  "ig_posts": [],
@@ -2609,7 +2537,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Thursday, 19-Nov-26 15:06:45 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AciH31p2KR91E3dy0qftmqu\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Thursday, 19-Nov-26 23:28:35 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A4_5FJ2Fa20AjVdsUtizjr0\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
