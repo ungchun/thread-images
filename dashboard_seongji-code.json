@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T12:48:31.471948+00:00",
+ "generated": "2026-11-21T21:44:49.181374+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -456,7 +456,7 @@
      "9": {
       "n": 2,
       "score": 0.64,
-      "median": 559
+      "median": 561
      },
      "10": {
       "n": 1,
@@ -466,7 +466,7 @@
      "11": {
       "n": 1,
       "score": 1.09,
-      "median": 1230
+      "median": 1232
      },
      "12": {
       "n": 1,
@@ -475,7 +475,7 @@
      },
      "13": {
       "n": 2,
-      "score": 0.58,
+      "score": 0.57,
       "median": 128
      },
      "15": {
@@ -491,12 +491,12 @@
      "17": {
       "n": 3,
       "score": 0.09,
-      "median": 100
+      "median": 107
      },
      "18": {
       "n": 2,
-      "score": 0.19,
-      "median": 43
+      "score": 0.2,
+      "median": 44
      },
      "19": {
       "n": 1,
@@ -511,19 +511,19 @@
      "21": {
       "n": 3,
       "score": 0.49,
-      "median": 36
+      "median": 38
      }
     },
     "wday": {
      "월": {
       "n": 1,
-      "score": 0.29,
-      "median": 332
+      "score": 0.31,
+      "median": 346
      },
      "화": {
       "n": 1,
       "score": 1.09,
-      "median": 1230
+      "median": 1232
      },
      "수": {
       "n": 3,
@@ -538,7 +538,7 @@
      "금": {
       "n": 3,
       "score": 0.16,
-      "median": 100
+      "median": 107
      },
      "토": {
       "n": 5,
@@ -559,8 +559,8 @@
      },
      "IMAGE": {
       "n": 5,
-      "score": 0.16,
-      "median": 100
+      "score": 0.17,
+      "median": 107
      },
      "TEXT_POST": {
       "n": 1,
@@ -572,7 +572,7 @@
      "daily.life_gram": {
       "flag": "TW",
       "posts": 11,
-      "avg": 1130,
+      "avg": 1133,
       "max": 8508,
       "hours": {
        "7": {
@@ -582,18 +582,18 @@
        },
        "8": {
         "n": 2,
-        "score": 3.86,
+        "score": 3.85,
         "median": 4367
        },
        "9": {
         "n": 1,
         "score": 0.92,
-        "median": 1036
+        "median": 1039
        },
        "11": {
         "n": 1,
         "score": 1.09,
-        "median": 1230
+        "median": 1232
        },
        "15": {
         "n": 1,
@@ -603,7 +603,7 @@
        "17": {
         "n": 3,
         "score": 0.09,
-        "median": 100
+        "median": 107
        },
        "19": {
         "n": 1,
@@ -660,7 +660,7 @@
        },
        "13": {
         "n": 2,
-        "score": 0.58,
+        "score": 0.57,
         "median": 128
        },
        "16": {
@@ -670,18 +670,18 @@
        },
        "18": {
         "n": 2,
-        "score": 0.19,
-        "median": 43
+        "score": 0.2,
+        "median": 44
        },
        "20": {
         "n": 1,
-        "score": 7.16,
+        "score": 7.14,
         "median": 1599
        },
        "21": {
         "n": 2,
         "score": 0.33,
-        "median": 73
+        "median": 74
        }
       },
       "best_hour": 20,
@@ -2563,7 +2563,19 @@
    "link": "https://www.threads.com/@aoi_1124_gram/post/DfbVajGn9rG"
   }
  ],
- "hits": [],
+ "hits": [
+  {
+   "account": "daily.life_gram",
+   "country": "TW",
+   "project": "trace",
+   "utc": "2026-11-16T09:29:22+00:00",
+   "views": 346,
+   "likes": 100,
+   "reposts": 0,
+   "text": "拯救 P 人的 4 款 App 🫠\n不用計畫、不用自律，丟給它們就好\n介紹跟連結放留言 👇 你們 P 人都靠什麼活下來的？",
+   "link": "https://www.threads.com/@trace_tw_gram/post/DfzCT5Rk7qA"
+  }
+ ],
  "posts": [
   {
    "id": "17941292355124139",
@@ -2577,7 +2589,7 @@
    "text": "年底真的好多事情要忙…\n工作、聚會、約會全部擠在一起🥲\n怕自己忘東忘西，乾脆把 iPhone 變成這樣了",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df_7wIzk6qh",
-   "views": 61,
+   "views": 73,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2599,7 +2611,7 @@
    "text": "韓国で見つけたクリスマスツリー🎄\n可愛すぎて思わず写真撮っちゃった…♡",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Df_7Sl-n8FL",
-   "views": 9,
+   "views": 11,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2621,7 +2633,7 @@
    "text": "ねえ、iPhoneユーザー\nロック画面これにしたら\nやることマジで忘れなくなった🥹❤️\nしかも可愛くて何回も見ちゃう",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Df9plOnHzoP",
-   "views": 36,
+   "views": 38,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2643,7 +2655,7 @@
    "text": "用 iPhone 的人看過來！\n我之前用過、大家都很喜歡的桌布\n年底就來免費分享給大家！\n這次全部大放送✨\n(照片裡的只是其中一部分，還有更多喔！▓)",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df9UpAbk6O_",
-   "views": 100,
+   "views": 107,
    "likes": 1,
    "replies": 0,
    "reposts": 0,
@@ -2731,7 +2743,7 @@
    "text": "2026 年我用過的桌布們🤍\n有喜歡的嗎？\n想要的人我可以分享給你們～～！",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df52jcXk9Lx",
-   "views": 1036,
+   "views": 1039,
    "likes": 3,
    "replies": 3,
    "reposts": 0,
@@ -2759,7 +2771,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 4,
-   "clicks": 37,
+   "clicks": 39,
    "round": null,
    "variant": null
   },
@@ -2841,7 +2853,7 @@
    "text": "欸，用 iPhone 的人\n真的要用這個耶！\n用過之後\n真的完全不會再忘記事情了✨￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df086QgE-wu",
-   "views": 1230,
+   "views": 1232,
    "likes": 6,
    "replies": 1,
    "reposts": 0,
@@ -2863,13 +2875,13 @@
    "text": "拯救 P 人的 4 款 App 🫠\n不用計畫、不用自律，丟給它們就好\n介紹跟連結放留言 👇 你們 P 人都靠什麼活下來的？",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfzCT5Rk7qA",
-   "views": 332,
-   "likes": 94,
+   "views": 346,
+   "likes": 100,
    "replies": 4,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 9,
+   "clicks": 10,
    "round": null,
    "variant": null
   },

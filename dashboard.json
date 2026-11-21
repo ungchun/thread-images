@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T12:47:56.489611+00:00",
+ "generated": "2026-11-21T21:43:39.567361+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -455,19 +455,14 @@
      },
      "20": {
       "n": 1,
-      "score": 0.64,
+      "score": 0.61,
       "median": 27
-     },
-     "21": {
-      "n": 1,
-      "score": 1.0,
-      "median": 149
      }
     },
     "wday": {
      "월": {
       "n": 1,
-      "score": 0.64,
+      "score": 0.61,
       "median": 27
      },
      "화": {
@@ -479,66 +474,30 @@
       "n": 4,
       "score": 1.0,
       "median": 20
-     },
-     "목": {
-      "n": 1,
-      "score": 1.0,
-      "median": 149
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 7,
+      "n": 6,
       "score": 1.0,
-      "median": 27
+      "median": 26
      }
     },
     "accounts": {
-     "mint.le_06": {
-      "flag": "VN",
-      "posts": 1,
-      "avg": 149,
-      "max": 149,
-      "hours": {
-       "21": {
-        "n": 1,
-        "score": 1.0,
-        "median": 149
-       }
-      },
-      "best_hour": 21,
-      "best_n": 1,
-      "state": "active",
-      "note": "",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 147,
-       "recent": [
-        147
-       ],
-       "base": 147,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
      "haru._81a": {
       "flag": "JP",
       "posts": 2,
-      "avg": 42,
-      "max": 58,
+      "avg": 44,
+      "max": 61,
       "hours": {
        "19": {
         "n": 1,
-        "score": 1.36,
-        "median": 58
+        "score": 1.39,
+        "median": 61
        },
        "20": {
         "n": 1,
-        "score": 0.64,
+        "score": 0.61,
         "median": 27
        }
       },
@@ -1189,6 +1148,22 @@
       "best_n": 0,
       "state": "paused",
       "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "mint.le_06": {
+      "flag": "VN",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "active",
+      "note": "",
       "until": null,
       "health": {
        "n": 0,
@@ -2085,17 +2060,8 @@
    "until": null
   },
   "mint.le_06": {
-   "n": 1,
-   "last": 147,
-   "recent": [
-    147
-   ],
-   "base": 147,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "active",
    "until": null
   },
@@ -2283,7 +2249,7 @@
    "text": "AIでつくったクリスマス待ち受けがかわいすぎる🐶🐱\n\n個人で使う分にはご自由に保存してね〜🥰\n\n雪の夜に赤いマフラーを巻いた\nわんちゃんとねこちゃんで作ってみたよ🎄\n\nうちの子バージョンも作りたい‼️って人いる〜？\n需要が多ければプロンプト、\n公開しま〜す🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/Df4PpnPloVk",
-   "views": 58,
+   "views": 61,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2336,28 +2302,6 @@
    "clicks": 3,
    "round": null,
    "variant": null
-  },
-  {
-   "id": "18128059393882743",
-   "account": "mint.le_06",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-10-22T14:31:39+00:00",
-   "date": "2026-10-22",
-   "local": "10/22 21:31",
-   "text": "từ hồi để cái này lên màn hình khóa\nmở điện thoại ra là biết hôm nay phải làm gì\nkhông còn quên hẹn nữa 🥹",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@mint.le_06/post/DezNA2VkQAv",
-   "views": 149,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
   }
  ],
  "ig_posts": [],
@@ -2369,7 +2313,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Saturday, 21-Nov-26 04:47:34 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AfhWbSn-RMM-J1OWMC2p1KW\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Saturday, 21-Nov-26 13:43:08 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Ao-uI3ONAt1Y8T33dZe7IOi\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
