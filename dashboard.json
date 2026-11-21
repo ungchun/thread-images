@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T01:37:06.315950+00:00",
+ "generated": "2026-11-21T12:47:56.489611+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -334,24 +334,15 @@
      "type": "W39 수 · 호명형(역대 최고 구조) / 경로 2갈래",
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
-     "posts": 1,
-     "views": 32709,
-     "likes": 4,
-     "median": 32709,
+     "posts": 0,
+     "views": 0,
+     "likes": 0,
+     "median": 0,
      "score": null,
      "sample": 0,
      "er_score": null,
      "er_sample": 0,
-     "variants": {
-      "새API": {
-       "posts": 1,
-       "median": 32709,
-       "score": null,
-       "sample": 0,
-       "er_score": null,
-       "er_sample": 0
-      }
-     }
+     "variants": {}
     },
     {
      "id": "t15b",
@@ -454,130 +445,55 @@
     "hour": {
      "18": {
       "n": 2,
-      "score": 0.68,
-      "median": 17
+      "score": 1.0,
+      "median": 18
      },
      "19": {
-      "n": 5,
+      "n": 3,
       "score": 1.0,
-      "median": 57
+      "median": 29
      },
      "20": {
       "n": 1,
-      "score": 0.16,
+      "score": 0.64,
       "median": 27
      },
      "21": {
-      "n": 2,
-      "score": 1.75,
-      "median": 280
+      "n": 1,
+      "score": 1.0,
+      "median": 149
      }
     },
     "wday": {
      "월": {
       "n": 1,
-      "score": 0.16,
+      "score": 0.64,
       "median": 27
      },
      "화": {
       "n": 1,
-      "score": 0.36,
+      "score": 1.0,
       "median": 26
      },
      "수": {
-      "n": 5,
+      "n": 4,
       "score": 1.0,
-      "median": 28
+      "median": 20
      },
      "목": {
-      "n": 3,
-      "score": 2.0,
-      "median": 412
+      "n": 1,
+      "score": 1.0,
+      "median": 149
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 10,
+      "n": 7,
       "score": 1.0,
-      "median": 42
+      "median": 27
      }
     },
     "accounts": {
-     "pim.pm_02": {
-      "flag": "TH",
-      "posts": 2,
-      "avg": 16368,
-      "max": 32709,
-      "hours": {
-       "19": {
-        "n": 2,
-        "score": 1.0,
-        "median": 16368
-       }
-      },
-      "best_hour": 19,
-      "best_n": 2,
-      "state": "active",
-      "note": "",
-      "until": null,
-      "health": {
-       "n": 2,
-       "last": 28,
-       "recent": [
-        27225,
-        28
-       ],
-       "base": 13626,
-       "approx": 0,
-       "multiple": 0.0,
-       "like_rate": 0.01,
-       "burst": 0.0,
-       "label": "정상"
-      }
-     },
-     "haru._81a": {
-      "flag": "JP",
-      "posts": 3,
-      "avg": 165,
-      "max": 412,
-      "hours": {
-       "19": {
-        "n": 1,
-        "score": 0.34,
-        "median": 57
-       },
-       "20": {
-        "n": 1,
-        "score": 0.16,
-        "median": 27
-       },
-       "21": {
-        "n": 1,
-        "score": 2.49,
-        "median": 412
-       }
-      },
-      "best_hour": 21,
-      "best_n": 1,
-      "state": "active",
-      "note": "",
-      "until": null,
-      "health": {
-       "n": 3,
-       "last": 57,
-       "recent": [
-        401,
-        21,
-        57
-       ],
-       "base": 57,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 1.04,
-       "burst": 0.33,
-       "label": "저조"
-      }
-     },
      "mint.le_06": {
       "flag": "VN",
       "posts": 1,
@@ -609,67 +525,98 @@
        "label": "저조"
       }
      },
-     "ivy_.k09": {
-      "flag": "US",
+     "haru._81a": {
+      "flag": "JP",
       "posts": 2,
-      "avg": 73,
-      "max": 120,
+      "avg": 42,
+      "max": 58,
       "hours": {
-       "18": {
-        "n": 1,
-        "score": 0.36,
-        "median": 26
-       },
        "19": {
         "n": 1,
-        "score": 1.64,
-        "median": 120
+        "score": 1.36,
+        "median": 58
+       },
+       "20": {
+        "n": 1,
+        "score": 0.64,
+        "median": 27
        }
       },
       "best_hour": 19,
       "best_n": 1,
       "state": "active",
-      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
+      "note": "",
       "until": null,
       "health": {
        "n": 2,
-       "last": 26,
+       "last": 57,
        "recent": [
-        119,
-        26
+        21,
+        57
        ],
-       "base": 72,
+       "base": 39,
        "approx": 0,
-       "multiple": 0.36,
+       "multiple": 1.46,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
       }
      },
-     "ashgrey._02": {
-      "flag": "VN",
+     "pim.pm_02": {
+      "flag": "TH",
       "posts": 1,
-      "avg": 9,
-      "max": 9,
+      "avg": 29,
+      "max": 29,
+      "hours": {
+       "19": {
+        "n": 1,
+        "score": 1.0,
+        "median": 29
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 1,
+       "last": 28,
+       "recent": [
+        28
+       ],
+       "base": 28,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
+     "ivy_.k09": {
+      "flag": "US",
+      "posts": 1,
+      "avg": 26,
+      "max": 26,
       "hours": {
        "18": {
         "n": 1,
         "score": 1.0,
-        "median": 9
+        "median": 26
        }
       },
       "best_hour": 18,
       "best_n": 1,
       "state": "active",
-      "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대",
+      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
        "n": 1,
-       "last": 9,
+       "last": 26,
        "recent": [
-        9
+        26
        ],
-       "base": 9,
+       "base": 26,
        "approx": 0,
        "multiple": 1.0,
        "like_rate": 0.0,
@@ -680,13 +627,13 @@
      "rara.2k_": {
       "flag": "ID",
       "posts": 1,
-      "avg": 7,
-      "max": 7,
+      "avg": 11,
+      "max": 11,
       "hours": {
        "19": {
         "n": 1,
         "score": 1.0,
-        "median": 7
+        "median": 11
        }
       },
       "best_hour": 19,
@@ -701,6 +648,37 @@
         7
        ],
        "base": 7,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
+     "ashgrey._02": {
+      "flag": "VN",
+      "posts": 1,
+      "avg": 10,
+      "max": 10,
+      "hours": {
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 10
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대",
+      "until": null,
+      "health": {
+       "n": 1,
+       "last": 9,
+       "recent": [
+        9
+       ],
+       "base": 9,
        "approx": 0,
        "multiple": 1.0,
        "like_rate": 0.0,
@@ -2046,18 +2024,17 @@
    "until": null
   },
   "haru._81a": {
-   "n": 3,
+   "n": 2,
    "last": 57,
    "recent": [
-    401,
     21,
     57
    ],
-   "base": 57,
+   "base": 39,
    "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 1.04,
-   "burst": 0.33,
+   "multiple": 1.46,
+   "like_rate": 0.0,
+   "burst": 0.0,
    "label": "저조",
    "state": "active",
    "until": null
@@ -2069,15 +2046,14 @@
    "until": "2026-11-05"
   },
   "ivy_.k09": {
-   "n": 2,
+   "n": 1,
    "last": 26,
    "recent": [
-    119,
     26
    ],
-   "base": 72,
+   "base": 26,
    "approx": 0,
-   "multiple": 0.36,
+   "multiple": 1.0,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
@@ -2142,18 +2118,17 @@
    "until": null
   },
   "pim.pm_02": {
-   "n": 2,
+   "n": 1,
    "last": 28,
    "recent": [
-    27225,
     28
    ],
-   "base": 13626,
+   "base": 28,
    "approx": 0,
-   "multiple": 0.0,
-   "like_rate": 0.01,
+   "multiple": 1.0,
+   "like_rate": 0.0,
    "burst": 0.0,
-   "label": "정상",
+   "label": "저조",
    "state": "active",
    "until": null
   },
@@ -2220,7 +2195,7 @@
    "text": "Wallpaper Natal bikinan AI ini gemes banget 🐶🐱\n\nBuat pribadi bebas save aja ya 🥰\n\nAku coba bikin anjing & kucing\npakai syal merah di malam bersalju 🎄\n\nAda yang mau bikin versi anabul sendiri?\nKalau banyak yang mau,\nnanti aku share prompt-nya 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Df4gy69FmTY",
-   "views": 7,
+   "views": 11,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2242,13 +2217,13 @@
    "text": "วอลเปเปอร์คริสต์มาสที่ทำจาก AI น่ารักเกินไปแล้ว 🐶🐱\n\nใช้ส่วนตัวเซฟไปได้เลยนะ 🥰\n\nลองทำน้องหมาน้องแมวพันผ้าพันคอสีแดง\nท่ามกลางคืนหิมะตก 🎄\n\nใครอยากทำให้น้องที่บ้านบ้างยกมือ 🙋\nถ้ามีคนอยากได้เยอะ\nเดี๋ยวแจกพรอมต์ให้เลย 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Df4dYm-lZSb",
-   "views": 28,
+   "views": 29,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 3,
    "round": null,
    "variant": null
   },
@@ -2264,13 +2239,13 @@
    "text": "Hình nền Noel làm bằng AI mà dễ thương xỉu 🐶🐱\n\nDùng cá nhân thì cứ lưu về thoải mái nha 🥰\n\nMình làm thử mấy bé chó mèo\nquàng khăn đỏ giữa đêm tuyết 🎄\n\nCó ai muốn làm cho boss nhà mình không nè?\nNhiều người muốn thì\nmình share prompt luôn 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Df4Z_i0kQmJ",
-   "views": 9,
+   "views": 10,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 3,
+   "clicks": 4,
    "round": null,
    "variant": null
   },
@@ -2308,13 +2283,13 @@
    "text": "AIでつくったクリスマス待ち受けがかわいすぎる🐶🐱\n\n個人で使う分にはご自由に保存してね〜🥰\n\n雪の夜に赤いマフラーを巻いた\nわんちゃんとねこちゃんで作ってみたよ🎄\n\nうちの子バージョンも作りたい‼️って人いる〜？\n需要が多ければプロンプト、\n公開しま〜す🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/Df4PpnPloVk",
-   "views": 57,
+   "views": 58,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2358,7 +2333,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 3,
    "round": null,
    "variant": null
   },
@@ -2383,72 +2358,6 @@
    "clicks": 0,
    "round": null,
    "variant": null
-  },
-  {
-   "id": "18105157604212065",
-   "account": "haru._81a",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-22T12:32:02+00:00",
-   "date": "2026-10-22",
-   "local": "10/22 21:32",
-   "text": "スマホのホーム画面が、やっと手帳みたいになった\n三日坊主の私でも、これだけは毎日見てる",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@haru._81a/post/Dey_TqPlFA4",
-   "views": 412,
-   "likes": 5,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 5,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "17965406568240282",
-   "account": "pim.pm_02",
-   "project": "trace",
-   "country": "TH",
-   "flag": "🇹🇭",
-   "utc": "2026-10-22T12:31:34+00:00",
-   "date": "2026-10-22",
-   "local": "10/22 19:31",
-   "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@pim.pm_02/post/Dey_RiJlN-O",
-   "views": 32709,
-   "likes": 4,
-   "replies": 3,
-   "reposts": 3,
-   "quotes": 0,
-   "shares": 2,
-   "clicks": 81,
-   "round": "t15a",
-   "variant": "새API"
-  },
-  {
-   "id": "18100852889068743",
-   "account": "ivy_.k09",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-10-22T02:01:59+00:00",
-   "date": "2026-10-21",
-   "local": "10/21 19:01",
-   "text": "only changed this one thing on my iPhone\nand now people keep saying i'm a different person",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@ivy_.k09/post/Dex3ON3myIf",
-   "views": 120,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
   }
  ],
  "ig_posts": [],
@@ -2460,7 +2369,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Friday, 20-Nov-26 17:36:30 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AgM-qeFZ70yXO-eSn0CGWmG\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Saturday, 21-Nov-26 04:47:34 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AfhWbSn-RMM-J1OWMC2p1KW\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
