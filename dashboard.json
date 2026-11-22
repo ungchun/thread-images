@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T21:43:39.567361+00:00",
+ "generated": "2026-11-22T07:03:35.013295+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -443,26 +443,31 @@
    ],
    "insights": {
     "hour": {
+     "8": {
+      "n": 3,
+      "score": 1.67,
+      "median": 63
+     },
      "18": {
       "n": 2,
-      "score": 1.0,
+      "score": 0.64,
       "median": 18
      },
      "19": {
       "n": 3,
-      "score": 1.0,
-      "median": 29
+      "score": 1.41,
+      "median": 30
      },
      "20": {
       "n": 1,
-      "score": 0.61,
+      "score": 0.59,
       "median": 27
      }
     },
     "wday": {
      "월": {
       "n": 1,
-      "score": 0.61,
+      "score": 0.59,
       "median": 27
      },
      "화": {
@@ -472,32 +477,73 @@
      },
      "수": {
       "n": 4,
-      "score": 1.0,
-      "median": 20
+      "score": 0.87,
+      "median": 21
+     },
+     "일": {
+      "n": 3,
+      "score": 1.67,
+      "median": 63
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 6,
+      "n": 9,
       "score": 1.0,
-      "median": 26
+      "median": 27
      }
     },
     "accounts": {
+     "pim.pm_02": {
+      "flag": "TH",
+      "posts": 2,
+      "avg": 91,
+      "max": 152,
+      "hours": {
+       "8": {
+        "n": 1,
+        "score": 1.67,
+        "median": 152
+       },
+       "19": {
+        "n": 1,
+        "score": 0.33,
+        "median": 30
+       }
+      },
+      "best_hour": 8,
+      "best_n": 1,
+      "state": "active",
+      "note": "",
+      "until": null,
+      "health": {
+       "n": 1,
+       "last": 28,
+       "recent": [
+        28
+       ],
+       "base": 28,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
      "haru._81a": {
       "flag": "JP",
       "posts": 2,
-      "avg": 44,
-      "max": 61,
+      "avg": 45,
+      "max": 64,
       "hours": {
        "19": {
         "n": 1,
-        "score": 1.39,
-        "median": 61
+        "score": 1.41,
+        "median": 64
        },
        "20": {
         "n": 1,
-        "score": 0.61,
+        "score": 0.59,
         "median": 27
        }
       },
@@ -521,30 +567,35 @@
        "label": "저조"
       }
      },
-     "pim.pm_02": {
-      "flag": "TH",
-      "posts": 1,
-      "avg": 29,
-      "max": 29,
+     "ashgrey._02": {
+      "flag": "VN",
+      "posts": 2,
+      "avg": 36,
+      "max": 63,
       "hours": {
-       "19": {
+       "8": {
         "n": 1,
-        "score": 1.0,
-        "median": 29
+        "score": 1.73,
+        "median": 63
+       },
+       "18": {
+        "n": 1,
+        "score": 0.27,
+        "median": 10
        }
       },
-      "best_hour": 19,
+      "best_hour": 8,
       "best_n": 1,
       "state": "active",
-      "note": "",
+      "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대",
       "until": null,
       "health": {
        "n": 1,
-       "last": 28,
+       "last": 9,
        "recent": [
-        28
+        9
        ],
-       "base": 28,
+       "base": 9,
        "approx": 0,
        "multiple": 1.0,
        "like_rate": 0.0,
@@ -585,14 +636,19 @@
      },
      "rara.2k_": {
       "flag": "ID",
-      "posts": 1,
-      "avg": 11,
-      "max": 11,
+      "posts": 2,
+      "avg": 7,
+      "max": 13,
       "hours": {
+       "8": {
+        "n": 1,
+        "score": 0.14,
+        "median": 1
+       },
        "19": {
         "n": 1,
-        "score": 1.0,
-        "median": 11
+        "score": 1.86,
+        "median": 13
        }
       },
       "best_hour": 19,
@@ -607,37 +663,6 @@
         7
        ],
        "base": 7,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "ashgrey._02": {
-      "flag": "VN",
-      "posts": 1,
-      "avg": 10,
-      "max": 10,
-      "hours": {
-       "18": {
-        "n": 1,
-        "score": 1.0,
-        "median": 10
-       }
-      },
-      "best_hour": 18,
-      "best_n": 1,
-      "state": "active",
-      "note": "최대 도달. 오전 8시가 압도적(42만~118만), 저녁은 3천대",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 9,
-       "recent": [
-        9
-       ],
-       "base": 9,
        "approx": 0,
        "multiple": 1.0,
        "like_rate": 0.0,
@@ -2146,9 +2171,100 @@
    "reason": "복귀 테스트 예약 필요 — 2026-11-05 휴식 끝, 올라간 글도 예약도 없음"
   }
  ],
- "violations": [],
+ "violations": [
+  {
+   "kind": "루프 밖 발행",
+   "account": "pim.pm_02",
+   "date": "2026-11-22",
+   "utc": "2026-11-22T01:12:31+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@pim.pm_02/post/DgBmOH0D_S3"
+  },
+  {
+   "kind": "루프 밖 발행",
+   "account": "rara.2k_",
+   "date": "2026-11-22",
+   "utc": "2026-11-22T01:10:18+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@rara.2k_/post/DgBl94nFAkI"
+  },
+  {
+   "kind": "루프 밖 발행",
+   "account": "ashgrey._02",
+   "date": "2026-11-22",
+   "utc": "2026-11-22T01:07:48+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@ashgrey._02/post/DgBlriln850"
+  }
+ ],
  "hits": [],
  "posts": [
+  {
+   "id": "18136509463793829",
+   "account": "pim.pm_02",
+   "project": "trace",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-11-22T01:12:31+00:00",
+   "date": "2026-11-22",
+   "local": "11/22 08:12",
+   "text": "ฟีเจอร์ที่หลายคนพิสูจน์แล้วว่าได้ผล! \nใครใช้ iPhone ต้องลอง! \nรับรองว่าไม่มีวันลืมอีกแน่นอน! ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@pim.pm_02/post/DgBmOH0D_S3",
+   "views": 152,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18021533696781514",
+   "account": "rara.2k_",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-22T01:10:18+00:00",
+   "date": "2026-11-22",
+   "local": "11/22 08:10",
+   "text": "Fitur yang sudah terbukti oleh banyak orang! Kalau pakai iPhone,\nwajib banget coba! Dijamin nggak bakal lupa lagi! ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@rara.2k_/post/DgBl94nFAkI",
+   "views": 1,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17973481205960285",
+   "account": "ashgrey._02",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-11-22T01:07:48+00:00",
+   "date": "2026-11-22",
+   "local": "11/22 08:07",
+   "text": "Tính năng đã được nhiều người kiểm chứng!\nNếu dùng iPhone,\nnhất định phải thử!\nBạn sẽ không bao giờ quên việc gì nữa! ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@ashgrey._02/post/DgBlriln850",
+   "views": 63,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 3,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18140795380653112",
    "account": "rara.2k_",
@@ -2161,7 +2277,7 @@
    "text": "Wallpaper Natal bikinan AI ini gemes banget 🐶🐱\n\nBuat pribadi bebas save aja ya 🥰\n\nAku coba bikin anjing & kucing\npakai syal merah di malam bersalju 🎄\n\nAda yang mau bikin versi anabul sendiri?\nKalau banyak yang mau,\nnanti aku share prompt-nya 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Df4gy69FmTY",
-   "views": 11,
+   "views": 13,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2183,7 +2299,7 @@
    "text": "วอลเปเปอร์คริสต์มาสที่ทำจาก AI น่ารักเกินไปแล้ว 🐶🐱\n\nใช้ส่วนตัวเซฟไปได้เลยนะ 🥰\n\nลองทำน้องหมาน้องแมวพันผ้าพันคอสีแดง\nท่ามกลางคืนหิมะตก 🎄\n\nใครอยากทำให้น้องที่บ้านบ้างยกมือ 🙋\nถ้ามีคนอยากได้เยอะ\nเดี๋ยวแจกพรอมต์ให้เลย 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Df4dYm-lZSb",
-   "views": 29,
+   "views": 30,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2249,7 +2365,7 @@
    "text": "AIでつくったクリスマス待ち受けがかわいすぎる🐶🐱\n\n個人で使う分にはご自由に保存してね〜🥰\n\n雪の夜に赤いマフラーを巻いた\nわんちゃんとねこちゃんで作ってみたよ🎄\n\nうちの子バージョンも作りたい‼️って人いる〜？\n需要が多ければプロンプト、\n公開しま〜す🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/Df4PpnPloVk",
-   "views": 61,
+   "views": 64,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2313,7 +2429,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Saturday, 21-Nov-26 13:43:08 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Ao-uI3ONAt1Y8T33dZe7IOi\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Saturday, 21-Nov-26 23:02:59 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AP6i6vCb_Mf4GCu9w6uRoTS\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
