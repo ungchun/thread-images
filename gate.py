@@ -23,6 +23,7 @@
 """
 import json
 import sys
+import campaign_publish
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -115,6 +116,7 @@ def check():
         recent[p["account"]].add(body(p.get("text") or ""))
 
     errs, warns, holds, rows = [], [], [], 0
+    approved_rows = 0
     slots = defaultdict(list)
     f = ROOT / "schedule.txt"
     lines = f.read_text(encoding="utf-8").splitlines() if f.exists() else []
@@ -131,12 +133,20 @@ def check():
             continue
         rows += 1
         info = st.get(a)
+        tf = ROOT / textfile
+        campaign = campaign_publish.entry(when, a, textfile, tw,
+                                           tf.read_text().partition("\n---\n")[0].strip())
+        if campaign:
+            approved_rows += 1
         t = local(when, a)
         d = t.date()
         tag = f"{a} {d:%m/%d}"
         slot = datetime.fromisoformat(when).astimezone(timezone.utc)
-        slots[slot.replace(minute=slot.minute // 30 * 30, second=0, microsecond=0)].append(a)
-        if info is None:
+        if not campaign:
+            slots[slot.replace(minute=slot.minute // 30 * 30, second=0, microsecond=0)].append(a)
+        if campaign:
+            pass  # Only these manifest entries have explicit state/cap/time exceptions.
+        elif info is None:
             errs.append(f"{tag} — status.json에 없는 계정. 상태를 먼저 정한다")
         elif rest_open(info, d):
             tests[a].add(f"sched:{when}")
@@ -146,7 +156,7 @@ def check():
             until = f" ({info['until']}까지)" if info.get("until") else ""
             errs.append(f"{tag} — {BLOCKED.get(info.get('state'), info.get('state'))} 계정{until}")
         day_count[(a, d)].add(f"sched:{when}")
-        if len(day_count[(a, d)]) > DAILY_CAP:
+        if not campaign and len(day_count[(a, d)]) > DAILY_CAP:
             errs.append(f"{tag} — 하루 {DAILY_CAP}개 상한 초과 ({len(day_count[(a, d)])}건, 현지 날짜 기준)")
         tf = ROOT / textfile
         if tf.exists():
@@ -164,7 +174,7 @@ def check():
             (errs if weak else warns).append(msg + (f" · {label.get(a, '휴식')} 계정이라 막는다" if weak else " · 살아 있는 계정이라 허용"))
         hm = t.strftime("%H:%M")
         times[a][d] = hm
-        if all(times[a].get(d - timedelta(days=k)) == hm for k in (1, 2)):
+        if not campaign and all(times[a].get(d - timedelta(days=k)) == hm for k in (1, 2)):
             errs.append(f"{tag} — 3일 연속 같은 현지 시각 {hm}. ±30~60분 흔든다")
 
     for s, accs in sorted(slots.items()):
@@ -183,6 +193,8 @@ def check():
         warns.append(f"최근 7일 리포스트 — 계정끼리 리포스트하지 않는다: {', '.join(sorted(reposts))}")
 
     print(f"예약 {rows}건 검사 · 수집 {len(posts)}건 + 발행기록 {len(logged())}건 기준")
+    if approved_rows:
+        print(f"  사용자 지정 11/24 캠페인 {approved_rows}건: manifest와 일치, 운영 상태·하루 상한·정시 몰림 예외")
     for e in errs:
         print("  ✗", e)
     for w in warns:

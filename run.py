@@ -28,6 +28,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import campaign_publish
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -372,7 +373,8 @@ def main():
 
         body, _, inline = (ROOT / textfile).read_text(encoding="utf-8").partition("\n---\n")
         body, inline = body.strip(), inline.strip()
-        no_reply = inline == "noreply"   # 바이럴 글: 계정 고정 답글(트레이스 링크)도 달지 않는다
+        campaign = campaign_publish.entry(when, account, textfile, tw_imgs, body)
+        no_reply = campaign is not None or inline == "noreply"   # 바이럴 글: 고정 답글 없음
         inline = "" if no_reply else inline
         # 답글 블록 첫 줄 "delay: 60"이면 답글을 본문 60분 뒤(그 직전 회차)에 단다. 없으면 다음 회차
         delay = REPLY_DELAY_MIN
@@ -381,6 +383,8 @@ def main():
             delay = int(first.split(":", 1)[1]) - 5   # cron 30분 주기라 5분 당겨 둬야 그 회차에 걸린다
             inline = inline.strip()
         inline, rmedia, rspoiler = reply_block(inline, account)
+        if no_reply:
+            rmedia = []
 
         # 지난 회차에 본문만 올라가고 답글이 빠진 행. 답글만 다시 민다.
         for mark in [d for d in done if d.startswith("reply-")]:
@@ -403,7 +407,7 @@ def main():
             changed = True
 
         # 새 본문을 올리기 직전에만 운영 규칙을 본다. 답글 재시도(위)는 이미 나간 글이라 막지 않는다.
-        if "threads" not in done and tw_imgs:
+        if "threads" not in done and tw_imgs and campaign is None:
             try:
                 why = hold_reason(account, now, states)
             except Exception as e:   # 하루 건수를 못 세면 이번 회차는 올리지 않는다
@@ -436,7 +440,7 @@ def main():
             # 시각을 25분 뒤로 당겨 두면 아래 '답글만 다시 민다' 경로가 다음 회차에 집어간다.
             defer = bool(reply) and not is_ig
             try:
-                post_id = publish(plat, account, body, imgs,
+                post_id = campaign_publish.publish(campaign) if campaign else publish(plat, account, body, imgs,
                                   None if defer else reply, is_ig,
                                   spoiler_media="!" in done, rmedia=rmedia, rspoiler=rspoiler)
                 if defer:

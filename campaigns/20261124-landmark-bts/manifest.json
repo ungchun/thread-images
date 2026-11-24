@@ -1,0 +1,414 @@
+{
+  "id": "20261124-landmark-bts",
+  "source_url": "https://app.notion.com/p/421dd8f2aea2807a8c5afbde153ccc13",
+  "created_at": "2026-11-24T03:42:30.516637+00:00",
+  "publish_authorized": true,
+  "authorization": "User explicitly requested these eight accounts, two posts each, next local 08:00 landmark and 18:30 BTS, BTS community topic, two source images per post.",
+  "one_off": true,
+  "operational_exceptions": [
+    "Exact sixteen entries may publish despite paused/rest state and normal daily cap.",
+    "Exact user-selected local times retained, including shared UTC slots."
+  ],
+  "posts": [
+    {
+      "id": "au-bts",
+      "country": "호주",
+      "country_code": "AU",
+      "account": "appfinds_anz",
+      "kind": "bts",
+      "caption": "lockscreen wallpapers with your plans built in 🗓️✨",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/au_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/au_bts_01_preview.png",
+        "trace/20261124-landmark-bts/au_bts_02_preview.png"
+      ],
+      "sha256": [
+        "2abe0e8712429d4e454895e01d4153acf82c47a19fbf5aea3716b1d0a6110482",
+        "7eb0c34cca1f58964354ca88e8d6518ead191c2a26db3d8531d1c93a9eac4f5a"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "Australia/Sydney",
+      "scheduled_local": "2026-11-24T18:30:00+11:00",
+      "scheduled_utc": "2026-11-24T07:30:00+00:00",
+      "scheduled_kst": "2026-11-24T16:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "gb-landmark",
+      "country": "영국",
+      "country_code": "GB",
+      "account": "appfindsuk8",
+      "kind": "landmark",
+      "caption": "didn’t expect putting my plans on my lock screen to look this cute 🥹🥹",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/gb_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/gb_landmark_01_preview.png",
+        "trace/20261124-landmark-bts/gb_landmark_02_preview.png"
+      ],
+      "sha256": [
+        "3fa0c28dfac33da4434ad2c98fb41ad199b7394edde189d079b690d680b455fe",
+        "2ddb73ddb64ba7807bf7b0bb140b5a869812a6aa9afcc85013c9595171302f0e"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "Europe/London",
+      "scheduled_local": "2026-11-24T08:00:00+00:00",
+      "scheduled_utc": "2026-11-24T08:00:00+00:00",
+      "scheduled_kst": "2026-11-24T17:00:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "jp-bts",
+      "country": "일본",
+      "country_code": "JP",
+      "account": "trace.planner.jp",
+      "kind": "bts",
+      "caption": "予定を組み込んだロック画面の壁紙 🗓️✨",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/jp_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/jp_bts_01_preview.png",
+        "trace/20261124-landmark-bts/jp_bts_02_preview.png"
+      ],
+      "sha256": [
+        "b2eb0cc6eb86063b662bb57f19f31ddb6d1ffc27dd0e9dad85900717e165d2dd",
+        "b5eb3e73f05dd2522b7c6d7a24987cdf8d2b9ff9b64934e92703bc66eb389d0b"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "Asia/Tokyo",
+      "scheduled_local": "2026-11-24T18:30:00+09:00",
+      "scheduled_utc": "2026-11-24T09:30:00+00:00",
+      "scheduled_kst": "2026-11-24T18:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "tw-bts",
+      "country": "대만",
+      "country_code": "TW",
+      "account": "trace.planner.tw",
+      "kind": "bts",
+      "caption": "內建行程的鎖定畫面桌布 🗓️✨",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/tw_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/tw_bts_01_preview.png",
+        "trace/20261124-landmark-bts/tw_bts_02_preview.png"
+      ],
+      "sha256": [
+        "31633d6124d8ffccd0550651593ca5c4b0e714f6603134d2af215abf8e70c813",
+        "ec326c335982409da5cc61990d0c3758bbbd847ef87e93e3f4cab63a407b944c"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "Asia/Taipei",
+      "scheduled_local": "2026-11-24T18:30:00+08:00",
+      "scheduled_utc": "2026-11-24T10:30:00+00:00",
+      "scheduled_kst": "2026-11-24T19:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "ph-bts",
+      "country": "필리핀",
+      "country_code": "PH",
+      "account": "appfinds_ph",
+      "kind": "bts",
+      "caption": "lock screen wallpapers na may kasama nang schedule mo 🗓️✨",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/ph_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/ph_bts_01_preview.png",
+        "trace/20261124-landmark-bts/ph_bts_03_preview.png"
+      ],
+      "sha256": [
+        "66eac76b6dbec5d7915245a2089de4275107de4182c0aa3d20eb4abca4c7f072",
+        "c0a2f0603060de72d4980fc8911307cb9b9a681f4571cb2241baa3e2d9d1cecf"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "Asia/Manila",
+      "scheduled_local": "2026-11-24T18:30:00+08:00",
+      "scheduled_utc": "2026-11-24T10:30:00+00:00",
+      "scheduled_kst": "2026-11-24T19:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "my-bts",
+      "country": "말레이시아",
+      "country_code": "MY",
+      "account": "appfinds_my",
+      "kind": "bts",
+      "caption": "wallpaper lock screen siap dengan jadual korang 🗓️✨",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/my_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/my_bts_01_preview.png",
+        "trace/20261124-landmark-bts/my_bts_04_preview.png"
+      ],
+      "sha256": [
+        "9da520b0ca84330dfebec86cd3715214dbbe9dcdac10835a1c2cdb2e9de42d38",
+        "e80c564c6d4ad28de657708f3746e6ff61fc961a78f8f3db55312fe9787faf14"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "Asia/Kuala_Lumpur",
+      "scheduled_local": "2026-11-24T18:30:00+08:00",
+      "scheduled_utc": "2026-11-24T10:30:00+00:00",
+      "scheduled_kst": "2026-11-24T19:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "id-bts",
+      "country": "인도네시아",
+      "country_code": "ID",
+      "account": "appfinds_id",
+      "kind": "bts",
+      "caption": "wallpaper lockscreen yang sudah ada jadwalmu 🗓️✨",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/id_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/id_bts_01_preview.png",
+        "trace/20261124-landmark-bts/id_bts_04_preview.png"
+      ],
+      "sha256": [
+        "0e299792be9f8f4d81954c9c02b13f76bd22177cda38d5fc3d1884831cfb1392",
+        "fb69bf58a561fe68ae3d28ad227623d3de88612516e629185bae2f9deb876ce6"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "Asia/Jakarta",
+      "scheduled_local": "2026-11-24T18:30:00+07:00",
+      "scheduled_utc": "2026-11-24T11:30:00+00:00",
+      "scheduled_kst": "2026-11-24T20:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "us-landmark",
+      "country": "미국",
+      "country_code": "US",
+      "account": "appfindsna9",
+      "kind": "landmark",
+      "caption": "didn’t expect putting my plans on my lock screen to look this cute 🥹🥹",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/us_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/us_landmark_01_preview.png",
+        "trace/20261124-landmark-bts/us_landmark_02_preview.png"
+      ],
+      "sha256": [
+        "7202188f8780362c884ac89b1259a4c7eeb73c9e1f868e51b127cdb87c11a6fe",
+        "50151339c0a88361157e961929ad7776a5032515f9bf708103869689c473c14e"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "America/New_York",
+      "scheduled_local": "2026-11-24T08:00:00-05:00",
+      "scheduled_utc": "2026-11-24T13:00:00+00:00",
+      "scheduled_kst": "2026-11-24T22:00:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "gb-bts",
+      "country": "영국",
+      "country_code": "GB",
+      "account": "appfindsuk8",
+      "kind": "bts",
+      "caption": "lockscreen wallpapers with your plans built in 🗓️✨",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/gb_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/gb_bts_01_preview.png",
+        "trace/20261124-landmark-bts/gb_bts_02_preview.png"
+      ],
+      "sha256": [
+        "a68a52a6bed0c1d97f87aee1e1372a75838c9cf7ef337678ab41faf5dc85e799",
+        "941eaa28a6d4a3331ebdeca1312ee633653d22b6415bdb5ac7d64cd6509ffd56"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "Europe/London",
+      "scheduled_local": "2026-11-24T18:30:00+00:00",
+      "scheduled_utc": "2026-11-24T18:30:00+00:00",
+      "scheduled_kst": "2026-11-25T03:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "au-landmark",
+      "country": "호주",
+      "country_code": "AU",
+      "account": "appfinds_anz",
+      "kind": "landmark",
+      "caption": "didn’t expect putting my plans on my lock screen to look this cute 🥹🥹",
+      "caption_source": "Translation preserving the requested common caption",
+      "textfile": "texts/trace/20261124-landmark-bts/au_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/au_landmark_01_preview.png",
+        "trace/20261124-landmark-bts/au_landmark_02_preview.png"
+      ],
+      "sha256": [
+        "77bf28b70509f22d718f64f00790b92e1bf40c235da348850b3efdc10fa51686",
+        "e518da6b40bf3f2b10c3c3c75fccf37ef3a792a7ae705220f4957d8464a4bdfd"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "Australia/Sydney",
+      "scheduled_local": "2026-11-25T08:00:00+11:00",
+      "scheduled_utc": "2026-11-24T21:00:00+00:00",
+      "scheduled_kst": "2026-11-25T06:00:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "jp-landmark",
+      "country": "일본",
+      "country_code": "JP",
+      "account": "trace.planner.jp",
+      "kind": "landmark",
+      "caption": "ロック画面に予定を入れたら、こんなにかわいくなると思わなかった 🥹🥹",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/jp_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/jp_landmark_01_preview.png",
+        "trace/20261124-landmark-bts/jp_landmark_03_preview.png"
+      ],
+      "sha256": [
+        "0eba27ac39568888f46e595535a0d771dbeff1ff715df5c119ca1c786a52e0e4",
+        "ec684b0a6ce78ff489dd5f9b96a35f43b3cea2a20bf27edf8c82b1e441c9c7d3"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "Asia/Tokyo",
+      "scheduled_local": "2026-11-25T08:00:00+09:00",
+      "scheduled_utc": "2026-11-24T23:00:00+00:00",
+      "scheduled_kst": "2026-11-25T08:00:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "us-bts",
+      "country": "미국",
+      "country_code": "US",
+      "account": "appfindsna9",
+      "kind": "bts",
+      "caption": "lockscreen wallpapers with your plans built in 🗓️✨",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/us_bts.txt",
+      "images": [
+        "trace/20261124-landmark-bts/us_bts_01_preview.png",
+        "trace/20261124-landmark-bts/us_bts_04_preview.png"
+      ],
+      "sha256": [
+        "3467af8f4f3b4a014e5cd233339d2a4a670b03b3e4187b0c7f1586940c882db9",
+        "1c88a5b068524c6783090280966f87b4c46b527da8ca803b272771d6df39a5f8"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": "BTS",
+      "timezone": "America/New_York",
+      "scheduled_local": "2026-11-24T18:30:00-05:00",
+      "scheduled_utc": "2026-11-24T23:30:00+00:00",
+      "scheduled_kst": "2026-11-25T08:30:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "tw-landmark",
+      "country": "대만",
+      "country_code": "TW",
+      "account": "trace.planner.tw",
+      "kind": "landmark",
+      "caption": "沒想到把行程放到鎖定畫面上，會這麼好看 🥹🥹",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/tw_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/tw_landmark_01_preview.png",
+        "trace/20261124-landmark-bts/tw_landmark_03_preview.png"
+      ],
+      "sha256": [
+        "856bf678817ae2f74eb6ec020ae26708bc3bd8644a7a3045fd9fb2250cdc299c",
+        "237265e05b4513062d4579b1392f30e26994f1bef7b387b8d04fe0f91af2287f"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "Asia/Taipei",
+      "scheduled_local": "2026-11-25T08:00:00+08:00",
+      "scheduled_utc": "2026-11-25T00:00:00+00:00",
+      "scheduled_kst": "2026-11-25T09:00:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "ph-landmark",
+      "country": "필리핀",
+      "country_code": "PH",
+      "account": "appfinds_ph",
+      "kind": "landmark",
+      "caption": "Hindi ko akalaing ganito ka-cute yung lock screen kapag nilagyan ng schedule 🥹🥹",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/ph_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/ph_landmark_02_preview.png",
+        "trace/20261124-landmark-bts/ph_landmark_04_preview.png"
+      ],
+      "sha256": [
+        "86ee42c734568d3820e2a25c62d23c7c256f4e70bf4f7a19a8877dba0aea3e49",
+        "0b2339c58f0489cb5cf460eca5c540e98e749105a9bb9db6de38e4efd162af42"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "Asia/Manila",
+      "scheduled_local": "2026-11-25T08:00:00+08:00",
+      "scheduled_utc": "2026-11-25T00:00:00+00:00",
+      "scheduled_kst": "2026-11-25T09:00:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "my-landmark",
+      "country": "말레이시아",
+      "country_code": "MY",
+      "account": "appfinds_my",
+      "kind": "landmark",
+      "caption": "Tak sangka letak jadual dekat lock screen boleh jadi secantik ni 🥹🥹",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/my_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/my_landmark_03_preview.png",
+        "trace/20261124-landmark-bts/my_landmark_04_preview.png"
+      ],
+      "sha256": [
+        "a88c4f7393419cab556c22d00f4d6df515d934535bbba3b6a424caf8bcadc70a",
+        "075161a2b914ba40cb9659b3e74161d1618645a7e16b8bad0c2fbf0c8e813574"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "Asia/Kuala_Lumpur",
+      "scheduled_local": "2026-11-25T08:00:00+08:00",
+      "scheduled_utc": "2026-11-25T00:00:00+00:00",
+      "scheduled_kst": "2026-11-25T09:00:00+09:00",
+      "no_reply": true
+    },
+    {
+      "id": "id-landmark",
+      "country": "인도네시아",
+      "country_code": "ID",
+      "account": "appfinds_id",
+      "kind": "landmark",
+      "caption": "Nggak nyangka jadwal di lockscreen bisa secantik ini 🥹🥹",
+      "caption_source": "Notion original",
+      "textfile": "texts/trace/20261124-landmark-bts/id_landmark.txt",
+      "images": [
+        "trace/20261124-landmark-bts/id_landmark_02_preview.png",
+        "trace/20261124-landmark-bts/id_landmark_03_preview.png"
+      ],
+      "sha256": [
+        "99a0831df94e4133df93a02793576e5e53243cd38ad3f9bb6b4f153c2b8343a7",
+        "aeb68bc3cd53203facc3ad652a98c85ae05881db4e99982c70c1afde3ffbd699"
+      ],
+      "media_base": "https://raw.githubusercontent.com/ungchun/thread-images/main/images/",
+      "topic_tag": null,
+      "timezone": "Asia/Jakarta",
+      "scheduled_local": "2026-11-25T08:00:00+07:00",
+      "scheduled_utc": "2026-11-25T01:00:00+00:00",
+      "scheduled_kst": "2026-11-25T10:00:00+09:00",
+      "no_reply": true
+    }
+  ]
+}

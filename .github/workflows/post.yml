@@ -5,6 +5,11 @@ on:
   # 반복돼(8월 말·9월 초 두 차례) 깨우는 역할을 cron-job.org로 옮겼다.
   # cron-job.org가 30분마다 workflow_dispatch API를 호출한다 (threads-dispatch 잡).
   workflow_dispatch:
+    inputs:
+      campaign_preflight:
+        description: 'Read-only verification of the 16-post 11/24 campaign'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,13 +32,21 @@ jobs:
       # 2026-10-22부터 팀원 계정도 이 러너로만 발행한다. 팀원 토큰은 THREADS_<아이디> 시크릿에 따로 두고
       # creds()가 THREADS_ACCOUNTS에 없는 계정일 때만 찾아 쓴다. 시크릿이 비어 있으면 그 계정 줄만 실패한다.
       - run: python3 run.py
+        if: ${{ !inputs.campaign_preflight }}
         env:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
           THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
           THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
+      - name: Campaign preflight (no publication)
+        if: ${{ inputs.campaign_preflight }}
+        run: python3 campaign_publish.py --preflight
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
       # X 발행(x_schedule.txt). Threads가 실패한 회차엔 아래 commit도 안 돌아 X 발행 기록이 남지 않으니
       # always()를 붙이지 않는다. X 실패가 commit을 막으면 안 되므로 continue-on-error.
       - run: python3 x_run.py
+        if: ${{ !inputs.campaign_preflight }}
         continue-on-error: true
         env:
           X_JP_API_KEY: ${{ secrets.X_JP_API_KEY }}
