@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T02:59:04.937586+00:00",
+ "generated": "2026-11-24T15:01:10.165739+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -444,113 +444,73 @@
    "insights": {
     "hour": {
      "8": {
-      "n": 1,
+      "n": 3,
       "score": 1.0,
       "median": 10
      },
-     "20": {
-      "n": 1,
+     "18": {
+      "n": 4,
       "score": 1.0,
-      "median": 24
-     },
-     "21": {
-      "n": 1,
-      "score": 1.0,
-      "median": 153
+      "median": 2
      }
     },
     "wday": {
+     "화": {
+      "n": 6,
+      "score": 1.0,
+      "median": 4
+     },
      "수": {
       "n": 1,
-      "score": 1.0,
+      "score": 1.82,
       "median": 10
-     },
-     "일": {
-      "n": 2,
-      "score": 1.0,
-      "median": 88
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 3,
+      "n": 7,
       "score": 1.0,
-      "median": 24
+      "median": 4
      }
     },
     "accounts": {
-     "trace.planner.tw": {
-      "flag": "TW",
+     "appfindsna9": {
+      "flag": "US",
       "posts": 1,
-      "avg": 153,
-      "max": 153,
-      "hours": {
-       "21": {
-        "n": 1,
-        "score": 1.0,
-        "median": 153
-       }
-      },
-      "best_hour": 21,
-      "best_n": 1,
-      "state": "official",
-      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 130,
-       "recent": [
-        130
-       ],
-       "base": 130,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "trace.planner.jp": {
-      "flag": "JP",
-      "posts": 1,
-      "avg": 24,
-      "max": 24,
-      "hours": {
-       "20": {
-        "n": 1,
-        "score": 1.0,
-        "median": 24
-       }
-      },
-      "best_hour": 20,
-      "best_n": 1,
-      "state": "official",
-      "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
-      "until": null,
-      "health": {
-       "n": 1,
-       "last": 7,
-       "recent": [
-        7
-       ],
-       "base": 7,
-       "approx": 0,
-       "multiple": 1.0,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "appfinds_id": {
-      "flag": "ID",
-      "posts": 1,
-      "avg": 10,
-      "max": 10,
+      "avg": 11,
+      "max": 11,
       "hours": {
        "8": {
         "n": 1,
         "score": 1.0,
+        "median": 11
+       }
+      },
+      "best_hour": 8,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "appfinds_id": {
+      "flag": "ID",
+      "posts": 2,
+      "avg": 5,
+      "max": 10,
+      "hours": {
+       "8": {
+        "n": 1,
+        "score": 1.82,
         "median": 10
+       },
+       "18": {
+        "n": 1,
+        "score": 0.18,
+        "median": 1
        }
       },
       "best_hour": 8,
@@ -570,6 +530,94 @@
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
+      }
+     },
+     "appfinds_ph": {
+      "flag": "PH",
+      "posts": 1,
+      "avg": 4,
+      "max": 4,
+      "hours": {
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 4
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "appfindsuk8": {
+      "flag": "GB",
+      "posts": 1,
+      "avg": 4,
+      "max": 4,
+      "hours": {
+       "8": {
+        "n": 1,
+        "score": 1.0,
+        "median": 4
+       }
+      },
+      "best_hour": 8,
+      "best_n": 1,
+      "state": "paused",
+      "note": "중단 국가 (10/22 재정비)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "trace.planner.tw": {
+      "flag": "TW",
+      "posts": 1,
+      "avg": 4,
+      "max": 4,
+      "hours": {
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 4
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "official",
+      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "appfinds_my": {
+      "flag": "MY",
+      "posts": 1,
+      "avg": 1,
+      "max": 1,
+      "hours": {
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 1
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "rest",
+      "note": "",
+      "until": "2026-11-05",
+      "health": {
+       "n": 0,
+       "label": "휴식"
       }
      },
      "03ines.mar_": {
@@ -654,70 +702,6 @@
      },
      "appfinds_anz": {
       "flag": "AU",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "appfinds_my": {
-      "flag": "MY",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
-      "health": {
-       "n": 0,
-       "label": "휴식"
-      }
-     },
-     "appfinds_ph": {
-      "flag": "PH",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "appfindsna9": {
-      "flag": "US",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "appfindsuk8": {
-      "flag": "GB",
       "posts": 0,
       "avg": 0,
       "max": 0,
@@ -982,6 +966,22 @@
       "best_n": 0,
       "state": "excluded",
       "note": "정민 님 개인 팔로워 운영 계정 (10/23 정민 님 요청) — 예약·삭제·수집 모두 하지 않는다",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "trace.planner.jp": {
+      "flag": "JP",
+      "posts": 0,
+      "avg": 0,
+      "max": 0,
+      "hours": {},
+      "best_hour": null,
+      "best_n": 0,
+      "state": "official",
+      "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
        "n": 0,
@@ -1874,6 +1874,126 @@
  "window_days": 30,
  "scheduled": [
   {
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-11-24T18:30:00+00:00",
+   "local": "2026-11-24 18:30",
+   "text": "lockscreen wallpapers with your plans built in 🗓️✨\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/gb_bts_01_preview.png",
+    "trace/20261124-landmark-bts/gb_bts_02_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-11-24T21:00:00+00:00",
+   "local": "2026-11-25 08:00",
+   "text": "didn’t expect putting my plans on my lock screen to look this cute 🥹🥹\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/au_landmark_01_preview.png",
+    "trace/20261124-landmark-bts/au_landmark_02_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "trace.planner.jp",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-24T23:00:00+00:00",
+   "local": "2026-11-25 08:00",
+   "text": "ロック画面に予定を入れたら、こんなにかわいくなると思わなかった 🥹🥹\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/jp_landmark_01_preview.png",
+    "trace/20261124-landmark-bts/jp_landmark_03_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-24T23:30:00+00:00",
+   "local": "2026-11-24 18:30",
+   "text": "lockscreen wallpapers with your plans built in 🗓️✨\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/us_bts_01_preview.png",
+    "trace/20261124-landmark-bts/us_bts_04_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "trace.planner.tw",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-11-25T00:00:00+00:00",
+   "local": "2026-11-25 08:00",
+   "text": "沒想到把行程放到鎖定畫面上，會這麼好看 🥹🥹\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/tw_landmark_01_preview.png",
+    "trace/20261124-landmark-bts/tw_landmark_03_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-25T00:00:00+00:00",
+   "local": "2026-11-25 08:00",
+   "text": "Hindi ko akalaing ganito ka-cute yung lock screen kapag nilagyan ng schedule 🥹🥹\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/ph_landmark_02_preview.png",
+    "trace/20261124-landmark-bts/ph_landmark_04_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-25T00:00:00+00:00",
+   "local": "2026-11-25 08:00",
+   "text": "Tak sangka letak jadual dekat lock screen boleh jadi secantik ni 🥹🥹\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/my_landmark_03_preview.png",
+    "trace/20261124-landmark-bts/my_landmark_04_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-25T01:00:00+00:00",
+   "local": "2026-11-25 08:00",
+   "text": "Nggak nyangka jadwal di lockscreen bisa secantik ini 🥹🥹\n---\nnoreply",
+   "media": [
+    "trace/20261124-landmark-bts/id_landmark_02_preview.png",
+    "trace/20261124-landmark-bts/id_landmark_03_preview.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
    "account": "trace.planner.jp",
    "project": "trace",
    "country": "JP",
@@ -1953,47 +2073,231 @@
    "until": null
   },
   "trace.planner.jp": {
-   "n": 1,
-   "last": 7,
-   "recent": [
-    7
-   ],
-   "base": 7,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "official",
    "until": null
   },
   "trace.planner.tw": {
-   "n": 1,
-   "last": 130,
-   "recent": [
-    130
-   ],
-   "base": 130,
-   "approx": 0,
-   "multiple": 1.0,
-   "like_rate": 0.0,
-   "burst": 0.0,
-   "label": "저조",
+   "n": 0,
+   "label": "",
    "state": "official",
    "until": null
   }
  },
- "proposals": [
+ "proposals": [],
+ "violations": [
   {
-   "account": "appfinds_my",
-   "from": "rest",
-   "to": "rest",
-   "reason": "복귀 테스트 예약 필요 — 2026-11-05 휴식 끝, 올라간 글도 예약도 없음"
+   "kind": "중단 계정 발행",
+   "account": "appfindsna9",
+   "date": "2026-11-24",
+   "utc": "2026-11-24T13:02:04+00:00",
+   "detail": "상태 paused",
+   "link": "https://www.threads.com/@appfindsna9/post/DgIA_rSINBY"
+  },
+  {
+   "kind": "중단 계정 발행",
+   "account": "appfinds_ph",
+   "date": "2026-11-24",
+   "utc": "2026-11-24T10:32:18+00:00",
+   "detail": "상태 paused",
+   "link": "https://www.threads.com/@appfinds_ph/post/DgHv21RIGRM"
+  },
+  {
+   "kind": "중단 계정 발행",
+   "account": "appfindsuk8",
+   "date": "2026-11-24",
+   "utc": "2026-11-24T08:32:40+00:00",
+   "detail": "상태 paused",
+   "link": "https://www.threads.com/@appfindsuk8/post/DgHiKjWG_-S"
+  },
+  {
+   "kind": "중단 계정 발행",
+   "account": "appfinds_anz",
+   "date": "2026-11-24",
+   "utc": "2026-11-24T07:32:30+00:00",
+   "detail": "상태 paused",
+   "link": "https://www.threads.com/@appfinds_anz/post/DgHbR_zFbKl"
   }
  ],
- "violations": [],
  "hits": [],
  "posts": [
+  {
+   "id": "18203138626380450",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-24T13:02:04+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 08:02",
+   "text": "didn’t expect putting my plans on my lock screen to look this cute 🥹🥹",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsna9/post/DgIA_rSINBY",
+   "views": 11,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18147223126611509",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-24T11:32:02+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:32",
+   "text": "wallpaper lockscreen yang sudah ada jadwalmu 🗓️✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/DgH2sN1IMKF",
+   "views": 1,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18122214586771076",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-24T10:32:42+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:32",
+   "text": "wallpaper lock screen siap dengan jadual korang 🗓️✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_my/post/DgHv50roF1l",
+   "views": 1,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18105636929377311",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-24T10:32:18+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:32",
+   "text": "lock screen wallpapers na may kasama nang schedule mo 🗓️✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_ph/post/DgHv21RIGRM",
+   "views": 4,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18218011711321431",
+   "account": "trace.planner.tw",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-11-24T10:31:59+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:31",
+   "text": "內建行程的鎖定畫面桌布 🗓️✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@trace.planner.tw/post/DgHv0fXoPPM",
+   "views": 4,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18000531114053068",
+   "account": "trace.planner.jp",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-24T09:32:50+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:32",
+   "text": "予定を組み込んだロック画面の壁紙 🗓️✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@trace.planner.jp/post/DgHpD5-ICFo",
+   "views": 0,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17944361100391539",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-11-24T08:32:40+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 08:32",
+   "text": "didn’t expect putting my plans on my lock screen to look this cute 🥹🥹",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsuk8/post/DgHiKjWG_-S",
+   "views": 4,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18419209855085834",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-11-24T07:32:30+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:32",
+   "text": "lockscreen wallpapers with your plans built in 🗓️✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_anz/post/DgHbR_zFbKl",
+   "views": 0,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18093873074236611",
    "account": "appfinds_id",
@@ -2009,50 +2313,6 @@
    "views": 10,
    "likes": 0,
    "replies": 0,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 0,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18112639627887773",
-   "account": "trace.planner.tw",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "utc": "2026-10-25T13:31:34+00:00",
-   "date": "2026-10-25",
-   "local": "10/25 21:31",
-   "text": "兩支 iPhone 並排放，鎖定畫面就連成一張圖。\n你們的紀念日倒數和共同行程，也能一起放上去。\n你會想跟誰一起用？",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@trace.planner.tw/post/De60hkzlkpc",
-   "views": 153,
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "quotes": 0,
-   "shares": 0,
-   "clicks": 1,
-   "round": null,
-   "variant": null
-  },
-  {
-   "id": "18171903583480740",
-   "account": "trace.planner.jp",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-10-25T11:02:02+00:00",
-   "date": "2026-10-25",
-   "local": "10/25 20:02",
-   "text": "iPhoneを2台並べると、ロック画面が1枚の絵になる。\nふたりの記念日カウントダウンも、予定も一緒に。\n一緒に使いたい人、いますか？",
-   "kind": "CAROUSEL_ALBUM",
-   "link": "https://www.threads.com/@trace.planner.jp/post/De6jaVeEQRY",
-   "views": 24,
-   "likes": 0,
-   "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
