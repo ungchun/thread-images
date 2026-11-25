@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T00:55:04.434560+00:00",
+ "generated": "2026-11-25T14:37:10.977934+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -444,33 +444,33 @@
    "insights": {
     "hour": {
      "8": {
-      "n": 8,
-      "score": 1.0,
-      "median": 4
+      "n": 9,
+      "score": 1.09,
+      "median": 7
      },
      "18": {
-      "n": 5,
-      "score": 0.89,
-      "median": 4
+      "n": 7,
+      "score": 0.91,
+      "median": 2
      }
     },
     "wday": {
      "화": {
-      "n": 7,
-      "score": 1.0,
+      "n": 9,
+      "score": 0.92,
       "median": 4
      },
      "수": {
-      "n": 6,
-      "score": 1.0,
-      "median": 3
+      "n": 7,
+      "score": 1.09,
+      "median": 7
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 13,
+      "n": 16,
       "score": 1.0,
-      "median": 4
+      "median": 5
      }
     },
     "accounts": {
@@ -488,8 +488,8 @@
       },
       "best_hour": 8,
       "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -498,23 +498,23 @@
      },
      "appfinds_id": {
       "flag": "ID",
-      "posts": 2,
-      "avg": 5,
-      "max": 10,
+      "posts": 3,
+      "avg": 9,
+      "max": 15,
       "hours": {
        "8": {
-        "n": 1,
-        "score": 1.82,
-        "median": 10
+        "n": 2,
+        "score": 1.39,
+        "median": 12
        },
        "18": {
         "n": 1,
-        "score": 0.18,
-        "median": 1
+        "score": 0.22,
+        "median": 2
        }
       },
       "best_hour": 8,
-      "best_n": 1,
+      "best_n": 2,
       "state": "active",
       "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
@@ -535,45 +535,45 @@
      "appfinds_my": {
       "flag": "MY",
       "posts": 2,
-      "avg": 5,
-      "max": 6,
+      "avg": 6,
+      "max": 7,
       "hours": {
        "8": {
         "n": 1,
-        "score": 0.8,
-        "median": 4
+        "score": 1.08,
+        "median": 7
        },
        "18": {
         "n": 1,
-        "score": 1.2,
+        "score": 0.92,
         "median": 6
        }
       },
-      "best_hour": 18,
+      "best_hour": 8,
       "best_n": 1,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
+      "until": null,
       "health": {
        "n": 0,
-       "label": "휴식"
+       "label": ""
       }
      },
      "trace.planner.tw": {
       "flag": "TW",
       "posts": 2,
-      "avg": 4,
-      "max": 5,
+      "avg": 6,
+      "max": 7,
       "hours": {
        "8": {
         "n": 1,
-        "score": 1.11,
-        "median": 5
+        "score": 1.08,
+        "median": 7
        },
        "18": {
         "n": 1,
-        "score": 0.89,
-        "median": 4
+        "score": 0.92,
+        "median": 6
        }
       },
       "best_hour": 8,
@@ -589,24 +589,24 @@
      "appfinds_ph": {
       "flag": "PH",
       "posts": 2,
-      "avg": 4,
-      "max": 5,
+      "avg": 5,
+      "max": 6,
       "hours": {
        "8": {
         "n": 1,
-        "score": 0.75,
-        "median": 3
+        "score": 1.09,
+        "median": 6
        },
        "18": {
         "n": 1,
-        "score": 1.25,
+        "score": 0.91,
         "median": 5
        }
       },
-      "best_hour": 18,
+      "best_hour": 8,
       "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -632,8 +632,8 @@
       },
       "best_hour": 8,
       "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -642,14 +642,19 @@
      },
      "trace.planner.jp": {
       "flag": "JP",
-      "posts": 1,
-      "avg": 2,
-      "max": 2,
+      "posts": 2,
+      "avg": 3,
+      "max": 5,
       "hours": {
        "8": {
         "n": 1,
-        "score": 1.0,
-        "median": 2
+        "score": 1.67,
+        "median": 5
+       },
+       "18": {
+        "n": 1,
+        "score": 0.33,
+        "median": 1
        }
       },
       "best_hour": 8,
@@ -664,7 +669,7 @@
      },
      "appfinds_anz": {
       "flag": "AU",
-      "posts": 1,
+      "posts": 2,
       "avg": 1,
       "max": 1,
       "hours": {
@@ -672,12 +677,17 @@
         "n": 1,
         "score": 1.0,
         "median": 1
+       },
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 1
        }
       },
       "best_hour": 8,
       "best_n": 1,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -724,12 +734,12 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
+      "until": null,
       "health": {
        "n": 0,
-       "label": "휴식"
+       "label": ""
       }
      },
      "aoi.02_": {
@@ -788,8 +798,8 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -836,8 +846,8 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -868,12 +878,12 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "rest",
-      "note": "7건 평균 16·최고 40. 같은 문구 쓴 inkling01이 평균 7,885라 계정 문제. 예약에서 제외, 새 대만 계정 개설 예정",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
+      "until": null,
       "health": {
        "n": 0,
-       "label": "휴식"
+       "label": ""
       }
      },
      "dot2day_": {
@@ -900,8 +910,8 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -948,8 +958,8 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -980,12 +990,12 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "rest",
-      "note": "대만 주력. 8/26 51,099 기록. 저녁 20시가 오전보다 나음",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
+      "until": null,
       "health": {
        "n": 0,
-       "label": "휴식"
+       "label": ""
       }
      },
      "ivy_.k09": {
@@ -1140,12 +1150,12 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
+      "until": null,
       "health": {
        "n": 0,
-       "label": "휴식"
+       "label": ""
       }
      },
      "nia._055": {
@@ -1252,8 +1262,8 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -1268,12 +1278,12 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "rest",
-      "note": "",
-      "until": "2026-11-05",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
+      "until": null,
       "health": {
        "n": 0,
-       "label": "휴식"
+       "label": ""
       }
      },
      "yuting._066": {
@@ -1300,8 +1310,8 @@
       "hours": {},
       "best_hour": null,
       "best_n": 0,
-      "state": "paused",
-      "note": "중단 국가 (10/22 재정비)",
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -1921,16 +1931,111 @@
    "done": []
   },
   {
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-11-25T20:30:00+00:00",
+   "local": "2026-11-25 20:30",
+   "text": "Never missing a Boxing Day match again\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_gb_appfindsuk8&mt=8",
+   "media": [
+    "trace/x1125/appfindsuk8_1.png",
+    "trace/x1125/appfindsuk8_2.png",
+    "trace/x1125/appfindsuk8_3.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-11-25T21:00:00+00:00",
+   "local": "2026-11-26 08:00",
+   "text": "Seeing all of December on my Mac makes the silly season way less scary\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_au_appfinds_anz&mt=8",
+   "media": [
+    "trace/x1125/appfinds_anz_1.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "trace.planner.jp",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-25T23:00:00+00:00",
+   "local": "2026-11-26 08:00",
+   "text": "Macで12月をまるごと見たら、年末がちょっと怖くなくなった\n---\nmedia: -\nこのアプリだよ\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_jp_trace.planner.jp&mt=8",
+   "media": [
+    "trace/x1125/trace.planner.jp_1.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-26T00:00:00+00:00",
+   "local": "2026-11-26 08:00",
+   "text": "Phone, iPad, Mac, Watch, iisang schedule lang kaya di na ko nakakalimot\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_appfinds_ph&mt=8",
+   "media": [
+    "trace/x1125/appfinds_ph_1.png",
+    "trace/x1125/appfinds_ph_2.png",
+    "trace/x1125/appfinds_ph_3.png",
+    "trace/x1125/appfinds_ph_4.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-26T00:30:00+00:00",
+   "local": "2026-11-26 08:30",
+   "text": "Langgan jadual perlawanan pasukan kegemaran, terus masuk dalam kalendar\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_appfinds_my&mt=8",
+   "media": [
+    "trace/x1125/appfinds_my_1.png",
+    "trace/x1125/appfinds_my_2.png",
+    "trace/x1125/appfinds_my_3.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-26T00:30:00+00:00",
+   "local": "2026-11-25 19:30",
+   "text": "Phone, iPad, Mac, Watch. Same schedule everywhere, so I never forget\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_appfindsna9&mt=8",
+   "media": [
+    "trace/x1125/appfindsna9_1.png",
+    "trace/x1125/appfindsna9_2.png",
+    "trace/x1125/appfindsna9_3.png",
+    "trace/x1125/appfindsna9_4.jpg"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
    "account": "appfinds_id",
    "project": "trace",
    "country": "ID",
    "flag": "🇮🇩",
-   "utc": "2026-11-25T01:00:00+00:00",
-   "local": "2026-11-25 08:00",
-   "text": "Nggak nyangka jadwal di lockscreen bisa secantik ini 🥹🥹\n---\nnoreply",
+   "utc": "2026-11-26T01:00:00+00:00",
+   "local": "2026-11-26 08:00",
+   "text": "Langganan jadwal tim favorit, otomatis masuk ke kalender\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_appfinds_id&mt=8",
    "media": [
-    "trace/20261124-landmark-bts/id_landmark_02_preview.png",
-    "trace/20261124-landmark-bts/id_landmark_03_preview.png"
+    "trace/x1125/appfinds_id_1.png",
+    "trace/x1125/appfinds_id_2.png",
+    "trace/x1125/appfinds_id_3.png"
    ],
    "ig": [],
    "done": []
@@ -1972,7 +2077,7 @@
   "appfinds_anz": {
    "n": 0,
    "label": "",
-   "state": "paused",
+   "state": "active",
    "until": null
   },
   "appfinds_id": {
@@ -1992,26 +2097,26 @@
   },
   "appfinds_my": {
    "n": 0,
-   "label": "휴식",
-   "state": "rest",
-   "until": "2026-11-05"
+   "label": "",
+   "state": "active",
+   "until": null
   },
   "appfinds_ph": {
    "n": 0,
    "label": "",
-   "state": "paused",
+   "state": "active",
    "until": null
   },
   "appfindsna9": {
    "n": 0,
    "label": "",
-   "state": "paused",
+   "state": "active",
    "until": null
   },
   "appfindsuk8": {
    "n": 0,
    "label": "",
-   "state": "paused",
+   "state": "active",
    "until": null
   },
   "trace.planner.jp": {
@@ -2030,72 +2135,38 @@
  "proposals": [],
  "violations": [
   {
-   "kind": "중단 계정 발행",
-   "account": "appfinds_ph",
-   "date": "2026-11-25",
-   "utc": "2026-11-25T00:03:18+00:00",
-   "detail": "상태 paused",
-   "link": "https://www.threads.com/@appfinds_ph/post/DgJMqwlGQiQ"
-  },
-  {
-   "kind": "중단 계정 발행",
-   "account": "appfinds_anz",
-   "date": "2026-11-25",
-   "utc": "2026-11-24T21:02:06+00:00",
-   "detail": "상태 paused",
-   "link": "https://www.threads.com/@appfinds_anz/post/DgI38HAo7Iw"
-  },
-  {
-   "kind": "중단 계정 발행",
-   "account": "appfindsuk8",
-   "date": "2026-11-24",
-   "utc": "2026-11-24T18:32:44+00:00",
-   "detail": "상태 paused",
-   "link": "https://www.threads.com/@appfindsuk8/post/DgIm1e0IAdi"
-  },
-  {
    "kind": "하루 상한 초과",
    "account": "appfindsuk8",
    "date": "2026-11-24",
    "utc": "2026-11-24T18:32:44+00:00",
    "detail": "현지 2026-11-24에 2건 (계정당 하루 1개)",
    "link": "https://www.threads.com/@appfindsuk8/post/DgIm1e0IAdi"
-  },
-  {
-   "kind": "중단 계정 발행",
-   "account": "appfindsna9",
-   "date": "2026-11-24",
-   "utc": "2026-11-24T13:02:04+00:00",
-   "detail": "상태 paused",
-   "link": "https://www.threads.com/@appfindsna9/post/DgIA_rSINBY"
-  },
-  {
-   "kind": "중단 계정 발행",
-   "account": "appfinds_ph",
-   "date": "2026-11-24",
-   "utc": "2026-11-24T10:32:18+00:00",
-   "detail": "상태 paused",
-   "link": "https://www.threads.com/@appfinds_ph/post/DgHv21RIGRM"
-  },
-  {
-   "kind": "중단 계정 발행",
-   "account": "appfindsuk8",
-   "date": "2026-11-24",
-   "utc": "2026-11-24T08:32:40+00:00",
-   "detail": "상태 paused",
-   "link": "https://www.threads.com/@appfindsuk8/post/DgHiKjWG_-S"
-  },
-  {
-   "kind": "중단 계정 발행",
-   "account": "appfinds_anz",
-   "date": "2026-11-24",
-   "utc": "2026-11-24T07:32:30+00:00",
-   "detail": "상태 paused",
-   "link": "https://www.threads.com/@appfinds_anz/post/DgHbR_zFbKl"
   }
  ],
  "hits": [],
  "posts": [
+  {
+   "id": "17977638819160639",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-25T01:02:03+00:00",
+   "date": "2026-11-25",
+   "local": "11/25 08:02",
+   "text": "Nggak nyangka jadwal di lockscreen bisa secantik ini 🥹🥹",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/DgJTZIAlcp4",
+   "views": 15,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18144545329722235",
    "account": "appfinds_my",
@@ -2108,13 +2179,13 @@
    "text": "Tak sangka letak jadual dekat lock screen boleh jadi secantik ni 🥹🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_my/post/DgJMt2zmX3s",
-   "views": 4,
+   "views": 7,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2130,7 +2201,7 @@
    "text": "Hindi ko akalaing ganito ka-cute yung lock screen kapag nilagyan ng schedule 🥹🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_ph/post/DgJMqwlGQiQ",
-   "views": 3,
+   "views": 6,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2152,7 +2223,7 @@
    "text": "沒想到把行程放到鎖定畫面上，會這麼好看 🥹🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/DgJMnxwmQT1",
-   "views": 5,
+   "views": 7,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2174,7 +2245,7 @@
    "text": "ロック画面に予定を入れたら、こんなにかわいくなると思わなかった 🥹🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.jp/post/DgJFqE5mdOc",
-   "views": 2,
+   "views": 5,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2262,7 +2333,7 @@
    "text": "wallpaper lockscreen yang sudah ada jadwalmu 🗓️✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/DgH2sN1IMKF",
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2290,7 +2361,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 1,
+   "clicks": 0,
    "round": null,
    "variant": null
   },
@@ -2328,7 +2399,7 @@
    "text": "內建行程的鎖定畫面桌布 🗓️✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/DgHv0fXoPPM",
-   "views": 4,
+   "views": 6,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2350,7 +2421,7 @@
    "text": "予定を組み込んだロック画面の壁紙 🗓️✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.jp/post/DgHpD5-ICFo",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2394,7 +2465,7 @@
    "text": "lockscreen wallpapers with your plans built in 🗓️✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_anz/post/DgHbR_zFbKl",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
