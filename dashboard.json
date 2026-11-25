@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T14:59:49.431293+00:00",
+ "generated": "2026-11-25T00:53:31.489040+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -335,20 +335,20 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 1,
-     "views": 40,
+     "views": 41,
      "likes": 2,
-     "median": 40,
+     "median": 41,
      "score": 1.0,
      "sample": 1,
-     "er_score": 15.05,
+     "er_score": 14.68,
      "er_sample": 1,
      "variants": {
       "새API": {
        "posts": 1,
-       "median": 40,
+       "median": 41,
        "score": 1.0,
        "sample": 1,
-       "er_score": 15.05,
+       "er_score": 14.68,
        "er_sample": 1
       }
      }
@@ -454,8 +454,8 @@
     "hour": {
      "8": {
       "n": 3,
-      "score": 2.38,
-      "median": 95
+      "score": 2.29,
+      "median": 96
      },
      "11": {
       "n": 2,
@@ -469,8 +469,8 @@
      },
      "13": {
       "n": 4,
-      "score": 0.68,
-      "median": 24
+      "score": 0.71,
+      "median": 26
      },
      "14": {
       "n": 3,
@@ -478,19 +478,19 @@
       "median": 9
      },
      "18": {
-      "n": 2,
-      "score": 0.64,
-      "median": 18
+      "n": 4,
+      "score": 1.0,
+      "median": 6
      },
      "19": {
-      "n": 3,
-      "score": 1.07,
-      "median": 35
+      "n": 7,
+      "score": 1.0,
+      "median": 16
      },
      "20": {
-      "n": 1,
-      "score": 0.42,
-      "median": 27
+      "n": 2,
+      "score": 0.71,
+      "median": 17
      }
     },
     "wday": {
@@ -500,26 +500,26 @@
       "median": 27
      },
      "화": {
-      "n": 12,
+      "n": 19,
       "score": 1.0,
-      "median": 19
+      "median": 12
      },
      "수": {
       "n": 4,
-      "score": 0.68,
+      "score": 0.69,
       "median": 25
      },
      "일": {
       "n": 3,
-      "score": 2.38,
-      "median": 95
+      "score": 2.29,
+      "median": 96
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 20,
+      "n": 27,
       "score": 1.0,
-      "median": 25
+      "median": 16
      }
     },
     "accounts": {
@@ -536,8 +536,8 @@
        },
        "13": {
         "n": 1,
-        "score": 0.32,
-        "median": 40
+        "score": 0.33,
+        "median": 41
        },
        "19": {
         "n": 1,
@@ -568,18 +568,18 @@
      "haru._81a": {
       "flag": "JP",
       "posts": 3,
-      "avg": 64,
+      "avg": 65,
       "max": 97,
       "hours": {
        "11": {
         "n": 1,
-        "score": 1.51,
+        "score": 1.49,
         "median": 97
        },
        "19": {
         "n": 1,
-        "score": 1.07,
-        "median": 69
+        "score": 1.09,
+        "median": 71
        },
        "20": {
         "n": 1,
@@ -610,23 +610,23 @@
      "ashgrey._02": {
       "flag": "VN",
       "posts": 3,
-      "avg": 40,
-      "max": 95,
+      "avg": 42,
+      "max": 96,
       "hours": {
        "8": {
         "n": 1,
-        "score": 2.38,
-        "median": 95
+        "score": 2.29,
+        "median": 96
        },
        "13": {
         "n": 1,
-        "score": 0.35,
-        "median": 14
+        "score": 0.43,
+        "median": 18
        },
        "18": {
         "n": 1,
-        "score": 0.28,
-        "median": 11
+        "score": 0.29,
+        "median": 12
        }
       },
       "best_hour": 8,
@@ -746,6 +746,28 @@
        "label": ""
       }
      },
+     "03ines.mar_": {
+      "flag": "PT",
+      "posts": 1,
+      "avg": 18,
+      "max": 18,
+      "hours": {
+       "19": {
+        "n": 1,
+        "score": 1.0,
+        "median": 18
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
      "kai_.03b": {
       "flag": "PH",
       "posts": 1,
@@ -759,6 +781,28 @@
        }
       },
       "best_hour": 13,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "mae.dw_04": {
+      "flag": "US",
+      "posts": 1,
+      "avg": 12,
+      "max": 12,
+      "hours": {
+       "19": {
+        "n": 1,
+        "score": 1.0,
+        "median": 12
+       }
+      },
+      "best_hour": 19,
       "best_n": 1,
       "state": "active",
       "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
@@ -832,6 +876,72 @@
        "label": "저조"
       }
      },
+     "beatriz03._a": {
+      "flag": "ES",
+      "posts": 1,
+      "avg": 7,
+      "max": 7,
+      "hours": {
+       "20": {
+        "n": 1,
+        "score": 1.0,
+        "median": 7
+       }
+      },
+      "best_hour": 20,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "o2ndot": {
+      "flag": "FR",
+      "posts": 1,
+      "avg": 2,
+      "max": 2,
+      "hours": {
+       "19": {
+        "n": 1,
+        "score": 1.0,
+        "median": 2
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "bia__rp03": {
+      "flag": "BR",
+      "posts": 1,
+      "avg": 1,
+      "max": 1,
+      "hours": {
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 1
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
      "daily03dew": {
       "flag": "TW",
       "posts": 1,
@@ -867,6 +977,50 @@
        "label": "휴식"
       }
      },
+     "dot2day_": {
+      "flag": "DE",
+      "posts": 1,
+      "avg": 1,
+      "max": 1,
+      "hours": {
+       "18": {
+        "n": 1,
+        "score": 1.0,
+        "median": 1
+       }
+      },
+      "best_hour": 18,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "lari.s_07": {
+      "flag": "BR",
+      "posts": 1,
+      "avg": 1,
+      "max": 1,
+      "hours": {
+       "19": {
+        "n": 1,
+        "score": 1.0,
+        "median": 1
+       }
+      },
+      "best_hour": 19,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
      "riya._m08": {
       "flag": "IN",
       "posts": 1,
@@ -881,22 +1035,6 @@
       },
       "best_hour": 14,
       "best_n": 1,
-      "state": "active",
-      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "03ines.mar_": {
-      "flag": "PT",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
       "state": "active",
       "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
       "until": null,
@@ -1065,38 +1203,6 @@
        "label": ""
       }
      },
-     "beatriz03._a": {
-      "flag": "ES",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "bia__rp03": {
-      "flag": "BR",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
      "claire.mw_02": {
       "flag": "US",
       "posts": 0,
@@ -1123,22 +1229,6 @@
       "best_n": 0,
       "state": "active",
       "note": "",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "dot2day_": {
-      "flag": "DE",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -1257,22 +1347,6 @@
        "label": ""
       }
      },
-     "lari.s_07": {
-      "flag": "BR",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
      "linh.ngx_02": {
       "flag": "VN",
       "posts": 0,
@@ -1291,22 +1365,6 @@
      },
      "lune__v34": {
       "flag": "IT",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "mae.dw_04": {
-      "flag": "US",
       "posts": 0,
       "avg": 0,
       "max": 0,
@@ -1379,22 +1437,6 @@
       "best_n": 0,
       "state": "active",
       "note": "",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "o2ndot": {
-      "flag": "FR",
-      "posts": 0,
-      "avg": 0,
-      "max": 0,
-      "hours": {},
-      "best_hour": null,
-      "best_n": 0,
-      "state": "active",
-      "note": "2026-11-24 오너 지정 트레이스 홍보(x1124) 발행 요청으로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -2057,126 +2099,6 @@
  "window_days": 30,
  "scheduled": [
   {
-   "account": "dot2day_",
-   "project": "trace",
-   "country": "DE",
-   "flag": "🇩🇪",
-   "utc": "2026-11-24T17:30:00+00:00",
-   "local": "2026-11-24 18:30",
-   "text": "Alle mit iPhone:\nihr müsst das unbedingt testen!\nSeitdem vergesse ich wirklich nichts mehr ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/de.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "o2ndot",
-   "project": "trace",
-   "country": "FR",
-   "flag": "🇫🇷",
-   "utc": "2026-11-24T18:00:00+00:00",
-   "local": "2026-11-24 19:00",
-   "text": "Vous qui avez un iPhone,\nil faut absolument tester ça !\nDepuis, je n'oublie vraiment plus rien ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/fr.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "lune__v34",
-   "project": "trace",
-   "country": "IT",
-   "flag": "🇮🇹",
-   "utc": "2026-11-24T18:30:00+00:00",
-   "local": "2026-11-24 19:30",
-   "text": "Chi ha l'iPhone\ndeve assolutamente provarlo!\nDa quando lo uso, non dimentico più niente ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/it.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "beatriz03._a",
-   "project": "trace",
-   "country": "ES",
-   "flag": "🇪🇸",
-   "utc": "2026-11-24T19:00:00+00:00",
-   "local": "2026-11-24 20:00",
-   "text": "Si tienes iPhone,\n¡tienes que probar esto sí o sí!\nDesde que lo uso, no se me olvida nada ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/es.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "03ines.mar_",
-   "project": "trace",
-   "country": "PT",
-   "flag": "🇵🇹",
-   "utc": "2026-11-24T19:30:00+00:00",
-   "local": "2026-11-24 19:30",
-   "text": "Quem tem iPhone,\ntem mesmo de experimentar isto!\nDesde que uso, nunca mais me esqueci de nada ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/pt.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "bia__rp03",
-   "project": "trace",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-11-24T21:30:00+00:00",
-   "local": "2026-11-24 18:30",
-   "text": "Quem usa iPhone\nprecisa testar isso urgente!\nDepois que comecei a usar, não esqueço nada ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/br.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "lari.s_07",
-   "project": "trace",
-   "country": "BR",
-   "flag": "🇧🇷",
-   "utc": "2026-11-24T22:00:00+00:00",
-   "local": "2026-11-24 19:00",
-   "text": "Gente que tem iPhone,\nvocês têm que experimentar isso!\nDesde que comecei, não esqueço mais de nada ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/br.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "mae.dw_04",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-11-25T00:00:00+00:00",
-   "local": "2026-11-24 19:00",
-   "text": "If you have an iPhone,\nyou have to try this one!\nSince I started, I haven't forgotten a thing ✨",
-   "media": [
-    "x1124/cat.jpg",
-    "x1124/us.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
    "account": "ivy_.k09",
    "project": "trace",
    "country": "US",
@@ -2424,6 +2346,182 @@
  "hits": [],
  "posts": [
   {
+   "id": "18039821096852083",
+   "account": "mae.dw_04",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-25T00:02:29+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 19:02",
+   "text": "If you have an iPhone,\nyou have to try this one!\nSince I started, I haven't forgotten a thing ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@mae.dw_04/post/DgJMktGGWbr",
+   "views": 12,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18131200222854679",
+   "account": "lari.s_07",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-11-24T22:02:16+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 19:02",
+   "text": "Gente que tem iPhone,\nvocês têm que experimentar isso!\nDesde que comecei, não esqueço mais de nada ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lari.s_07/post/DgI-0UfoGDX",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18492292348129144",
+   "account": "bia__rp03",
+   "project": "trace",
+   "country": "BR",
+   "flag": "🇧🇷",
+   "utc": "2026-11-24T21:32:57+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:32",
+   "text": "Quem usa iPhone\nprecisa testar isso urgente!\nDepois que comecei a usar, não esqueço nada ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@bia__rp03/post/DgI7dgzGAf4",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18078416996495809",
+   "account": "03ines.mar_",
+   "project": "trace",
+   "country": "PT",
+   "flag": "🇵🇹",
+   "utc": "2026-11-24T19:32:21+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 19:32",
+   "text": "Quem tem iPhone,\ntem mesmo de experimentar isto!\nDesde que uso, nunca mais me esqueci de nada ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@03ines.mar_/post/DgItqPaGIkZ",
+   "views": 18,
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18110837111255532",
+   "account": "beatriz03._a",
+   "project": "trace",
+   "country": "ES",
+   "flag": "🇪🇸",
+   "utc": "2026-11-24T19:02:10+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 20:02",
+   "text": "Si tienes iPhone,\n¡tienes que probar esto sí o sí!\nDesde que lo uso, no se me olvida nada ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@beatriz03._a/post/DgIqNSsFhwC",
+   "views": 7,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18132381079880707",
+   "account": "lune__v34",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-11-24T18:32:18+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 19:32",
+   "text": "Chi ha l'iPhone\ndeve assolutamente provarlo!\nDa quando lo uso, non dimentico più niente ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@lune__v34/post/DgImyOlIFcl",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18035259296881893",
+   "account": "o2ndot",
+   "project": "trace",
+   "country": "FR",
+   "flag": "🇫🇷",
+   "utc": "2026-11-24T18:02:15+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 19:02",
+   "text": "Vous qui avez un iPhone,\nil faut absolument tester ça !\nDepuis, je n'oublie vraiment plus rien ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@o2ndot/post/DgIjWT_mCZw",
+   "views": 2,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 1,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17897713737432233",
+   "account": "dot2day_",
+   "project": "trace",
+   "country": "DE",
+   "flag": "🇩🇪",
+   "utc": "2026-11-24T17:31:56+00:00",
+   "date": "2026-11-24",
+   "local": "11/24 18:31",
+   "text": "Alle mit iPhone:\nihr müsst das unbedingt testen!\nSeitdem vergesse ich wirklich nichts mehr ✨",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@dot2day_/post/DgIf4Z0FAEA",
+   "views": 1,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
    "id": "18102309668197659",
    "account": "riya._m08",
    "project": "trace",
@@ -2523,7 +2621,7 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DgHUYddkWX7",
-   "views": 40,
+   "views": 41,
    "likes": 2,
    "replies": 1,
    "reposts": 1,
@@ -2545,7 +2643,7 @@
    "text": "Này, ai đang dùng iPhone\nnhất định phải thử cái này!\nDùng rồi là thật sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DgHQ9yhjp6s",
-   "views": 14,
+   "views": 18,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2787,7 +2885,7 @@
    "text": "Tính năng đã được nhiều người kiểm chứng!\nNếu dùng iPhone,\nnhất định phải thử!\nBạn sẽ không bao giờ quên việc gì nữa! ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DgBlriln850",
-   "views": 95,
+   "views": 96,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -2853,7 +2951,7 @@
    "text": "Hình nền Noel làm bằng AI mà dễ thương xỉu 🐶🐱\n\nDùng cá nhân thì cứ lưu về thoải mái nha 🥰\n\nMình làm thử mấy bé chó mèo\nquàng khăn đỏ giữa đêm tuyết 🎄\n\nCó ai muốn làm cho boss nhà mình không nè?\nNhiều người muốn thì\nmình share prompt luôn 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/Df4Z_i0kQmJ",
-   "views": 11,
+   "views": 12,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2897,7 +2995,7 @@
    "text": "AIでつくったクリスマス待ち受けがかわいすぎる🐶🐱\n\n個人で使う分にはご自由に保存してね〜🥰\n\n雪の夜に赤いマフラーを巻いた\nわんちゃんとねこちゃんで作ってみたよ🎄\n\nうちの子バージョンも作りたい‼️って人いる〜？\n需要が多ければプロンプト、\n公開しま〜す🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@haru._81a/post/Df4PpnPloVk",
-   "views": 69,
+   "views": 71,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -2961,7 +3059,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Tuesday, 24-Nov-26 06:58:43 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ApfFNd3u8aH3ab3e9rAIPnc\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Tuesday, 24-Nov-26 16:52:23 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AMpww69m5WyS-4dwVYuEBpd\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
