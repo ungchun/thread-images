@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T00:33:46.244566+00:00",
+ "generated": "2026-11-26T14:02:45.472734+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -444,14 +444,19 @@
    "insights": {
     "hour": {
      "8": {
-      "n": 11,
-      "score": 1.08,
-      "median": 7
+      "n": 12,
+      "score": 1.14,
+      "median": 6
      },
      "18": {
       "n": 7,
       "score": 0.6,
       "median": 3
+     },
+     "19": {
+      "n": 1,
+      "score": 1.27,
+      "median": 19
      },
      "20": {
       "n": 1,
@@ -462,18 +467,18 @@
     "wday": {
      "화": {
       "n": 9,
-      "score": 0.68,
+      "score": 0.6,
       "median": 4
      },
      "수": {
-      "n": 8,
-      "score": 1.08,
-      "median": 6
+      "n": 9,
+      "score": 1.2,
+      "median": 7
      },
      "목": {
-      "n": 2,
-      "score": 1.65,
-      "median": 7
+      "n": 3,
+      "score": 1.8,
+      "median": 5
      }
     },
     "media": {
@@ -483,63 +488,41 @@
       "median": 3
      },
      "CAROUSEL_ALBUM": {
-      "n": 18,
-      "score": 0.96,
+      "n": 20,
+      "score": 0.92,
       "median": 5
      }
     },
     "accounts": {
      "appfindsna9": {
       "flag": "US",
-      "posts": 1,
-      "avg": 11,
-      "max": 11,
+      "posts": 2,
+      "avg": 15,
+      "max": 19,
       "hours": {
        "8": {
         "n": 1,
-        "score": 1.0,
+        "score": 0.73,
         "median": 11
+       },
+       "19": {
+        "n": 1,
+        "score": 1.27,
+        "median": 19
        }
       },
-      "best_hour": 8,
+      "best_hour": 19,
       "best_n": 1,
       "state": "active",
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "appfinds_id": {
-      "flag": "ID",
-      "posts": 3,
-      "avg": 9,
-      "max": 15,
-      "hours": {
-       "8": {
-        "n": 2,
-        "score": 1.34,
-        "median": 12
-       },
-       "18": {
-        "n": 1,
-        "score": 0.32,
-        "median": 3
-       }
-      },
-      "best_hour": 8,
-      "best_n": 2,
-      "state": "active",
-      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
-      "until": null,
-      "health": {
        "n": 1,
-       "last": 10,
+       "last": 11,
        "recent": [
-        10
+        11
        ],
-       "base": 10,
+       "base": 11,
        "approx": 0,
        "multiple": 1.0,
        "like_rate": 0.0,
@@ -550,17 +533,17 @@
      "appfinds_ph": {
       "flag": "PH",
       "posts": 3,
-      "avg": 7,
-      "max": 11,
+      "avg": 9,
+      "max": 17,
       "hours": {
        "8": {
         "n": 2,
-        "score": 1.16,
-        "median": 8
+        "score": 1.23,
+        "median": 11
        },
        "18": {
         "n": 1,
-        "score": 0.68,
+        "score": 0.54,
         "median": 5
        }
       },
@@ -570,8 +553,54 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 5,
+       "recent": [
+        5
+       ],
+       "base": 5,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
+      }
+     },
+     "appfinds_id": {
+      "flag": "ID",
+      "posts": 4,
+      "avg": 8,
+      "max": 15,
+      "hours": {
+       "8": {
+        "n": 3,
+        "score": 1.21,
+        "median": 10
+       },
+       "18": {
+        "n": 1,
+        "score": 0.36,
+        "median": 3
+       }
+      },
+      "best_hour": 8,
+      "best_n": 3,
+      "state": "active",
+      "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 2,
+       "last": 3,
+       "recent": [
+        10,
+        3
+       ],
+       "base": 6,
+       "approx": 0,
+       "multiple": 0.46,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "appfinds_my": {
@@ -597,8 +626,17 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 6,
+       "recent": [
+        6
+       ],
+       "base": 6,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "trace.planner.tw": {
@@ -624,8 +662,17 @@
       "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 6,
+       "recent": [
+        6
+       ],
+       "base": 6,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "appfindsuk8": {
@@ -656,8 +703,17 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 4,
+       "recent": [
+        4
+       ],
+       "base": 4,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "trace.planner.jp": {
@@ -683,8 +739,17 @@
       "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 1,
+       "recent": [
+        1
+       ],
+       "base": 1,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "appfinds_anz": {
@@ -710,8 +775,17 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 1,
+       "recent": [
+        1
+       ],
+       "base": 1,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "03ines.mar_": {
@@ -1951,75 +2025,6 @@
    "done": []
   },
   {
-   "account": "appfinds_ph",
-   "project": "trace",
-   "country": "PH",
-   "flag": "🇵🇭",
-   "utc": "2026-11-26T00:26:42.538469+00:00",
-   "local": "2026-11-26 08:26",
-   "text": "Phone, iPad, Mac, Watch, iisang schedule lang kaya di na ko nakakalimot\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_appfinds_ph&mt=8",
-   "media": [
-    "trace/x1125/appfinds_ph_1.png",
-    "trace/x1125/appfinds_ph_2.png",
-    "trace/x1125/appfinds_ph_3.png",
-    "trace/x1125/appfinds_ph_4.jpg"
-   ],
-   "ig": [],
-   "done": [
-    "reply-threads:18075421805749726",
-    "threads"
-   ]
-  },
-  {
-   "account": "appfinds_my",
-   "project": "trace",
-   "country": "MY",
-   "flag": "🇲🇾",
-   "utc": "2026-11-26T00:30:00+00:00",
-   "local": "2026-11-26 08:30",
-   "text": "Langgan jadual perlawanan pasukan kegemaran, terus masuk dalam kalendar\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_appfinds_my&mt=8",
-   "media": [
-    "trace/x1125/appfinds_my_1.png",
-    "trace/x1125/appfinds_my_2.png",
-    "trace/x1125/appfinds_my_3.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "appfindsna9",
-   "project": "trace",
-   "country": "US",
-   "flag": "🇺🇸",
-   "utc": "2026-11-26T00:30:00+00:00",
-   "local": "2026-11-25 19:30",
-   "text": "Phone, iPad, Mac, Watch. Same schedule everywhere, so I never forget\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_appfindsna9&mt=8",
-   "media": [
-    "trace/x1125/appfindsna9_1.png",
-    "trace/x1125/appfindsna9_2.png",
-    "trace/x1125/appfindsna9_3.png",
-    "trace/x1125/appfindsna9_4.jpg"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "appfinds_id",
-   "project": "trace",
-   "country": "ID",
-   "flag": "🇮🇩",
-   "utc": "2026-11-26T01:00:00+00:00",
-   "local": "2026-11-26 08:00",
-   "text": "Langganan jadwal tim favorit, otomatis masuk ke kalender\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_appfinds_id&mt=8",
-   "media": [
-    "trace/x1125/appfinds_id_1.png",
-    "trace/x1125/appfinds_id_2.png",
-    "trace/x1125/appfinds_id_3.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
    "account": "trace.planner.jp",
    "project": "trace",
    "country": "JP",
@@ -2054,18 +2059,12 @@
  ],
  "accounts_health": {
   "appfinds_anz": {
-   "n": 0,
-   "label": "",
-   "state": "active",
-   "until": null
-  },
-  "appfinds_id": {
    "n": 1,
-   "last": 10,
+   "last": 1,
    "recent": [
-    10
+    1
    ],
-   "base": 10,
+   "base": 1,
    "approx": 0,
    "multiple": 1.0,
    "like_rate": 0.0,
@@ -2074,53 +2073,115 @@
    "state": "active",
    "until": null
   },
+  "appfinds_id": {
+   "n": 2,
+   "last": 3,
+   "recent": [
+    10,
+    3
+   ],
+   "base": 6,
+   "approx": 0,
+   "multiple": 0.46,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
+   "state": "active",
+   "until": null
+  },
   "appfinds_my": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 6,
+   "recent": [
+    6
+   ],
+   "base": 6,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "active",
    "until": null
   },
   "appfinds_ph": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 5,
+   "recent": [
+    5
+   ],
+   "base": 5,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "active",
    "until": null
   },
   "appfindsna9": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 11,
+   "recent": [
+    11
+   ],
+   "base": 11,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "active",
    "until": null
   },
   "appfindsuk8": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 4,
+   "recent": [
+    4
+   ],
+   "base": 4,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "active",
    "until": null
   },
   "trace.planner.jp": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 1,
+   "recent": [
+    1
+   ],
+   "base": 1,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "official",
    "until": null
   },
   "trace.planner.tw": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 6,
+   "recent": [
+    6
+   ],
+   "base": 6,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "official",
    "until": null
   }
  },
  "proposals": [],
  "violations": [
-  {
-   "kind": "루프 밖 발행",
-   "account": "appfinds_my",
-   "date": "2026-11-26",
-   "utc": "2026-11-26T00:33:09+00:00",
-   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
-   "link": "https://www.threads.com/@appfinds_my/post/DgL043yDXR0"
-  },
   {
    "kind": "하루 상한 초과",
    "account": "appfindsuk8",
@@ -2132,6 +2193,50 @@
  ],
  "hits": [],
  "posts": [
+  {
+   "id": "18119196062158604",
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-26T01:03:02+00:00",
+   "date": "2026-11-26",
+   "local": "11/26 08:03",
+   "text": "Langganan jadwal tim favorit, otomatis masuk ke kalender",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_id/post/DgL4TG9m1yh",
+   "views": 5,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "17979889052935668",
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-26T00:33:40+00:00",
+   "date": "2026-11-25",
+   "local": "11/25 19:33",
+   "text": "Phone, iPad, Mac, Watch. Same schedule everywhere, so I never forget",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsna9/post/DgL07vZDXCF",
+   "views": 19,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18142545718638538",
    "account": "appfinds_my",
@@ -2146,7 +2251,7 @@
    "link": "https://www.threads.com/@appfinds_my/post/DgL043yDXR0",
    "views": 0,
    "likes": 0,
-   "replies": 0,
+   "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
@@ -2166,7 +2271,7 @@
    "text": "Phone, iPad, Mac, Watch, iisang schedule lang kaya di na ko nakakalimot",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_ph/post/DgLxacBmqvl",
-   "views": 11,
+   "views": 17,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
