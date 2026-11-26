@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T14:37:10.977934+00:00",
+ "generated": "2026-11-26T00:33:46.244566+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -444,32 +444,47 @@
    "insights": {
     "hour": {
      "8": {
-      "n": 9,
-      "score": 1.09,
+      "n": 11,
+      "score": 1.08,
       "median": 7
      },
      "18": {
       "n": 7,
-      "score": 0.91,
-      "median": 2
+      "score": 0.6,
+      "median": 3
+     },
+     "20": {
+      "n": 1,
+      "score": 1.2,
+      "median": 4
      }
     },
     "wday": {
      "화": {
       "n": 9,
-      "score": 0.92,
+      "score": 0.68,
       "median": 4
      },
      "수": {
-      "n": 7,
-      "score": 1.09,
+      "n": 8,
+      "score": 1.08,
+      "median": 6
+     },
+     "목": {
+      "n": 2,
+      "score": 1.65,
       "median": 7
      }
     },
     "media": {
+     "IMAGE": {
+      "n": 1,
+      "score": 1.8,
+      "median": 3
+     },
      "CAROUSEL_ALBUM": {
-      "n": 16,
-      "score": 1.0,
+      "n": 18,
+      "score": 0.96,
       "median": 5
      }
     },
@@ -504,13 +519,13 @@
       "hours": {
        "8": {
         "n": 2,
-        "score": 1.39,
+        "score": 1.34,
         "median": 12
        },
        "18": {
         "n": 1,
-        "score": 0.22,
-        "median": 2
+        "score": 0.32,
+        "median": 3
        }
       },
       "best_hour": 8,
@@ -530,6 +545,33 @@
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
+      }
+     },
+     "appfinds_ph": {
+      "flag": "PH",
+      "posts": 3,
+      "avg": 7,
+      "max": 11,
+      "hours": {
+       "8": {
+        "n": 2,
+        "score": 1.16,
+        "median": 8
+       },
+       "18": {
+        "n": 1,
+        "score": 0.68,
+        "median": 5
+       }
+      },
+      "best_hour": 8,
+      "best_n": 2,
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
       }
      },
      "appfinds_my": {
@@ -586,51 +628,29 @@
        "label": ""
       }
      },
-     "appfinds_ph": {
-      "flag": "PH",
-      "posts": 2,
-      "avg": 5,
-      "max": 6,
-      "hours": {
-       "8": {
-        "n": 1,
-        "score": 1.09,
-        "median": 6
-       },
-       "18": {
-        "n": 1,
-        "score": 0.91,
-        "median": 5
-       }
-      },
-      "best_hour": 8,
-      "best_n": 1,
-      "state": "active",
-      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
      "appfindsuk8": {
       "flag": "GB",
-      "posts": 2,
+      "posts": 3,
       "avg": 3,
       "max": 4,
       "hours": {
        "8": {
         "n": 1,
-        "score": 1.33,
+        "score": 1.2,
         "median": 4
        },
        "18": {
         "n": 1,
-        "score": 0.67,
+        "score": 0.6,
         "median": 2
+       },
+       "20": {
+        "n": 1,
+        "score": 1.2,
+        "median": 4
        }
       },
-      "best_hour": 8,
+      "best_hour": 20,
       "best_n": 1,
       "state": "active",
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
@@ -669,23 +689,23 @@
      },
      "appfinds_anz": {
       "flag": "AU",
-      "posts": 2,
+      "posts": 3,
       "avg": 1,
-      "max": 1,
+      "max": 3,
       "hours": {
        "8": {
-        "n": 1,
-        "score": 1.0,
-        "median": 1
+        "n": 2,
+        "score": 1.2,
+        "median": 2
        },
        "18": {
         "n": 1,
-        "score": 1.0,
+        "score": 0.6,
         "median": 1
        }
       },
       "best_hour": 8,
-      "best_n": 1,
+      "best_n": 2,
       "state": "active",
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
@@ -1931,56 +1951,12 @@
    "done": []
   },
   {
-   "account": "appfindsuk8",
-   "project": "trace",
-   "country": "GB",
-   "flag": "🇬🇧",
-   "utc": "2026-11-25T20:30:00+00:00",
-   "local": "2026-11-25 20:30",
-   "text": "Never missing a Boxing Day match again\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_gb_appfindsuk8&mt=8",
-   "media": [
-    "trace/x1125/appfindsuk8_1.png",
-    "trace/x1125/appfindsuk8_2.png",
-    "trace/x1125/appfindsuk8_3.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "appfinds_anz",
-   "project": "trace",
-   "country": "AU",
-   "flag": "🇦🇺",
-   "utc": "2026-11-25T21:00:00+00:00",
-   "local": "2026-11-26 08:00",
-   "text": "Seeing all of December on my Mac makes the silly season way less scary\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_au_appfinds_anz&mt=8",
-   "media": [
-    "trace/x1125/appfinds_anz_1.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "trace.planner.jp",
-   "project": "trace",
-   "country": "JP",
-   "flag": "🇯🇵",
-   "utc": "2026-11-25T23:00:00+00:00",
-   "local": "2026-11-26 08:00",
-   "text": "Macで12月をまるごと見たら、年末がちょっと怖くなくなった\n---\nmedia: -\nこのアプリだよ\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_jp_trace.planner.jp&mt=8",
-   "media": [
-    "trace/x1125/trace.planner.jp_1.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
    "account": "appfinds_ph",
    "project": "trace",
    "country": "PH",
    "flag": "🇵🇭",
-   "utc": "2026-11-26T00:00:00+00:00",
-   "local": "2026-11-26 08:00",
+   "utc": "2026-11-26T00:26:42.538469+00:00",
+   "local": "2026-11-26 08:26",
    "text": "Phone, iPad, Mac, Watch, iisang schedule lang kaya di na ko nakakalimot\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_appfinds_ph&mt=8",
    "media": [
     "trace/x1125/appfinds_ph_1.png",
@@ -1989,7 +1965,10 @@
     "trace/x1125/appfinds_ph_4.jpg"
    ],
    "ig": [],
-   "done": []
+   "done": [
+    "reply-threads:18075421805749726",
+    "threads"
+   ]
   },
   {
    "account": "appfinds_my",
@@ -2135,6 +2114,14 @@
  "proposals": [],
  "violations": [
   {
+   "kind": "루프 밖 발행",
+   "account": "appfinds_my",
+   "date": "2026-11-26",
+   "utc": "2026-11-26T00:33:09+00:00",
+   "detail": "posted.log에 없다 — Actions run.py 밖에서 올라간 글",
+   "link": "https://www.threads.com/@appfinds_my/post/DgL043yDXR0"
+  },
+  {
    "kind": "하루 상한 초과",
    "account": "appfindsuk8",
    "date": "2026-11-24",
@@ -2145,6 +2132,116 @@
  ],
  "hits": [],
  "posts": [
+  {
+   "id": "18142545718638538",
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-26T00:33:09+00:00",
+   "date": "2026-11-26",
+   "local": "11/26 08:33",
+   "text": "Langgan jadual perlawanan pasukan kegemaran, terus masuk dalam kalendar",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_my/post/DgL043yDXR0",
+   "views": 0,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18075421805749726",
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-26T00:02:52+00:00",
+   "date": "2026-11-26",
+   "local": "11/26 08:02",
+   "text": "Phone, iPad, Mac, Watch, iisang schedule lang kaya di na ko nakakalimot",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfinds_ph/post/DgLxacBmqvl",
+   "views": 11,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18106651412371175",
+   "account": "trace.planner.jp",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-25T23:02:59+00:00",
+   "date": "2026-11-26",
+   "local": "11/26 08:02",
+   "text": "Macで12月をまるごと見たら、年末がちょっと怖くなくなった",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@trace.planner.jp/post/DgLqjuUEXln",
+   "views": 0,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18040460123893755",
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-11-25T21:02:44+00:00",
+   "date": "2026-11-26",
+   "local": "11/26 08:02",
+   "text": "Seeing all of December on my Mac makes the silly season way less scary",
+   "kind": "IMAGE",
+   "link": "https://www.threads.com/@appfinds_anz/post/DgLczD3gbYC",
+   "views": 3,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18192171199411896",
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-11-25T20:32:52+00:00",
+   "date": "2026-11-25",
+   "local": "11/25 20:32",
+   "text": "Never missing a Boxing Day match again",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@appfindsuk8/post/DgLZYXhoENt",
+   "views": 4,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "17977638819160639",
    "account": "appfinds_id",
@@ -2333,7 +2430,7 @@
    "text": "wallpaper lockscreen yang sudah ada jadwalmu 🗓️✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/DgH2sN1IMKF",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
