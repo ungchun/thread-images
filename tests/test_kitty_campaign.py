@@ -1,4 +1,6 @@
 import hashlib
+import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -54,6 +56,15 @@ class KittyCampaignTests(unittest.TestCase):
         now = campaign.datetime.fromisoformat(self.args[0])
         self.assertEqual(run.hold_reason("jeongmin_trace", now, states, count=lambda *_: 1), "cap")
         self.assertIsNone(run.hold_reason("jeongmin_trace", now, states, count=lambda *_: 0))
+
+    def test_dedicated_credential_binding_is_account_specific(self):
+        values = {
+            "THREADS_JEONGMIN_TRACE": json.dumps({"jeongmin_trace": {"token": "dedicated", "user_id": "1"}}),
+            "THREADS_ACCOUNTS": json.dumps({"other": {"token": "existing", "user_id": "2"}}),
+        }
+        with patch.dict(os.environ, values):
+            self.assertEqual(run.creds("jeongmin_trace"), ("dedicated", "1"))
+            self.assertEqual(run.creds("other"), ("existing", "2"))
 
 
 if __name__ == "__main__":

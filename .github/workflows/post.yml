@@ -37,6 +37,7 @@ jobs:
           THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
           THREADS_SEONGJI_CODE: ${{ secrets.THREADS_SEONGJI_CODE }}
           THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
+          THREADS_JEONGMIN_TRACE: ${{ secrets.THREADS_JEONGMIN_TRACE }}
       - name: Campaign preflight (no publication)
         if: ${{ inputs.campaign_preflight }}
         run: python3 campaign_publish.py --preflight
