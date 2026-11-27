@@ -1,0 +1,14 @@
+{
+  "theme": "B",
+  "description": "파스텔 핑크 키티 침실·크림 러그",
+  "route": "built-in image_gen",
+  "source": "https://miniso.com.tr/hello-kitty-pelus-oyuncak",
+  "supporting_photo": "/Users/koleuka/Documents/threads-kitty-20261128-1209/sources/pink-bedroom.webp",
+  "wallpaper": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/B_wallpaper.png",
+  "prompt": "Use case: compositing. Edit the supplied pastel pink Hello Kitty bedroom photograph into a clean tall smartphone wallpaper 1080x2348 or the same 0.46 portrait aspect. Keep the photographic bedroom scene recognizable: large white Hello Kitty plush with pastel pink bow seated on cream fluffy rug in lower half, pink patterned bed and pillows behind it, warm fairy lights, pale pink walls and curtains, soft daylight. Extend the pink wall and softly blurred curtains upward to leave the upper 30% airy, very pale and simple for a black clock overlay later. Keep interesting photographic details mainly from 35% down. Refine only framing and light; cute real plush fabric and cozy room textures, powder pink and cream palette, believable photography. NO lockscreen UI, NO clock, NO calendar, NO widgets, NO Korean or other text, NO phone frame, NO rounded phone corners. Remove the HELLO KITTY neon lettering on wall, replacing that area with soft pink wall and gentle fairy lights. No watermarks. A clean wallpaper photo only; background should fill every pixel.",
+  "draft_prompt": "Use case: compositing. Edit target is Image 1, a 1080x2348 iPhone lock-screen screenshot. Image 2 is the exact replacement wallpaper photo. Replace ONLY the full-screen wallpaper behind the UI: remove the entire beach, ocean, rocks, Hawaiian skirt plush scene and use the pastel pink Hello Kitty bedroom photograph from Image 2, cropped to fill the portrait screen naturally. Preserve the screenshot UI pixel-for-pixel: same positions, sizes, spacing, translucent dark rounded widget panels, ALL Korean labels and tasks, date \"11월 26일 목요일\", huge black \"9:41\", weekday calendar 22-28 with colored event chips and +3 labels, four task quadrants, blue circle bullets, all +2 labels, bottom flashlight/camera buttons, and home bar. Do not invent, simplify, omit, misspell, or rearrange ANY UI text or shapes. The wallpaper is visible THROUGH the original translucent panels, which retain their opacity. Keep pink bedroom photo recognizable: white Hello Kitty plush wearing pink bow seated on cream rug, pink bed behind it, tiny warm string lights. Exact original aspect ratio; no phone frame, no new text. Change only the underlying wallpaper, not the UI.",
+  "qa": {
+    "wallpaper": "Clean full-bleed portrait, white/pink plush centered lower half, room photograph remains recognizable, pale clock zone, no UI or textual marks. Exact source UI to be applied by A worker compositor.",
+    "full_screenshot_draft": "Not final. Generated UI was resized; exact compositor selected instead."
+  }
+}

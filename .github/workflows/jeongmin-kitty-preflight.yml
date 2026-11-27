@@ -1,0 +1,19 @@
+name: jeongmin-kitty-preflight
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify identity, reservations, replies and remote images without publishing
+        run: python3 kitty_campaign.py
+        env:
+          THREADS_ACCOUNTS: ${{ secrets.THREADS_ACCOUNTS }}
+          THREADS_MUN_JEONG_MIN: ${{ secrets.THREADS_MUN_JEONG_MIN }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jeongmin-kitty-preflight
+          path: campaigns/20261128-jeongmin-kitty/preflight.json

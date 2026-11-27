@@ -24,6 +24,7 @@
 import json
 import sys
 import campaign_publish
+import kitty_campaign
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -136,6 +137,10 @@ def check():
         tf = ROOT / textfile
         campaign = campaign_publish.entry(when, a, textfile, tw,
                                            tf.read_text().partition("\n---\n")[0].strip())
+        kitty = kitty_campaign.entry(when, a, textfile, tw,
+                                     tf.read_text().partition("\n---\n")[0].strip())
+        if kitty:
+            info = {**(info or {}), "state": "active"}
         if campaign:
             approved_rows += 1
         t = local(when, a)
@@ -174,7 +179,7 @@ def check():
             (errs if weak else warns).append(msg + (f" · {label.get(a, '휴식')} 계정이라 막는다" if weak else " · 살아 있는 계정이라 허용"))
         hm = t.strftime("%H:%M")
         times[a][d] = hm
-        if not campaign and all(times[a].get(d - timedelta(days=k)) == hm for k in (1, 2)):
+        if not campaign and not kitty and all(times[a].get(d - timedelta(days=k)) == hm for k in (1, 2)):
             errs.append(f"{tag} — 3일 연속 같은 현지 시각 {hm}. ±30~60분 흔든다")
 
     for s, accs in sorted(slots.items()):

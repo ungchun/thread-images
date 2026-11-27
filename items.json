@@ -361,6 +361,19 @@
        "미디어": "그날 전 계정 공통 이미지 세트·같은 장수",
        "변형": "H=고백형 한 줄 훅(본문에 앱 이름·기능 없음), C=현행 문구(카피기준 파생). 계정 배정은 rounds.json R16 arms",
        "메모": "스펙 §5 부분 전환. 설계·균형·검정력은 rounds.json R16 '설계'"
+      },
+      {
+       "id": "JEONGMIN-KITTY-20261128",
+       "발행": "2026-11-28~2026-12-09, Asia/Seoul 평일09:00 토10:00 일11:00",
+       "계정": [
+        "jeongmin_trace"
+       ],
+       "본문": "texts/trace/20261128-jeongmin-kitty/YYYYMMDD.txt — 날짜별 12개 서로 다른 캡션",
+       "미디어": "images/trace/20261128-jeongmin-kitty/shared.{A,B,C}_{combined,month,todo}.png — 핑크 키티 3종, 글마다 3장",
+       "답글": "이거야 + 빈 줄 + 사용자 지정 앱스토어 링크; 기존 러너 다음 30분 회차",
+       "출처": "https://www.threads.com/@jeongmin_trace/post/DgO5MrUk5GG",
+       "예약명세": "campaigns/20261128-jeongmin-kitty/manifest.json",
+       "메모": "사용자 명시 지시. 이 12개 예약만 개인계정 제외·고정시각 권고 예외; 하루 1개·중복방지·댓글복구 유지. 위젯 날짜/문구 유지, 배경만 변경."
       }
      ]
     },

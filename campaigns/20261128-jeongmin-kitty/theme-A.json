@@ -1,0 +1,66 @@
+{
+  "theme": "A",
+  "description": "핑크 하트 침구와 빨간 리본 키티 인형",
+  "source_photo": "/Users/koleuka/Documents/threads-kitty-20261128-1209/sources/pink-plush.jpg",
+  "source_url": "https://www.pinterest.com/pin/6966574417820546/",
+  "source_image_url": "https://i.pinimg.com/736x/58/89/82/588982b02a2f6ee6555882357ca31817.jpg",
+  "generation_route": "built-in image_gen edit",
+  "generation_original": "/Users/koleuka/.codex/generated_images/01a21b7c-1d06-71b0-8110-b88a7b3357f9/exec-1313dcb3-f9e9-4631-b5db-63a097cede4f.png",
+  "background": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/A_background.png",
+  "render": {
+    "method": "Native Codex ImageGen background + deterministic Swift AppKit native typography and controls + source raster opaque colored calendar event labels",
+    "renderer": "/Users/koleuka/Documents/threads-kitty-20261128-1209/render-ui.swift",
+    "compositor": "/Users/koleuka/Documents/threads-kitty-20261128-1209/compose-ui.cjs",
+    "preserved": [
+      "Date: 11월 26일 목요일",
+      "Time: 9:41",
+      "Original Korean task wording",
+      "Original calendar event labels and colors",
+      "All3 widget layouts and approximate original positions"
+    ],
+    "note": "Achromatic UI was re-rendered with native macOS system fonts to avoid source-photo fragments; text content preserved, not pixel-identical font raster. Calendar colored labels use original image pixels. Backgrounds use pale pink clean upper portions. No generated typography used.",
+    "task_panel_opacity": {
+      "A": 0.34,
+      "B": 0.42,
+      "C": 0.34
+    }
+  },
+  "outputs": [
+    {
+      "theme": "A",
+      "theme_description": "핑크 하트 침구와 빨간 리본 키티 인형",
+      "layout": "combined",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/A_combined.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3982574,
+      "sha256": "df7b8f14fac9313b1062a999e2c17dd94431941829e5ab4257b5479b92d8ecf9"
+    },
+    {
+      "theme": "A",
+      "theme_description": "핑크 하트 침구와 빨간 리본 키티 인형",
+      "layout": "month",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/A_month.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 4124873,
+      "sha256": "98d2e3e2690ddc8f91b48acabf004da3f85645ffb48463fdee2b9dd9dd031338"
+    },
+    {
+      "theme": "A",
+      "theme_description": "핑크 하트 침구와 빨간 리본 키티 인형",
+      "layout": "todo",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/A_todo.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 4127803,
+      "sha256": "79c7ff2a7fb1aab9fe57bf374ef83d5209defb9f93cf97c93b9a3842d3c03932"
+    }
+  ],
+  "qa": {
+    "visual": "Checked final A_combined; clean background, all text readable, source-photo extraction artifacts eliminated. B_month and C_todo also checked.",
+    "ocr": "Delegated full9 final OCR comparison to kitty_sakura_assets."
+  },
+  "prompt": "Clean tall portrait wallpaper based on supplied pink Hello Kitty plush photo. Preserve plush fabric texture, seated pose, red bow and pink overalls; soften magenta cast to warm pale rose bedding and pale pink upper wall. Main plush lower2/3, top30% simple pale pink. No UI, text, clock, calendar, watermark or border. Final compositor preserves original task wording/date/time and original event raster.",
+  "prompt_path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/theme-A-prompt.txt"
+}

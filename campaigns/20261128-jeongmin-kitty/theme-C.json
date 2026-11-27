@@ -1,0 +1,24 @@
+{
+  "theme": "C",
+  "title": "베이비 핑크 퀼트 · 화이트 키티 봉제인형",
+  "method": "built-in image_gen edit of source photo, then deterministic original UI foreground composition",
+  "background": "assets/C_background.png",
+  "generated_original": "/Users/koleuka/.codex/generated_images/01a21b7c-4737-7fa2-93c6-704387690700/exec-83b2081c-3274-44a3-9077-2170532cc4e1.png",
+  "source": "sources/pink-plush.jpg",
+  "prompt": "Use case: compositing. Create ONE clean portrait photographic iPhone lockscreen BACKGROUND ONLY, aspect ratio 1080:2348. Source photo is character identity and photographic reference only. Replace the saturated purple lighting and crowded bedroom with a soft natural daylight scene: a large white Hello Kitty plush toy with embroidered black oval eyes, yellow nose, fine black whiskers and a pastel pink satin bow sits on a pale blush pink quilted bedspread. Pale pink cozy bedding behind, delicate soft natural shadows, tactile fuzzy white plush, sweet understated pink kawaii look. Frame one plush centrally in the LOWER TWO THIRDS: top 30 percent is uncluttered pale pink bedding/wall negative space for lockscreen date and black clock. Full bleed portrait photograph, realistic optical texture, gentle warm daylight, no harsh purple, no other toys, no cartoon/illustration look. Do NOT include any UI, clock, date, calendar, widgets, text, logos, watermarks, phone border or captions. This will have original exact Korean lockscreen UI composited on it later, so must be a completely clean wallpaper.",
+  "qa": {
+    "background": "Pass: white plush, pale pink satin bow, realistic photographic bedding, uncluttered upper third, no unintended text/UI",
+    "composition": "pending shared exact-UI compositor from theme A worker"
+  },
+  "background_sha256": "cbf9decdc1a2f882be36b540892f95e65bbe1a020b70237180950763478bcac9",
+  "background_dimensions": [
+    850,
+    1850
+  ],
+  "source_url": "https://www.pinterest.com/pin/6966574417820546/",
+  "original_screenshot_files": [
+    "/Users/koleuka/Downloads/threads01-04-combined.jpg",
+    "/Users/koleuka/Downloads/threads01-02-month.jpg",
+    "/Users/koleuka/Downloads/threads01-01-todo.jpg"
+  ]
+}

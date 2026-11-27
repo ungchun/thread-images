@@ -1,0 +1,283 @@
+{
+  "campaign": "jeongmin-kitty-20261128-1209",
+  "publish_authorized": true,
+  "authorization": "2026-11-27 user explicitly requested 12 daily posts on jeongmin_trace 11/28..12/9, weekdays 09:00, Saturdays 10:00, Sundays 11:00 Asia/Seoul, same 3 UI layouts with varied pink Kitty backgrounds and link reply. This overrides account exclusion and fixed-time recommendation for these exact reservations only.",
+  "timezone": "Asia/Seoul",
+  "created_at": "2026-11-27T05:33:42.771182+00:00",
+  "source_post": "https://www.threads.com/@jeongmin_trace/post/DgO5MrUk5GG",
+  "reference_profile": "https://www.threads.com/@ddolmang2.bbabang2",
+  "reference_access": "Own source post read via authenticated Threads API on 2026-11-27. ddolmang2.bbabang2 captions checked in existing watch.json archive (posts 2026-10-07..20); current public profile returned metadata but no feed. Captions use same three-part rhythm with original rewritten wording.",
+  "reply": "이거야\n\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=Korea&mt=8",
+  "reply_timing": "Existing cloud runner: next 30-minute cycle; 25-minute minimum delay. Retry on failure, without repeating root.",
+  "image_policy": "Only backgrounds changed. Original 11월 26일 목요일, 9:41 and all widget text retained as requested.",
+  "themes": {
+    "A": "핑크 키티 인형",
+    "B": "파스텔 키티 방",
+    "C": "연분홍 이불 위 키티"
+  },
+  "posts": [
+    {
+      "id": "jeongmin-kitty-20261128",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-11-28T10:00:00+09:00",
+      "scheduled_utc": "2026-11-28T01:00:00+00:00",
+      "theme": "A",
+      "caption": "헐..ㅠㅠ 아이폰 쓰는데 이거 아직 모르는 사람 많더라\n\n나 진짜 이거 쓰고\n까먹는 습관 줄어듦 ㅠㅠ 넘좋아",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261128.txt",
+      "text_sha256": "edcadafa416e9e4385e7513aea72a47f42648a3df92a810251ced2d34c24062c",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.A_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.A_month.png",
+        "trace/20261128-jeongmin-kitty/shared.A_todo.png"
+      ],
+      "sha256": [
+        "df7b8f14fac9313b1062a999e2c17dd94431941829e5ab4257b5479b92d8ecf9",
+        "98d2e3e2690ddc8f91b48acabf004da3f85645ffb48463fdee2b9dd9dd031338",
+        "79c7ff2a7fb1aab9fe57bf374ef83d5209defb9f93cf97c93b9a3842d3c03932"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261129",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-11-29T11:00:00+09:00",
+      "scheduled_utc": "2026-11-29T02:00:00+00:00",
+      "theme": "B",
+      "caption": "아니..ㅋㅋ 아이폰 쓰면서 이걸 이제 알았네\n\n나 진짜 이거 쓰고\n깜빡하는 일이 줄어듦 ㅠㅠ 짱좋아",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261129.txt",
+      "text_sha256": "ba371e6251dfa3711de977b0dac3d3e88d92666351874d1179fba058def9acd9",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.B_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.B_month.png",
+        "trace/20261128-jeongmin-kitty/shared.B_todo.png"
+      ],
+      "sha256": [
+        "3347e543239d49e538fc82f98022073c5ee41d9e93189f892858880643f58736",
+        "fecfe79956c20c67e49437f32165fa3e1d26ec962c469889c0f6c238caaf7dfa",
+        "3ffd45f29cc3f1f442ca7f105f9ff8ecb0db9382fc3deab214bb7e9afecd0929"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261130",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-11-30T09:00:00+09:00",
+      "scheduled_utc": "2026-11-30T00:00:00+00:00",
+      "theme": "C",
+      "caption": "와..ㅠㅠ 아이폰 쓰는데 이거 왜 나만 몰랐지\n\n나 진짜 이거 쓰고\n할 일 까먹는 습관 줄어듦 ㅠㅠ 넘편해",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261130.txt",
+      "text_sha256": "d041771d0d36d56725e1343cb96ca4ee626c5ef79bcd9864c8c429a68e7ea94c",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.C_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.C_month.png",
+        "trace/20261128-jeongmin-kitty/shared.C_todo.png"
+      ],
+      "sha256": [
+        "550f8eb6a25fb69582dc8809244ae23ff740ee7e6b5a63ab548e1f0db5bddae0",
+        "a037d34a38e96bd2fb451ec6564c5006765ecb4285d23d32d95322c7a0f10468",
+        "1f600dd3d75d60dc7137964300acddaed26861925e72866a103b885ad40f0566"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261201",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-01T09:00:00+09:00",
+      "scheduled_utc": "2026-12-01T00:00:00+00:00",
+      "theme": "A",
+      "caption": "헉..ㅋㅋ 아이폰 쓰는 사람들 이거 알고 있었어?\n\n나 진짜 이거 쓰고\n자꾸 까먹던 거 줄어듦 ㅠㅠ 넘좋다",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261201.txt",
+      "text_sha256": "e885a46d8c7c16c6750bb812e653d93c7dba2a730705d3e04f42e5f9f7747777",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.A_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.A_month.png",
+        "trace/20261128-jeongmin-kitty/shared.A_todo.png"
+      ],
+      "sha256": [
+        "df7b8f14fac9313b1062a999e2c17dd94431941829e5ab4257b5479b92d8ecf9",
+        "98d2e3e2690ddc8f91b48acabf004da3f85645ffb48463fdee2b9dd9dd031338",
+        "79c7ff2a7fb1aab9fe57bf374ef83d5209defb9f93cf97c93b9a3842d3c03932"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261202",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-02T09:00:00+09:00",
+      "scheduled_utc": "2026-12-02T00:00:00+00:00",
+      "theme": "B",
+      "caption": "아..ㅠㅠ 아이폰 쓰는데 이거 은근 많이 모르더라\n\n나 진짜 이거 쓰고\n깜빡깜빡하는 습관 줄어듦 ㅠㅠ 짱편해",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261202.txt",
+      "text_sha256": "2c33e5c59d6458d28c4488442a6c82f4eccc705efeec31b86ebf755e55b4999b",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.B_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.B_month.png",
+        "trace/20261128-jeongmin-kitty/shared.B_todo.png"
+      ],
+      "sha256": [
+        "3347e543239d49e538fc82f98022073c5ee41d9e93189f892858880643f58736",
+        "fecfe79956c20c67e49437f32165fa3e1d26ec962c469889c0f6c238caaf7dfa",
+        "3ffd45f29cc3f1f442ca7f105f9ff8ecb0db9382fc3deab214bb7e9afecd0929"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261203",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-03T09:00:00+09:00",
+      "scheduled_utc": "2026-12-03T00:00:00+00:00",
+      "theme": "C",
+      "caption": "대박..ㅋㅋ 아이폰 쓰면서 이걸 왜 이제 봤지\n\n나 진짜 이거 쓰고\n할 일 까먹는 게 줄어듦 ㅠㅠ 넘좋아",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261203.txt",
+      "text_sha256": "cb86146da5e55d886a16c0986d658d8c609754d34563ec45f89e0941b4be9c82",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.C_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.C_month.png",
+        "trace/20261128-jeongmin-kitty/shared.C_todo.png"
+      ],
+      "sha256": [
+        "550f8eb6a25fb69582dc8809244ae23ff740ee7e6b5a63ab548e1f0db5bddae0",
+        "a037d34a38e96bd2fb451ec6564c5006765ecb4285d23d32d95322c7a0f10468",
+        "1f600dd3d75d60dc7137964300acddaed26861925e72866a103b885ad40f0566"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261204",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-04T09:00:00+09:00",
+      "scheduled_utc": "2026-12-04T00:00:00+00:00",
+      "theme": "A",
+      "caption": "와아..ㅠㅠ 아이폰 쓰는데 이거 모르는 사람 있더라\n\n나 진짜 이거 쓰고\n까먹는 일이 줄어듦 ㅠㅠ 넘편하다",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261204.txt",
+      "text_sha256": "4bbd291b6b2c6959cbfa5986f37be5d1076664527787c35aeb53df9962bcba1f",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.A_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.A_month.png",
+        "trace/20261128-jeongmin-kitty/shared.A_todo.png"
+      ],
+      "sha256": [
+        "df7b8f14fac9313b1062a999e2c17dd94431941829e5ab4257b5479b92d8ecf9",
+        "98d2e3e2690ddc8f91b48acabf004da3f85645ffb48463fdee2b9dd9dd031338",
+        "79c7ff2a7fb1aab9fe57bf374ef83d5209defb9f93cf97c93b9a3842d3c03932"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261205",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-05T10:00:00+09:00",
+      "scheduled_utc": "2026-12-05T01:00:00+00:00",
+      "theme": "B",
+      "caption": "헐랭..ㅋㅋ 아이폰 쓰는 사람들 이거 알았어?\n\n나 진짜 이거 쓰고\n깜빡하는 습관 줄어듦 ㅠㅠ 넘좋음",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261205.txt",
+      "text_sha256": "83a71f287db2473daf3670b1bce4cd803d6ea40b107f64ddd9a7fddf041a73a6",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.B_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.B_month.png",
+        "trace/20261128-jeongmin-kitty/shared.B_todo.png"
+      ],
+      "sha256": [
+        "3347e543239d49e538fc82f98022073c5ee41d9e93189f892858880643f58736",
+        "fecfe79956c20c67e49437f32165fa3e1d26ec962c469889c0f6c238caaf7dfa",
+        "3ffd45f29cc3f1f442ca7f105f9ff8ecb0db9382fc3deab214bb7e9afecd0929"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261206",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-06T11:00:00+09:00",
+      "scheduled_utc": "2026-12-06T02:00:00+00:00",
+      "theme": "C",
+      "caption": "아니..ㅠㅠ 아이폰 쓰는데 이거 나만 이제 알았나\n\n나 진짜 이거 쓰고\n해야 할 일 까먹는 게 줄어듦 ㅠㅠ 짱좋다",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261206.txt",
+      "text_sha256": "de722fb943cf8fe4aa2e86808171b3966405a721d7c56d5f8c0173daef6683e3",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.C_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.C_month.png",
+        "trace/20261128-jeongmin-kitty/shared.C_todo.png"
+      ],
+      "sha256": [
+        "550f8eb6a25fb69582dc8809244ae23ff740ee7e6b5a63ab548e1f0db5bddae0",
+        "a037d34a38e96bd2fb451ec6564c5006765ecb4285d23d32d95322c7a0f10468",
+        "1f600dd3d75d60dc7137964300acddaed26861925e72866a103b885ad40f0566"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261207",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-07T09:00:00+09:00",
+      "scheduled_utc": "2026-12-07T00:00:00+00:00",
+      "theme": "A",
+      "caption": "헉..ㅠㅠ 아이폰 쓰면서 이거 아직도 모르는 사람 있네\n\n나 진짜 이거 쓰고\n맨날 깜빡하던 거 줄어듦 ㅠㅠ 넘편해",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261207.txt",
+      "text_sha256": "36cf26b0b73118098e9709c3bca871e19d85af6be095e4a0871c8c836492fea5",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.A_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.A_month.png",
+        "trace/20261128-jeongmin-kitty/shared.A_todo.png"
+      ],
+      "sha256": [
+        "df7b8f14fac9313b1062a999e2c17dd94431941829e5ab4257b5479b92d8ecf9",
+        "98d2e3e2690ddc8f91b48acabf004da3f85645ffb48463fdee2b9dd9dd031338",
+        "79c7ff2a7fb1aab9fe57bf374ef83d5209defb9f93cf97c93b9a3842d3c03932"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261208",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-08T09:00:00+09:00",
+      "scheduled_utc": "2026-12-08T00:00:00+00:00",
+      "theme": "B",
+      "caption": "와..ㅋㅋ 아이폰 쓰는데 이거 생각보다 많이 모르더라\n\n나 진짜 이거 쓰고\n까먹는 습관 줄어듦 ㅠㅠ 짱좋아",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261208.txt",
+      "text_sha256": "7bdd6319b1e116b88cf99380dfbdd16a4f61c5a72413e8c290b3e02203187325",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.B_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.B_month.png",
+        "trace/20261128-jeongmin-kitty/shared.B_todo.png"
+      ],
+      "sha256": [
+        "3347e543239d49e538fc82f98022073c5ee41d9e93189f892858880643f58736",
+        "fecfe79956c20c67e49437f32165fa3e1d26ec962c469889c0f6c238caaf7dfa",
+        "3ffd45f29cc3f1f442ca7f105f9ff8ecb0db9382fc3deab214bb7e9afecd0929"
+      ]
+    },
+    {
+      "id": "jeongmin-kitty-20261209",
+      "account": "jeongmin_trace",
+      "scheduled_local": "2026-12-09T09:00:00+09:00",
+      "scheduled_utc": "2026-12-09T00:00:00+00:00",
+      "theme": "C",
+      "caption": "아..ㅋㅋ 아이폰 쓰는 사람들 이거 한 번 봐봐\n\n나 진짜 이거 쓰고\n할 일 깜빡하는 게 줄어듦 ㅠㅠ 넘좋아",
+      "textfile": "texts/trace/20261128-jeongmin-kitty/20261209.txt",
+      "text_sha256": "f5f083816165b7d424b8767305a724f214d4a3e152c1d1f98539f420993455f7",
+      "images": [
+        "trace/20261128-jeongmin-kitty/shared.C_combined.png",
+        "trace/20261128-jeongmin-kitty/shared.C_month.png",
+        "trace/20261128-jeongmin-kitty/shared.C_todo.png"
+      ],
+      "sha256": [
+        "550f8eb6a25fb69582dc8809244ae23ff740ee7e6b5a63ab548e1f0db5bddae0",
+        "a037d34a38e96bd2fb451ec6564c5006765ecb4285d23d32d95322c7a0f10468",
+        "1f600dd3d75d60dc7137964300acddaed26861925e72866a103b885ad40f0566"
+      ]
+    }
+  ],
+  "reference_posts": [
+    "https://www.threads.com/@ddolmang2.bbabang2/post/DetygArkrXw",
+    "https://www.threads.com/@ddolmang2.bbabang2/post/Deomt-6ktBy",
+    "https://www.threads.com/@ddolmang2.bbabang2/post/DebteWqEuAL"
+  ],
+  "background_sources": [
+    {
+      "theme": "A",
+      "source_page": "https://www.pinterest.com/pin/6966574417820546/",
+      "image_url": "https://i.pinimg.com/736x/58/89/82/588982b02a2f6ee6555882357ca31817.jpg",
+      "treatment": "Web photo reference; native ImageGen background and deterministic original UI composition."
+    },
+    {
+      "theme": "B",
+      "source_page": "https://miniso.com.tr/hello-kitty-pelus-oyuncak",
+      "image_url": "https://cdn.myikas.com/images/8a05e66b-196d-4d91-bb42-6df2ac5dce4b/5994634f-699f-4b26-bece-f66d82efdb91/3840/edited-image.webp",
+      "treatment": "Web photo reference; native ImageGen pastel-room background and deterministic original UI composition."
+    },
+    {
+      "theme": "C",
+      "treatment": "Native ImageGen original pastel-pink plush quilt scene, character reference from A."
+    }
+  ]
+}

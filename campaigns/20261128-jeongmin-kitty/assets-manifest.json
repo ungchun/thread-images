@@ -1,0 +1,118 @@
+{
+  "created_at": "2026-11-27T05:35:47.719Z",
+  "source_images": [
+    "/Users/koleuka/Downloads/threads01-04-combined.jpg",
+    "/Users/koleuka/Downloads/threads01-02-month.jpg",
+    "/Users/koleuka/Downloads/threads01-01-todo.jpg"
+  ],
+  "render": {
+    "method": "Native Codex ImageGen background + deterministic Swift AppKit native typography and controls + source raster opaque colored calendar event labels",
+    "renderer": "/Users/koleuka/Documents/threads-kitty-20261128-1209/render-ui.swift",
+    "compositor": "/Users/koleuka/Documents/threads-kitty-20261128-1209/compose-ui.cjs",
+    "preserved": [
+      "Date: 11월 26일 목요일",
+      "Time: 9:41",
+      "Original Korean task wording",
+      "Original calendar event labels and colors",
+      "All3 widget layouts and approximate original positions"
+    ],
+    "note": "Achromatic UI was re-rendered with native macOS system fonts to avoid source-photo fragments; text content preserved, not pixel-identical font raster. Calendar colored labels use original image pixels. Backgrounds use pale pink clean upper portions. No generated typography used.",
+    "task_panel_opacity": {
+      "A": 0.34,
+      "B": 0.42,
+      "C": 0.34
+    }
+  },
+  "assets": [
+    {
+      "theme": "A",
+      "theme_description": "핑크 하트 침구와 빨간 리본 키티 인형",
+      "layout": "combined",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/A_combined.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3982574,
+      "sha256": "df7b8f14fac9313b1062a999e2c17dd94431941829e5ab4257b5479b92d8ecf9"
+    },
+    {
+      "theme": "A",
+      "theme_description": "핑크 하트 침구와 빨간 리본 키티 인형",
+      "layout": "month",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/A_month.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 4124873,
+      "sha256": "98d2e3e2690ddc8f91b48acabf004da3f85645ffb48463fdee2b9dd9dd031338"
+    },
+    {
+      "theme": "A",
+      "theme_description": "핑크 하트 침구와 빨간 리본 키티 인형",
+      "layout": "todo",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/A_todo.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 4127803,
+      "sha256": "79c7ff2a7fb1aab9fe57bf374ef83d5209defb9f93cf97c93b9a3842d3c03932"
+    },
+    {
+      "theme": "B",
+      "theme_description": "분홍색 키티 방과 크림 러그",
+      "layout": "combined",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/B_combined.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3379403,
+      "sha256": "3347e543239d49e538fc82f98022073c5ee41d9e93189f892858880643f58736"
+    },
+    {
+      "theme": "B",
+      "theme_description": "분홍색 키티 방과 크림 러그",
+      "layout": "month",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/B_month.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3550332,
+      "sha256": "fecfe79956c20c67e49437f32165fa3e1d26ec962c469889c0f6c238caaf7dfa"
+    },
+    {
+      "theme": "B",
+      "theme_description": "분홍색 키티 방과 크림 러그",
+      "layout": "todo",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/B_todo.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3543403,
+      "sha256": "3ffd45f29cc3f1f442ca7f105f9ff8ecb0db9382fc3deab214bb7e9afecd0929"
+    },
+    {
+      "theme": "C",
+      "theme_description": "분홍 리본 키티 인형과 연분홍 퀼트 침구",
+      "layout": "combined",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/C_combined.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3670824,
+      "sha256": "550f8eb6a25fb69582dc8809244ae23ff740ee7e6b5a63ab548e1f0db5bddae0"
+    },
+    {
+      "theme": "C",
+      "theme_description": "분홍 리본 키티 인형과 연분홍 퀼트 침구",
+      "layout": "month",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/C_month.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3794139,
+      "sha256": "a037d34a38e96bd2fb451ec6564c5006765ecb4285d23d32d95322c7a0f10468"
+    },
+    {
+      "theme": "C",
+      "theme_description": "분홍 리본 키티 인형과 연분홍 퀼트 침구",
+      "layout": "todo",
+      "path": "/Users/koleuka/Documents/threads-kitty-20261128-1209/assets/C_todo.png",
+      "width": 1080,
+      "height": 2348,
+      "bytes": 3806209,
+      "sha256": "1f600dd3d75d60dc7137964300acddaed26861925e72866a103b885ad40f0566"
+    }
+  ]
+}

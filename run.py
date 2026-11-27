@@ -29,6 +29,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import campaign_publish
+import kitty_campaign
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -409,7 +410,9 @@ def main():
         # 새 본문을 올리기 직전에만 운영 규칙을 본다. 답글 재시도(위)는 이미 나간 글이라 막지 않는다.
         if "threads" not in done and tw_imgs and campaign is None:
             try:
-                why = hold_reason(account, now, states)
+                scoped_states = kitty_campaign.authorized_states(
+                    states, when, account, textfile, tw_imgs, body)
+                why = hold_reason(account, now, scoped_states)
             except Exception as e:   # 하루 건수를 못 세면 이번 회차는 올리지 않는다
                 print(f"SKIP {account}: 하루 건수 조회 실패 {e}", flush=True)
                 kept.append(line)
