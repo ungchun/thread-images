@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "All9 final A/B/C combined/month/todo assets",
+  "dimension_check": "All9 are1080x2348 nonempty PNGs",
+  "content_checks": [
+    "All9 OCR recognizes 11월26일 목요일 and9:41",
+    "Native renderer task/heading strings checked against originals verbatim",
+    "All todo text and combined task text verified via full image OCR supplemented by focused right card OCR for A/B",
+    "Calendar event label rasters preserved from source screenshots"
+  ],
+  "visual_checks": [
+    "A/B/C combined inspected",
+    "C month and todo inspected",
+    "Same native overlays reused across all themes",
+    "B panel opacity0.42 resolves busy background readability; A/C0.34"
+  ],
+  "limitations": [
+    "Date, clock, weekday, task labels and bottom controls are deterministically re-rendered with macOS native fonts rather than original pixel identity; semantic content and layout preserved.",
+    "Source image date intentionally remains11월26일 목요일 per background-only brief."
+  ],
+  "evidence": [
+    "final-ui-ocr.json",
+    "AB-card-focused-ocr.json",
+    "final-dimensions.json",
+    "render-ui.swift"
+  ],
+  "blocking_issues": []
+}

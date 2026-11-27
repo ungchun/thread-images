@@ -93,7 +93,7 @@ def wait_ready(plat, container, token, tries=20):
 
 def creds(account, ig=False):
     """계정별 토큰. THREADS_ACCOUNTS(JSON) 우선, 없으면 로컬 파일."""
-    # This account was renamed after the team secret was created. Its dedicated
+    # The team secret does not contain this account. Its dedicated
     # binding avoids replacing any other account's existing team credentials.
     blob = os.environ.get("THREADS_JEONGMIN_TRACE") if account == "jeongmin_trace" else None
     blob = blob or os.environ.get("THREADS_ACCOUNTS")
