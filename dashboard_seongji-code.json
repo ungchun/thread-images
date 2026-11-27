@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T00:43:25.692198+00:00",
+ "generated": "2026-11-27T14:02:52.454033+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -446,7 +446,7 @@
      "7": {
       "n": 2,
       "score": 0.35,
-      "median": 376
+      "median": 379
      },
      "8": {
       "n": 6,
@@ -461,7 +461,7 @@
      "10": {
       "n": 3,
       "score": 1.0,
-      "median": 51
+      "median": 52
      },
      "11": {
       "n": 1,
@@ -476,7 +476,7 @@
      "13": {
       "n": 2,
       "score": 0.43,
-      "median": 140
+      "median": 141
      },
      "15": {
       "n": 1,
@@ -486,7 +486,7 @@
      "16": {
       "n": 2,
       "score": 0.63,
-      "median": 508
+      "median": 509
      },
      "17": {
       "n": 4,
@@ -511,19 +511,19 @@
      "21": {
       "n": 2,
       "score": 0.3,
-      "median": 97
+      "median": 98
      },
      "23": {
       "n": 1,
       "score": 1.0,
-      "median": 24
+      "median": 25
      }
     },
     "wday": {
      "월": {
       "n": 2,
-      "score": 2.21,
-      "median": 857
+      "score": 2.22,
+      "median": 864
      },
      "화": {
       "n": 1,
@@ -553,7 +553,7 @@
      "일": {
       "n": 6,
       "score": 0.52,
-      "median": 189
+      "median": 190
      }
     },
     "media": {
@@ -570,25 +570,25 @@
      "TEXT_POST": {
       "n": 2,
       "score": 0.52,
-      "median": 470
+      "median": 471
      }
     },
     "accounts": {
      "daily.life_gram": {
       "flag": "TW",
       "posts": 13,
-      "avg": 1086,
-      "max": 8515,
+      "avg": 1087,
+      "max": 8517,
       "hours": {
        "7": {
         "n": 2,
         "score": 0.35,
-        "median": 376
+        "median": 379
        },
        "8": {
         "n": 2,
         "score": 4.02,
-        "median": 4371
+        "median": 4372
        },
        "9": {
         "n": 1,
@@ -608,7 +608,7 @@
        "16": {
         "n": 1,
         "score": 0.8,
-        "median": 864
+        "median": 865
        },
        "17": {
         "n": 3,
@@ -650,7 +650,7 @@
      "aoi_1124_gram": {
       "flag": "JP",
       "posts": 13,
-      "avg": 325,
+      "avg": 326,
       "max": 1624,
       "hours": {
        "8": {
@@ -676,7 +676,7 @@
        "13": {
         "n": 2,
         "score": 0.43,
-        "median": 140
+        "median": 141
        },
        "16": {
         "n": 1,
@@ -690,18 +690,18 @@
        },
        "19": {
         "n": 1,
-        "score": 4.05,
-        "median": 1319
+        "score": 4.07,
+        "median": 1331
        },
        "20": {
         "n": 1,
-        "score": 4.99,
+        "score": 4.97,
         "median": 1624
        },
        "21": {
         "n": 2,
         "score": 0.3,
-        "median": 97
+        "median": 98
        }
       },
       "best_hour": 20,
@@ -733,13 +733,13 @@
      "yuting._066": {
       "flag": "TW",
       "posts": 1,
-      "avg": 51,
-      "max": 51,
+      "avg": 52,
+      "max": 52,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.0,
-        "median": 51
+        "median": 52
        }
       },
       "best_hour": 10,
@@ -755,13 +755,13 @@
      "bea.cruz_03": {
       "flag": "PH",
       "posts": 1,
-      "avg": 28,
-      "max": 28,
+      "avg": 32,
+      "max": 32,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.0,
-        "median": 28
+        "median": 32
        }
       },
       "best_hour": 10,
@@ -792,20 +792,29 @@
       "note": "",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 28,
+       "recent": [
+        28
+       ],
+       "base": 28,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "aisyah.zr_05": {
       "flag": "MY",
       "posts": 1,
-      "avg": 24,
-      "max": 24,
+      "avg": 25,
+      "max": 25,
       "hours": {
        "23": {
         "n": 1,
         "score": 1.0,
-        "median": 24
+        "median": 25
        }
       },
       "best_hour": 23,
@@ -841,14 +850,15 @@
       "note": "",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 30,
+       "n": 2,
+       "last": 1,
        "recent": [
-        30
+        30,
+        1
        ],
-       "base": 30,
+       "base": 15,
        "approx": 0,
-       "multiple": 1.0,
+       "multiple": 0.06,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -938,8 +948,17 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 0,
-       "label": ""
+       "n": 1,
+       "last": 2,
+       "recent": [
+        2
+       ],
+       "base": 2,
+       "approx": 0,
+       "multiple": 1.0,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "저조"
       }
      },
      "03ines.mar_": {
@@ -2169,6 +2188,534 @@
    "done": [
     "hold-cap"
    ]
+  },
+  {
+   "account": "linh.ngx_02",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-11-28T02:00:00+00:00",
+   "local": "2026-11-28 09:00",
+   "text": "ủa… sao không ai nói là có thể đưa nguyên lịch trình lên màn hình khóa vậy??!!\n---\nmedia: -\nChính là app này\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_vn_linh.ngx_02&mt=8",
+   "media": [
+    "trace/x1128/9612_A_vi-VN.png",
+    "trace/x1128/9612_F_vi-VN.png",
+    "trace/x1128/9612_E_vi-VN.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mio._k27",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-28T11:00:00+00:00",
+   "local": "2026-11-28 20:00",
+   "text": "え、なんで誰も教えてくれなかったの？\n予定ぜんぶロック画面に出せるって！？\n---\nmedia: -\nこのアプリだよ\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_jp_mio._k27&mt=8",
+   "media": [
+    "trace/x1128/9611_A_ja-JP.png",
+    "trace/x1128/9611_F_ja-JP.png",
+    "trace/x1128/9611_E_ja-JP.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "aisyah.zr_05",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-28T11:30:00+00:00",
+   "local": "2026-11-28 19:30",
+   "text": "eh… kenapa takde siapa bagitahu\nsemua jadual boleh letak kat lock screen??!!\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_aisyah.zr_05&mt=8",
+   "media": [
+    "trace/x1128/cat_A_ms-MY.png",
+    "trace/x1128/cat_F_ms-MY.png",
+    "trace/x1128/cat_E_ms-MY.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nadia.ps_04",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-28T12:00:00+00:00",
+   "local": "2026-11-28 19:00",
+   "text": "loh… kok nggak ada yang bilang kalau jadwal bisa ditaruh semua di lock screen??!!\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_nadia.ps_04&mt=8",
+   "media": [
+    "trace/x1128/cat_A_id-ID.png",
+    "trace/x1128/cat_F_id-ID.png",
+    "trace/x1128/cat_E_id-ID.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "bea.cruz_03",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-28T12:30:00+00:00",
+   "local": "2026-11-28 20:30",
+   "text": "teka… bakit walang nagsabi\nna pwede palang ilagay lahat ng schedule sa lock screen??!!\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_bea.cruz_03&mt=8",
+   "media": [
+    "trace/x1128/cat_A_fil-PH.png",
+    "trace/x1128/cat_F_fil-PH.png",
+    "trace/x1128/cat_E_fil-PH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "yuting._066",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-11-28T13:00:00+00:00",
+   "local": "2026-11-28 21:00",
+   "text": "iPhone 都用了10年了，現在才知道原來還可以這樣用…\n真的太扯了😳\n---\nmedia: -\n就是這個 App\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tw_yuting._066&mt=8",
+   "media": [
+    "trace/x1128/snowman_A_zh-TW.png",
+    "trace/x1128/snowman_F_zh-TW.png",
+    "trace/x1128/snowman_E_zh-TW.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "seoyn.k_97",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-11-28T13:30:00+00:00",
+   "local": "2026-11-28 22:30",
+   "text": "어… 왜 아무도 안 알려줬어?\n일정 전부 잠금화면에 띄울 수 있다는 거??!!\n---\nmedia: -\n이 앱이야\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_kr_seoyn.k_97&mt=8",
+   "media": [
+    "trace/x1128/cat_A_ko-KR.png",
+    "trace/x1128/cat_F_ko-KR.png",
+    "trace/x1128/cat_E_ko-KR.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "fah.pk_03",
+   "project": "trace",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-11-28T14:00:00+00:00",
+   "local": "2026-11-28 21:00",
+   "text": "เดี๋ยวนะ… ทำไมไม่มีใครบอกว่าเอาตารางทั้งหมดขึ้นหน้าจอล็อกได้??!!\n---\nmedia: -\nแอปนี้เลย\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_th_fah.pk_03&mt=8",
+   "media": [
+    "trace/x1128/cat_A_th-TH.png",
+    "trace/x1128/cat_F_th-TH.png",
+    "trace/x1128/cat_E_th-TH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "zeynep.ak_06",
+   "project": "trace",
+   "country": "TR",
+   "flag": "🇹🇷",
+   "utc": "2026-11-28T16:30:00+00:00",
+   "local": "2026-11-28 19:30",
+   "text": "iPhone kullananlar\nbunu bir kere deneyin!\nkullanmaya başladığımdan beri hiçbir şeyi unutmuyorum ✨\n---\nmedia: -\nUygulama bu\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tr_zeynep.ak_06&mt=8",
+   "media": [
+    "trace/x1128/9606_A_tr-TR.png",
+    "trace/x1128/9606_F_tr-TR.png",
+    "trace/x1128/9606_E_tr-TR.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "giulia.r_055",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-11-28T18:00:00+00:00",
+   "local": "2026-11-28 19:00",
+   "text": "aspetta… perché nessuno mi ha detto\nche si può mettere tutta l'agenda sulla schermata di blocco??!!\n---\nmedia: -\nÈ questa l'app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_it_giulia.r_055&mt=8",
+   "media": [
+    "trace/x1128/cat_A_it-IT.png",
+    "trace/x1128/cat_F_it-IT.png",
+    "trace/x1128/cat_E_it-IT.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "claire.mw_02",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-29T00:00:00+00:00",
+   "local": "2026-11-28 19:00",
+   "text": "wait… why did nobody tell me\nyou can put your whole schedule on your lock screen??!!\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_claire.mw_02&mt=8",
+   "media": [
+    "trace/x1128/9606_A_en-US.png",
+    "trace/x1128/9606_F_en-US.png",
+    "trace/x1128/9606_E_en-US.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "linh.ngx_02",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-11-30T00:30:00+00:00",
+   "local": "2026-11-30 07:30",
+   "text": "từ hồi để lên màn hình khóa\nchưa quên việc gì luôn á\n---\nmedia: -\nChính là app này\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_vn_linh.ngx_02&mt=8",
+   "media": [
+    "trace/x1128/cat_A_vi-VN.png",
+    "trace/x1128/cat_F_vi-VN.png",
+    "trace/x1128/cat_E_vi-VN.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "aisyah.zr_05",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-30T09:30:00+00:00",
+   "local": "2026-11-30 17:30",
+   "text": "Sejak letak kat lock screen\ntak pernah lupa apa nak buat dah\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_aisyah.zr_05&mt=8",
+   "media": [
+    "trace/x1128/9612_A_ms-MY.png",
+    "trace/x1128/9612_F_ms-MY.png",
+    "trace/x1128/9612_E_ms-MY.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "seoyn.k_97",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-11-30T09:30:00+00:00",
+   "local": "2026-11-30 18:30",
+   "text": "잠금화면에 띄운 뒤로\n할 일 까먹은 적이 한 번도 없어\n---\nmedia: -\n이 앱이야\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_kr_seoyn.k_97&mt=8",
+   "media": [
+    "trace/x1128/9612_A_ko-KR.png",
+    "trace/x1128/9612_F_ko-KR.png",
+    "trace/x1128/9612_E_ko-KR.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mio._k27",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-11-30T10:00:00+00:00",
+   "local": "2026-11-30 19:00",
+   "text": "ロック画面に出すようにしてから\nやること忘れたこと一度もない\n---\nmedia: -\nこのアプリだよ\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_jp_mio._k27&mt=8",
+   "media": [
+    "trace/x1128/cat_A_ja-JP.png",
+    "trace/x1128/cat_F_ja-JP.png",
+    "trace/x1128/cat_E_ja-JP.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "bea.cruz_03",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-30T10:30:00+00:00",
+   "local": "2026-11-30 18:30",
+   "text": "Simula nung nilagay ko sa lock screen\nwala na akong nakalimutang gawain\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_bea.cruz_03&mt=8",
+   "media": [
+    "trace/x1128/9612_A_fil-PH.png",
+    "trace/x1128/9612_F_fil-PH.png",
+    "trace/x1128/9612_E_fil-PH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nadia.ps_04",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-30T11:30:00+00:00",
+   "local": "2026-11-30 18:30",
+   "text": "Sejak tampil di lock screen, sekarang aku nggak pernah lupa tugas lagi\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_nadia.ps_04&mt=8",
+   "media": [
+    "trace/x1128/9612_A_id-ID.png",
+    "trace/x1128/9612_F_id-ID.png",
+    "trace/x1128/9612_E_id-ID.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "fah.pk_03",
+   "project": "trace",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-11-30T12:00:00+00:00",
+   "local": "2026-11-30 19:00",
+   "text": "ตั้งแต่เอาตารางไว้บนหน้าจอล็อก\nไม่เคยลืมงานที่ต้องทำอีกเลย\n---\nmedia: -\nแอปนี้เลย\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_th_fah.pk_03&mt=8",
+   "media": [
+    "trace/x1128/9612_A_th-TH.png",
+    "trace/x1128/9612_F_th-TH.png",
+    "trace/x1128/9612_E_th-TH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "yuting._066",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-11-30T12:00:00+00:00",
+   "local": "2026-11-30 20:00",
+   "text": "嘿，iPhone 使用者\n裝這個之後\n我跟你講，事情真的忘不了🤩\n---\nmedia: -\n就是這個 App\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tw_yuting._066&mt=8",
+   "media": [
+    "trace/x1128/cat_A_zh-TW.png",
+    "trace/x1128/cat_F_zh-TW.png",
+    "trace/x1128/cat_E_zh-TW.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "zeynep.ak_06",
+   "project": "trace",
+   "country": "TR",
+   "flag": "🇹🇷",
+   "utc": "2026-11-30T15:30:00+00:00",
+   "local": "2026-11-30 18:30",
+   "text": "dur bir dakika… neden kimse söylemedi\nbütün programı kilit ekranına koyabileceğimizi??!!\n---\nmedia: -\nUygulama bu\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tr_zeynep.ak_06&mt=8",
+   "media": [
+    "trace/x1128/9611_A_tr-TR.png",
+    "trace/x1128/9611_F_tr-TR.png",
+    "trace/x1128/9611_E_tr-TR.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "giulia.r_055",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-11-30T17:30:00+00:00",
+   "local": "2026-11-30 18:30",
+   "text": "Da quando l'ho messa sulla schermata di blocco\nnon ho più dimenticato nessun impegno\n---\nmedia: -\nÈ questa l'app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_it_giulia.r_055&mt=8",
+   "media": [
+    "trace/x1128/9612_A_it-IT.png",
+    "trace/x1128/9612_F_it-IT.png",
+    "trace/x1128/9612_E_it-IT.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "claire.mw_02",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-30T23:00:00+00:00",
+   "local": "2026-11-30 18:00",
+   "text": "ever since I put it on my lock screen\nI haven't forgotten a single to-do\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_claire.mw_02&mt=8",
+   "media": [
+    "trace/x1128/cat_A_en-US.png",
+    "trace/x1128/cat_F_en-US.png",
+    "trace/x1128/cat_E_en-US.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "linh.ngx_02",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-12-02T02:30:00+00:00",
+   "local": "2026-12-02 09:30",
+   "text": "mấy bạn dùng iPhone ơi\ncái này phải cài liền nha!\nviệc cần làm hiện trên màn hình khóa, hết quên luôn 💕\n---\nmedia: -\nChính là app này\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_vn_linh.ngx_02&mt=8",
+   "media": [
+    "trace/x1128/9611_A_vi-VN.png",
+    "trace/x1128/9611_F_vi-VN.png",
+    "trace/x1128/9611_E_vi-VN.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "mio._k27",
+   "project": "trace",
+   "country": "JP",
+   "flag": "🇯🇵",
+   "utc": "2026-12-02T10:30:00+00:00",
+   "local": "2026-12-02 19:30",
+   "text": "ねえ、iPhone使ってる人\nこれほんとに使ってみて！\n使い始めてから、ほんとに予定忘れなくなった\n---\nmedia: -\nこのアプリだよ\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_jp_mio._k27&mt=8",
+   "media": [
+    "trace/x1128/9606_A_ja-JP.png",
+    "trace/x1128/9606_F_ja-JP.png",
+    "trace/x1128/9606_E_ja-JP.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "yuting._066",
+   "project": "trace",
+   "country": "TW",
+   "flag": "🇹🇼",
+   "utc": "2026-12-02T11:30:00+00:00",
+   "local": "2026-12-02 19:30",
+   "text": "欸，怎麼都沒有人跟我說\n行程可以全部放在鎖定畫面上？？！！\n---\nmedia: -\n就是這個 App\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tw_yuting._066&mt=8",
+   "media": [
+    "trace/x1128/mtree_A_zh-TW.png",
+    "trace/x1128/mtree_F_zh-TW.png",
+    "trace/x1128/mtree_E_zh-TW.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "fah.pk_03",
+   "project": "trace",
+   "country": "TH",
+   "flag": "🇹🇭",
+   "utc": "2026-12-02T12:30:00+00:00",
+   "local": "2026-12-02 19:30",
+   "text": "นี่ คนที่ใช้ iPhone\nลองอันนี้ดูสักครั้งนะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕\n---\nmedia: -\nแอปนี้เลย\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_th_fah.pk_03&mt=8",
+   "media": [
+    "trace/x1128/9606_A_th-TH.png",
+    "trace/x1128/9606_F_th-TH.png",
+    "trace/x1128/9606_E_th-TH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "nadia.ps_04",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-12-02T13:00:00+00:00",
+   "local": "2026-12-02 20:00",
+   "text": "Yang pakai iPhone\ncoba deh ini sekali aja!\nhabis pakai, beneran nggak pernah lupa apa-apa lagi ✨\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_nadia.ps_04&mt=8",
+   "media": [
+    "trace/x1128/9611_A_id-ID.png",
+    "trace/x1128/9611_F_id-ID.png",
+    "trace/x1128/9611_E_id-ID.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "bea.cruz_03",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-12-02T13:30:00+00:00",
+   "local": "2026-12-02 21:30",
+   "text": "Uy, mga naka-iPhone\nsubukan nyo 'to kahit isang beses lang!\nmula nung ginamit ko, wala na talaga akong nakakalimutan ✨\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_bea.cruz_03&mt=8",
+   "media": [
+    "trace/x1128/9611_A_fil-PH.png",
+    "trace/x1128/9611_F_fil-PH.png",
+    "trace/x1128/9611_E_fil-PH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "aisyah.zr_05",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-12-02T14:00:00+00:00",
+   "local": "2026-12-02 22:00",
+   "text": "Korang yang guna iPhone\ncuba la benda ni sekali!\nlepas guna, memang tak lupa apa-apa dah ✨\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_aisyah.zr_05&mt=8",
+   "media": [
+    "trace/x1128/9611_A_ms-MY.png",
+    "trace/x1128/9611_F_ms-MY.png",
+    "trace/x1128/9611_E_ms-MY.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "seoyn.k_97",
+   "project": "trace",
+   "country": "KR",
+   "flag": "🇰🇷",
+   "utc": "2026-12-02T14:00:00+00:00",
+   "local": "2026-12-02 23:00",
+   "text": "야, 아이폰 쓰는 사람\n이거 진짜 한 번만 써 봐!\n쓰고 나서 진짜 아무것도 안 까먹어✨\n---\nmedia: -\n이 앱이야\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_kr_seoyn.k_97&mt=8",
+   "media": [
+    "trace/x1128/9606_A_ko-KR.png",
+    "trace/x1128/9606_F_ko-KR.png",
+    "trace/x1128/9606_E_ko-KR.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "zeynep.ak_06",
+   "project": "trace",
+   "country": "TR",
+   "flag": "🇹🇷",
+   "utc": "2026-12-02T16:30:00+00:00",
+   "local": "2026-12-02 19:30",
+   "text": "Kilit ekranına koyduğumdan beri\ntek bir yapılacak işi bile unutmadım\n---\nmedia: -\nUygulama bu\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_tr_zeynep.ak_06&mt=8",
+   "media": [
+    "trace/x1128/9612_A_tr-TR.png",
+    "trace/x1128/9612_F_tr-TR.png",
+    "trace/x1128/9612_E_tr-TR.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "giulia.r_055",
+   "project": "trace",
+   "country": "IT",
+   "flag": "🇮🇹",
+   "utc": "2026-12-02T18:00:00+00:00",
+   "local": "2026-12-02 19:00",
+   "text": "Ehi, chi usa l'iPhone\nprovate questa cosa almeno una volta!\nda quando la uso non dimentico più niente ✨\n---\nmedia: -\nÈ questa l'app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_it_giulia.r_055&mt=8",
+   "media": [
+    "trace/x1128/9606_A_it-IT.png",
+    "trace/x1128/9606_F_it-IT.png",
+    "trace/x1128/9606_E_it-IT.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "claire.mw_02",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-12-03T03:00:00+00:00",
+   "local": "2026-12-02 22:00",
+   "text": "been using an iPhone for 10 years\nand only just found out it can do this…\nthis is unreal😳\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_claire.mw_02&mt=8",
+   "media": [
+    "trace/x1128/9611_A_en-US.png",
+    "trace/x1128/9611_F_en-US.png",
+    "trace/x1128/9611_E_en-US.png"
+   ],
+   "ig": [],
+   "done": []
   }
  ],
  "accounts_health": {
@@ -2242,12 +2789,28 @@
    "until": null
   },
   "linh.ngx_02": {
-   "n": 1,
-   "last": 30,
+   "n": 2,
+   "last": 1,
    "recent": [
-    30
+    30,
+    1
    ],
-   "base": 30,
+   "base": 15,
+   "approx": 0,
+   "multiple": 0.06,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
+   "state": "active",
+   "until": null
+  },
+  "mio._k27": {
+   "n": 1,
+   "last": 28,
+   "recent": [
+    28
+   ],
+   "base": 28,
    "approx": 0,
    "multiple": 1.0,
    "like_rate": 0.0,
@@ -2256,15 +2819,18 @@
    "state": "active",
    "until": null
   },
-  "mio._k27": {
-   "n": 0,
-   "label": "",
-   "state": "active",
-   "until": null
-  },
   "nadia.ps_04": {
-   "n": 0,
-   "label": "",
+   "n": 1,
+   "last": 2,
+   "recent": [
+    2
+   ],
+   "base": 2,
+   "approx": 0,
+   "multiple": 1.0,
+   "like_rate": 0.0,
+   "burst": 0.0,
+   "label": "저조",
    "state": "active",
    "until": null
   },
@@ -2655,8 +3221,8 @@
    "country": "TW",
    "project": "trace",
    "utc": "2026-11-16T09:29:22+00:00",
-   "views": 396,
-   "likes": 112,
+   "views": 397,
+   "likes": 110,
    "reposts": 0,
    "text": "拯救 P 人的 4 款 App 🫠\n不用計畫、不用自律，丟給它們就好\n介紹跟連結放留言 👇 你們 P 人都靠什麼活下來的？",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfzCT5Rk7qA"
@@ -2675,7 +3241,7 @@
    "text": "Inayos ko yung December ko sa iPad, lumalabas din sa lock screen ng phone ko",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@bea.cruz_03/post/DgMChC-lvQd",
-   "views": 28,
+   "views": 32,
    "likes": 0,
    "replies": 2,
    "reposts": 0,
@@ -2697,7 +3263,7 @@
    "text": "用 iPad 排好 12 月，手機鎖定畫面也跟著出現",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@yuting._066/post/DgL_I_km870",
-   "views": 51,
+   "views": 52,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2829,7 +3395,7 @@
    "text": "Susun jadual Disember kat iPad, terus keluar kat skrin kunci phone sekali",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aisyah.zr_05/post/DgKzl-0lM0F",
-   "views": 24,
+   "views": 25,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2917,13 +3483,13 @@
    "text": "ロック画面にキティちゃんのメモ帳を置いて使ってる♡\n可愛すぎて、何でもかんでも書き込みたくなる…▓",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DgFHmoPn6_z",
-   "views": 1319,
+   "views": 1331,
    "likes": 13,
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 16,
+   "clicks": 17,
    "round": null,
    "variant": null
   },
@@ -2939,7 +3505,7 @@
    "text": "▓▓▓",
    "kind": "TEXT_POST",
    "link": "https://www.threads.com/@trace_tw_gram/post/DgCarF1kzT_",
-   "views": 864,
+   "views": 865,
    "likes": 55,
    "replies": 0,
    "reposts": 0,
@@ -2961,7 +3527,7 @@
    "text": "用 iPhone 的大家！\n你們都用哪個行事曆 App 啊？👀\n換了好多個行事曆 App，終於找到我的本命了!!",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/DgBa7tRk670",
-   "views": 612,
+   "views": 619,
    "likes": 1,
    "replies": 1,
    "reposts": 1,
@@ -3049,7 +3615,7 @@
    "text": "ねえ、iPhoneユーザー\nロック画面これにしたら\nやることマジで忘れなくなった🥹❤️\nしかも可愛くて何回も見ちゃう",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Df9plOnHzoP",
-   "views": 75,
+   "views": 76,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -3098,7 +3664,7 @@
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
-   "shares": 1,
+   "shares": 0,
    "clicks": 2,
    "round": null,
    "variant": null
@@ -3181,13 +3747,13 @@
    "text": "欸，用 iPhone 的人\n真的要用這個耶！\n用過之後\n真的完全不會再忘記事情了✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df5wYGPk-hf",
-   "views": 8515,
+   "views": 8517,
    "likes": 12,
    "replies": 4,
    "reposts": 0,
    "quotes": 0,
    "shares": 4,
-   "clicks": 91,
+   "clicks": 94,
    "round": null,
    "variant": null
   },
@@ -3231,7 +3797,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 54,
+   "clicks": 56,
    "round": null,
    "variant": null
   },
@@ -3275,7 +3841,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 1,
-   "clicks": 41,
+   "clicks": 42,
    "round": null,
    "variant": null
   },
@@ -3291,8 +3857,8 @@
    "text": "拯救 P 人的 4 款 App 🫠\n不用計畫、不用自律，丟給它們就好\n介紹跟連結放留言 👇 你們 P 人都靠什麼活下來的？",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfzCT5Rk7qA",
-   "views": 396,
-   "likes": 112,
+   "views": 397,
+   "likes": 110,
    "replies": 4,
    "reposts": 0,
    "quotes": 0,
@@ -3313,13 +3879,13 @@
    "text": "iPhoneユーザーなら、これマジで試してみて！\n「忘年会のお店と行き方を調べて」って言うだけで、\n場所も行き方も全部調べてくれて、\nその情報をそのままカレンダーに残してくれる。\nもういちいちコピペしなくていい😎￼",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Dfv9Xytn7iZ",
-   "views": 155,
+   "views": 156,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 17,
+   "clicks": 18,
    "round": null,
    "variant": null
   },
@@ -3590,34 +4156,6 @@
  ],
  "ig_posts": [],
  "pending": [
-  {
-   "id": "18004057826810411",
-   "user": "trace_tw_gram",
-   "when": "11/14 00:48",
-   "text": "",
-   "link": "https://www.threads.com/@trace_tw_gram/post/DfsGMYdE0uT",
-   "account": "daily.life_gram",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "post": "18109597777970177",
-   "post_text": "iPhone 用戶，這個真的要試試看！",
-   "post_link": "https://www.threads.com/@trace_tw_gram/post/DfrlcICES4F"
-  },
-  {
-   "id": "17955049797314390",
-   "user": "trace_tw_gram",
-   "when": "11/14 00:49",
-   "text": "https://apps.apple.com/tw/app/trace-ai-calendar-planner/id6503812022",
-   "link": "https://www.threads.com/@trace_tw_gram/post/DfsGSlOEy0r",
-   "account": "daily.life_gram",
-   "project": "trace",
-   "country": "TW",
-   "flag": "🇹🇼",
-   "post": "18109597777970177",
-   "post_text": "iPhone 用戶，這個真的要試試看！",
-   "post_link": "https://www.threads.com/@trace_tw_gram/post/DfrlcICES4F"
-  },
   {
    "id": "18359961265169314",
    "user": "trace_tw_gram",

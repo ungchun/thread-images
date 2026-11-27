@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T00:43:58.051986+00:00",
+ "generated": "2026-11-27T14:03:23.614914+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -489,7 +489,7 @@
      },
      "CAROUSEL_ALBUM": {
       "n": 20,
-      "score": 0.92,
+      "score": 0.93,
       "median": 5
      }
     },
@@ -533,17 +533,17 @@
      "appfinds_ph": {
       "flag": "PH",
       "posts": 3,
-      "avg": 9,
-      "max": 17,
+      "avg": 10,
+      "max": 19,
       "hours": {
        "8": {
         "n": 2,
-        "score": 1.23,
-        "median": 11
+        "score": 1.25,
+        "median": 12
        },
        "18": {
         "n": 1,
-        "score": 0.54,
+        "score": 0.5,
         "median": 5
        }
       },
@@ -590,15 +590,53 @@
       "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
-       "n": 2,
-       "last": 3,
+       "n": 3,
+       "last": 16,
        "recent": [
         10,
-        3
+        3,
+        16
+       ],
+       "base": 10,
+       "approx": 1,
+       "multiple": 1.6,
+       "like_rate": 0.0,
+       "burst": 0.0,
+       "label": "막힘"
+      }
+     },
+     "trace.planner.tw": {
+      "flag": "TW",
+      "posts": 2,
+      "avg": 7,
+      "max": 8,
+      "hours": {
+       "8": {
+        "n": 1,
+        "score": 1.07,
+        "median": 8
+       },
+       "18": {
+        "n": 1,
+        "score": 0.93,
+        "median": 7
+       }
+      },
+      "best_hour": 8,
+      "best_n": 1,
+      "state": "official",
+      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
+      "until": null,
+      "health": {
+       "n": 2,
+       "last": 7,
+       "recent": [
+        6,
+        7
        ],
        "base": 6,
        "approx": 0,
-       "multiple": 0.46,
+       "multiple": 1.08,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -625,43 +663,6 @@
       "best_n": 1,
       "state": "active",
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 2,
-       "last": 7,
-       "recent": [
-        6,
-        7
-       ],
-       "base": 6,
-       "approx": 0,
-       "multiple": 1.08,
-       "like_rate": 0.0,
-       "burst": 0.0,
-       "label": "저조"
-      }
-     },
-     "trace.planner.tw": {
-      "flag": "TW",
-      "posts": 2,
-      "avg": 6,
-      "max": 7,
-      "hours": {
-       "8": {
-        "n": 1,
-        "score": 1.08,
-        "median": 7
-       },
-       "18": {
-        "n": 1,
-        "score": 0.92,
-        "median": 6
-       }
-      },
-      "best_hour": 8,
-      "best_n": 1,
-      "state": "official",
-      "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
        "n": 2,
@@ -2031,6 +2032,198 @@
    "done": []
   },
   {
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-11-28T08:00:00+00:00",
+   "local": "2026-11-28 19:00",
+   "text": "hang on… why did no one tell me\nyou can put your entire schedule on the lock screen??!!\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_au_appfinds_anz&mt=8",
+   "media": [
+    "trace/x1128/cat_A_en-AU.png",
+    "trace/x1128/cat_F_en-AU.png",
+    "trace/x1128/cat_E_en-AU.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-28T12:30:00+00:00",
+   "local": "2026-11-28 20:30",
+   "text": "Sejak letak kat lock screen\ntak pernah lupa apa nak buat dah\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_appfinds_my&mt=8",
+   "media": [
+    "trace/x1128/9611_A_ms-MY.png",
+    "trace/x1128/9611_F_ms-MY.png",
+    "trace/x1128/9611_E_ms-MY.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-28T13:30:00+00:00",
+   "local": "2026-11-28 20:30",
+   "text": "Sejak tampil di lock screen, sekarang aku nggak pernah lupa tugas lagi\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_appfinds_id&mt=8",
+   "media": [
+    "trace/x1128/9611_A_id-ID.png",
+    "trace/x1128/9611_F_id-ID.png",
+    "trace/x1128/9611_E_id-ID.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-28T14:00:00+00:00",
+   "local": "2026-11-28 22:00",
+   "text": "Simula nung nilagay ko sa lock screen\nwala na akong nakalimutang gawain\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_appfinds_ph&mt=8",
+   "media": [
+    "trace/x1128/9611_A_fil-PH.png",
+    "trace/x1128/9611_F_fil-PH.png",
+    "trace/x1128/9611_E_fil-PH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-11-28T18:30:00+00:00",
+   "local": "2026-11-28 18:30",
+   "text": "Anyone with an iPhone\ntry this just once!\nsince I started using it, I genuinely don't forget anything ✨\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_gb_appfindsuk8&mt=8",
+   "media": [
+    "trace/x1128/9606_A_en-AU.png",
+    "trace/x1128/9606_F_en-AU.png",
+    "trace/x1128/9606_E_en-AU.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-11-28T23:00:00+00:00",
+   "local": "2026-11-28 18:00",
+   "text": "Hey, iPhone people\ntry this just once!\never since I started using it, I honestly don't forget anything ✨\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_appfindsna9&mt=8",
+   "media": [
+    "trace/x1128/cat_A_en-US.png",
+    "trace/x1128/cat_F_en-US.png",
+    "trace/x1128/cat_E_en-US.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-11-30T07:30:00+00:00",
+   "local": "2026-11-30 18:30",
+   "text": "since putting it on my lock screen\nI haven't missed a single to-do\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_au_appfinds_anz&mt=8",
+   "media": [
+    "trace/x1128/9612_A_en-AU.png",
+    "trace/x1128/9612_F_en-AU.png",
+    "trace/x1128/9612_E_en-AU.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-11-30T10:30:00+00:00",
+   "local": "2026-11-30 18:30",
+   "text": "Korang yang guna iPhone\ncuba la benda ni sekali!\nlepas guna, memang tak lupa apa-apa dah ✨\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_appfinds_my&mt=8",
+   "media": [
+    "trace/x1128/cat_A_ms-MY.png",
+    "trace/x1128/cat_F_ms-MY.png",
+    "trace/x1128/cat_E_ms-MY.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-11-30T12:30:00+00:00",
+   "local": "2026-11-30 20:30",
+   "text": "Uy, mga naka-iPhone\nsubukan nyo 'to kahit isang beses lang!\nmula nung ginamit ko, wala na talaga akong nakakalimutan ✨\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_appfinds_ph&mt=8",
+   "media": [
+    "trace/x1128/cat_A_fil-PH.png",
+    "trace/x1128/cat_F_fil-PH.png",
+    "trace/x1128/cat_E_fil-PH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-11-30T13:00:00+00:00",
+   "local": "2026-11-30 20:00",
+   "text": "Yang pakai iPhone\ncoba deh ini sekali aja!\nhabis pakai, beneran nggak pernah lupa apa-apa lagi ✨\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_appfinds_id&mt=8",
+   "media": [
+    "trace/x1128/cat_A_id-ID.png",
+    "trace/x1128/cat_F_id-ID.png",
+    "trace/x1128/cat_E_id-ID.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-11-30T18:00:00+00:00",
+   "local": "2026-11-30 18:00",
+   "text": "hold on… why did nobody tell me\nyou can have your whole schedule on the lock screen??!!\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_gb_appfindsuk8&mt=8",
+   "media": [
+    "trace/x1128/9611_A_en-AU.png",
+    "trace/x1128/9611_F_en-AU.png",
+    "trace/x1128/9611_E_en-AU.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-12-01T02:00:00+00:00",
+   "local": "2026-11-30 21:00",
+   "text": "wait… why did nobody tell me\nyou can put your whole schedule on your lock screen??!!\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_appfindsna9&mt=8",
+   "media": [
+    "trace/x1128/9606_A_en-US.png",
+    "trace/x1128/9606_F_en-US.png",
+    "trace/x1128/9606_E_en-US.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
    "account": "trace.planner.jp",
    "project": "trace",
    "country": "JP",
@@ -2047,6 +2240,54 @@
    "done": []
   },
   {
+   "account": "appfinds_anz",
+   "project": "trace",
+   "country": "AU",
+   "flag": "🇦🇺",
+   "utc": "2026-12-02T08:30:00+00:00",
+   "local": "2026-12-02 19:30",
+   "text": "Oi, iPhone users\ngive this a go just once!\nsince I started using it, I genuinely don't forget a thing ✨\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_au_appfinds_anz&mt=8",
+   "media": [
+    "trace/x1128/9606_A_en-AU.png",
+    "trace/x1128/9606_F_en-AU.png",
+    "trace/x1128/9606_E_en-AU.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_ph",
+   "project": "trace",
+   "country": "PH",
+   "flag": "🇵🇭",
+   "utc": "2026-12-02T10:00:00+00:00",
+   "local": "2026-12-02 18:00",
+   "text": "teka… bakit walang nagsabi\nna pwede palang ilagay lahat ng schedule sa lock screen??!!\n---\nmedia: -\nIto yung app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_ph_appfinds_ph&mt=8",
+   "media": [
+    "trace/x1128/9606_A_fil-PH.png",
+    "trace/x1128/9606_F_fil-PH.png",
+    "trace/x1128/9606_E_fil-PH.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_id",
+   "project": "trace",
+   "country": "ID",
+   "flag": "🇮🇩",
+   "utc": "2026-12-02T10:30:00+00:00",
+   "local": "2026-12-02 17:30",
+   "text": "loh… kok nggak ada yang bilang kalau jadwal bisa ditaruh semua di lock screen??!!\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_id_appfinds_id&mt=8",
+   "media": [
+    "trace/x1128/9606_A_id-ID.png",
+    "trace/x1128/9606_F_id-ID.png",
+    "trace/x1128/9606_E_id-ID.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
    "account": "trace.planner.tw",
    "project": "trace",
    "country": "TW",
@@ -2058,6 +2299,54 @@
     "trace/cal/2612/month_tw_hand.jpg",
     "trace/cal/2612/month_tw_lock.png",
     "trace/cal/2612/month_tw_close.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfinds_my",
+   "project": "trace",
+   "country": "MY",
+   "flag": "🇲🇾",
+   "utc": "2026-12-02T11:30:00+00:00",
+   "local": "2026-12-02 19:30",
+   "text": "eh… kenapa takde siapa bagitahu\nsemua jadual boleh letak kat lock screen??!!\n---\nmedia: -\nIni aplikasinya\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_my_appfinds_my&mt=8",
+   "media": [
+    "trace/x1128/9606_A_ms-MY.png",
+    "trace/x1128/9606_F_ms-MY.png",
+    "trace/x1128/9606_E_ms-MY.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsuk8",
+   "project": "trace",
+   "country": "GB",
+   "flag": "🇬🇧",
+   "utc": "2026-12-02T18:30:00+00:00",
+   "local": "2026-12-02 18:30",
+   "text": "since I put it on my lock screen\nI've not forgotten a single thing on my to-do list\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_gb_appfindsuk8&mt=8",
+   "media": [
+    "trace/x1128/9612_A_en-AU.png",
+    "trace/x1128/9612_F_en-AU.png",
+    "trace/x1128/9612_E_en-AU.png"
+   ],
+   "ig": [],
+   "done": []
+  },
+  {
+   "account": "appfindsna9",
+   "project": "trace",
+   "country": "US",
+   "flag": "🇺🇸",
+   "utc": "2026-12-03T01:00:00+00:00",
+   "local": "2026-12-02 20:00",
+   "text": "ever since I put it on my lock screen\nI haven't forgotten a single to-do\n---\nmedia: -\nThis is the app\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_us_appfindsna9&mt=8",
+   "media": [
+    "trace/x1128/9612_A_en-US.png",
+    "trace/x1128/9612_F_en-US.png",
+    "trace/x1128/9612_E_en-US.png"
    ],
    "ig": [],
    "done": []
@@ -2081,18 +2370,19 @@
    "until": null
   },
   "appfinds_id": {
-   "n": 2,
-   "last": 3,
+   "n": 3,
+   "last": 16,
    "recent": [
     10,
-    3
+    3,
+    16
    ],
-   "base": 6,
-   "approx": 0,
-   "multiple": 0.46,
+   "base": 10,
+   "approx": 1,
+   "multiple": 1.6,
    "like_rate": 0.0,
    "burst": 0.0,
-   "label": "저조",
+   "label": "막힘",
    "state": "active",
    "until": null
   },
@@ -2192,7 +2482,15 @@
    "until": null
   }
  },
- "proposals": [],
+ "proposals": [
+  {
+   "account": "appfinds_id",
+   "from": "active",
+   "to": "rest",
+   "until": "2026-12-11",
+   "reason": "48시간 조회수 100 미만 3회 연속 (10, 3, 16)"
+  }
+ ],
  "violations": [
   {
    "kind": "하루 상한 초과",
@@ -2283,7 +2581,7 @@
    "text": "Phone, iPad, Mac, Watch, iisang schedule lang kaya di na ko nakakalimot",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_ph/post/DgLxacBmqvl",
-   "views": 17,
+   "views": 19,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2437,13 +2735,13 @@
    "text": "沒想到把行程放到鎖定畫面上，會這麼好看 🥹🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/DgJMnxwmQT1",
-   "views": 7,
+   "views": 8,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -2613,7 +2911,7 @@
    "text": "內建行程的鎖定畫面桌布 🗓️✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace.planner.tw/post/DgHv0fXoPPM",
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
