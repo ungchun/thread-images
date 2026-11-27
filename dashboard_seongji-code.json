@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T14:02:27.208432+00:00",
+ "generated": "2026-11-27T00:43:25.692198+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -461,7 +461,7 @@
      "10": {
       "n": 3,
       "score": 1.0,
-      "median": 40
+      "median": 51
      },
      "11": {
       "n": 1,
@@ -522,8 +522,8 @@
     "wday": {
      "월": {
       "n": 2,
-      "score": 2.2,
-      "median": 854
+      "score": 2.21,
+      "median": 857
      },
      "화": {
       "n": 1,
@@ -593,7 +593,7 @@
        "9": {
         "n": 1,
         "score": 1.01,
-        "median": 1095
+        "median": 1096
        },
        "11": {
         "n": 1,
@@ -690,8 +690,8 @@
        },
        "19": {
         "n": 1,
-        "score": 4.04,
-        "median": 1314
+        "score": 4.05,
+        "median": 1319
        },
        "20": {
         "n": 1,
@@ -733,19 +733,41 @@
      "yuting._066": {
       "flag": "TW",
       "posts": 1,
-      "avg": 40,
-      "max": 40,
+      "avg": 51,
+      "max": 51,
       "hours": {
        "10": {
         "n": 1,
         "score": 1.0,
-        "median": 40
+        "median": 51
        }
       },
       "best_hour": 10,
       "best_n": 1,
       "state": "active",
       "note": "",
+      "until": null,
+      "health": {
+       "n": 0,
+       "label": ""
+      }
+     },
+     "bea.cruz_03": {
+      "flag": "PH",
+      "posts": 1,
+      "avg": 28,
+      "max": 28,
+      "hours": {
+       "10": {
+        "n": 1,
+        "score": 1.0,
+        "median": 28
+       }
+      },
+      "best_hour": 10,
+      "best_n": 1,
+      "state": "active",
+      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
        "n": 0,
@@ -787,28 +809,6 @@
        }
       },
       "best_hour": 23,
-      "best_n": 1,
-      "state": "active",
-      "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
-      "until": null,
-      "health": {
-       "n": 0,
-       "label": ""
-      }
-     },
-     "bea.cruz_03": {
-      "flag": "PH",
-      "posts": 1,
-      "avg": 22,
-      "max": 22,
-      "hours": {
-       "10": {
-        "n": 1,
-        "score": 1.0,
-        "median": 22
-       }
-      },
-      "best_hour": 10,
       "best_n": 1,
       "state": "active",
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
@@ -2655,8 +2655,8 @@
    "country": "TW",
    "project": "trace",
    "utc": "2026-11-16T09:29:22+00:00",
-   "views": 395,
-   "likes": 111,
+   "views": 396,
+   "likes": 112,
    "reposts": 0,
    "text": "拯救 P 人的 4 款 App 🫠\n不用計畫、不用自律，丟給它們就好\n介紹跟連結放留言 👇 你們 P 人都靠什麼活下來的？",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfzCT5Rk7qA"
@@ -2675,7 +2675,7 @@
    "text": "Inayos ko yung December ko sa iPad, lumalabas din sa lock screen ng phone ko",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@bea.cruz_03/post/DgMChC-lvQd",
-   "views": 22,
+   "views": 28,
    "likes": 0,
    "replies": 2,
    "reposts": 0,
@@ -2697,7 +2697,7 @@
    "text": "用 iPad 排好 12 月，手機鎖定畫面也跟著出現",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@yuting._066/post/DgL_I_km870",
-   "views": 40,
+   "views": 51,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -2917,13 +2917,13 @@
    "text": "ロック画面にキティちゃんのメモ帳を置いて使ってる♡\n可愛すぎて、何でもかんでも書き込みたくなる…▓",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@aoi_1124_gram/post/DgFHmoPn6_z",
-   "views": 1314,
+   "views": 1319,
    "likes": 13,
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 15,
+   "clicks": 16,
    "round": null,
    "variant": null
   },
@@ -2945,7 +2945,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 4,
+   "clicks": 5,
    "round": null,
    "variant": null
   },
@@ -3049,7 +3049,7 @@
    "text": "ねえ、iPhoneユーザー\nロック画面これにしたら\nやることマジで忘れなくなった🥹❤️\nしかも可愛くて何回も見ちゃう",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@aoi_1124_gram/post/Df9plOnHzoP",
-   "views": 74,
+   "views": 75,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -3159,13 +3159,13 @@
    "text": "2026 年我用過的桌布們🤍\n有喜歡的嗎？\n想要的人我可以分享給你們～～！",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@trace_tw_gram/post/Df52jcXk9Lx",
-   "views": 1095,
+   "views": 1096,
    "likes": 4,
    "replies": 3,
    "reposts": 0,
    "quotes": 0,
    "shares": 1,
-   "clicks": 11,
+   "clicks": 12,
    "round": null,
    "variant": null
   },
@@ -3187,7 +3187,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 4,
-   "clicks": 86,
+   "clicks": 91,
    "round": null,
    "variant": null
   },
@@ -3209,7 +3209,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 4,
+   "clicks": 5,
    "round": null,
    "variant": null
   },
@@ -3231,7 +3231,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 53,
+   "clicks": 54,
    "round": null,
    "variant": null
   },
@@ -3275,7 +3275,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 1,
-   "clicks": 40,
+   "clicks": 41,
    "round": null,
    "variant": null
   },
@@ -3291,8 +3291,8 @@
    "text": "拯救 P 人的 4 款 App 🫠\n不用計畫、不用自律，丟給它們就好\n介紹跟連結放留言 👇 你們 P 人都靠什麼活下來的？",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@trace_tw_gram/post/DfzCT5Rk7qA",
-   "views": 395,
-   "likes": 111,
+   "views": 396,
+   "likes": 112,
    "replies": 4,
    "reposts": 0,
    "quotes": 0,
@@ -3385,7 +3385,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 30,
+   "clicks": 31,
    "round": null,
    "variant": null
   },

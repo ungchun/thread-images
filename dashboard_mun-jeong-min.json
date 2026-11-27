@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T14:02:45.472734+00:00",
+ "generated": "2026-11-27T00:43:58.051986+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -445,7 +445,7 @@
     "hour": {
      "8": {
       "n": 12,
-      "score": 1.14,
+      "score": 1.13,
       "median": 6
      },
      "18": {
@@ -472,7 +472,7 @@
      },
      "수": {
       "n": 9,
-      "score": 1.2,
+      "score": 1.18,
       "median": 7
      },
      "목": {
@@ -553,14 +553,15 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 5,
+       "n": 2,
+       "last": 6,
        "recent": [
-        5
+        5,
+        6
        ],
        "base": 5,
        "approx": 0,
-       "multiple": 1.0,
+       "multiple": 1.09,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -570,16 +571,16 @@
       "flag": "ID",
       "posts": 4,
       "avg": 8,
-      "max": 15,
+      "max": 16,
       "hours": {
        "8": {
         "n": 3,
-        "score": 1.21,
+        "score": 1.18,
         "median": 10
        },
        "18": {
         "n": 1,
-        "score": 0.36,
+        "score": 0.35,
         "median": 3
        }
       },
@@ -626,14 +627,15 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 6,
+       "n": 2,
+       "last": 7,
        "recent": [
-        6
+        6,
+        7
        ],
        "base": 6,
        "approx": 0,
-       "multiple": 1.0,
+       "multiple": 1.08,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -662,14 +664,15 @@
       "note": "트레이스 공식 계정 대만 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 6,
+       "n": 2,
+       "last": 7,
        "recent": [
-        6
+        6,
+        7
        ],
        "base": 6,
        "approx": 0,
-       "multiple": 1.0,
+       "multiple": 1.08,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -703,14 +706,15 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 4,
+       "n": 2,
+       "last": 2,
        "recent": [
-        4
+        4,
+        2
        ],
-       "base": 4,
+       "base": 3,
        "approx": 0,
-       "multiple": 1.0,
+       "multiple": 0.67,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -739,14 +743,15 @@
       "note": "트레이스 공식 계정 일본 (정민 님 토큰, 10/23 등록)",
       "until": null,
       "health": {
-       "n": 1,
-       "last": 1,
+       "n": 2,
+       "last": 5,
        "recent": [
-        1
+        1,
+        5
        ],
-       "base": 1,
+       "base": 3,
        "approx": 0,
-       "multiple": 1.0,
+       "multiple": 1.67,
        "like_rate": 0.0,
        "burst": 0.0,
        "label": "저조"
@@ -775,9 +780,10 @@
       "note": "2026-11-25 오너 지정 연말 홍보(x1125)로 운영 재개",
       "until": null,
       "health": {
-       "n": 1,
+       "n": 2,
        "last": 1,
        "recent": [
+        1,
         1
        ],
        "base": 1,
@@ -2059,9 +2065,10 @@
  ],
  "accounts_health": {
   "appfinds_anz": {
-   "n": 1,
+   "n": 2,
    "last": 1,
    "recent": [
+    1,
     1
    ],
    "base": 1,
@@ -2090,14 +2097,15 @@
    "until": null
   },
   "appfinds_my": {
-   "n": 1,
-   "last": 6,
+   "n": 2,
+   "last": 7,
    "recent": [
-    6
+    6,
+    7
    ],
    "base": 6,
    "approx": 0,
-   "multiple": 1.0,
+   "multiple": 1.08,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
@@ -2105,14 +2113,15 @@
    "until": null
   },
   "appfinds_ph": {
-   "n": 1,
-   "last": 5,
+   "n": 2,
+   "last": 6,
    "recent": [
-    5
+    5,
+    6
    ],
    "base": 5,
    "approx": 0,
-   "multiple": 1.0,
+   "multiple": 1.09,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
@@ -2135,14 +2144,15 @@
    "until": null
   },
   "appfindsuk8": {
-   "n": 1,
-   "last": 4,
+   "n": 2,
+   "last": 2,
    "recent": [
-    4
+    4,
+    2
    ],
-   "base": 4,
+   "base": 3,
    "approx": 0,
-   "multiple": 1.0,
+   "multiple": 0.67,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
@@ -2150,14 +2160,15 @@
    "until": null
   },
   "trace.planner.jp": {
-   "n": 1,
-   "last": 1,
+   "n": 2,
+   "last": 5,
    "recent": [
-    1
+    1,
+    5
    ],
-   "base": 1,
+   "base": 3,
    "approx": 0,
-   "multiple": 1.0,
+   "multiple": 1.67,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
@@ -2165,14 +2176,15 @@
    "until": null
   },
   "trace.planner.tw": {
-   "n": 1,
-   "last": 6,
+   "n": 2,
+   "last": 7,
    "recent": [
-    6
+    6,
+    7
    ],
    "base": 6,
    "approx": 0,
-   "multiple": 1.0,
+   "multiple": 1.08,
    "like_rate": 0.0,
    "burst": 0.0,
    "label": "저조",
@@ -2359,7 +2371,7 @@
    "text": "Nggak nyangka jadwal di lockscreen bisa secantik ini 🥹🥹",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@appfinds_id/post/DgJTZIAlcp4",
-   "views": 15,
+   "views": 16,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
