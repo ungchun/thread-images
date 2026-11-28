@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T00:08:38.496690+00:00",
+ "generated": "2026-11-28T08:02:00.475322+00:00",
  "projects": {
   "moonlight": "문라이트",
   "cortex": "코르텍스",
@@ -335,20 +335,20 @@
      "kr": "야, 아이폰 쓰는 사람들\n이거 진짜 한 번만 써봐!\n쓰고 나서는 진짜 뭘 까먹는 일이 없어졌어 💕",
      "note": "도라에몽 2장. 09/16 세트와 본문 동일 — 같은 계정 재발행이라 09/22 R04 사례(84,459→514)와 같은 조건.",
      "posts": 1,
-     "views": 42,
+     "views": 43,
      "likes": 2,
-     "median": 42,
+     "median": 43,
      "score": 1.02,
      "sample": 1,
-     "er_score": 28.67,
+     "er_score": 28.09,
      "er_sample": 1,
      "variants": {
       "새API": {
        "posts": 1,
-       "median": 42,
+       "median": 43,
        "score": 1.02,
        "sample": 1,
-       "er_score": 28.67,
+       "er_score": 28.09,
        "er_sample": 1
       }
      }
@@ -458,9 +458,14 @@
       "median": 7
      },
      "8": {
-      "n": 4,
-      "score": 1.17,
-      "median": 49
+      "n": 5,
+      "score": 1.0,
+      "median": 61
+     },
+     "10": {
+      "n": 1,
+      "score": 0.35,
+      "median": 9
      },
      "11": {
       "n": 2,
@@ -474,12 +479,12 @@
      },
      "13": {
       "n": 4,
-      "score": 0.96,
+      "score": 0.97,
       "median": 33
      },
      "14": {
       "n": 3,
-      "score": 0.9,
+      "score": 0.97,
       "median": 9
      },
      "18": {
@@ -499,18 +504,18 @@
      },
      "21": {
       "n": 2,
-      "score": 0.89,
+      "score": 1.1,
       "median": 27
      },
      "22": {
       "n": 1,
-      "score": 0.5,
+      "score": 0.49,
       "median": 5
      },
      "23": {
       "n": 1,
-      "score": 0.09,
-      "median": 9
+      "score": 0.1,
+      "median": 10
      }
     },
     "wday": {
@@ -529,15 +534,20 @@
       "score": 0.87,
       "median": 4
      },
+     "토": {
+      "n": 2,
+      "score": 0.61,
+      "median": 35
+     },
      "일": {
       "n": 3,
-      "score": 1.35,
+      "score": 1.39,
       "median": 98
      }
     },
     "media": {
      "CAROUSEL_ALBUM": {
-      "n": 44,
+      "n": 46,
       "score": 1.0,
       "median": 10
      },
@@ -551,28 +561,28 @@
      "pim.pm_02": {
       "flag": "TH",
       "posts": 4,
-      "avg": 98,
-      "max": 301,
+      "avg": 99,
+      "max": 302,
       "hours": {
        "8": {
         "n": 1,
-        "score": 3.07,
-        "median": 301
+        "score": 3.05,
+        "median": 302
        },
        "13": {
         "n": 1,
         "score": 0.43,
-        "median": 42
+        "median": 43
        },
        "19": {
         "n": 1,
         "score": 0.41,
-        "median": 40
+        "median": 41
        },
        "23": {
         "n": 1,
-        "score": 0.09,
-        "median": 9
+        "score": 0.1,
+        "median": 10
        }
       },
       "best_hour": 8,
@@ -598,19 +608,19 @@
      },
      "ashgrey._02": {
       "flag": "VN",
-      "posts": 4,
-      "avg": 72,
+      "posts": 5,
+      "avg": 70,
       "max": 148,
       "hours": {
        "8": {
-        "n": 1,
-        "score": 1.35,
-        "median": 98
+        "n": 2,
+        "score": 1.13,
+        "median": 79
        },
        "13": {
         "n": 1,
-        "score": 0.44,
-        "median": 32
+        "score": 0.47,
+        "median": 33
        },
        "18": {
         "n": 1,
@@ -619,7 +629,7 @@
        },
        "20": {
         "n": 1,
-        "score": 2.03,
+        "score": 2.1,
         "median": 148
        }
       },
@@ -684,18 +694,23 @@
      },
      "mint.le_06": {
       "flag": "VN",
-      "posts": 2,
-      "avg": 34,
+      "posts": 3,
+      "avg": 25,
       "max": 43,
       "hours": {
+       "10": {
+        "n": 1,
+        "score": 0.35,
+        "median": 9
+       },
        "14": {
         "n": 1,
-        "score": 0.74,
+        "score": 0.97,
         "median": 25
        },
        "21": {
         "n": 1,
-        "score": 1.26,
+        "score": 1.68,
         "median": 43
        }
       },
@@ -779,18 +794,19 @@
       "note": "2026-11-18 사용자 지정 A1/A2/A3 발행 요청으로 운영 재개",
       "until": null,
       "health": {
-       "n": 2,
-       "last": 29,
+       "n": 3,
+       "last": 8,
        "recent": [
         26,
-        29
+        29,
+        8
        ],
-       "base": 27,
+       "base": 26,
        "approx": 0,
-       "multiple": 1.05,
+       "multiple": 0.31,
        "like_rate": 0.0,
        "burst": 0.0,
-       "label": "저조"
+       "label": "막힘"
       }
      },
      "03ines.mar_": {
@@ -902,7 +918,7 @@
       "flag": "ID",
       "posts": 4,
       "avg": 10,
-      "max": 25,
+      "max": 26,
       "hours": {
        "8": {
         "n": 1,
@@ -911,17 +927,17 @@
        },
        "14": {
         "n": 1,
-        "score": 0.9,
+        "score": 0.88,
         "median": 9
        },
        "19": {
         "n": 1,
-        "score": 2.5,
-        "median": 25
+        "score": 2.54,
+        "median": 26
        },
        "22": {
         "n": 1,
-        "score": 0.5,
+        "score": 0.49,
         "median": 5
        }
       },
@@ -2390,38 +2406,6 @@
  "window_days": 30,
  "scheduled": [
   {
-   "account": "ashgrey._02",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-11-28T01:00:00+00:00",
-   "local": "2026-11-28 08:00",
-   "text": "mấy bạn dùng iPhone ơi\ncái này phải cài liền nha!\nviệc cần làm hiện trên màn hình khóa, hết quên luôn 💕\n---\nmedia: -\nChính là app này\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_vn_ashgrey._02&mt=8",
-   "media": [
-    "trace/x1128/9606_A_vi-VN.png",
-    "trace/x1128/9606_F_vi-VN.png",
-    "trace/x1128/9606_E_vi-VN.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
-   "account": "mint.le_06",
-   "project": "trace",
-   "country": "VN",
-   "flag": "🇻🇳",
-   "utc": "2026-11-28T03:00:00+00:00",
-   "local": "2026-11-28 10:00",
-   "text": "từ hồi để lên màn hình khóa\nchưa quên việc gì luôn á\n---\nmedia: -\nChính là app này\nhttps://apps.apple.com/app/apple-store/id6503812022?pt=126570331&ct=th_vn_mint.le_06&mt=8",
-   "media": [
-    "trace/x1128/9611_A_vi-VN.png",
-    "trace/x1128/9611_F_vi-VN.png",
-    "trace/x1128/9611_E_vi-VN.png"
-   ],
-   "ig": [],
-   "done": []
-  },
-  {
    "account": "elle__jm",
    "project": "trace",
    "country": "AU",
@@ -3658,18 +3642,19 @@
    "until": null
   },
   "ivy_.k09": {
-   "n": 2,
-   "last": 29,
+   "n": 3,
+   "last": 8,
    "recent": [
     26,
-    29
+    29,
+    8
    ],
-   "base": 27,
+   "base": 26,
    "approx": 0,
-   "multiple": 1.05,
+   "multiple": 0.31,
    "like_rate": 0.0,
    "burst": 0.0,
-   "label": "저조",
+   "label": "막힘",
    "state": "active",
    "until": null
   },
@@ -3884,6 +3869,13 @@
    "reason": "48시간 조회수 100 미만 3회 연속 (57, 97, 17)"
   },
   {
+   "account": "ivy_.k09",
+   "from": "active",
+   "to": "rest",
+   "until": "2026-12-12",
+   "reason": "48시간 조회수 100 미만 3회 연속 (26, 29, 8)"
+  },
+  {
    "account": "rara.2k_",
    "from": "active",
    "to": "rest",
@@ -3919,6 +3911,50 @@
  ],
  "hits": [],
  "posts": [
+  {
+   "id": "17931620631184003",
+   "account": "mint.le_06",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-11-28T03:02:20+00:00",
+   "date": "2026-11-28",
+   "local": "11/28 10:02",
+   "text": "từ hồi để lên màn hình khóa\nchưa quên việc gì luôn á",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@mint.le_06/post/DgRPiv2DkLo",
+   "views": 9,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 0,
+   "round": null,
+   "variant": null
+  },
+  {
+   "id": "18096822023192790",
+   "account": "ashgrey._02",
+   "project": "trace",
+   "country": "VN",
+   "flag": "🇻🇳",
+   "utc": "2026-11-28T01:02:46+00:00",
+   "date": "2026-11-28",
+   "local": "11/28 08:02",
+   "text": "mấy bạn dùng iPhone ơi\ncái này phải cài liền nha!\nviệc cần làm hiện trên màn hình khóa, hết quên luôn 💕",
+   "kind": "CAROUSEL_ALBUM",
+   "link": "https://www.threads.com/@ashgrey._02/post/DgRB2vqDAbC",
+   "views": 61,
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0,
+   "clicks": 1,
+   "round": null,
+   "variant": null
+  },
   {
    "id": "18512008408099236",
    "account": "ivy_.k09",
@@ -4151,7 +4187,7 @@
    "text": "ดูทั้งเดือนธันวาคมบน Mac แล้ว ปลายปีไม่น่ากลัวเท่าไหร่แล้ว",
    "kind": "IMAGE",
    "link": "https://www.threads.com/@pim.pm_02/post/DgK93ljFcF-",
-   "views": 9,
+   "views": 10,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
@@ -4701,13 +4737,13 @@
    "text": "นี่ คนที่ใช้ iPhone\nต้องลองอันนี้จริง ๆ นะ!\nพอใช้แล้ว ไม่ลืมอะไรอีกเลยจริง ๆ💕",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DgHUYddkWX7",
-   "views": 42,
+   "views": 43,
    "likes": 2,
    "replies": 1,
    "reposts": 1,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": "t15a",
    "variant": "새API"
   },
@@ -4723,13 +4759,13 @@
    "text": "Này, ai đang dùng iPhone\nnhất định phải thử cái này!\nDùng rồi là thật sự không quên việc gì nữa ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@ashgrey._02/post/DgHQ9yhjp6s",
-   "views": 32,
+   "views": 33,
    "likes": 0,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 0,
+   "clicks": 1,
    "round": null,
    "variant": null
   },
@@ -4921,13 +4957,13 @@
    "text": "ฟีเจอร์ที่หลายคนพิสูจน์แล้วว่าได้ผล! \nใครใช้ iPhone ต้องลอง! \nรับรองว่าไม่มีวันลืมอีกแน่นอน! ✨",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/DgBmOH0D_S3",
-   "views": 301,
+   "views": 302,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 3,
+   "clicks": 5,
    "round": null,
    "variant": null
   },
@@ -4971,7 +5007,7 @@
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 8,
+   "clicks": 9,
    "round": null,
    "variant": null
   },
@@ -4987,7 +5023,7 @@
    "text": "Wallpaper Natal bikinan AI ini gemes banget 🐶🐱\n\nBuat pribadi bebas save aja ya 🥰\n\nAku coba bikin anjing & kucing\npakai syal merah di malam bersalju 🎄\n\nAda yang mau bikin versi anabul sendiri?\nKalau banyak yang mau,\nnanti aku share prompt-nya 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@rara.2k_/post/Df4gy69FmTY",
-   "views": 25,
+   "views": 26,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -5009,13 +5045,13 @@
    "text": "วอลเปเปอร์คริสต์มาสที่ทำจาก AI น่ารักเกินไปแล้ว 🐶🐱\n\nใช้ส่วนตัวเซฟไปได้เลยนะ 🥰\n\nลองทำน้องหมาน้องแมวพันผ้าพันคอสีแดง\nท่ามกลางคืนหิมะตก 🎄\n\nใครอยากทำให้น้องที่บ้านบ้างยกมือ 🙋\nถ้ามีคนอยากได้เยอะ\nเดี๋ยวแจกพรอมต์ให้เลย 🫶",
    "kind": "CAROUSEL_ALBUM",
    "link": "https://www.threads.com/@pim.pm_02/post/Df4dYm-lZSb",
-   "views": 40,
+   "views": 41,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "quotes": 0,
    "shares": 0,
-   "clicks": 3,
+   "clicks": 4,
    "round": null,
    "variant": null
   },
@@ -5117,7 +5153,7 @@
   "beatriz03._a 인스타: HTTP Error 400: Bad Request",
   "daily03dew 인스타: HTTP Error 400: Bad Request",
   "dot2day_ 인스타: HTTP Error 400: Bad Request",
-  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Friday, 27-Nov-26 16:07:25 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AbfRdIt1aQ3kzYW08GlKvv0\"}}",
+  "elif.dm_05 게시물: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 23:07:08 PST. The current time is Saturday, 28-Nov-26 00:01:07 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AgqLSr8H9xhJDqBu7VLHtyP\"}}",
   "elle__jm 인스타: HTTP Error 400: Bad Request",
   "kai_.03b 인스타: HTTP Error 400: Bad Request",
   "lune__v34 인스타: HTTP Error 400: Bad Request",
